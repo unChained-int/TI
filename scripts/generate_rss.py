@@ -15,7 +15,7 @@ HISTORY_FILE = Path("malware_history.json")
 OUTPUT_FILE  = Path("rss.xml")
 
 # GitHub Pages URL – ANPASSEN!
-BASE_URL = "https://DEIN_USERNAME.github.io/DEIN_REPO"
+BASE_URL = "https://unchained-int.github.io/TI"
 
 
 def rfc822(dt: datetime) -> str:
