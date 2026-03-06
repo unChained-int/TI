@@ -15,7 +15,7 @@ HISTORY_FILE = Path("malware_history.json")
 WEB_DIR      = Path("web")
 WEB_DIR.mkdir(exist_ok=True)
 
-BASE_URL = "https://DEIN_USERNAME.github.io/DEIN_REPO"
+BASE_URL = "https://unchained-int.github.io/TI"
 
 
 def parse_latest_report() -> dict:
