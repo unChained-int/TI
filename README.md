@@ -32,15 +32,7 @@ pip install requests
 ## 3️⃣  Lokales Projekt einrichten & pushen
 
 ```powershell
-# In den Projektordner wechseln (wo malware_report.py liegt)
-cd C:\Users\Rayia\malware-intel
 
-# Git initialisieren
-git init
-git branch -M main
-
-# Remote setzen (DEIN_USERNAME ersetzen!)
-git remote add origin https://github.com/DEIN_USERNAME/malware-intel.git
 
 # Alle Dateien hinzufügen
 git add .
@@ -60,10 +52,6 @@ git push -u origin main
 1. Gehe zu deinem Repo → **Settings** → **Secrets and variables** → **Actions**
 2. Klick **New repository secret**
 
-| Secret Name | Wert |
-|-------------|------|
-| `MB_API_KEY` | `d6fe83c8859d8a4e009aa173ef3d00514a3c2f005e045fb0` |
-| `VT_API_KEY` | `31293f6395cef98f828f60da27ed80c619b0d77ae0d30e929d2b30625bc9b6d5` |
 
 ---
 
