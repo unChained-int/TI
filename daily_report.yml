@@ -4,7 +4,8 @@ on:
   schedule:
     # Täglich um 06:00 UTC
     - cron: "0 6 * * *"
-  # Manuell auslösbar
+
+  # Manuell auslösbar (mit Dry-Run-Option)
   workflow_dispatch:
     inputs:
       dry_run:
@@ -15,92 +16,115 @@ on:
         options: ["false", "true"]
 
 permissions:
-  contents: write   # Für git push
+  contents: write   # Notwendig für git commit + push
 
 jobs:
   generate-report:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20   # etwas Puffer für VT-Abfragen
 
     steps:
-      # ── 1) Repo auschecken (mit History für Delta-Vergleich)
-      - name: 📥 Checkout
+      # ── 1) Repository auschecken (inkl. History für Delta-Vergleich)
+      - name: 📥 Checkout Repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # ── 2) Python Setup
-      - name: 🐍 Python Setup
+      # ── 2) Python-Umgebung einrichten (ohne pip-Cache → kein requirements.txt nötig)
+      - name: 🐍 Python 3.12 einrichten
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-          cache: pip
+          # !!! Wichtig: cache: pip wurde entfernt – das löst deinen Fehler !!!
 
-      # ── 3) Dependencies
-      - name: 📦 Install dependencies
-        run: pip install requests
+      # ── 3) Abhängigkeiten installieren
+      - name: 📦 Python-Pakete installieren
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
 
-      # ── 4) Report generieren
-      - name: 🦠 Run Malware Report
+      # ── 4) Malware-Report generieren
+      - name: 🦠 MalwareBazaar Report erstellen
         env:
           MB_API_KEY: ${{ secrets.MB_API_KEY }}
           VT_API_KEY: ${{ secrets.VT_API_KEY }}
         run: |
-          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+          set -euo pipefail
+          if [ "${{ inputs.dry_run || github.event.inputs.dry_run }}" = "true" ]; then
+            echo "→ Dry-Run aktiviert (nutzt letztes JSON)"
             python malware_report.py --dry-run
           else
             python malware_report.py
           fi
 
-      # ── 5) Dateien in reports/ Ordner verschieben
-      - name: 📁 Organize output files
+      # ── 5) Ausgabedateien sinnvoll sortieren
+      - name: 📁 Ausgabedateien organisieren
         run: |
-          mkdir -p reports logs iocs raw
-          # Markdown Reports
-          mv MalwareBazaar_24h_Report_*.md reports/ 2>/dev/null || true
-          # Logs
-          mv malware_report.log logs/malware_report_$(date -u +%Y-%m-%d).log 2>/dev/null || true
-          # IOCs
-          mv iocs_*.txt iocs/ 2>/dev/null || true
-          # Raw JSON
-          mv MalwareBazaar_raw_*.json raw/ 2>/dev/null || true
-          # History bleibt im Root
-          echo "=== Dateien ==="
-          ls -la reports/ iocs/ raw/ logs/ 2>/dev/null || true
+          set -euo pipefail
+          mkdir -p reports logs iocs raw web
 
-      # ── 6) Neuesten Report als reports/latest.md verlinken
-      - name: 🔗 Update latest.md symlink
-        run: |
-          LATEST=$(ls reports/MalwareBazaar_24h_Report_*.md 2>/dev/null | sort -r | head -1)
-          if [ -n "$LATEST" ]; then
-            cp "$LATEST" reports/latest.md
-            echo "Latest: $LATEST"
+          # Markdown-Reports verschieben
+          mv MalwareBazaar_24h_Report_*.md reports/ 2>/dev/null || true
+
+          # Log verschieben (mit Datum)
+          if [ -f malware_report.log ]; then
+            mv malware_report.log "logs/malware_report_$(date -u +%Y-%m-%d).log" || true
           fi
 
-      # ── 7) RSS Feed generieren
-      - name: 📡 Generate RSS Feed
+          # IOCs
+          mv iocs_*.txt iocs/ 2>/dev/null || true
+
+          # Raw JSON von MalwareBazaar
+          mv MalwareBazaar_raw_*.json raw/ 2>/dev/null || true
+
+          echo "=== Dateien nach Organisation ==="
+          ls -la reports/ logs/ iocs/ raw/ 2>/dev/null || true
+
+      # ── 6) latest.md erstellen (kopieren statt symlink – Pages mag Symlinks nicht immer)
+      - name: 🔗 Neuesten Report als latest.md bereitstellen
+        run: |
+          LATEST=$(ls -t reports/MalwareBazaar_24h_Report_*.md 2>/dev/null | head -n 1)
+          if [ -n "$LATEST" ]; then
+            cp "$LATEST" reports/latest.md
+            echo "Latest Report: $LATEST → reports/latest.md"
+          else
+            echo "⚠️ Kein Report gefunden – latest.md nicht erstellt"
+          fi
+
+      # ── 7) RSS-Feed generieren
+      - name: 📡 RSS-Feed erstellen
         run: python scripts/generate_rss.py
 
-      # ── 8) Webseite aktualisieren
-      - name: 🌐 Update Web Dashboard
+      # ── 8) Web-Dashboard generieren
+      - name: 🌐 Web-Dashboard aktualisieren
         run: python scripts/generate_web.py
 
-      # ── 9) Git commit & push
-      - name: 📤 Commit & Push
+      # ── 9) Änderungen committen & pushen (nur wenn etwas geändert wurde)
+      - name: 📤 Commit & Push (falls Änderungen vorhanden)
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add reports/ logs/ iocs/ raw/ web/ rss.xml malware_history.json || true
-          git diff --staged --quiet || git commit -m "🦠 Daily Report $(date -u +%Y-%m-%d\ %H:%M\ UTC)"
-          git push
 
-      # ── 10) Artefakte hochladen (30 Tage aufbewahrt)
-      - name: 📎 Upload Artifacts
+          git add -A reports/ logs/ iocs/ raw/ web/ rss.xml malware_history.json || true
+
+          if git diff --staged --quiet; then
+            echo "Keine Änderungen → kein Commit nötig"
+          else
+            git commit -m "🦠 Daily Malware Report Update $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+            echo "Änderungen erfolgreich gepusht"
+          fi
+
+      # ── 10) Wichtige Artefakte für Debugging / Download sichern
+      - name: 📎 Wichtige Dateien als Artifact hochladen
+        if: always()   # auch bei Fehlern Artefakte behalten
         uses: actions/upload-artifact@v4
         with:
           name: malware-report-${{ github.run_number }}
           path: |
             reports/latest.md
-            iocs/
+            reports/*.md
             logs/
-          retention-days: 30
+            iocs/
+            raw/*.json
+          retention-days: 14
