@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>🦠 MalwareBazaar Threat Intelligence Dashboard</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+  <style>
+    :root {
+      --bg:     #0f1117;
+      --card:   #1a1d27;
+      --border: #2a2d3e;
+      --text:   #e2e8f0;
+      --muted:  #64748b;
+      --red:    #ef4444;
+      --orange: #f97316;
+      --yellow: #eab308;
+      --green:  #22c55e;
+      --blue:   #3b82f6;
+      --purple: #a855f7;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; min-height: 100vh; }
+
+    .header {
+      background: linear-gradient(135deg, #1a1d27 0%, #0f1117 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 1.5rem 2rem;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+    }
+    .header-title { display: flex; align-items: center; gap: 0.75rem; }
+    .header-title h1 { font-size: 1.4rem; font-weight: 700; }
+    .header-meta { color: var(--muted); font-size: 0.85rem; }
+    .badge {
+      display: inline-block; padding: 0.2rem 0.6rem;
+      border-radius: 9999px; font-size: 0.75rem; font-weight: 600;
+      background: rgba(59,130,246,0.15); color: var(--blue); border: 1px solid rgba(59,130,246,0.3);
+    }
+    .rss-link {
+      color: var(--orange); text-decoration: none; font-size: 0.85rem;
+      display: flex; align-items: center; gap: 0.4rem;
+    }
+    .rss-link:hover { text-decoration: underline; }
+
+    main { max-width: 1400px; margin: 0 auto; padding: 2rem; display: flex; flex-direction: column; gap: 1.5rem; }
+
+    /* KPI Cards */
+    .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; }
+    .kpi-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px;
+      padding: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;
+    }
+    .kpi-label { color: var(--muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
+    .kpi-value { font-size: 2rem; font-weight: 800; line-height: 1; }
+    .kpi-sub { font-size: 0.75rem; color: var(--muted); }
+    .kpi-red    { color: var(--red);    border-color: rgba(239,68,68,0.3); }
+    .kpi-orange { color: var(--orange); border-color: rgba(249,115,22,0.3); }
+    .kpi-yellow { color: var(--yellow); border-color: rgba(234,179,8,0.3); }
+    .kpi-green  { color: var(--green);  border-color: rgba(34,197,94,0.3); }
+    .kpi-blue   { color: var(--blue);   border-color: rgba(59,130,246,0.3); }
+
+    /* Charts Grid */
+    .charts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 1.5rem; }
+    .chart-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem;
+    }
+    .chart-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 1rem; color: var(--text); }
+    .chart-container { position: relative; height: 260px; }
+
+    /* Tables */
+    .table-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 1.5rem; }
+    .table-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden;
+    }
+    .table-card h3 { padding: 1.25rem 1.5rem; font-size: 0.95rem; font-weight: 600; border-bottom: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; }
+    td, th { padding: 0.65rem 1.5rem; font-size: 0.85rem; border-bottom: 1px solid var(--border); }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: rgba(255,255,255,0.03); }
+    .text-right { text-align: right; }
+    .font-bold { font-weight: 700; }
+    .font-mono { font-family: monospace; }
+    .text-gray-400 { color: #9ca3af; }
+    .text-gray-500 { color: var(--muted); }
+    .text-sm { font-size: 0.8rem; }
+
+    /* Trend Chart */
+    .trend-card {
+      background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem;
+    }
+    .trend-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 1rem; }
+    .trend-container { position: relative; height: 280px; }
+
+    footer {
+      text-align: center; padding: 2rem; color: var(--muted); font-size: 0.8rem;
+      border-top: 1px solid var(--border); margin-top: 1rem;
+    }
+    footer a { color: var(--blue); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-title">
+    <span style="font-size:1.8rem">🦠</span>
+    <div>
+      <h1>MalwareBazaar Threat Intelligence</h1>
+      <div class="header-meta">Report: 06.03.2026 16:57 UTC &nbsp;·&nbsp; <span class="badge">100 Samples</span></div>
+    </div>
+  </div>
+  <div style="display:flex;gap:1rem;align-items:center">
+    <a href="https://unchained-int.github.io/TI/rss.xml" class="rss-link">📡 RSS Feed</a>
+    <a href="https://unchained-int.github.io/TI/reports/latest.md" class="rss-link" target="_blank">📄 Markdown Report</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- KPI Cards -->
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <div class="kpi-label">Samples Total</div>
+      <div class="kpi-value kpi-blue">100</div>
+      <div class="kpi-sub">Letzte 24h (API-Limit 100)</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">🔴 Kritisch</div>
+      <div class="kpi-value kpi-red">57</div>
+      <div class="kpi-sub">Score ≥ 75/100</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">🟠 Hoch</div>
+      <div class="kpi-value kpi-orange">5</div>
+      <div class="kpi-sub">Score 55–74</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">🟡 Mittel</div>
+      <div class="kpi-value kpi-yellow">2</div>
+      <div class="kpi-sub">Score 35–54</div>
+    </div>
+    <div class="kpi-card">
+      <div class="kpi-label">🟢 Niedrig</div>
+      <div class="kpi-value kpi-green">36</div>
+      <div class="kpi-sub">Score &lt; 35</div>
+    </div>
+  </div>
+
+  <!-- Charts -->
+  <div class="charts-grid">
+    <div class="chart-card">
+      <h3>📊 Risiko-Verteilung</h3>
+      <div class="chart-container"><canvas id="riskChart"></canvas></div>
+    </div>
+    <div class="chart-card">
+      <h3>📁 Top Dateitypen</h3>
+      <div class="chart-container"><canvas id="ftChart"></canvas></div>
+    </div>
+  </div>
+
+  <!-- Trend Chart -->
+  <div class="trend-card">
+    <h3>📈 Familien-Trend (letzte 14 Runs)</h3>
+    <div class="trend-container"><canvas id="trendChart"></canvas></div>
+  </div>
+
+  <!-- Tabellen -->
+  <div class="table-grid">
+    <div class="table-card">
+      <h3>🦠 Top Malware-Familien</h3>
+      <table>
+        <thead><tr><th style="width:2rem">#</th><th>Familie</th><th class="text-right">Anz.</th><th class="text-right">Anteil</th></tr></thead>
+        <tbody><tr><td class="text-gray-500">1</td><td class="font-mono text-sm">Mirai</td><td class="text-right font-bold">50</td><td class="text-right text-gray-400">50.0%</td></tr>
+<tr><td class="text-gray-500">2</td><td class="font-mono text-sm">unbekannt / keine Signatur</td><td class="text-right font-bold">28</td><td class="text-right text-gray-400">28.0%</td></tr>
+<tr><td class="text-gray-500">3</td><td class="font-mono text-sm">GuLoader</td><td class="text-right font-bold">5</td><td class="text-right text-gray-400">5.0%</td></tr>
+<tr><td class="text-gray-500">4</td><td class="font-mono text-sm">Formbook</td><td class="text-right font-bold">5</td><td class="text-right text-gray-400">5.0%</td></tr>
+<tr><td class="text-gray-500">5</td><td class="font-mono text-sm">AgentTesla</td><td class="text-right font-bold">3</td><td class="text-right text-gray-400">3.0%</td></tr>
+<tr><td class="text-gray-500">6</td><td class="font-mono text-sm">RemcosRAT</td><td class="text-right font-bold">2</td><td class="text-right text-gray-400">2.0%</td></tr>
+<tr><td class="text-gray-500">7</td><td class="font-mono text-sm">PhantomStealer</td><td class="text-right font-bold">2</td><td class="text-right text-gray-400">2.0%</td></tr>
+<tr><td class="text-gray-500">8</td><td class="font-mono text-sm">SalatStealer</td><td class="text-right font-bold">1</td><td class="text-right text-gray-400">1.0%</td></tr>
+<tr><td class="text-gray-500">9</td><td class="font-mono text-sm">MassLogger</td><td class="text-right font-bold">1</td><td class="text-right text-gray-400">1.0%</td></tr>
+<tr><td class="text-gray-500">10</td><td class="font-mono text-sm">Expiro</td><td class="text-right font-bold">1</td><td class="text-right text-gray-400">1.0%</td></tr>
+</tbody>
+      </table>
+    </div>
+    <div class="table-card">
+      <h3>💻 Betroffene Plattformen</h3>
+      <table>
+        <thead><tr><th>Plattform</th><th class="text-right">Anz.</th><th class="text-right">Anteil</th></tr></thead>
+        <tbody><tr><td>🐧 **Linux**</td><td class="text-right font-bold">51</td><td class="text-right text-gray-400">51.0%</td></tr>
+<tr><td>🪟 **Windows**</td><td class="text-right font-bold">44</td><td class="text-right text-gray-400">44.0%</td></tr>
+<tr><td>📦 **Archiv**</td><td class="text-right font-bold">3</td><td class="text-right text-gray-400">3.0%</td></tr>
+<tr><td>❓ **Unbekannt**</td><td class="text-right font-bold">1</td><td class="text-right text-gray-400">1.0%</td></tr>
+<tr><td>📄 **Dokument**</td><td class="text-right font-bold">1</td><td class="text-right text-gray-400">1.0%</td></tr>
+</tbody>
+      </table>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  Daten: <a href="https://bazaar.abuse.ch" target="_blank">MalwareBazaar (abuse.ch)</a> ×
+  <a href="https://virustotal.com" target="_blank">VirusTotal</a> &nbsp;·&nbsp;
+  Nur für Threat-Intelligence und Bildungszwecke &nbsp;·&nbsp;
+  <a href="https://unchained-int.github.io/TI/rss.xml">RSS</a>
+</footer>
+
+<script>
+const HISTORY = {"labels": ["2026-03-06"], "datasets": [{"label": "Mirai", "data": [50], "borderColor": "#ef4444", "backgroundColor": "#ef444433", "tension": 0.4}, {"label": "unbekannt / keine Signatur", "data": [28], "borderColor": "#f97316", "backgroundColor": "#f9731633", "tension": 0.4}, {"label": "GuLoader", "data": [5], "borderColor": "#eab308", "backgroundColor": "#eab30833", "tension": 0.4}, {"label": "Formbook", "data": [5], "borderColor": "#22c55e", "backgroundColor": "#22c55e33", "tension": 0.4}, {"label": "AgentTesla", "data": [3], "borderColor": "#3b82f6", "backgroundColor": "#3b82f633", "tension": 0.4}]};
+const FT      = {"labels": ["elf", "exe", "sh", "zip", "img", "xlsx"], "data": [45.0, 44.0, 6.0, 3.0, 1.0, 1.0]};
+const RISK    = {"labels": ["\ud83d\udd34 Kritisch", "\ud83d\udfe0 Hoch", "\ud83d\udfe1 Mittel", "\ud83d\udfe2 Niedrig"], "data": [57, 5, 2, 36], "colors": ["#ef4444", "#f97316", "#eab308", "#22c55e"]};
+
+const chartDefaults = {
+  plugins: {
+    legend: { labels: { color: '#e2e8f0', font: { size: 12 } } },
+  },
+  scales: {
+    x: { ticks: { color: '#64748b' }, grid: { color: '#2a2d3e' } },
+    y: { ticks: { color: '#64748b' }, grid: { color: '#2a2d3e' } },
+  },
+};
+
+// Risiko Doughnut
+new Chart(document.getElementById('riskChart'), {
+  type: 'doughnut',
+  data: {
+    labels: RISK.labels,
+    datasets: [{ data: RISK.data, backgroundColor: RISK.colors, borderWidth: 2, borderColor: '#1a1d27' }],
+  },
+  options: {
+    plugins: {
+      legend: { position: 'right', labels: { color: '#e2e8f0' } },
+    },
+    cutout: '65%',
+  },
+});
+
+// Dateitypen Bar
+new Chart(document.getElementById('ftChart'), {
+  type: 'bar',
+  data: {
+    labels: FT.labels,
+    datasets: [{
+      label: 'Samples',
+      data: FT.data,
+      backgroundColor: '#3b82f633',
+      borderColor: '#3b82f6',
+      borderWidth: 1,
+    }],
+  },
+  options: {
+    ...chartDefaults,
+    plugins: { legend: { display: false } },
+    scales: {
+      x: { ticks: { color: '#64748b' }, grid: { color: '#2a2d3e' } },
+      y: { ticks: { color: '#64748b' }, grid: { color: '#2a2d3e' } },
+    },
+  },
+});
+
+// Trend Line
+if (HISTORY.labels && HISTORY.labels.length > 0) {
+  new Chart(document.getElementById('trendChart'), {
+    type: 'line',
+    data: { labels: HISTORY.labels, datasets: HISTORY.datasets },
+    options: {
+      ...chartDefaults,
+      plugins: {
+        legend: { labels: { color: '#e2e8f0' } },
+      },
+      scales: {
+        x: { ticks: { color: '#64748b' }, grid: { color: '#2a2d3e' } },
+        y: { ticks: { color: '#64748b' }, grid: { color: '#2a2d3e' }, beginAtZero: true },
+      },
+    },
+  });
+}
+</script>
+</body>
+</html>
