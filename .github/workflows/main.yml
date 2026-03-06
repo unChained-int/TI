@@ -1,0 +1,106 @@
+name: 🦠 MalwareBazaar Daily Report
+
+on:
+  schedule:
+    # Täglich um 06:00 UTC
+    - cron: "0 6 * * *"
+  # Manuell auslösbar
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry-Run (kein API-Call, letztes JSON nutzen)"
+        required: false
+        default: "false"
+        type: choice
+        options: ["false", "true"]
+
+permissions:
+  contents: write   # Für git push
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      # ── 1) Repo auschecken (mit History für Delta-Vergleich)
+      - name: 📥 Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # ── 2) Python Setup
+      - name: 🐍 Python Setup
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      # ── 3) Dependencies
+      - name: 📦 Install dependencies
+        run: pip install requests
+
+      # ── 4) Report generieren
+      - name: 🦠 Run Malware Report
+        env:
+          MB_API_KEY: ${{ secrets.MB_API_KEY }}
+          VT_API_KEY: ${{ secrets.VT_API_KEY }}
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" = "true" ]; then
+            python malware_report.py --dry-run
+          else
+            python malware_report.py
+          fi
+
+      # ── 5) Dateien in reports/ Ordner verschieben
+      - name: 📁 Organize output files
+        run: |
+          mkdir -p reports logs iocs raw
+          # Markdown Reports
+          mv MalwareBazaar_24h_Report_*.md reports/ 2>/dev/null || true
+          # Logs
+          mv malware_report.log logs/malware_report_$(date -u +%Y-%m-%d).log 2>/dev/null || true
+          # IOCs
+          mv iocs_*.txt iocs/ 2>/dev/null || true
+          # Raw JSON
+          mv MalwareBazaar_raw_*.json raw/ 2>/dev/null || true
+          # History bleibt im Root
+          echo "=== Dateien ==="
+          ls -la reports/ iocs/ raw/ logs/ 2>/dev/null || true
+
+      # ── 6) Neuesten Report als reports/latest.md verlinken
+      - name: 🔗 Update latest.md symlink
+        run: |
+          LATEST=$(ls reports/MalwareBazaar_24h_Report_*.md 2>/dev/null | sort -r | head -1)
+          if [ -n "$LATEST" ]; then
+            cp "$LATEST" reports/latest.md
+            echo "Latest: $LATEST"
+          fi
+
+      # ── 7) RSS Feed generieren
+      - name: 📡 Generate RSS Feed
+        run: python scripts/generate_rss.py
+
+      # ── 8) Webseite aktualisieren
+      - name: 🌐 Update Web Dashboard
+        run: python scripts/generate_web.py
+
+      # ── 9) Git commit & push
+      - name: 📤 Commit & Push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/ logs/ iocs/ raw/ web/ rss.xml malware_history.json || true
+          git diff --staged --quiet || git commit -m "🦠 Daily Report $(date -u +%Y-%m-%d\ %H:%M\ UTC)"
+          git push
+
+      # ── 10) Artefakte hochladen (30 Tage aufbewahrt)
+      - name: 📎 Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: malware-report-${{ github.run_number }}
+          path: |
+            reports/latest.md
+            iocs/
+            logs/
+          retention-days: 30
