@@ -1,35 +1,515 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>🦠 MalwareBazaar Threat Intelligence Feed</title>
+    <title>MalwareBazaar Threat Intel</title>
     <link>https://unchained-int.github.io/TI</link>
-    <description>Automatisierter täglicher Malware-Report – MalwareBazaar × VirusTotal</description>
+    <description>Automatisierter Malware-Feed – neue Samples, Familien, VT-Ergebnisse, IOCs. Daten von MalwareBazaar (abuse.ch) x VirusTotal.</description>
     <language>de-DE</language>
-    <lastBuildDate>Sat, 07 Mar 2026 06:27:44 +0000</lastBuildDate>
-    <ttl>1440</ttl>
+    <lastBuildDate>Sat, 07 Mar 2026 15:48:03 +0000</lastBuildDate>
+    <ttl>144</ttl>
     <atom:link href="https://unchained-int.github.io/TI/rss.xml" rel="self" type="application/rss+xml"/>
-    <image>
-      <url>https://bazaar.abuse.ch/img/mbazaar.png</url>
-      <title>MalwareBazaar Threat Intel</title>
-      <link>https://unchained-int.github.io/TI</link>
-    </image>
     <item>
-      <title>🦠 MalwareBazaar Report 07.03.2026 06:27 UTC – ? Kritisch</title>
-      <link>https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-03-07_06-27-UTC.md</link>
-      <description>Metrik: Wert | Analysierte Samples: **100** | 🔴 Kritische Samples: **54** | Höchster Risiko-Score: **90.5/100** (`a557d96f80d3cbe6…`) | Dominanter Dateityp: **elf** (47 Samples) | Häufigste Familie: **Mirai**</description>
-      <pubDate>Sat, 07 Mar 2026 06:27:00 +0000</pubDate>
-      <guid isPermaLink="true">https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-03-07_06-27-UTC.md</guid>
+      <title>MalwareBazaar – 07.03.2026 15:48 UTC – 100 neue Samples – 40 kritisch – unbekannt</title>
+      <link>https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-03-07_15-48-UTC.md</link>
+      <description>&lt;p&gt;&lt;strong&gt;Stand:&lt;/strong&gt; 07.03.2026 15:48 UTC&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Neue Samples dieser Session:&lt;/strong&gt; 100&lt;/p&gt;
+&lt;h3&gt;Risiko-Verteilung&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;🔴 Kritisch: &lt;strong&gt;40&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🟠 Hoch: &lt;strong&gt;10&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🟡 Mittel: &lt;strong&gt;6&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🟢 Niedrig: &lt;strong&gt;44&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Höchster Score:&lt;/strong&gt; 89.9/100 (5db92f1296c7d714…)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Häufigste Familie:&lt;/strong&gt; unbekannt&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Häufigster Typ:&lt;/strong&gt; ?&lt;/p&gt;
+&lt;h3&gt;VirusTotal-Ergebnisse&lt;/h3&gt;
+&lt;h4&gt;711d9427ee43bc2186b9…&lt;/h4&gt;
+&lt;p&gt;Erkannt: &lt;strong&gt;22/75&lt;/strong&gt; (29.3%) – &lt;em&gt;Trojan.Win32.Generic.4!c&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Erkennende Engines (22):&lt;/p&gt;
+&lt;table&gt;&lt;tr&gt;&lt;th&gt;Engine&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;| APEX&lt;/td&gt;&lt;td&gt;&lt;code&gt;Malicious&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;AhnLab-V3&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan/Win.Loader.C5666998&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;CTX&lt;/td&gt;&lt;td&gt;&lt;code&gt;dll.trojan.generic&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;ClamAV&lt;/td&gt;&lt;td&gt;&lt;code&gt;Win.Malware.TernDoor-10058445-0&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;CrowdStrike&lt;/td&gt;&lt;td&gt;&lt;code&gt;win/malicious_confidence_100% (W)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Cynet&lt;/td&gt;&lt;td&gt;&lt;code&gt;Malicious (score: 100)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;DeepInstinct&lt;/td&gt;&lt;td&gt;&lt;code&gt;MALICIOUS&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;ESET-NOD32&lt;/td&gt;&lt;td&gt;&lt;code&gt;Win64/Agent.FAY trojan&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Google&lt;/td&gt;&lt;td&gt;&lt;code&gt;Detected&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Ikarus&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan.Win64.Agent&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Lionic&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan.Win32.Generic.4!c&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;MaxSecure&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan.Malware.300983.susgen&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;McAfeeD&lt;/td&gt;&lt;td&gt;&lt;code&gt;ti!711D9427EE43&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Microsoft&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan:Win32/Etset!rfn&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Paloalto&lt;/td&gt;&lt;td&gt;&lt;code&gt;generic.ml&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Rising&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan.Agent!8.B1E (CLOUD)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Sophos&lt;/td&gt;&lt;td&gt;&lt;code&gt;Mal/Generic-S&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Symantec&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan Horse&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tencent&lt;/td&gt;&lt;td&gt;&lt;code&gt;Malware.Win32.Gencirc.149da2ab&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;TrellixENS&lt;/td&gt;&lt;td&gt;&lt;code&gt;Artemis!E81E06A98494&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Varist&lt;/td&gt;&lt;td&gt;&lt;code&gt;W64/ABTrojan.KJDV-0255&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;alibabacloud&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan:Win/Agent.FMT&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;h4&gt;62d0b74a54a7284ed710…&lt;/h4&gt;
+&lt;p&gt;Erkannt: &lt;strong&gt;22/76&lt;/strong&gt; (28.9%) – &lt;em&gt;Spyware ( 006da7941 )&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Erkennende Engines (22):&lt;/p&gt;
+&lt;table&gt;&lt;tr&gt;&lt;th&gt;Engine&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;| APEX&lt;/td&gt;&lt;td&gt;&lt;code&gt;Malicious&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;AVG&lt;/td&gt;&lt;td&gt;&lt;code&gt;Win64:MalwareX-gen [Spy]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;AhnLab-V3&lt;/td&gt;&lt;td&gt;&lt;code&gt;Spyware/Win.MalwareX-gen.R762015&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Alibaba&lt;/td&gt;&lt;td&gt;&lt;code&gt;Backdoor:Win64/MalwareX.7f884297&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Antiy-AVL&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan[Backdoor]/Win32.Agent&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Avast&lt;/td&gt;&lt;td&gt;&lt;code&gt;Win64:MalwareX-gen [Spy]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Bkav&lt;/td&gt;&lt;td&gt;&lt;code&gt;W64.AIDetectMalware&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;CrowdStrike&lt;/td&gt;&lt;td&gt;&lt;code&gt;win/malicious_confidence_90% (D)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Cylance&lt;/td&gt;&lt;td&gt;&lt;code&gt;Unsafe&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Cynet&lt;/td&gt;&lt;td&gt;&lt;code&gt;Malicious (score: 99)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;ESET-NOD32&lt;/td&gt;&lt;td&gt;&lt;code&gt;Win64/Spy.Agent.ACB trojan&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Elastic&lt;/td&gt;&lt;td&gt;&lt;code&gt;malicious (high confidence)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Google&lt;/td&gt;&lt;td&gt;&lt;code&gt;Detected&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;K7AntiVirus&lt;/td&gt;&lt;td&gt;&lt;code&gt;Spyware ( 006da7941 )&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;K7GW&lt;/td&gt;&lt;td&gt;&lt;code&gt;Spyware ( 006da7941 )&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Kaspersky&lt;/td&gt;&lt;td&gt;&lt;code&gt;Backdoor.Win32.Agent.myxdzn&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;MaxSecure&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan.Malware.300983.susgen&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;McAfeeD&lt;/td&gt;&lt;td&gt;&lt;code&gt;ti!62D0B74A54A7&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Microsoft&lt;/td&gt;&lt;td&gt;&lt;code&gt;Program:Win32/Contebrew.A!ml&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Rising&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan.Mint!8.728D (TFE:5:YAKg2Rw5QmC)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Symantec&lt;/td&gt;&lt;td&gt;&lt;code&gt;ML.Attribute.HighConfidence&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Varist&lt;/td&gt;&lt;td&gt;&lt;code&gt;W64/Agent.LWN.gen!Eldorado&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;h4&gt;0f60c1c23bda9eb92137…&lt;/h4&gt;
+&lt;p&gt;Erkannt: &lt;strong&gt;19/76&lt;/strong&gt; (25.0%) – &lt;em&gt;BV:Agent-BNQ [Trj]&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Erkennende Engines (19):&lt;/p&gt;
+&lt;table&gt;&lt;tr&gt;&lt;th&gt;Engine&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;| AVG&lt;/td&gt;&lt;td&gt;&lt;code&gt;BV:Agent-BNQ [Trj]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;AhnLab-V3&lt;/td&gt;&lt;td&gt;&lt;code&gt;Downloader/Shell.Generic.S1990&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Avast&lt;/td&gt;&lt;td&gt;&lt;code&gt;BV:Agent-BNQ [Trj]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Avira&lt;/td&gt;&lt;td&gt;&lt;code&gt;BASH/Dldr.G4&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Cynet&lt;/td&gt;&lt;td&gt;&lt;code&gt;Malicious (score: 99)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;DrWeb&lt;/td&gt;&lt;td&gt;&lt;code&gt;Linux.MulDrop.187&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;ESET-NOD32&lt;/td&gt;&lt;td&gt;&lt;code&gt;Linux/Agent.OG trojan&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;F-Secure&lt;/td&gt;&lt;td&gt;&lt;code&gt;Malware.BASH/Dldr.G4&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Fortinet&lt;/td&gt;&lt;td&gt;&lt;code&gt;BASH/EncystPHP.A!tr&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Google&lt;/td&gt;&lt;td&gt;&lt;code&gt;Detected&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Kaspersky&lt;/td&gt;&lt;td&gt;&lt;code&gt;HEUR:Trojan-Downloader.Shell.Agent.bc&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Microsoft&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan:Script/Wacatac.C!ml&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;NANO-Antivirus&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan.Script.Dropper.kpvdnu&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Rising&lt;/td&gt;&lt;td&gt;&lt;code&gt;Downloader.Agent/BASH!1.13B74 (CLASSIC)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Sophos&lt;/td&gt;&lt;td&gt;&lt;code&gt;Linux/Dldr-YZ&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Tencent&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan-DL.Linux.Agent.505004&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Varist&lt;/td&gt;&lt;td&gt;&lt;code&gt;Unix/Agent.VA&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;ZoneAlarm&lt;/td&gt;&lt;td&gt;&lt;code&gt;Linux/Dldr-YZ&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;huorong&lt;/td&gt;&lt;td&gt;&lt;code&gt;TrojanDownloader/Linux.Agent.en&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;h4&gt;81ab59bf327a28416e39…&lt;/h4&gt;
+&lt;p&gt;Erkannt: &lt;strong&gt;27/76&lt;/strong&gt; (35.5%) – &lt;em&gt;Win64:Evo-gen [Trj]&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Erkennende Engines (27):&lt;/p&gt;
+&lt;table&gt;&lt;tr&gt;&lt;th&gt;Engine&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;| APEX&lt;/td&gt;&lt;td&gt;&lt;code&gt;Malicious&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;AVG&lt;/td&gt;&lt;td&gt;&lt;code&gt;Win64:Evo-gen [Trj]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;AhnLab-V3&lt;/td&gt;&lt;td&gt;&lt;code&gt;Malware/Win.Crypt.C5847880&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Antiy-AVL&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan[PSW]/Win32.Convagent&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Avast&lt;/td&gt;&lt;td&gt;&lt;code&gt;Win64:Evo-gen [Trj]&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Avira&lt;/td&gt;&lt;td&gt;&lt;code&gt;TR/Crypt.EPACK.Gen2&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Bkav&lt;/td&gt;&lt;td&gt;&lt;code&gt;W64.AIDetectMalware&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;CrowdStrike&lt;/td&gt;&lt;td&gt;&lt;code&gt;win/malicious_confidence_90% (D)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Cylance&lt;/td&gt;&lt;td&gt;&lt;code&gt;Unsafe&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Cynet&lt;/td&gt;&lt;td&gt;&lt;code&gt;Malicious (score: 100)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;DeepInstinct&lt;/td&gt;&lt;td&gt;&lt;code&gt;MALICIOUS&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;DrWeb&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan.PWS.Stealer.44341&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;ESET-NOD32&lt;/td&gt;&lt;td&gt;&lt;code&gt;Win64/Kryptik.GJP trojan&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Elastic&lt;/td&gt;&lt;td&gt;&lt;code&gt;malicious (high confidence)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;F-Secure&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan.TR/Crypt.EPACK.Gen2&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Google&lt;/td&gt;&lt;td&gt;&lt;code&gt;Detected&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Kaspersky&lt;/td&gt;&lt;td&gt;&lt;code&gt;VHO:Trojan-PSW.Win32.Convagent.gen&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Kingsoft&lt;/td&gt;&lt;td&gt;&lt;code&gt;malware.kb.a.989&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Malwarebytes&lt;/td&gt;&lt;td&gt;&lt;code&gt;Malware.AI.3384135772&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;McAfeeD&lt;/td&gt;&lt;td&gt;&lt;code&gt;ti!81AB59BF327A&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Microsoft&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan:Win64/ArkeiStealer.ABSA!MTB&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Rising&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan.SantaStealer!8.1D750 (TFE:5:ufeQnCmagBG)&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Sangfor&lt;/td&gt;&lt;td&gt;&lt;code&gt;Trojan.Win32.Save.a&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;SentinelOne&lt;/td&gt;&lt;td&gt;&lt;code&gt;Static AI - Suspicious PE&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Symantec&lt;/td&gt;&lt;td&gt;&lt;code&gt;ML.Attribute.HighConfidence&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Varist&lt;/td&gt;&lt;td&gt;&lt;code&gt;W64/Agent.LUT.gen!Eldorado&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Webroot&lt;/td&gt;&lt;td&gt;&lt;code&gt;Win.Infostealer.Gen&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;h4&gt;4b5ed326656e47f4e9e8…&lt;/h4&gt;
+&lt;p&gt;Erkannt: &lt;strong&gt;0/76&lt;/strong&gt; (0.0%) – &lt;em&gt;–&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Erkennende Engines (5):&lt;/p&gt;
+&lt;table&gt;&lt;tr&gt;&lt;th&gt;Engine&lt;/th&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;| 15:45 | [711d9427ee43…](https://bazaar.abuse.ch/sample/711d9427ee43bc2186b9124f31cba2db5f54ec9a0d56dc2948e1a4377bada289/)&lt;/td&gt;&lt;td&gt;&lt;code&gt;exe&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;| 15:36 | [62d0b74a54a7…](https://bazaar.abuse.ch/sample/62d0b74a54a7284ed71024b2076fb129e1c20df2d6f37342b236d1c70765a44e/)&lt;/td&gt;&lt;td&gt;&lt;code&gt;exe&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;| 15:35 | [0f60c1c23bda…](https://bazaar.abuse.ch/sample/0f60c1c23bda9eb9213713e8f21470de0da0d4b67b46e6c27c9f8007bafcef74/)&lt;/td&gt;&lt;td&gt;&lt;code&gt;sh&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;| 15:27 | [81ab59bf327a…](https://bazaar.abuse.ch/sample/81ab59bf327a28416e39866c2256dd54820e9c5fdaee411688f86a6baf648ace/)&lt;/td&gt;&lt;td&gt;&lt;code&gt;exe&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;| 15:21 | [4b5ed326656e…](https://bazaar.abuse.ch/sample/4b5ed326656e47f4e9e8a301768f4b2ee3056a7dd1c47b108cfc4517ec3a074a/)&lt;/td&gt;&lt;td&gt;&lt;code&gt;exe&lt;/code&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+&lt;h3&gt;MITRE ATT&amp;amp;CK Taktiken&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Mirai: 13 Samples&lt;/li&gt;
+&lt;li&gt;EternalRocks: 6 Samples&lt;/li&gt;
+&lt;li&gt;Smoke Loader: 4 Samples&lt;/li&gt;
+&lt;li&gt;AsyncRAT: 4 Samples&lt;/li&gt;
+&lt;li&gt;ValleyRAT: 2 Samples&lt;/li&gt;
+&lt;li&gt;CHStealer: 1 Samples&lt;/li&gt;
+&lt;li&gt;Efimer: 1 Samples&lt;/li&gt;
+&lt;li&gt;Gozi: 1 Samples&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Änderungen gegenüber letztem Run&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;neu: **unbekannt** (65)&lt;/li&gt;
+&lt;li&gt;neu: **EternalRocks** (6)&lt;/li&gt;
+&lt;li&gt;neu: **Smoke Loader** (4)&lt;/li&gt;
+&lt;li&gt;neu: **AsyncRAT** (4)&lt;/li&gt;
+&lt;li&gt;neu: **ValleyRAT** (2)&lt;/li&gt;
+&lt;li&gt;neu: **CHStealer** (1)&lt;/li&gt;
+&lt;li&gt;neu: **Efimer** (1)&lt;/li&gt;
+&lt;li&gt;neu: **Gozi** (1)&lt;/li&gt;
+&lt;li&gt;neu: **ScarfaceStealer** (1)&lt;/li&gt;
+&lt;li&gt;weg: **unbekannt / keine Signatur** (war 28)&lt;/li&gt;
+&lt;li&gt;weg: **GuLoader** (war 5)&lt;/li&gt;
+&lt;li&gt;weg: **Formbook** (war 5)&lt;/li&gt;
+&lt;li&gt;weg: **RemcosRAT** (war 2)&lt;/li&gt;
+&lt;li&gt;weg: **PhantomStealer** (war 2)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Sample-Hashes (Auszug)&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/5db92f1296c7d7"&gt;5db92f1296c7d7…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/2f354cfa595f10"&gt;2f354cfa595f10…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/48c8cc4947d4ef"&gt;48c8cc4947d4ef…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/44d829e0df1eb9"&gt;44d829e0df1eb9…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/1faec8bc823455"&gt;1faec8bc823455…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/fe3ce9e4452ff3"&gt;fe3ce9e4452ff3…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/5378c81fea73c0"&gt;5378c81fea73c0…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/1b96e64900dff8"&gt;1b96e64900dff8…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/ea47cebe2fbbf0"&gt;ea47cebe2fbbf0…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/72c08e044dd427"&gt;72c08e044dd427…&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-03-07_15-48-UTC.md"&gt;→ Vollständiger Report (Markdown)&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><strong>Stand:</strong> 07.03.2026 15:48 UTC</p>
+<p><strong>Neue Samples dieser Session:</strong> 100</p>
+<h3>Risiko-Verteilung</h3><ul>
+<li>🔴 Kritisch: <strong>40</strong></li>
+<li>🟠 Hoch: <strong>10</strong></li>
+<li>🟡 Mittel: <strong>6</strong></li>
+<li>🟢 Niedrig: <strong>44</strong></li>
+</ul>
+<p><strong>Höchster Score:</strong> 89.9/100 (5db92f1296c7d714…)</p>
+<p><strong>Häufigste Familie:</strong> unbekannt</p>
+<p><strong>Häufigster Typ:</strong> ?</p>
+<h3>VirusTotal-Ergebnisse</h3>
+<h4>711d9427ee43bc2186b9…</h4>
+<p>Erkannt: <strong>22/75</strong> (29.3%) – <em>Trojan.Win32.Generic.4!c</em></p>
+<p>Erkennende Engines (22):</p>
+<table><tr><th>Engine</th><th>Name</th></tr>
+<tr><td>| APEX</td><td><code>Malicious</code></td></tr>
+<tr><td>AhnLab-V3</td><td><code>Trojan/Win.Loader.C5666998</code></td></tr>
+<tr><td>CTX</td><td><code>dll.trojan.generic</code></td></tr>
+<tr><td>ClamAV</td><td><code>Win.Malware.TernDoor-10058445-0</code></td></tr>
+<tr><td>CrowdStrike</td><td><code>win/malicious_confidence_100% (W)</code></td></tr>
+<tr><td>Cynet</td><td><code>Malicious (score: 100)</code></td></tr>
+<tr><td>DeepInstinct</td><td><code>MALICIOUS</code></td></tr>
+<tr><td>ESET-NOD32</td><td><code>Win64/Agent.FAY trojan</code></td></tr>
+<tr><td>Google</td><td><code>Detected</code></td></tr>
+<tr><td>Ikarus</td><td><code>Trojan.Win64.Agent</code></td></tr>
+<tr><td>Lionic</td><td><code>Trojan.Win32.Generic.4!c</code></td></tr>
+<tr><td>MaxSecure</td><td><code>Trojan.Malware.300983.susgen</code></td></tr>
+<tr><td>McAfeeD</td><td><code>ti!711D9427EE43</code></td></tr>
+<tr><td>Microsoft</td><td><code>Trojan:Win32/Etset!rfn</code></td></tr>
+<tr><td>Paloalto</td><td><code>generic.ml</code></td></tr>
+<tr><td>Rising</td><td><code>Trojan.Agent!8.B1E (CLOUD)</code></td></tr>
+<tr><td>Sophos</td><td><code>Mal/Generic-S</code></td></tr>
+<tr><td>Symantec</td><td><code>Trojan Horse</code></td></tr>
+<tr><td>Tencent</td><td><code>Malware.Win32.Gencirc.149da2ab</code></td></tr>
+<tr><td>TrellixENS</td><td><code>Artemis!E81E06A98494</code></td></tr>
+<tr><td>Varist</td><td><code>W64/ABTrojan.KJDV-0255</code></td></tr>
+<tr><td>alibabacloud</td><td><code>Trojan:Win/Agent.FMT</code></td></tr>
+</table>
+<h4>62d0b74a54a7284ed710…</h4>
+<p>Erkannt: <strong>22/76</strong> (28.9%) – <em>Spyware ( 006da7941 )</em></p>
+<p>Erkennende Engines (22):</p>
+<table><tr><th>Engine</th><th>Name</th></tr>
+<tr><td>| APEX</td><td><code>Malicious</code></td></tr>
+<tr><td>AVG</td><td><code>Win64:MalwareX-gen [Spy]</code></td></tr>
+<tr><td>AhnLab-V3</td><td><code>Spyware/Win.MalwareX-gen.R762015</code></td></tr>
+<tr><td>Alibaba</td><td><code>Backdoor:Win64/MalwareX.7f884297</code></td></tr>
+<tr><td>Antiy-AVL</td><td><code>Trojan[Backdoor]/Win32.Agent</code></td></tr>
+<tr><td>Avast</td><td><code>Win64:MalwareX-gen [Spy]</code></td></tr>
+<tr><td>Bkav</td><td><code>W64.AIDetectMalware</code></td></tr>
+<tr><td>CrowdStrike</td><td><code>win/malicious_confidence_90% (D)</code></td></tr>
+<tr><td>Cylance</td><td><code>Unsafe</code></td></tr>
+<tr><td>Cynet</td><td><code>Malicious (score: 99)</code></td></tr>
+<tr><td>ESET-NOD32</td><td><code>Win64/Spy.Agent.ACB trojan</code></td></tr>
+<tr><td>Elastic</td><td><code>malicious (high confidence)</code></td></tr>
+<tr><td>Google</td><td><code>Detected</code></td></tr>
+<tr><td>K7AntiVirus</td><td><code>Spyware ( 006da7941 )</code></td></tr>
+<tr><td>K7GW</td><td><code>Spyware ( 006da7941 )</code></td></tr>
+<tr><td>Kaspersky</td><td><code>Backdoor.Win32.Agent.myxdzn</code></td></tr>
+<tr><td>MaxSecure</td><td><code>Trojan.Malware.300983.susgen</code></td></tr>
+<tr><td>McAfeeD</td><td><code>ti!62D0B74A54A7</code></td></tr>
+<tr><td>Microsoft</td><td><code>Program:Win32/Contebrew.A!ml</code></td></tr>
+<tr><td>Rising</td><td><code>Trojan.Mint!8.728D (TFE:5:YAKg2Rw5QmC)</code></td></tr>
+<tr><td>Symantec</td><td><code>ML.Attribute.HighConfidence</code></td></tr>
+<tr><td>Varist</td><td><code>W64/Agent.LWN.gen!Eldorado</code></td></tr>
+</table>
+<h4>0f60c1c23bda9eb92137…</h4>
+<p>Erkannt: <strong>19/76</strong> (25.0%) – <em>BV:Agent-BNQ [Trj]</em></p>
+<p>Erkennende Engines (19):</p>
+<table><tr><th>Engine</th><th>Name</th></tr>
+<tr><td>| AVG</td><td><code>BV:Agent-BNQ [Trj]</code></td></tr>
+<tr><td>AhnLab-V3</td><td><code>Downloader/Shell.Generic.S1990</code></td></tr>
+<tr><td>Avast</td><td><code>BV:Agent-BNQ [Trj]</code></td></tr>
+<tr><td>Avira</td><td><code>BASH/Dldr.G4</code></td></tr>
+<tr><td>Cynet</td><td><code>Malicious (score: 99)</code></td></tr>
+<tr><td>DrWeb</td><td><code>Linux.MulDrop.187</code></td></tr>
+<tr><td>ESET-NOD32</td><td><code>Linux/Agent.OG trojan</code></td></tr>
+<tr><td>F-Secure</td><td><code>Malware.BASH/Dldr.G4</code></td></tr>
+<tr><td>Fortinet</td><td><code>BASH/EncystPHP.A!tr</code></td></tr>
+<tr><td>Google</td><td><code>Detected</code></td></tr>
+<tr><td>Kaspersky</td><td><code>HEUR:Trojan-Downloader.Shell.Agent.bc</code></td></tr>
+<tr><td>Microsoft</td><td><code>Trojan:Script/Wacatac.C!ml</code></td></tr>
+<tr><td>NANO-Antivirus</td><td><code>Trojan.Script.Dropper.kpvdnu</code></td></tr>
+<tr><td>Rising</td><td><code>Downloader.Agent/BASH!1.13B74 (CLASSIC)</code></td></tr>
+<tr><td>Sophos</td><td><code>Linux/Dldr-YZ</code></td></tr>
+<tr><td>Tencent</td><td><code>Trojan-DL.Linux.Agent.505004</code></td></tr>
+<tr><td>Varist</td><td><code>Unix/Agent.VA</code></td></tr>
+<tr><td>ZoneAlarm</td><td><code>Linux/Dldr-YZ</code></td></tr>
+<tr><td>huorong</td><td><code>TrojanDownloader/Linux.Agent.en</code></td></tr>
+</table>
+<h4>81ab59bf327a28416e39…</h4>
+<p>Erkannt: <strong>27/76</strong> (35.5%) – <em>Win64:Evo-gen [Trj]</em></p>
+<p>Erkennende Engines (27):</p>
+<table><tr><th>Engine</th><th>Name</th></tr>
+<tr><td>| APEX</td><td><code>Malicious</code></td></tr>
+<tr><td>AVG</td><td><code>Win64:Evo-gen [Trj]</code></td></tr>
+<tr><td>AhnLab-V3</td><td><code>Malware/Win.Crypt.C5847880</code></td></tr>
+<tr><td>Antiy-AVL</td><td><code>Trojan[PSW]/Win32.Convagent</code></td></tr>
+<tr><td>Avast</td><td><code>Win64:Evo-gen [Trj]</code></td></tr>
+<tr><td>Avira</td><td><code>TR/Crypt.EPACK.Gen2</code></td></tr>
+<tr><td>Bkav</td><td><code>W64.AIDetectMalware</code></td></tr>
+<tr><td>CrowdStrike</td><td><code>win/malicious_confidence_90% (D)</code></td></tr>
+<tr><td>Cylance</td><td><code>Unsafe</code></td></tr>
+<tr><td>Cynet</td><td><code>Malicious (score: 100)</code></td></tr>
+<tr><td>DeepInstinct</td><td><code>MALICIOUS</code></td></tr>
+<tr><td>DrWeb</td><td><code>Trojan.PWS.Stealer.44341</code></td></tr>
+<tr><td>ESET-NOD32</td><td><code>Win64/Kryptik.GJP trojan</code></td></tr>
+<tr><td>Elastic</td><td><code>malicious (high confidence)</code></td></tr>
+<tr><td>F-Secure</td><td><code>Trojan.TR/Crypt.EPACK.Gen2</code></td></tr>
+<tr><td>Google</td><td><code>Detected</code></td></tr>
+<tr><td>Kaspersky</td><td><code>VHO:Trojan-PSW.Win32.Convagent.gen</code></td></tr>
+<tr><td>Kingsoft</td><td><code>malware.kb.a.989</code></td></tr>
+<tr><td>Malwarebytes</td><td><code>Malware.AI.3384135772</code></td></tr>
+<tr><td>McAfeeD</td><td><code>ti!81AB59BF327A</code></td></tr>
+<tr><td>Microsoft</td><td><code>Trojan:Win64/ArkeiStealer.ABSA!MTB</code></td></tr>
+<tr><td>Rising</td><td><code>Trojan.SantaStealer!8.1D750 (TFE:5:ufeQnCmagBG)</code></td></tr>
+<tr><td>Sangfor</td><td><code>Trojan.Win32.Save.a</code></td></tr>
+<tr><td>SentinelOne</td><td><code>Static AI - Suspicious PE</code></td></tr>
+<tr><td>Symantec</td><td><code>ML.Attribute.HighConfidence</code></td></tr>
+<tr><td>Varist</td><td><code>W64/Agent.LUT.gen!Eldorado</code></td></tr>
+<tr><td>Webroot</td><td><code>Win.Infostealer.Gen</code></td></tr>
+</table>
+<h4>4b5ed326656e47f4e9e8…</h4>
+<p>Erkannt: <strong>0/76</strong> (0.0%) – <em>–</em></p>
+<p>Erkennende Engines (5):</p>
+<table><tr><th>Engine</th><th>Name</th></tr>
+<tr><td>| 15:45 | [711d9427ee43…](https://bazaar.abuse.ch/sample/711d9427ee43bc2186b9124f31cba2db5f54ec9a0d56dc2948e1a4377bada289/)</td><td><code>exe</code></td></tr>
+<tr><td>| 15:36 | [62d0b74a54a7…](https://bazaar.abuse.ch/sample/62d0b74a54a7284ed71024b2076fb129e1c20df2d6f37342b236d1c70765a44e/)</td><td><code>exe</code></td></tr>
+<tr><td>| 15:35 | [0f60c1c23bda…](https://bazaar.abuse.ch/sample/0f60c1c23bda9eb9213713e8f21470de0da0d4b67b46e6c27c9f8007bafcef74/)</td><td><code>sh</code></td></tr>
+<tr><td>| 15:27 | [81ab59bf327a…](https://bazaar.abuse.ch/sample/81ab59bf327a28416e39866c2256dd54820e9c5fdaee411688f86a6baf648ace/)</td><td><code>exe</code></td></tr>
+<tr><td>| 15:21 | [4b5ed326656e…](https://bazaar.abuse.ch/sample/4b5ed326656e47f4e9e8a301768f4b2ee3056a7dd1c47b108cfc4517ec3a074a/)</td><td><code>exe</code></td></tr>
+</table>
+<h3>MITRE ATT&amp;CK Taktiken</h3><ul>
+<li>Mirai: 13 Samples</li>
+<li>EternalRocks: 6 Samples</li>
+<li>Smoke Loader: 4 Samples</li>
+<li>AsyncRAT: 4 Samples</li>
+<li>ValleyRAT: 2 Samples</li>
+<li>CHStealer: 1 Samples</li>
+<li>Efimer: 1 Samples</li>
+<li>Gozi: 1 Samples</li>
+</ul>
+<h3>Änderungen gegenüber letztem Run</h3><ul>
+<li>neu: **unbekannt** (65)</li>
+<li>neu: **EternalRocks** (6)</li>
+<li>neu: **Smoke Loader** (4)</li>
+<li>neu: **AsyncRAT** (4)</li>
+<li>neu: **ValleyRAT** (2)</li>
+<li>neu: **CHStealer** (1)</li>
+<li>neu: **Efimer** (1)</li>
+<li>neu: **Gozi** (1)</li>
+<li>neu: **ScarfaceStealer** (1)</li>
+<li>weg: **unbekannt / keine Signatur** (war 28)</li>
+<li>weg: **GuLoader** (war 5)</li>
+<li>weg: **Formbook** (war 5)</li>
+<li>weg: **RemcosRAT** (war 2)</li>
+<li>weg: **PhantomStealer** (war 2)</li>
+</ul>
+<h3>Sample-Hashes (Auszug)</h3><ul>
+<li><a href="https://bazaar.abuse.ch/sample/5db92f1296c7d7">5db92f1296c7d7…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/2f354cfa595f10">2f354cfa595f10…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/48c8cc4947d4ef">48c8cc4947d4ef…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/44d829e0df1eb9">44d829e0df1eb9…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/1faec8bc823455">1faec8bc823455…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/fe3ce9e4452ff3">fe3ce9e4452ff3…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/5378c81fea73c0">5378c81fea73c0…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/1b96e64900dff8">1b96e64900dff8…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/ea47cebe2fbbf0">ea47cebe2fbbf0…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/72c08e044dd427">72c08e044dd427…</a></li>
+</ul>
+<p><a href="https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-03-07_15-48-UTC.md">→ Vollständiger Report (Markdown)</a></p>]]></content:encoded>
+      <pubDate>Sat, 07 Mar 2026 15:48:00 +0000</pubDate>
+      <guid isPermaLink="false">https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-03-07_15-48-UTC.md</guid>
       <category>Threat Intelligence</category>
       <category>Malware</category>
+      <category>IOC</category>
     </item>
     <item>
-      <title>🦠 MalwareBazaar Report 06.03.2026 16:57 UTC – ? Kritisch</title>
-      <link>https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-03-06_16-57-UTC.md</link>
-      <description>Metrik: Wert | Analysierte Samples: **100** | 🔴 Kritische Samples: **57** | Höchster Risiko-Score: **88.7/100** (`b91ee6b195867a96…`) | Dominanter Dateityp: **elf** (45 Samples) | Häufigste Familie: **Mirai**</description>
-      <pubDate>Fri, 06 Mar 2026 16:57:00 +0000</pubDate>
-      <guid isPermaLink="true">https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-03-06_16-57-UTC.md</guid>
+      <title>MalwareBazaar – unbekannt – 0 neue Samples – 54 kritisch – Mirai</title>
+      <link>https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-03-07_06-27-UTC.md</link>
+      <description>&lt;p&gt;&lt;strong&gt;Stand:&lt;/strong&gt; unbekannt&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Neue Samples dieser Session:&lt;/strong&gt; 0&lt;/p&gt;
+&lt;h3&gt;Risiko-Verteilung&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;🔴 Kritisch: &lt;strong&gt;54&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🟠 Hoch: &lt;strong&gt;8&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🟡 Mittel: &lt;strong&gt;10&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🟢 Niedrig: &lt;strong&gt;28&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Häufigste Familie:&lt;/strong&gt; Mirai&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Häufigster Typ:&lt;/strong&gt; ?&lt;/p&gt;
+&lt;h3&gt;MITRE ATT&amp;amp;CK Taktiken&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Mirai: 41 Samples&lt;/li&gt;
+&lt;li&gt;Gafgyt: 4 Samples&lt;/li&gt;
+&lt;li&gt;GoToResolve: 3 Samples&lt;/li&gt;
+&lt;li&gt;AteraAgent: 3 Samples&lt;/li&gt;
+&lt;li&gt;ValleyRAT: 2 Samples&lt;/li&gt;
+&lt;li&gt;EternalRocks: 1 Samples&lt;/li&gt;
+&lt;li&gt;QuasarRAT: 1 Samples&lt;/li&gt;
+&lt;li&gt;ConnectWise: 1 Samples&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Sample-Hashes (Auszug)&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/a557d96f80d3cb"&gt;a557d96f80d3cb…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/b9b51e29d00473"&gt;b9b51e29d00473…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/cd139883e7c080"&gt;cd139883e7c080…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/0f033735da6f17"&gt;0f033735da6f17…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/3b16e21fa47d1e"&gt;3b16e21fa47d1e…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/05f12b8ecb8e4e"&gt;05f12b8ecb8e4e…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/794f475f14bbab"&gt;794f475f14bbab…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/7a3267f244ea2a"&gt;7a3267f244ea2a…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/62db547649bc8c"&gt;62db547649bc8c…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/b0635a6f452c4c"&gt;b0635a6f452c4c…&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-03-07_06-27-UTC.md"&gt;→ Vollständiger Report (Markdown)&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><strong>Stand:</strong> unbekannt</p>
+<p><strong>Neue Samples dieser Session:</strong> 0</p>
+<h3>Risiko-Verteilung</h3><ul>
+<li>🔴 Kritisch: <strong>54</strong></li>
+<li>🟠 Hoch: <strong>8</strong></li>
+<li>🟡 Mittel: <strong>10</strong></li>
+<li>🟢 Niedrig: <strong>28</strong></li>
+</ul>
+<p><strong>Häufigste Familie:</strong> Mirai</p>
+<p><strong>Häufigster Typ:</strong> ?</p>
+<h3>MITRE ATT&amp;CK Taktiken</h3><ul>
+<li>Mirai: 41 Samples</li>
+<li>Gafgyt: 4 Samples</li>
+<li>GoToResolve: 3 Samples</li>
+<li>AteraAgent: 3 Samples</li>
+<li>ValleyRAT: 2 Samples</li>
+<li>EternalRocks: 1 Samples</li>
+<li>QuasarRAT: 1 Samples</li>
+<li>ConnectWise: 1 Samples</li>
+</ul>
+<h3>Sample-Hashes (Auszug)</h3><ul>
+<li><a href="https://bazaar.abuse.ch/sample/a557d96f80d3cb">a557d96f80d3cb…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/b9b51e29d00473">b9b51e29d00473…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/cd139883e7c080">cd139883e7c080…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/0f033735da6f17">0f033735da6f17…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/3b16e21fa47d1e">3b16e21fa47d1e…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/05f12b8ecb8e4e">05f12b8ecb8e4e…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/794f475f14bbab">794f475f14bbab…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/7a3267f244ea2a">7a3267f244ea2a…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/62db547649bc8c">62db547649bc8c…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/b0635a6f452c4c">b0635a6f452c4c…</a></li>
+</ul>
+<p><a href="https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-03-07_06-27-UTC.md">→ Vollständiger Report (Markdown)</a></p>]]></content:encoded>
+      <pubDate>Sat, 07 Mar 2026 06:27:00 +0000</pubDate>
+      <guid isPermaLink="false">https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-03-07_06-27-UTC.md</guid>
       <category>Threat Intelligence</category>
       <category>Malware</category>
+      <category>IOC</category>
+    </item>
+    <item>
+      <title>MalwareBazaar – unbekannt – 0 neue Samples – 57 kritisch – Mirai</title>
+      <link>https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-03-06_16-57-UTC.md</link>
+      <description>&lt;p&gt;&lt;strong&gt;Stand:&lt;/strong&gt; unbekannt&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Neue Samples dieser Session:&lt;/strong&gt; 0&lt;/p&gt;
+&lt;h3&gt;Risiko-Verteilung&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;🔴 Kritisch: &lt;strong&gt;57&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🟠 Hoch: &lt;strong&gt;5&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🟡 Mittel: &lt;strong&gt;2&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;🟢 Niedrig: &lt;strong&gt;36&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Häufigste Familie:&lt;/strong&gt; Mirai&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Häufigster Typ:&lt;/strong&gt; ?&lt;/p&gt;
+&lt;h3&gt;MITRE ATT&amp;amp;CK Taktiken&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Mirai: 50 Samples&lt;/li&gt;
+&lt;li&gt;GuLoader: 5 Samples&lt;/li&gt;
+&lt;li&gt;Formbook: 5 Samples&lt;/li&gt;
+&lt;li&gt;AgentTesla: 3 Samples&lt;/li&gt;
+&lt;li&gt;RemcosRAT: 2 Samples&lt;/li&gt;
+&lt;li&gt;PhantomStealer: 2 Samples&lt;/li&gt;
+&lt;li&gt;SalatStealer: 1 Samples&lt;/li&gt;
+&lt;li&gt;MassLogger: 1 Samples&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Sample-Hashes (Auszug)&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/b91ee6b195867a"&gt;b91ee6b195867a…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/1148fa91ce87cc"&gt;1148fa91ce87cc…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/31e527a5040594"&gt;31e527a5040594…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/5aaf6f8c6459ae"&gt;5aaf6f8c6459ae…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/aadff1cd1e8f54"&gt;aadff1cd1e8f54…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/28768fed528dab"&gt;28768fed528dab…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/fe2d31d8e9db56"&gt;fe2d31d8e9db56…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/04457096271432"&gt;04457096271432…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/a4889fcba22bdf"&gt;a4889fcba22bdf…&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://bazaar.abuse.ch/sample/078cf00268c2de"&gt;078cf00268c2de…&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href="https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-03-06_16-57-UTC.md"&gt;→ Vollständiger Report (Markdown)&lt;/a&gt;&lt;/p&gt;</description>
+      <content:encoded><![CDATA[<p><strong>Stand:</strong> unbekannt</p>
+<p><strong>Neue Samples dieser Session:</strong> 0</p>
+<h3>Risiko-Verteilung</h3><ul>
+<li>🔴 Kritisch: <strong>57</strong></li>
+<li>🟠 Hoch: <strong>5</strong></li>
+<li>🟡 Mittel: <strong>2</strong></li>
+<li>🟢 Niedrig: <strong>36</strong></li>
+</ul>
+<p><strong>Häufigste Familie:</strong> Mirai</p>
+<p><strong>Häufigster Typ:</strong> ?</p>
+<h3>MITRE ATT&amp;CK Taktiken</h3><ul>
+<li>Mirai: 50 Samples</li>
+<li>GuLoader: 5 Samples</li>
+<li>Formbook: 5 Samples</li>
+<li>AgentTesla: 3 Samples</li>
+<li>RemcosRAT: 2 Samples</li>
+<li>PhantomStealer: 2 Samples</li>
+<li>SalatStealer: 1 Samples</li>
+<li>MassLogger: 1 Samples</li>
+</ul>
+<h3>Sample-Hashes (Auszug)</h3><ul>
+<li><a href="https://bazaar.abuse.ch/sample/b91ee6b195867a">b91ee6b195867a…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/1148fa91ce87cc">1148fa91ce87cc…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/31e527a5040594">31e527a5040594…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/5aaf6f8c6459ae">5aaf6f8c6459ae…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/aadff1cd1e8f54">aadff1cd1e8f54…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/28768fed528dab">28768fed528dab…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/fe2d31d8e9db56">fe2d31d8e9db56…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/04457096271432">04457096271432…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/a4889fcba22bdf">a4889fcba22bdf…</a></li>
+<li><a href="https://bazaar.abuse.ch/sample/078cf00268c2de">078cf00268c2de…</a></li>
+</ul>
+<p><a href="https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-03-06_16-57-UTC.md">→ Vollständiger Report (Markdown)</a></p>]]></content:encoded>
+      <pubDate>Fri, 06 Mar 2026 16:57:00 +0000</pubDate>
+      <guid isPermaLink="false">https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-03-06_16-57-UTC.md</guid>
+      <category>Threat Intelligence</category>
+      <category>Malware</category>
+      <category>IOC</category>
     </item>
   </channel>
 </rss>
