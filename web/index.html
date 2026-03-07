@@ -3,205 +3,677 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>🦠 MalwareBazaar Threat Intelligence Dashboard</title>
+  <title>MalwareBazaar TI – 07.03.2026 15:58 UTC</title>
+  <link rel="alternate" type="application/rss+xml" title="MalwareBazaar TI Feed" href="https://unchained-int.github.io/TI/rss.xml">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
   <style>
-    :root {
-      --bg:     #0f1117;
-      --card:   #1a1d27;
-      --border: #2a2d3e;
-      --text:   #e2e8f0;
-      --muted:  #64748b;
-      --red:    #ef4444;
-      --orange: #f97316;
-      --yellow: #eab308;
-      --green:  #22c55e;
-      --blue:   #3b82f6;
-      --purple: #a855f7;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; min-height: 100vh; }
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
 
+    :root {
+      --bg0:    #080a0f;
+      --bg1:    #0d1117;
+      --bg2:    #13161e;
+      --bg3:    #1a1f2e;
+      --border: #1e2538;
+      --border2:#252d3d;
+      --text:   #c9d1d9;
+      --muted:  #586069;
+      --dim:    #3d4451;
+      --red:    #ff4444;
+      --orange: #ff8800;
+      --yellow: #ffcc00;
+      --green:  #00d26a;
+      --blue:   #58a6ff;
+      --cyan:   #39d5cf;
+      --purple: #bc8cff;
+      --mono:   'JetBrains Mono', monospace;
+      --sans:   'DM Sans', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg0);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Scanlines overlay ── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0; pointer-events: none; z-index: 9999;
+      background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0,0,0,0.03) 2px, rgba(0,0,0,0.03) 4px);
+    }
+
+    /* ── Header ── */
     .header {
-      background: linear-gradient(135deg, #1a1d27 0%, #0f1117 100%);
+      background: linear-gradient(180deg, #0a0d14 0%, var(--bg1) 100%);
       border-bottom: 1px solid var(--border);
-      padding: 1.5rem 2rem;
-      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
+      padding: 0 2rem;
+      position: sticky; top: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 56px;
     }
-    .header-title { display: flex; align-items: center; gap: 0.75rem; }
-    .header-title h1 { font-size: 1.4rem; font-weight: 700; }
-    .header-meta { color: var(--muted); font-size: 0.85rem; }
-    .badge {
-      display: inline-block; padding: 0.2rem 0.6rem;
-      border-radius: 9999px; font-size: 0.75rem; font-weight: 600;
-      background: rgba(59,130,246,0.15); color: var(--blue); border: 1px solid rgba(59,130,246,0.3);
+    .header-left { display: flex; align-items: center; gap: 1rem; }
+    .header-logo { font-family: var(--mono); font-size: 1rem; font-weight: 700; color: var(--red); letter-spacing: -0.02em; }
+    .header-logo span { color: var(--muted); font-weight: 400; }
+    .header-ts { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); }
+    .header-right { display: flex; gap: 1rem; align-items: center; }
+    .header-link {
+      font-family: var(--mono); font-size: 0.72rem; color: var(--muted);
+      text-decoration: none; padding: 0.25rem 0.6rem;
+      border: 1px solid var(--border2); border-radius: 4px;
+      transition: color 0.15s, border-color 0.15s;
     }
-    .rss-link {
-      color: var(--orange); text-decoration: none; font-size: 0.85rem;
+    .header-link:hover { color: var(--blue); border-color: var(--blue); }
+    .live-dot {
+      width: 7px; height: 7px; border-radius: 50%; background: var(--green);
+      box-shadow: 0 0 6px var(--green); animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    /* ── Layout ── */
+    .page { max-width: 1440px; margin: 0 auto; padding: 1.5rem 2rem 4rem; }
+
+    /* ── KPI Bar ── */
+    .kpi-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+    .kpi {
+      background: var(--bg1);
+      padding: 1.25rem 1.5rem;
+      display: flex; flex-direction: column; gap: 0.3rem;
+      transition: background 0.15s;
+    }
+    .kpi:hover { background: var(--bg2); }
+    .kpi-label { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+    .kpi-val   { font-family: var(--mono); font-size: 1.9rem; font-weight: 700; line-height: 1; }
+    .kpi-sub   { font-size: 0.72rem; color: var(--dim); }
+    .kv-red    { color: var(--red);    }
+    .kv-orange { color: var(--orange); }
+    .kv-yellow { color: var(--yellow); }
+    .kv-green  { color: var(--green);  }
+    .kv-blue   { color: var(--blue);   }
+    .kv-cyan   { color: var(--cyan);   }
+    .kv-white  { color: var(--text);   }
+
+    /* ── Section title ── */
+    .sec { margin-top: 2rem; }
+    .sec-title {
+      font-family: var(--mono); font-size: 0.72rem; font-weight: 600;
+      color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em;
+      padding-bottom: 0.5rem; border-bottom: 1px solid var(--border);
+      margin-bottom: 1rem; display: flex; align-items: center; gap: 0.6rem;
+    }
+    .sec-title::before { content: '//'; color: var(--dim); }
+
+    /* ── Grid layouts ── */
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5rem; }
+    @media(max-width:900px) { .grid-2,.grid-3 { grid-template-columns: 1fr; } }
+
+    /* ── Card ── */
+    .card {
+      background: var(--bg1); border: 1px solid var(--border);
+      border-radius: 8px; overflow: hidden;
+    }
+    .card-head {
+      padding: 0.75rem 1rem; border-bottom: 1px solid var(--border);
+      font-family: var(--mono); font-size: 0.75rem; font-weight: 600;
+      color: var(--text); display: flex; align-items: center; justify-content: space-between;
+    }
+    .card-body { padding: 1rem; }
+    .chart-wrap { position: relative; height: 240px; }
+
+    /* ── Tables ── */
+    .data-table { width: 100%; border-collapse: collapse; font-family: var(--mono); font-size: 0.78rem; }
+    .data-table th {
+      padding: 0.5rem 0.75rem; text-align: left;
+      color: var(--muted); font-weight: 600; font-size: 0.68rem;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      border-bottom: 1px solid var(--border);
+    }
+    .data-table td { padding: 0.5rem 0.75rem; border-bottom: 1px solid var(--border); color: var(--text); }
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table tr:hover td { background: var(--bg2); }
+    .rank { color: var(--muted); width: 2rem; }
+    .family-name { font-weight: 600; }
+    .count { text-align: right; color: var(--cyan); }
+    .pct-cell { display: flex; align-items: center; gap: 0.5rem; min-width: 120px; }
+    .pct-text { color: var(--muted); width: 3rem; text-align: right; font-size: 0.72rem; }
+    .pct-bar { height: 3px; background: var(--blue); border-radius: 2px; opacity: 0.7; transition: width 0.5s; }
+    .score-cell { font-size: 1rem; }
+    .sha-link { color: var(--cyan); text-decoration: none; font-family: var(--mono); font-size: 0.75rem; }
+    .sha-link:hover { color: var(--blue); text-decoration: underline; }
+    .cat-badge {
+      background: var(--bg3); border: 1px solid var(--border2);
+      border-radius: 3px; padding: 0.1rem 0.4rem; font-size: 0.7rem; color: var(--muted);
+    }
+    .mono { font-family: var(--mono); font-size: 0.75rem; }
+    .vt-cell { color: var(--green); font-family: var(--mono); }
+
+    /* ── Plattform cards ── */
+    .plat-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px,1fr)); gap: 0.75rem; }
+    .plat-card {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 6px; padding: 0.75rem;
+      display: flex; flex-direction: column; gap: 0.3rem;
+    }
+    .plat-icon { font-size: 1.4rem; }
+    .plat-name { font-family: var(--mono); font-size: 0.78rem; font-weight: 600; color: var(--text); }
+    .plat-count { font-family: var(--mono); font-size: 1.3rem; color: var(--blue); font-weight: 700; }
+    .plat-bar-bg { background: var(--bg3); border-radius: 2px; height: 3px; overflow: hidden; }
+    .plat-bar-fill { background: var(--blue); height: 100%; transition: width 0.6s; }
+    .plat-pct { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); }
+
+    /* ── MITRE ── */
+    .mitre-row {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0.4rem 0; border-bottom: 1px solid var(--border);
+      font-family: var(--mono); font-size: 0.78rem;
+    }
+    .mitre-row:last-child { border-bottom: none; }
+    .mitre-tac { color: var(--text); }
+    .mitre-cnt {
+      background: var(--bg3); color: var(--cyan);
+      padding: 0.1rem 0.5rem; border-radius: 10px; font-size: 0.72rem;
+    }
+
+    /* ── VT Blocks ── */
+    .vt-block {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 6px; padding: 1rem; margin-bottom: 0.75rem;
+    }
+    .vt-header { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.5rem; }
+    .vt-sha { font-family: var(--mono); font-size: 0.78rem; color: var(--cyan); text-decoration: none; }
+    .vt-sha:hover { text-decoration: underline; }
+    .vt-family { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); }
+    .vt-rate { font-family: var(--mono); font-size: 0.85rem; font-weight: 700; margin-left: auto; }
+    .vt-meta { display: flex; gap: 2rem; font-size: 0.78rem; color: var(--muted); margin-bottom: 0.6rem; }
+    .vt-meta strong { color: var(--text); }
+    .engine-details summary {
+      cursor: pointer; font-family: var(--mono); font-size: 0.75rem; color: var(--blue);
+      padding: 0.25rem 0; user-select: none;
+    }
+    .engine-details summary:hover { color: var(--cyan); }
+    .engine-table { width: 100%; border-collapse: collapse; margin-top: 0.5rem; }
+    .engine-table tr:hover td { background: var(--bg3); }
+    .engine-table td { padding: 0.25rem 0.5rem; border-bottom: 1px solid var(--border); font-family: var(--mono); font-size: 0.73rem; }
+    .eng-name { color: var(--muted); width: 35%; }
+    .eng-result code { color: var(--yellow); background: var(--bg3); padding: 0.1rem 0.3rem; border-radius: 2px; font-size: 0.72rem; }
+
+    /* ── Tags ── */
+    .tags-wrap { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+    .tag-pill {
+      background: var(--bg3); border: 1px solid var(--border2);
+      border-radius: 4px; padding: 0.2rem 0.6rem;
+      font-family: var(--mono); font-size: 0.73rem; color: var(--text);
       display: flex; align-items: center; gap: 0.4rem;
     }
-    .rss-link:hover { text-decoration: underline; }
-
-    main { max-width: 1400px; margin: 0 auto; padding: 2rem; display: flex; flex-direction: column; gap: 1.5rem; }
-
-    /* KPI Cards */
-    .kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; }
-    .kpi-card {
-      background: var(--card); border: 1px solid var(--border); border-radius: 12px;
-      padding: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;
+    .tag-cnt {
+      background: var(--bg0); color: var(--cyan);
+      border-radius: 3px; padding: 0 0.3rem; font-size: 0.68rem;
     }
-    .kpi-label { color: var(--muted); font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; }
-    .kpi-value { font-size: 2rem; font-weight: 800; line-height: 1; }
-    .kpi-sub { font-size: 0.75rem; color: var(--muted); }
-    .kpi-red    { color: var(--red);    border-color: rgba(239,68,68,0.3); }
-    .kpi-orange { color: var(--orange); border-color: rgba(249,115,22,0.3); }
-    .kpi-yellow { color: var(--yellow); border-color: rgba(234,179,8,0.3); }
-    .kpi-green  { color: var(--green);  border-color: rgba(34,197,94,0.3); }
-    .kpi-blue   { color: var(--blue);   border-color: rgba(59,130,246,0.3); }
 
-    /* Charts Grid */
-    .charts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 1.5rem; }
-    .chart-card {
-      background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem;
-    }
-    .chart-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 1rem; color: var(--text); }
-    .chart-container { position: relative; height: 260px; }
+    /* ── Delta ── */
+    .delta-list { display: flex; flex-direction: column; gap: 0.4rem; }
+    .delta-item { font-family: var(--mono); font-size: 0.78rem; color: var(--text); padding: 0.35rem 0.6rem; background: var(--bg2); border-radius: 4px; border-left: 2px solid var(--dim); }
 
-    /* Tables */
-    .table-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 1.5rem; }
-    .table-card {
-      background: var(--card); border: 1px solid var(--border); border-radius: 12px; overflow: hidden;
-    }
-    .table-card h3 { padding: 1.25rem 1.5rem; font-size: 0.95rem; font-weight: 600; border-bottom: 1px solid var(--border); }
-    table { width: 100%; border-collapse: collapse; }
-    td, th { padding: 0.65rem 1.5rem; font-size: 0.85rem; border-bottom: 1px solid var(--border); }
-    tr:last-child td { border-bottom: none; }
-    tr:hover td { background: rgba(255,255,255,0.03); }
-    .text-right { text-align: right; }
-    .font-bold { font-weight: 700; }
-    .font-mono { font-family: monospace; }
-    .text-gray-400 { color: #9ca3af; }
-    .text-gray-500 { color: var(--muted); }
-    .text-sm { font-size: 0.8rem; }
+    /* ── Trend chart ── */
+    .trend-wrap { position: relative; height: 260px; }
 
-    /* Trend Chart */
-    .trend-card {
-      background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem;
-    }
-    .trend-card h3 { font-size: 0.95rem; font-weight: 600; margin-bottom: 1rem; }
-    .trend-container { position: relative; height: 280px; }
-
+    /* ── Footer ── */
     footer {
-      text-align: center; padding: 2rem; color: var(--muted); font-size: 0.8rem;
-      border-top: 1px solid var(--border); margin-top: 1rem;
+      margin-top: 3rem; padding: 1.5rem 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center; font-family: var(--mono); font-size: 0.72rem; color: var(--muted);
     }
     footer a { color: var(--blue); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
 
 <header class="header">
-  <div class="header-title">
-    <span style="font-size:1.8rem">🦠</span>
-    <div>
-      <h1>MalwareBazaar Threat Intelligence</h1>
-      <div class="header-meta">Report: unbekannt &nbsp;·&nbsp; <span class="badge">100 Samples</span></div>
-    </div>
+  <div class="header-left">
+    <div class="live-dot"></div>
+    <div class="header-logo">malware<span>-</span>intel</div>
+    <div class="header-ts">07.03.2026 15:58 UTC</div>
   </div>
-  <div style="display:flex;gap:1rem;align-items:center">
-    <a href="https://unchained-int.github.io/TI/rss.xml" class="rss-link">📡 RSS Feed</a>
-    <a href="https://unchained-int.github.io/TI/reports/latest.md" class="rss-link" target="_blank">📄 Markdown Report</a>
+  <div class="header-right">
+    <a href="https://unchained-int.github.io/TI/rss.xml" class="header-link">RSS</a>
+    <a href="https://unchained-int.github.io/TI/reports/latest.md" class="header-link" target="_blank">report.md</a>
+    <a href="https://bazaar.abuse.ch" class="header-link" target="_blank">bazaar</a>
   </div>
 </header>
 
-<main>
+<main class="page">
 
-  <!-- KPI Cards -->
-  <div class="kpi-grid">
-    <div class="kpi-card">
-      <div class="kpi-label">Samples Total</div>
-      <div class="kpi-value kpi-blue">100</div>
-      <div class="kpi-sub">Letzte 24h (API-Limit 100)</div>
+  <!-- KPI Bar -->
+  <div class="kpi-bar">
+    <div class="kpi">
+      <div class="kpi-label">Neue Samples</div>
+      <div class="kpi-val kv-white">100</div>
+      <div class="kpi-sub">dieser Run</div>
     </div>
-    <div class="kpi-card">
+    <div class="kpi">
       <div class="kpi-label">🔴 Kritisch</div>
-      <div class="kpi-value kpi-red">40</div>
-      <div class="kpi-sub">Score ≥ 75/100</div>
+      <div class="kpi-val kv-red">36</div>
+      <div class="kpi-sub">Score ≥ 75</div>
     </div>
-    <div class="kpi-card">
+    <div class="kpi">
       <div class="kpi-label">🟠 Hoch</div>
-      <div class="kpi-value kpi-orange">10</div>
+      <div class="kpi-val kv-orange">11</div>
       <div class="kpi-sub">Score 55–74</div>
     </div>
-    <div class="kpi-card">
+    <div class="kpi">
       <div class="kpi-label">🟡 Mittel</div>
-      <div class="kpi-value kpi-yellow">6</div>
+      <div class="kpi-val kv-yellow">8</div>
       <div class="kpi-sub">Score 35–54</div>
     </div>
-    <div class="kpi-card">
+    <div class="kpi">
       <div class="kpi-label">🟢 Niedrig</div>
-      <div class="kpi-value kpi-green">44</div>
+      <div class="kpi-val kv-green">45</div>
       <div class="kpi-sub">Score &lt; 35</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Top Score</div>
+      <div class="kpi-val kv-red">?</div>
+      <div class="kpi-sub">5db92f1296c7…</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">VT enriched</div>
+      <div class="kpi-val kv-blue">5 Samples</div>
+      <div class="kpi-sub">Samples</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">MITRE mapped</div>
+      <div class="kpi-val kv-cyan">17 Samples</div>
+      <div class="kpi-sub">Samples</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Ø Größe</div>
+      <div class="kpi-val kv-white" style="font-size:1.2rem">7.06 MB (σ=16.39)</div>
+      <div class="kpi-sub">Dateigröße</div>
     </div>
   </div>
 
-  <!-- Charts -->
-  <div class="charts-grid">
-    <div class="chart-card">
-      <h3>📊 Risiko-Verteilung</h3>
-      <div class="chart-container"><canvas id="riskChart"></canvas></div>
+  <!-- Charts Row -->
+  <div class="grid-3 sec">
+    <div class="card">
+      <div class="card-head">Risiko-Verteilung</div>
+      <div class="card-body"><div class="chart-wrap"><canvas id="riskChart"></canvas></div></div>
     </div>
-    <div class="chart-card">
-      <h3>📁 Top Dateitypen</h3>
-      <div class="chart-container"><canvas id="ftChart"></canvas></div>
+    <div class="card">
+      <div class="card-head">Top Dateitypen</div>
+      <div class="card-body"><div class="chart-wrap"><canvas id="ftChart"></canvas></div></div>
+    </div>
+    <div class="card">
+      <div class="card-head">Kategorien</div>
+      <div class="card-body"><div class="chart-wrap"><canvas id="catChart"></canvas></div></div>
     </div>
   </div>
 
   <!-- Trend Chart -->
-  <div class="trend-card">
-    <h3>📈 Familien-Trend (letzte 14 Runs)</h3>
-    <div class="trend-container"><canvas id="trendChart"></canvas></div>
+  <div class="sec card">
+    <div class="card-head">Familien-Trend <span style="color:var(--muted);font-weight:400">letzte 14 Runs</span></div>
+    <div class="card-body"><div class="trend-wrap"><canvas id="trendChart"></canvas></div></div>
   </div>
 
-  <!-- Tabellen -->
-  <div class="table-grid">
-    <div class="table-card">
-      <h3>🦠 Top Malware-Familien</h3>
-      <table>
-        <thead><tr><th style="width:2rem">#</th><th>Familie</th><th class="text-right">Anz.</th><th class="text-right">Anteil</th></tr></thead>
-        <tbody></tbody>
+  <!-- Familien + Plattformen -->
+  <div class="grid-2 sec">
+    <div class="card">
+      <div class="card-head">Top Malware-Familien</div>
+      <div class="card-body" style="padding:0">
+        <table class="data-table">
+          <thead><tr><th>#</th><th>Familie</th><th>Anz.</th><th>Anteil</th></tr></thead>
+          <tbody><tr>
+          <td class="rank">1</td>
+          <td class="family-name">unbekannt</td>
+          <td class="count">69</td>
+          <td class="pct-cell">
+            <span class="pct-text">69.0%</span>
+            <div class="pct-bar" style="width:138px"></div>
+          </td>
+        </tr><tr>
+          <td class="rank">2</td>
+          <td class="family-name">Mirai</td>
+          <td class="count">9</td>
+          <td class="pct-cell">
+            <span class="pct-text">9.0%</span>
+            <div class="pct-bar" style="width:18px"></div>
+          </td>
+        </tr><tr>
+          <td class="rank">3</td>
+          <td class="family-name">EternalRocks</td>
+          <td class="count">6</td>
+          <td class="pct-cell">
+            <span class="pct-text">6.0%</span>
+            <div class="pct-bar" style="width:12px"></div>
+          </td>
+        </tr><tr>
+          <td class="rank">4</td>
+          <td class="family-name">Smoke Loader</td>
+          <td class="count">4</td>
+          <td class="pct-cell">
+            <span class="pct-text">4.0%</span>
+            <div class="pct-bar" style="width:8px"></div>
+          </td>
+        </tr><tr>
+          <td class="rank">5</td>
+          <td class="family-name">AsyncRAT</td>
+          <td class="count">4</td>
+          <td class="pct-cell">
+            <span class="pct-text">4.0%</span>
+            <div class="pct-bar" style="width:8px"></div>
+          </td>
+        </tr><tr>
+          <td class="rank">6</td>
+          <td class="family-name">ValleyRAT</td>
+          <td class="count">2</td>
+          <td class="pct-cell">
+            <span class="pct-text">2.0%</span>
+            <div class="pct-bar" style="width:4px"></div>
+          </td>
+        </tr><tr>
+          <td class="rank">7</td>
+          <td class="family-name">CHStealer</td>
+          <td class="count">1</td>
+          <td class="pct-cell">
+            <span class="pct-text">1.0%</span>
+            <div class="pct-bar" style="width:2px"></div>
+          </td>
+        </tr><tr>
+          <td class="rank">8</td>
+          <td class="family-name">Efimer</td>
+          <td class="count">1</td>
+          <td class="pct-cell">
+            <span class="pct-text">1.0%</span>
+            <div class="pct-bar" style="width:2px"></div>
+          </td>
+        </tr><tr>
+          <td class="rank">9</td>
+          <td class="family-name">Gozi</td>
+          <td class="count">1</td>
+          <td class="pct-cell">
+            <span class="pct-text">1.0%</span>
+            <div class="pct-bar" style="width:2px"></div>
+          </td>
+        </tr><tr>
+          <td class="rank">10</td>
+          <td class="family-name">ScarfaceStealer</td>
+          <td class="count">1</td>
+          <td class="pct-cell">
+            <span class="pct-text">1.0%</span>
+            <div class="pct-bar" style="width:2px"></div>
+          </td>
+        </tr><tr>
+          <td class="rank">11</td>
+          <td class="family-name">RustyStealer</td>
+          <td class="count">1</td>
+          <td class="pct-cell">
+            <span class="pct-text">1.0%</span>
+            <div class="pct-bar" style="width:2px"></div>
+          </td>
+        </tr><tr>
+          <td class="rank">12</td>
+          <td class="family-name">AgentTesla</td>
+          <td class="count">1</td>
+          <td class="pct-cell">
+            <span class="pct-text">1.0%</span>
+            <div class="pct-bar" style="width:2px"></div>
+          </td>
+        </tr></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-head">Betroffene Plattformen</div>
+      <div class="card-body">
+        <div class="plat-grid"><div class="plat-card">
+          <span class="plat-icon">🪟</span>
+          <span class="plat-name">🪟 Windows</span>
+          <span class="plat-count">68</span>
+          <div class="plat-bar-bg"><div class="plat-bar-fill" style="width:68.0%"></div></div>
+          <span class="plat-pct">68.0%</span>
+        </div><div class="plat-card">
+          <span class="plat-icon">🐧</span>
+          <span class="plat-name">🐧 Linux</span>
+          <span class="plat-count">15</span>
+          <div class="plat-bar-bg"><div class="plat-bar-fill" style="width:15.0%"></div></div>
+          <span class="plat-pct">15.0%</span>
+        </div><div class="plat-card">
+          <span class="plat-icon">📦</span>
+          <span class="plat-name">📦 Archiv</span>
+          <span class="plat-count">12</span>
+          <div class="plat-bar-bg"><div class="plat-bar-fill" style="width:12.0%"></div></div>
+          <span class="plat-pct">12.0%</span>
+        </div><div class="plat-card">
+          <span class="plat-icon">❓</span>
+          <span class="plat-name">❓ Unbekannt</span>
+          <span class="plat-count">5</span>
+          <div class="plat-bar-bg"><div class="plat-bar-fill" style="width:5.0%"></div></div>
+          <span class="plat-pct">5.0%</span>
+        </div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top 10 Risk -->
+  <div class="sec card">
+    <div class="card-head">Top 10 nach Risiko-Score</div>
+    <div class="card-body" style="padding:0;overflow-x:auto">
+      <table class="data-table">
+        <thead><tr><th>SHA256</th><th>Familie</th><th>Kategorie</th><th>Score</th><th>Level</th><th>S_det</th><th>VT</th></tr></thead>
+        <tbody><tr>
+          <td><a href="https://bazaar.abuse.ch/sample/5db92f1296c7d7146dd9a5a10bfb393973ae04e1fcb03002679592090a3b928d/" target="_blank" class="sha-link">5db92f1296c7d7…</a></td>
+          <td>Gozi</td>
+          <td><span class="cat-badge">Trojaner</span></td>
+          <td class="score-cell" style="color:#ff4444"><strong>89.7</strong></td>
+          <td style="color:#ff4444">🔴 KRITISCH</td>
+          <td class="mono">0.0</td>
+          <td class="vt-cell">–</td>
+        </tr><tr>
+          <td><a href="https://bazaar.abuse.ch/sample/2f354cfa595f102401a8f160208dcf6474fce66b3b80673a5f3ea6e2c25f8c43/" target="_blank" class="sha-link">2f354cfa595f10…</a></td>
+          <td>AsyncRAT</td>
+          <td><span class="cat-badge">RAT</span></td>
+          <td class="score-cell" style="color:#ff4444"><strong>88.4</strong></td>
+          <td style="color:#ff4444">🔴 KRITISCH</td>
+          <td class="mono">0.0</td>
+          <td class="vt-cell">–</td>
+        </tr><tr>
+          <td><a href="https://bazaar.abuse.ch/sample/48c8cc4947d4ef59bd849396e84a52493ad14cee265d2ae772ca4ba173f6f2cb/" target="_blank" class="sha-link">48c8cc4947d4ef…</a></td>
+          <td>AsyncRAT</td>
+          <td><span class="cat-badge">RAT</span></td>
+          <td class="score-cell" style="color:#ff4444"><strong>87.8</strong></td>
+          <td style="color:#ff4444">🔴 KRITISCH</td>
+          <td class="mono">0.0</td>
+          <td class="vt-cell">–</td>
+        </tr><tr>
+          <td><a href="https://bazaar.abuse.ch/sample/44d829e0df1eb969d8ee5318d0a54de77efc4bda65f85613eedd15ce33499360/" target="_blank" class="sha-link">44d829e0df1eb9…</a></td>
+          <td>AsyncRAT</td>
+          <td><span class="cat-badge">RAT</span></td>
+          <td class="score-cell" style="color:#ff4444"><strong>87.2</strong></td>
+          <td style="color:#ff4444">🔴 KRITISCH</td>
+          <td class="mono">0.0</td>
+          <td class="vt-cell">–</td>
+        </tr><tr>
+          <td><a href="https://bazaar.abuse.ch/sample/1faec8bc823455133b1bbfdc264a23187752411c981e5e78da05730fd5fcae40/" target="_blank" class="sha-link">1faec8bc823455…</a></td>
+          <td>AsyncRAT</td>
+          <td><span class="cat-badge">RAT</span></td>
+          <td class="score-cell" style="color:#ff4444"><strong>84.7</strong></td>
+          <td style="color:#ff4444">🔴 KRITISCH</td>
+          <td class="mono">0.0</td>
+          <td class="vt-cell">–</td>
+        </tr><tr>
+          <td><a href="https://bazaar.abuse.ch/sample/fe3ce9e4452ff33772b0f28e1ac4ac40fdea0398d7b5fbf1858509bdbab04f91/" target="_blank" class="sha-link">fe3ce9e4452ff3…</a></td>
+          <td>Mirai</td>
+          <td><span class="cat-badge">Botnet/IoT</span></td>
+          <td class="score-cell" style="color:#ff4444"><strong>83.1</strong></td>
+          <td style="color:#ff4444">🔴 KRITISCH</td>
+          <td class="mono">0.0</td>
+          <td class="vt-cell">–</td>
+        </tr><tr>
+          <td><a href="https://bazaar.abuse.ch/sample/5378c81fea73c008da929ce2ea87775630c13c487fd3cd49bd295ce370ea8352/" target="_blank" class="sha-link">5378c81fea73c0…</a></td>
+          <td>unbekannt</td>
+          <td><span class="cat-badge">Trojaner</span></td>
+          <td class="score-cell" style="color:#ff4444"><strong>82.9</strong></td>
+          <td style="color:#ff4444">🔴 KRITISCH</td>
+          <td class="mono">0.0</td>
+          <td class="vt-cell">–</td>
+        </tr><tr>
+          <td><a href="https://bazaar.abuse.ch/sample/1b96e64900dff8872419a941cd3e3f7547b6079b50b68c96bca1bc0d00bbca74/" target="_blank" class="sha-link">1b96e64900dff8…</a></td>
+          <td>Mirai</td>
+          <td><span class="cat-badge">Botnet/IoT</span></td>
+          <td class="score-cell" style="color:#ff4444"><strong>81.5</strong></td>
+          <td style="color:#ff4444">🔴 KRITISCH</td>
+          <td class="mono">0.0</td>
+          <td class="vt-cell">–</td>
+        </tr><tr>
+          <td><a href="https://bazaar.abuse.ch/sample/ea47cebe2fbbf06c22b9bd9b9d72dd4fe64aed4e68675aa5e693312a773e09e9/" target="_blank" class="sha-link">ea47cebe2fbbf0…</a></td>
+          <td>unbekannt</td>
+          <td><span class="cat-badge">Infostealer</span></td>
+          <td class="score-cell" style="color:#ff4444"><strong>80.9</strong></td>
+          <td style="color:#ff4444">🔴 KRITISCH</td>
+          <td class="mono">0.0</td>
+          <td class="vt-cell">–</td>
+        </tr><tr>
+          <td><a href="https://bazaar.abuse.ch/sample/72c08e044dd427964bc14339f95838e3d45f51f6a586330c683fbb59ea374b1d/" target="_blank" class="sha-link">72c08e044dd427…</a></td>
+          <td>EternalRocks</td>
+          <td><span class="cat-badge">Infostealer</span></td>
+          <td class="score-cell" style="color:#ff4444"><strong>80.9</strong></td>
+          <td style="color:#ff4444">🔴 KRITISCH</td>
+          <td class="mono">0.0</td>
+          <td class="vt-cell">–</td>
+        </tr></tbody>
       </table>
     </div>
-    <div class="table-card">
-      <h3>💻 Betroffene Plattformen</h3>
-      <table>
-        <thead><tr><th>Plattform</th><th class="text-right">Anz.</th><th class="text-right">Anteil</th></tr></thead>
-        <tbody></tbody>
-      </table>
+  </div>
+
+  <!-- MITRE + Delta -->
+  <div class="grid-2 sec">
+    <div class="card">
+      <div class="card-head">MITRE ATT&amp;CK Taktiken</div>
+      <div class="card-body"><div class="mitre-row"><span class="mitre-tac">Initial Access</span><span class="mitre-cnt">9</span></div><div class="mitre-row"><span class="mitre-tac">Lateral Movement</span><span class="mitre-cnt">9</span></div><div class="mitre-row"><span class="mitre-tac">Execution</span><span class="mitre-cnt">7</span></div><div class="mitre-row"><span class="mitre-tac">Command and Control</span><span class="mitre-cnt">4</span></div><div class="mitre-row"><span class="mitre-tac">Persistence</span><span class="mitre-cnt">3</span></div><div class="mitre-row"><span class="mitre-tac">Credential Access</span><span class="mitre-cnt">1</span></div><div class="mitre-row"><span class="mitre-tac">Collection</span><span class="mitre-cnt">1</span></div><div class="mitre-row"><span class="mitre-tac">Exfiltration</span><span class="mitre-cnt">1</span></div><div class="mitre-row"><span class="mitre-tac">Command and Control</span><span class="mitre-cnt">[T1095](https://attack.mitre.org/techniques/T1095/)</span></div><div class="mitre-row"><span class="mitre-tac">Execution</span><span class="mitre-cnt">[T1059](https://attack.mitre.org/techniques/T1059/)</span></div><div class="mitre-row"><span class="mitre-tac">Command and Control</span><span class="mitre-cnt">[T1095](https://attack.mitre.org/techniques/T1095/)</span></div><div class="mitre-row"><span class="mitre-tac">Execution</span><span class="mitre-cnt">[T1059](https://attack.mitre.org/techniques/T1059/)</span></div><div class="mitre-row"><span class="mitre-tac">Command and Control</span><span class="mitre-cnt">[T1095](https://attack.mitre.org/techniques/T1095/)</span></div><div class="mitre-row"><span class="mitre-tac">Execution</span><span class="mitre-cnt">[T1059](https://attack.mitre.org/techniques/T1059/)</span></div><div class="mitre-row"><span class="mitre-tac">Command and Control</span><span class="mitre-cnt">[T1095](https://attack.mitre.org/techniques/T1095/)</span></div><div class="mitre-row"><span class="mitre-tac">Execution</span><span class="mitre-cnt">[T1059](https://attack.mitre.org/techniques/T1059/)</span></div></div>
     </div>
+    <div class="card">
+      <div class="card-head">Änderungen gegenüber Vorrun</div>
+      <div class="card-body"><div class="delta-list"><div class="delta-item">🆕 neu: **unbekannt** (69)</div><div class="delta-item">📉 ↓ **Mirai** -32 (41→9)</div><div class="delta-item">📈 ↑ **EternalRocks** +5 (1→6)</div><div class="delta-item">🆕 neu: **Smoke Loader** (4)</div><div class="delta-item">🆕 neu: **AsyncRAT** (4)</div><div class="delta-item">🆕 neu: **CHStealer** (1)</div><div class="delta-item">🆕 neu: **Efimer** (1)</div><div class="delta-item">🆕 neu: **Gozi** (1)</div><div class="delta-item">🆕 neu: **ScarfaceStealer** (1)</div><div class="delta-item">✅ weg: **unbekannt / keine Signatur** (war 37)</div><div class="delta-item">✅ weg: **Gafgyt** (war 4)</div><div class="delta-item">✅ weg: **GoToResolve** (war 3)</div><div class="delta-item">✅ weg: **AteraAgent** (war 3)</div></div></div>
+    </div>
+  </div>
+
+  <!-- VirusTotal -->
+  <div class='sec'><div class='sec-title'>VirusTotal Ergebnisse</div><div class="vt-block">
+          <div class="vt-header">
+            <a href="https://bazaar.abuse.ch/sample/b93fd9dfa9d03389fc29b4cbeff96b1ebf2da55fd90ef11e64a193bb98d66eb8/" target="_blank" class="vt-sha">b93fd9dfa9d03389fc29…</a>
+            <span class="vt-family">unbekannt</span>
+            <span class="vt-rate" style="color:#ff8800">0/1 (0.0%)</span>
+          </div>
+          <div class="vt-meta">
+            <span>Häufigster Name: <strong>–</strong></span>
+            <span>Reputation: <strong>0</strong></span>
+          </div>
+          <details class="engine-details">
+            <summary>0 erkennende Engines</summary>
+            <table class="engine-table"></table>
+          </details>
+        </div><div class="vt-block">
+          <div class="vt-header">
+            <a href="https://bazaar.abuse.ch/sample/66adeedfb739774fcc09aa7426c8fad29f8047ab4caee8040d07c0e84d011611/" target="_blank" class="vt-sha">66adeedfb739774fcc09…</a>
+            <span class="vt-family">unbekannt</span>
+            <span class="vt-rate" style="color:#ff8800">11/75 (14.7%)</span>
+          </div>
+          <div class="vt-meta">
+            <span>Häufigster Name: <strong>ELF:BruteForce-BN [Trj]</strong></span>
+            <span>Reputation: <strong>-1</strong></span>
+          </div>
+          <details class="engine-details">
+            <summary>11 erkennende Engines</summary>
+            <table class="engine-table"><tr><td class='eng-name'>| AVG</td><td class='eng-result'><code>ELF:BruteForce-BN [Trj]</code></td></tr><tr><td class='eng-name'>Antiy-AVL</td><td class='eng-result'><code>RiskWare/Linux.Agent</code></td></tr><tr><td class='eng-name'>Avast</td><td class='eng-result'><code>ELF:BruteForce-BN [Trj]</code></td></tr><tr><td class='eng-name'>Avira</td><td class='eng-result'><code>LINUX/AVI.BruteForce.eweqc</code></td></tr><tr><td class='eng-name'>ClamAV</td><td class='eng-result'><code>Unix.Malware.BruteEntry-10058448-0</code></td></tr><tr><td class='eng-name'>Cynet</td><td class='eng-result'><code>Malicious (score: 99)</code></td></tr><tr><td class='eng-name'>F-Secure</td><td class='eng-result'><code>Malware.LINUX/AVI.BruteForce.eweqc</code></td></tr><tr><td class='eng-name'>GData</td><td class='eng-result'><code>Linux.Trojan.Agent.AJ5LJE</code></td></tr><tr><td class='eng-name'>Kaspersky</td><td class='eng-result'><code>UDS:Trojan.Linux.Agent.a</code></td></tr><tr><td class='eng-name'>Microsoft</td><td class='eng-result'><code>Trojan:Linux/Multiverze!rfn</code></td></tr><tr><td class='eng-name'>Symantec</td><td class='eng-result'><code>Trojan Horse</code></td></tr></table>
+          </details>
+        </div><div class="vt-block">
+          <div class="vt-header">
+            <a href="https://bazaar.abuse.ch/sample/34d64b3cd9430e85edefcb883973a086dd5de9917e05fabec89b1f4ab9627e91/" target="_blank" class="vt-sha">34d64b3cd9430e85edef…</a>
+            <span class="vt-family">unbekannt</span>
+            <span class="vt-rate" style="color:#ff8800">32/75 (42.7%)</span>
+          </div>
+          <div class="vt-meta">
+            <span>Häufigster Name: <strong>Trojan.Generic.39181739</strong></span>
+            <span>Reputation: <strong>0</strong></span>
+          </div>
+          <details class="engine-details">
+            <summary>32 erkennende Engines</summary>
+            <table class="engine-table"><tr><td class='eng-name'>| ALYac</td><td class='eng-result'><code>Trojan.Generic.39181739</code></td></tr><tr><td class='eng-name'>AVG</td><td class='eng-result'><code>ELF:Dropper-AH [Drp]</code></td></tr><tr><td class='eng-name'>AhnLab-V3</td><td class='eng-result'><code>Trojan/Linux.Agent</code></td></tr><tr><td class='eng-name'>Arcabit</td><td class='eng-result'><code>Trojan.Generic.D255DDAB</code></td></tr><tr><td class='eng-name'>Avast</td><td class='eng-result'><code>ELF:Dropper-AH [Drp]</code></td></tr><tr><td class='eng-name'>Avira</td><td class='eng-result'><code>LINUX/AVI.Dropper.cpdek</code></td></tr><tr><td class='eng-name'>BitDefender</td><td class='eng-result'><code>Trojan.Generic.39181739</code></td></tr><tr><td class='eng-name'>CTX</td><td class='eng-result'><code>elf.trojan.sagnt</code></td></tr><tr><td class='eng-name'>ClamAV</td><td class='eng-result'><code>Unix.Malware.PeerTime-10058476-0</code></td></tr><tr><td class='eng-name'>Cynet</td><td class='eng-result'><code>Malicious (score: 99)</code></td></tr><tr><td class='eng-name'>ESET-NOD32</td><td class='eng-result'><code>Linux/TrojanDropper.Agent.U trojan</code></td></tr><tr><td class='eng-name'>Emsisoft</td><td class='eng-result'><code>Trojan.Generic.39181739 (B)</code></td></tr><tr><td class='eng-name'>F-Secure</td><td class='eng-result'><code>Malware.LINUX/AVI.Dropper.cpdek</code></td></tr><tr><td class='eng-name'>GData</td><td class='eng-result'><code>Trojan.Generic.39181739</code></td></tr><tr><td class='eng-name'>Google</td><td class='eng-result'><code>Detected</code></td></tr><tr><td class='eng-name'>Ikarus</td><td class='eng-result'><code>Trojan-Dropper.Linux.Agent</code></td></tr><tr><td class='eng-name'>K7GW</td><td class='eng-result'><code>Trojan ( 004105411 )</code></td></tr><tr><td class='eng-name'>Kaspersky</td><td class='eng-result'><code>HEUR:Trojan-Dropper.Linux.Agent.s</code></td></tr><tr><td class='eng-name'>Lionic</td><td class='eng-result'><code>Trojan.Linux.SAgnt.b!c</code></td></tr><tr><td class='eng-name'>MicroWorld-eScan</td><td class='eng-result'><code>Trojan.Generic.39181739</code></td></tr><tr><td class='eng-name'>Microsoft</td><td class='eng-result'><code>Trojan:Linux/SAgnt.U!MTB</code></td></tr><tr><td class='eng-name'>Rising</td><td class='eng-result'><code>Dropper.Agent/Linux!8.129B7 (TFE:14:V4KkT3hZ1nI)</code></td></tr><tr><td class='eng-name'>SentinelOne</td><td class='eng-result'><code>Static AI - Suspicious ELF</code></td></tr><tr><td class='eng-name'>Skyhigh</td><td class='eng-result'><code>Artemis!Trojan</code></td></tr><tr><td class='eng-name'>Sophos</td><td class='eng-result'><code>Mal/Generic-S</code></td></tr><tr><td class='eng-name'>Symantec</td><td class='eng-result'><code>Trojan Horse</code></td></tr><tr><td class='eng-name'>Tencent</td><td class='eng-result'><code>Trojan.Linux.Agent.cp</code></td></tr><tr><td class='eng-name'>TrendMicro-HouseCall</td><td class='eng-result'><code>TROJ_GEN.R002H01C526</code></td></tr><tr><td class='eng-name'>VBA32</td><td class='eng-result'><code>TrojanDropper.Linux.Agent</code></td></tr><tr><td class='eng-name'>VIPRE</td><td class='eng-result'><code>Trojan.Generic.39181739</code></td></tr><tr><td class='eng-name'>Varist</td><td class='eng-result'><code>E64/Agent.OO</code></td></tr><tr><td class='eng-name'>alibabacloud</td><td class='eng-result'><code>Trojan[dropper]:Linux/SAgnt.U9OKG</code></td></tr></table>
+          </details>
+        </div><div class="vt-block">
+          <div class="vt-header">
+            <a href="https://bazaar.abuse.ch/sample/f36913607356a32ea106103387105c635fa923f8ed98ad0194b66ec79e379a02/" target="_blank" class="vt-sha">f36913607356a32ea106…</a>
+            <span class="vt-family">unbekannt</span>
+            <span class="vt-rate" style="color:#ff8800">32/75 (42.7%)</span>
+          </div>
+          <div class="vt-meta">
+            <span>Häufigster Name: <strong>Gen:Variant.Tedy.790489</strong></span>
+            <span>Reputation: <strong>-12</strong></span>
+          </div>
+          <details class="engine-details">
+            <summary>32 erkennende Engines</summary>
+            <table class="engine-table"><tr><td class='eng-name'>| ALYac</td><td class='eng-result'><code>Gen:Variant.Tedy.790489</code></td></tr><tr><td class='eng-name'>AVG</td><td class='eng-result'><code>Win64:MalwareX-gen [Misc]</code></td></tr><tr><td class='eng-name'>AhnLab-V3</td><td class='eng-result'><code>Trojan/Win.Loader.C5666998</code></td></tr><tr><td class='eng-name'>Arcabit</td><td class='eng-result'><code>Trojan.Tedy.DC0FD9</code></td></tr><tr><td class='eng-name'>Avast</td><td class='eng-result'><code>Win64:MalwareX-gen [Misc]</code></td></tr><tr><td class='eng-name'>BitDefender</td><td class='eng-result'><code>Gen:Variant.Tedy.790489</code></td></tr><tr><td class='eng-name'>CAT-QuickHeal</td><td class='eng-result'><code>cld.trojan.cobaltstrike</code></td></tr><tr><td class='eng-name'>CTX</td><td class='eng-result'><code>zip.trojan.cobaltstrike</code></td></tr><tr><td class='eng-name'>ClamAV</td><td class='eng-result'><code>Win.Malware.TernDoor-10058445-0</code></td></tr><tr><td class='eng-name'>Cynet</td><td class='eng-result'><code>Malicious (score: 99)</code></td></tr><tr><td class='eng-name'>DeepInstinct</td><td class='eng-result'><code>MALICIOUS</code></td></tr><tr><td class='eng-name'>ESET-NOD32</td><td class='eng-result'><code>Win64/Agent.FAY trojan</code></td></tr><tr><td class='eng-name'>Emsisoft</td><td class='eng-result'><code>Gen:Variant.Tedy.790489 (B)</code></td></tr><tr><td class='eng-name'>GData</td><td class='eng-result'><code>Gen:Variant.Tedy.790489</code></td></tr><tr><td class='eng-name'>Google</td><td class='eng-result'><code>Detected</code></td></tr><tr><td class='eng-name'>Ikarus</td><td class='eng-result'><code>Trojan.Win64.Cobaltstrike</code></td></tr><tr><td class='eng-name'>K7AntiVirus</td><td class='eng-result'><code>Riskware ( 00584baa1 )</code></td></tr><tr><td class='eng-name'>K7GW</td><td class='eng-result'><code>Riskware ( 00584baa1 )</code></td></tr><tr><td class='eng-name'>Kaspersky</td><td class='eng-result'><code>Trojan-Downloader.Win64.Agent.eis</code></td></tr><tr><td class='eng-name'>Kingsoft</td><td class='eng-result'><code>Win64.Troj.cobaltstrike.v</code></td></tr><tr><td class='eng-name'>Lionic</td><td class='eng-result'><code>Trojan.ZIP.CobaltStrike.a!c</code></td></tr><tr><td class='eng-name'>Malwarebytes</td><td class='eng-result'><code>Malware.AI.2046145907</code></td></tr><tr><td class='eng-name'>Panda</td><td class='eng-result'><code>Trj/GdSda.A</code></td></tr><tr><td class='eng-name'>Sophos</td><td class='eng-result'><code>Mal/Generic-S</code></td></tr><tr><td class='eng-name'>Tencent</td><td class='eng-result'><code>Malware.Win32.Gencirc.14a07482</code></td></tr><tr><td class='eng-name'>TrellixENS</td><td class='eng-result'><code>Artemis!12AD67761F78</code></td></tr><tr><td class='eng-name'>TrendMicro</td><td class='eng-result'><code>Trojan.Win64.RATELS.ZNMD</code></td></tr><tr><td class='eng-name'>TrendMicro-HouseCall</td><td class='eng-result'><code>Trojan.Win64.RATELS.ZNMD</code></td></tr><tr><td class='eng-name'>VIPRE</td><td class='eng-result'><code>Gen:Variant.Tedy.790489</code></td></tr><tr><td class='eng-name'>Varist</td><td class='eng-result'><code>W64/ABTrojan.DLPJ-5346</code></td></tr><tr><td class='eng-name'>ViRobot</td><td class='eng-result'><code>Trojan.Win.Z.Cobaltstrike.93184</code></td></tr><tr><td class='eng-name'>alibabacloud</td><td class='eng-result'><code>Trojan:Win/CobaltStrike.IY8PHU</code></td></tr></table>
+          </details>
+        </div><div class="vt-block">
+          <div class="vt-header">
+            <a href="https://bazaar.abuse.ch/sample/711d9427ee43bc2186b9124f31cba2db5f54ec9a0d56dc2948e1a4377bada289/" target="_blank" class="vt-sha">711d9427ee43bc2186b9…</a>
+            <span class="vt-family">unbekannt</span>
+            <span class="vt-rate" style="color:#ff8800">18/76 (23.7%)</span>
+          </div>
+          <div class="vt-meta">
+            <span>Häufigster Name: <strong>Trojan.Win32.Generic.4!c</strong></span>
+            <span>Reputation: <strong>-1</strong></span>
+          </div>
+          <details class="engine-details">
+            <summary>23 erkennende Engines</summary>
+            <table class="engine-table"><tr><td class='eng-name'>| APEX</td><td class='eng-result'><code>Malicious</code></td></tr><tr><td class='eng-name'>AhnLab-V3</td><td class='eng-result'><code>Trojan/Win.Loader.C5666998</code></td></tr><tr><td class='eng-name'>ClamAV</td><td class='eng-result'><code>Win.Malware.TernDoor-10058445-0</code></td></tr><tr><td class='eng-name'>CrowdStrike</td><td class='eng-result'><code>win/malicious_confidence_100% (W)</code></td></tr><tr><td class='eng-name'>Cynet</td><td class='eng-result'><code>Malicious (score: 100)</code></td></tr><tr><td class='eng-name'>ESET-NOD32</td><td class='eng-result'><code>Win64/Agent.FAY trojan</code></td></tr><tr><td class='eng-name'>Google</td><td class='eng-result'><code>Detected</code></td></tr><tr><td class='eng-name'>Ikarus</td><td class='eng-result'><code>Trojan.Win64.Agent</code></td></tr><tr><td class='eng-name'>Lionic</td><td class='eng-result'><code>Trojan.Win32.Generic.4!c</code></td></tr><tr><td class='eng-name'>MaxSecure</td><td class='eng-result'><code>Trojan.Malware.300983.susgen</code></td></tr><tr><td class='eng-name'>McAfeeD</td><td class='eng-result'><code>ti!711D9427EE43</code></td></tr><tr><td class='eng-name'>Microsoft</td><td class='eng-result'><code>Trojan:Win32/Etset!rfn</code></td></tr><tr><td class='eng-name'>Paloalto</td><td class='eng-result'><code>generic.ml</code></td></tr><tr><td class='eng-name'>Rising</td><td class='eng-result'><code>Trojan.Agent!8.B1E (CLOUD)</code></td></tr><tr><td class='eng-name'>Sophos</td><td class='eng-result'><code>Mal/Generic-S</code></td></tr><tr><td class='eng-name'>Tencent</td><td class='eng-result'><code>Malware.Win32.Gencirc.149da2ab</code></td></tr><tr><td class='eng-name'>Varist</td><td class='eng-result'><code>W64/ABTrojan.KJDV-0255</code></td></tr><tr><td class='eng-name'>alibabacloud</td><td class='eng-result'><code>Trojan:Win/Agent.FMT</code></td></tr><tr><td class='eng-name'>| 15:56 | [b93fd9dfa9d0…](https://bazaar.abuse.ch/sample/b93fd9dfa9d03389fc29b4cbeff96b1ebf2da55fd90ef11e64a193bb98d66eb8/)</td><td class='eng-result'><code>exe</code></td></tr><tr><td class='eng-name'>| 15:53 | [66adeedfb739…](https://bazaar.abuse.ch/sample/66adeedfb739774fcc09aa7426c8fad29f8047ab4caee8040d07c0e84d011611/)</td><td class='eng-result'><code>elf</code></td></tr><tr><td class='eng-name'>| 15:48 | [34d64b3cd943…](https://bazaar.abuse.ch/sample/34d64b3cd9430e85edefcb883973a086dd5de9917e05fabec89b1f4ab9627e91/)</td><td class='eng-result'><code>elf</code></td></tr><tr><td class='eng-name'>| 15:47 | [f36913607356…](https://bazaar.abuse.ch/sample/f36913607356a32ea106103387105c635fa923f8ed98ad0194b66ec79e379a02/)</td><td class='eng-result'><code>zip</code></td></tr><tr><td class='eng-name'>| 15:45 | [711d9427ee43…](https://bazaar.abuse.ch/sample/711d9427ee43bc2186b9124f31cba2db5f54ec9a0d56dc2948e1a4377bada289/)</td><td class='eng-result'><code>exe</code></td></tr></table>
+          </details>
+        </div></div>
+
+  <!-- Tags -->
+  <div class="sec card">
+    <div class="card-head">Häufigste Tags</div>
+    <div class="card-body"><div class="tags-wrap"><span class="tag-pill">exe <span class="tag-cnt">50</span></span><span class="tag-pill">elf <span class="tag-cnt">14</span></span><span class="tag-pill">zip <span class="tag-cnt">10</span></span><span class="tag-pill">acecareer-edu <span class="tag-cnt">10</span></span><span class="tag-pill">signed <span class="tag-cnt">9</span></span><span class="tag-pill">Mirai <span class="tag-cnt">9</span></span><span class="tag-pill">87-120-187-0 <span class="tag-cnt">9</span></span><span class="tag-pill">dropped-by-ACRStealer <span class="tag-cnt">8</span></span><span class="tag-pill">ps1 <span class="tag-cnt">7</span></span><span class="tag-pill">upx-dec <span class="tag-cnt">7</span></span><span class="tag-pill">silverfox <span class="tag-cnt">7</span></span><span class="tag-pill">not-EternalRocks <span class="tag-cnt">6</span></span><span class="tag-pill">ACRStealer <span class="tag-cnt">6</span></span><span class="tag-pill">dll <span class="tag-cnt">6</span></span><span class="tag-pill">EternalRocks <span class="tag-cnt">5</span></span></div></div>
   </div>
 
 </main>
 
 <footer>
   Daten: <a href="https://bazaar.abuse.ch" target="_blank">MalwareBazaar (abuse.ch)</a> ×
-  <a href="https://virustotal.com" target="_blank">VirusTotal</a> &nbsp;·&nbsp;
-  Nur für Threat-Intelligence und Bildungszwecke &nbsp;·&nbsp;
+  <a href="https://virustotal.com" target="_blank">VirusTotal</a> —
+  nur für Threat-Intelligence und Bildungszwecke —
   <a href="https://unchained-int.github.io/TI/rss.xml">RSS</a>
 </footer>
 
 <script>
-const HISTORY = {"labels": ["2026-03-06", "2026-03-07", "2026-03-07"], "datasets": [{"label": "Mirai", "data": [50, 41, 13], "borderColor": "#ef4444", "backgroundColor": "#ef444433", "tension": 0.4}, {"label": "unbekannt / keine Signatur", "data": [28, 37, 0], "borderColor": "#f97316", "backgroundColor": "#f9731633", "tension": 0.4}, {"label": "unbekannt", "data": [0, 0, 65], "borderColor": "#eab308", "backgroundColor": "#eab30833", "tension": 0.4}, {"label": "EternalRocks", "data": [0, 1, 6], "borderColor": "#22c55e", "backgroundColor": "#22c55e33", "tension": 0.4}, {"label": "GuLoader", "data": [5, 0, 0], "borderColor": "#3b82f6", "backgroundColor": "#3b82f633", "tension": 0.4}]};
-const FT      = {"labels": [], "data": []};
-const RISK    = {"labels": ["\ud83d\udd34 Kritisch", "\ud83d\udfe0 Hoch", "\ud83d\udfe1 Mittel", "\ud83d\udfe2 Niedrig"], "data": [40, 10, 6, 44], "colors": ["#ef4444", "#f97316", "#eab308", "#22c55e"]};
+const HIST = {"labels": ["2026-03-06", "2026-03-07", "2026-03-07", "2026-03-07"], "datasets": [{"label": "unbekannt", "data": [0, 0, 65, 69], "borderColor": "#ff4444", "backgroundColor": "#ff444422", "tension": 0.4, "pointRadius": 4, "pointHoverRadius": 7}, {"label": "Mirai", "data": [50, 41, 13, 9], "borderColor": "#ff8800", "backgroundColor": "#ff880022", "tension": 0.4, "pointRadius": 4, "pointHoverRadius": 7}, {"label": "unbekannt / keine Signatur", "data": [28, 37, 0, 0], "borderColor": "#ffcc00", "backgroundColor": "#ffcc0022", "tension": 0.4, "pointRadius": 4, "pointHoverRadius": 7}, {"label": "EternalRocks", "data": [0, 1, 6, 6], "borderColor": "#44ff88", "backgroundColor": "#44ff8822", "tension": 0.4, "pointRadius": 4, "pointHoverRadius": 7}, {"label": "Smoke Loader", "data": [0, 0, 4, 4], "borderColor": "#44aaff", "backgroundColor": "#44aaff22", "tension": 0.4, "pointRadius": 4, "pointHoverRadius": 7}]};
+const FT   = {"labels": ["exe", "elf", "zip", "ps1", "dll", "unknown", "msi", "sh"], "data": [50, 14, 10, 7, 6, 4, 3, 1]};
+const CAT  = {"labels": ["Andere / Unbekannt", "Infostealer", "Loader", "Botnet/IoT", "RAT", "Linux-Malware", "Skript/Dropper", "Trojaner"], "data": [45, 19, 11, 9, 6, 5, 3, 2], "colors": ["#ff4444", "#ff8800", "#ffcc00", "#44ff88", "#44aaff", "#aa44ff", "#ff44aa", "#44ffcc"]};
+const RISK = {"labels": ["Kritisch", "Hoch", "Mittel", "Niedrig"], "data": [36, 11, 8, 45], "colors": ["#ff4444", "#ff8800", "#ffcc00", "#44ff88"]};
 
-const chartDefaults = {
+const mono = "'JetBrains Mono', monospace";
+const defaults = {
   plugins: {
-    legend: { labels: { color: '#e2e8f0', font: { size: 12 } } },
+    legend: { labels: { color: '#586069', font: { family: mono, size: 11 } } },
   },
   scales: {
-    x: { ticks: { color: '#64748b' }, grid: { color: '#2a2d3e' } },
-    y: { ticks: { color: '#64748b' }, grid: { color: '#2a2d3e' } },
+    x: { ticks: { color: '#586069', font: { family: mono, size: 11 } }, grid: { color: '#1e2538' } },
+    y: { ticks: { color: '#586069', font: { family: mono, size: 11 } }, grid: { color: '#1e2538' } },
   },
 };
 
@@ -210,55 +682,74 @@ new Chart(document.getElementById('riskChart'), {
   type: 'doughnut',
   data: {
     labels: RISK.labels,
-    datasets: [{ data: RISK.data, backgroundColor: RISK.colors, borderWidth: 2, borderColor: '#1a1d27' }],
+    datasets: [{ data: RISK.data, backgroundColor: RISK.colors, borderWidth: 0, hoverOffset: 6 }],
   },
   options: {
+    cutout: '70%',
     plugins: {
-      legend: { position: 'right', labels: { color: '#e2e8f0' } },
+      legend: { position: 'bottom', labels: { color: '#c9d1d9', font: { family: mono, size: 11 }, padding: 12 } },
     },
-    cutout: '65%',
   },
 });
 
-// Dateitypen Bar
+// Dateitypen Horizontal Bar
 new Chart(document.getElementById('ftChart'), {
   type: 'bar',
   data: {
     labels: FT.labels,
     datasets: [{
-      label: 'Samples',
       data: FT.data,
-      backgroundColor: '#3b82f633',
-      borderColor: '#3b82f6',
+      backgroundColor: '#58a6ff22',
+      borderColor: '#58a6ff',
       borderWidth: 1,
+      borderRadius: 3,
     }],
   },
   options: {
-    ...chartDefaults,
+    indexAxis: 'y',
+    ...defaults,
     plugins: { legend: { display: false } },
     scales: {
-      x: { ticks: { color: '#64748b' }, grid: { color: '#2a2d3e' } },
-      y: { ticks: { color: '#64748b' }, grid: { color: '#2a2d3e' } },
+      x: { ticks: { color: '#586069', font: { family: mono, size: 10 } }, grid: { color: '#1e2538' } },
+      y: { ticks: { color: '#c9d1d9', font: { family: mono, size: 11 } }, grid: { display: false } },
     },
   },
 });
 
-// Trend Line
-if (HISTORY.labels && HISTORY.labels.length > 0) {
+// Kategorien Doughnut
+new Chart(document.getElementById('catChart'), {
+  type: 'doughnut',
+  data: {
+    labels: CAT.labels,
+    datasets: [{ data: CAT.data, backgroundColor: CAT.colors, borderWidth: 0, hoverOffset: 6 }],
+  },
+  options: {
+    cutout: '60%',
+    plugins: {
+      legend: { position: 'bottom', labels: { color: '#c9d1d9', font: { family: mono, size: 10 }, padding: 8, boxWidth: 10 } },
+    },
+  },
+});
+
+// Trend
+if (HIST.labels && HIST.labels.length > 1) {
   new Chart(document.getElementById('trendChart'), {
     type: 'line',
-    data: { labels: HISTORY.labels, datasets: HISTORY.datasets },
+    data: { labels: HIST.labels, datasets: HIST.datasets },
     options: {
-      ...chartDefaults,
+      ...defaults,
       plugins: {
-        legend: { labels: { color: '#e2e8f0' } },
+        legend: { labels: { color: '#c9d1d9', font: { family: mono, size: 11 }, padding: 16 } },
       },
       scales: {
-        x: { ticks: { color: '#64748b' }, grid: { color: '#2a2d3e' } },
-        y: { ticks: { color: '#64748b' }, grid: { color: '#2a2d3e' }, beginAtZero: true },
+        x: { ticks: { color: '#586069', font: { family: mono, size: 10 } }, grid: { color: '#1e2538' } },
+        y: { beginAtZero: true, ticks: { color: '#586069', font: { family: mono, size: 11 } }, grid: { color: '#1e2538' } },
       },
     },
   });
+} else {
+  document.getElementById('trendChart').parentElement.innerHTML =
+    '<div style="display:flex;align-items:center;justify-content:center;height:100%;color:#586069;font-family:' + mono + ';font-size:0.75rem">Trend wird nach mehreren Runs sichtbar</div>';
 }
 </script>
 </body>
