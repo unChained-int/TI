@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>MalwareBazaar TI – 08.03.2026 06:31 UTC</title>
+  <title>MalwareBazaar TI – 08.03.2026 10:48 UTC</title>
   <link rel="alternate" type="application/rss+xml" title="MalwareBazaar TI Feed" href="https://unchained-int.github.io/TI/rss.xml">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
   <style>
@@ -240,6 +240,53 @@
     }
     footer a { color: var(--blue); text-decoration: none; }
     footer a:hover { text-decoration: underline; }
+
+    /* ── Origin Country Karte ── */
+    .origin-map {
+      background: var(--bg1);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 1rem;
+      align-items: stretch;
+    }
+    .origin-column {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 0.4rem; min-width: 90px;
+    }
+    .origin-arrow { font-size: 1.4rem; color: var(--muted); }
+    .origin-flag  { font-size: 2.2rem; line-height: 1; }
+    .origin-code  { font-family: var(--mono); font-size: 0.9rem; font-weight: 700; color: var(--text); }
+    .origin-count {
+      font-family: var(--mono); font-size: 1.6rem; font-weight: 700;
+      color: var(--red); line-height: 1;
+    }
+    .origin-pct   { font-size: 0.72rem; color: var(--muted); }
+    .origin-de-col {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 0.35rem; border-left: 1px solid var(--border2); border-right: 1px solid var(--border2);
+      padding: 0 1.5rem;
+    }
+    .origin-de-label { font-family: var(--mono); font-size: 0.65rem; color: var(--muted); text-transform: uppercase; letter-spacing:0.1em; }
+    .origin-de-flag  { font-size: 2.8rem; line-height: 1; }
+    .origin-de-count { font-family: var(--mono); font-size: 2.4rem; font-weight: 700; color: var(--blue); line-height: 1; }
+    .origin-de-pct   { font-size: 0.78rem; color: var(--blue); opacity: 0.8; }
+    .origin-de-rank  { font-size: 0.72rem; color: var(--muted); }
+    .origin-bars     { display: flex; flex-direction: column; gap: 0.35rem; flex: 1; justify-content: center; }
+    .country-row     { display: flex; align-items: center; gap: 0.5rem; }
+    .country-flag    { font-size: 1rem; width: 22px; text-align: center; }
+    .country-code    { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); width: 28px; }
+    .country-bar-bg  { flex: 1; height: 4px; background: var(--bg3); border-radius: 2px; overflow:hidden; max-width: 180px; }
+    .country-bar-fill{ height: 100%; border-radius: 2px; transition: width 0.4s ease; }
+    .country-count   { font-family: var(--mono); font-size: 0.72rem; color: var(--text); width: 28px; text-align:right; }
+    .country-pct     { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); width: 38px; text-align:right; }
+    @media(max-width:600px) {
+      .origin-map { grid-template-columns: 1fr; }
+      .origin-de-col { border: none; border-top: 1px solid var(--border2); border-bottom: 1px solid var(--border2); padding: 1rem 0; }
+    }
   </style>
 </head>
 <body>
@@ -248,16 +295,67 @@
   <div class="header-left">
     <div class="live-dot"></div>
     <div class="header-logo">malware<span>-</span>intel</div>
-    <div class="header-ts">08.03.2026 06:31 UTC</div>
+    <div class="header-ts">08.03.2026 10:48 UTC</div>
   </div>
   <div class="header-right">
     <a href="https://unchained-int.github.io/TI/rss.xml" class="header-link">RSS</a>
+    <a href="https://unchained-int.github.io/TI/rss_kpi.xml" class="header-link">KPI-RSS</a>
     <a href="https://unchained-int.github.io/TI/reports/latest.md" class="header-link" target="_blank">report.md</a>
     <a href="https://bazaar.abuse.ch" class="header-link" target="_blank">bazaar</a>
   </div>
 </header>
 
 <main class="page">
+
+  <!-- Origin Country Karte -->
+  <div class="origin-map">
+    <!-- Linke Spalte: Top-Land (Pfeil hoch) -->
+    <div class="origin-column">
+      <div class="origin-arrow">↑</div>
+      <div class="origin-flag">🇸🇪</div>
+      <div class="origin-code">SE</div>
+      <div class="origin-count">86</div>
+      <div class="origin-pct">86.0%</div>
+    </div>
+
+    <!-- Mitte: Deutschland -->
+    <div class="origin-de-col">
+      <div class="origin-de-label">Origin Country</div>
+      <div class="origin-de-flag">🇩🇪</div>
+      <div class="origin-de-count">10</div>
+      <div class="origin-de-pct">10.0%</div>
+      <div class="origin-de-rank">Rang #2</div>
+    </div>
+
+    <!-- Rechte Spalte: alle Länder als Balken -->
+    <div class="origin-bars">
+      <div class="country-row">
+          <span class="country-flag">🇸🇪</span>
+          <span class="country-code" style="">SE</span>
+          <div class="country-bar-bg"><div class="country-bar-fill" style="width:180px;background:var(--red)"></div></div>
+          <span class="country-count">86</span>
+          <span class="country-pct">86.0%</span>
+        </div><div class="country-row">
+          <span class="country-flag">🇩🇪</span>
+          <span class="country-code" style="font-weight:700;color:var(--blue)">DE</span>
+          <div class="country-bar-bg"><div class="country-bar-fill" style="width:20px;background:var(--blue)"></div></div>
+          <span class="country-count">10</span>
+          <span class="country-pct">10.0%</span>
+        </div><div class="country-row">
+          <span class="country-flag">🇳🇱</span>
+          <span class="country-code" style="">NL</span>
+          <div class="country-bar-bg"><div class="country-bar-fill" style="width:6px;background:var(--cyan)"></div></div>
+          <span class="country-count">3</span>
+          <span class="country-pct">3.0%</span>
+        </div><div class="country-row">
+          <span class="country-flag">🇺🇸</span>
+          <span class="country-code" style="">US</span>
+          <div class="country-bar-bg"><div class="country-bar-fill" style="width:2px;background:var(--dim)"></div></div>
+          <span class="country-count">1</span>
+          <span class="country-pct">1.0%</span>
+        </div>
+    </div>
+  </div>
 
   <!-- KPI Bar -->
   <div class="kpi-bar">
@@ -268,42 +366,42 @@
     </div>
     <div class="kpi">
       <div class="kpi-label">🔴 Kritisch</div>
-      <div class="kpi-val kv-red">27</div>
+      <div class="kpi-val kv-red">41</div>
       <div class="kpi-sub">Score ≥ 75</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">🟠 Hoch</div>
-      <div class="kpi-val kv-orange">18</div>
+      <div class="kpi-val kv-orange">3</div>
       <div class="kpi-sub">Score 55–74</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">🟡 Mittel</div>
-      <div class="kpi-val kv-yellow">4</div>
+      <div class="kpi-val kv-yellow">44</div>
       <div class="kpi-sub">Score 35–54</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">🟢 Niedrig</div>
-      <div class="kpi-val kv-green">51</div>
+      <div class="kpi-val kv-green">12</div>
       <div class="kpi-sub">Score &lt; 35</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">Top Score</div>
       <div class="kpi-val kv-red">?</div>
-      <div class="kpi-sub">a40193b7b352…</div>
+      <div class="kpi-sub">416c01c8f185…</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">VT enriched</div>
-      <div class="kpi-val kv-blue">4 Samples</div>
+      <div class="kpi-val kv-blue">5 Samples</div>
       <div class="kpi-sub">Samples</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">MITRE mapped</div>
-      <div class="kpi-val kv-cyan">22 Samples</div>
+      <div class="kpi-val kv-cyan">27 Samples</div>
       <div class="kpi-sub">Samples</div>
     </div>
     <div class="kpi">
       <div class="kpi-label">Ø Größe</div>
-      <div class="kpi-val kv-white" style="font-size:1.2rem">9.82 MB (σ=20.05)</div>
+      <div class="kpi-val kv-white" style="font-size:1.2rem">1.98 MB (σ=3.98)</div>
       <div class="kpi-sub">Dateigröße</div>
     </div>
   </div>
@@ -340,62 +438,62 @@
           <tbody><tr>
           <td class="rank">1</td>
           <td class="family-name">unbekannt</td>
-          <td class="count">55</td>
+          <td class="count">36</td>
           <td class="pct-cell">
-            <span class="pct-text">55.0%</span>
-            <div class="pct-bar" style="width:110px"></div>
+            <span class="pct-text">36.0%</span>
+            <div class="pct-bar" style="width:72px"></div>
           </td>
         </tr><tr>
           <td class="rank">2</td>
+          <td class="family-name">AgentTesla</td>
+          <td class="count">15</td>
+          <td class="pct-cell">
+            <span class="pct-text">15.0%</span>
+            <div class="pct-bar" style="width:30px"></div>
+          </td>
+        </tr><tr>
+          <td class="rank">3</td>
           <td class="family-name">Mirai</td>
+          <td class="count">9</td>
+          <td class="pct-cell">
+            <span class="pct-text">9.0%</span>
+            <div class="pct-bar" style="width:18px"></div>
+          </td>
+        </tr><tr>
+          <td class="rank">4</td>
+          <td class="family-name">RemcosRAT</td>
           <td class="count">6</td>
           <td class="pct-cell">
             <span class="pct-text">6.0%</span>
             <div class="pct-bar" style="width:12px"></div>
           </td>
         </tr><tr>
-          <td class="rank">3</td>
-          <td class="family-name">AsyncRAT</td>
-          <td class="count">4</td>
-          <td class="pct-cell">
-            <span class="pct-text">4.0%</span>
-            <div class="pct-bar" style="width:8px"></div>
-          </td>
-        </tr><tr>
-          <td class="rank">4</td>
-          <td class="family-name">Smoke Loader</td>
-          <td class="count">4</td>
-          <td class="pct-cell">
-            <span class="pct-text">4.0%</span>
-            <div class="pct-bar" style="width:8px"></div>
-          </td>
-        </tr><tr>
           <td class="rank">5</td>
-          <td class="family-name">EternalRocks</td>
-          <td class="count">3</td>
+          <td class="family-name">XWorm</td>
+          <td class="count">6</td>
           <td class="pct-cell">
-            <span class="pct-text">3.0%</span>
-            <div class="pct-bar" style="width:6px"></div>
+            <span class="pct-text">6.0%</span>
+            <div class="pct-bar" style="width:12px"></div>
           </td>
         </tr><tr>
           <td class="rank">6</td>
-          <td class="family-name">AgentTesla</td>
-          <td class="count">3</td>
+          <td class="family-name">VIPKeylogger</td>
+          <td class="count">5</td>
           <td class="pct-cell">
-            <span class="pct-text">3.0%</span>
-            <div class="pct-bar" style="width:6px"></div>
+            <span class="pct-text">5.0%</span>
+            <div class="pct-bar" style="width:10px"></div>
           </td>
         </tr><tr>
           <td class="rank">7</td>
-          <td class="family-name">RemcosRAT</td>
-          <td class="count">3</td>
+          <td class="family-name">Vidar</td>
+          <td class="count">5</td>
           <td class="pct-cell">
-            <span class="pct-text">3.0%</span>
-            <div class="pct-bar" style="width:6px"></div>
+            <span class="pct-text">5.0%</span>
+            <div class="pct-bar" style="width:10px"></div>
           </td>
         </tr><tr>
           <td class="rank">8</td>
-          <td class="family-name">ValleyRAT</td>
+          <td class="family-name">a310Logger</td>
           <td class="count">2</td>
           <td class="pct-cell">
             <span class="pct-text">2.0%</span>
@@ -403,7 +501,7 @@
           </td>
         </tr><tr>
           <td class="rank">9</td>
-          <td class="family-name">SalatStealer</td>
+          <td class="family-name">PhantomStealer</td>
           <td class="count">2</td>
           <td class="pct-cell">
             <span class="pct-text">2.0%</span>
@@ -411,7 +509,7 @@
           </td>
         </tr><tr>
           <td class="rank">10</td>
-          <td class="family-name">ConnectWise</td>
+          <td class="family-name">AsyncRAT</td>
           <td class="count">2</td>
           <td class="pct-cell">
             <span class="pct-text">2.0%</span>
@@ -419,19 +517,19 @@
           </td>
         </tr><tr>
           <td class="rank">11</td>
-          <td class="family-name">ACRStealer</td>
-          <td class="count">2</td>
+          <td class="family-name">njrat</td>
+          <td class="count">1</td>
           <td class="pct-cell">
-            <span class="pct-text">2.0%</span>
-            <div class="pct-bar" style="width:4px"></div>
+            <span class="pct-text">1.0%</span>
+            <div class="pct-bar" style="width:2px"></div>
           </td>
         </tr><tr>
           <td class="rank">12</td>
-          <td class="family-name">TernDoor</td>
-          <td class="count">2</td>
+          <td class="family-name">NetSupport</td>
+          <td class="count">1</td>
           <td class="pct-cell">
-            <span class="pct-text">2.0%</span>
-            <div class="pct-bar" style="width:4px"></div>
+            <span class="pct-text">1.0%</span>
+            <div class="pct-bar" style="width:2px"></div>
           </td>
         </tr></tbody>
         </table>
@@ -441,32 +539,26 @@
       <div class="card-head">Betroffene Plattformen</div>
       <div class="card-body">
         <div class="plat-grid"><div class="plat-card">
+          <span class="plat-icon">❓</span>
+          <span class="plat-name">❓ Unbekannt</span>
+          <span class="plat-count">49</span>
+          <div class="plat-bar-bg"><div class="plat-bar-fill" style="width:49.0%"></div></div>
+          <span class="plat-pct">49.0%</span>
+        </div><div class="plat-card">
           <span class="plat-icon">🪟</span>
           <span class="plat-name">🪟 Windows</span>
-          <span class="plat-count">65</span>
-          <div class="plat-bar-bg"><div class="plat-bar-fill" style="width:65.0%"></div></div>
-          <span class="plat-pct">65.0%</span>
+          <span class="plat-count">40</span>
+          <div class="plat-bar-bg"><div class="plat-bar-fill" style="width:40.0%"></div></div>
+          <span class="plat-pct">40.0%</span>
         </div><div class="plat-card">
           <span class="plat-icon">🐧</span>
           <span class="plat-name">🐧 Linux</span>
-          <span class="plat-count">15</span>
-          <div class="plat-bar-bg"><div class="plat-bar-fill" style="width:15.0%"></div></div>
-          <span class="plat-pct">15.0%</span>
+          <span class="plat-count">10</span>
+          <div class="plat-bar-bg"><div class="plat-bar-fill" style="width:10.0%"></div></div>
+          <span class="plat-pct">10.0%</span>
         </div><div class="plat-card">
-          <span class="plat-icon">❓</span>
-          <span class="plat-name">❓ Unbekannt</span>
-          <span class="plat-count">11</span>
-          <div class="plat-bar-bg"><div class="plat-bar-fill" style="width:11.0%"></div></div>
-          <span class="plat-pct">11.0%</span>
-        </div><div class="plat-card">
-          <span class="plat-icon">📦</span>
-          <span class="plat-name">📦 Archiv</span>
-          <span class="plat-count">8</span>
-          <div class="plat-bar-bg"><div class="plat-bar-fill" style="width:8.0%"></div></div>
-          <span class="plat-pct">8.0%</span>
-        </div><div class="plat-card">
-          <span class="plat-icon">📄</span>
-          <span class="plat-name">📄 Dokument</span>
+          <span class="plat-icon">🤖</span>
+          <span class="plat-name">🤖 Android</span>
           <span class="plat-count">1</span>
           <div class="plat-bar-bg"><div class="plat-bar-fill" style="width:1.0%"></div></div>
           <span class="plat-pct">1.0%</span>
@@ -482,82 +574,82 @@
       <table class="data-table">
         <thead><tr><th>SHA256</th><th>Familie</th><th>Kategorie</th><th>Score</th><th>Level</th><th>S_det</th><th>VT</th></tr></thead>
         <tbody><tr>
-          <td><a href="https://bazaar.abuse.ch/sample/a40193b7b352fe3a14cfe1ca65c9b5250c663f0240cbcda9be70b7898e57f31f/" target="_blank" class="sha-link">a40193b7b352fe…</a></td>
-          <td>AsyncRAT</td>
+          <td><a href="https://bazaar.abuse.ch/sample/416c01c8f1851f038371bda07ffda846b809eb1e7df28344e2ee7b208539b1a1/" target="_blank" class="sha-link">416c01c8f1851f…</a></td>
+          <td>njrat</td>
           <td><span class="cat-badge">RAT</span></td>
-          <td class="score-cell" style="color:#ff4444"><strong>84.9</strong></td>
+          <td class="score-cell" style="color:#ff4444"><strong>88.6</strong></td>
           <td style="color:#ff4444">🔴 KRITISCH</td>
-          <td class="mono">0.0</td>
-          <td class="vt-cell">–</td>
+          <td class="mono">0.868</td>
+          <td class="vt-cell">✓</td>
         </tr><tr>
-          <td><a href="https://bazaar.abuse.ch/sample/5c47f62de622440aa88faa2bcafd0d1af4971b02e8d39b046a573c6cbe97a6c4/" target="_blank" class="sha-link">5c47f62de62244…</a></td>
-          <td>LummaStealer</td>
-          <td><span class="cat-badge">Infostealer</span></td>
-          <td class="score-cell" style="color:#ff4444"><strong>83.8</strong></td>
-          <td style="color:#ff4444">🔴 KRITISCH</td>
-          <td class="mono">0.0</td>
-          <td class="vt-cell">–</td>
-        </tr><tr>
-          <td><a href="https://bazaar.abuse.ch/sample/0b51bf93a76fcab0f9db43164054acb76d5a96d34fc3b7dd5f9129f6bfa5e58e/" target="_blank" class="sha-link">0b51bf93a76fca…</a></td>
+          <td><a href="https://bazaar.abuse.ch/sample/2c871a66caa73566559e61c3340a44f74c0e4000f25a421f8051139d475c798c/" target="_blank" class="sha-link">2c871a66caa735…</a></td>
           <td>Vidar</td>
           <td><span class="cat-badge">Infostealer</span></td>
-          <td class="score-cell" style="color:#ff4444"><strong>83.7</strong></td>
+          <td class="score-cell" style="color:#ff4444"><strong>87.7</strong></td>
           <td style="color:#ff4444">🔴 KRITISCH</td>
           <td class="mono">0.0</td>
           <td class="vt-cell">–</td>
         </tr><tr>
-          <td><a href="https://bazaar.abuse.ch/sample/487715299f14c581a2032cf18a1afd2a65ec3852dc6dd39e15268cce1af8ee7d/" target="_blank" class="sha-link">487715299f14c5…</a></td>
-          <td>NetSupport</td>
-          <td><span class="cat-badge">RAT</span></td>
-          <td class="score-cell" style="color:#ff4444"><strong>82.9</strong></td>
+          <td><a href="https://bazaar.abuse.ch/sample/7e1f3c8af73a8faa59ffdcdbff3063a6f7d2c038c295bd862f8b0e98c1fc6811/" target="_blank" class="sha-link">7e1f3c8af73a8f…</a></td>
+          <td>Vidar</td>
+          <td><span class="cat-badge">Infostealer</span></td>
+          <td class="score-cell" style="color:#ff4444"><strong>87.7</strong></td>
           <td style="color:#ff4444">🔴 KRITISCH</td>
           <td class="mono">0.0</td>
           <td class="vt-cell">–</td>
         </tr><tr>
-          <td><a href="https://bazaar.abuse.ch/sample/3efd75280f8f0c640d174d0fb55df5f3d17a10c4248bbb705281bd74bdf2d381/" target="_blank" class="sha-link">3efd75280f8f0c…</a></td>
-          <td>AsyncRAT</td>
-          <td><span class="cat-badge">RAT</span></td>
-          <td class="score-cell" style="color:#ff4444"><strong>82.9</strong></td>
+          <td><a href="https://bazaar.abuse.ch/sample/2936ef53a07ddd65eedf9365e884af7431659dbbdf1a42e32e19083faff5d07d/" target="_blank" class="sha-link">2936ef53a07ddd…</a></td>
+          <td>Vidar</td>
+          <td><span class="cat-badge">Infostealer</span></td>
+          <td class="score-cell" style="color:#ff4444"><strong>87.6</strong></td>
           <td style="color:#ff4444">🔴 KRITISCH</td>
           <td class="mono">0.0</td>
           <td class="vt-cell">–</td>
         </tr><tr>
-          <td><a href="https://bazaar.abuse.ch/sample/9c970c29df4fb1398940809e6e7a9bc5088eaca54eed4cdd878c06fd0ed030b2/" target="_blank" class="sha-link">9c970c29df4fb1…</a></td>
-          <td>AsyncRAT</td>
-          <td><span class="cat-badge">RAT</span></td>
-          <td class="score-cell" style="color:#ff4444"><strong>82.8</strong></td>
+          <td><a href="https://bazaar.abuse.ch/sample/d0ca9747e38860366dd54cccd6252d0eee66198ea500a915ca1b0f6f77c727e9/" target="_blank" class="sha-link">d0ca9747e38860…</a></td>
+          <td>Vidar</td>
+          <td><span class="cat-badge">Infostealer</span></td>
+          <td class="score-cell" style="color:#ff4444"><strong>87.6</strong></td>
           <td style="color:#ff4444">🔴 KRITISCH</td>
           <td class="mono">0.0</td>
           <td class="vt-cell">–</td>
         </tr><tr>
-          <td><a href="https://bazaar.abuse.ch/sample/32855d78f2bb5b72b9ea1a9284a04e52bdd3778fcf4e23eb6229356b9f158c10/" target="_blank" class="sha-link">32855d78f2bb5b…</a></td>
-          <td>QuasarRAT</td>
-          <td><span class="cat-badge">RAT</span></td>
-          <td class="score-cell" style="color:#ff4444"><strong>82.8</strong></td>
+          <td><a href="https://bazaar.abuse.ch/sample/dc92808757801d73cdf339c1ec0a18cf8ea2ecae7f889b0b4970685c1bc249c3/" target="_blank" class="sha-link">dc92808757801d…</a></td>
+          <td>Vidar</td>
+          <td><span class="cat-badge">Infostealer</span></td>
+          <td class="score-cell" style="color:#ff4444"><strong>87.6</strong></td>
           <td style="color:#ff4444">🔴 KRITISCH</td>
           <td class="mono">0.0</td>
           <td class="vt-cell">–</td>
         </tr><tr>
-          <td><a href="https://bazaar.abuse.ch/sample/cb9b4e58dee1d24d5ad6ef6f6503300edb95e2014a37b7eb407e654740200ac6/" target="_blank" class="sha-link">cb9b4e58dee1d2…</a></td>
+          <td><a href="https://bazaar.abuse.ch/sample/8c8ebe91852d4be8c2fa98bc65dd0d029833fc8451e2a91689603b8d3a330199/" target="_blank" class="sha-link">8c8ebe91852d4b…</a></td>
           <td>RemcosRAT</td>
           <td><span class="cat-badge">RAT</span></td>
-          <td class="score-cell" style="color:#ff4444"><strong>82.6</strong></td>
+          <td class="score-cell" style="color:#ff4444"><strong>86.9</strong></td>
           <td style="color:#ff4444">🔴 KRITISCH</td>
           <td class="mono">0.0</td>
           <td class="vt-cell">–</td>
         </tr><tr>
-          <td><a href="https://bazaar.abuse.ch/sample/329afa0425a06aefcfeedb09773ef58199f5f07ef43c77bc6de4f249a590bc0e/" target="_blank" class="sha-link">329afa0425a06a…</a></td>
+          <td><a href="https://bazaar.abuse.ch/sample/08f4e43fac6f13d0e30b38273d7e2885a76cc5024b91dc2a1bb9ca971d47786e/" target="_blank" class="sha-link">08f4e43fac6f13…</a></td>
           <td>RemcosRAT</td>
           <td><span class="cat-badge">RAT</span></td>
-          <td class="score-cell" style="color:#ff4444"><strong>82.5</strong></td>
+          <td class="score-cell" style="color:#ff4444"><strong>86.9</strong></td>
           <td style="color:#ff4444">🔴 KRITISCH</td>
           <td class="mono">0.0</td>
           <td class="vt-cell">–</td>
         </tr><tr>
-          <td><a href="https://bazaar.abuse.ch/sample/ae43c84b6303b2e60cdbd681ac8cf6eb4acf9b9a0155a37299d49bdabd7d0a52/" target="_blank" class="sha-link">ae43c84b6303b2…</a></td>
+          <td><a href="https://bazaar.abuse.ch/sample/5ed9d055ae40ac3335d78178f101c19faaedae8237b326278b5bbb7f80a6f378/" target="_blank" class="sha-link">5ed9d055ae40ac…</a></td>
           <td>RemcosRAT</td>
           <td><span class="cat-badge">RAT</span></td>
-          <td class="score-cell" style="color:#ff4444"><strong>82.5</strong></td>
+          <td class="score-cell" style="color:#ff4444"><strong>86.9</strong></td>
+          <td style="color:#ff4444">🔴 KRITISCH</td>
+          <td class="mono">0.0</td>
+          <td class="vt-cell">–</td>
+        </tr><tr>
+          <td><a href="https://bazaar.abuse.ch/sample/9340a7e752426fe1ccbcf91f57947be86f0e9f213211ad7d4fa43ff935e19d00/" target="_blank" class="sha-link">9340a7e752426f…</a></td>
+          <td>RemcosRAT</td>
+          <td><span class="cat-badge">RAT</span></td>
+          <td class="score-cell" style="color:#ff4444"><strong>86.9</strong></td>
           <td style="color:#ff4444">🔴 KRITISCH</td>
           <td class="mono">0.0</td>
           <td class="vt-cell">–</td>
@@ -570,77 +662,91 @@
   <div class="grid-2 sec">
     <div class="card">
       <div class="card-head">MITRE ATT&amp;CK Taktiken</div>
-      <div class="card-body"><div class="mitre-row"><span class="mitre-tac">Execution</span><span class="mitre-cnt">9</span></div><div class="mitre-row"><span class="mitre-tac">Command and Control</span><span class="mitre-cnt">9</span></div><div class="mitre-row"><span class="mitre-tac">Initial Access</span><span class="mitre-cnt">6</span></div><div class="mitre-row"><span class="mitre-tac">Lateral Movement</span><span class="mitre-cnt">6</span></div><div class="mitre-row"><span class="mitre-tac">Collection</span><span class="mitre-cnt">5</span></div><div class="mitre-row"><span class="mitre-tac">Persistence</span><span class="mitre-cnt">4</span></div><div class="mitre-row"><span class="mitre-tac">Exfiltration</span><span class="mitre-cnt">3</span></div><div class="mitre-row"><span class="mitre-tac">Credential Access</span><span class="mitre-cnt">2</span></div><div class="mitre-row"><span class="mitre-tac">Defense Evasion</span><span class="mitre-cnt">1</span></div><div class="mitre-row"><span class="mitre-tac">Command and Control</span><span class="mitre-cnt">[T1095](https://attack.mitre.org/techniques/T1095/)</span></div><div class="mitre-row"><span class="mitre-tac">Execution</span><span class="mitre-cnt">[T1059](https://attack.mitre.org/techniques/T1059/)</span></div><div class="mitre-row"><span class="mitre-tac">Credential Access</span><span class="mitre-cnt">[T1555](https://attack.mitre.org/techniques/T1555/)</span></div><div class="mitre-row"><span class="mitre-tac">Exfiltration</span><span class="mitre-cnt">[T1048](https://attack.mitre.org/techniques/T1048/)</span></div><div class="mitre-row"><span class="mitre-tac">Credential Access</span><span class="mitre-cnt">[T1555](https://attack.mitre.org/techniques/T1555/)</span></div><div class="mitre-row"><span class="mitre-tac">Collection</span><span class="mitre-cnt">[T1005](https://attack.mitre.org/techniques/T1005/)</span></div><div class="mitre-row"><span class="mitre-tac">Exfiltration</span><span class="mitre-cnt">[T1041](https://attack.mitre.org/techniques/T1041/)</span></div><div class="mitre-row"><span class="mitre-tac">Command and Control</span><span class="mitre-cnt">[T1219](https://attack.mitre.org/techniques/T1219/)</span></div><div class="mitre-row"><span class="mitre-tac">Collection</span><span class="mitre-cnt">[T1113](https://attack.mitre.org/techniques/T1113/)</span></div><div class="mitre-row"><span class="mitre-tac">Command and Control</span><span class="mitre-cnt">[T1095](https://attack.mitre.org/techniques/T1095/)</span></div><div class="mitre-row"><span class="mitre-tac">Execution</span><span class="mitre-cnt">[T1059](https://attack.mitre.org/techniques/T1059/)</span></div></div>
+      <div class="card-body"><div class="mitre-row"><span class="mitre-tac">Collection</span><span class="mitre-cnt">13</span></div><div class="mitre-row"><span class="mitre-tac">Command and Control</span><span class="mitre-cnt">11</span></div><div class="mitre-row"><span class="mitre-tac">Initial Access</span><span class="mitre-cnt">10</span></div><div class="mitre-row"><span class="mitre-tac">Lateral Movement</span><span class="mitre-cnt">10</span></div><div class="mitre-row"><span class="mitre-tac">Exfiltration</span><span class="mitre-cnt">6</span></div><div class="mitre-row"><span class="mitre-tac">Credential Access</span><span class="mitre-cnt">5</span></div><div class="mitre-row"><span class="mitre-tac">Execution</span><span class="mitre-cnt">4</span></div><div class="mitre-row"><span class="mitre-tac">Defense Evasion</span><span class="mitre-cnt">1</span></div><div class="mitre-row"><span class="mitre-tac">Command and Control</span><span class="mitre-cnt">[T1095](https://attack.mitre.org/techniques/T1095/)</span></div><div class="mitre-row"><span class="mitre-tac">Collection</span><span class="mitre-cnt">[T1056](https://attack.mitre.org/techniques/T1056/)</span></div><div class="mitre-row"><span class="mitre-tac">Credential Access</span><span class="mitre-cnt">[T1555](https://attack.mitre.org/techniques/T1555/)</span></div><div class="mitre-row"><span class="mitre-tac">Collection</span><span class="mitre-cnt">[T1005](https://attack.mitre.org/techniques/T1005/)</span></div><div class="mitre-row"><span class="mitre-tac">Exfiltration</span><span class="mitre-cnt">[T1041](https://attack.mitre.org/techniques/T1041/)</span></div><div class="mitre-row"><span class="mitre-tac">Credential Access</span><span class="mitre-cnt">[T1555](https://attack.mitre.org/techniques/T1555/)</span></div><div class="mitre-row"><span class="mitre-tac">Collection</span><span class="mitre-cnt">[T1005](https://attack.mitre.org/techniques/T1005/)</span></div><div class="mitre-row"><span class="mitre-tac">Exfiltration</span><span class="mitre-cnt">[T1041](https://attack.mitre.org/techniques/T1041/)</span></div><div class="mitre-row"><span class="mitre-tac">Credential Access</span><span class="mitre-cnt">[T1555](https://attack.mitre.org/techniques/T1555/)</span></div><div class="mitre-row"><span class="mitre-tac">Collection</span><span class="mitre-cnt">[T1005](https://attack.mitre.org/techniques/T1005/)</span></div><div class="mitre-row"><span class="mitre-tac">Exfiltration</span><span class="mitre-cnt">[T1041](https://attack.mitre.org/techniques/T1041/)</span></div><div class="mitre-row"><span class="mitre-tac">Credential Access</span><span class="mitre-cnt">[T1555](https://attack.mitre.org/techniques/T1555/)</span></div><div class="mitre-row"><span class="mitre-tac">Collection</span><span class="mitre-cnt">[T1005](https://attack.mitre.org/techniques/T1005/)</span></div><div class="mitre-row"><span class="mitre-tac">Exfiltration</span><span class="mitre-cnt">[T1041](https://attack.mitre.org/techniques/T1041/)</span></div></div>
     </div>
     <div class="card">
       <div class="card-head">Änderungen gegenüber Vorrun</div>
-      <div class="card-body"><div class="delta-list"><div class="delta-item">📉 ↓ **unbekannt** -10 (65→55)</div><div class="delta-item">📉 ↓ **Mirai** -7 (13→6)</div><div class="delta-item">📉 ↓ **EternalRocks** -3 (6→3)</div><div class="delta-item">📈 ↑ **AgentTesla** +2 (1→3)</div><div class="delta-item">🆕 neu: **RemcosRAT** (3)</div><div class="delta-item">🆕 neu: **SalatStealer** (2)</div><div class="delta-item">🆕 neu: **ConnectWise** (2)</div></div></div>
+      <div class="card-body"><div class="delta-list"><div class="delta-item">📉 ↓ **unbekannt** -33 (69→36)</div><div class="delta-item">📈 ↑ **AgentTesla** +14 (1→15)</div><div class="delta-item">🆕 neu: **RemcosRAT** (6)</div><div class="delta-item">🆕 neu: **XWorm** (6)</div><div class="delta-item">🆕 neu: **VIPKeylogger** (5)</div><div class="delta-item">🆕 neu: **Vidar** (5)</div><div class="delta-item">🆕 neu: **a310Logger** (2)</div><div class="delta-item">🆕 neu: **PhantomStealer** (2)</div><div class="delta-item">📉 ↓ **AsyncRAT** -2 (4→2)</div><div class="delta-item">✅ weg: **EternalRocks** (war 6)</div><div class="delta-item">✅ weg: **Smoke Loader** (war 4)</div></div></div>
     </div>
   </div>
 
   <!-- VirusTotal -->
   <div class='sec'><div class='sec-title'>VirusTotal Ergebnisse</div><div class="vt-block">
           <div class="vt-header">
-            <a href="https://bazaar.abuse.ch/sample/5dfb9954260d3b53adda4f22187442bfc437530c8fa96496e4539284e26228d3/" target="_blank" class="vt-sha">5dfb9954260d3b53adda…</a>
-            <span class="vt-family">DarkMe</span>
-            <span class="vt-rate" style="color:#ff4444">47/76 (61.8%)</span>
+            <a href="https://bazaar.abuse.ch/sample/416c01c8f1851f038371bda07ffda846b809eb1e7df28344e2ee7b208539b1a1/" target="_blank" class="vt-sha">416c01c8f1851f038371…</a>
+            <span class="vt-family">njrat</span>
+            <span class="vt-rate" style="color:#ff4444">66/76 (86.8%)</span>
           </div>
           <div class="vt-meta">
-            <span>Häufigster Name: <strong>Gen:Variant.jaik.304817</strong></span>
+            <span>Häufigster Name: <strong>Gen:Heur.MSIL.Krypt.44</strong></span>
             <span>Reputation: <strong>-12</strong></span>
           </div>
           <details class="engine-details">
-            <summary>47 erkennende Engines</summary>
-            <table class="engine-table"><tr><td class='eng-name'>| ALYac</td><td class='eng-result'><code>Gen:Variant.jaik.304817</code></td></tr><tr><td class='eng-name'>AVG</td><td class='eng-result'><code>Win32:MalwareX-gen [Trj]</code></td></tr><tr><td class='eng-name'>AhnLab-V3</td><td class='eng-result'><code>Trojan/Win.GM.R590156</code></td></tr><tr><td class='eng-name'>Antiy-AVL</td><td class='eng-result'><code>Trojan/Win32.VB</code></td></tr><tr><td class='eng-name'>Arcabit</td><td class='eng-result'><code>Trojan.jaik.D4A6B1</code></td></tr><tr><td class='eng-name'>Avast</td><td class='eng-result'><code>Win32:MalwareX-gen [Trj]</code></td></tr><tr><td class='eng-name'>Avira</td><td class='eng-result'><code>TR/Dropper.Gen</code></td></tr><tr><td class='eng-name'>BitDefender</td><td class='eng-result'><code>Gen:Variant.jaik.304817</code></td></tr><tr><td class='eng-name'>Bkav</td><td class='eng-result'><code>W32.AIDetectMalware</code></td></tr><tr><td class='eng-name'>CTX</td><td class='eng-result'><code>exe.unknown.jaik</code></td></tr><tr><td class='eng-name'>ClamAV</td><td class='eng-result'><code>Win.Trojan.Midie-10037910-0</code></td></tr><tr><td class='eng-name'>CrowdStrike</td><td class='eng-result'><code>win/malicious_confidence_100% (W)</code></td></tr><tr><td class='eng-name'>Cylance</td><td class='eng-result'><code>Unsafe</code></td></tr><tr><td class='eng-name'>Cynet</td><td class='eng-result'><code>Malicious (score: 99)</code></td></tr><tr><td class='eng-name'>DeepInstinct</td><td class='eng-result'><code>MALICIOUS</code></td></tr><tr><td class='eng-name'>DrWeb</td><td class='eng-result'><code>Trojan.Siggen28.43392</code></td></tr><tr><td class='eng-name'>ESET-NOD32</td><td class='eng-result'><code>Win32/VB.OUK trojan</code></td></tr><tr><td class='eng-name'>Elastic</td><td class='eng-result'><code>malicious (high confidence)</code></td></tr><tr><td class='eng-name'>Emsisoft</td><td class='eng-result'><code>Gen:Variant.jaik.304817 (B)</code></td></tr><tr><td class='eng-name'>F-Secure</td><td class='eng-result'><code>Trojan.TR/Dropper.Gen</code></td></tr><tr><td class='eng-name'>GData</td><td class='eng-result'><code>Gen:Variant.jaik.304817</code></td></tr><tr><td class='eng-name'>Google</td><td class='eng-result'><code>Detected</code></td></tr><tr><td class='eng-name'>Gridinsoft</td><td class='eng-result'><code>Trojan.Win32.Agent.oa!s1</code></td></tr><tr><td class='eng-name'>Ikarus</td><td class='eng-result'><code>Trojan.Win32.VB</code></td></tr><tr><td class='eng-name'>Jiangmin</td><td class='eng-result'><code>Trojan.VB.bmep</code></td></tr><tr><td class='eng-name'>K7AntiVirus</td><td class='eng-result'><code>Trojan ( 000a99e61 )</code></td></tr><tr><td class='eng-name'>K7GW</td><td class='eng-result'><code>Trojan ( 000a99e61 )</code></td></tr><tr><td class='eng-name'>Kaspersky</td><td class='eng-result'><code>UDS:Backdoor.Win32.Agent</code></td></tr><tr><td class='eng-name'>Kingsoft</td><td class='eng-result'><code>malware.kb.a.966</code></td></tr><tr><td class='eng-name'>Lionic</td><td class='eng-result'><code>Trojan.Win32.DarkMe.4!c</code></td></tr><tr><td class='eng-name'>Malwarebytes</td><td class='eng-result'><code>Malware.AI.261304704</code></td></tr><tr><td class='eng-name'>McAfeeD</td><td class='eng-result'><code>ti!5DFB9954260D</code></td></tr><tr><td class='eng-name'>MicroWorld-eScan</td><td class='eng-result'><code>Gen:Variant.jaik.304817</code></td></tr><tr><td class='eng-name'>Microsoft</td><td class='eng-result'><code>Trojan:Win32/Wacatac.B!ml</code></td></tr><tr><td class='eng-name'>NANO-Antivirus</td><td class='eng-result'><code>Trojan.Win32.APosT.jygylg</code></td></tr><tr><td class='eng-name'>Rising</td><td class='eng-result'><code>Trojan.VB!8.B20 (TFE:5:T4Ai3aT9ueT)</code></td></tr><tr><td class='eng-name'>SentinelOne</td><td class='eng-result'><code>Static AI - Suspicious PE</code></td></tr><tr><td class='eng-name'>Tencent</td><td class='eng-result'><code>Malware.Win32.Gencirc.10bf5463</code></td></tr><tr><td class='eng-name'>Trapmine</td><td class='eng-result'><code>malicious.high.ml.score</code></td></tr><tr><td class='eng-name'>TrellixENS</td><td class='eng-result'><code>Artemis!54534EDFD675</code></td></tr><tr><td class='eng-name'>VBA32</td><td class='eng-result'><code>Trojan.VB</code></td></tr><tr><td class='eng-name'>VIPRE</td><td class='eng-result'><code>Gen:Variant.jaik.304817</code></td></tr><tr><td class='eng-name'>Varist</td><td class='eng-result'><code>W32/ABTrojan.ILMA-8259</code></td></tr><tr><td class='eng-name'>VirIT</td><td class='eng-result'><code>Trojan.Win32.Genus.RWB</code></td></tr><tr><td class='eng-name'>Yandex</td><td class='eng-result'><code>Trojan.VB!xO97f7LJYLs</code></td></tr><tr><td class='eng-name'>Zillya</td><td class='eng-result'><code>Trojan.VB.Win32.538837</code></td></tr><tr><td class='eng-name'>huorong</td><td class='eng-result'><code>HEUR:Trojan/VBCode.ci</code></td></tr></table>
+            <summary>66 erkennende Engines</summary>
+            <table class="engine-table"><tr><td class='eng-name'>| APEX</td><td class='eng-result'><code>Malicious</code></td></tr><tr><td class='eng-name'>AVG</td><td class='eng-result'><code>MSIL:Bladabindi-JK [Trj]</code></td></tr><tr><td class='eng-name'>AhnLab-V3</td><td class='eng-result'><code>Trojan/Win32.Korat.R207428</code></td></tr><tr><td class='eng-name'>Alibaba</td><td class='eng-result'><code>Trojan:MSIL/njRAT.1350714a</code></td></tr><tr><td class='eng-name'>Antiy-AVL</td><td class='eng-result'><code>Trojan[Backdoor]/MSIL.Bladabindi.as</code></td></tr><tr><td class='eng-name'>Arcabit</td><td class='eng-result'><code>Trojan.MSIL.Krypt.44</code></td></tr><tr><td class='eng-name'>Avast</td><td class='eng-result'><code>MSIL:Bladabindi-JK [Trj]</code></td></tr><tr><td class='eng-name'>Avira</td><td class='eng-result'><code>TR/ATRAPS.Gen</code></td></tr><tr><td class='eng-name'>Baidu</td><td class='eng-result'><code>MSIL.Backdoor.Bladabindi.a</code></td></tr><tr><td class='eng-name'>BitDefender</td><td class='eng-result'><code>Gen:Heur.MSIL.Krypt.44</code></td></tr><tr><td class='eng-name'>Bkav</td><td class='eng-result'><code>W32.AIDetectMalware.CS</code></td></tr><tr><td class='eng-name'>CAT-QuickHeal</td><td class='eng-result'><code>Backdoor.Bladabindi.B3</code></td></tr><tr><td class='eng-name'>CTX</td><td class='eng-result'><code>exe.trojan.bladabindi</code></td></tr><tr><td class='eng-name'>ClamAV</td><td class='eng-result'><code>Win.Packed.Bladabindi-7994427-0</code></td></tr><tr><td class='eng-name'>CrowdStrike</td><td class='eng-result'><code>win/malicious_confidence_100% (W)</code></td></tr><tr><td class='eng-name'>Cylance</td><td class='eng-result'><code>Unsafe</code></td></tr><tr><td class='eng-name'>DeepInstinct</td><td class='eng-result'><code>MALICIOUS</code></td></tr><tr><td class='eng-name'>DrWeb</td><td class='eng-result'><code>Trojan.MulDrop6.40595</code></td></tr><tr><td class='eng-name'>ESET-NOD32</td><td class='eng-result'><code>MSIL/Bladabindi.AR worm</code></td></tr><tr><td class='eng-name'>Elastic</td><td class='eng-result'><code>Windows.Trojan.Njrat</code></td></tr><tr><td class='eng-name'>Emsisoft</td><td class='eng-result'><code>Worm.Bladabindi (A)</code></td></tr><tr><td class='eng-name'>F-Secure</td><td class='eng-result'><code>Trojan.TR/ATRAPS.Gen</code></td></tr><tr><td class='eng-name'>Fortinet</td><td class='eng-result'><code>MSIL/Bladabindi.AS!tr</code></td></tr><tr><td class='eng-name'>GData</td><td class='eng-result'><code>MSIL.Trojan-Spy.Bladabindi.BQ</code></td></tr><tr><td class='eng-name'>Google</td><td class='eng-result'><code>Detected</code></td></tr><tr><td class='eng-name'>Gridinsoft</td><td class='eng-result'><code>Ransom.Win32.Bladabindi.sa</code></td></tr><tr><td class='eng-name'>Ikarus</td><td class='eng-result'><code>Trojan.Inject</code></td></tr><tr><td class='eng-name'>Jiangmin</td><td class='eng-result'><code>TrojanDropper.Autoit.dce</code></td></tr><tr><td class='eng-name'>K7AntiVirus</td><td class='eng-result'><code>Trojan ( 700000201 )</code></td></tr><tr><td class='eng-name'>K7GW</td><td class='eng-result'><code>Trojan ( 700000201 )</code></td></tr><tr><td class='eng-name'>Kaspersky</td><td class='eng-result'><code>HEUR:Trojan.Win32.Generic</code></td></tr><tr><td class='eng-name'>Kingsoft</td><td class='eng-result'><code>malware.kb.c.1000</code></td></tr><tr><td class='eng-name'>Lionic</td><td class='eng-result'><code>Trojan.Win32.Bladabindi.4!c</code></td></tr><tr><td class='eng-name'>Malwarebytes</td><td class='eng-result'><code>Bladabindi.Backdoor.Bot.DDS</code></td></tr><tr><td class='eng-name'>MaxSecure</td><td class='eng-result'><code>Trojan.Malware.300983.susgen</code></td></tr><tr><td class='eng-name'>McAfeeD</td><td class='eng-result'><code>Real Protect-LS!0D08B31CEA0D</code></td></tr><tr><td class='eng-name'>MicroWorld-eScan</td><td class='eng-result'><code>Gen:Heur.MSIL.Krypt.44</code></td></tr><tr><td class='eng-name'>Microsoft</td><td class='eng-result'><code>Trojan:MSIL/njRAT.RDSA!MTB</code></td></tr><tr><td class='eng-name'>NANO-Antivirus</td><td class='eng-result'><code>Trojan.Win32.Autoruner2.ebrjyu</code></td></tr><tr><td class='eng-name'>Paloalto</td><td class='eng-result'><code>generic.ml</code></td></tr><tr><td class='eng-name'>Panda</td><td class='eng-result'><code>Trj/GdSda.A</code></td></tr><tr><td class='eng-name'>Rising</td><td class='eng-result'><code>Backdoor.njRAT!1.9E49 (CLASSIC)</code></td></tr><tr><td class='eng-name'>Sangfor</td><td class='eng-result'><code>Suspicious.Win32.Save.a</code></td></tr><tr><td class='eng-name'>SentinelOne</td><td class='eng-result'><code>Static AI - Malicious PE</code></td></tr><tr><td class='eng-name'>Skyhigh</td><td class='eng-result'><code>Trojan-FIGN</code></td></tr><tr><td class='eng-name'>Sophos</td><td class='eng-result'><code>Troj/Bbindi-W</code></td></tr><tr><td class='eng-name'>Symantec</td><td class='eng-result'><code>Backdoor.Ratenjay!gen3</code></td></tr><tr><td class='eng-name'>TACHYON</td><td class='eng-result'><code>Backdoor/W32.DN-NjRAT.37888.B</code></td></tr><tr><td class='eng-name'>Tencent</td><td class='eng-result'><code>Trojan.Msil.Bladabindi.cf</code></td></tr><tr><td class='eng-name'>Trapmine</td><td class='eng-result'><code>malicious.high.ml.score</code></td></tr><tr><td class='eng-name'>TrellixENS</td><td class='eng-result'><code>Trojan-FIGN</code></td></tr><tr><td class='eng-name'>TrendMicro</td><td class='eng-result'><code>Backdoor.Win32.NJRAT.YXGCEZ</code></td></tr><tr><td class='eng-name'>TrendMicro-HouseCall</td><td class='eng-result'><code>BKDR_BLADABI.SMC</code></td></tr><tr><td class='eng-name'>VBA32</td><td class='eng-result'><code>Trojan.MSIL.Bladabindi.Heur</code></td></tr><tr><td class='eng-name'>VIPRE</td><td class='eng-result'><code>Gen:Heur.MSIL.Krypt.44</code></td></tr><tr><td class='eng-name'>Varist</td><td class='eng-result'><code>W32/MSIL_Troj.AP.gen!Eldorado</code></td></tr><tr><td class='eng-name'>ViRobot</td><td class='eng-result'><code>Backdoor.Win32.Agent.37888.AL</code></td></tr><tr><td class='eng-name'>VirIT</td><td class='eng-result'><code>Trojan.Win32.DownLoader21.BPQW</code></td></tr><tr><td class='eng-name'>Webroot</td><td class='eng-result'><code>W32.Trojan.Gen</code></td></tr><tr><td class='eng-name'>Xcitium</td><td class='eng-result'><code>TrojWare.MSIL.Spy.Agent.CP@4pqytu</code></td></tr><tr><td class='eng-name'>Yandex</td><td class='eng-result'><code>Trojan.AvsMofer.dd6520</code></td></tr><tr><td class='eng-name'>Zillya</td><td class='eng-result'><code>Trojan.Bladabindi.Win32.72266</code></td></tr><tr><td class='eng-name'>ZoneAlarm</td><td class='eng-result'><code>Troj/Bbindi-W</code></td></tr><tr><td class='eng-name'>Zoner</td><td class='eng-result'><code>Trojan.Win32.84773</code></td></tr><tr><td class='eng-name'>alibabacloud</td><td class='eng-result'><code>Backdoor:MSIL/Bladabindi.FE</code></td></tr><tr><td class='eng-name'>huorong</td><td class='eng-result'><code>Worm/Bladabindi.b</code></td></tr></table>
           </details>
         </div><div class="vt-block">
           <div class="vt-header">
-            <a href="https://bazaar.abuse.ch/sample/b43f405eb92d14c18bc9c4c28207ae3d53bca89077d74acdddcc433857aecd95/" target="_blank" class="vt-sha">b43f405eb92d14c18bc9…</a>
-            <span class="vt-family">ValleyRAT</span>
-            <span class="vt-rate" style="color:#ff4444">47/76 (61.8%)</span>
+            <a href="https://bazaar.abuse.ch/sample/2fdaffdac4758c1c4cfc3f5a8360959bbb717cbafb478b9a888ecd55aad7e2e6/" target="_blank" class="vt-sha">2fdaffdac4758c1c4cfc…</a>
+            <span class="vt-family">NetSupport</span>
+            <span class="vt-rate" style="color:#ff8800">26/76 (34.2%)</span>
           </div>
           <div class="vt-meta">
-            <span>Häufigster Name: <strong>Trojan.GenericKD.79622621</strong></span>
+            <span>Häufigster Name: <strong>Adware.GenericKD.61125363</strong></span>
             <span>Reputation: <strong>-12</strong></span>
           </div>
           <details class="engine-details">
-            <summary>47 erkennende Engines</summary>
-            <table class="engine-table"><tr><td class='eng-name'>| ALYac</td><td class='eng-result'><code>Trojan.GenericKD.79622621</code></td></tr><tr><td class='eng-name'>APEX</td><td class='eng-result'><code>Malicious</code></td></tr><tr><td class='eng-name'>AVG</td><td class='eng-result'><code>Win64:Evo-gen [Trj]</code></td></tr><tr><td class='eng-name'>AhnLab-V3</td><td class='eng-result'><code>Worm/Win.AutoRun.R739340</code></td></tr><tr><td class='eng-name'>Alibaba</td><td class='eng-result'><code>Trojan:Win32/Dedok.1478d2cf</code></td></tr><tr><td class='eng-name'>Antiy-AVL</td><td class='eng-result'><code>Trojan/Win32.Dedok</code></td></tr><tr><td class='eng-name'>Arcabit</td><td class='eng-result'><code>Trojan.Generic.D4BEF1DD</code></td></tr><tr><td class='eng-name'>Avast</td><td class='eng-result'><code>Win64:Evo-gen [Trj]</code></td></tr><tr><td class='eng-name'>BitDefender</td><td class='eng-result'><code>Trojan.GenericKD.79622621</code></td></tr><tr><td class='eng-name'>Bkav</td><td class='eng-result'><code>W64.AIDetectMalware</code></td></tr><tr><td class='eng-name'>CAT-QuickHeal</td><td class='eng-result'><code>Trojan.Dedok</code></td></tr><tr><td class='eng-name'>CTX</td><td class='eng-result'><code>exe.trojan.dedok</code></td></tr><tr><td class='eng-name'>CrowdStrike</td><td class='eng-result'><code>win/malicious_confidence_90% (D)</code></td></tr><tr><td class='eng-name'>Cylance</td><td class='eng-result'><code>Unsafe</code></td></tr><tr><td class='eng-name'>Cynet</td><td class='eng-result'><code>Malicious (score: 99)</code></td></tr><tr><td class='eng-name'>DeepInstinct</td><td class='eng-result'><code>MALICIOUS</code></td></tr><tr><td class='eng-name'>ESET-NOD32</td><td class='eng-result'><code>Win64/GenKryptik.HPTS trojan</code></td></tr><tr><td class='eng-name'>Elastic</td><td class='eng-result'><code>malicious (high confidence)</code></td></tr><tr><td class='eng-name'>Emsisoft</td><td class='eng-result'><code>Trojan.GenericKD.79622621 (B)</code></td></tr><tr><td class='eng-name'>Fortinet</td><td class='eng-result'><code>W32/PossibleThreat</code></td></tr><tr><td class='eng-name'>GData</td><td class='eng-result'><code>Trojan.GenericKD.79622621</code></td></tr><tr><td class='eng-name'>Google</td><td class='eng-result'><code>Detected</code></td></tr><tr><td class='eng-name'>Ikarus</td><td class='eng-result'><code>Trojan.Win64.Krypt</code></td></tr><tr><td class='eng-name'>K7AntiVirus</td><td class='eng-result'><code>Riskware ( 00584baa1 )</code></td></tr><tr><td class='eng-name'>K7GW</td><td class='eng-result'><code>Riskware ( 00584baa1 )</code></td></tr><tr><td class='eng-name'>Kaspersky</td><td class='eng-result'><code>Trojan.Win32.Dedok.cga</code></td></tr><tr><td class='eng-name'>Kingsoft</td><td class='eng-result'><code>Win32.Troj.Unknown.a</code></td></tr><tr><td class='eng-name'>Lionic</td><td class='eng-result'><code>Trojan.Win32.Dedok.4!c</code></td></tr><tr><td class='eng-name'>Malwarebytes</td><td class='eng-result'><code>Backdoor.ValleyRat</code></td></tr><tr><td class='eng-name'>MaxSecure</td><td class='eng-result'><code>Trojan.Malware.590820321.susgen</code></td></tr><tr><td class='eng-name'>McAfeeD</td><td class='eng-result'><code>ti!B43F405EB92D</code></td></tr><tr><td class='eng-name'>MicroWorld-eScan</td><td class='eng-result'><code>Trojan.GenericKD.79622621</code></td></tr><tr><td class='eng-name'>Microsoft</td><td class='eng-result'><code>Trojan:Win64/Malgent!MSR</code></td></tr><tr><td class='eng-name'>Paloalto</td><td class='eng-result'><code>generic.ml</code></td></tr><tr><td class='eng-name'>Rising</td><td class='eng-result'><code>Trojan.Cobalt!8.C4EF (CLOUD)</code></td></tr><tr><td class='eng-name'>Sangfor</td><td class='eng-result'><code>Trojan.Win32.Save.a</code></td></tr><tr><td class='eng-name'>Skyhigh</td><td class='eng-result'><code>BehavesLike.Win64.Dropper.vc</code></td></tr><tr><td class='eng-name'>Sophos</td><td class='eng-result'><code>Mal/Generic-S</code></td></tr><tr><td class='eng-name'>Symantec</td><td class='eng-result'><code>ML.Attribute.HighConfidence</code></td></tr><tr><td class='eng-name'>Tencent</td><td class='eng-result'><code>Win32.Trojan.Silverfox.Cplw</code></td></tr><tr><td class='eng-name'>TrellixENS</td><td class='eng-result'><code>Artemis!411FB8F5BA39</code></td></tr><tr><td class='eng-name'>TrendMicro</td><td class='eng-result'><code>Backdoor.Win64.VALLEYRAT.YXGCCZ</code></td></tr><tr><td class='eng-name'>TrendMicro-HouseCall</td><td class='eng-result'><code>Backdoor.Win64.VALLEYRAT.YXGCCZ</code></td></tr><tr><td class='eng-name'>VIPRE</td><td class='eng-result'><code>Trojan.GenericKD.79622621</code></td></tr><tr><td class='eng-name'>Varist</td><td class='eng-result'><code>W64/ABTrojan.EXHP-8394</code></td></tr><tr><td class='eng-name'>VirIT</td><td class='eng-result'><code>Trojan.Win64.GenX.JIM</code></td></tr><tr><td class='eng-name'>alibabacloud</td><td class='eng-result'><code>Trojan:Win/Wacatac.B9nj</code></td></tr></table>
+            <summary>26 erkennende Engines</summary>
+            <table class="engine-table"><tr><td class='eng-name'>| APEX</td><td class='eng-result'><code>Malicious</code></td></tr><tr><td class='eng-name'>Alibaba</td><td class='eng-result'><code>Trojan:Win32/NetSup.bba6cfe8</code></td></tr><tr><td class='eng-name'>Avira</td><td class='eng-result'><code>TR/AVI.Agent.ncrug</code></td></tr><tr><td class='eng-name'>Bkav</td><td class='eng-result'><code>W64.AIDetectMalware</code></td></tr><tr><td class='eng-name'>CrowdStrike</td><td class='eng-result'><code>win/malicious_confidence_90% (D)</code></td></tr><tr><td class='eng-name'>Cylance</td><td class='eng-result'><code>Unsafe</code></td></tr><tr><td class='eng-name'>Cynet</td><td class='eng-result'><code>Malicious (score: 99)</code></td></tr><tr><td class='eng-name'>DeepInstinct</td><td class='eng-result'><code>MALICIOUS</code></td></tr><tr><td class='eng-name'>F-Secure</td><td class='eng-result'><code>Trojan.TR/AVI.Agent.ncrug</code></td></tr><tr><td class='eng-name'>GData</td><td class='eng-result'><code>Adware.GenericKD.61125363</code></td></tr><tr><td class='eng-name'>Google</td><td class='eng-result'><code>Detected</code></td></tr><tr><td class='eng-name'>Ikarus</td><td class='eng-result'><code>Trojan.Win32.Netsupportmanager</code></td></tr><tr><td class='eng-name'>K7AntiVirus</td><td class='eng-result'><code>Trojan ( 006d78131 )</code></td></tr><tr><td class='eng-name'>K7GW</td><td class='eng-result'><code>Trojan ( 006d78131 )</code></td></tr><tr><td class='eng-name'>Kingsoft</td><td class='eng-result'><code>Win32.HACKTOOL.RemoteAdmin.v</code></td></tr><tr><td class='eng-name'>Lionic</td><td class='eng-result'><code>Trojan.Win32.Agent.tsVa</code></td></tr><tr><td class='eng-name'>Malwarebytes</td><td class='eng-result'><code>Malware.AI.396327134</code></td></tr><tr><td class='eng-name'>McAfeeD</td><td class='eng-result'><code>ti!2FDAFFDAC475</code></td></tr><tr><td class='eng-name'>MicroWorld-eScan</td><td class='eng-result'><code>Adware.GenericKD.61125363</code></td></tr><tr><td class='eng-name'>Microsoft</td><td class='eng-result'><code>Trojan:Win32/Phonzy.A!ml</code></td></tr><tr><td class='eng-name'>Paloalto</td><td class='eng-result'><code>generic.ml</code></td></tr><tr><td class='eng-name'>SentinelOne</td><td class='eng-result'><code>Static AI - Suspicious PE</code></td></tr><tr><td class='eng-name'>Sophos</td><td class='eng-result'><code>Generic Reputation PUA (PUA)</code></td></tr><tr><td class='eng-name'>Tencent</td><td class='eng-result'><code>Win32.Trojan.Netsup.Wwhl</code></td></tr><tr><td class='eng-name'>VIPRE</td><td class='eng-result'><code>Adware.GenericKD.61125363</code></td></tr><tr><td class='eng-name'>alibabacloud</td><td class='eng-result'><code>Backdoor[rat]:Win/NetSupportManager.BD</code></td></tr></table>
           </details>
         </div><div class="vt-block">
           <div class="vt-header">
-            <a href="https://bazaar.abuse.ch/sample/06328e27d906ef067bd0cbb6822ae4f9dd0d6e13f4e209c948ad0b0919b0b9c8/" target="_blank" class="vt-sha">06328e27d906ef067bd0…</a>
+            <a href="https://bazaar.abuse.ch/sample/ac3a7d1e56c6d4bc7df6d5b57cb2ac1c0e57e55cabb0f0e51879f9257f4e0f26/" target="_blank" class="vt-sha">ac3a7d1e56c6d4bc7df6…</a>
             <span class="vt-family">unbekannt</span>
-            <span class="vt-rate" style="color:#ff8800">0/76 (0.0%)</span>
+            <span class="vt-rate" style="color:#ff8800">6/76 (7.9%)</span>
           </div>
           <div class="vt-meta">
-            <span>Häufigster Name: <strong>–</strong></span>
+            <span>Häufigster Name: <strong>Linux.Mirai.8362</strong></span>
             <span>Reputation: <strong>0</strong></span>
           </div>
           <details class="engine-details">
-            <summary>0 erkennende Engines</summary>
-            <table class="engine-table"></table>
+            <summary>6 erkennende Engines</summary>
+            <table class="engine-table"><tr><td class='eng-name'>| Antiy-AVL</td><td class='eng-result'><code>Trojan[Backdoor]/Linux.Mirai.ft</code></td></tr><tr><td class='eng-name'>DrWeb</td><td class='eng-result'><code>Linux.Mirai.8362</code></td></tr><tr><td class='eng-name'>Google</td><td class='eng-result'><code>Detected</code></td></tr><tr><td class='eng-name'>Ikarus</td><td class='eng-result'><code>Backdoor.Linux.Mirai</code></td></tr><tr><td class='eng-name'>Microsoft</td><td class='eng-result'><code>Backdoor:Linux/Mirai.FT!MTB</code></td></tr><tr><td class='eng-name'>Varist</td><td class='eng-result'><code>E32/Mirai.B.gen!Eldorado</code></td></tr></table>
           </details>
         </div><div class="vt-block">
           <div class="vt-header">
-            <a href="https://bazaar.abuse.ch/sample/bb53ed713fb58562a60454dad92aad835d77e6b99ed21e8b323df817ae202ead/" target="_blank" class="vt-sha">bb53ed713fb58562a604…</a>
-            <span class="vt-family">EternalRocks</span>
-            <span class="vt-rate" style="color:#ff8800">23/76 (30.3%)</span>
+            <a href="https://bazaar.abuse.ch/sample/0a6bdad5dc4add4b571d11608f30eca32acf96da82688f8839f13efd64e76a8f/" target="_blank" class="vt-sha">0a6bdad5dc4add4b571d…</a>
+            <span class="vt-family">ValleyRAT</span>
+            <span class="vt-rate" style="color:#ff4444">43/76 (56.6%)</span>
           </div>
           <div class="vt-meta">
-            <span>Häufigster Name: <strong>Gen:Variant.Babar.705907</strong></span>
+            <span>Häufigster Name: <strong>Trojan.GenericKD.79644457</strong></span>
             <span>Reputation: <strong>-12</strong></span>
           </div>
           <details class="engine-details">
-            <summary>28 erkennende Engines</summary>
-            <table class="engine-table"><tr><td class='eng-name'>| APEX</td><td class='eng-result'><code>Malicious</code></td></tr><tr><td class='eng-name'>Arcabit</td><td class='eng-result'><code>Trojan.Babar.DAC573</code></td></tr><tr><td class='eng-name'>BitDefender</td><td class='eng-result'><code>Gen:Variant.Babar.705907</code></td></tr><tr><td class='eng-name'>Bkav</td><td class='eng-result'><code>W32.AIDetectMalware</code></td></tr><tr><td class='eng-name'>CTX</td><td class='eng-result'><code>dll.trojan.amatera</code></td></tr><tr><td class='eng-name'>Cylance</td><td class='eng-result'><code>Unsafe</code></td></tr><tr><td class='eng-name'>Cynet</td><td class='eng-result'><code>Malicious (score: 99)</code></td></tr><tr><td class='eng-name'>DeepInstinct</td><td class='eng-result'><code>MALICIOUS</code></td></tr><tr><td class='eng-name'>Emsisoft</td><td class='eng-result'><code>Gen:Variant.Babar.705907 (B)</code></td></tr><tr><td class='eng-name'>GData</td><td class='eng-result'><code>Gen:Variant.Babar.705907</code></td></tr><tr><td class='eng-name'>Kaspersky</td><td class='eng-result'><code>UDS:Trojan-PSW.Win32.Amatera.cp</code></td></tr><tr><td class='eng-name'>Lionic</td><td class='eng-result'><code>Trojan.Win32.Amatera.i!c</code></td></tr><tr><td class='eng-name'>McAfeeD</td><td class='eng-result'><code>ti!BB53ED713FB5</code></td></tr><tr><td class='eng-name'>MicroWorld-eScan</td><td class='eng-result'><code>Gen:Variant.Babar.705907</code></td></tr><tr><td class='eng-name'>Microsoft</td><td class='eng-result'><code>Trojan:Win32/Wacatac.B!ml</code></td></tr><tr><td class='eng-name'>Paloalto</td><td class='eng-result'><code>generic.ml</code></td></tr><tr><td class='eng-name'>Rising</td><td class='eng-result'><code>Stealer.Amatera!8.1D151 (LESS:bWQ1Oi9LwLoV+Ikh)</code></td></tr><tr><td class='eng-name'>Sangfor</td><td class='eng-result'><code>Infostealer.Win32.Agent.Vib5</code></td></tr><tr><td class='eng-name'>Skyhigh</td><td class='eng-result'><code>BehavesLike.Win32.Dropper.th</code></td></tr><tr><td class='eng-name'>Sophos</td><td class='eng-result'><code>Mal/Generic-S</code></td></tr><tr><td class='eng-name'>Symantec</td><td class='eng-result'><code>ML.Attribute.HighConfidence</code></td></tr><tr><td class='eng-name'>TrellixENS</td><td class='eng-result'><code>Artemis!CC60C228344E</code></td></tr><tr><td class='eng-name'>VBA32</td><td class='eng-result'><code>BScope.TrojanPSW.Amatera</code></td></tr><tr><td class='eng-name'>| 05:25 | [417e0842547a…](https://bazaar.abuse.ch/sample/417e0842547a96033ae55875079674a0cb9c64c89bdf2738f9e21235a141fded/)</td><td class='eng-result'><code>rar</code></td></tr><tr><td class='eng-name'>| 05:18 | [5dfb9954260d…](https://bazaar.abuse.ch/sample/5dfb9954260d3b53adda4f22187442bfc437530c8fa96496e4539284e26228d3/)</td><td class='eng-result'><code>exe</code></td></tr><tr><td class='eng-name'>| 04:47 | [b43f405eb92d…](https://bazaar.abuse.ch/sample/b43f405eb92d14c18bc9c4c28207ae3d53bca89077d74acdddcc433857aecd95/)</td><td class='eng-result'><code>exe</code></td></tr><tr><td class='eng-name'>| 04:45 | [06328e27d906…](https://bazaar.abuse.ch/sample/06328e27d906ef067bd0cbb6822ae4f9dd0d6e13f4e209c948ad0b0919b0b9c8/)</td><td class='eng-result'><code>pdf</code></td></tr><tr><td class='eng-name'>| 03:37 | [bb53ed713fb5…](https://bazaar.abuse.ch/sample/bb53ed713fb58562a60454dad92aad835d77e6b99ed21e8b323df817ae202ead/)</td><td class='eng-result'><code>dll</code></td></tr></table>
+            <summary>43 erkennende Engines</summary>
+            <table class="engine-table"><tr><td class='eng-name'>| ALYac</td><td class='eng-result'><code>Trojan.GenericKD.79644457</code></td></tr><tr><td class='eng-name'>APEX</td><td class='eng-result'><code>Malicious</code></td></tr><tr><td class='eng-name'>AVG</td><td class='eng-result'><code>Win64:Evo-gen [Trj]</code></td></tr><tr><td class='eng-name'>AhnLab-V3</td><td class='eng-result'><code>Worm/Win.AutoRun.R739340</code></td></tr><tr><td class='eng-name'>Alibaba</td><td class='eng-result'><code>Trojan:Win32/Dedok.8b9161bc</code></td></tr><tr><td class='eng-name'>Antiy-AVL</td><td class='eng-result'><code>Trojan/Win32.Agent</code></td></tr><tr><td class='eng-name'>Arcabit</td><td class='eng-result'><code>Trojan.Generic.D4BF4729</code></td></tr><tr><td class='eng-name'>Avast</td><td class='eng-result'><code>Win64:Evo-gen [Trj]</code></td></tr><tr><td class='eng-name'>BitDefender</td><td class='eng-result'><code>Trojan.GenericKD.79644457</code></td></tr><tr><td class='eng-name'>Bkav</td><td class='eng-result'><code>W64.AIDetectMalware</code></td></tr><tr><td class='eng-name'>CAT-QuickHeal</td><td class='eng-result'><code>Trojan.Ghanarava.17728706953ea298</code></td></tr><tr><td class='eng-name'>CTX</td><td class='eng-result'><code>exe.trojan.dedok</code></td></tr><tr><td class='eng-name'>CrowdStrike</td><td class='eng-result'><code>win/malicious_confidence_90% (W)</code></td></tr><tr><td class='eng-name'>Cynet</td><td class='eng-result'><code>Malicious (score: 99)</code></td></tr><tr><td class='eng-name'>DeepInstinct</td><td class='eng-result'><code>MALICIOUS</code></td></tr><tr><td class='eng-name'>ESET-NOD32</td><td class='eng-result'><code>Generik.DSRZLWA trojan</code></td></tr><tr><td class='eng-name'>Elastic</td><td class='eng-result'><code>malicious (high confidence)</code></td></tr><tr><td class='eng-name'>Emsisoft</td><td class='eng-result'><code>Trojan.GenericKD.79644457 (B)</code></td></tr><tr><td class='eng-name'>Fortinet</td><td class='eng-result'><code>W32/PossibleThreat</code></td></tr><tr><td class='eng-name'>GData</td><td class='eng-result'><code>Trojan.GenericKD.79644457</code></td></tr><tr><td class='eng-name'>Google</td><td class='eng-result'><code>Detected</code></td></tr><tr><td class='eng-name'>Ikarus</td><td class='eng-result'><code>Trojan.SuspectCRC</code></td></tr><tr><td class='eng-name'>K7AntiVirus</td><td class='eng-result'><code>Riskware ( 00584baa1 )</code></td></tr><tr><td class='eng-name'>K7GW</td><td class='eng-result'><code>Riskware ( 00584baa1 )</code></td></tr><tr><td class='eng-name'>Kaspersky</td><td class='eng-result'><code>Trojan.Win32.Dedok.cgc</code></td></tr><tr><td class='eng-name'>Kingsoft</td><td class='eng-result'><code>Win32.Trojan.Dedok.cgc</code></td></tr><tr><td class='eng-name'>Lionic</td><td class='eng-result'><code>Trojan.Win32.Dedok.4!c</code></td></tr><tr><td class='eng-name'>Malwarebytes</td><td class='eng-result'><code>Backdoor.ValleyRat</code></td></tr><tr><td class='eng-name'>MaxSecure</td><td class='eng-result'><code>Trojan.Malware.300983.susgen</code></td></tr><tr><td class='eng-name'>McAfeeD</td><td class='eng-result'><code>ti!0A6BDAD5DC4A</code></td></tr><tr><td class='eng-name'>MicroWorld-eScan</td><td class='eng-result'><code>Trojan.GenericKD.79644457</code></td></tr><tr><td class='eng-name'>Microsoft</td><td class='eng-result'><code>Trojan:Win32/Wacatac.B!ml</code></td></tr><tr><td class='eng-name'>Paloalto</td><td class='eng-result'><code>generic.ml</code></td></tr><tr><td class='eng-name'>Rising</td><td class='eng-result'><code>Trojan.Dedok!8.187C7 (LESS:bWQ1OleXPeo+xokmz32Tk/ckVYY)</code></td></tr><tr><td class='eng-name'>Skyhigh</td><td class='eng-result'><code>BehavesLike.Win64.Dropper.vc</code></td></tr><tr><td class='eng-name'>Sophos</td><td class='eng-result'><code>Mal/Generic-S</code></td></tr><tr><td class='eng-name'>Symantec</td><td class='eng-result'><code>ML.Attribute.HighConfidence</code></td></tr><tr><td class='eng-name'>Tencent</td><td class='eng-result'><code>Win32.Trojan.Silverfox.Zchl</code></td></tr><tr><td class='eng-name'>TrellixENS</td><td class='eng-result'><code>Artemis!0A437CFC4736</code></td></tr><tr><td class='eng-name'>TrendMicro</td><td class='eng-result'><code>Backdoor.Win64.VALLEYRAT.YXGCEZ</code></td></tr><tr><td class='eng-name'>TrendMicro-HouseCall</td><td class='eng-result'><code>Backdoor.Win64.VALLEYRAT.YXGCEZ</code></td></tr><tr><td class='eng-name'>VIPRE</td><td class='eng-result'><code>Trojan.GenericKD.79644457</code></td></tr><tr><td class='eng-name'>Varist</td><td class='eng-result'><code>W64/ABTrojan.RIFE-0285</code></td></tr></table>
+          </details>
+        </div><div class="vt-block">
+          <div class="vt-header">
+            <a href="https://bazaar.abuse.ch/sample/d4aa597fd792aecd88f5cbfe1491efa5d14e5caa86a80eed93d8c4800c6ade16/" target="_blank" class="vt-sha">d4aa597fd792aecd88f5…</a>
+            <span class="vt-family">Mirai</span>
+            <span class="vt-rate" style="color:#ff8800">20/76 (26.3%)</span>
+          </div>
+          <div class="vt-meta">
+            <span>Häufigster Name: <strong>ELF:Mirai-AQY [Trj]</strong></span>
+            <span>Reputation: <strong>-11</strong></span>
+          </div>
+          <details class="engine-details">
+            <summary>25 erkennende Engines</summary>
+            <table class="engine-table"><tr><td class='eng-name'>| AVG</td><td class='eng-result'><code>ELF:Mirai-AQY [Trj]</code></td></tr><tr><td class='eng-name'>AhnLab-V3</td><td class='eng-result'><code>Trojan/Linux.Mirai.SE327</code></td></tr><tr><td class='eng-name'>Avast</td><td class='eng-result'><code>ELF:Mirai-AQY [Trj]</code></td></tr><tr><td class='eng-name'>Avast-Mobile</td><td class='eng-result'><code>ELF:Mirai-AQY [Trj]</code></td></tr><tr><td class='eng-name'>ClamAV</td><td class='eng-result'><code>Unix.Trojan.Mirai-7755770-0</code></td></tr><tr><td class='eng-name'>Cynet</td><td class='eng-result'><code>Malicious (score: 99)</code></td></tr><tr><td class='eng-name'>DrWeb</td><td class='eng-result'><code>Linux.Mirai.9806</code></td></tr><tr><td class='eng-name'>ESET-NOD32</td><td class='eng-result'><code>Linux/Mirai.CJR trojan</code></td></tr><tr><td class='eng-name'>Elastic</td><td class='eng-result'><code>Linux.Generic.Threat</code></td></tr><tr><td class='eng-name'>Fortinet</td><td class='eng-result'><code>ELF/Mirai.9821!tr</code></td></tr><tr><td class='eng-name'>GData</td><td class='eng-result'><code>Linux.Trojan.Gafgyt.B</code></td></tr><tr><td class='eng-name'>Google</td><td class='eng-result'><code>Detected</code></td></tr><tr><td class='eng-name'>Ikarus</td><td class='eng-result'><code>Trojan.Linux.Mirai</code></td></tr><tr><td class='eng-name'>Kingsoft</td><td class='eng-result'><code>Linux.Backdoor.elf.2023947</code></td></tr><tr><td class='eng-name'>Microsoft</td><td class='eng-result'><code>Backdoor:Linux/Mirai.AR!MTB</code></td></tr><tr><td class='eng-name'>Rising</td><td class='eng-result'><code>Backdoor.Mirai/Linux!1.130E7 (CLASSIC)</code></td></tr><tr><td class='eng-name'>Sangfor</td><td class='eng-result'><code>Suspicious.Linux.Save.a</code></td></tr><tr><td class='eng-name'>Tencent</td><td class='eng-result'><code>Backdoor.Linux.Mirai.ck</code></td></tr><tr><td class='eng-name'>Varist</td><td class='eng-result'><code>E32/Gafgyt.C.gen!Camelot</code></td></tr><tr><td class='eng-name'>huorong</td><td class='eng-result'><code>Trojan/Linux.Mirai.f</code></td></tr><tr><td class='eng-name'>| 10:05 | [416c01c8f185…](https://bazaar.abuse.ch/sample/416c01c8f1851f038371bda07ffda846b809eb1e7df28344e2ee7b208539b1a1/)</td><td class='eng-result'><code>exe</code></td></tr><tr><td class='eng-name'>| 08:40 | [2fdaffdac475…](https://bazaar.abuse.ch/sample/2fdaffdac4758c1c4cfc3f5a8360959bbb717cbafb478b9a888ecd55aad7e2e6/)</td><td class='eng-result'><code>exe</code></td></tr><tr><td class='eng-name'>| 08:17 | [ac3a7d1e56c6…](https://bazaar.abuse.ch/sample/ac3a7d1e56c6d4bc7df6d5b57cb2ac1c0e57e55cabb0f0e51879f9257f4e0f26/)</td><td class='eng-result'><code>elf</code></td></tr><tr><td class='eng-name'>| 08:15 | [0a6bdad5dc4a…](https://bazaar.abuse.ch/sample/0a6bdad5dc4add4b571d11608f30eca32acf96da82688f8839f13efd64e76a8f/)</td><td class='eng-result'><code>exe</code></td></tr><tr><td class='eng-name'>| 07:56 | [d4aa597fd792…](https://bazaar.abuse.ch/sample/d4aa597fd792aecd88f5cbfe1491efa5d14e5caa86a80eed93d8c4800c6ade16/)</td><td class='eng-result'><code>elf</code></td></tr></table>
           </details>
         </div></div>
 
   <!-- Tags -->
   <div class="sec card">
     <div class="card-head">Häufigste Tags</div>
-    <div class="card-body"><div class="tags-wrap"><span class="tag-pill">exe <span class="tag-cnt">55</span></span><span class="tag-pill">signed <span class="tag-cnt">13</span></span><span class="tag-pill">elf <span class="tag-cnt">9</span></span><span class="tag-pill">js <span class="tag-cnt">8</span></span><span class="tag-pill">Mirai <span class="tag-cnt">6</span></span><span class="tag-pill">zip <span class="tag-cnt">6</span></span><span class="tag-pill">RAT <span class="tag-cnt">6</span></span><span class="tag-pill">dropped-by-phorpiex <span class="tag-cnt">5</span></span><span class="tag-pill">sh <span class="tag-cnt">4</span></span><span class="tag-pill">dropped-by-Amadey <span class="tag-cnt">4</span></span><span class="tag-pill">fbf543 <span class="tag-cnt">4</span></span><span class="tag-pill">Smoke Loader <span class="tag-cnt">4</span></span><span class="tag-pill">ps1 <span class="tag-cnt">4</span></span><span class="tag-pill">UAT-9244 <span class="tag-cnt">4</span></span><span class="tag-pill">Malgent <span class="tag-cnt">3</span></span></div></div>
+    <div class="card-body"><div class="tags-wrap"><span class="tag-pill">js <span class="tag-cnt">49</span></span><span class="tag-pill">vbs <span class="tag-cnt">19</span></span><span class="tag-pill">exe <span class="tag-cnt">15</span></span><span class="tag-pill">AgentTesla <span class="tag-cnt">15</span></span><span class="tag-pill">elf <span class="tag-cnt">10</span></span><span class="tag-pill">Mirai <span class="tag-cnt">9</span></span><span class="tag-pill">RemcosRAT <span class="tag-cnt">6</span></span><span class="tag-pill">geo <span class="tag-cnt">6</span></span><span class="tag-pill">XWorm <span class="tag-cnt">6</span></span><span class="tag-pill">VIPKeylogger <span class="tag-cnt">5</span></span><span class="tag-pill">lnk <span class="tag-cnt">5</span></span><span class="tag-pill">DHL <span class="tag-cnt">5</span></span><span class="tag-pill">Vidar <span class="tag-cnt">5</span></span><span class="tag-pill">RAT <span class="tag-cnt">4</span></span><span class="tag-pill">DEU <span class="tag-cnt">4</span></span></div></div>
   </div>
 
 </main>
@@ -653,10 +759,10 @@
 </footer>
 
 <script>
-const HIST = {"labels": ["2026-03-06", "2026-03-07", "2026-03-07", "2026-03-07", "2026-03-08"], "datasets": [{"label": "unbekannt", "data": [0, 0, 65, 69, 55], "borderColor": "#ff4444", "backgroundColor": "#ff444422", "tension": 0.4, "pointRadius": 4, "pointHoverRadius": 7}, {"label": "Mirai", "data": [50, 41, 13, 9, 6], "borderColor": "#ff8800", "backgroundColor": "#ff880022", "tension": 0.4, "pointRadius": 4, "pointHoverRadius": 7}, {"label": "unbekannt / keine Signatur", "data": [28, 37, 0, 0, 0], "borderColor": "#ffcc00", "backgroundColor": "#ffcc0022", "tension": 0.4, "pointRadius": 4, "pointHoverRadius": 7}, {"label": "EternalRocks", "data": [0, 1, 6, 6, 3], "borderColor": "#44ff88", "backgroundColor": "#44ff8822", "tension": 0.4, "pointRadius": 4, "pointHoverRadius": 7}, {"label": "Smoke Loader", "data": [0, 0, 4, 4, 4], "borderColor": "#44aaff", "backgroundColor": "#44aaff22", "tension": 0.4, "pointRadius": 4, "pointHoverRadius": 7}]};
-const FT   = {"labels": ["exe", "elf", "js", "zip", "sh", "ps1", "dll", "msi"], "data": [56, 9, 8, 6, 4, 4, 3, 2]};
-const CAT  = {"labels": ["Andere / Unbekannt", "Loader", "RAT", "Infostealer", "Skript/Dropper", "Botnet/IoT", "Trojaner", "Linux-Malware"], "data": [45, 13, 11, 10, 7, 6, 5, 3], "colors": ["#ff4444", "#ff8800", "#ffcc00", "#44ff88", "#44aaff", "#aa44ff", "#ff44aa", "#44ffcc"]};
-const RISK = {"labels": ["Kritisch", "Hoch", "Mittel", "Niedrig"], "data": [27, 18, 4, 51], "colors": ["#ff4444", "#ff8800", "#ffcc00", "#44ff88"]};
+const HIST = {"labels": ["2026-03-06", "2026-03-07", "2026-03-07", "2026-03-07", "2026-03-08", "2026-03-08"], "datasets": [{"label": "unbekannt", "data": [0, 0, 65, 69, 55, 36], "borderColor": "#ff4444", "backgroundColor": "#ff444422", "tension": 0.4, "pointRadius": 4, "pointHoverRadius": 7}, {"label": "Mirai", "data": [50, 41, 13, 9, 6, 9], "borderColor": "#ff8800", "backgroundColor": "#ff880022", "tension": 0.4, "pointRadius": 4, "pointHoverRadius": 7}, {"label": "unbekannt / keine Signatur", "data": [28, 37, 0, 0, 0, 0], "borderColor": "#ffcc00", "backgroundColor": "#ffcc0022", "tension": 0.4, "pointRadius": 4, "pointHoverRadius": 7}, {"label": "AgentTesla", "data": [3, 0, 1, 1, 3, 15], "borderColor": "#44ff88", "backgroundColor": "#44ff8822", "tension": 0.4, "pointRadius": 4, "pointHoverRadius": 7}, {"label": "EternalRocks", "data": [0, 1, 6, 6, 3, 0], "borderColor": "#44aaff", "backgroundColor": "#44aaff22", "tension": 0.4, "pointRadius": 4, "pointHoverRadius": 7}]};
+const FT   = {"labels": ["js", "vbs", "exe", "elf", "lnk", "vbe", "ps1"], "data": [49, 19, 15, 10, 5, 1, 1]};
+const CAT  = {"labels": ["Skript/Dropper", "RAT", "Andere / Unbekannt", "Botnet/IoT", "Infostealer", "Spyware", "Linux-Malware", "Loader", "Trojaner"], "data": [44, 20, 11, 9, 7, 6, 1, 1, 1], "colors": ["#ff4444", "#ff8800", "#ffcc00", "#44ff88", "#44aaff", "#aa44ff", "#ff44aa", "#44ffcc", "#ffaa44"]};
+const RISK = {"labels": ["Kritisch", "Hoch", "Mittel", "Niedrig"], "data": [41, 3, 44, 12], "colors": ["#ff4444", "#ff8800", "#ffcc00", "#44ff88"]};
 
 const mono = "'JetBrains Mono', monospace";
 const defaults = {
