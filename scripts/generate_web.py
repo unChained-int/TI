@@ -177,6 +177,31 @@ def parse_report(md: str) -> dict:
     # Delta
     d["delta"] = re.findall(r"^- ((?:neu:|↑|↓|weg:).+)$", md, re.MULTILINE)
 
+    # Herkunftsländer
+    d["origin_countries"] = []
+    in_orig = False
+    for line in md.split("\n"):
+        if "## Herkunftsländer" in line: in_orig = True; continue
+        if in_orig and line.startswith("## "): break
+        if in_orig and line.startswith("|") and "|---" not in line:
+            parts = [p.strip() for p in line.split("|") if p.strip()]
+            if len(parts) >= 4 and parts[0] not in ("#","Land","Country"):
+                # Format: | 1 | 🇩🇪 DE | 23 | 23.0% |
+                flag_code = parts[1] if len(parts) > 1 else ""
+                count_str = parts[2] if len(parts) > 2 else "0"
+                pct_str   = parts[3] if len(parts) > 3 else "0%"
+                cc = re.search(r"\b([A-Z]{2})\b", flag_code)
+                m_flag = re.search(r"([\U0001F1E0-\U0001F1FF]{2})", flag_code)
+                if cc:
+                    m_cnt = re.search(r"\d+", count_str)
+                    d["origin_countries"].append({
+                        "code":  cc.group(1),
+                        "flag":  m_flag.group(1) if m_flag else "🌐",
+                        "label": flag_code.strip(),
+                        "count": int(m_cnt.group()) if m_cnt else 0,
+                        "pct":   pct_str.strip(),
+                    })
+
     # Statistik-Tabelle
     d["stats"] = {}
     in_stat = False
@@ -337,6 +362,52 @@ def build_dashboard(d: dict, hist: dict) -> str:
         delta_html += f'<div class="delta-item">{icon} {item}</div>'
     if not delta_html:
         delta_html = '<div class="delta-item">Keine Änderungen erfasst.</div>'
+
+    # ── Origin Country Karte (Top oben) ──────────────────────────────────
+    countries = d.get("origin_countries", [])
+    total_samples_n = r_krit + r_hoch + r_mittel + r_niedrig
+
+    # DE-Anteil berechnen
+    de_entry   = next((c for c in countries if c["code"] == "DE"), None)
+    de_count   = de_entry["count"] if de_entry else 0
+    de_pct     = de_entry["pct"]   if de_entry else "0%"
+    de_rank    = next((i+1 for i,c in enumerate(countries) if c["code"] == "DE"), None)
+
+    # Top-Land (Pfeil oben)
+    top_country    = countries[0] if countries else None
+    second_country = countries[1] if len(countries) > 1 else None
+
+    # Karten-HTML: Top-Land oben (Pfeil ↑), DE mittig, Land darunter (Pfeil ↓)
+    if top_country:
+        above_flag  = top_country["flag"]
+        above_code  = top_country["code"]
+        above_count = top_country["count"]
+        above_pct   = top_country["pct"]
+    else:
+        above_flag = above_code = above_count = above_pct = "?"
+
+    # Zweiter Platz (unter DE)
+    below = second_country if second_country and second_country["code"] != "DE" else (countries[2] if len(countries) > 2 else None)
+    below_flag  = below["flag"]  if below else "🌐"
+    below_code  = below["code"]  if below else "?"
+    below_count = below["count"] if below else 0
+    below_pct   = below["pct"]   if below else "0%"
+
+    # Alle Länder als Balken-Liste
+    country_bars = ""
+    max_cnt = countries[0]["count"] if countries else 1
+    for i, c in enumerate(countries[:12]):
+        bar_w  = int(c["count"] / max(max_cnt, 1) * 180)
+        is_de  = c["code"] == "DE"
+        color  = "var(--blue)" if is_de else ("var(--red)" if i == 0 else "var(--cyan)" if i < 3 else "var(--dim)")
+        bold   = "font-weight:700;color:var(--blue)" if is_de else ""
+        country_bars += f"""<div class="country-row">
+          <span class="country-flag">{c['flag']}</span>
+          <span class="country-code" style="{bold}">{c['code']}</span>
+          <div class="country-bar-bg"><div class="country-bar-fill" style="width:{bar_w}px;background:{color}"></div></div>
+          <span class="country-count">{c['count']}</span>
+          <span class="country-pct">{c['pct']}</span>
+        </div>"""
 
     hist_json = json.dumps(hist)
     ft_json   = json.dumps({"labels": ft_labels, "data": ft_values})
@@ -589,6 +660,53 @@ def build_dashboard(d: dict, hist: dict) -> str:
     }}
     footer a {{ color: var(--blue); text-decoration: none; }}
     footer a:hover {{ text-decoration: underline; }}
+
+    /* ── Origin Country Karte ── */
+    .origin-map {{
+      background: var(--bg1);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 1rem;
+      align-items: stretch;
+    }}
+    .origin-column {{
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 0.4rem; min-width: 90px;
+    }}
+    .origin-arrow {{ font-size: 1.4rem; color: var(--muted); }}
+    .origin-flag  {{ font-size: 2.2rem; line-height: 1; }}
+    .origin-code  {{ font-family: var(--mono); font-size: 0.9rem; font-weight: 700; color: var(--text); }}
+    .origin-count {{
+      font-family: var(--mono); font-size: 1.6rem; font-weight: 700;
+      color: var(--red); line-height: 1;
+    }}
+    .origin-pct   {{ font-size: 0.72rem; color: var(--muted); }}
+    .origin-de-col {{
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 0.35rem; border-left: 1px solid var(--border2); border-right: 1px solid var(--border2);
+      padding: 0 1.5rem;
+    }}
+    .origin-de-label {{ font-family: var(--mono); font-size: 0.65rem; color: var(--muted); text-transform: uppercase; letter-spacing:0.1em; }}
+    .origin-de-flag  {{ font-size: 2.8rem; line-height: 1; }}
+    .origin-de-count {{ font-family: var(--mono); font-size: 2.4rem; font-weight: 700; color: var(--blue); line-height: 1; }}
+    .origin-de-pct   {{ font-size: 0.78rem; color: var(--blue); opacity: 0.8; }}
+    .origin-de-rank  {{ font-size: 0.72rem; color: var(--muted); }}
+    .origin-bars     {{ display: flex; flex-direction: column; gap: 0.35rem; flex: 1; justify-content: center; }}
+    .country-row     {{ display: flex; align-items: center; gap: 0.5rem; }}
+    .country-flag    {{ font-size: 1rem; width: 22px; text-align: center; }}
+    .country-code    {{ font-family: var(--mono); font-size: 0.72rem; color: var(--muted); width: 28px; }}
+    .country-bar-bg  {{ flex: 1; height: 4px; background: var(--bg3); border-radius: 2px; overflow:hidden; max-width: 180px; }}
+    .country-bar-fill{{ height: 100%; border-radius: 2px; transition: width 0.4s ease; }}
+    .country-count   {{ font-family: var(--mono); font-size: 0.72rem; color: var(--text); width: 28px; text-align:right; }}
+    .country-pct     {{ font-family: var(--mono); font-size: 0.68rem; color: var(--muted); width: 38px; text-align:right; }}
+    @media(max-width:600px) {{
+      .origin-map {{ grid-template-columns: 1fr; }}
+      .origin-de-col {{ border: none; border-top: 1px solid var(--border2); border-bottom: 1px solid var(--border2); padding: 1rem 0; }}
+    }}
   </style>
 </head>
 <body>
@@ -601,12 +719,39 @@ def build_dashboard(d: dict, hist: dict) -> str:
   </div>
   <div class="header-right">
     <a href="{BASE_URL}/rss.xml" class="header-link">RSS</a>
+    <a href="{BASE_URL}/rss_kpi.xml" class="header-link">KPI-RSS</a>
     <a href="{BASE_URL}/reports/latest.md" class="header-link" target="_blank">report.md</a>
     <a href="https://bazaar.abuse.ch" class="header-link" target="_blank">bazaar</a>
   </div>
 </header>
 
 <main class="page">
+
+  <!-- Origin Country Karte -->
+  <div class="origin-map">
+    <!-- Linke Spalte: Top-Land (Pfeil hoch) -->
+    <div class="origin-column">
+      <div class="origin-arrow">↑</div>
+      <div class="origin-flag">{above_flag}</div>
+      <div class="origin-code">{above_code}</div>
+      <div class="origin-count">{above_count}</div>
+      <div class="origin-pct">{above_pct}</div>
+    </div>
+
+    <!-- Mitte: Deutschland -->
+    <div class="origin-de-col">
+      <div class="origin-de-label">Origin Country</div>
+      <div class="origin-de-flag">🇩🇪</div>
+      <div class="origin-de-count">{de_count if de_count else '–'}</div>
+      <div class="origin-de-pct">{de_pct}</div>
+      <div class="origin-de-rank">{'Rang #' + str(de_rank) if de_rank else 'nicht in Top 15'}</div>
+    </div>
+
+    <!-- Rechte Spalte: alle Länder als Balken -->
+    <div class="origin-bars">
+      {country_bars if country_bars else '<span style="color:var(--muted);font-size:0.78rem">Keine Origin-Country-Daten<br>(benötigt ≥1 Run mit v2)</span>'}
+    </div>
+  </div>
 
   <!-- KPI Bar -->
   <div class="kpi-bar">
