@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
 """
 scripts/generate_rss_kpi.py  —  v1
-KPI-only RSS Feed: rein Zahlen, Fakten, keine Analyse-Texte.
-Parallel zu rss.xml → rss_kpi.xml
 
 Ideal für:
   - Monitoring-Tools (Grafana, Splunk, Zabbix)
