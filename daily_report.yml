@@ -52,6 +52,9 @@ jobs:
           python scripts/generate_web.py
           python scripts/generate_feed_json.py
           python scripts/generate_rss_kpi.py
+          echo "=== KPI CHECK ==="
+          ls -la rss_kpi.xml 2>&1
+          head -3 rss_kpi.xml 2>&1
 
       - name: Logs aufräumen
         run: |
