@@ -1,0 +1,130 @@
+# IOC Export  2026-03-09_20-39-UTC
+# 14 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+80e2868c6cd6c3b7e0b4b5584cbcc180b7c7ab049d20b0ab508e2b8be14a8522  # RAT | R=86.7 | RemcosRAT | exe
+ad9cd916566c52d3045fea0120900a9f2f460a4bfbc01d0bac236f3cc9344739  # Loader | R=74.9 | Phorpiex | exe
+01f64c61767bc41f039cf2080e61da49c96b14e4d558da6c03128e40ca816799  # Loader | R=74.8 | CoinMiner | exe
+b0a42dd89dbbf24378c9566816f7a3bc1b705f2b0ae1a1a0924388ddd0bf1bb6  # Loader | R=74.8 | unbekannt | exe
+e1f10695ba1b9f0dfa305c31eb5677f37324ae6f4c31ecbd075208bfbb80d24c  # Loader | R=74.3 | CoinMiner | exe
+af394cc460fed1a3a90e23c18aa0553bb2a8d33a46e7931a9a2a695fbc7418f5  # Linux-Malware | R=43.2 | unbekannt | elf
+8c5682afe2a14bf8d28f9ae3d9c46e9cdd9484cc91ab5d038eae70e50487b7c3  # Linux-Malware | R=42.5 | unbekannt | elf
+4b044b4e9eec63f249e5e8fa4276948cf8002fff4d67b9c80532c7500694fd03  # Andere / Unbekannt | R=32.7 | unbekannt | unknown
+6e095b882040b62c7b6585df52d4cd534f0755c58537becccae4977d25ab6b0c  # Andere / Unbekannt | R=32.4 | unbekannt | lnk
+3297233d82b04a04e11cc2fd8552d462438041d42fd8c74af242452b20866299  # Andere / Unbekannt | R=32.4 | unbekannt | unknown
+778b52ec09f97cdd7fad6af2f2fa17078e6ec59b40e9664b5b82a176ee2b2cae  # Andere / Unbekannt | R=31.9 | unbekannt | exe
+e01e802957c415afc713c37ba33c03de4c38119fa38332f227e73f2e10efd45f  # Andere / Unbekannt | R=31.7 | unbekannt | exe
+c2add996045fe2273d094b8ad641264df81e10ccf1bf66608c307ee8bdc411c6  # Andere / Unbekannt | R=31.6 | unbekannt | sh
+cc8ae69961e9125fe349b6d8256cf2e7a917b31d28da8f0f8a7a916c04630e04  # Andere / Unbekannt | R=31.3 | unbekannt | exe
+
+[Tags]
+CoinMiner
+Phorpiex
+RAT
+RemcosRAT
+dropped-by-phorpiex
+elf
+exe
+lnk
+sh
+signed
+
+[VT Engine Detections]
+
+## c2add996045fe2273d09...  (unbekannt)
+  AhnLab-V3                      Downloader/Shell.Generic.S1990
+  Avira                          BASH/Dldr.G4
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.MulDrop.187
+  ESET-NOD32                     Linux/Agent.OG trojan
+  F-Secure                       Malware.BASH/Dldr.G4
+  Fortinet                       BASH/EncystPHP.A!tr
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.bc
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  NANO-Antivirus                 Trojan.Script.Dropper.kpvdnu
+  Rising                         Downloader.Agent/BASH!1.13B74 (CLASSIC)
+  Tencent                        Trojan-DL.Linux.Agent.505004
+  Varist                         Unix/Agent.VA
+  ZoneAlarm                      Linux/Dldr-YZ
+  huorong                        TrojanDownloader/Linux.Agent.en
+
+## 778b52ec09f97cdd7fad...  (unbekannt)
+  ALYac                          Gen:Variant.Cerbu.271832
+  AVG                            MalwareX-gen [Pws]
+  Arcabit                        Trojan.Cerbu.D425D8
+  Avast                          MalwareX-gen [Pws]
+  BitDefender                    Gen:Variant.Cerbu.271832
+  Bkav                           W64.AIDetectMalware
+  CTX                            exe.unknown.cerbu
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Gen:Variant.Cerbu.271832 (B)
+  Fortinet                       W64/Agent.AKO!tr
+  GData                          Gen:Variant.Cerbu.271832
+  Google                         Detected
+  MicroWorld-eScan               Gen:Variant.Cerbu.271832
+  Microsoft                      Trojan:Win32/Wacatac.C!ml
+  VIPRE                          Gen:Variant.Cerbu.271832
+  Varist                         W64/Delf.ZE.gen!Eldorado
+  Webroot                        Win.Malware.Gen
+
+## 80e2868c6cd6c3b7e0b4...  (RemcosRAT)
+  ALYac                          Gen:Variant.Adware.Tedy.9183
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Rat]
+  AhnLab-V3                      Backdoor/Win.Remcos.R759692
+  Antiy-AVL                      Trojan/Win32.Agent
+  Arcabit                        Trojan.Adware.Tedy.D23DF
+  Avast                          Win32:MalwareX-gen [Rat]
+  Avira                          BDS/Backdoor.Gen
+  BitDefender                    Gen:Variant.Adware.Tedy.9183
+  Bkav                           W32.AIDetectMalware
+  CTX                            exe.trojan.remcos
+  ClamAV                         Win.Trojan.Remcos-9841897-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  DrWeb                          BackDoor.Remcos.630
+  ESET-NOD32                     Win32/Rescoms.B trojan
+  Elastic                        Windows.Trojan.Remcos
+  Emsisoft                       Gen:Variant.Adware.Tedy.9183 (B)
+  F-Secure                       Backdoor.BDS/Backdoor.Gen
+  Fortinet                       W32/Rescoms.B!tr
+  GData                          Gen:Variant.Adware.Tedy.9183
+  Google                         Detected
+  Gridinsoft                     Backdoor.Win32.Remcos.oa!s1
+  Ikarus                         Backdoor.Remcos
+  K7AntiVirus                    Backdoor ( 005cecdb1 )
+  K7GW                           Backdoor ( 005cecdb1 )
+  Kaspersky                      HEUR:Backdoor.Win32.Remcos.gen
+  Kingsoft                       malware.kb.a.1000
+  Lionic                         Trojan.Win32.Remcos.m!c
+  Malwarebytes                   Backdoor.Remcos
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        Real Protect-LS!E9BAE8DFEE11
+  MicroWorld-eScan               Gen:Variant.Adware.Tedy.9183
+  Microsoft                      Trojan:Win32/Rescoms.ZBH!MTB
+  Paloalto                       generic.ml
+  Panda                          Trj/Genetic.gen
+  Rising                         Backdoor.Remcos!1.BAC7 (CLASSIC)
+  SUPERAntiSpyware               Backdoor.Bot/Variant
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        BehavesLike.Win32.Infected.hh
+  Sophos                         Troj/Remcos-APM
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Trojan.Win32.Remcos.16001234
+  TrellixENS                     Artemis!E9BAE8DFEE11
+  TrendMicro                     Backdoor.Win32.REMCOS.YXGCIZ
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04C9z
+  VBA32                          BScope.Backdoor.RmRAT
+  VIPRE                          Gen:Variant.Adware.Tedy.9183
+  Varist                         W32/Agent.JUB.gen!Eldorado
+  VirIT                          Trojan.Win32.GenusT.FMPU
+  Webroot                        Win.Trojan.Remcos
+  Yandex                         Trojan.Rescoms!YLGvWb0ztTM
+  Zillya                         Trojan.Rescoms.Win32.2903
+  ZoneAlarm                      Troj/Remcos-APM
+  alibabacloud                   Backdoor:Win/Remcos.D
+  huorong                        Backdoor/Remcos.k
