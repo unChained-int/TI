@@ -1,0 +1,144 @@
+# IOC Export  2026-03-10_10-44-UTC
+# 18 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+9180484968eb47d73853596ec91f4e1d495c0dc7ed1800baa38ce88528b42b5d  # RAT | R=89.2 | RemcosRAT | js
+ffc7a50822a48a329b1f588d7d3c187ec280e9f5bba155a99f04116b4c7560d0  # Infostealer | R=81.4 | PhantomStealer | js
+490a5bf534bc615c35443551adf8e23208a2b89b694cbeaa678f5206117b053c  # RAT | R=80.3 | ValleyRAT | exe
+85bb77ab50e307210eac33967c69a15d31f38277ba82a88020eda2c972100f19  # Loader | R=66.5 | GuLoader | exe
+03ef900249f9237d80ac65c42b5a17784183b1c67525e6799ec7cdb76e77bc3e  # Skript/Dropper | R=38.5 | AgentTesla | js
+8259aa849ddd7f1dbe5d4074ae7c6b23a202732a7b3e346629201b2073c63f69  # Skript/Dropper | R=38.4 | GoToResolve | vbs
+7b0d1275328c6d19b44c89746d0dd459723c2bb7b28d93a23139ca00cf40ba56  # Maldoc | R=38.3 | unbekannt | xlsx
+f114b58d5a66ad7aa123f5acbfb76d46d7d476c4b5b244a663a2f2cdd1c95a64  # Maldoc | R=38.3 | unbekannt | xlsx
+ed925501e749cdc073143ed948ec8a93c6b6a4b76304d9c6a76c6faabc8d048e  # Skript/Dropper | R=37.7 | unbekannt | hta
+bade048fe2950223aa3d8d6ba376433e8e8040384a831c04345e657c70f30190  # Skript/Dropper | R=35.7 | unbekannt | js
+cc5533276e0298b981c7d0ca3a8ee6a502af679ad8ce124044d70b002fb0893c  # Andere / Unbekannt | R=34.4 | MeshAgent | exe
+b128b1142179e95b7e32783c831446d8a26e9ea2de1583fbfba91cfbb63a8acd  # Andere / Unbekannt | R=32.0 | unbekannt | exe
+c22808c338b7dd266338752fd419f82d8761e9920dc99467ca2bf9683948ed96  # Andere / Unbekannt | R=32.0 | GoToResolve | zip
+a4e9930a173791aa52e40ad423d7888d41112ad28897e51a229bdd9a229f514e  # Andere / Unbekannt | R=31.9 | Formbook | zip
+7c53914914fb8318ae43e37d08eef2b44df0478c3cd423480beda8994dd32e26  # Andere / Unbekannt | R=31.7 | unbekannt | sh
+4f92cd7523c47140107c05570cbd97ba82ff626d8b60c9832ca0a68d66760b62  # Andere / Unbekannt | R=31.7 | unbekannt | unknown
+a27c6b3dcfa251a95ffd8625f179ddcd20d2f9e59fc15686d5b1a43609932484  # Andere / Unbekannt | R=31.1 | unbekannt | sh
+c1ee59108378686091c53a1259db7f467e3f3301b73f2f2523f70235ae11f68f  # Andere / Unbekannt | R=30.2 | GoToResolve | msi
+
+[Tags]
+103-65-230-86
+AgentTesla
+Formbook
+GoToResolve
+GuLoader
+MeshAgent
+PhantomStealer
+RAT
+RemcosRAT
+ValleyRAT
+exe
+hta
+js
+msi
+sh
+signed
+vbs
+xlsx
+zip
+zoom
+
+[VT Engine Detections]
+
+## cc5533276e0298b981c7...  (MeshAgent)
+  AhnLab-V3                      Unwanted/Win.MeshCmd.R700828
+  Bkav                           W64.AIDetectMalware
+  CAT-QuickHeal                  PUA.MeshAgent.S37934379
+  CTX                            exe.trojan.meshagent
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Program.MeshAgent.3
+  ESET-NOD32                     Win64/MeshAgent.AG trojan
+  Elastic                        malicious (high confidence)
+  Fortinet                       Riskware/MeshAgent
+  Gridinsoft                     Risk.Win64.Gen.oa!s1
+  Jiangmin                       RemoteAdmin.MeshAgent.di
+  K7AntiVirus                    RemoteTool ( 005cedd21 )
+  K7GW                           RemoteTool ( 005cedd21 )
+  Kaspersky                      not-a-virus:UDS:RemoteAdmin.Win32.MeshAgent.gen
+  Lionic                         Trojan.Win32.MeshAgent.4!c
+  McAfeeD                        PUP:Win/MeshAgent.AA
+  Paloalto                       generic.ml
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        BehavesLike.Win64.Dropper.wh
+  Sophos                         Generic ML PUA (PUA)
+  Symantec                       ML.Attribute.HighConfidence
+  TrellixENS                     Artemis!FA39EE1B3739
+  VirIT                          Trojan.Win64.Agent.JCD
+  Zillya                         Trojan.MeshAgent.Win64.4
+
+## 85bb77ab50e307210eac...  (GuLoader)
+  APEX                           Malicious
+  Bkav                           W32.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_90% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  Elastic                        malicious (high confidence)
+  Kingsoft                       malware.kb.a.965
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  SentinelOne                    Static AI - Suspicious PE
+  Sophos                         Generic ML PUA (PUA)
+  Trapmine                       malicious.moderate.ml.score
+
+## c1ee59108378686091c5...  (GoToResolve)
+  ESET-NOD32                     Win32/RemoteAdmin.LogMeIn.A potentially unsafe application
+  Fortinet                       Riskware/RemoteAdmin_LogMeIn
+  GData                          Win32.Riskware.LogMeInResolve.B
+  Google                         Detected
+  Ikarus                         PUA.RMM.LogmeinResolveUnattended
+  K7AntiVirus                    RemoteTool ( 005d14181 )
+  K7GW                           RemoteTool ( 005d14181 )
+  Kaspersky                      not-a-virus:HEUR:RemoteAdmin.Win32.GoToResolve.gen
+  Rising                         Malware.Undefined!8.C (TFE:5:3L16wF8KJpB)
+  TrellixENS                     Artemis!2A2D9B03AA61
+  VBA32                          BScope.Riskware.LogMeIn
+  Varist                         W32/LogMeIn.B.gen!Eldorado
+  Zillya                         Tool.LogMeIn.Win32.7
+
+## ed925501e749cdc07314...  (unbekannt)
+  ALYac                          VBS:Electryon.380
+  AVG                            Script:SNH-gen [Drp]
+  Arcabit                        VBS:Electryon.380
+  Avast                          Script:SNH-gen [Drp]
+  BitDefender                    VBS:Electryon.380
+  CTX                            html.unknown.electryon
+  Cynet                          Malicious (score: 99)
+  DrWeb                          VBS.Starter.518
+  ESET-NOD32                     PowerShell/Runner.Z suspicious application
+  Emsisoft                       VBS:Electryon.380 (B)
+  GData                          VBS:Electryon.380
+  Google                         Detected
+  Ikarus                         Trojan.VBS.Pterodo
+  Kaspersky                      HEUR:Trojan-Downloader.Script.Generic
+  MicroWorld-eScan               VBS:Electryon.380
+  NANO-Antivirus                 Trojan.Script.ExpKit.eurlzq
+  Rising                         PUF.Runner/PS!8.188C4 (TOPIS:E0:jfQ5IG2gZgN)
+  Skyhigh                        BehavesLike.HTML.Dropper.px
+  TrendMicro                     HEUR_EMBVBS.EE1
+  TrendMicro-HouseCall           HEUR_EMBVBS.EE1
+  VIPRE                          VBS:Electryon.380
+  Varist                         VBS/Agent.CKW!Eldorado
+
+## bade048fe2950223aa3d...  (unbekannt)
+  ALYac                          JS:Trojan.Cryxos.15791
+  Arcabit                        JS:Trojan.Cryxos.D3DAF
+  BitDefender                    JS:Trojan.Cryxos.15791
+  CTX                            javascript.trojan.cryxos
+  DrWeb                          JS.Muldrop.1170
+  Emsisoft                       JS:Trojan.Cryxos.15791 (B)
+  Fortinet                       JS/Formbook.JAE!tr
+  GData                          JS:Trojan.Cryxos.15791
+  Google                         Detected
+  Ikarus                         Trojan-Downloader.JS.Agent
+  Kaspersky                      HEUR:Trojan-Downloader.Script.Generic
+  McAfeeD                        Trojan:Script/AgentTesla.AC
+  MicroWorld-eScan               JS:Trojan.Cryxos.15791
+  Microsoft                      Trojan:JS/FormBook.PA!MTB
+  VIPRE                          JS:Trojan.Cryxos.15791
+  Varist                         JS/Agent.DRF!Eldorado
