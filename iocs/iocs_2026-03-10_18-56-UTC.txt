@@ -1,0 +1,110 @@
+# IOC Export  2026-03-10_18-56-UTC
+# 14 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+180f08eec33e60dece5478838462052aad8ab51fe07704c6de48685ed4cdc497  # RAT | R=89.4 | njrat | exe
+28785af486ff66d9d2cbc7e7730af93eadc91345cfebc8949d068cd4363acad8  # RAT | R=89.3 | njrat | exe
+1e1e79611cbca7cce1cb1e03b7478c8e7c12758e6270f8efa226eb14f5de5fe3  # Botnet/IoT | R=82.9 | Mirai | elf
+3247319c4f6220528565e6dc67893af871eb946ce9fb519b46c6a2ccb24dfc31  # Botnet/IoT | R=82.9 | Mirai | elf
+3feabe54f4a47c30cb8665b2e6aae44aa293d3784cf57e8d2bb2d88a169afb5b  # RAT | R=80.8 | ValleyRAT | exe
+56bbca4571f9e27aaff4dc07fa5edc403d41ed2069fb9fe5e1c26bb9c9889058  # Loader | R=73.4 | unbekannt | exe
+cf23954ed0ec31d1e3b0073022bc759bd21a6c1fa2517db6d7dffe0488a4e02d  # Cryptominer | R=67.4 | unbekannt | exe
+db7fc2fef4f644d06e378b426e9a5a5c5ac7c29fb0d09ba56903fed1dbe6843b  # Cryptominer | R=67.3 | unbekannt | elf
+6168f5d053f4c3d413327947c37b927a759b316d68ac341908695879edcda246  # Cryptominer | R=62.1 | unbekannt | elf
+f05fb1209588a8b4ca7812823924b9add97cdc5c9b64daa8164ff5f8799b5a05  # Andere / Unbekannt | R=32.0 | unbekannt | unknown
+56b1db6d6aad59f2fc90d107b0d27e905528e23689757627ed0e4fd1061d0a96  # Skript/Dropper | R=31.2 | unbekannt | ps1
+a6d3152fe570b575337cc35d3c07adea259e41bcfd91cfbe838e55179e766aa5  # Andere / Unbekannt | R=29.7 | unbekannt | html
+08887f949d9a15dba1d89e4a0a4e37435856cd0de5f3d739f1fad40382bed71b  # Andere / Unbekannt | R=29.0 | unbekannt | exe
+695af1fa1e6492496c721f401bdcb3c4cc839f0e884158ad48c041ef895a2650  # Andere / Unbekannt | R=27.7 | unbekannt | zip
+
+[Tags]
+ClickFix
+FakeCaptcha
+KongTuke
+Mirai
+RAT
+ValleyRAT
+booking
+coinminer
+dropped-by-Amadey
+elf
+exe
+fbf543
+html
+linux
+miner
+multiverze
+njrat
+ps1
+redtail
+sabrineme-com
+upx
+upx-dec
+zip
+
+[VT Engine Detections]
+
+## 08887f949d9a15dba1d8...  (unbekannt)
+  AhnLab-V3                      Trojan/Win.Injector.X2247
+  Bkav                           W64.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Elastic                        malicious (high confidence)
+  Fortinet                       W64/Aotera.BF!tr
+  Gridinsoft                     Trojan.Heur!.02212022
+  Kaspersky                      HEUR:Trojan.Win64.Generic
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+
+## 695af1fa1e6492496c72...  (unbekannt)
+  AhnLab-V3                      Trojan/Win.Injector.X2247
+  Elastic                        malicious (high confidence)
+  Fortinet                       W64/Aotera.BF!tr
+  Kaspersky                      HEUR:Trojan.Win64.Generic
+
+## 56b1db6d6aad59f2fc90...  (unbekannt)
+  huorong                        TrojanDownloader/PS.Agent.fv
+
+## a6d3152fe570b575337c...  (unbekannt)
+  AVG                            HTML:FakeCaptcha-BO [FakeT]
+  Avast                          HTML:FakeCaptcha-BO [FakeT]
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     HTML/FakeCaptcha.BV trojan
+  Fortinet                       HTML/FakeCaptcha.AV!tr
+  GData                          HTML.Trojan.Agent.8ADRUS
+  Kaspersky                      Trojan.HTML.Agent.afu
+  Lionic                         Trojan.HTML.Agent.4!c
+  McAfeeD                        Trojan:Script/FakeCaptcha.VTZ
+  Rising                         Trojan.FakeCaptcha/HTML!8.1B675 (TOPIS:E0:T1V76zUET6V)
+
+## 6168f5d053f4c3d41332...  (unbekannt)
+  ALYac                          Application.Generic.4495641
+  AVG                            ELF:Agent-CXA [Trj]
+  Arcabit                        Application.Generic.D449919
+  Avast                          ELF:Agent-CXA [Trj]
+  BitDefender                    Application.Generic.4495641
+  CTX                            elf.trojan.generic
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Siggen.8622
+  Elastic                        Linux.Generic.Threat
+  Emsisoft                       Application.Generic.4495641 (B)
+  Fortinet                       PossibleThreat
+  GData                          Application.Generic.4495641
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Generic
+  Jiangmin                       Trojan.Linux.dsm
+  Kaspersky                      HEUR:Trojan.Linux.Miner.gen
+  Lionic                         Trojan.Linux.Generic.4!c
+  MicroWorld-eScan               Application.Generic.4495641
+  Microsoft                      Trojan:Linux/Multiverze!rfn
+  Panda                          ELF/TrojanGen.A
+  Rising                         Trojan.Miner/Linux!8.13825 (CLOUD)
+  SentinelOne                    Static AI - Suspicious ELF
+  Sophos                         Generic Reputation PUA (PUA)
+  Symantec                       Trojan.Gen.NPE
+  Tencent                        Trojan.Linux.Agent.adc
+  TrendMicro-HouseCall           TROJ_GEN.R002H01C326
+  VBA32                          Trojan.Linux.Agent
+  VIPRE                          Application.Generic.4495641
+  Varist                         E64/ABTrojan.ETLG-
+  Zillya                         Trojan.252279.Linux.1
+  alibabacloud                   Trojan:Linux/Sshscan.X
+  huorong                        Trojan/Linux.Agent.ca
