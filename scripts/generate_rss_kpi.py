@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-scripts/generate_rss_kpi.py  —  v3  (Power Automate kompatibel)
-Alle KPIs in <description> als plain text.
-Kein HTML, keine ti:* Namespaces – Power Automate liest description direkt.
-"""
 import re
 from datetime import datetime, timezone
 from pathlib import Path
