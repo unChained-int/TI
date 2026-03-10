@@ -1,0 +1,171 @@
+# IOC Export  2026-03-10_20-39-UTC
+# 14 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+f99b73f2a0b2c92a645ca35f86f5c47abe394a55c5bc76078771394df47caedb  # Botnet/IoT | R=84.3 | Mirai | elf
+f95849221fd7eac9ec99afabc3e902d8a36f886a5d7a186cbc249a3f11be3bb9  # Botnet/IoT | R=84.2 | Mirai | elf
+03bb7a58beb30b1b6af87beb2a3cdc136e0f5de706852ac97124926f5e0481c4  # Botnet/IoT | R=84.1 | Mirai | elf
+7675c9f4af0c0f311a2427a0c1da3df9b861703478441943dea20498f2f38ce9  # Botnet/IoT | R=84.1 | Mirai | elf
+1e7ebdcef5d6a5ab149872c4fbe9c23ba46e81b19e902350b77d645ccabcc1a4  # Trojaner | R=82.9 | unbekannt | apk
+9a607850b33ca84a9296d280bcf10e02541d269e3723c003baba8d279b0abe15  # Trojaner | R=82.9 | unbekannt | apk
+db11d9b51d90d23e5769d5f6dd738adad56acff41555698446926804d5396962  # Trojaner | R=82.5 | unbekannt | apk
+bd6c1844db5e44310542a69aa4ba433430d25a2622c98cf819247330b8826c64  # Trojaner | R=82.2 | unbekannt | dll
+279997c885d0624ed794d19abbe608b1601def6047ea0380112ca9a4efe33de1  # RAT | R=79.0 | njrat | exe
+dd0e62da03a0015aca6da4663f78fcc7a05bfcdf6f2153ca4c6fe71e5ca0dc23  # Botnet/IoT | R=76.4 | Mirai | elf
+ee049e30cb33ab713c24efa7dc1032f2de4d5e3b2855574c25aab0ca728ea0df  # Botnet/IoT | R=75.0 | Mirai | sh
+31b0624d16882eec282adc3817b18e4c8b3c80a9dbaa82e057a902cf7a27732b  # Trojaner | R=67.1 | unbekannt | apk
+c53bc13170b9ff26b0cca93715e947318e06cafe0d98cf825eabffe3c7f763cb  # Linux-Malware | R=42.4 | unbekannt | elf
+000b095e3daa69f473bb4cba9cb29ff85da3043f393bd624a82f966c0ab2b35e  # Andere / Unbekannt | R=31.7 | unbekannt | exe
+
+[Tags]
+Android
+Dropper
+GOI
+GoldFX
+Malware
+Mirai
+RAT
+Rewardsteal
+Riskware
+Trojan
+Uzum Bank
+Windows
+apk
+dll
+elf
+exe
+mParivahan
+njrat
+sh
+signed
+
+[VT Engine Detections]
+
+## 279997c885d0624ed794...  (njrat)
+  ALYac                          Gen:Variant.Mikey.185319
+  APEX                           Malicious
+  AVG                            Win64:Evo-gen [Trj]
+  AhnLab-V3                      Trojan/Win.Lazy.C5848296
+  Antiy-AVL                      Trojan/Win64.Vidar
+  Arcabit                        Trojan.Mikey.D2D3E7
+  Avast                          Win64:Evo-gen [Trj]
+  Avira                          HEUR/AGEN.1319578
+  BitDefender                    Gen:Variant.Mikey.185319
+  Bkav                           W64.AIDetectMalware
+  CTX                            exe.unknown.mikey
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win64/GenKryptik.HNRR trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Mikey.185319 (B)
+  F-Secure                       Heuristic.HEUR/AGEN.1319578
+  GData                          Gen:Variant.Mikey.185319
+  Kaspersky                      UDS:Trojan.Win32.Inject
+  Malwarebytes                   Malware.AI.4198733728
+  McAfeeD                        ti!279997C885D0
+  MicroWorld-eScan               Gen:Variant.Mikey.185319
+  Microsoft                      Trojan:Win64/Vidar.ABVW!MTB
+  Panda                          Trj/GdSda.A
+  Rising                         Trojan.Kryptik!8.8 (TFE:5:wmjUk49Cg9L)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Suspicious PE
+  Sophos                         Generic ML PUA (PUA)
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Malware.Win32.Gencirc.11e4ac9c
+  VIPRE                          Gen:Variant.Mikey.185319
+  Zillya                         Trojan.GenKryptik.Win64.66546
+  huorong                        Trojan/W64.Injector.cd
+
+## dd0e62da03a0015aca6d...  (Mirai)
+  ALYac                          Trojan.Linux.Mirai.1
+  AVG                            ELF:CVE-2017-17215-A [Expl]
+  AhnLab-V3                      Trojan/Linux.Mirai.SE306
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai.ch
+  Arcabit                        Trojan.Linux.Mirai.1
+  Avast                          ELF:CVE-2017-17215-A [Expl]
+  Avast-Mobile                   ELF:Mirai-UM [Trj]
+  Avira                          EXP/ELF.Gafgyt.Z.A
+  BitDefender                    Trojan.Linux.Mirai.1
+  CTX                            elf.trojan.mirai
+  ClamAV                         Unix.Trojan.Mirai-7135937-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Exploit.CVE-2017-17215.11
+  ESET-NOD32                     Linux/Mirai.BR trojan
+  Elastic                        Linux.Generic.Threat
+  Emsisoft                       Trojan.Linux.Mirai.1 (B)
+  F-Secure                       Exploit.EXP/ELF.Gafgyt.Z.A
+  Fortinet                       ELF/Mirai.AT!tr.botnet
+  GData                          Trojan.Linux.Mirai.1
+  Google                         Detected
+  Gridinsoft                     Susp.U.XOREncoded.sd!yf
+  Ikarus                         Trojan.Linux.Mirai
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.dx
+  McAfeeD                        Trojan:Linux/Mirai.ESU
+  MicroWorld-eScan               Trojan.Linux.Mirai.1
+  Microsoft                      Backdoor:Linux/Mirai.BL!xp
+  Rising                         Exploit.CVE-2017-17215!1.103D2 (CLASSIC)
+  Sangfor                        Suspicious.Linux.Save.a
+  Skyhigh                        Linux/Mirai-FQVY!575B0FC72037
+  Sophos                         Linux/DDoS-CIA
+  Symantec                       Linux.Gafgyt
+  Tencent                        Backdoor.Linux.Mirai.was
+  TrellixENS                     Linux/Mirai-FQVY!575B0FC72037
+  TrendMicro                     Trojan.Linux.MIRAI.SMMR1
+  TrendMicro-HouseCall           Trojan.Linux.MIRAI.SMMR1
+  VIPRE                          Trojan.Linux.Mirai.1
+  Varist                         E32/Mirai.EN.gen!Camelot
+  ZoneAlarm                      Linux/DDoS-CIA
+  huorong                        Backdoor/Linux.Mirai.q
+
+## 31b0624d16882eec282a...  (unbekannt)
+  AhnLab-V3                      PUP/Android.FakeApp.1304377
+  Avast-Mobile                   Android:Evo-gen [Trj]
+  Avira                          ANDROID/AVE.Evo.zrtruc
+  BitDefenderFalx                Android.Riskware.FakeApp.WZ
+  Google                         Detected
+  Ikarus                         Trojan-Dropper.AndroidOS.Shedun
+  K7GW                           Trojan ( 0001140e1 )
+  Kaspersky                      HEUR:Trojan.AndroidOS.Fakeapp.ig
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  Rising                         Trojan.Fakeapp/Android!8.19819 (CLOUD)
+  SymantecMobileInsight          AdLibrary:Generisk
+  TrellixENS                     Artemis!DAE1A9571AC7
+
+## ee049e30cb33ab713c24...  (Mirai)
+  ALYac                          Generic.Linux.Medusa.C.9238F15A
+  AVG                            BV:Downloader-AAN [Drp]
+  AhnLab-V3                      Downloader/Shell.Generic.S1650
+  Arcabit                        Generic.Linux.Medusa.C.9238F15A
+  Avast                          BV:Downloader-AAN [Drp]
+  Avira                          HTML/ExpKit.Gen2
+  BitDefender                    Generic.Linux.Medusa.C.9238F15A
+  CAT-QuickHeal                  Trojan.Shell.Downloader.39008
+  CTX                            shell.unknown.medusa
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.DownLoader.2424
+  ESET-NOD32                     Linux/TrojanDownloader.SH.BFM trojan
+  Emsisoft                       Generic.Linux.Medusa.C.9238F15A (B)
+  F-Secure                       Malware.HTML/ExpKit.Gen2
+  Fortinet                       BASH/Dloader.P!tr
+  GData                          Generic.Linux.Medusa.C.9238F15A
+  Google                         Detected
+  K7GW                           Trojan ( 004102a21 )
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.p
+  MicroWorld-eScan               Generic.Linux.Medusa.C.9238F15A
+  Microsoft                      TrojanDownloader:SH/SAgent.B!MTB
+  NANO-Antivirus                 Trojan.Script.Downloader.fjajjs
+  Rising                         Downloader.Agent/BASH!1.DB4B (CLASSIC)
+  Sangfor                        Virus.Generic-Script.Save.ba1
+  Skyhigh                        Linux/Downloader.w
+  Sophos                         Mal/ShellDl-A
+  Symantec                       CL.Downloader!gen277
+  Tencent                        Heur:Trojan.Linux.Downloader.e
+  TrellixENS                     Linux/Downloader.w
+  TrendMicro                     ELF_MIRAILOD.SM
+  TrendMicro-HouseCall           ELF_MIRAILOD.SM
+  VIPRE                          Generic.Linux.Medusa.C.9238F15A
+  Varist                         SH/Mirai.A.gen!Camelot
+  ZoneAlarm                      Mal/ShellDl-A
+  huorong                        Trojan/BAT.Obfuscated.aar!crit
