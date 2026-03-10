@@ -1,0 +1,120 @@
+# IOC Export  2026-03-10_06-57-UTC
+# 16 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+61b1bf909875d0ae463f2f5351e2b5f2c969abe95150a805d73a96dcbb651379  # RAT | R=89.2 | AsyncRAT | exe
+183c7a7607fb4bfbdedc8ac29f56dc44833c79d671bb20f6e88ed2dd32a12578  # Botnet/IoT | R=84.5 | Mirai | elf
+538dd5e7791ab04d0b4f8964884322f3cbbc76b91c8c4ec3849d8aa35ff5edc1  # Botnet/IoT | R=83.9 | Mirai | elf
+7b615e12aba119156299feaa2fc1072fd017a856d9b7fa71fe7a9f8e7f241b4a  # Botnet/IoT | R=83.9 | Mirai | elf
+8751287724a8d1f223292ff0df6bab74a9f96e96cca50a8f1dfe4b7d944d289d  # Botnet/IoT | R=83.4 | Mirai | elf
+d104de180e0bd17c476d237adbb98155c78684ee0a123b356fdf8cdd62b5afde  # Botnet/IoT | R=83.3 | Mirai | sh
+3ee6a40138eae3dd86918bfdfb67402efb2d98251d4c4a8726acc7b555a5b735  # Botnet/IoT | R=83.3 | Mirai | elf
+98a0bbcbe417481e48ddde7653ca2dce48e1ab190e94a893ac1bee08530b49b6  # Botnet/IoT | R=83.2 | Mirai | elf
+ee5e941218bcf1285b2640c4b2f8baf3ffa44a73b6894ce871a22cbc24b80600  # Infostealer | R=82.1 | DeerStealer | msi
+61c61e5c4d5caa801b3d6ee7ba915ce19793274d659fc6e2bb14076fc5fdcb59  # RAT | R=68.0 | RemcosRAT | js
+dd9d5a825771588aa9173933dba188bb40815188774e72381f20c0590fc01d81  # Andere / Unbekannt | R=38.2 | unbekannt | exe
+e67f0ecc3a2685a80d135066c7f49ed81839aa04c6e8e693ab624a1f4b9ced56  # Andere / Unbekannt | R=32.6 | unbekannt | sh
+802e3a8de77a50ace30d380f9d02f0179047a7eb2768efcd5d39b16137cbef08  # Andere / Unbekannt | R=32.4 | unbekannt | sh
+a39eca46f834e874975e46eeda652906ab3576735fe930cec7e284560c6145ca  # Andere / Unbekannt | R=32.2 | unbekannt | exe
+4d2d2c6efbb042ae0af1b79c8cc52237998ec70df56afd418abbacc48d9d3395  # Andere / Unbekannt | R=31.9 | Formbook | exe
+f583ffd3f8a32243ed872e8a123f8ac6aa84d506d34a8792edd5e9ee41ba6c7c  # Andere / Unbekannt | R=31.5 | a310Logger | exe
+
+[Tags]
+DeerStealer
+Formbook
+Mirai
+RAT
+RemcosRAT
+a310Logger
+asyncrat
+elf
+exe
+js
+msi
+sh
+signed
+
+[VT Engine Detections]
+
+## e67f0ecc3a2685a80d13...  (unbekannt)
+  AVG                            BV:Agent-BNQ [Trj]
+  AhnLab-V3                      Downloader/Shell.Generic.S1990
+  Avast                          BV:Agent-BNQ [Trj]
+  Avira                          BASH/Dldr.G4
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.MulDrop.187
+  ESET-NOD32                     Linux/Agent.OG trojan
+  F-Secure                       Malware.BASH/Dldr.G4
+  Fortinet                       BASH/EncystPHP.A!tr
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.bc
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  NANO-Antivirus                 Trojan.Script.Dropper.kpvdnu
+  Rising                         Downloader.Agent/BASH!9.54F60 (XSE:WFNFX0JBVDqo+9l0mSImkyZ5xYdvf5+W)
+  Sophos                         Linux/Dldr-YZ
+  Tencent                        Trojan-DL.Linux.Agent.505004
+  Varist                         Unix/Agent.VA
+  ZoneAlarm                      Linux/Dldr-YZ
+  huorong                        TrojanDownloader/Linux.Agent.en
+
+## dd9d5a825771588aa917...  (unbekannt)
+  ALYac                          Gen:Variant.Lazy.706633
+  AVG                            Win32:MalwareX-gen [Drp]
+  AhnLab-V3                      Infostealer/Win.LummaC2.R760953
+  Arcabit                        Trojan.Lazy.DAC849
+  Avast                          Win32:MalwareX-gen [Drp]
+  Avira                          DR/AVI.Agent.wlsqx
+  BitDefender                    Gen:Variant.Lazy.706633
+  Bkav                           W32.AIDetectMalware
+  CTX                            exe.trojan.lazy
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win32/PSW.Amatera.F trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Lazy.706633 (B)
+  F-Secure                       Dropper.DR/AVI.Agent.wlsqx
+  GData                          Gen:Variant.Lazy.706633
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Kryptik.sa
+  K7AntiVirus                    Trojan ( 006d583c1 )
+  K7GW                           Trojan ( 006d583c1 )
+  Lionic                         Trojan.Win32.Generic.4!c
+  McAfeeD                        ti!DD9D5A825771
+  MicroWorld-eScan               Gen:Variant.Lazy.706633
+  Microsoft                      Trojan:Win32/Egairtigado!rfn
+  Paloalto                       generic.ml
+  Rising                         Stealer.Amatera!8.1D151 (TFE:2:cqxJoZydZ1B)
+  Sangfor                        Trojan.Win32.Lazy.Vwlz
+  Sophos                         Mal/Generic-S
+  Tencent                        Win32.Trojan.FalseSign.Imnw
+  TrellixENS                     Artemis!55BA58159C83
+  TrendMicro-HouseCall           TROJ_GEN.R002H09C926
+  VBA32                          Virus.Virlock.gen.01
+  VIPRE                          Gen:Variant.Lazy.706633
+  Varist                         W32/ABTrojan.ORVE-3445
+  alibabacloud                   Trojan:Win/Wacapew.C9nj
+
+## a39eca46f834e874975e...  (unbekannt)
+  ALYac                          Gen:Variant.Zusy.558549
+  Arcabit                        Trojan.Zusy.D885D5
+  BitDefender                    Gen:Variant.Zusy.558549
+  CTX                            exe.trojan.zusy
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  DeepInstinct                   MALICIOUS
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Zusy.558549 (B)
+  GData                          Gen:Variant.Zusy.558549
+  McAfeeD                        ti!A39ECA46F834
+  MicroWorld-eScan               Gen:Variant.Zusy.558549
+  Microsoft                      Trojan:Win32/Sonbokli.A!cl
+  Paloalto                       generic.ml
+  Rising                         Trojan.Injector!1.127AD (CLASSIC)
+  TrellixENS                     Artemis!9141FA2D159C
+  VIPRE                          Gen:Variant.Zusy.558549
+  VirIT                          Trojan.Win32.GenHeur.B
+  alibabacloud                   Trojan:Win/Zusy.Gen
+
+## 61c61e5c4d5caa801b3d...  (RemcosRAT)
+  Fortinet                       JS/Agent.ADLK!tr
+  Kaspersky                      HEUR:Trojan.Script.SAgent.gen
