@@ -1,0 +1,84 @@
+# IOC Export  2026-03-11_07-00-UTC
+# 8 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+1dd20400a7bb38e2bc807c8bbe15fb719b3466be957bbd9b71f620f876916287  # RAT | R=89.8 | RemcosRAT | js
+42a575352719a76034cd3b2309ffb99728f2be97698a83dfda3eec2b8495b1c1  # Loader | R=82.3 | GuLoader | exe
+05095dad171a9a8a6e628fb429304fa1211921ff87203c7766cfa17d3e27e94a  # RAT | R=80.2 | ValleyRAT | dll
+9435f5f34f606fe496c779c808b033d86c63b2a71a2b7d3c6617c43df9226762  # Botnet/IoT | R=66.4 | Mirai | elf
+ff6e13de81fcfda3a6bca573c6f23ed5150a233f3c4c0ff6f6a81fffa0583377  # Infostealer | R=61.5 | unbekannt | exe
+c981083adeffc84014fa8abf05234c8c179d30fd3582c316fc2631ce11189c01  # Maldoc | R=36.8 | unbekannt | xls
+a93c12202445a324a04eebfe872c8125ea453101513f6ed6a5c8ed274ecfb5a5  # Andere / Unbekannt | R=32.3 | unbekannt | sh
+1c7376d94977591ba486c5b5e6fb4ec7bf84e13cbd37c51ae49a4935e36849a7  # Andere / Unbekannt | R=31.6 | a310Logger | exe
+
+[Tags]
+GuLoader
+Mirai
+RAT
+RemcosRAT
+VOID-MONTHLY-85185E724665
+ValleyRAT
+a310Logger
+dll
+electron
+elf
+exe
+js
+sh
+voidstealer
+xls
+
+[VT Engine Detections]
+
+## 9435f5f34f606fe496c7...  (Mirai)
+  AVG                            ELF:Mirai-DDS [Trj]
+  Avast                          ELF:Mirai-DDS [Trj]
+  DrWeb                          Linux.Mirai.9735
+  ESET-NOD32                     Linux/Mirai.EKD trojan
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.kc
+  McAfeeD                        Trojan:Linux/Mirai.EFZ
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  Tencent                        Trojan.Linux.Mirai.odtra
+  huorong                        Backdoor/Linux.Mirai.kx
+
+## a93c12202445a324a04e...  (unbekannt)
+  AVG                            BV:Agent-BNQ [Trj]
+  AhnLab-V3                      Downloader/Shell.Generic.S1990
+  Avast                          BV:Agent-BNQ [Trj]
+  Avira                          BASH/Dldr.G4
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.MulDrop.187
+  ESET-NOD32                     Linux/Agent.OG trojan
+  F-Secure                       Malware.BASH/Dldr.G4
+  Fortinet                       BASH/EncystPHP.A!tr
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.bc
+  Microsoft                      PUA:Win32/Puwaders.C!ml
+  NANO-Antivirus                 Trojan.Script.Dropper.kpvdnu
+  Rising                         Downloader.Agent/BASH!1.13B74 (CLASSIC)
+  Sophos                         Linux/Dldr-YZ
+  Tencent                        Trojan-DL.Linux.Agent.505004
+  Varist                         Unix/Agent.VA
+  ZoneAlarm                      Linux/Dldr-YZ
+  huorong                        TrojanDownloader/Linux.Agent.en
+
+## c981083adeffc84014fa...  (unbekannt)
+  CTX                            xls.trojan.cve170199
+  DrWeb                          X97M.DownLoader.2343
+  ESET-NOD32                     probably Win32/Exploit.CVE-2017-0199.C trojan
+  Fortinet                       MSExcel/CVE_2017_0199.G1!exploit
+  GData                          Generic.Trojan.Agent.U9CRC4
+  Ikarus                         Win32.SuspectCrc
+  Lionic                         Trojan.MSExcel.Generic.4!c
+  McAfeeD                        Trojan:Office/Downloader.LK!1
+  Microsoft                      Trojan:Win32/Etset!rfn
+  Rising                         Exploit.CVE-2017-0199!1.FDBF (CLASSIC)
+  SentinelOne                    Static AI - Suspicious OLE
+  Skyhigh                        Artemis!Trojan
+  Symantec                       Scr.Malcode!gen59
+  TACHYON                        Downloader/W97.CVE-2017-0199
+  TrendMicro                     HEUR_CVE170199.L
+  TrendMicro-HouseCall           HEUR_CVE170199.L
+  Varist                         CVE170199.A.gen!Eldorado
+  ViRobot                        XLS.Z.Agent.864768
+  alibabacloud                   Exploit:Win/CVE-2017-0199.C
