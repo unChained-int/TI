@@ -1,0 +1,142 @@
+# IOC Export  2026-03-11_13-09-UTC
+# 15 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+a6edec8bb8a1de71eff27deecd7aae78ef4514dc8e2ed3dd83aeaf25a7e4a188  # Infostealer | R=89.2 | Vidar | exe
+b61aa2f1079bff7a5a7d3ad6da5c914309319b050b1a88b9a1c702e2d26026c4  # RAT | R=88.9 | RemcosRAT | xls
+9ed5dc32d9ce2e7b49cd50141c15702bf2a21b769dd47ce32c460e41814fb055  # Trojaner | R=81.9 | Gh0stRAT | exe
+8ef8ea431b2ac612a6a556bd9e663fc2887f9b0499cf811eeb8b106f6d3c28f3  # RAT | R=81.7 | AsyncRAT | exe
+6a9abdb273d46783f6d81f91e60a8ed7c2f55385ef5cb0743a6d98d8b2aa5ccb  # Loader | R=74.3 | Phorpiex | exe
+c6e86a71235ed080566858735638e61e2f607ea5a7a5bce6ce6442aeb6ee2259  # Andere / Unbekannt | R=33.1 | FleetDeck | exe
+db2b80cd7be5c7548932ce10c0ee09907d9fbbfeb8c17e213d3178492fc4c955  # Skript/Dropper | R=32.8 | unbekannt | js
+c8c0c26750bed2a75671e19bdb101afd785880584b73bd2140bcd88df5dbf75c  # Skript/Dropper | R=32.5 | unbekannt | js
+70734cd5302b7101ac987a36e54df5e692b1d01241bc0e27aa89b27ba1c1325c  # Andere / Unbekannt | R=31.9 | AgentTesla | exe
+177932b2db172c45a106b247565b61f46c0c2e323e35efb41603500c91e187e1  # Andere / Unbekannt | R=31.7 | unbekannt | sh
+64a92d23f6efcc17cdd3016a52e0503a13350f037785220a08b74b46333a3eee  # Andere / Unbekannt | R=31.4 | Vjw0rm | exe
+ce10df51bf1eda48756df2c7c1962d2486d2e25e23695a6f98a82e32281df347  # Andere / Unbekannt | R=31.4 | unbekannt | zip
+a15044541cc9587c61dc7fbfa613b03045d323cc643d4fd08d8351d7cdd80a32  # Andere / Unbekannt | R=31.2 | unbekannt | exe
+c63d675d88282db91149a1057b122a11a1bae3f17361941005aca4e14307f9b7  # Andere / Unbekannt | R=31.2 | DarkCloud | exe
+ec5461c08f50b3249c434bedcf8e70fd6eb67fb2a351fb9969fa0d3ed3d65238  # Andere / Unbekannt | R=27.4 | unbekannt | msi
+
+[Tags]
+AgentTesla
+CVE-2017-11882
+Cybercrime
+DarkCloud
+FleetDeck
+Gh0stRAT
+Malgent
+Phorpiex
+RAT
+RMM
+RemcosRAT
+Trojan:Win32/Malgent!MSR
+UKR
+Vidar
+Vjw0rm
+asyncrat
+dropped-by-Amadey
+dropped-by-phorpiex
+exe
+fbf543
+js
+msi
+sh
+signed
+upx
+upx-dec
+xls
+zip
+
+[VT Engine Detections]
+
+## ec5461c08f50b3249c43...  (unbekannt)
+  Kaspersky                      not-a-virus:RemoteAdmin.Win32.UltraVNC.bg
+  Rising                         HackTool.UltraVNC!8.13A44 (TFE:5:9fMuDVjofiD)
+  Zillya                         Tool.UltraVNC.Win32.316
+
+## c8c0c26750bed2a75671...  (unbekannt)
+  DrWeb                          VBS.Starter.519
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan.Script.SAgent.gen
+  Symantec                       CL.Downloader!gen211
+  Varist                         JS/Agent.DGD9!Eldorado
+
+## db2b80cd7be5c7548932...  (unbekannt)
+  Fortinet                       JS/Formbook.JAE!tr
+  Google                         Detected
+  Ikarus                         Trojan-Downloader.JS.Agent
+  Kaspersky                      HEUR:Trojan.Script.Generic
+  McAfeeD                        Trojan:Script/AgentTesla.AC
+  Microsoft                      Trojan:JS/Sonbokli.A!cl
+
+## c6e86a71235ed0805668...  (FleetDeck)
+  APEX                           Malicious
+  Bkav                           W32.AIDetectMalware
+  Cylance                        Unsafe
+  DrWeb                          Trojan.Siggen31.48528
+  ESET-NOD32                     WinGo/RemoteAdmin.FleetDeck.A potentially unsafe application
+  Elastic                        malicious (high confidence)
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Agent.oa!s1
+  Jiangmin                       RemoteAdmin.Agent.rb
+  K7AntiVirus                    Unwanted-Program ( 005beeab1 )
+  K7GW                           Unwanted-Program ( 005beeab1 )
+  Kaspersky                      not-a-virus:RemoteAdmin.Win32.Fleet.a
+  Lionic                         Trojan.Win32.FleetDeck.4!c
+  Malwarebytes                   Malware.AI.2976617133
+  McAfeeD                        ti!C6E86A71235E
+  Skyhigh                        PUP-IQM
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       malicious.high.ml.score
+  TrellixENS                     PUP-IQM
+  Varist                         W32/RemoteAdmin.H.gen!Eldorado
+  VirIT                          Trojan.Win32.CabDrp.IEP
+  Zillya                         Tool.FleetDeck.Win32.2
+
+## 8ef8ea431b2ac612a6a5...  (AsyncRAT)
+  ALYac                          Generic.AsyncRAT.Marte.B.166B6F2C
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Rat]
+  AhnLab-V3                      Trojan/Win.QuasarRAT.C5469766
+  Arcabit                        Generic.AsyncRAT.Marte.B.166B6F2C
+  Avast                          Win32:MalwareX-gen [Rat]
+  Avira                          HEUR/AGEN.1307064
+  BitDefender                    Generic.AsyncRAT.Marte.B.166B6F2C
+  Bkav                           W32.AIDetectMalware.CS
+  CTX                            exe.unknown.asyncrat
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          BackDoor.SiggenNET.11
+  ESET-NOD32                     MSIL/Agent.CYT trojan
+  Elastic                        Windows.Generic.Threat
+  Emsisoft                       Generic.AsyncRAT.Marte.B.166B6F2C (B)
+  F-Secure                       Heuristic.HEUR/AGEN.1307064
+  Fortinet                       MSIL/AsyncRAT.A!tr
+  GData                          MSIL.Backdoor.DCRat.D
+  Google                         Detected
+  Ikarus                         Trojan.MSIL.Agent
+  K7AntiVirus                    Trojan ( 005c228f1 )
+  K7GW                           Trojan ( 005c228f1 )
+  Kaspersky                      HEUR:Backdoor.MSIL.SheetRat.gen
+  Malwarebytes                   Backdoor.AsyncRAT.MSIL.Generic
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        Trojan:Win/Generic.ALT
+  MicroWorld-eScan               Generic.AsyncRAT.Marte.B.166B6F2C
+  Microsoft                      Backdoor:MSIL/AsyncRAT.AA!MTB
+  Rising                         Trojan.AntiVM!1.CF63 (CLASSIC)
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        Fareit-FZT!FB3095F8A4E8
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Backdoor.Msil.Dcrat.16002822
+  TrellixENS                     Fareit-FZT!FB3095F8A4E8
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04C9z
+  VBA32                          Trojan.MSIL.Autorave.Heur
+  VIPRE                          Generic.AsyncRAT.Marte.B.166B6F2C
+  Varist                         W32/MSIL_AsyncRAT.A.gen!Eldorado
+  VirIT                          Trojan.Win32.MSIL_Heur.A
+  Webroot                        Win.Trojan.Gen
+  huorong                        Trojan/MSIL.CoinStealer.c
