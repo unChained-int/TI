@@ -1,0 +1,150 @@
+# IOC Export  2026-03-11_14-51-UTC
+# 20 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+395bd33b1a3210c0210221a058f26e28b82b5952ef773177ae1da670707b02d3  # RAT | R=88.6 | RemcosRAT | js
+b30f4605e181fc71c339131d0b8d104d337d23fd9707b6939ef8933e7c434f05  # RAT | R=88.3 | NetSupport | exe
+241df0f833fb40db01d7ec055477cf1fb71360c34843466f0d2c54046900bfcd  # RAT | R=88.3 | AsyncRAT | exe
+00927b54b5a546bc909ba4a9eb1e6006fd801c301451e33e637f2a4622b488cb  # Botnet/IoT | R=84.1 | Mirai | elf
+2f94b3aef184e009a4a8a6c1958d44734a0ddf2f29807e2ca2500fb0dbfc512f  # Botnet/IoT | R=84.0 | Mirai | elf
+77c243c3cec0fac1c789ad271bd09ba34109672a13ff96bc289c2a99fb68a76f  # Infostealer | R=81.9 | unbekannt | zip
+c3f2712e88d71df34b828c75259c0564df07995ddad4fad60098a0c9388da6fd  # Infostealer | R=63.2 | unbekannt | dll
+7e0132d5d7aa09e09e6000a3374b8b3923e6e8b218f4610bf68fb005260578f7  # Linux-Malware | R=42.6 | unbekannt | elf
+5987e61305c62e539824a8e8613437d195322b0f1374bc1d0e1923ba23a8ca6f  # Andere / Unbekannt | R=37.4 | unbekannt | exe
+931d4f828ecfd320f14eefb9857f9750d33d995c9570ec1f10b978fe74dfd760  # Andere / Unbekannt | R=32.3 | unbekannt | unknown
+7ebd67ffeebda248fade75c15719b8033a8f88eb289c226144dacf62b3cab327  # Andere / Unbekannt | R=32.3 | unbekannt | sh
+6b60813635717e89b5c122b1607d45c8730ddfae86c4dbff7f625328082c8ea8  # Andere / Unbekannt | R=32.1 | unbekannt | iso
+c7b93b6facfc23f49e35e81dc9c30cc69401b8245eeb7c032fc13656cd7e101f  # Andere / Unbekannt | R=32.1 | unbekannt | exe
+d493fdd20fef55c0327e4ad85c1f6f96deb255ef949fbde6fb9cb33406656e4a  # Andere / Unbekannt | R=32.1 | unbekannt | unknown
+df825349958dd1963991dacb73f344fe4b0c2c2f8c6e56cd43f85ccbc8dcc74f  # Andere / Unbekannt | R=32.0 | unbekannt | exe
+0c36ec4871d8ae00db587505d63a8b1e5eff2a8bc4813e33921d5f7d95e9257e  # Andere / Unbekannt | R=32.0 | unbekannt | sh
+5c05a2314c615ee58fe32e421eb39f33e693e7cb666f492befe24451e5c86c68  # Andere / Unbekannt | R=31.5 | unbekannt | tar
+9fe957e5be9729b4fe64906b95a6ff2931d42ff2805ad12069b99e3fdc8b6ae3  # Andere / Unbekannt | R=31.4 | unbekannt | dll
+dfd0bf6331e7c57ae85798c0b48c35e19bd699163ffbc0dbeafc9607ed413063  # Andere / Unbekannt | R=31.4 | ConnectWise | msi
+fcd9f0a39b3e64d352e9e55df8d4b033814e65ee1c9ba299a5ef9d5e31829c29  # Andere / Unbekannt | R=30.7 | unbekannt | zip
+
+[Tags]
+141-98-234-8
+194-102-104-222
+ACRStealer
+AsgardProtector
+ConnectWise
+Mirai
+NetSupport
+PureCrypter
+RAT
+RemcosRAT
+asyncrat
+de-pumped
+dll
+dllHijack
+elf
+exe
+file-pumped
+iso
+js
+msi
+sh
+signed
+tar
+upx
+upx-dec
+zip
+
+[VT Engine Detections]
+
+## df825349958dd1963991...  (unbekannt)
+  APEX                           Malicious
+  Bkav                           W64.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win64/Packed.CAB.BC trojan
+  Elastic                        malicious (high confidence)
+  Google                         Detected
+  Gridinsoft                     Trojan.Win64.Agent.oa!s1
+  Ikarus                         Trojan.Win64.Cab
+  Kaspersky                      VHO:Trojan.Win32.Sdum.gen
+  Malwarebytes                   Trojan.Dropper
+  McAfeeD                        ti!DF825349958D
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Sangfor                        Trojan.Win32.Save.a
+  Symantec                       ML.Attribute.HighConfidence
+  Yandex                         Backdoor.Agent!ifo2QKtnwQ0
+
+## fcd9f0a39b3e64d352e9...  (unbekannt)
+  Arcabit                        Trojan.Hulk.Gen.Aggressive.9.1
+  BitDefender                    Trojan.Hulk.Gen.Aggressive.9.1
+  CTX                            zip.trojan.aggressive
+  ESET-NOD32                     Win64/Packed.CAB.BC trojan
+  Emsisoft                       Trojan.Hulk.Gen.Aggressive.9.1 (B)
+  GData                          Trojan.Hulk.Gen.Aggressive.9.1
+  Google                         Detected
+  Ikarus                         Trojan.Win64.Cab
+  MicroWorld-eScan               Trojan.Hulk.Gen.Aggressive.9.1
+  Rising                         Malware.SwollenFile!1.E38A (CLASSIC)
+  Sophos                         Mal/Generic-S
+  VIPRE                          Trojan.Hulk.Gen.Aggressive.9.1
+  Yandex                         Backdoor.Agent!ifo2QKtnwQ0
+
+## 5987e61305c62e539824...  (unbekannt)
+  APEX                           Malicious
+  AVG                            MalwareX-gen [Misc]
+  Antiy-AVL                      Trojan[Packed]/Win64.Themida
+  Avast                          MalwareX-gen [Misc]
+  Avira                          TR/Crypt.XPACK.Gen
+  Bkav                           W64.AIDetectMalware
+  CTX                            exe.trojan.crypt
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win64/Packed.Themida.L suspicious application
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/Crypt.XPACK.Gen
+  Fortinet                       Riskware/Application
+  GData                          Win64.Trojan.Agent.UNOYWZ
+  Google                         Detected
+  Gridinsoft                     Trojan.Win64.Packed.sa
+  Ikarus                         PUA.Generic
+  Kaspersky                      Trojan.Win32.Agent.xcczeb
+  Lionic                         Trojan.Win32.Generic.4!c
+  Malwarebytes                   Malware.Heuristic.2025
+  McAfeeD                        ti!5987E61305C6
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Trojan.Kryptik@AI.94 (RDML:f2vm6mlFNzLLnVcPriYVXg)
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        BehavesLike.Win64.Generic.vc
+  Sophos                         Mal/Generic-S
+  TrellixENS                     Artemis!5BAC9C39FA56
+  Varist                         W64/ABApplication.WIUH-2859
+  Zoner                          Probably Heur.ExeHeaderL
+  alibabacloud                   VirTool:Win/Wacatac.B9nj
+
+## 6b60813635717e89b5c1...  (unbekannt)
+  Antiy-AVL                      Trojan[Packed]/Win64.Themida
+  Avira                          TR/Crypt.XPACK.Gen
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Win64/Packed.Themida.L suspicious application
+  F-Secure                       Trojan.TR/Crypt.XPACK.Gen
+  Fortinet                       Riskware/Application
+  GData                          Archive.Trojan.Agent.HZB7SG
+  Google                         Detected
+  Ikarus                         PUA.Generic
+  Kaspersky                      Trojan.Win32.Agent.xcczeb
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Suspicious ISO
+  Skyhigh                        Artemis!5BAC9C39FA56
+  Sophos                         Mal/Generic-S
+  TrellixENS                     Artemis!5BAC9C39FA56
+  Varist                         W64/ABApplication.WIUH-2859
+  Zoner                          Probably Heur.ExeHeaderL
+  alibabacloud                   VirTool:Win/Packed.Themida.L
+
+## c3f2712e88d71df34b82...  (unbekannt)
+  ESET-NOD32                     Win32/Loader.Ropalidia.CA.gen trojan
+  Elastic                        malicious (high confidence)
+  Microsoft                      Program:Win32/Contebrew.A!ml
+  Skyhigh                        BehavesLike.Win32.Injector.rh
