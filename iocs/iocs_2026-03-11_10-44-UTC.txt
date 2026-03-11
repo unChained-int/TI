@@ -1,0 +1,125 @@
+# IOC Export  2026-03-11_10-44-UTC
+# 11 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+724930d0644542e600a23259b1a6d3cb12de34b68d3bbbb46d479048974da3a5  # Botnet/IoT | R=83.2 | Mirai | elf
+bd6a93a6f1b3c9337dde212fbcce087dd94a8bbf492d232ac00b7abde9f675e7  # Botnet/IoT | R=82.9 | Mirai | elf
+ce5189c38491ce5f84fe1c50722759b38832e1bfdec65ccacb598f06bf5b1811  # Infostealer | R=80.6 | PhantomStealer | bat
+21aacae7e979d0ef3db0f01353a190437e89b5ee4ac230cc2637faeea9ee8ab0  # Maldoc | R=38.3 | unbekannt | docx
+4341e88cc8798d44a25d75f7ba833f82567f4fb427a26a272448ee347eca2a0e  # Linux-Malware | R=38.0 | unbekannt | elf
+84379bc1903b7d32f76e375a7c5d07c6feec8daeeb0615c0281ac3448e2054b3  # Maldoc | R=37.5 | unbekannt | xls
+80551c87db15d794c02974165e9a6086a5239f820831042e5573d49a26de9227  # Linux-Malware | R=36.6 | unbekannt | elf
+a9c13daf86047d15238ba16b3f38c419e3b863fa6cf2bd49ceb12e517b7db2d3  # Andere / Unbekannt | R=34.4 | a310Logger | exe
+0d9fdc3349e9997db430d4ff9b4985dd05319c4430e751d07af3ae659c73cf51  # Andere / Unbekannt | R=31.2 | unbekannt | exe
+191b7d804e65d9f7cf456458639edd98eb69f00d97111fcefd8a337dea886412  # Andere / Unbekannt | R=31.2 | unbekannt | rar
+f239e3fedc4926ff3cf58f95bacff9d8f11289e58036ed507ab3f435dce1b2b1  # Andere / Unbekannt | R=28.1 | unbekannt | msc
+
+[Tags]
+Mirai
+PhantomStealer
+a310Logger
+bat
+docx
+elf
+exe
+msc
+rar
+xls
+
+[VT Engine Detections]
+
+## a9c13daf86047d15238b...  (a310Logger)
+  AhnLab-V3                      Trojan/AU3.Loader.S3029
+  CrowdStrike                    win/malicious_confidence_90% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.AutoIt.1770
+  ESET-NOD32                     Win32/Injector.Autoit.GGS trojan
+  Elastic                        malicious (high confidence)
+  Fortinet                       AutoIt/FormBook.GIZ!tr
+  Google                         Detected
+  Ikarus                         Trojan.Autoit
+  Kaspersky                      UDS:DangerousObject.Multi.Generic
+  Malwarebytes                   Trojan.Injector.AutoIt
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        ti!A9C13DAF8604
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Trojan.Injector/Autoit!1.12AEC (CLASSIC)
+  Sangfor                        Trojan.Win32.Save.a
+  Sophos                         Mal/AuItInj-D
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04C9z
+  Varist                         W32/AutoIt.AFC2.gen!Eldorado
+  VirIT                          Trojan.Win32.AutoIt_Heur.L
+  ZoneAlarm                      Mal/AuItInj-D
+  huorong                        Trojan/AutoIT.Injector.fc
+
+## 4341e88cc8798d44a25d...  (unbekannt)
+  AVG                            ELF:Mirai-CQT [Trj]
+  Avast                          ELF:Mirai-CQT [Trj]
+  Avast-Mobile                   ELF:Mirai-CQU [Trj]
+  Avira                          EXP/ELF.Agent.J.8
+  ClamAV                         Unix.Trojan.Mirai-8041698-0
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Linux/Mirai.EQF trojan
+  F-Secure                       Exploit.EXP/ELF.Agent.J.8
+  Fortinet                       Linux/Mirai.REAL!tr
+  GData                          Linux.Trojan.Gafgyt.B
+  Google                         Detected
+  Ikarus                         Trojan.Linux.MiraiTR
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.ku
+  Microsoft                      Backdoor:Linux/Mirai.GL!MTB
+  huorong                        Backdoor/Linux.Mirai.ft
+
+## 80551c87db15d794c029...  (unbekannt)
+  ClamAV                         Unix.Trojan.Mirai-10059006-0
+  ESET-NOD32                     Linux/Mirai.EQF trojan
+  Elastic                        Linux.Generic.Threat
+  GData                          Linux.Trojan.Gafgyt.B
+  Google                         Detected
+  Ikarus                         Linux.Bot
+  Kaspersky                      HEUR:Backdoor.Linux.Gafgyt.bj
+  Microsoft                      Trojan:Script/Wacatac.C!ml
+  Rising                         Backdoor.Mirai/Linux!1.11724 (CLASSIC)
+  Varist                         E32/Mirai.DM.gen!Eldorado
+  huorong                        Backdoor/Linux.Gafgyt.bv
+
+## 21aacae7e979d0ef3db0...  (unbekannt)
+  AVG                            RTF:Obfuscated-gen [Trj]
+  Alibaba                        Exploit:Office/CVE-2017-11882.db9d9d6a
+  Antiy-AVL                      Trojan[Exploit]/RTF.CVE-2017-11882
+  Avast                          RTF:Obfuscated-gen [Trj]
+  Bkav                           CVE-2023-36884.Exploit
+  CTX                            docx.trojan.generic
+  Cynet                          Malicious (score: 99)
+  DrWeb                          JS.Packed.160
+  ESET-NOD32                     DOC/TrojanDropper.Agent.AAJ trojan
+  Fortinet                       MSOffice/RTFDropper.A!tr
+  Google                         Detected
+  Ikarus                         Trojan.JS.Agent
+  Kaspersky                      UDS:Exploit.MSOffice.CVE-2018-0802.gen
+  Kingsoft                       Win32.Troj.Undef.a
+  Lionic                         Trojan.MSWord.SAgent.4!c
+  NANO-Antivirus                 Trojan.Script.ExpKit.fbenub
+  Rising                         Trojan.Obfus/RTF!1.128E2 (CLASSIC)
+  Sangfor                        Exploit.Generic-Script.Save.25a9d8bf
+  Skyhigh                        Artemis!Trojan
+  Symantec                       Trojan.Gen.NPE
+  Tencent                        Win32.Trojan.Obfuscate.Dtgl
+  TrellixENS                     RTFObfustream.c!69524B711A8B
+  TrendMicro                     HEUR_RTFMALFORM
+  TrendMicro-HouseCall           HEUR_RTFMALFORM
+  Varist                         VBS/Agent.CNK
+  alibabacloud                   Trojan[dropper]:MSOffice/SAgent.gyf
+
+## f239e3fedc4926ff3cf5...  (unbekannt)
+  ALYac                          Trojan.Downloader.Agent.XML
+  ESET-NOD32                     XML/Runner.BD trojan
+  GData                          XML.Trojan.Agent.Y5MFWW
+  Google                         Detected
+  Ikarus                         Trojan.Script
+  Kaspersky                      HEUR:Trojan.Script.MSC.gen
+  Tencent                        Script.Trojan.Msc.Kcnw
+  VirIT                          Trojan.MSC.GrimHeur.A
+  alibabacloud                   Trojan:Multi/Runner.BF
