@@ -1,0 +1,189 @@
+# IOC Export  2026-03-13_18-50-UTC
+# 17 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+6463e3a87acbf6cb38a31a3fa0a79e1dbe24451d36a9cb9bed279ee434a565e6  # Infostealer | R=80.7 | unbekannt | elf
+e4cde29a0d57b577c238160458bc4f8a9aaef78dba554d068aeac8c23b54c23e  # Worm | R=77.4 | unbekannt | ps1
+b0b02c6340af746f8453e8c6e43ed28f039b6ea3eb198432c8bf8e982c279b04  # Loader | R=75.0 | unbekannt | unknown
+cbd018a884e5314f5fb1cebf973012d7c420c6d0f633aeda37dfeff3cd739e61  # Loader | R=74.0 | unbekannt | msi
+b07741be8853bf69e3da74a3bb66bc3242473ec399ac96e524f971467bea9284  # Trojaner | R=68.5 | unbekannt | exe
+b1ca1ce60e4b62fe2770d40aae943c1a3b7d1963ecaf5010e2e88e5ad1aaf822  # Worm | R=60.9 | unbekannt | unknown
+7cc930cb85fe3253b5501186e0a6d15818fce76f421244566987f13d90b414ba  # Worm | R=58.9 | unbekannt | ps1
+9aa98a3074bed7d0b9aa5ea1ab3522a84017e29961ae67dd7489b9744d2a2050  # Andere / Unbekannt | R=48.5 | unbekannt | exe
+623e505e7c215318f697eeb8bb93a96c681c84cb9a20e0752d4066a16caa7604  # Andere / Unbekannt | R=37.9 | unbekannt | exe
+26b9a758edd5692febe05d1d4e04db8e2b8de7a5cc4e54a382cd26cd96f90718  # Andere / Unbekannt | R=32.4 | unbekannt | msi
+35b08367feecd8fa2de58fda88019e7307e7b3da070feaa32465b6e372091001  # Andere / Unbekannt | R=32.4 | unbekannt | msi
+3ff40fd3d3397fbcb3a8bed9657e877412d5323b2eaa7748166e53040a4dc343  # Andere / Unbekannt | R=32.4 | unbekannt | msi
+7cad5b4883bbe410c2587a9b1d669952538ea7f6d186702cb8ae5774987bcc02  # Andere / Unbekannt | R=32.4 | unbekannt | msi
+bba07e615664530a55d45151d2ddb194d85d165eff17f723b2ca7fd0ae350c9d  # Andere / Unbekannt | R=32.3 | unbekannt | msi
+dd94c6b2076036c2fcbcdacc46e99bba82341ddcabcd3f6469bdf30395dbbe22  # Andere / Unbekannt | R=31.5 | ConnectWise | msi
+62e944ff83ea367605a8b0b8f040aa8a88dab5397dd5b5bd358f56a43374995f  # Andere / Unbekannt | R=31.5 | DattoRMM | exe
+89ba7c3f6f35c9c515c34f5995c825091e3361645511302cbb0748f29cefc5ec  # Andere / Unbekannt | R=31.5 | DattoRMM | exe
+
+[Tags]
+AMSI-bypass
+C2-response
+CLR-patch
+ConnectWise
+DattoRMM
+ETW-bypass
+Emmenhtal
+KongTuke
+Malgent
+PowerShell
+TAG-124
+Trojan:Win32/Malgent!MSR
+XWorm
+credential-theft
+cryptominer
+dropped-by-Amadey
+elf
+exe
+fbf543
+go-lang
+msi
+obfuscated-loader
+pam-backdoor
+panchan
+ps1
+signed
+ssh-worm
+stager
+
+[VT Engine Detections]
+
+## 9aa98a3074bed7d0b9aa...  (unbekannt)
+  ALYac                          Trojan.AgentWDCR.IAC
+  APEX                           Malicious
+  AVG                            Win32:Agent-AXUS [Trj]
+  AhnLab-V3                      Trojan/Win32.Zbot.R106377
+  Alibaba                        Worm:Win32/Copali.967e5fa2
+  Antiy-AVL                      Trojan/Win32.Swisyn
+  Arcabit                        Trojan.AgentWDCR.IAC
+  Avast                          Win32:Agent-AXUS [Trj]
+  Avira                          WORM/Copali.yckqt
+  Baidu                          Win32.Worm.VB.bf
+  BitDefender                    Trojan.AgentWDCR.IAC
+  Bkav                           W32.AIDetectMalware
+  CAT-QuickHeal                  Worm.Copali.OD3
+  CTX                            exe.trojan.copali
+  ClamAV                         Win.Dropper.Cerber-7134131-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.Siggen6.19362
+  ESET-NOD32                     Win32/VB.OLE worm
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Trojan.AgentWDCR.IAC (B)
+  F-Secure                       Worm.WORM/Copali.yckqt
+  Fortinet                       W32/Swisyn.DFKC!tr
+  GData                          Win32.Trojan.Agent.YJFBH0
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Agent.oa!s1
+  Ikarus                         Trojan.Win32.Agentb
+  Jiangmin                       Trojan/Swisyn.wsw
+  K7AntiVirus                    EmailWorm ( 005e44b91 )
+  K7GW                           EmailWorm ( 005e44b91 )
+  Kaspersky                      Trojan.Win32.Agentb.btmh
+  Lionic                         Trojan.Win32.Agentb.tnql
+  Malwarebytes                   VB.Trojan.Generic.DDS
+  McAfeeD                        Real Protect-LS!62E9226C72A2
+  MicroWorld-eScan               Trojan.AgentWDCR.IAC
+  Microsoft                      Worm:Win32/Copali!pz
+  NANO-Antivirus                 Trojan.Win32.Siggen6.eopqhs
+  Paloalto                       generic.ml
+  Panda                          Trj/WLT.C
+  Rising                         Trojan.Copali!1.A2C3 (KTSE)
+  SUPERAntiSpyware               Trojan.Agent/Gen-Symmi
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        Generic.zm
+  Sophos                         Troj/VB-HTM
+  TACHYON                        Trojan/W32.Agent.262144.C
+  Tencent                        Trojan.Win32.Agentb.zt
+  Trapmine                       malicious.moderate.ml.score
+  TrellixENS                     Generic.zm
+  TrendMicro                     WORM_COPALI.UQ
+  TrendMicro-HouseCall           WORM_COPALI.UQ
+  VBA32                          Trojan.Agentb
+  VIPRE                          Trojan.AgentWDCR.IAC
+  Varist                         W32/Copali.BUKA-8635
+  ViRobot                        Trojan.Win32.Z.Swisyn.262144
+  VirIT                          Trojan.Win32.VB2.ADGJ
+  Webroot                        Trojan.Comroki.Gen
+  Xcitium                        Malware@#1nfj9f1qlpfx9
+  Yandex                         Trojan.Swisyn!HYP92Tvnrcg
+  Zillya                         Trojan.Swisyn.Win32.32457
+  ZoneAlarm                      Troj/VB-HTM
+  Zoner                          Trojan.Win32.25494
+  alibabacloud                   Worm:Win/Agentb.23af785b
+  huorong                        Worm/Copali.b
+  tehtris                        Generic.Malware
+
+## 623e505e7c215318f697...  (unbekannt)
+  Alibaba                        Trojan:Win32/Malgent.83a090ce
+  Bkav                           W32.AIDetectMalware
+  CAT-QuickHeal                  Trojan.Cryptinject
+  CTX                            exe.trojan.datastealer
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win32/DataStealer.AZ trojan
+  Elastic                        malicious (moderate confidence)
+  Fortinet                       W32/DataStealer.AZ!tr
+  Google                         Detected
+  Jiangmin                       Trojan.Generic.gzwxh
+  Lionic                         Trojan.Win32.DataStealer.4!c
+  Malwarebytes                   Malware.AI.3520173430
+  MaxSecure                      Trojan.Malware.111450665.susgen
+  McAfeeD                        ti!623E505E7C21
+  Microsoft                      Trojan:Win32/Malgent!MSR
+  Paloalto                       generic.ml
+  Panda                          Trj/Chgt.AD
+  Rising                         Trojan.Ymacco!8.11BE1 (CLOUD)
+  Sangfor                        Trojan.Win32.Datastealer.Vdwy
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        Artemis
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Malware.Win32.Gencirc.14447b55
+  TrellixENS                     GenericRXAA-FA!01A131C75832
+  TrendMicro                     TROJ_GEN.R011C0DC524
+  TrendMicro-HouseCall           TROJ_GEN.R011C0DC524
+  VBA32                          Trojan.Jobutyve
+  Varist                         W32/S-1d5a7cc5!Eldorado
+  Yandex                         Trojan.Igent.b0Hr94.2
+  Zillya                         Backdoor.Bladabindi.Win32.21658
+  alibabacloud                   Trojan:Win/DataStealer.AO
+
+## b07741be8853bf69e3da...  (unbekannt)
+  AVG                            Win64:Evo-gen [Trj]
+  Avast                          Win64:Evo-gen [Trj]
+  Bkav                           W32.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win32/KingSoft.Z potentially unwanted application
+  Elastic                        malicious (high confidence)
+  K7AntiVirus                    Unwanted-Program ( 00617f9e1 )
+  K7GW                           Unwanted-Program ( 00617f9e1 )
+  Kaspersky                      UDS:Backdoor.Win32.Farfli
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Trojan.Agent/IFPS!1.13AFF (CLOUD)
+  Skyhigh                        Artemis
+  Sophos                         Generic Reputation PUA (PUA)
+  Symantec                       ML.Attribute.HighConfidence
+  Zillya                         Trojan.Stealer.Win32.197387
+
+## b1ca1ce60e4b62fe2770...  (unbekannt)
+  ClamAV                         Win.Downloader.Emmenhtal-10044033-0
+  ESET-NOD32                     PowerShell/Kryptik.JK trojan
+  Google                         Detected
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  Sophos                         Troj/PSInj-HA
+  Symantec                       Scr.Malcode!gen
+  ZoneAlarm                      Troj/PSInj-HA
+
+## 7cc930cb85fe3253b550...  (unbekannt)
+  Microsoft                      Trojan:Script/Wacatac.C!ml
