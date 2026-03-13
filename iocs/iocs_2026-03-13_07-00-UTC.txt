@@ -1,0 +1,187 @@
+# IOC Export  2026-03-13_07-00-UTC
+# 16 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+dc4c4501e56d73d40a8e5fb00f4e0ad74335e2aa8c588373509438af312b1450  # Botnet/IoT | R=83.5 | Mirai | elf
+0c4754a63d3d3a5a4871d238c8eeaed440cd3943b0915c3c9d0c3856d165bdb5  # Botnet/IoT | R=83.5 | Mirai | elf
+f4c7b83ffdbbc43ec3a12bc8e8f458c0649bf3fe5d1a9c23783ab924feff2254  # Botnet/IoT | R=83.3 | Mirai | elf
+0c0cf97259deef9093748ed30509b8b94e8b21839885d2a57156906cb2054035  # Botnet/IoT | R=83.2 | Mirai | elf
+875cf3b5e80093585f132e9729e320e048e3740f3167974e9a3d80704c71628c  # Botnet/IoT | R=83.0 | Mirai | elf
+df77882b491689f9e5672f9be082dd390d979dff8a0f7839fb301d629c14b533  # RAT | R=82.9 | AsyncRAT | exe
+d90e46cbdba6a5fae2cf4cdddd1764470a804924e00912e24308c71f79ebc622  # RAT | R=82.9 | AsyncRAT | exe
+4bbb0a2ffafe6043860e41c12ba1c0e1dd9f1486cc6f1487d7053043233f8a72  # Trojaner | R=82.8 | ValleyRAT | zip
+6b51a17dca3211a3d72e7534977db4bb57c97940a22e8fa7e609a2350ca3c5b0  # RAT | R=80.6 | ValleyRAT | dll
+35cb900f84a5edc38fd710fbd1461554e1628fb19514755b5e0252c036a3c1b8  # Botnet/IoT | R=68.2 | Mirai | elf
+7033d65fa55d6b8092d4ab9f36efd7a3bff7d70b2cdbd25b7fcf86588cc47395  # Linux-Malware | R=40.7 | unbekannt | elf
+f3166bdd4147ecc9b3efb44cc571b74674ab60419dc8d4dd4ceda1e805509b48  # Skript/Dropper | R=38.2 | unbekannt | hta
+6426a945dcc0fad558177a7dc43c64b88aeda014fa35a17924f026d95d5d1c97  # Skript/Dropper | R=37.8 | unbekannt | hta
+f36cea2758fc6837370d56d81eae3b8d3a89845334a381921084abb082912518  # Skript/Dropper | R=37.6 | unbekannt | hta
+aff025d7e83737ddf72629e9cff7f320f89754b84cbccedea4458384171479a8  # Linux-Malware | R=36.4 | unbekannt | elf
+5b7014ba948dee21bee9c264c6e3e4457d8f3cd224200541ae64f953b4e99f0e  # Andere / Unbekannt | R=31.5 | unbekannt | sh
+
+[Tags]
+Agent
+Mirai
+RAT
+SilverFox
+Trojan:Win32/Tedy.SXJ!MTB
+ValleyRAT
+asyncrat
+dll
+elf
+exe
+hta
+sh
+zip
+
+[VT Engine Detections]
+
+## 7033d65fa55d6b8092d4...  (unbekannt)
+  AVG                            ELF:Mirai-AQY [Trj]
+  AhnLab-V3                      Trojan/Linux.Mirai.SE302
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  Avast                          ELF:Mirai-AQY [Trj]
+  Avast-Mobile                   ELF:Mirai-AQY [Trj]
+  Avira                          EXP/ELF.Gafgyt.U
+  ClamAV                         Unix.Trojan.Mirai-7755770-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9821
+  ESET-NOD32                     Linux/Mirai.DAT trojan
+  Elastic                        Linux.Generic.Threat
+  F-Secure                       Exploit.EXP/ELF.Gafgyt.U
+  GData                          Linux.Trojan.Gafgyt.B
+  Google                         Detected
+  Ikarus                         Linux.Bot
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.gen
+  Microsoft                      DDoS:Linux/Lightaidra
+  Rising                         Backdoor.Mirai/Linux!1.11724 (CLASSIC)
+  Tencent                        Trojan.Linux.Mirai.nk
+  Varist                         E32/Gafgyt.C.gen!Camelot
+  huorong                        Trojan/Linux.Mirai.f
+
+## aff025d7e83737ddf726...  (unbekannt)
+  ALYac                          Trojan.Linux.GenericKD.65861
+  Arcabit                        Trojan.Linux.Generic.D10145
+  BitDefender                    Trojan.Linux.GenericKD.65861
+  CTX                            elf.trojan.generic
+  Emsisoft                       Trojan.Linux.GenericKD.65861 (B)
+  GData                          Trojan.Linux.GenericKD.65861
+  MicroWorld-eScan               Trojan.Linux.GenericKD.65861
+  VIPRE                          Trojan.Linux.GenericKD.65861
+
+## df77882b491689f9e567...  (AsyncRAT)
+  ALYac                          Generic.AsyncRAT.Marte.B.16918284
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Rat]
+  AhnLab-V3                      Trojan/Win.QuasarRAT.C5469766
+  Antiy-AVL                      Trojan[Backdoor]/MSIL.Crysan
+  Arcabit                        Generic.AsyncRAT.Marte.B.D102270C
+  Avast                          Win32:MalwareX-gen [Rat]
+  Avira                          HEUR/AGEN.1307064
+  BitDefender                    Generic.AsyncRAT.Marte.B.16918284
+  Bkav                           W32.AIDetectMalware.CS
+  CTX                            exe.unknown.asyncrat
+  ClamAV                         Win.Packed.Razy-9625918-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          BackDoor.SiggenNET.11
+  ESET-NOD32                     MSIL/Agent.CYT trojan
+  Elastic                        Windows.Generic.Threat
+  Emsisoft                       Generic.AsyncRAT.Marte.B.16918284 (B)
+  F-Secure                       Heuristic.HEUR/AGEN.1307064
+  Fortinet                       MSIL/AsyncRAT.A!tr
+  GData                          MSIL.Backdoor.DCRat.D
+  Google                         Detected
+  Ikarus                         Trojan.MSIL.Agent
+  K7AntiVirus                    Trojan ( 005c228f1 )
+  K7GW                           Trojan ( 005c228f1 )
+  Kaspersky                      HEUR:Backdoor.MSIL.SheetRat.gen
+  Malwarebytes                   Backdoor.AsyncRAT.MSIL.Generic
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        Trojan:Win/Generic.ALT
+  MicroWorld-eScan               Generic.AsyncRAT.Marte.B.16918284
+  Microsoft                      Backdoor:MSIL/AsyncRAT.AA!MTB
+  Panda                          Trj/GdSda.A
+  Rising                         Trojan.AntiVM!1.CF63 (CLASSIC)
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        Fareit-FZT!D49919F4D02F
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Backdoor.Msil.Dcrat.16002822
+  TrellixENS                     Fareit-FZT!D49919F4D02F
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04C9z
+  VBA32                          Trojan.MSIL.Autorave.Heur
+  VIPRE                          Generic.AsyncRAT.Marte.B.16918284
+  Varist                         W32/MSIL_AsyncRAT.A.gen!Eldorado
+  VirIT                          Trojan.Win32.MSIL_Heur.A
+  Webroot                        Win.Trojan.Gen
+  huorong                        Trojan/MSIL.CoinStealer.c
+
+## 35cb900f84a5edc38fd7...  (Mirai)
+  AhnLab-V3                      Trojan/Linux.Mirai.SE302
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Gafgyt
+  Avast-Mobile                   ELF:Mirai-AQY [Trj]
+  Avira                          EXP/ELF.Gafgyt.U
+  ClamAV                         Unix.Trojan.Mirai-7755770-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9821
+  ESET-NOD32                     Linux/Mirai.DAT trojan
+  F-Secure                       Exploit.EXP/ELF.Gafgyt.U
+  GData                          Linux.Trojan.Gafgyt.B
+  Ikarus                         Trojan.Linux.MiraiTR
+  Microsoft                      Backdoor:Linux/Mirai.GL!MTB
+  Tencent                        Trojan.Linux.Mirai.nk
+  Varist                         E32/Gafgyt.C.gen!Camelot
+  huorong                        Trojan/Linux.Mirai.f
+
+## d90e46cbdba6a5fae2cf...  (AsyncRAT)
+  ALYac                          Generic.AsyncRAT.Marte.B.6611CF9F
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Rat]
+  AhnLab-V3                      Trojan/Win.QuasarRAT.C5469766
+  Antiy-AVL                      Trojan[Backdoor]/MSIL.Crysan
+  Arcabit                        Generic.AsyncRAT.Marte.B.6611CF9F
+  Avast                          Win32:MalwareX-gen [Rat]
+  Avira                          HEUR/AGEN.1307064
+  BitDefender                    Generic.AsyncRAT.Marte.B.6611CF9F
+  Bkav                           W32.AIDetectMalware.CS
+  CTX                            exe.unknown.asyncrat
+  ClamAV                         Win.Packed.Razy-9625918-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          BackDoor.SiggenNET.11
+  ESET-NOD32                     MSIL/Agent.CYT trojan
+  Elastic                        Windows.Generic.Threat
+  Emsisoft                       Generic.AsyncRAT.Marte.B.6611CF9F (B)
+  F-Secure                       Heuristic.HEUR/AGEN.1307064
+  Fortinet                       MSIL/AsyncRAT.A!tr
+  GData                          MSIL.Backdoor.DCRat.D
+  Google                         Detected
+  Ikarus                         Trojan.MSIL.Agent
+  K7AntiVirus                    Trojan ( 005c228f1 )
+  K7GW                           Trojan ( 005c228f1 )
+  Kaspersky                      HEUR:Backdoor.MSIL.SheetRat.gen
+  Kingsoft                       MSIL.Backdoor.SheetRat.gen
+  Malwarebytes                   Backdoor.AsyncRAT.MSIL.Generic
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        Trojan:Win/Generic.ALT
+  MicroWorld-eScan               Generic.AsyncRAT.Marte.B.6611CF9F
+  Microsoft                      Backdoor:MSIL/AsyncRAT.AA!MTB
+  Rising                         Trojan.AntiVM!1.CF63 (CLASSIC)
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        Fareit-FZT!F0B410CA0BA7
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Backdoor.Msil.Dcrat.16002822
+  TrellixENS                     Fareit-FZT!F0B410CA0BA7
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04C9z
+  VBA32                          Trojan.MSIL.Autorave.Heur
+  VIPRE                          Generic.AsyncRAT.Marte.B.6611CF9F
+  Varist                         W32/MSIL_AsyncRAT.A.gen!Eldorado
+  VirIT                          Trojan.Win32.MSIL_Heur.A
+  Webroot                        Win.Trojan.Gen
+  huorong                        Trojan/MSIL.CoinStealer.c
