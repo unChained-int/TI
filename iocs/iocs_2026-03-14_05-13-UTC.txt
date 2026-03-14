@@ -1,0 +1,152 @@
+# IOC Export  2026-03-14_05-13-UTC
+# 13 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+e33d9882edde6a44eb51e7baecb1f763461403f62ece06bf39fadc650f63bcd7  # Botnet/IoT | R=82.6 | Mirai | elf
+c7be2a712d076b44d81e5d1bbe1a81838db6a77852292433d263c9b7ea27e1a6  # Botnet/IoT | R=82.5 | Mirai | elf
+2e8c0d6dc54e6310e4aa63f49e31ba48cd2d42c5124e703a9bc4b0276f635c3b  # Botnet/IoT | R=82.3 | Mirai | elf
+0b9bbcbec8752387ef430c1543a45b788c1bd924977ecef0086b213f6dbce30d  # Botnet/IoT | R=73.0 | Mirai | elf
+4ddee2cee3b8d5962206ae72808d59925805a01d3fdf0a12772ccd13a8a7f779  # Botnet/IoT | R=72.7 | Mirai | elf
+b988eaa416e61ec5ecefa04265e09766e3ce90be6e6b0808335e3301fddce7d1  # Botnet/IoT | R=72.4 | Mirai | elf
+07adbfa4138c9afc8a974c815eeb17f3d6ef9479881bdbbcba4439d26d96bfd0  # Andere / Unbekannt | R=31.3 | unbekannt | sh
+5e54ce0c7611d0bcb72827e07020cb028c22cc1a1f2dbc960db513c08440c8ca  # Andere / Unbekannt | R=30.9 | unbekannt | unknown
+d00607f49b281654befb521480c90f177d48d80a4af91dbac75a1740283c34d2  # Andere / Unbekannt | R=30.9 | unbekannt | unknown
+93c84af932e3df84b764492c1ce66dbbcc5dcf3fc15f5eff9fe824036c59ff80  # Andere / Unbekannt | R=30.8 | unbekannt | unknown
+fbfcbd84b2c6461eb62998221db3c299ea8e026bfe00c739a0eeed24cbae9315  # Andere / Unbekannt | R=30.7 | unbekannt | unknown
+751c9590219f90c83abcd37d32f8c3c24af2b634d83ed8f55f800d38e8a00c7f  # Andere / Unbekannt | R=30.6 | unbekannt | sh
+69d9013d2756b11c6b5b779d54722453857bc4f3670e2270b521ad97aef994e7  # Skript/Dropper | R=29.9 | unbekannt | js
+
+[Tags]
+Mirai
+elf
+js
+sh
+
+[VT Engine Detections]
+
+## 69d9013d2756b11c6b5b...  (unbekannt)
+  Kaspersky                      HEUR:Trojan-PSW.JS.Disco.gen
+
+## 07adbfa4138c9afc8a97...  (unbekannt)
+  AVG                            BV:Agent-BNQ [Trj]
+  AhnLab-V3                      Downloader/Shell.Generic.S1990
+  Avast                          BV:Agent-BNQ [Trj]
+  Avira                          BASH/Dldr.G4
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.MulDrop.187
+  ESET-NOD32                     Linux/Agent.OG trojan
+  F-Secure                       Malware.BASH/Dldr.G4
+  Fortinet                       BASH/EncystPHP.A!tr
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.bc
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  NANO-Antivirus                 Trojan.Script.Dropper.kpvdnu
+  Rising                         Downloader.Agent/BASH!1.13B74 (CLASSIC)
+  Sophos                         Linux/Dldr-YZ
+  Tencent                        Trojan-DL.Linux.Agent.505004
+  Varist                         Unix/Agent.VA
+  ZoneAlarm                      Linux/Dldr-YZ
+  huorong                        TrojanDownloader/Linux.Agent.en
+
+## 4ddee2cee3b8d5962206...  (Mirai)
+  ALYac                          Trojan.Linux.Mirai.1
+  AVG                            ELF:Mirai-AFS [Trj]
+  AhnLab-V3                      Linux/Mirai15.Exp
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  Arcabit                        Trojan.Linux.Mirai.1
+  Avast                          ELF:Mirai-AFS [Trj]
+  Avast-Mobile                   ELF:Mirai-ANO [Trj]
+  BitDefender                    Trojan.Linux.Mirai.1
+  CTX                            elf.trojan.mirai
+  ClamAV                         Unix.Trojan.Mirai-10017641-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9774
+  ESET-NOD32                     Linux/Mirai.L trojan
+  Emsisoft                       Trojan.Linux.Mirai.1 (B)
+  Fortinet                       ELF/Mirai.L!tr
+  GData                          Linux.Trojan.Mirai.E
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Mirai
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.b
+  McAfeeD                        Trojan:Linux/Mirai.ERC
+  MicroWorld-eScan               Trojan.Linux.Mirai.1
+  Microsoft                      Backdoor:Linux/Mirai.FE!MTB
+  Rising                         Backdoor.Mirai/Linux!1.CEC4 (CLASSIC)
+  Sangfor                        Suspicious.Linux.Save.a
+  Sophos                         Linux/DDoS-CI
+  Tencent                        Backdoor.Linux.Mirai.wao
+  TrendMicro                     Possible_MIRAI.SMLBO21
+  TrendMicro-HouseCall           Possible_MIRAI.SMLBO21
+  VIPRE                          Trojan.Linux.Mirai.1
+  Varist                         E32/Mirai.G.gen!Camelot
+  ZoneAlarm                      Linux/DDoS-CI
+  huorong                        Trojan/Linux.Mirai.g
+
+## 0b9bbcbec8752387ef43...  (Mirai)
+  ALYac                          Trojan.Linux.Mirai.1
+  AVG                            ELF:Mirai-AFS [Trj]
+  AhnLab-V3                      Linux/Mirai17.Exp
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  Arcabit                        Trojan.Linux.Mirai.1
+  Avast                          ELF:Mirai-AFS [Trj]
+  Avast-Mobile                   ELF:Mirai-ANO [Trj]
+  BitDefender                    Trojan.Linux.Mirai.1
+  CTX                            elf.trojan.mirai
+  ClamAV                         Unix.Trojan.Mirai-10017641-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9774
+  ESET-NOD32                     Linux/Mirai.L trojan
+  Emsisoft                       Trojan.Linux.Mirai.1 (B)
+  Fortinet                       ELF/Mirai.L!tr
+  GData                          Linux.Trojan.Mirai.G
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Mirai
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.b
+  McAfeeD                        Trojan:Linux/Mirai.ERC
+  MicroWorld-eScan               Trojan.Linux.Mirai.1
+  Microsoft                      Backdoor:Linux/Mirai.FM!MTB
+  Rising                         Backdoor.Mirai/Linux!1.CEC4 (CLASSIC)
+  Sangfor                        Suspicious.Linux.Save.a
+  Sophos                         Linux/DDoS-CI
+  Symantec                       Linux.Mirai!g2
+  Tencent                        Backdoor.Linux.Mirai.wav
+  TrendMicro                     Backdoor.Linux.MIRAI.SMLBO20
+  TrendMicro-HouseCall           Backdoor.Linux.MIRAI.SMLBO20
+  VIPRE                          Trojan.Linux.Mirai.1
+  Varist                         E32/Mirai.G.gen!Camelot
+  ZoneAlarm                      Linux/DDoS-CI
+  huorong                        Trojan/Linux.Mirai.g
+
+## b988eaa416e61ec5ecef...  (Mirai)
+  ALYac                          Trojan.Linux.Mirai.1
+  AVG                            ELF:Mirai-AFS [Trj]
+  AhnLab-V3                      Linux/Mirai09.Exp
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  Arcabit                        Trojan.Linux.Mirai.1
+  Avast                          ELF:Mirai-AFS [Trj]
+  Avast-Mobile                   ELF:Mirai-ANO [Trj]
+  Avira                          EXP/ELF.Agent.J.14
+  BitDefender                    Trojan.Linux.Mirai.1
+  CTX                            elf.trojan.mirai
+  ClamAV                         Unix.Dropper.Mirai-7135957-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9774
+  ESET-NOD32                     Linux/Mirai.NV trojan
+  Emsisoft                       Trojan.Linux.Mirai.1 (B)
+  F-Secure                       Exploit.EXP/ELF.Agent.J.14
+  Fortinet                       ELF/Agent.BA!tr
+  GData                          Trojan.Linux.Mirai.1
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Multiverze
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.b
+  McAfeeD                        Trojan:Linux/Mirai.ERC
+  MicroWorld-eScan               Trojan.Linux.Mirai.1
+  Microsoft                      Backdoor:Linux/Mirai.BL!xp
+  Rising                         Backdoor.Mirai/Linux!1.CEC4 (CLASSIC)
+  Sangfor                        Suspicious.Linux.Save.a
+  Tencent                        Backdoor.Linux.Mirai.was
+  TrendMicro                     Possible_MIRAI.SMLBO21
+  TrendMicro-HouseCall           Possible_MIRAI.SMLBO21
+  VIPRE                          Trojan.Linux.Mirai.1
+  Varist                         E32/Mirai.G.gen!Camelot
+  huorong                        Trojan/Linux.Mirai.g
