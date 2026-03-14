@@ -1,0 +1,88 @@
+# IOC Export  2026-03-14_22-31-UTC
+# 9 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+38c53277006fd3fc4c13e8542acffbef3da3ae84272b42a119429afff9dba93c  # Infostealer | R=68.4 | ACRStealer | dll
+302a9f9af9eda01fa968e300725a84252cb06c75f2066cd843222b64751a6956  # Skript/Dropper | R=37.4 | ConnectWise | js
+a948603c6a98efe282053a11422765c2771444be9aa2c90d6c5447744aff0985  # Andere / Unbekannt | R=32.0 | unbekannt | sh
+61551e9820ff1c3eeffdf519fc7d4faa348a41a350af853a5780f098ca20de83  # Andere / Unbekannt | R=31.2 | unbekannt | unknown
+78639b2b09d043493565eefb538d174a7db78b2cf1b9bd9cdf5a81e63995594d  # Andere / Unbekannt | R=31.0 | unbekannt | exe
+82aaa56441fcb4ca4495c0f2e03eb8fe44df801abeb0aa0d4341d176fbd799ec  # Andere / Unbekannt | R=31.0 | unbekannt | sh
+1253014a77e61610fa777d2b9e4735ca11352274fe38b65191aebcd5b6b5d147  # Andere / Unbekannt | R=28.9 | unbekannt | exe
+2630f5e7c3d30f63229b84855cbc9a96ede8ce028e3a438cc131a3528450b00a  # Andere / Unbekannt | R=28.8 | unbekannt | msi
+6ba8cad8cbd71ddcbf2708fa838f566985a8976d680886d89da949b0c29141d6  # Andere / Unbekannt | R=25.3 | unbekannt | exe
+
+[Tags]
+ACRStealer
+ConnectWise
+dll
+exe
+js
+msi
+sh
+
+[VT Engine Detections]
+
+## 38c53277006fd3fc4c13...  (ACRStealer)
+  APEX                           Malicious
+  AVG                            MalwareX-gen [Misc]
+  Arcabit                        Trojan.Babar.DACA4F
+  Avast                          MalwareX-gen [Misc]
+  BitDefender                    Gen:Variant.Babar.707151
+  CTX                            dll.unknown.babar
+  CrowdStrike                    win/malicious_confidence_60% (D)
+  ESET-NOD32                     Win32/Kryptik_AGen.GHP trojan
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Gen:Variant.Babar.707151 (B)
+  GData                          Gen:Variant.Babar.707151
+  Kaspersky                      Packed.Win32.Katusha.o
+  Kingsoft                       Win32.Troj.Undef.a
+  MicroWorld-eScan               Gen:Variant.Babar.707151
+  Paloalto                       generic.ml
+  Rising                         Trojan.Kryptik!8.8 (CLOUD)
+  Sangfor                        Trojan.Win32.Save.a
+  VBA32                          BScope.TrojanPSW.Amatera
+  VIPRE                          Gen:Variant.Babar.707151
+
+## 2630f5e7c3d30f63229b...  (unbekannt)
+  ALYac                          VB:Trojan.Agent.GQYN
+  Arcabit                        VB:Trojan.Agent.GQYN
+  BitDefender                    VB:Trojan.Agent.GQYN
+  Emsisoft                       VB:Trojan.Agent.GQYN (B)
+  Fortinet                       VBS/Agent.GQYN!tr
+  GData                          VB:Trojan.Agent.GQYN
+  MicroWorld-eScan               VB:Trojan.Agent.GQYN
+  VIPRE                          VB:Trojan.Agent.GQYN
+
+## a948603c6a98efe28205...  (unbekannt)
+  AVG                            BV:Agent-BNQ [Trj]
+  AhnLab-V3                      Downloader/Shell.Generic.S1990
+  Avast                          BV:Agent-BNQ [Trj]
+  Avira                          BASH/Dldr.G4
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.MulDrop.187
+  ESET-NOD32                     Linux/Agent.OG trojan
+  F-Secure                       Malware.BASH/Dldr.G4
+  Fortinet                       BASH/EncystPHP.A!tr
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.bc
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  NANO-Antivirus                 Trojan.Script.Dropper.kpvdnu
+  Rising                         Downloader.Agent/BASH!9.5ADCB (XSE:WFNFX0JBVDq488nUGSYCkaZt1Ycuf5+U)
+  Sophos                         Linux/Dldr-YZ
+  Tencent                        Trojan-DL.Linux.Agent.505004
+  Varist                         Unix/Agent.VA
+  ZoneAlarm                      Linux/Dldr-YZ
+  huorong                        TrojanDownloader/Linux.Agent.en
+
+## 1253014a77e61610fa77...  (unbekannt)
+  AVG                            FileRepMalware [Misc]
+  Avast                          FileRepMalware [Misc]
+  Avira                          TR/AVI.Agent.umdln
+  ESET-NOD32                     JS/PSW.Agent.FV trojan
+  Kaspersky                      HEUR:Trojan-PSW.JS.Greedy.gen
+  Paloalto                       generic.ml
+  Rising                         Stealer.Agent/JS!8.13BD4 (CLOUD)
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Js.Trojan.LummaStealer.Ijgl
