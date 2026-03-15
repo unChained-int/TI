@@ -1,0 +1,110 @@
+# IOC Export  2026-03-15_22-32-UTC
+# 19 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+5caf5d53f72b909bff50e5f959db0252a623c1d0737b306f34e1ffafdd86f10b  # Infostealer | R=89.1 | Stealc | exe
+930acf8cd72e3f5edfe5eee163e0e701708167bd72e20a5a1641648cf2078579  # Botnet/IoT | R=83.6 | Mirai | elf
+37e9291e1017e84a102d470870ee8c0a3e3bcc1f7eb896e67e968c58b379a498  # Botnet/IoT | R=83.5 | Mirai | elf
+8f88a31d389b61548519017e9368119657beafbbc357dcc090d9a8bc8f95bc32  # Loader | R=83.2 | GuLoader | exe
+556c002aee304a4492f240ecb287c19aaf6fb3fc3983b8caf92e1dce9fb3e0b2  # Loader | R=83.0 | GuLoader | exe
+3d47f24364467b5d790757b925822dc740f87f114d65638c64069a3cfcc51a95  # Loader | R=73.9 | unbekannt | exe
+6cf5b801b8a00a278e3ba2490ebda765af3489db71d5490dd17e0a4920edaa22  # Loader | R=73.8 | unbekannt | exe
+b7acc17275cf73d27f9d2ee2690b515b2d31e917b44791fef23900810a94ce3b  # Loader | R=73.8 | unbekannt | exe
+675645d67ee6eadfc44657fd4c10e660496b13375b69e086cd4d9d5038239fa7  # Botnet/IoT | R=68.3 | Gafgyt | elf
+76f0338622519a764eeea04c0ef8176aa3ffa35bae8d350bc7f358ff024f3d21  # Botnet/IoT | R=67.6 | Gafgyt | elf
+7fa2482d25fc54bfc10c8187327151a63d288e9df6922b6cb30e2638ed364f5b  # Loader | R=60.1 | unbekannt | exe
+e561638a2c49f88f7aaf87eaadd9a7731ae3c31e5cb5c29970685af4b7de8639  # Loader | R=60.1 | unbekannt | exe
+7895cb4222daa6065ec06bcd61ed4fc0f826126d60383bf58ec39c289fc6f228  # Andere / Unbekannt | R=32.0 | unbekannt | sh
+5fe39984c5798c896e45a52f17939859b0ed995a182d53bc418a3a20fcbb5c89  # Andere / Unbekannt | R=32.0 | unbekannt | sh
+e4e28070e156dc118ea6b4c38a6a137769aeba47cc4feb0daf0ccb5d3f440d7e  # Andere / Unbekannt | R=31.9 | unbekannt | sh
+0db46cfb5402ee1394ac9adf3afd0aa3e8d535f3d9e7b30ab45e2e9bb6d355c5  # Andere / Unbekannt | R=31.8 | unbekannt | unknown
+abf39cbf32caf190fe66e941b0d6348717cb47782ea7e3da934baf3844622e1f  # Andere / Unbekannt | R=31.2 | unbekannt | exe
+ce96aca71f071a1c4f688b4503ebe04b53fc75bc91252e0aded2255b4a1b13ae  # Andere / Unbekannt | R=31.1 | unbekannt | unknown
+a8e8908051ca59f3c5e16e90e1100b764fd1aefe3d27cb0a16f6728e39efbe47  # Andere / Unbekannt | R=31.0 | Adware.Generic | exe
+
+[Tags]
+Adware.Generic
+Gafgyt
+GuLoader
+Mirai
+Stealc
+dropped-by-Amadey
+elf
+exe
+fbf543
+sh
+
+[VT Engine Detections]
+
+## 675645d67ee6eadfc446...  (Gafgyt)
+  AVG                            ELF:DDOSAgent-FR [Trj]
+  Antiy-AVL                      Trojan/Linux.Mirai
+  Avast                          ELF:DDOSAgent-FR [Trj]
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9735
+  ESET-NOD32                     Linux/Mirai.EKD trojan
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Mirai
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.kc
+  McAfeeD                        Trojan:Linux/Mirai.EFZ
+  Microsoft                      Backdoor:Linux/Gafgyt.W!MTB
+  Sangfor                        Suspicious.Linux.Save.a
+  Tencent                        Trojan.Linux.Mirai.odtra
+  huorong                        Backdoor/Linux.Mirai.kx
+
+## 7895cb4222daa6065ec0...  (unbekannt)
+  AVG                            BV:Downloader-BOI [Trj]
+  AhnLab-V3                      Downloader/Shell.Generic.S2969
+  Avast                          BV:Downloader-BOI [Trj]
+  Avira                          HTML/ExpKit.Gen2
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.DownLoader.37
+  F-Secure                       Malware.HTML/ExpKit.Gen2
+  Fortinet                       BASH/Dloader.P!tr
+  Google                         Detected
+  K7GW                           Trojan ( 004102a21 )
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.p
+  Sangfor                        Trojan.Generic-Script.Save.ba608
+  Symantec                       CL.Downloader!gen277
+  TrendMicro                     Possible_BASHDLOD.SMLBR
+  TrendMicro-HouseCall           Possible_BASHDLOD.SMLBR
+  Varist                         SH/Mirai.C.gen!Camelot
+  huorong                        TrojanDownloader/Linux.Agent.aj
+
+## 76f0338622519a764eee...  (Gafgyt)
+  Antiy-AVL                      Trojan/Linux.Mirai
+  Avira                          EXP/ELF.Agent.J.8
+  Cynet                          Malicious (score: 99)
+  F-Secure                       Exploit.EXP/ELF.Agent.J.8
+  Google                         Detected
+  Ikarus                         Trojan.Linux.MiraiTR
+  McAfeeD                        Trojan:Linux/Mirai.EFZ
+  Microsoft                      Backdoor:Linux/Gafgyt.X!MTB
+  Sangfor                        Suspicious.Linux.Save.a
+  Tencent                        Trojan.Linux.Mirai.odtra
+  VirIT                          Linux.Mirai.CDN
+  huorong                        Backdoor/Linux.Mirai.kx
+
+## 7fa2482d25fc54bfc10c...  (unbekannt)
+  AVG                            MalwareX-gen [Pws]
+  Avast                          MalwareX-gen [Pws]
+  Bkav                           W64.AIDetectMalware
+  Fortinet                       W64/Agent.AKO!tr
+  Google                         Detected
+  Malwarebytes                   Spyware.Passwordstealer.Generic
+  Microsoft                      PUA:Win32/Puwaders.C!ml
+  Rising                         Trojan.Kryptik@AI.95 (RDML:Y5md5vMOrRGMoQp6BeopGg)
+  Varist                         W64/Delf.ZE.gen!Eldorado
+  Webroot                        Win.Trojan.Gen
+
+## e561638a2c49f88f7aaf...  (unbekannt)
+  AVG                            MalwareX-gen [Pws]
+  Avast                          MalwareX-gen [Pws]
+  Bkav                           W64.AIDetectMalware
+  Fortinet                       W64/Agent.AKO!tr
+  Google                         Detected
+  Malwarebytes                   Spyware.Passwordstealer.Generic
+  Microsoft                      Program:Win32/Wacapew.C!ml
+  Rising                         Trojan.Kryptik@AI.95 (RDML:uCTECFexrX5wROa1DltxXA)
+  Varist                         W64/Delf.ZE.gen!Eldorado
+  Webroot                        Win.Trojan.Gen
