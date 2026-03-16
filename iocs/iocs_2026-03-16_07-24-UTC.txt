@@ -1,0 +1,114 @@
+# IOC Export  2026-03-16_07-24-UTC
+# 13 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+b7cb6aae28866ba85bdb85f4d89b2ed624726fe001fb538b60b14947d893f137  # Botnet/IoT | R=83.7 | Mirai | elf
+b2e47f06e9d10d61e0c22fa4f8b9a33a35d315f08209484dcd482e934367408d  # Botnet/IoT | R=83.6 | Mirai | elf
+1f85624921573b384746ff64943ebe552f513236066c3c1b85fba81321e9e243  # Botnet/IoT | R=83.3 | Mirai | elf
+3788358a206d7dfe9aef794f210c2b249cb7ac1ed58301e0e1022799faf7fa91  # Botnet/IoT | R=83.3 | Mirai | elf
+83dac5c3b8e0950221ce5144840dcb8151d07225936e56cce46dafea1d839a80  # Spyware | R=69.1 | SnakeKeylogger | exe
+0a9eef7efa92b0d9d10aaf03061969c932867848ceceb380624847a20a41d22b  # Skript/Dropper | R=38.0 | unbekannt | hta
+c6985c049dfd130c5c1eb2c2b225522e9059757b6021417191229451c542100c  # Skript/Dropper | R=37.9 | unbekannt | hta
+4ba3c1a20ce0bdc7f78820d9bfc337cabc75087bfce2a080e15f694d29ae4715  # Skript/Dropper | R=37.4 | unbekannt | ps1
+70323fce23ffe2d7f97c64893aa308bb025a00444c1b3b9a073eb7de33844ca3  # Andere / Unbekannt | R=32.2 | unbekannt | sh
+bcc853cf6c7f81976978a5d6072b244206e933fcd81c67f3d4f763f299117898  # Andere / Unbekannt | R=32.0 | unbekannt | sh
+9da74bf90e2a7ee5e8aecb36e17650f881e916d09824feceb05b50942833d76b  # Skript/Dropper | R=31.6 | unbekannt | hta
+fa60941764982c215fc5c54707abda6c46846ba05d31ba6c576a77f6353bb557  # Skript/Dropper | R=31.5 | unbekannt | ps1
+30dcf5b00caa20bdcd20aaab0c3ed0bceca35d94a0b5791df113ea2cfeea4d0e  # Andere / Unbekannt | R=31.4 | AgentTesla | exe
+
+[Tags]
+AgentTesla
+Mirai
+SnakeKeylogger
+elf
+exe
+hta
+ps1
+sh
+
+[VT Engine Detections]
+
+## fa60941764982c215fc5...  (unbekannt)
+  Google                         Detected
+  Ikarus                         Trojan.PowerShell.XWorm
+  huorong                        TrojanDownloader/PS.Agent.fx
+
+## 70323fce23ffe2d7f97c...  (unbekannt)
+  AVG                            BV:Agent-BNR [Trj]
+  AhnLab-V3                      Downloader/Shell.Generic.S1990
+  Avast                          BV:Agent-BNR [Trj]
+  Avira                          BASH/Dldr.G4
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.MulDrop.187
+  ESET-NOD32                     Linux/Agent.OG trojan
+  F-Secure                       Malware.BASH/Dldr.G4
+  Fortinet                       BASH/EncystPHP.A!tr
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.bc
+  McAfeeD                        Trojan:Win/GenericY.GXO
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  NANO-Antivirus                 Trojan.Script.Dropper.kpvdnu
+  Rising                         Downloader.Agent/BASH!9.59AD6 (XSE:WFNFX0JBVDq498rUGTY2k4Z95Ydvb4+U)
+  Tencent                        Trojan-DL.Linux.Agent.505004
+  Varist                         Unix/Agent.VA
+  ZoneAlarm                      Linux/Dldr-YZ
+  huorong                        TrojanDownloader/Linux.Agent.en
+
+## 4ba3c1a20ce0bdc7f788...  (unbekannt)
+  AVG                            Script:SNH-gen [Drp]
+  Arcabit                        CMD:Heur.BZC.PZQ.Boxter.971.B3C8AD10
+  Avast                          Script:SNH-gen [Drp]
+  BitDefender                    CMD:Heur.BZC.PZQ.Boxter.971.B3C8AD10
+  CTX                            mp3.unknown.boxter
+  Cynet                          Malicious (score: 99)
+  DrWeb                          PowerShell.DownLoader.2807
+  ESET-NOD32                     PowerShell/TrojanDownloader.Agent.PJZ trojan
+  Emsisoft                       CMD:Heur.BZC.PZQ.Boxter.971.B3C8AD10 (B)
+  Fortinet                       PowerShell/Agent.OVK!tr.dldr
+  GData                          CMD:Heur.BZC.PZQ.Boxter.971.B3C8AD10
+  Google                         Detected
+  Ikarus                         Trojan-Downloader.PowerShell.Agent
+  Kaspersky                      HEUR:Trojan.PowerShell.Generic
+  Lionic                         Trojan.Script.Boxter.4!c
+  MicroWorld-eScan               CMD:Heur.BZC.PZQ.Boxter.971.B3C8AD10
+  Tencent                        Win32.Trojan-Downloader.Downloader.Kqil
+  TrendMicro                     Trojan.PS1.XWORM.SMAN
+  TrendMicro-HouseCall           Trojan.PS1.XWORM.SMAN
+  VIPRE                          CMD:Heur.BZC.PZQ.Boxter.971.B3C8AD10
+  huorong                        TrojanDownloader/Agent.bmf
+
+## 83dac5c3b8e0950221ce...  (SnakeKeylogger)
+  APEX                           Malicious
+  AVG                            FileRepMalware [Trj]
+  AhnLab-V3                      Trojan/AU3.Loader.S3029
+  Avast                          FileRepMalware [Trj]
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.Siggen31.58009
+  ESET-NOD32                     Win32/Injector.Autoit.GGS trojan
+  Elastic                        malicious (high confidence)
+  Fortinet                       AutoIt/FormBook.GIZ!tr
+  Google                         Detected
+  Ikarus                         Trojan.Autoit
+  Kaspersky                      UDS:DangerousObject.Multi.Generic
+  Malwarebytes                   Backdoor.NetWiredRC.AutoIt.Generic
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        ti!83DAC5C3B8E0
+  Microsoft                      Trojan:Win32/AutoInject!rfn
+  Paloalto                       generic.ml
+  Rising                         Trojan.Injector/Autoit!1.12AEC (CLASSIC)
+  Sangfor                        Trojan.Win32.Save.a
+  Sophos                         Mal/AuItInj-D
+  TrellixENS                     AgentTesla.c!AU3
+  TrendMicro                     TrojanSpy.MSIL.SNAKEKEYLOGGER.SMTPTEGNL
+  TrendMicro-HouseCall           TROJ_GEN.R06CH01CG26
+  Varist                         W32/AutoIt.AFC2.gen!Eldorado
+  ZoneAlarm                      Mal/AuItInj-D
+  huorong                        Trojan/AutoIT.Injector.fc
+
+## 9da74bf90e2a7ee5e8ae...  (unbekannt)
+  Fortinet                       JS/Agent.SU!tr
+  Kaspersky                      HEUR:Trojan.Script.Generic
+  Rising                         Trojan.DL.Script.JS.MS06014.b (CLASSIC)
+  Skyhigh                        BehavesLike.HTML.Exploit.cq
