@@ -1,0 +1,71 @@
+# IOC Export  2026-03-16_09-02-UTC
+# 19 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+39017fe19df299bbbeccf84c4ba2ba8ec21d6b265fddd8e852d340050e23d978  # RAT | R=89.4 | NetSupport | zip
+96ab7d863f04da8870f5966a24666f618ebd037dd67e2923dc357e20532149cb  # RAT | R=89.1 | RemcosRAT | exe
+edb9b68de5572a87ac2a82b817e154a9fe541c74874df06738086b8ee80bc6c8  # RAT | R=88.9 | RemcosRAT | exe
+a7f02413b1cf40739a6b8cf528f4a18272564e3d916f75542a7a15da2beb0fc7  # Infostealer | R=81.1 | unbekannt | exe
+c9344193ec791722aa75893010b4da6401f88029a7786b78f132e4cf5605d907  # Skript/Dropper | R=39.1 | unbekannt | ps1
+e157b88aa2ee67b617c7581dc24093c701529b5b276de68bf8695d5d6243752d  # Skript/Dropper | R=38.4 | unbekannt | js
+5875835796f05ac1960444de9c4eda1e08e4eafbc668b7aa71e3a51a73576130  # Maldoc | R=38.4 | unbekannt | docx
+eebbd9d4ef75d3df6ac77260e7cd1c0c502c2e6de613fdcb5318e96aec37df5b  # Skript/Dropper | R=38.3 | unbekannt | bat
+30d56c8ec53a25a82fec93797c8f7e1bcd4137cedf066cc80ab26027f1204de0  # Skript/Dropper | R=38.3 | unbekannt | js
+57c5c7a34d11c1135ab38c3612030377345685347f49c1b2a626106cbe4385bd  # Skript/Dropper | R=38.3 | unbekannt | js
+a5e6f17dcfae22292e40ffbe87103a4018075a9c1ceeeb2a2680f82eb6cb13b2  # Skript/Dropper | R=32.9 | Formbook | js
+314d1398b1b0d13f4bb3211439eab49074f939b48aa5169c7371de2aaf1c8b69  # Skript/Dropper | R=32.3 | unbekannt | ps1
+ea220eb097e92e797b40aa8146a01dd814566065981abd023a1e023915c2b0df  # Andere / Unbekannt | R=32.0 | unbekannt | sh
+4e86d71a19f7f69471776817dc67585064b4b60542bc60e9450739bca63226ee  # Andere / Unbekannt | R=32.0 | unbekannt | exe
+10d5631af53770428ddc903808406d8da87c185f3c2a6a8a082064a9ca9aba7e  # Andere / Unbekannt | R=31.9 | unbekannt | exe
+dd7ec03e87ed508734aaecaa4baedebd3b0e2fc34e8bb39e4be9985b86511497  # Andere / Unbekannt | R=31.6 | unbekannt | xapk
+4aa6fcbdb27fa339778b21001b804ba7f3bb20951e8c17126961fd6b9ebef659  # Andere / Unbekannt | R=31.4 | MassLogger | exe
+b639e6251b4d4677b39d7b5e67bd3b76b7e483bf1fe6c3b127a40972f11a884e  # Andere / Unbekannt | R=31.3 | unbekannt | sh
+8809e20fcea490d4ae97f43cac27f0c700c15db1b85da37b9a47d9e225e763c4  # Andere / Unbekannt | R=27.8 | unbekannt | unknown
+
+[Tags]
+91-219-23-145
+Formbook
+Joker
+Malware
+MassLogger
+RemcosRAT
+WallStealer
+bat
+client32
+docx
+exe
+ineguade-info
+ini
+js
+lic
+netsupport
+pazotti-info
+ps1
+sh
+signed
+xapk
+zip
+
+[VT Engine Detections]
+
+## 8809e20fcea490d4ae97...  (unbekannt)
+  ClamAV                         Win.Downloader.Emmenhtal-10044033-0
+  Google                         Detected
+  Ikarus                         Trojan.PowerShell.Crypt
+  Symantec                       Scr.Malcode!gen
+
+## 314d1398b1b0d13f4bb3...  (unbekannt)
+  ClamAV                         Win.Downloader.Emmenhtal-10044033-0
+  Google                         Detected
+  Ikarus                         Trojan.PowerShell.Crypt
+  Symantec                       Scr.Malcode!gen
+
+## a5e6f17dcfae22292e40...  (Formbook)
+  DrWeb                          JS.DownLoader.9376
+  Google                         Detected
+  Ikarus                         Trojan-Downloader.JS.Agent
+  Kaspersky                      HEUR:Worm.Script.Generic
+  McAfeeD                        Trojan:Script/AgentTesla.AC!1
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  Symantec                       XSNet.Heur!gen12
+  huorong                        TrojanDropper/JS.Agent.ci
