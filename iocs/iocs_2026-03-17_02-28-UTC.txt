@@ -1,0 +1,176 @@
+# IOC Export  2026-03-17_02-28-UTC
+# 17 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+77facc800e777349b28aad9d4bcc30b373fa3d97cb6b00731fbb815034d04618  # Infostealer | R=88.0 | LummaStealer | exe
+1733c1d12e4b799ac0165a933b3bbf246ad078883be359749510b44d2eb775cb  # Infostealer | R=88.0 | LummaStealer | zip
+495041f58815107ba8fd26c13b797308e569041d961305b0849d3fa2ad48597e  # Botnet/IoT | R=76.0 | Mirai | elf
+4a992d9cfe22a35f16c45f200c8ed12ac71c9a90272ccfd99055a71cafca47df  # Loader | R=74.0 | unbekannt | jar
+a61cfdb1585ebd47d4046b62ed7ad8a756234f54b24ee0755385c39fb12dbd40  # Cryptominer | R=66.9 | unbekannt | elf
+9cd9b2800309a07bce3f559d5fc75a649c52d08de7b2b2734b481807f8c5d87a  # Cryptominer | R=66.9 | unbekannt | elf
+e423c01ae1c47cdf5217976647489c9751c29eda2182661d993960182ff41934  # Linux-Malware | R=44.8 | unbekannt | elf
+4af2b83387e6ab3f4ec461150e1c6930c1d92ee4d5a7d8e39cd8a222127d9df1  # Skript/Dropper | R=36.7 | unbekannt | ps1
+d0e84b6bf4d810da9e177a54c397033b310864ede10eb9f9b7e6b2672daf23f5  # Skript/Dropper | R=36.7 | unbekannt | bat
+f8a8da4bfc818d068b08fe1470b10bc529fe4cdc7039b153c352924c138f5136  # Skript/Dropper | R=36.7 | unbekannt | bat
+e8879c41e383df2be62e3b5c6cb4c92f53a886913eb66d8f60ac071020d633dd  # Skript/Dropper | R=36.7 | unbekannt | ps1
+60aa052dc1cad8a9f39983ffd6a21c97b43f3b9c8925ed1bac8113feaa07bf44  # Skript/Dropper | R=36.7 | unbekannt | ps1
+3d91c5fa7542c6043f486dcfd84abd00225ea2ccadd7a4304521eba9b30568b0  # Linux-Malware | R=36.5 | unbekannt | elf
+535ada9c0c833577ab9489386fad8fc02e9629fe8d038e3dedb3db261868e0ed  # Andere / Unbekannt | R=34.2 | AgentTesla | exe
+170a6b1733b3f3c3b0bab99254b4d93ac9a843bd1af1030d4af4d4cc936b10f6  # Andere / Unbekannt | R=30.5 | Formbook | exe
+d63236061e8caa4d138ee3c0ebb9a92ee1d68e3a6fae0aacfe11ce41eafad93b  # Andere / Unbekannt | R=29.8 | unbekannt | jar
+9b9f0a47f0e1ed11995b18ca0eec65c53c8e027076fa8be151271b6f0b110276  # Andere / Unbekannt | R=29.4 | unbekannt | exe
+
+[Tags]
+AgentTesla
+CoinMiner
+DebuggerPattern__CPUID
+DebuggerPattern__RDTSC
+Formbook
+LummaStealer
+Mirai
+PM_Zip_with_js
+UPX
+contains_base64
+de-pumped
+domain
+elf
+exe
+file-pumped
+jar
+majanito_dropper
+zip
+
+[VT Engine Detections]
+
+## 495041f58815107ba8fd...  (Mirai)
+  ALYac                          Trojan.Linux.Mirai.1
+  AVG                            ELF:Mirai-AAJ [Trj]
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  Arcabit                        Trojan.Linux.Mirai.1
+  Avast                          ELF:Mirai-AAJ [Trj]
+  Avast-Mobile                   ELF:Mirai-ANO [Trj]
+  Avira                          EXP/ELF.Mirai.W
+  BitDefender                    Trojan.Linux.Mirai.1
+  CTX                            elf.trojan.mirai
+  ClamAV                         Unix.Trojan.Mirai-10017641-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9774
+  ESET-NOD32                     Linux/Mirai.B trojan
+  Emsisoft                       Trojan.Linux.Mirai.1 (B)
+  F-Secure                       Exploit.EXP/ELF.Mirai.W
+  Fortinet                       ELF/Mirai.L!tr
+  GData                          Linux.Trojan.Mirai.G
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Mirai
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.ew
+  Kingsoft                       Linux.Backdoor.Mirai.ew
+  Lionic                         Trojan.Linux.Mirai.K!c
+  McAfeeD                        Trojan:Linux/Mirai.ERC
+  MicroWorld-eScan               Trojan.Linux.Mirai.1
+  Microsoft                      Backdoor:Linux/Mirai.FM!MTB
+  Rising                         Backdoor.Mirai/Linux!1.10566 (CLASSIC)
+  Sangfor                        Suspicious.Linux.Save.a
+  Skyhigh                        Linux/Mirai-FDXO!090B393835ED
+  Sophos                         Linux/DDoS-CI
+  Symantec                       Linux.Mirai!g2
+  Tencent                        Backdoor.Linux.Mirai.wav
+  TrellixENS                     Linux/Mirai-FDXO!090B393835ED
+  TrendMicro                     Backdoor.Linux.MIRAI.SMLBO20
+  TrendMicro-HouseCall           Backdoor.Linux.MIRAI.SMLBO20
+  VIPRE                          Trojan.Linux.Mirai.1
+  Varist                         E32/Mirai.G.gen!Camelot
+  ZoneAlarm                      Linux/DDoS-CI
+  huorong                        Trojan/Linux.Mirai.g
+
+## 535ada9c0c833577ab94...  (AgentTesla)
+  APEX                           Malicious
+  AhnLab-V3                      Trojan/AU3.Loader.S3029
+  Bkav                           W32.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.AutoIt.1770
+  ESET-NOD32                     Win32/Injector.Autoit.GGS trojan
+  Elastic                        malicious (high confidence)
+  Fortinet                       AutoIt/FormBook.GIZ!tr
+  Google                         Detected
+  Ikarus                         Trojan.Autoit
+  Kaspersky                      UDS:Trojan-PSW.MSIL.Agensla
+  Malwarebytes                   Backdoor.NetWiredRC.AutoIt.Generic
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        ti!535ADA9C0C83
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Trojan.Injector/Autoit!1.12AEC (CLASSIC)
+  Sangfor                        Trojan.Win32.Save.a
+  Sophos                         Mal/AuItInj-D
+  Symantec                       Trojan.Malautoit!g3
+  Varist                         W32/AutoIt.AFC2.gen!Eldorado
+  VirIT                          Trojan.Win32.AutoIt_Heur.L
+  ZoneAlarm                      Mal/AuItInj-D
+  huorong                        Trojan/AutoIT.Injector.fc
+
+## 9b9f0a47f0e1ed11995b...  (unbekannt)
+  APEX                           Malicious
+  Bkav                           W64.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win64/TrojanDownloader.Agent.CUT trojan
+  Elastic                        malicious (high confidence)
+  McAfeeD                        ti!9B9F0A47F0E1
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  SentinelOne                    Static AI - Malicious PE
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       malicious.moderate.ml.score
+
+## e423c01ae1c47cdf5217...  (unbekannt)
+  ALYac                          Application.Generic.3788227
+  AVG                            ELF:Portscan-G [PUP]
+  AhnLab-V3                      HackTool/Linux.Portscan.SE157
+  Antiy-AVL                      HackTool/Linux.Portscan.b
+  Arcabit                        Application.Generic.D39CDC3
+  Avast                          ELF:Portscan-G [PUP]
+  Avira                          PUA/AVF.PortScan.wqsju
+  BitDefender                    Application.Generic.3788227
+  CTX                            elf.hacktool.portscan
+  ClamAV                         Unix.Tool.Portscan-9801964-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Tool.Linux.Pscan.1
+  ESET-NOD32                     Linux/HackTool.Portscan.B potentially unsafe application
+  Emsisoft                       Application.Generic.3788227 (B)
+  F-Secure                       PotentialRisk.PUA/AVF.PortScan.wqsju
+  Fortinet                       Riskware/Portscan
+  GData                          Application.Generic.3788227
+  Google                         Detected
+  Jiangmin                       HackTool.Linux.aup
+  K7GW                           Trojan ( 0040f9141 )
+  Kaspersky                      HEUR:HackTool.Linux.Portscan.b
+  Kingsoft                       Linux.HackTool.Portscan.b
+  Lionic                         Hacktool.Linux.Portscan.3!c
+  MicroWorld-eScan               Application.Generic.3788227
+  Microsoft                      HackTool:Linux/PortScan.A!xp
+  Rising                         HackTool.PortScan/Linux!1.CD1A (CLASSIC)
+  SentinelOne                    Static AI - Suspicious ELF
+  Skyhigh                        PUP-XIX-KN
+  Symantec                       Trojan.Gen.NPE
+  Tencent                        Linux.Hacktool.Portscan.Qsmw
+  TrellixENS                     PUP-XIX-KN
+  VIPRE                          Application.Generic.3788227
+  Varist                         E64/ABApplication.LST
+  Zillya                         Tool.Portscan.Linux.164
+  alibabacloud                   Hacktool:Linux/Portscan
+  huorong                        Trojan/Linux.Agent.co
+
+## 3d91c5fa7542c6043f48...  (unbekannt)
+  ALYac                          Trojan.Linux.GenericKD.72803
+  Arcabit                        Trojan.Linux.Generic.D11C63
+  BitDefender                    Trojan.Linux.GenericKD.72803
+  CTX                            elf.trojan.generic
+  ClamAV                         Unix.Trojan.Generic-9910178-0
+  ESET-NOD32                     Linux/Packed.Obfuscated.B suspicious application
+  Emsisoft                       Trojan.Linux.GenericKD.72803 (B)
+  GData                          Trojan.Linux.GenericKD.72803
+  MicroWorld-eScan               Trojan.Linux.GenericKD.72803
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  VIPRE                          Trojan.Linux.GenericKD.72803
