@@ -1,0 +1,91 @@
+# IOC Export  2026-03-17_19-08-UTC
+# 15 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+562e7f8b6e4e8b96598393e14f973a7a1ee5ef235ba4e39de30101bcf58202e9  # Botnet/IoT | R=83.4 | Mirai | elf
+4449f89d0a066de5569cc1e2a868233abc4e0a942f01d624a7c02b86d560d745  # Trojaner | R=83.0 | unbekannt | elf
+cf71f79fc2ba9bb37fa47434a1e26db5bc7307214efe23f08260ba25cc00bcad  # Trojaner | R=82.9 | unbekannt | elf
+46b3bebdba5829ad9efb55c8f6f7a13e61d3c42a2e3d5a7f77f147d057a27c26  # Trojaner | R=82.9 | unbekannt | elf
+3656781384f3a2002a60212eb46cdac53a760fde20681e221c56f96cdfe9824d  # Trojaner | R=82.4 | unbekannt | elf
+51b187d9941dff77a25d26fc6d33c2eea533ff6d1e590e3e4c872685933c1e1d  # Trojaner | R=82.3 | unbekannt | apk
+c34af1f1f238747d6839ce6857138e97d722443c4e2a794c072c236228ceaa07  # Ransomware | R=75.8 | unbekannt | exe
+18ece4019e4a12c605ae2c70d965fa5a4230af0e21482fc1b75b7c29b85b87df  # Loader | R=73.4 | unbekannt | exe
+9f12096d9dac3217a38d6e93d207e2b4afaa6f08437d56547befeb517f83feaa  # Skript/Dropper | R=37.8 | unbekannt | hta
+0eb25a947a4b91c953e389b8a8dd6aaff2617706f81a74ba865186d17ae07271  # Andere / Unbekannt | R=31.7 | unbekannt | unknown
+a8d54c6df6011e62f5897f3c47bd30560ca42dc14887d80fd4a9575a9c3a2c4a  # Andere / Unbekannt | R=31.1 | unbekannt | sh
+86a27bc3aac40328656ea8507f60ef25d47dace578d8f41e94bf0effe2179680  # Andere / Unbekannt | R=29.7 | unbekannt | exe
+3c1a2fa98aaf7394ba262ef8d47c4ac1355c8c2224bfd961e130a48a1b7d8708  # Andere / Unbekannt | R=27.9 | unbekannt | exe
+eb936b1860bcd03a9ecece8002d817445cf5fe8009dca599eeaabba1410f70ed  # Andere / Unbekannt | R=27.1 | unbekannt | zip
+2c7f22f1ecf6bea58104197f6e39c3bb7c80198d0bbeb1f1596413278f5a39d8  # Andere / Unbekannt | R=26.0 | unbekannt | zip
+
+[Tags]
+BeatBanker
+Mirai
+apk
+banker
+dropped-by-Amadey
+elf
+exe
+fbf543
+hta
+pw-cyrex
+ransomware
+sh
+vidar
+zip
+
+[VT Engine Detections]
+
+## c34af1f1f238747d6839...  (unbekannt)
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Rat]
+  Avast                          Win32:MalwareX-gen [Rat]
+  Avira                          TR/Dropper.Gen
+  Bkav                           W32.AIDetectMalware.CS
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.PackedNET.2595
+  ESET-NOD32                     MSIL/GenKryptik.GJCO trojan
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/Dropper.Gen
+  Fortinet                       MSIL/GenKryptik.FZQG!tr
+  Google                         Detected
+  Ikarus                         Trojan.MSIL.CoinMiner
+  Kingsoft                       Msil.Troj.asyncrat.v
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        Real Protect-LS!E1C3B51E8558
+  Microsoft                      Trojan:MSIL/AsyncRAT.Z!MTB
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Generic ML PUA (PUA)
+  Trapmine                       malicious.high.ml.score
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04C9z
+  Varist                         W32/Azorult.D.gen!Eldorado
+  VirIT                          Trojan.Win32.MSIL_Heur.A
+
+## 3c1a2fa98aaf7394ba26...  (unbekannt)
+  Bkav                           W64.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  Elastic                        malicious (high confidence)
+  McAfeeD                        ti!3C1A2FA98AAF
+
+## 86a27bc3aac40328656e...  (unbekannt)
+  AhnLab-V3                      Trojan/Win.Injector.X2263
+  Bkav                           W64.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  DeepInstinct                   MALICIOUS
+  Elastic                        malicious (high confidence)
+  Fortinet                       W64/Aotera.BF!tr
+  Google                         Detected
+  Ikarus                         Trojan.Win64.Aotera
+  Kaspersky                      HEUR:Trojan.Win64.Convagent.gen
+  Malwarebytes                   Malware.Heuristic.2113
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+
+## eb936b1860bcd03a9ece...  (unbekannt)
+  Alibaba                        Trojan:MSIL/Generic.b4e9901b
+  ESET-NOD32                     MSIL/TrojanDownloader.Agent.SMH trojan
+  Sophos                         Mal/Generic-S
+  Tencent                        Msil.Trojan-Downloader.Ader.Cwnw
