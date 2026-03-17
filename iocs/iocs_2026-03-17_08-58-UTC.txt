@@ -1,0 +1,106 @@
+# IOC Export  2026-03-17_08-58-UTC
+# 12 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+63c47dd8b16c20bac5fadae8e576a90c805bcfa6b56f33bd2af71f098fa29e80  # Infostealer | R=89.5 | Stealc | exe
+ec1728f752931af0e6357b4a519f8cb5725ffe822522dc2e57491764518e0780  # Skript/Dropper | R=38.4 | unbekannt | js
+648035d798d7b55be55867eba3e750d360a9d37ae585ecac319c410f24ac31ae  # Skript/Dropper | R=34.5 | unbekannt | vbs
+2ac6936670f5cb962b45c4487de2b0d20034afd38a8038c9465425dc96f10a61  # Andere / Unbekannt | R=34.1 | unbekannt | sh
+1d9735c8d10949ca2322708580e98dd28045e81bf2db6ac4769ffd1d16561438  # Skript/Dropper | R=33.2 | unbekannt | bat
+d2ab8dcab70822c839912cb672e93de459e5608bea210c78a1be56b54cbd8f81  # Skript/Dropper | R=32.9 | unbekannt | bat
+04766d99dbf4738ff82addb4a60fc8dac74506b45b0539f8dd316fa850a11a71  # Andere / Unbekannt | R=31.5 | unbekannt | exe
+3021f4d365a641722748c5e60d983a080db17bef8f0a1dbe624ffe63cd544cc1  # Andere / Unbekannt | R=31.5 | unbekannt | dll
+f037a658f8a9340faa41f98f2ea03e91966cacf5ac61ba99c049545373e6f4a4  # Andere / Unbekannt | R=31.4 | unbekannt | zip
+2b3e736cb6dfddefb0b035d1130b4dc288436dda702796aa41f5116385c75ec4  # Andere / Unbekannt | R=31.4 | unbekannt | exe
+718465f44c0680740fb61790eda3d2f4c5218c9de0c560299c580fa1602dc9c7  # Andere / Unbekannt | R=31.2 | unbekannt | rar
+13877125762d11320301d3f016c761819aa67cab3ca27213f1c38c46bf163a74  # Andere / Unbekannt | R=28.4 | unbekannt | exe
+
+[Tags]
+69-5-189-8
+CVE-2025-8088
+MustangPanda
+Possible
+Stealc
+UKR
+bat
+dll
+exe
+js
+oevaofvwuf-com
+rar
+sh
+vbs
+zip
+
+[VT Engine Detections]
+
+## 1d9735c8d10949ca2322...  (unbekannt)
+  DrWeb                          PowerShell.MulDrop.503
+  ESET-NOD32                     PowerShell/TrojanDropper.Agent.BAS trojan
+  Fortinet                       PowerShell/Agent.BAS!tr
+  Google                         Detected
+  Kaspersky                      UDS:Trojan.BAT.Cobalt.gen
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  Varist                         BAT/Agent.BKJ
+
+## 2ac6936670f5cb962b45...  (unbekannt)
+  AVG                            BV:Agent-BNR [Trj]
+  AhnLab-V3                      Downloader/Shell.Generic.S1990
+  Arcabit                        Trojan.Generic.D1C722
+  Avast                          BV:Agent-BNR [Trj]
+  Avira                          BASH/Dldr.G4
+  BitDefender                    Trojan.GenericKDZ.116514
+  CTX                            shell.trojan.generickdz
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.MulDrop.187
+  ESET-NOD32                     Linux/Agent.OG trojan
+  Emsisoft                       Trojan.GenericKDZ.116514 (B)
+  F-Secure                       Malware.BASH/Dldr.G4
+  Fortinet                       BASH/EncystPHP.A!tr
+  GData                          Trojan.GenericKDZ.116514
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.bc
+  McAfeeD                        Trojan:Win/GenericY.GXO
+  MicroWorld-eScan               Trojan.GenericKDZ.116514
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  NANO-Antivirus                 Trojan.Script.Dropper.kpvdnu
+  Rising                         Downloader.Agent/BASH!9.54F60 (XSE:WFNFX0JBVDqo+9l0mSImkyZ5xYdvf5+W)
+  Tencent                        Trojan-DL.Linux.Agent.505004
+  Varist                         Unix/Agent.VA
+  ZoneAlarm                      Linux/Dldr-YZ
+  huorong                        TrojanDownloader/Linux.Agent.en
+
+## 13877125762d11320301...  (unbekannt)
+  AVG                            Win64:MalwareX-gen [Trj]
+  AhnLab-V3                      Trojan/Win.Lazy.C5855421
+  Avast                          Win64:MalwareX-gen [Trj]
+  Bkav                           W64.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Win64/GenKryptik_AGen.CMP trojan
+  Elastic                        malicious (high confidence)
+
+## 648035d798d7b55be558...  (unbekannt)
+  ALYac                          GT:VB.ObfDldr.31.74AB38F3
+  Arcabit                        GT:VB.ObfDldr.31.74AB38F3
+  BitDefender                    GT:VB.ObfDldr.31.74AB38F3
+  CTX                            vba.trojan.generic
+  Emsisoft                       GT:VB.ObfDldr.31.74AB38F3 (B)
+  GData                          GT:VB.ObfDldr.31.74AB38F3
+  Google                         Detected
+  Ikarus                         Trojan.PowerShell.Agent
+  Kaspersky                      UDS:Trojan.JS.SAgent
+  MicroWorld-eScan               GT:VB.ObfDldr.31.74AB38F3
+  NANO-Antivirus                 Trojan.Script.Vbs-heuristic.druvzi
+  Symantec                       ISB.Downloader!gen52
+  VIPRE                          GT:VB.ObfDldr.31.74AB38F3
+
+## d2ab8dcab70822c83991...  (unbekannt)
+  DrWeb                          PowerShell.MulDrop.503
+  ESET-NOD32                     PowerShell/TrojanDropper.Agent.BAS trojan
+  Fortinet                       PowerShell/Agent.BAS!tr
+  Google                         Detected
+  Kaspersky                      UDS:Trojan.BAT.Cobalt.gen
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  TrendMicro-HouseCall           TROJ_GEN.F0D1C00CH26
+  Varist                         BAT/Agent.BKJ
