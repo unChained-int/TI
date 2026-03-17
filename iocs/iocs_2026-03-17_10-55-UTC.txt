@@ -1,0 +1,109 @@
+# IOC Export  2026-03-17_10-55-UTC
+# 8 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+8cd57548dc0ada429619691cbd63b22c0d078b18747c0ddaa8cd681ec9821de4  # RAT | R=88.3 | AsyncRAT | js
+7e525ee0298f64817f7a0e84a31063ee4d76bd6a9cd884aea15cb2f2b4b62121  # Botnet/IoT | R=82.9 | Mirai | sh
+41e0e743ebb23efb32a855e0ae610f2b49ba2e7d2e4f3f5f8f8f72c56e0ccd67  # RAT | R=75.3 | NetSupport | zip
+db51d42599c4f8b76c585753fc6594334c74351ea917f6e482d285df7f2b0045  # RAT | R=74.0 | NetSupport | zip
+9bb27f7a0bab0d36e832af1a5546a706c45c5b7faf32400bf2e3ad5f62fccae8  # RAT | R=71.1 | NetSupport | ps1
+74178276aaa12c81f17a7f95747c5595cb41e45147a342a06d23b373e8ad7ceb  # RAT | R=67.2 | NetSupport | ps1
+6b7497aa426d9d0f44f3d505965080d9315ab9dd5fbfc208cfa346c6b5879505  # Andere / Unbekannt | R=31.5 | unbekannt | sh
+6dfd0dc2761a9e975d7ef706e1c3b45b7b0cc8509a1548c14a2f35e00f1f02c2  # Andere / Unbekannt | R=28.6 | unbekannt | html
+
+[Tags]
+AsyncRAT
+Mirai
+NetSupport
+booking
+clickfix
+client32
+fakecaptcha
+hotelupdatesys-com
+html
+ini
+js
+lic
+mandatoryhotel-com
+netsupport
+newtxdlol-com
+ps1
+sh
+yanewtxdlol-com
+zip
+
+[VT Engine Detections]
+
+## 9bb27f7a0bab0d36e832...  (NetSupport)
+  Arcabit                        CMD:Heur.BZC.PZQ.Boxter.231.4EE538F1
+  BitDefender                    CMD:Heur.BZC.PZQ.Boxter.231.4EE538F1
+  ESET-NOD32                     GenScript.AMVJ trojan
+  Emsisoft                       CMD:Heur.BZC.PZQ.Boxter.231.4EE538F1 (B)
+  GData                          CMD:Heur.BZC.PZQ.Boxter.231.4EE538F1
+  Google                         Detected
+  Ikarus                         Trojan.Office.Doc
+  Kaspersky                      UDS:Trojan.PowerShell.Dnoper.posh
+  Lionic                         Trojan.UKP.Generic.4!c
+  MicroWorld-eScan               CMD:Heur.BZC.PZQ.Boxter.231.4EE538F1
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  VIPRE                          CMD:Heur.BZC.PZQ.Boxter.231.4EE538F1
+
+## 41e0e743ebb23efb32a8...  (NetSupport)
+  Arcabit                        Trojan.Generic.D4C0363E
+  BitDefender                    Trojan.GenericKD.79705662
+  CTX                            zip.trojan.generic
+  DrWeb                          Program.RemoteAdmin.840
+  ESET-NOD32                     Win32/NetSupportManager.DA trojan
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Trojan.GenericKD.79705662 (B)
+  Fortinet                       W32/PossibleThreat
+  GData                          Script.Trojan.Agent.8I3AOX
+  Gridinsoft                     Risk.Win32.RemoteAdmin.cl
+  Ikarus                         Trojan.Win32.Netsupportmanager
+  Jiangmin                       RemoteAdmin.NetSup.ad
+  K7AntiVirus                    RemoteTool ( 005d06161 )
+  K7GW                           RemoteTool ( 005d06161 )
+  Kaspersky                      not-a-virus:HEUR:RemoteAdmin.Win32.NetSup.gen
+  Lionic                         Riskware.Win32.NetSup.1!c
+  MaxSecure                      Trojan.Malware.74404514.susgen
+  MicroWorld-eScan               Trojan.GenericKD.79705662
+  Rising                         PUF.RemoteAdmin!1.E606 (CLASSIC)
+  SentinelOne                    Static AI - Malicious Archive
+  VBA32                          Riskware.NetSupport
+  VIPRE                          Trojan.GenericKD.79705662
+  Webroot                        W32.Remoteadmin.Netsupport
+  Zillya                         Trojan.GenCBL.Win32.20300
+  huorong                        HackTool/NetSupport.a
+
+## db51d42599c4f8b76c58...  (NetSupport)
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Program.RemoteAdmin.840
+  ESET-NOD32                     Win32/NetSupportManager.DA trojan
+  Elastic                        malicious (moderate confidence)
+  Fortinet                       W32/PossibleThreat
+  GData                          Script.Trojan.Agent.KXHT6Q
+  Google                         Detected
+  Gridinsoft                     Risk.Win32.RemoteAdmin.cl
+  Ikarus                         Trojan.Win32.Netsupportmanager
+  Jiangmin                       RemoteAdmin.NetSup.ad
+  K7AntiVirus                    Trojan ( 0001140e1 )
+  K7GW                           Trojan ( 0001140e1 )
+  Kaspersky                      not-a-virus:HEUR:RemoteAdmin.Win32.NetSup.gen
+  Lionic                         Riskware.Win32.NetSup.1!c
+  MaxSecure                      Trojan.Malware.74404514.susgen
+  Rising                         PUF.RemoteAdmin!1.E606 (CLASSIC)
+  SentinelOne                    Static AI - Malicious Archive
+  VBA32                          Riskware.NetSupport
+  Webroot                        W32.Remoteadmin.Netsupport
+  Zillya                         Trojan.GenCBL.Win32.20300
+  huorong                        HackTool/NetSupport.a
+
+## 6dfd0dc2761a9e975d7e...  (unbekannt)
+  AVG                            HTML:FakeCaptcha-BO [FakeT]
+  Avast                          HTML:FakeCaptcha-BO [FakeT]
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     HTML/FakeCaptcha.BV trojan
+  Fortinet                       HTML/FakeCaptcha.AV!tr
+  Kaspersky                      HEUR:Trojan.Script.Generic
+  McAfeeD                        Trojan:Script/FakeCaptcha.VTZ
+  huorong                        HEUR:Trojan/HTML.Phishing.hg
