@@ -1,0 +1,126 @@
+# IOC Export  2026-03-18_07-06-UTC
+# 21 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+6d80cd9e3401b66d8720e8a34124b74bfaf574ae8d95d3d935c53e158395aa49  # Infostealer | R=89.9 | Vidar | exe
+6bd5f4c9d14cd1983d4ea7e7dceb5a86941a565f2787e6478684be8c2464f269  # Infostealer | R=89.9 | Stealc | exe
+6ab011bf4159dced5e9972284b65a82b95d772cf095c5c62e55398816cc64d3a  # Infostealer | R=89.9 | Stealc | exe
+fa23a1aa287992ff7636622d1158ad740d0fda313d5e9e07de5f0e3fecfa889a  # RAT | R=89.2 | AsyncRAT | exe
+8e38dbbf489e49b833117da15856f300d364274a96ec4145a7959627486d3f83  # RAT | R=88.6 | AsyncRAT | exe
+d8bc2f89c4ca11e6c36a033c07497be779b51b4f49c0739436db5c738b338940  # Loader | R=74.3 | Smoke Loader | exe
+9ff847266eccbe55815df693cf3f91a87b8a1691b1b059333ca4b36c8157d47b  # Loader | R=63.8 | unbekannt | exe
+7daeeec6a883165d6849e0611e7fe39fbc4ad340bb2aeba416fb7cec3cb92917  # Andere / Unbekannt | R=32.2 | unbekannt | sh
+ae1404972edf59527ec0d2e399000513c09dfbb2a6863a34d396805ef1787d1d  # Andere / Unbekannt | R=32.0 | unbekannt | exe
+031c37911ff8933c904fca037f7511d9092f4f20360baf0bebea6c1c63c21d3c  # Andere / Unbekannt | R=32.0 | unbekannt | exe
+27ae61f53faa47aad66940145cf392f5a8db1ea2f5bee85c1223ca495b9da552  # Andere / Unbekannt | R=31.9 | unbekannt | exe
+193107a516095867fe2bdd8fc7a7d826e9e6b6831b8f4ecff63336cf8fbf58df  # Andere / Unbekannt | R=31.5 | unbekannt | dll
+ec6bfacbe15f49d7e015074d29c4ee9f8a918cfe83eb363edda9da7b3236b6d5  # Andere / Unbekannt | R=31.5 | unbekannt | exe
+8d0c52c690cd8d9d00919fd4dab4f9117cb21c00407b20afa88e2cd8711f7b64  # Andere / Unbekannt | R=31.5 | unbekannt | unknown
+cd4807739ed630631defac9dc0e517ba94c88977dac9692d797477d32e99c15a  # Andere / Unbekannt | R=31.5 | unbekannt | dll
+d03def68752c121c8091459f3010a5efdb3d86dd83965037fbb1eff7203bafc4  # Andere / Unbekannt | R=31.5 | unbekannt | dll
+ea5a42ef95ee350f1824fbaf668ca4871a03387eded4186666a2ecba0c7cb081  # Andere / Unbekannt | R=31.4 | unbekannt | unknown
+a025f425022df0a0fe1ca8ec5e0554156a49cc2ae302b971878a6e7cc41d0677  # Andere / Unbekannt | R=31.0 | ConnectWise | exe
+ee2053834c4807a276423d94b44b4e3319736bffd41630de96efe6ea5856269e  # Andere / Unbekannt | R=30.7 | ConnectWise | msi
+d4f085a345cd8a3f662711ea7f8f72084bb7367085912028b7f4acc4e30f3d9e  # Andere / Unbekannt | R=30.3 | ConnectWise | exe
+6d2a18981690c32e1bdd1bb1acc212ea5c5e1ac96010999fb5748a14fc04b7e3  # Andere / Unbekannt | R=27.5 | unbekannt | unknown
+
+[Tags]
+AsyncRAT
+ConnectWise
+Mann-Technologies-LLC
+Smoke Loader
+Stealc
+Vidar
+de-pumped
+dll
+dropped-by-Amadey
+exe
+fbf543
+metramon-com
+msi
+pinpadat-com
+sh
+signed
+upx
+upx-dec
+vps30002026-kozow-com
+
+[VT Engine Detections]
+
+## 6d2a18981690c32e1bdd...  (unbekannt)
+  ClamAV                         Win.Dropper.XWorm-10036812-0
+  DrWeb                          Trojan.Packed2.48639
+  ESET-NOD32                     MSIL/Injector.WFE trojan
+  Kaspersky                      Trojan.MSIL.Agentc.a
+
+## a025f425022df0a0fe1c...  (ConnectWise)
+  APEX                           Malicious
+  Bkav                           W64.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.MulDrop31.17564
+  Elastic                        malicious (high confidence)
+  Kaspersky                      not-a-virus:RemoteAdmin.MSIL.ConnectWise.b
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        ti!A025F425022D
+  Rising                         Hacktool.ConnectWiseControl!8.17790 (TFE:dGZlOimsCQABh3k2dA)
+  SentinelOne                    Static AI - Suspicious PE
+  Symantec                       ML.Attribute.HighConfidence
+  huorong                        HackTool/ConnectWiseControl.e
+
+## d4f085a345cd8a3f6627...  (ConnectWise)
+  Bkav                           W64.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Program.RemoteAdmin.975
+  Elastic                        malicious (moderate confidence)
+  Kaspersky                      not-a-virus:RemoteAdmin.MSIL.ConnectWise.b
+  McAfeeD                        ti!D4F085A345CD
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Hacktool.ConnectWise!8.13A88 (LESS:bWQ1OvE7JsLUyPHVNlGblHxzAOA)
+  SentinelOne                    Static AI - Suspicious PE
+  huorong                        HackTool/ConnectWiseControl.i
+
+## ee2053834c4807a27642...  (ConnectWise)
+  DrWeb                          Program.RemoteAdmin.975
+  Google                         Detected
+  Ikarus                         PUA.ConnectWise
+  Kaspersky                      not-a-virus:RemoteAdmin.MSIL.ConnectWise.a
+  Rising                         Hacktool.ConnectWise!8.13A88 (CLOUD)
+  Skyhigh                        RAdmin-ConnectWise.b
+  Sophos                         Generic Reputation PUA (PUA)
+  Symantec                       PUA.Gen.2
+  TrellixENS                     RAdmin-ConnectWise.b
+  TrendMicro-HouseCall           TROJ_GEN.R002H06FI25
+  Varist                         W32/ConnectWise.O.gen!Eldorado
+  Zillya                         Trojan.Stealer.Win32.37991
+  alibabacloud                   Backdoor[rat]:MSIL/ConnectWise.b
+  huorong                        HackTool/ConnectWiseControl.i
+
+## 9ff847266eccbe55815d...  (unbekannt)
+  ALYac                          Gen:Variant.Tedy.878103
+  AhnLab-V3                      Infostealer/Win.SantaStealer.R761920
+  Arcabit                        Trojan.Tedy.DD6617
+  BitDefender                    Gen:Variant.Tedy.878103
+  CTX                            exe.unknown.tedy
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win64/GenKryptik.HPYU trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Tedy.878103 (B)
+  GData                          Gen:Variant.Tedy.878103
+  Google                         Detected
+  Kaspersky                      VHO:Trojan-PSW.Win32.Stealer.gen
+  Malwarebytes                   Malware.AI.1950356490
+  MicroWorld-eScan               Gen:Variant.Tedy.878103
+  Microsoft                      HackTool:Win64/PSWDump.MY!MTB
+  Rising                         Stealer.Chrome!1.13517 (CLASSIC)
+  Symantec                       ML.Attribute.HighConfidence
+  VIPRE                          Gen:Variant.Tedy.878103
+  Varist                         W64/Agent.LWY.gen!Eldorado
+  huorong                        TrojanSpy/Stealer.jp
