@@ -1,0 +1,147 @@
+# IOC Export  2026-03-19_10-45-UTC
+# 17 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+51287de81cc5f8e5edd0ed54009cf9c68f3ed74b5a7192a704e8076c4141df55  # RAT | R=88.1 | AsyncRAT | exe
+db6381cb9c7713c1b142fa6013d85c84e8121917036131e707488f1dc1111f2e  # Infostealer | R=70.8 | SalatStealer | exe
+a9808690851c0cef6bc1758f59c27b82990dc17e6cf8b9f0fc5f0b2a20aa1031  # Infostealer | R=70.1 | SalatStealer | exe
+0a10ffc39fbe9cdf60e75b4a948af235e274c79093cfc14baba9e1992ad671c7  # Loader | R=57.7 | unbekannt | exe
+7405451ae98a7a3268b37e7cf8dca5ff70c3bb2f48dfc4e6d023a3079b4df7dd  # Skript/Dropper | R=37.5 | AgentTesla | js
+c416bbb8d7a96ff69e7b2045c30ceddcf4829fb69e4c11560979b9f5c3d03bb9  # Skript/Dropper | R=37.5 | unbekannt | js
+3241037dacddcdabf17cb68ba67fee7d48c4bf1caf16c15832b9979040a9cb76  # Skript/Dropper | R=37.4 | unbekannt | hta
+6a906991bdce2b745a5d5eb9fc7c98e9e3637472e3f5520a76c4a7ee41b160c3  # Skript/Dropper | R=32.8 | unbekannt | hta
+6ce7e2b638a01cea1bb78d754ad5a66bac5e8f78b103aad720db8cc34cd62d6c  # Andere / Unbekannt | R=31.3 | unbekannt | exe
+287a3a052ff0b2c495658fa90c5a9bd76f16d832d82138f6f8e87f9e2f578ab1  # Andere / Unbekannt | R=31.3 | unbekannt | exe
+64c05d4228999f1e82e4e7a3b2aef52c9f7a5ddddbe10b4c65c63e66262da88e  # Andere / Unbekannt | R=31.3 | unbekannt | unknown
+f937d2d81b0c5a205a1457e200b29229224ea5181f83b556def1b40716d26f17  # Andere / Unbekannt | R=31.3 | unbekannt | sh
+d46402e9b1c792fd716a7e474cac50bb9f6924aeebfd25bc0f1efdfa7fe34081  # Andere / Unbekannt | R=31.3 | unbekannt | exe
+cc2742e1a2b4021a2de5bef4f4a0e323003ba2f96a9dc95e0a9b817b3b50b0ed  # Andere / Unbekannt | R=31.2 | AgentTesla | rar
+9c5ec99bb5acd3c06a8ca4b7abbb070bcfd29699865d85abe5198506ee4b4fd5  # Andere / Unbekannt | R=31.2 | AgentTesla | rar
+0ec1513c145a3f69b2b271e66f70d122215997b8761799d9c9b8cda4ae511710  # Andere / Unbekannt | R=31.2 | unbekannt | sh
+316fee57d6004b1838576bb178215c99b56a0bd37a012e8650cd2898041f6785  # Andere / Unbekannt | R=31.1 | Formbook | exe
+
+[Tags]
+AgentTesla
+AsyncRAT
+Chrono-Orion-LTD
+Formbook
+SalatStealer
+api-zipsphereapp-com
+bot8501998229
+dropped-by-Amadey
+exe
+fbf543
+hta
+js
+rar
+sh
+signed
+spam-ita
+upx
+upx-dec
+
+[VT Engine Detections]
+
+## 6a906991bdce2b745a5d...  (unbekannt)
+  AVG                            Script:SNH-gen [Trj]
+  Avast                          Script:SNH-gen [Trj]
+  Cynet                          Malicious (score: 99)
+  Fortinet                       JS/Agent.SU!tr
+  Kaspersky                      HEUR:Trojan.Script.Generic
+  Skyhigh                        BehavesLike.HTML.Exploit.cq
+  Tencent                        Script.Trojan.Generic.Bkjl
+  huorong                        TrojanDownloader/HTML.Agent.bb
+
+## a9808690851c0cef6bc1...  (SalatStealer)
+  AVG                            Win32:SalatStealer-A [Pws]
+  AhnLab-V3                      Trojan/Win.Generic.R727379
+  Avast                          Win32:SalatStealer-A [Pws]
+  Avira                          TR/AVI.SalatStealer.yecpr
+  Bkav                           W32.AIDetectMalware
+  ClamAV                         Win.Malware.Salat-10058846-0
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     WinGo/Agent.VO trojan
+  Elastic                        Multi.Generic.Threat
+  F-Secure                       Trojan.TR/AVI.SalatStealer.yecpr
+  Fortinet                       W32/Agent.VO!tr
+  Google                         Detected
+  Kaspersky                      Trojan-Banker.Win32.Agent.gen
+  Malwarebytes                   Malware.AI.3308037056
+  MaxSecure                      Trojan.Malware.121218.susgen
+  McAfeeD                        Trojan:Win/Salat.EAC
+  Microsoft                      Trojan:Win32/SalatStealer.SMX!MTB
+  Rising                         Stealer.Salat!1.13A22 (CLASSIC)
+  SentinelOne                    Static AI - Malicious PE
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Trojan.Win32.Stealer.16001830
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04C9z
+  VBA32                          BScope.Trojan.Win64.Agent
+  Varist                         W32/Agent.LNT.gen!Eldorado
+  VirIT                          Trojan.Win32.SalatStlr.JIX
+  huorong                        Trojan/Agent.e!crit
+
+## db6381cb9c7713c1b142...  (SalatStealer)
+  APEX                           Malicious
+  AVG                            Win32:SalatStealer-A [Pws]
+  AhnLab-V3                      Trojan/Win.SalatStealer.R763881
+  Avast                          Win32:SalatStealer-A [Pws]
+  Bkav                           W32.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     WinGo/Agent_AGen.XS trojan
+  Elastic                        malicious (moderate confidence)
+  Google                         Detected
+  K7AntiVirus                    Trojan ( 005ce1d91 )
+  K7GW                           Trojan ( 005ce1d91 )
+  Kingsoft                       Win32.Trojan-Banker.Agent.gen
+  Malwarebytes                   Trojan.Injector.UPX
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        Real Protect-LS!C4BE31FFC31D
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Stealer.Salat!1.13A22 (CLASSIC)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Troj/Salat-B
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Trojan.Win32.Stealer.16001830
+  Trapmine                       malicious.high.ml.score
+  VBA32                          BScope.Trojan.Win64.Agent
+  ZoneAlarm                      Troj/Salat-B
+  huorong                        Trojan/Agent.e!crit
+
+## 0a10ffc39fbe9cdf60e7...  (unbekannt)
+  APEX                           Malicious
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Cylance                        Unsafe
+  Elastic                        malicious (moderate confidence)
+  Kingsoft                       Win32.Troj.Undef.a
+  Microsoft                      Program:Win32/Wacapew.C!ml
+
+## 7405451ae98a7a3268b3...  (AgentTesla)
+  ALYac                          Trojan.GenericKD.79673205
+  AVG                            Other:Malware-gen [Trj]
+  Arcabit                        Trojan.Generic.D4BFB775
+  Avast                          Other:Malware-gen [Trj]
+  BitDefender                    Trojan.GenericKD.79673205
+  CTX                            javascript.trojan.generic
+  Cynet                          Malicious (score: 99)
+  DrWeb                          JS.Muldrop.1171
+  ESET-NOD32                     MSIL/Spy.AgentTesla.P trojan
+  Emsisoft                       Trojan.GenericKD.79673205 (B)
+  Fortinet                       JS/Formbook.PYN!tr
+  GData                          Trojan.GenericKD.79673205
+  Google                         Detected
+  Ikarus                         Trojan-Downloader.JS.Agent
+  Kaspersky                      HEUR:Trojan.Script.Generic
+  Lionic                         Trojan.Script.Generic.4!c
+  McAfeeD                        Trojan:Script/ObfuJS.PH
+  MicroWorld-eScan               Trojan.GenericKD.79673205
+  Tencent                        Script.Trojan.Generic.Mqil
+  VIPRE                          Trojan.GenericKD.79673205
+  Varist                         JS/Agent.DLR!Eldorado
+  VirIT                          Trojan.JS.Agent.JIT
+  Yandex                         Trojan.Etecer.b6acQ1.7
+  alibabacloud                   Trojan:Multi/Generic.Gen
