@@ -1,0 +1,108 @@
+# IOC Export  2026-03-19_20-43-UTC
+# 14 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+f622737668c513f985371efab074a144515a44e2f38216d46a60fa17e190f301  # RAT | R=88.4 | AsyncRAT | exe
+fa72b18f53eeca7273818be2bf00b8bc14de8b33ff417e40ec97feabbaa33de0  # Loader | R=74.3 | unbekannt | exe
+b9116582a5b629ca0983e34037ea467a5b2da12f6bed8904b85e35429c08c4f3  # Loader | R=74.0 | unbekannt | exe
+263b3f3c5e91c8fe858803ceae4b268af40536487828cf980e8d6e4d793648c0  # Maldoc | R=38.7 | unbekannt | xlsx
+d7d08b502e1421ccff774e8ca91fae53493cbd6150c3e5729156e393851c8953  # Andere / Unbekannt | R=34.7 | unbekannt | unknown
+c47d92db7ed3cc5fdbb3296f3f4ab328cd8b66ac079f5bf658d4f2fa5f8a6af7  # Skript/Dropper | R=34.4 | unbekannt | js
+dd737dea20792860147b53679f68e964778a2b47e98d7187ccd4ead0127aec76  # Skript/Dropper | R=33.4 | MassLogger | ps1
+bcf8818806db175f34e69e7a1844cc0a8dbbc574d2369d2657b7b9ce35e6ae4b  # Andere / Unbekannt | R=32.7 | unbekannt | unknown
+2a753f687ad576ea9c2b4524efce33aa3f1080f022948a5c9be2a7619a102aa8  # Andere / Unbekannt | R=32.6 | unbekannt | exe
+c2fc241e929d21aae1a8fa3029f2362c38c9d1747d90068040423b98edf19021  # Andere / Unbekannt | R=32.5 | unbekannt | jar
+09c9d43760c33170651e695907685271bf1572f8d4ffe6525a5b0c6d5bf43c18  # Andere / Unbekannt | R=32.4 | unbekannt | unknown
+41ac3626d127dbbcec3b9a7893c4e30ad7dae9cf2fea69d2c1c037b46065578f  # Andere / Unbekannt | R=32.4 | unbekannt | zip
+eae49879191568dbce8515c27f4915c26bbb56a3266617a2dcf01932ef37ab97  # Andere / Unbekannt | R=32.1 | unbekannt | exe
+b87f0bdbd165da304157ea51e8d1fdf4cf91962e529247932e0876649db31cf3  # Andere / Unbekannt | R=31.7 | unbekannt | msi
+
+[Tags]
+AsyncRAT
+MassLogger
+RAT
+UKR
+UnicornSpy
+cve-2017-11882
+dropped-by-Amadey
+exe
+fbf543
+jar
+js
+msi
+ps1
+xlsx
+zip
+
+[VT Engine Detections]
+
+## d7d08b502e1421ccff77...  (unbekannt)
+  ALYac                          Exploit.MathType-Obfs.Gen
+  AVG                            OLE:CVE-2017-11882-D [Expl]
+  Arcabit                        Exploit.MathType-Obfs.Gen
+  Avast                          OLE:CVE-2017-11882-D [Expl]
+  Avira                          EXP/CVE-2018-0798.Gen
+  BitDefender                    Exploit.MathType-Obfs.Gen
+  CTX                            eml.exploit-kit.mathtype
+  Cynet                          Malicious (score: 99)
+  DrWeb                          W97M.DownLoader.2938
+  ESET-NOD32                     probably Win32/Exploit.CVE-2017-11882.F trojan
+  Emsisoft                       Exploit.MathType-Obfs.Gen (B)
+  F-Secure                       Exploit.EXP/CVE-2018-0798.Gen
+  Fortinet                       MSOffice/CVE_2017_11882.C!exploit
+  GData                          Exploit.MathType-Obfs.Gen
+  Google                         Detected
+  Ikarus                         Exploit.Office.Doc
+  Kaspersky                      UDS:DangerousObject.Multi.Generic
+  Lionic                         Trojan.MSExcel.MathType.4!c
+  MicroWorld-eScan               Exploit.MathType-Obfs.Gen
+  Sangfor                        Exploit.Doc.CVE-2018-0798.a
+  TrellixENS                     Exploit-GBR!8E05F678F092
+  TrendMicro                     EXPL_CVE1711882
+  Varist                         CVE180798.A.gen!Eldorado
+  Zoner                          Probably Heur.W97ShellO
+  huorong                        Exploit/CVE-2017-11882.c
+
+## dd737dea20792860147b...  (MassLogger)
+  DrWeb                          PowerShell.Packed.233
+  ESET-NOD32                     PowerShell/Agent.DUQ trojan
+  Fortinet                       PowerShell/Agent.DUQ!tr
+  Google                         Detected
+  Rising                         Trojan.Kryptik/PS!1.13B2A (CLASSIC)
+  Sophos                         Troj/PS-TV
+  ZoneAlarm                      Troj/PS-TV
+  huorong                        Trojan/PS.ShellLoader.y
+
+## c47d92db7ed3cc5fdbb3...  (unbekannt)
+  ESET-NOD32                     JS/TrojanDownloader.Agent.ADYG trojan
+  Fortinet                       JS/Formbook.ADXY!tr.dldr
+  Google                         Detected
+  Ikarus                         Trojan-Downloader.JS.Agent
+  Kaspersky                      HEUR:Trojan.Script.Generic
+  Microsoft                      Trojan:Script/Wacatac.C!ml
+  NANO-Antivirus                 Trojan.Script.Heuristic-js.iacgm
+  Rising                         Trojan.PSRunner/JS!1.1356E (CLASSIC)
+  Skyhigh                        BehavesLike.JS.Exploit.pm
+  Symantec                       ISB.Dropper!gen1
+  Varist                         JS/Phish.CBM
+
+## 2a753f687ad576ea9c2b...  (unbekannt)
+  APEX                           Malicious
+  AVG                            Win64:Malware-gen
+  Avast                          Win64:Malware-gen
+  Bkav                           W64.AIDetectMalware
+  Cylance                        Unsafe
+  DrWeb                          Trojan.PWS.Stealer.44911
+  ESET-NOD32                     Generik.CGLPULQ trojan
+  Fortinet                       Python/Runner.BM!tr
+  Google                         Detected
+  Ikarus                         Trojan.Python.Runner
+  Kaspersky                      UDS:Trojan-PSW.Win32.Disco.gen
+  Malwarebytes                   Trojan.Runner
+  McAfeeD                        ti!2A753F687AD5
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Stealer.Greedy!8.133BA (RDMK:cmRtazoab6AqrpXgmlLuFKO68kWf)
+  SentinelOne                    Static AI - Suspicious PE
+  Tencent                        Malware.Win32.Gencirc.10c439e9
+  TrellixENS                     Artemis!614E731DB65B
+  Varist                         W64/Agent.ZAXV-4292
