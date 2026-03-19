@@ -1,0 +1,149 @@
+# IOC Export  2026-03-19_08-50-UTC
+# 13 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+88e156291d0a765e5c9b60daa6bd53c6ad75022e63ab286effe120aa6c16c222  # RAT | R=88.9 | AsyncRAT | exe
+49cc85523f6117a6453636656046c78fcb1aff7380e6a72c9d78987af6a31d86  # Botnet/IoT | R=83.7 | Mirai | elf
+b961d093005bdadcee5b4c0258df85a48e6ca0f5d38f32d01e33cf2518545437  # Botnet/IoT | R=83.6 | Mirai | elf
+07fa4a92aa5295a701683290d5080970810723df64b1d1fd7bf4f70606ffb8c3  # Loader | R=64.0 | unbekannt | exe
+02b7edadae376ef4e7ffc713f413aa50efb3e329c4a45a45f3cb726fb10bb2f5  # Loader | R=64.0 | unbekannt | exe
+afc14f8ce7e4f0ec1d5c06b91e0a45908195282c646c0f58d64aa488f964f74d  # Skript/Dropper | R=38.3 | unbekannt | js
+a2862e4d2c722c7bfc86aa6c2c589455659b7a4ce6bb15ae55706df40e0f1f4e  # Skript/Dropper | R=38.3 | unbekannt | js
+bedf959667ff23dc1365a0d0762c4b52d3181d4824d44ee53ebcc767a97753d3  # Skript/Dropper | R=38.3 | unbekannt | js
+240068f98bd3e3213351ebdac3a0e9657f9a17506e43425ea3ed19f14e17cf21  # Andere / Unbekannt | R=36.9 | unbekannt | dll
+1f57a7ad9fa56f6a9f794667be10778602049edf2292eb573fd0efb9df95fb84  # Andere / Unbekannt | R=36.4 | unbekannt | exe
+cb14c05efa0cecbbda853d4a063aca4161e96bbaf6e763eb4bc2a3db315c7bc7  # Andere / Unbekannt | R=31.9 | unbekannt | unknown
+9adddf4aec898383ac1c244e671e57518da6b047e0db89a371e06bc6ba93b044  # Andere / Unbekannt | R=31.9 | unbekannt | jse
+6887cfa51d87a3cc2393531076c5b7f2a0a2cd06d2fe9705c7b262e90fc26715  # Andere / Unbekannt | R=26.4 | unbekannt | sh
+
+[Tags]
+AsyncRAT
+Gafgyt
+Mirai
+dropped-by-Amadey
+elf
+exe
+fbf543
+js
+sh
+zusy
+
+[VT Engine Detections]
+
+## 1f57a7ad9fa56f6a9f79...  (unbekannt)
+  APEX                           Malicious
+  AVG                            MalwareX-gen [Rat]
+  AhnLab-V3                      Trojan/Win.Formbook.X2183
+  Antiy-AVL                      Trojan/Generic.ASMalwNH.6FA1E
+  Avast                          MalwareX-gen [Rat]
+  Bkav                           W32.AIDetectMalware.CS
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Generik.NWKMUSB trojan
+  Elastic                        malicious (high confidence)
+  Fortinet                       MSIL/AgentTesla.I!tr
+  GData                          Win32.Trojan.Agent.0ZLYB0
+  Google                         Detected
+  Ikarus                         Trojan.MSIL.Crypt
+  Kaspersky                      UDS:DangerousObject.Multi.Generic
+  Kingsoft                       malware.kb.c.999
+  Malwarebytes                   MachineLearning/Anomalous.95%
+  McAfeeD                        ti!1F57A7AD9FA5
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Malware.Obfus/MSIL@AI.94 (RDM.MSIL2:ShW8XrEcsk3VBNXOdIvy7Q)
+  Sangfor                        Trojan.Win32.Agent.Amr9
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         ML/PE-A
+  Trapmine                       malicious.moderate.ml.score
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04C9z
+  VBA32                          Malware-Cryptor.MSIL.AgentTesla.Heur
+  Varist                         W32/MSIL_Agent.KBL.gen!Eldorado
+  VirIT                          Trojan.Win32.MSIL_Heur.A
+  huorong                        Trojan/MSIL.Injector.nj
+
+## 240068f98bd3e3213351...  (unbekannt)
+  ALYac                          Gen:Variant.Zusy.581405
+  AhnLab-V3                      Trojan/Win.Loader.R711999
+  Alibaba                        Trojan:Win32/MalwareX.2e1b58e5
+  Antiy-AVL                      Trojan/Win32.Sabsik
+  Arcabit                        Trojan.Zusy.D8DF1D
+  BitDefender                    Gen:Variant.Zusy.581405
+  CAT-QuickHeal                  Trojan.Ghanarava.1773907882d00839
+  CTX                            dll.trojan.msil
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     MSIL/Injector.WSF trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Zusy.581405 (B)
+  GData                          Gen:Variant.Zusy.581405
+  Kaspersky                      HEUR:Trojan.MSIL.Agent.gen
+  Kingsoft                       MSIL.Trojan.Agent.gen
+  Lionic                         Trojan.Win32.Zusy.4!c
+  Malwarebytes                   Malware.AI.108922818
+  MaxSecure                      Trojan.Malware.74167952.susgen
+  McAfeeD                        ti!240068F98BD3
+  MicroWorld-eScan               Gen:Variant.Zusy.581405
+  Microsoft                      Trojan:Win32/Wacatac.C!ml
+  Paloalto                       generic.ml
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        BehavesLike.Win32.Infected.tm
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  TrellixENS                     Artemis!362A05C05433
+  TrendMicro-HouseCall           TROJ_GEN.R002H09CD26
+  VIPRE                          Gen:Variant.Zusy.581405
+  Varist                         W32/MSIL_Troj.C.gen!Eldorado
+  alibabacloud                   Trojan:MSIL/Zusy.Gen
+  huorong                        Trojan/MSIL.Injector.qh
+
+## 07fa4a92aa5295a70168...  (unbekannt)
+  AVG                            Win64:MalwareX-gen [Cryp]
+  AhnLab-V3                      Trojan/Win.Kryptik.R764767
+  Antiy-AVL                      GrayWare/Win32.Wacapew
+  Arcabit                        Trojan.Tedy.DDEE38
+  Avast                          Win64:MalwareX-gen [Cryp]
+  BitDefender                    Gen:Variant.Midie.176929
+  Bkav                           W64.AIDetectMalware
+  CTX                            exe.unknown.midie
+  ESET-NOD32                     Win64/Kryptik.GNQ trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Midie.176929 (B)
+  Fortinet                       W64/Agent.AKO!tr
+  GData                          Gen:Variant.Tedy.912952
+  Google                         Detected
+  K7AntiVirus                    Riskware ( 0040eff71 )
+  K7GW                           Riskware ( 0040eff71 )
+  Malwarebytes                   Spyware.Passwordstealer.Generic
+  MicroWorld-eScan               Gen:Variant.Tedy.912952
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Panda                          Trj/GdSda.A
+  Rising                         Trojan.Kryptik!8.8 (TFE:5:2WfxLnjK2vT)
+  Varist                         W64/Delf.ZE.gen!Eldorado
+  Webroot                        Win.Trojan.Gen
+
+## 02b7edadae376ef4e7ff...  (unbekannt)
+  AVG                            Win64:MalwareX-gen [Cryp]
+  AhnLab-V3                      Trojan/Win.Kryptik.R764767
+  Antiy-AVL                      GrayWare/Win32.Wacapew
+  Arcabit                        Trojan.Tedy.DDEE38
+  Avast                          Win64:MalwareX-gen [Cryp]
+  BitDefender                    Gen:Variant.Midie.176929
+  Bkav                           W64.AIDetectMalware
+  CTX                            exe.unknown.midie
+  ESET-NOD32                     Win64/Kryptik.GNQ trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Midie.176929 (B)
+  Fortinet                       W64/Agent.AKO!tr
+  GData                          Gen:Variant.Tedy.912952
+  Google                         Detected
+  K7AntiVirus                    Riskware ( 0040eff71 )
+  K7GW                           Riskware ( 0040eff71 )
+  Malwarebytes                   Spyware.Passwordstealer.Generic
+  MicroWorld-eScan               Gen:Variant.Tedy.912952
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Panda                          Trj/GdSda.A
+  Rising                         Trojan.Kryptik!8.8 (TFE:5:2WfxLnjK2vT)
+  Varist                         W64/Delf.ZE.gen!Eldorado
+  Webroot                        Win.Trojan.Gen
