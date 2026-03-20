@@ -1,0 +1,127 @@
+# IOC Export  2026-03-20_02-27-UTC
+# 5 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+2d04db4989b20f9b9a4b77ff3e14bdb2112159a9172cb186a623de5d65cc8fb6  # Infostealer | R=68.6 | ACRStealer | dll
+ab5a5aa399949370a99cfc953d9e93a11c7a5c16623f9ce3b94da126e3c9bd49  # Loader | R=60.4 | OffLoader | exe
+c14e519bb36a26fab5708bd3b880bf109520c239a1ddce57d63df1b62da1e99f  # Loader | R=56.6 | OffLoader | exe
+08a1f9ca335c195d028e5f47b94f7e3b56945332b5f503ef60cdbba99c27998f  # Andere / Unbekannt | R=39.8 | unbekannt | exe
+8945dd2ad1a94efcd8d2a4d905005a2b8d3650dfc61b00fd777328d2fbd5f086  # Andere / Unbekannt | R=27.4 | unbekannt | msi
+
+[Tags]
+ACRStealer
+OffLoader
+dll
+dropped-by-Amadey
+exe
+fbf543
+msi
+
+[VT Engine Detections]
+
+## 8945dd2ad1a94efcd8d2...  (unbekannt)
+  ESET-NOD32                     PowerShell/TrojanDownloader.Agent.PSO trojan
+  Kaspersky                      HEUR:Trojan-Downloader.PowerShell.Agent.gen
+  Rising                         Trojan.Dyloader/PS!1.13C1C (CLASSIC)
+  Tencent                        Win32.Trojan-Downloader.Downloader.Najl
+
+## ab5a5aa399949370a99c...  (OffLoader)
+  APEX                           Malicious
+  AVG                            FileRepMalware [Misc]
+  Avast                          FileRepMalware [Misc]
+  CrowdStrike                    win/malicious_confidence_60% (D)
+  ESET-NOD32                     Generik.EEIQJYE trojan
+  Fortinet                       W32/PossibleThreat
+  GData                          Win32.Malware.KillAV.ONZU18@gen
+  Kaspersky                      Trojan.Win32.Agent.xcdcaj
+  Kingsoft                       Win32.Trojan.Agent.xcdcaj
+  Lionic                         Trojan.Win32.OffLoader.4!c
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Trojan.Undefined!8.1327C (CLOUD)
+  Trapmine                       suspicious.low.ml.score
+  huorong                        Trojan/Sechecker.a
+
+## 08a1f9ca335c195d028e...  (unbekannt)
+  ALYac                          IL:Trojan.MSILZilla.246312
+  APEX                           Malicious
+  AVG                            MalwareX-gen [Trj]
+  Alibaba                        Trojan:MSIL/GenKryptik.0b896dcd
+  Arcabit                        IL:Trojan.MSILZilla.D3C228
+  Avast                          MalwareX-gen [Trj]
+  BitDefender                    IL:Trojan.MSILZilla.246312
+  Bkav                           W32.AIDetectMalware.CS
+  CAT-QuickHeal                  Trojan.Ghanarava.1773970203e70aa0
+  CTX                            exe.trojan.msilzilla
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     MSIL/GenKryptik.GZKT trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       IL:Trojan.MSILZilla.246312 (B)
+  Fortinet                       MSIL/Malheur.A!tr
+  GData                          IL:Trojan.MSILZilla.246312
+  Google                         Detected
+  Ikarus                         Win32.Outbreak
+  K7AntiVirus                    Trojan ( 005b7e031 )
+  K7GW                           Trojan ( 005b7e031 )
+  Kaspersky                      UDS:DangerousObject.Multi.Generic
+  Kingsoft                       MSIL.Trojan.Crypt.gen
+  Lionic                         Trojan.Win32.Crypt.4!c
+  Malwarebytes                   Trojan.MalPack
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        Trojan:Win/GenericPack.BMP
+  MicroWorld-eScan               IL:Trojan.MSILZilla.246312
+  Microsoft                      Trojan:MSIL/AgentTesla.ABG!MTB
+  Paloalto                       generic.ml
+  Panda                          Trj/GdSda.A
+  Rising                         Malware.Obfus/MSIL@AI.82 (RDM.MSIL2:tdN+rFwao7rNMnxARFZbQA)
+  Sangfor                        Suspicious.Win32.Save.pkr
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Troj/Krypt-ABH
+  Symantec                       Scr.Malcode!gdn34
+  Tencent                        Win32.Trojan.FalseSign.Szfl
+  TrellixENS                     Artemis!573B9D51E785
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04C9z
+  VirIT                          Trojan.Win32.MSIL_Heur.A
+  Webroot                        Win.Trojan.Gen
+  ZoneAlarm                      Troj/Krypt-AQM
+  alibabacloud                   Trojan:MSIL/AgentTesla.AKC2XJC
+  huorong                        HEUR:VirTool/MSIL.Obfuscator.gen!A
+
+## c14e519bb36a26fab570...  (OffLoader)
+  APEX                           Malicious
+  AVG                            Win32:Malware-gen
+  Avast                          Win32:Malware-gen
+  Cynet                          Malicious (score: 99)
+  Microsoft                      Trojan:Win32/Wacatac.H!ml
+  huorong                        Trojan/Sechecker.a
+
+## 2d04db4989b20f9b9a4b...  (ACRStealer)
+  ALYac                          Gen:Variant.Fragtor.933707
+  AVG                            MalwareX-gen [Misc]
+  Arcabit                        Trojan.Fragtor.DE3F4B
+  Avast                          MalwareX-gen [Misc]
+  BitDefender                    Gen:Variant.Fragtor.933707
+  CTX                            dll.unknown.fragtor
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win32/Kryptik.HZGG trojan
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Gen:Variant.Fragtor.933707 (B)
+  Fortinet                       W32/Kryptik.HZGG!tr
+  GData                          Gen:Variant.Fragtor.933707
+  Ikarus                         Win32.Outbreak
+  Lionic                         Trojan.Win32.Generic.4!c
+  Malwarebytes                   Trojan.MalPack
+  McAfeeD                        ti!2D04DB4989B2
+  MicroWorld-eScan               Gen:Variant.Fragtor.933707
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Malware.Undefined!8.C (TFE:2:BtBcvIVLLPQ)
+  Sangfor                        Trojan.Win32.Kryptik.Vrby
+  Sophos                         Mal/Generic-S
+  Tencent                        Win32.Trojan.Kryptik.Uwhl
+  TrellixENS                     Artemis!5BEEF4725E28
+  VBA32                          BScope.TrojanPSW.Amatera
+  alibabacloud                   Trojan:Win/Wacatac.B9nj
+  tehtris                        Generic.Malware
