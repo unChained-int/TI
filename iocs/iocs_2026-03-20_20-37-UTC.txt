@@ -1,0 +1,52 @@
+# IOC Export  2026-03-20_20-37-UTC
+# 4 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+6657e66a20def1f0b3f4c152081c313c7ba560c7a78eb0b129067451adc3f7fb  # Infostealer | R=63.3 | ACRStealer | exe
+1d61e4b9490bd6d9ae2dc75c3a029e284bb0dba5578b0b1f607e0c5b70423204  # Linux-Malware | R=43.3 | unbekannt | elf
+168ebef015c15420620fea9740ef0c8d1c073d794c92aead2d1eb82b9b2447d5  # Skript/Dropper | R=36.4 | unbekannt | js
+ee8fdff04d552d6d5781d5f3893231582c6f6e367ff2c4deaa964476331a824c  # Andere / Unbekannt | R=27.1 | unbekannt | msi
+
+[Tags]
+ACRStealer
+ClearFake
+elf
+exe
+js
+msi
+signed
+
+[VT Engine Detections]
+
+## 6657e66a20def1f0b3f4...  (ACRStealer)
+  Bkav                           W64.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Symantec                       ML.Attribute.HighConfidence
+
+## 168ebef015c15420620f...  (unbekannt)
+  AVG                            Other:Malware-gen [Trj]
+  Avast                          Other:Malware-gen [Trj]
+  Cynet                          Malicious (score: 99)
+  DrWeb                          JS.Muldrop.1170
+  ESET-NOD32                     JS/Kryptik.CYN trojan
+  Fortinet                       JS/Kryptik.CYN!tr
+  GData                          Script.Trojan.Agent.CNQZQ0
+  Google                         Detected
+  Ikarus                         Trojan-Downloader.JS.Agent
+  Kaspersky                      HEUR:Trojan.Script.Generic
+  Lionic                         Trojan.Script.Generic.4!c
+  McAfeeD                        Trojan:Script/AgentTesla.AC!1
+  Microsoft                      Trojan:Script/Phonzy.B!ml
+  Rising                         Trojan.Kryptik/JS!8.10DBE (TOPIS:E0:G7mSAeQx5GI)
+  Symantec                       Trojan.Gen.NPE
+  Tencent                        Script.Trojan.Generic.Mjgl
+  Varist                         ABTrojan.MPFG-
+  alibabacloud                   Trojan:Javascript/Wacatac.B9nj
+
+## ee8fdff04d552d6d5781...  (unbekannt)
+  ESET-NOD32                     PowerShell/TrojanDownloader.Agent.PSO trojan
+  Kaspersky                      HEUR:Trojan-Downloader.PowerShell.Agent.gen
+  Kingsoft                       Win32.Troj.Unknown.a
+  Rising                         Trojan.Dyloader/PS!1.13C1C (CLASSIC)
+  huorong                        TrojanDownloader/PS.Agent.gw
