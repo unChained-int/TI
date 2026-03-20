@@ -1,0 +1,75 @@
+# IOC Export  2026-03-20_14-47-UTC
+# 21 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+17e94d45a23f0b0df195f7c52ebbc55db0178d8e93bea2328b8761a2d6a771fb  # RAT | R=81.0 | unbekannt | zip
+2d9435152cc275327c6f84832d4a3468ce677879cc350338f12296c276bb4227  # RAT | R=61.3 | Gh0stRAT | exe
+0c2856990fc81dddec806d95fafe1287232445106eb5f70216bba4eed52e03db  # Loader | R=56.8 | unbekannt | unknown
+70248962c3eeee9d74c4637c46b0356689c21315910d746894cd8e8086c7192a  # Skript/Dropper | R=38.7 | unbekannt | ps1
+1234b313e10a9a92dadb9644e03d5dae24a6bea0c209866bb2debdedffa28b9c  # Skript/Dropper | R=38.7 | unbekannt | ps1
+ceff35d3a3fc3ac3ed48f7505e96e676c3c81665a15e2e7afbf7896eea76e62a  # Skript/Dropper | R=38.7 | unbekannt | ps1
+e4642f0e905567e6ebd4ce75c3adfa46503415d4c18ac4b5b59814c78b0d4c4b  # Skript/Dropper | R=38.7 | unbekannt | ps1
+bfc6725c9f1f9c14b29f0875322e2374bb9c8291150e27e7f7f788981bed4665  # Skript/Dropper | R=37.7 | unbekannt | ps1
+c7fe86aed191cb848d436b49602f3c351921030cf9e6879d9f8b438243abb63d  # Linux-Malware | R=36.2 | unbekannt | elf
+23c671b6cc6cc2aeb3be51b9885e81a030b0a3b2ad7f07f09e47bee6c7fe6bf9  # Andere / Unbekannt | R=32.6 | unbekannt | unknown
+0c3cdd49f8a84bcb3e710806544cb7de9414a3490b74f0ed78672110712e6d3a  # Andere / Unbekannt | R=32.6 | unbekannt | sh
+5ef1ac71ab40e2ff87dbef0912a18d0c31901939af7b59bc24a5921e39a48293  # Andere / Unbekannt | R=31.8 | unbekannt | zip
+b3ff86f6fc849693a84e525b4839a58111c530c60fb117739a23dc7a7441f56c  # Andere / Unbekannt | R=31.5 | unbekannt | macho
+e87caad17c5ddb66860c9c3f4301fd852502cb7d9e35d320d95c3d2a7b452552  # Andere / Unbekannt | R=31.5 | AgentTesla | exe
+292a74d8e56e7605802cace34f2ee9adef38a1455970b7468a83061ad86550da  # Andere / Unbekannt | R=31.5 | unbekannt | macho
+b93494549d589123455cd244d75765df29fdaf12b29f3faa4a16483d702a435f  # Andere / Unbekannt | R=31.4 | unbekannt | macho
+ada7fd7409b64c2e0ee8aa0cea747a756561440b9ddb465ebad600d3ae1b1c1f  # Andere / Unbekannt | R=31.4 | unbekannt | macho
+2df91afaee60aa8a5dca05ff48acc26ea9096b7d6efb4cfc8911461ff9c63dad  # Andere / Unbekannt | R=31.4 | unbekannt | exe
+8e9f6d5fe55bfcf8f5744c13e3ddde132b9932ae84aaf05c6d564d0112735cd9  # Andere / Unbekannt | R=31.4 | unbekannt | unknown
+bdf731c1a813df3c97b75d6fbebad5a5cf89e22a54931b89a00a409358324b1b  # Andere / Unbekannt | R=31.3 | unbekannt | rar
+fa22e94a98d19959c82580dc1cafcfc6ec762ed57dea9f48e3b7d0f9279a8cce  # Andere / Unbekannt | R=31.3 | unbekannt | exe
+
+[Tags]
+43-134-7-102
+AgentTesla
+Gh0stRAT
+KongTuke
+SmartApeSG
+asyncrat
+dropped-by-Amadey
+elf
+exe
+fbf543
+macho
+ps1
+rar
+sh
+task-vault-54a2-356814497283
+zip
+
+[VT Engine Detections]
+
+## c7fe86aed191cb848d43...  (unbekannt)
+  AhnLab-V3                      Suspicious/Linux.MalPack.XE234
+  ESET-NOD32                     Linux/Agent.XM trojan
+  Kaspersky                      HEUR:Rootkit.Linux.Agent.ej
+  Microsoft                      HackTool:Linux/MalPack.B
+  Tencent                        Trojan.Linux.Agent.ya
+  alibabacloud                   Trojan:Linux/P2Pinfect.Client.B
+  huorong                        Trojan/Linux.Agent.dn
+
+## 0c3cdd49f8a84bcb3e71...  (unbekannt)
+  AVG                            BV:Agent-BNR [Trj]
+  AhnLab-V3                      Downloader/Shell.Generic.S1990
+  Avast                          BV:Agent-BNR [Trj]
+  Avira                          BASH/Dldr.G4
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.MulDrop.187
+  ESET-NOD32                     Linux/Agent.OG trojan
+  F-Secure                       Malware.BASH/Dldr.G4
+  Fortinet                       BASH/EncystPHP.A!tr
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.bc
+  McAfeeD                        Trojan:Win/GenericY.GXO
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  NANO-Antivirus                 Trojan.Script.Dropper.kpvdnu
+  Rising                         Downloader.Agent/BASH!9.64542 (XSE:WFNFX0JBVDq488j0ESAikbd9xYVrf4+U)
+  Tencent                        Trojan-DL.Linux.Agent.505004
+  Varist                         Unix/Agent.VA
+  ZoneAlarm                      Linux/Dldr-YZ
+  huorong                        TrojanDownloader/Linux.Agent.en
