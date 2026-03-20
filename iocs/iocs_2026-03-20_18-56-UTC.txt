@@ -1,0 +1,119 @@
+# IOC Export  2026-03-20_18-56-UTC
+# 5 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+d51ea87c715039f7c8902c8698520ff59afc13a4c7ff5ccfa15085d0f1bcdd24  # Infostealer | R=72.3 | RedLineStealer | js
+475ac7aac96ed4d60028f3f267946d3e2071b82f05f0e0a432f0e5e6ea0f3ff5  # Loader | R=63.5 | unbekannt | exe
+da358ee183526c39b4f3d2172b7f21819d815f516c44a6c5c5a398ffe398f5da  # Andere / Unbekannt | R=35.5 | unbekannt | dll
+c242afc00e978ce32db7b490116d948b3da14ecb6e170dcf0e69ce2cd9d96f1e  # Andere / Unbekannt | R=29.3 | unbekannt | exe
+7c9279815946443e6414dc671ebeab5bcb9b31a141d1619af156dc0b7bbf89b3  # Andere / Unbekannt | R=28.7 | unbekannt | exe
+
+[Tags]
+RedLineStealer
+dll
+dropped-by-Amadey
+exe
+fbf543
+js
+signed
+
+[VT Engine Detections]
+
+## 475ac7aac96ed4d60028...  (unbekannt)
+  ALYac                          Gen:Variant.Trojan.Ransomware.2040
+  APEX                           Malicious
+  Arcabit                        Trojan.Trojan.Ransomware.D7F8
+  BitDefender                    Gen:Variant.Trojan.Ransomware.2040
+  Bkav                           W32.AIDetectMalware
+  CTX                            exe.ransomware.generic
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  Cynet                          Malicious (score: 100)
+  ESET-NOD32                     Win32/Kryptik.HZFE trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Trojan.Ransomware.2040 (B)
+  GData                          Win32.Trojan.PSE.1DOFP5V
+  Kaspersky                      VHO:Trojan-PSW.Win32.Stealer.gen
+  Malwarebytes                   Malware.AI.270428846
+  MicroWorld-eScan               Gen:Variant.Trojan.Ransomware.2040
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Symantec                       ML.Attribute.HighConfidence
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04C9z
+  VBA32                          BScope.Trojan.Fsysna
+  VIPRE                          Gen:Variant.Trojan.Ransomware.2040
+
+## c242afc00e978ce32db7...  (unbekannt)
+  AVG                            FileRepMalware [Trj]
+  Antiy-AVL                      GrayWare/Win32.Wacapew
+  Avast                          FileRepMalware [Trj]
+  Bkav                           W64.AIDetectMalware
+  ESET-NOD32                     Win64/Kryptik.EOI trojan
+  Fortinet                       W64/Agent.AKO!tr
+  McAfeeD                        Trojan:Win/Ulise.EBW
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Trojan.Kryptik!8.8 (TFE:5:LC9wNE3GnmE)
+  Webroot                        Win.Trojan.Gen
+
+## d51ea87c715039f7c890...  (RedLineStealer)
+  AVG                            Other:Malware-gen [Trj]
+  Avast                          Other:Malware-gen [Trj]
+  Cynet                          Malicious (score: 99)
+  DrWeb                          JS.Muldrop.1170
+  ESET-NOD32                     JS/Kryptik.CYN trojan
+  Fortinet                       JS/Kryptik.CYN!tr
+  Google                         Detected
+  Ikarus                         Trojan-Downloader.JS.Agent
+  Kaspersky                      HEUR:Trojan.Script.Generic
+  McAfeeD                        Trojan:Script/AgentTesla.AC!1
+  NANO-Antivirus                 Trojan.Script.Heuristic-js.iacgm
+  Rising                         Trojan.Kryptik/JS!8.10DBE (TOPIS:E0:G7mSAeQx5GI)
+  Skyhigh                        BehavesLike.JS.Exploit.tm
+  Symantec                       XSNet.Heur!gen12
+  Varist                         JS/Agent.DRF!Eldorado
+
+## 7c9279815946443e6414...  (unbekannt)
+  AVG                            FileRepMalware [Trj]
+  Antiy-AVL                      GrayWare/Win32.Wacapew
+  Avast                          FileRepMalware [Trj]
+  Bkav                           W64.AIDetectMalware
+  ESET-NOD32                     Win64/Kryptik.EOI trojan
+  Fortinet                       W64/Agent.AKO!tr
+  Kaspersky                      UDS:Trojan.Win64.Agent
+  McAfeeD                        Trojan:Win/Ulise.EBW
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Trojan.Kryptik!8.8 (TFE:5:LC9wNE3GnmE)
+  Webroot                        Win.Trojan.Gen
+
+## da358ee183526c39b4f3...  (unbekannt)
+  ALYac                          Gen:Variant.MSILHeracles.249997
+  AVG                            Win32:MalwareX-gen [Inj]
+  AhnLab-V3                      Trojan/Win.Generic.C4409000
+  Alibaba                        Trojan:MSIL/Injector.020fbe75
+  Arcabit                        Trojan.MSILHeracles.D3D08D
+  Avast                          Win32:MalwareX-gen [Inj]
+  Avira                          HEUR/AGEN.1326624
+  BitDefender                    Gen:Variant.MSILHeracles.249997
+  CTX                            dll.trojan.msil
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     MSIL/Injector.WJO trojan
+  Emsisoft                       Gen:Variant.MSILHeracles.249997 (B)
+  F-Secure                       Heuristic.HEUR/AGEN.1326624
+  GData                          Gen:Variant.MSILHeracles.249997
+  Google                         Detected
+  Ikarus                         Trojan.MSIL.Injector
+  K7AntiVirus                    Trojan ( 006614911 )
+  K7GW                           Trojan ( 006614911 )
+  Malwarebytes                   RiskWare.Injector
+  McAfeeD                        ti!DA358EE18352
+  MicroWorld-eScan               Gen:Variant.MSILHeracles.249997
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Trojan.Injector!8.C4 (CLOUD)
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Win32.Trojan.Agen.Fmnw
+  TrellixENS                     Artemis!92459C1925A7
+  TrendMicro-HouseCall           TROJ_GEN.R002H09CI26
+  VIPRE                          Gen:Variant.MSILHeracles.249997
+  Varist                         W32/Injector.BTP.gen!Eldorado
+  alibabacloud                   Trojan:MSIL/MSILHeracles.Gen
