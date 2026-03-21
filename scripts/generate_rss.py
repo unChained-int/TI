@@ -1,14 +1,3 @@
-#!/usr/bin/env python3
-"""
-scripts/generate_rss.py
-Baut rss.xml aus allen Reports der letzten 24h.
-Jeder Feed-Eintrag enthält die vollen Statistiken:
-  - Anzahl Samples, Familien, Dateitypen
-  - Risiko-Verteilung
-  - VT-Ergebnisse mit expliziten Engine-Namen
-  - MITRE-Techniken
-  - IOC-Liste (SHA256)
-"""
 import json
 import re
 from datetime import datetime, timezone
