@@ -1,0 +1,175 @@
+# IOC Export  2026-03-22_08-40-UTC
+# 7 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+324913605c99f61689635c6e58dee8a1f874c25688d73c150ac19f581f9c2028  # RAT | R=88.8 | njrat | exe
+0a3a4e59ed20a0bbf6dc223c022936d4d10725e289b29736355cf88c253c1636  # Infostealer | R=81.3 | PythonStealer | exe
+656c6585eed987efb12836b59447f9fce7dc4399f63c95427c05fbff3cb52bba  # Infostealer | R=81.0 | RustyStealer | exe
+5de69288c38d0d190094ec639c1942a2fc5a902893c6e2fc04a47b9e786d6c91  # RAT | R=80.6 | ValleyRAT | exe
+8f7c9fc8220f2ea82caf6e26d57514b24ce594b1d3d042c538cb81bc5a18cb1a  # Infostealer | R=78.2 | RustyStealer | exe
+9f456ac3a5cab72c7fa76e7dfb5aa41a45592bae2062bda92a46f09336a22c10  # RAT | R=76.3 | AsyncRAT | exe
+04a68582f89411908497308a591ec680ece61f60ae477eafcc20f4f03d8351bb  # Trojaner | R=66.7 | ACRStealer | dll
+
+[Tags]
+AsyncRAT
+PythonStealer
+RAT
+RustyStealer
+ValleyRAT
+dropped-by-Amadey
+exe
+fbf543
+njrat
+rat
+
+[VT Engine Detections]
+
+## 0a3a4e59ed20a0bbf6dc...  (PythonStealer) | Defender: ✗ nicht erkannt
+   Erkannt: 17/76 Engines (22.4%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  Bkav                           W64.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Python/Packed.Nuitka_AGen.ED suspicious application
+  Elastic                        malicious (high confidence)
+  Google                         Detected
+  Gridinsoft                     Trojan.Heur!.0301202B
+  Ikarus                         Trojan.Win64.Krypt
+  Jiangmin                       Trojan.Redcap.de
+  Microsoft                      Trojan:Win32/Wacatac.C!ml
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Generic ML PUA (PUA)
+  Trapmine                       malicious.high.ml.score
+  Zillya                         Trojan.Encoder.Win32.4905
+
+## 5de69288c38d0d190094...  (ValleyRAT) | Defender: ✗ nicht erkannt
+   Erkannt: 17/76 Engines (22.4%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AVG                            Win64:MalwareX-gen [Rat]
+  Avast                          Win64:MalwareX-gen [Rat]
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  Elastic                        malicious (high confidence)
+  Kaspersky                      UDS:Trojan.Win64.Generic
+  Kingsoft                       Win64.Trojan.Generic.a
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        ti!5DE69288C38D
+  Sangfor                        Trojan.Win64.Agent.Vuz5
+  SentinelOne                    Static AI - Suspicious PE
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  TrellixENS                     Artemis!F13695675E5A
+
+## 9f456ac3a5cab72c7fa7...  (AsyncRAT) | Defender: ✓ Generic.AsyncRAT.Marte.B.E03F559A
+   Erkannt: 47/76 Engines (61.8%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Generic.AsyncRAT.Marte.B.E03F559A
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Rat]
+  AhnLab-V3                      Malware/Win.Generic.C5327890
+  Antiy-AVL                      Trojan[Backdoor]/MSIL.Crysan
+  Arcabit                        Generic.AsyncRAT.Marte.B.E03F559A
+  Avast                          Win32:MalwareX-gen [Rat]
+  Avira                          TR/Spy.Gen8
+  BitDefender                    Generic.AsyncRAT.Marte.B.E03F559A
+  Bkav                           W32.AIDetectMalware.CS
+  CTX                            exe.unknown.asyncrat
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          BackDoor.AsyncRATNET.2
+  ESET-NOD32                     MSIL/AsyncRAT.A trojan
+  Elastic                        Windows.Generic.Threat
+  Emsisoft                       Generic.AsyncRAT.Marte.B.E03F559A (B)
+  F-Secure                       Trojan.TR/Spy.Gen8
+  Fortinet                       MSIL/AsyncRAT.A!tr
+  GData                          MSIL.Backdoor.DCRat.D
+  Google                         Detected
+  Ikarus                         Backdoor.AsyncRat
+  K7AntiVirus                    Trojan ( 700000201 )
+  K7GW                           Trojan ( 700000201 )
+  Kaspersky                      HEUR:Backdoor.MSIL.Crysan.gen
+  Kingsoft                       malware.kb.c.997
+  Malwarebytes                   Backdoor.AsyncRAT
+  McAfeeD                        Trojan:Win/AsyncRAT.AA
+  MicroWorld-eScan               Generic.AsyncRAT.Marte.B.E03F559A
+  Microsoft                      Backdoor:MSIL/AsyncRat.AD!MTB
+  Panda                          Trj/GdSda.A
+  Rising                         Trojan.AntiVM!1.CF63 (CLASSIC)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        Fareit-FZT!16EF97504F39
+  Sophos                         ML/PE-A
+  Tencent                        Backdoor.Msil.Dcrat.16002822
+  Trapmine                       malicious.moderate.ml.score
+  TrellixENS                     Fareit-FZT!16EF97504F39
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04C9z
+  VBA32                          Trojan.MSIL.Autorave.Heur
+  VIPRE                          Generic.AsyncRAT.Marte.B.E03F559A
+  Varist                         W32/Samas.B.gen!Eldorado
+  VirIT                          Trojan.Win32.MSIL_Heur.A
+  Webroot                        W32.Malware.gen
+  huorong                        Backdoor/MSIL.DcRat.a
+
+## 8f7c9fc8220f2ea82caf...  (RustyStealer) | Defender: ✓ IL:Trojan.MSILZilla.212726
+   Erkannt: 25/76 Engines (32.9%) — 🟡 SCHWACH ERKANNT
+  ALYac                          IL:Trojan.MSILZilla.212726
+  AhnLab-V3                      Trojan/Win.MSILZilla.C5858129
+  Arcabit                        IL:Trojan.MSILZilla.D33EF6
+  BitDefender                    IL:Trojan.MSILZilla.212726
+  Bkav                           W64.AIDetectMalware.CS
+  CTX                            exe.trojan.msilzilla
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     MSIL/Kryptik.AOBO trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       IL:Trojan.MSILZilla.212726 (B)
+  Fortinet                       MSIL/Kryptik.EHD!tr
+  GData                          IL:Trojan.MSILZilla.212726
+  Google                         Detected
+  Ikarus                         Trojan.MSIL.Crypt
+  Kaspersky                      UDS:Trojan.MSIL.Agent.gen
+  Malwarebytes                   Trojan.Crypt
+  McAfeeD                        Trojan:Win/Injectnet.EAE
+  MicroWorld-eScan               IL:Trojan.MSILZilla.212726
+  Microsoft                      Program:Win32/Wacapew.C!ml
+  Rising                         Malware.Obfus/MSIL@AI.84 (RDM.MSIL2:qIM1rEgNL1JPsNFBhwPn9w)
+  SentinelOne                    Static AI - Suspicious PE
+  Tencent                        Win32.Trojan.W64.Ydkl
+  VIPRE                          IL:Trojan.MSILZilla.212726
+
+## 04a68582f89411908497...  (ACRStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan:Win32/Etset!rfn
+   Erkannt: 29/76 Engines (38.2%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Lazy.712271
+  AhnLab-V3                      Trojan/Win.Generic.C5857902
+  Alibaba                        Trojan:Win32/Kryptik.6813d433
+  Antiy-AVL                      Trojan/Win32.GenericML
+  Arcabit                        Trojan.Lazy.DADE4F
+  CTX                            dll.trojan.genericml
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  Emsisoft                       Gen:Variant.Lazy.712271 (B)
+  Fortinet                       W32/GenKryptik.HPZZ!tr
+  GData                          Gen:Variant.Lazy.712271
+  Google                         Detected
+  Ikarus                         Trojan.Win32.Krypt
+  K7AntiVirus                    Trojan ( 006dc7871 )
+  K7GW                           Trojan ( 006dc7871 )
+  Lionic                         Trojan.Win32.GenericML.4!c
+  Malwarebytes                   Trojan.MalPack
+  McAfeeD                        ti!04A68582F894
+  MicroWorld-eScan               Gen:Variant.Lazy.712271
+  Microsoft                      Trojan:Win32/Etset!rfn
+  Paloalto                       generic.ml
+  Sangfor                        Trojan.Win32.Kryptik.Vdjd
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Win32.Trojan.Avi.Ozfl
+  VIPRE                          Gen:Variant.Lazy.712271
+  Varist                         W32/ABTrojan.YPTH-4258
+  alibabacloud                   Trojan:Win/Etset.Gen
