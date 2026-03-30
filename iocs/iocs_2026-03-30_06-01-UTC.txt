@@ -1,0 +1,118 @@
+# IOC Export  2026-03-30_06-01-UTC
+# 23 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+7021a1d997076a913a0d7d3f723ddb897fc1f63c5cecc87a0a737846a95390f5  # RAT | R=89.5 | NetSupport | ps1
+ed0b26555214dc2af3fa7052e62a55d84b8afa548374ea80f8b43f0f3e746ed5  # RAT | R=89.5 | NetSupport | rar
+cd08f3eb5fffff86b21717d458e75b7005331d03849fafe597ced750e3e41b55  # Botnet/IoT | R=83.9 | Mirai | elf
+23ce78d055be74cfb1e48e0710bbbe7a521a6aad6e7cbc125d6936a216c656a8  # Botnet/IoT | R=82.9 | Mirai | elf
+09aa60962df24d5047317489edc680baf32469a3cafa528803391434f00b15f6  # Botnet/IoT | R=82.9 | Mirai | elf
+32b7ac293d85e7a6d302192b99aa60f3b857cb11e73df7af5e25fc307c7bcaa0  # Botnet/IoT | R=82.8 | Mirai | elf
+be90278372d69bb7e268bba1f8b9b1d1bb596666262d408ef07f995b7f40d75f  # Botnet/IoT | R=82.7 | Mirai | elf
+0add5328d3c88ceeed171893e545f0bcf8ac7eb7ec4580eacaf57a29f59087e8  # Botnet/IoT | R=82.4 | Mirai | elf
+b399c3bf1089f50229ad2583e6cadf48534614cf7ac8a032aa26bff441978426  # Botnet/IoT | R=82.4 | Mirai | elf
+81675467497da5d00b688b689c44d40650efb034d2a3e5346a85204695c17b9a  # Botnet/IoT | R=82.2 | Mirai | elf
+de5f128ee8537d5bcb1da064cac431b078711c1f23ffc194b3d99af6ad4fd1e2  # Trojaner | R=81.9 | unbekannt | apk
+e904222262967fdd0d6e618a01dfb21404e5a520505af644ac989f38a8ca717f  # Infostealer | R=81.6 | ACRStealer | exe
+750e5ac3bb33d7ad4f9676ec40531b24c083cabe89683e40453f8e9d769ad1b7  # Trojaner | R=59.7 | SalatStealer | exe
+e568bda9bcb69f15cd39108fbd1dff583a26e1a9eb598240abf9c2b14f43d7aa  # Skript/Dropper | R=39.0 | unbekannt | js
+a241d95bfbd5998e27297059dc219826aca22c638862dd86d63f68ef33ed1cc6  # Skript/Dropper | R=38.8 | unbekannt | ps1
+16c285b302e9e57d77863f6449d946f5ad67056d61226bee7d36f673959fa6aa  # Andere / Unbekannt | R=32.6 | unbekannt | zip
+2f2af0029b55190dbcee3cc21a09f04a84b1ab10fb19d558c073dcd2fa158991  # Andere / Unbekannt | R=32.4 | unbekannt | html
+fc3c16eddb5024583045c4165332a0f89cce604bdff8015a13d965f787e2a18c  # Andere / Unbekannt | R=31.5 | unbekannt | unknown
+8972acbd9b89e233a1c130ee304467db86252fe09d16b3d76c68b4b0327e4319  # Andere / Unbekannt | R=31.1 | unbekannt | unknown
+d7f431a67d7614e56b6ac937c694eabc4834e4fa829708df268ab4cd1d56618e  # Andere / Unbekannt | R=30.6 | unbekannt | unknown
+1f758797be26b368f44da7f7bd3f89d5c95de2fda2288ae380c43a6890eee751  # Andere / Unbekannt | R=30.6 | unbekannt | unknown
+76745cb3932112b0a6e02630e42b71a631094ebb79edbeac0565ac7edb1b554d  # Andere / Unbekannt | R=30.5 | unbekannt | unknown
+70cf38c1ffa6be8ad47b26f21d771ff07d50043265a54b2945004cf8e1dccead  # Andere / Unbekannt | R=30.4 | unbekannt | unknown
+
+[Tags]
+5-188-87-38
+ACRStealer
+Hajime
+Mirai
+NetSupport
+SAgnt
+Trojan:AndroidOS/SAgnt!MSR
+agdosve-com
+apk
+asdasfa-com
+asfasfqwf-com
+booking
+client32
+elf
+exe
+html
+ini
+js
+ps1
+rar
+spam-ita
+www-vextgeas-com
+zip
+
+[VT Engine Detections]
+
+## cd08f3eb5fffff86b217...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 11/75 Engines (14.7%) — 🟡 SCHWACH ERKANNT
+  AVG                            ELF:CVE-2021-36260-A [Expl]
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai.ba
+  Avast                          ELF:CVE-2021-36260-A [Expl]
+  Avast-Mobile                   ELF:Mirai-CGF [Trj]
+  Cynet                          Malicious (score: 99)
+  Elastic                        Linux.Generic.Threat
+  Google                         Detected
+  SentinelOne                    Static AI - Suspicious ELF
+  Sophos                         Linux/DDoS-BI
+  ZoneAlarm                      Linux/DDoS-BI
+  huorong                        Trojan/Linux.Mirai.q
+
+## 750e5ac3bb33d7ad4f96...  (SalatStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan.GenericKDZ.116601
+   Erkannt: 47/75 Engines (62.7%) — 🟠 MÄSSIG ERKANNT
+  AhnLab-V3                      Trojan/Win.Generic.R727379
+  Alibaba                        TrojanBanker:Win32/SalatStealer.1f71e228
+  Antiy-AVL                      Trojan/Win32.SalatStealer
+  Arcabit                        Trojan.Generic.D1C779
+  Avira                          TR/AVI.SalatStealer.uirse
+  BitDefender                    Trojan.GenericKDZ.116601
+  Bkav                           W32.AIDetectMalware
+  CAT-QuickHeal                  Trojan.Agent
+  CTX                            exe.trojan.salatstealer
+  ClamAV                         Win.Malware.Salat-10058846-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     WinGo/Agent.VO trojan
+  Elastic                        Multi.Generic.Threat
+  Emsisoft                       Trojan.GenericKDZ.116601 (B)
+  F-Secure                       Trojan.TR/AVI.SalatStealer.uirse
+  Fortinet                       W32/Agent.VO!tr
+  GData                          Trojan.GenericKDZ.116601
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Agent.sa
+  Ikarus                         Trojan.WinGo.Agent
+  K7AntiVirus                    Spyware ( 006d58511 )
+  K7GW                           Spyware ( 006d58511 )
+  Kaspersky                      UDS:Trojan-Banker.Win32.Agent.gen
+  Kingsoft                       Win32.Trojan-Banker.Agent.gen
+  Lionic                         Trojan.Win32.SalatStealer.7!c
+  Malwarebytes                   Malware.AI.1485447620
+  MaxSecure                      Trojan.Malware.121218.susgen
+  McAfeeD                        Trojan:Win/Salat.EAC
+  MicroWorld-eScan               Trojan.GenericKDZ.116601
+  Microsoft                      Trojan:Win32/SalatStealer.SMX!MTB
+  Paloalto                       generic.ml
+  Panda                          Trj/CI.A
+  Rising                         Stealer.Salat!1.13A22 (CLASSIC)
+  Sangfor                        Infostealer.Win32.Salatstealer.Vkzr
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Trojan.Win32.Stealer.16001830
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04C9z
+  VBA32                          BScope.Trojan.Win64.Agent
+  VIPRE                          Trojan.GenericKDZ.116601
+  Varist                         W32/Agent.LNT.gen!Eldorado
+  alibabacloud                   Trojan:Multi/Rozena.SS
+  huorong                        Trojan/Agent.e!crit
