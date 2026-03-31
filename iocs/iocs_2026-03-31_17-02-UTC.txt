@@ -1,0 +1,139 @@
+# IOC Export  2026-03-31_17-02-UTC
+# 19 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+d778ecb3738036fe02b0cc768417d7f4101d2c22111ae3c4cddc6489802b2d4b  # Ransomware | R=88.5 | unbekannt | apk
+730e7bde97cbf96a282049c0430b294e2794f27773fcae9e970778d8ffe7e6a6  # Trojaner | R=84.2 | win/grayware_confidence_70% (D | exe
+6f71f386d698041999d5d5435b6f6e333755680acc320a1ce5005d4cc11cc08d  # Botnet/IoT | R=83.5 | Mirai | elf
+1164be3850808e9b4a26dca24da350dc0d91dc3d8526414fbaba38ca1b914c89  # Botnet/IoT | R=83.0 | Mirai | elf
+d07587127b553dfcb94fb20cca4f1830debe619a735759359a2bf4f96aad406b  # Botnet/IoT | R=83.0 | Mirai | elf
+221367d0998608cbf888f56cc107af6e4307606fb87bb53579dfcad1f0619819  # Trojaner | R=76.2 | FileRepMalware [Misc] | exe
+750e5ac3bb33d7ad4f9676ec40531b24c083cabe89683e40453f8e9d769ad1b7  # Trojaner | R=59.7 | SalatStealer | exe
+0fca9dae54a7a55f0805a864e9d2911d727a6e274f4ddc9b5673078130e0f9e1  # Linux-Malware | R=58.2 | Suspicious | elf
+4ae4199690fc83780271f7d1ed2f6214be0f70871cd949e09e94faa0b8f38534  # Skript/Dropper | R=55.3 | unbekannt | ps1
+bbb41ec382738c0ee5b94d023f023209928ca98893f146a8cfdaa608afe7b4e6  # Android-Malware | R=42.7 | unbekannt | apk
+5e48bbe1c62da18d4c0f2cca0f8855219c5a05f81c5fb64c1b4a0a6871fa8736  # Android-Malware | R=42.6 | unbekannt | apk
+42ba749a7b51f55bcf19bb425999c0848ad100c37e2494fb7ce44a18642ebf72  # Windows-Malware | R=39.0 | unbekannt | exe
+b7daa46b77f75188579b593906c597198726f0e6e57c7df79e31db3abc6e93ab  # Skript/Dropper | R=37.8 | AgentTesla | js
+fe8b23e2b61cef2172e19b1d414ecb6f3418ab5abb28ac9e555f715df78ac6e2  # Andere / Unbekannt | R=32.6 | unbekannt | unknown
+23195fe37a7345b36b06b1d49a0a6e4840cabaf75f34676b726b463975d5c8fd  # Andere / Unbekannt | R=32.5 | unbekannt | unknown
+911320677000b0c063912074729644699d29981cdbb2f5e5772a962aa7128cc2  # Andere / Unbekannt | R=32.1 | unbekannt | html
+d19e2c76da25c308d81295d3f24b876fa7eb76692576c6f7ec5aca015dcc7ffc  # Andere / Unbekannt | R=31.9 | unbekannt | unknown
+a97401834fff1b8cab82e8a7dc22a83f8e16a2fbf8a6103fad1afc04abd2074a  # Andere / Unbekannt | R=31.9 | unbekannt | unknown
+df39ecffbe1f3814862d260aa7a8ac58743a5d468a97264225f18e3503be4ade  # Andere / Unbekannt | R=31.7 | unbekannt | unknown
+
+[Tags]
+APT41
+AgentTesla
+Fakeapp
+Mirai
+Screenlocker
+Winnti
+apk
+booking
+clickfix
+elf
+exe
+exe-in-archive
+fakecaptcha
+gaowvdoxh-com
+html
+js
+ps1
+signed
+spamtrap
+trueconf_windows_client
+upx
+upx-dec
+
+[VT Engine Detections]
+
+## 730e7bde97cbf96a2820...  (win/grayware_confidence_70% (D) | Defender: ✗ nicht erkannt
+   Erkannt: 3/75 Engines (4.0%) — ⚠️ KAUM ERKANNT
+  CrowdStrike                    win/grayware_confidence_70% (D)
+  MaxSecure                      Trojan.Malware.300983.susgen
+  Trapmine                       malicious.high.ml.score
+
+## 221367d0998608cbf888...  (FileRepMalware [Misc]) | Defender: ✗ nicht erkannt
+   Erkannt: 27/75 Engines (36.0%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AVG                            FileRepMalware [Misc]
+  Antiy-AVL                      Trojan/Generic.ASMalwNS.F951B
+  Avast                          FileRepMalware [Misc]
+  Bkav                           W32.AIDetectMalware
+  CTX                            exe.trojan.generic
+  CrowdStrike                    win/malicious_confidence_90% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     NSIS/Injector.ASH trojan
+  Elastic                        malicious (high confidence)
+  Google                         Detected
+  Ikarus                         Win32.Outbreak
+  Kaspersky                      HEUR:Trojan-Downloader.Win32.Minix.gen
+  Kingsoft                       malware.kb.a.894
+  McAfeeD                        ti!221367D09986
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Trojan.Injector/NSIS!8.1294D (CLOUD)
+  Sangfor                        Trojan.Win32.Injector.V4cw
+  Skyhigh                        Artemis!Trojan
+  Sophos                         Mal/Generic-S
+  Symantec                       Scr.NSISHeur!gen3
+  TrellixENS                     Artemis!74D8AF3F3025
+  Varist                         W32/Guloader.FFLV-5839
+  alibabacloud                   Trojan:Script/Injector.bql
+  huorong                        Trojan/Injector.boq
+
+## 0fca9dae54a7a55f0805...  (Suspicious) | Defender: ✗ nicht erkannt
+   Erkannt: 1/76 Engines (1.3%) — ⚠️ KAUM ERKANNT
+  alibabacloud                   Suspicious
+
+## 750e5ac3bb33d7ad4f96...  (SalatStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan.GenericKDZ.116601
+   Erkannt: 47/75 Engines (62.7%) — 🟠 MÄSSIG ERKANNT
+  AhnLab-V3                      Trojan/Win.Generic.R727379
+  Alibaba                        TrojanBanker:Win32/SalatStealer.1f71e228
+  Antiy-AVL                      Trojan/Win32.SalatStealer
+  Arcabit                        Trojan.Generic.D1C779
+  Avira                          TR/AVI.SalatStealer.uirse
+  BitDefender                    Trojan.GenericKDZ.116601
+  Bkav                           W32.AIDetectMalware
+  CAT-QuickHeal                  Trojan.Agent
+  CTX                            exe.trojan.salatstealer
+  ClamAV                         Win.Malware.Salat-10058846-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     WinGo/Agent.VO trojan
+  Elastic                        Multi.Generic.Threat
+  Emsisoft                       Trojan.GenericKDZ.116601 (B)
+  F-Secure                       Trojan.TR/AVI.SalatStealer.uirse
+  Fortinet                       W32/Agent.VO!tr
+  GData                          Trojan.GenericKDZ.116601
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Agent.sa
+  Ikarus                         Trojan.WinGo.Agent
+  K7AntiVirus                    Spyware ( 006d58511 )
+  K7GW                           Spyware ( 006d58511 )
+  Kaspersky                      UDS:Trojan-Banker.Win32.Agent.gen
+  Kingsoft                       Win32.Trojan-Banker.Agent.gen
+  Lionic                         Trojan.Win32.SalatStealer.7!c
+  Malwarebytes                   Malware.AI.1485447620
+  MaxSecure                      Trojan.Malware.121218.susgen
+  McAfeeD                        Trojan:Win/Salat.EAC
+  MicroWorld-eScan               Trojan.GenericKDZ.116601
+  Microsoft                      Trojan:Win32/SalatStealer.SMX!MTB
+  Paloalto                       generic.ml
+  Panda                          Trj/CI.A
+  Rising                         Stealer.Salat!1.13A22 (CLASSIC)
+  Sangfor                        Infostealer.Win32.Salatstealer.Vkzr
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Trojan.Win32.Stealer.16001830
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04C9z
+  VBA32                          BScope.Trojan.Win64.Agent
+  VIPRE                          Trojan.GenericKDZ.116601
+  Varist                         W32/Agent.LNT.gen!Eldorado
+  alibabacloud                   Trojan:Multi/Rozena.SS
+  huorong                        Trojan/Agent.e!crit
