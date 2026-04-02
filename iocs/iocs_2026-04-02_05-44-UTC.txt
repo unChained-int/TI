@@ -1,0 +1,188 @@
+# IOC Export  2026-04-02_05-44-UTC
+# 19 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+3dc175bf861340b97aa3de7ba407113cd540fd4b0b4525f5ee1792932f5785f0  # Infostealer | R=84.9 | Formbook | exe
+dcc0f652104d6d7f9a078126a3439dabb9d97f2848df64b0bc62f195aa422284  # Botnet/IoT | R=83.1 | Mirai | elf
+b68de150b2ac4d6ca6bb83eaa5cf4f65600dabc3d4745d88444e4708d60554db  # Botnet/IoT | R=83.0 | Mirai | elf
+e052bbaba494f4af95ccdd394bfe009ed34d445ad6dc1e249b34eb3a0013f27f  # Infostealer | R=81.7 | RustyStealer | exe
+5070a67e1b10b7b538a9a6fca744157691bea8ea6070b81b6741da8e08490ba9  # Infostealer | R=81.0 | unbekannt | rar
+3c59bb045893542c46ab33820401577b30423d26f56f326414e15c54ea38e311  # Loader | R=74.9 | unbekannt | exe
+4bda75eedbe6b367acf6dfad1046847f5dd74968580a2a76e76f51c48d9a4309  # Trojaner | R=73.6 | AgentTesla | exe
+750e5ac3bb33d7ad4f9676ec40531b24c083cabe89683e40453f8e9d769ad1b7  # Trojaner | R=59.7 | SalatStealer | exe
+01f70dc5175c6daae296b4dbba49897b1fb6e5a294f26b045a6debf7b49faa11  # Windows-Malware | R=38.8 | unbekannt | exe
+02ddca944cc81683d08173ff92d36f61ffd154fd6b4060e4128341a186fd3830  # Skript/Dropper | R=37.3 | unbekannt | js
+a0f64f3bb700ae9170efc662301196fe5d635dbbc72985164537a87602d6bf16  # Windows-Malware | R=36.7 | AgentTesla | exe
+fc712cf58e061f02875bec6e886fecd10fa22dd5b81a73d5a59cc06169aaccaf  # Windows-Malware | R=36.6 | unbekannt | msi
+683268cd878eff8fe3a8171bf9f335399f374880ba364a6484c109113d4dce51  # Andere / Unbekannt | R=31.6 | unbekannt | unknown
+8a5b5ac78892b40ec9ad4fb71eadb44f8b74aec5a31116cd795ac503000d4506  # Andere / Unbekannt | R=31.5 | unbekannt | unknown
+18aba522d9539417c5616348215189a7c7d4ee5776ae65795ca8096e9f747072  # Andere / Unbekannt | R=31.3 | unbekannt | unknown
+00133f7636198e2b5b039681841a0dafbfdfb9dbb588893d9743ff2a4e43d724  # Andere / Unbekannt | R=31.3 | unbekannt | unknown
+fc95bd6c9f6f42e7f1411b633efedb7d2c2879a7a329ee552416efb5e4aad1ff  # Andere / Unbekannt | R=31.2 | unbekannt | unknown
+711894300f071611dd6eb4507772d579bce69bea33487875f6f31f2f08c1b615  # Andere / Unbekannt | R=31.0 | unbekannt | zip
+63c985f2f40a9c970016a15a20f6229942bc7fcdd70a3e77083fa516fe985b93  # Andere / Unbekannt | R=31.0 | unbekannt | rar
+
+[Tags]
+5108426900
+AgentTesla
+B
+Formbook
+MIX1.file
+Mirai
+RustyStealer
+SPAM-ITA
+Stealer
+dropped-by-GCleaner
+elf
+exe
+exe-in-archive
+js
+msi
+rar
+signed
+spamtrap
+stego
+upx
+zip
+
+[VT Engine Detections]
+
+## 3dc175bf861340b97aa3...  (Formbook) | Defender: ✗ nicht erkannt
+   Erkannt: 23/75 Engines (30.7%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AVG                            MalwareX-gen [Pws]
+  Alibaba                        Trojan:MSIL/SnakeKeylogger.f9939ed6
+  Avast                          MalwareX-gen [Pws]
+  Bkav                           W64.AIDetectMalware.CS
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.PackedNET.3501
+  Elastic                        malicious (moderate confidence)
+  Ikarus                         Win32.Outbreak
+  Kaspersky                      UDS:DangerousObject.Multi.Generic
+  Kingsoft                       Win32.Trojan.GenericML.xnet
+  McAfeeD                        ti!3DC175BF8613
+  Microsoft                      Trojan:MSIL/SnakeKeylogger.ZBF!MTB
+  Paloalto                       generic.ml
+  Rising                         Malware.Obfus/MSIL@AI.90 (RDM.MSIL2:EtH3y6cQ0oczoUJcMWYvBQ)
+  Sangfor                        Suspicious.Win32.Save.pkr
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        Artemis!Trojan
+  Sophos                         Mal/Generic-S
+  TrellixENS                     Artemis!2385F4FB5B1A
+  VirIT                          Trojan.Win64.MSIL_Heur.A
+  Webroot                        W32.Trojan.Gen
+
+## dcc0f652104d6d7f9a07...  (Mirai) | Defender: ✓ Trojan:Script/Wacatac.C!ml
+   Erkannt: 13/75 Engines (17.3%) — 🟡 SCHWACH ERKANNT
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  Arcabit                        Trojan.Linux.Generic.D12321
+  CTX                            elf.trojan.generic
+  Emsisoft                       Trojan.Linux.GenericKD.74529 (B)
+  Fortinet                       ELF/Agent.KO!tr
+  GData                          Trojan.Linux.GenericKD.74529
+  Google                         Detected
+  MicroWorld-eScan               Trojan.Linux.GenericKD.74529
+  Microsoft                      Trojan:Script/Wacatac.C!ml
+  Sophos                         Linux/DDoS-BI
+  VIPRE                          Trojan.Linux.GenericKD.74529
+  ZoneAlarm                      Linux/DDoS-BI
+  huorong                        Trojan/Linux.Mirai.q
+
+## 4bda75eedbe6b367acf6...  (AgentTesla) | Defender: ✗ nicht erkannt
+   Erkannt: 31/75 Engines (41.3%) — 🟠 MÄSSIG ERKANNT
+  APEX                           Malicious
+  AhnLab-V3                      Trojan/AU3.Loader.S3029
+  Avira                          DR/AutoIt.Gen8
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DrWeb                          Trojan.AutoIt.1770
+  ESET-NOD32                     Win32/Injector.Autoit.GXK trojan
+  F-Secure                       Dropper.DR/AutoIt.Gen8
+  Fortinet                       AutoIt/Formbook.A!tr
+  Google                         Detected
+  Ikarus                         Trojan.Autoit
+  Kaspersky                      UDS:DangerousObject.Multi.Generic
+  Lionic                         Trojan.Win32.Bingoml.ts62
+  Malwarebytes                   Trojan.Injector.AutoIt
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        ti!4BDA75EEDBE6
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Trojan.Injector/Autoit!1.12AEC (CLASSIC)
+  Sangfor                        Trojan.Win32.Save.a
+  Skyhigh                        BehavesLike.Win32.Dropper.tc
+  Sophos                         Mal/AuItInj-D
+  Symantec                       Trojan.Malautoit!g3
+  Tencent                        Autoit.Trojan.Autoit.Kqil
+  TrellixENS                     Artemis!96056C087E10
+  TrendMicro                     TROJ_GEN.R06CC0DD226
+  Varist                         W32/AutoIt.QA.gen!Eldorado
+  VirIT                          Trojan.Win32.AutoIt_Heur.L
+  ZoneAlarm                      Mal/AuItInj-D
+  huorong                        Trojan/AutoIT.Injector.fc
+
+## e052bbaba494f4af95cc...  (RustyStealer) | Defender: ✗ nicht erkannt
+   Erkannt: 11/75 Engines (14.7%) — 🟡 SCHWACH ERKANNT
+  Bkav                           W64.AIDetectMalware
+  DeepInstinct                   MALICIOUS
+  Google                         Detected
+  Ikarus                         Trojan-PSW.Agent
+  Lionic                         Trojan.Win32.RustyStealer.4!c
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Backdoor.CobaltStrike!8.197F7 (CLOUD)
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Mal/Generic-S
+  alibabacloud                   Backdoor:Win/Eagles.a
+  huorong                        Backdoor/CobaltStrike.ox
+
+## 750e5ac3bb33d7ad4f96...  (SalatStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan.GenericKDZ.116601
+   Erkannt: 47/75 Engines (62.7%) — 🟠 MÄSSIG ERKANNT
+  AhnLab-V3                      Trojan/Win.Generic.R727379
+  Alibaba                        TrojanBanker:Win32/SalatStealer.1f71e228
+  Antiy-AVL                      Trojan/Win32.SalatStealer
+  Arcabit                        Trojan.Generic.D1C779
+  Avira                          TR/AVI.SalatStealer.uirse
+  BitDefender                    Trojan.GenericKDZ.116601
+  Bkav                           W32.AIDetectMalware
+  CAT-QuickHeal                  Trojan.Agent
+  CTX                            exe.trojan.salatstealer
+  ClamAV                         Win.Malware.Salat-10058846-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     WinGo/Agent.VO trojan
+  Elastic                        Multi.Generic.Threat
+  Emsisoft                       Trojan.GenericKDZ.116601 (B)
+  F-Secure                       Trojan.TR/AVI.SalatStealer.uirse
+  Fortinet                       W32/Agent.VO!tr
+  GData                          Trojan.GenericKDZ.116601
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Agent.sa
+  Ikarus                         Trojan.WinGo.Agent
+  K7AntiVirus                    Spyware ( 006d58511 )
+  K7GW                           Spyware ( 006d58511 )
+  Kaspersky                      UDS:Trojan-Banker.Win32.Agent.gen
+  Kingsoft                       Win32.Trojan-Banker.Agent.gen
+  Lionic                         Trojan.Win32.SalatStealer.7!c
+  Malwarebytes                   Malware.AI.1485447620
+  MaxSecure                      Trojan.Malware.121218.susgen
+  McAfeeD                        Trojan:Win/Salat.EAC
+  MicroWorld-eScan               Trojan.GenericKDZ.116601
+  Microsoft                      Trojan:Win32/SalatStealer.SMX!MTB
+  Paloalto                       generic.ml
+  Panda                          Trj/CI.A
+  Rising                         Stealer.Salat!1.13A22 (CLASSIC)
+  Sangfor                        Infostealer.Win32.Salatstealer.Vkzr
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Trojan.Win32.Stealer.16001830
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04C9z
+  VBA32                          BScope.Trojan.Win64.Agent
+  VIPRE                          Trojan.GenericKDZ.116601
+  Varist                         W32/Agent.LNT.gen!Eldorado
+  alibabacloud                   Trojan:Multi/Rozena.SS
+  huorong                        Trojan/Agent.e!crit
