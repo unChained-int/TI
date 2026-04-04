@@ -1,0 +1,112 @@
+# IOC Export  2026-04-04_20-37-UTC
+# 19 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+4db115d6aec8de6663fbfc8a7e94ab34adbf3c718bb9bd4d6100e65198b85b55  # Trojaner | R=83.7 | Multiverze | elf
+b5edb9fc654b260661c83360090194e1951a2d7932fc3c9d8354c3687507343b  # Trojaner | R=83.4 | Multiverze | elf
+76dece1465d0598b533b29e3da7cc8531f48e1b15dc547896cda4650171d3d62  # Trojaner | R=83.1 | B!ml | elf
+8bdb1da1effbe7318a30321d22cb06f65723fb64b276b6b2680ff8cddf5171f3  # Infostealer | R=80.7 | SalatStealer | exe
+9714272c145f2756b257ebe574a7d84f1ae476897ed42cae28d31ee4f4354dae  # Loader | R=76.1 | LNK | lnk
+20af3012045290cdced79c306e1fb8d5eac82a09a3771a4552f492ad4fa125ad  # Loader | R=75.0 | unbekannt | exe
+5ea579e8fa695b2312ed199ff228784e4be3a8f3319afa18c40955f926336057  # Trojaner | R=65.4 | ValleyRAT | exe
+501e35f1600ce0548226c9957eed76f5f04cb2e1dbfd4f3fb8652009b38e8c9f  # Android-Malware | R=42.4 | unbekannt | apk
+c1183c6868bf4e006ba412a538a3a07dadbaeded2be6f148765decf69dc284ec  # Android-Malware | R=42.4 | unbekannt | apk
+ad5aec8723a8ab586cc8442cb7ee4794feb633b15a96d0b1d8ae924aa3a94986  # Linux-Malware | R=42.1 | unbekannt | elf
+a21b9fdbae3257e202e0f4aaa32ba65d23c14728683fc1a651eca42ddea9a9d7  # Linux-Malware | R=42.1 | unbekannt | elf
+3d6f920992c6e41f82584fd558cf0415f255a9b50ef3628e2b0dafb8014ed0ef  # Linux-Malware | R=42.1 | unbekannt | elf
+bd4445aa5dd492a8c177bceff7a4ef8a9b333fb95a8d7bdf5e8fb3161259da98  # Linux-Malware | R=42.1 | unbekannt | elf
+2596e230dd9075d1b5af526067774f97d078fbd1f34ab8be5cd11b556c6b8c3a  # Linux-Malware | R=42.1 | unbekannt | elf
+bbf512e2470851f6cb53f8874846a9fcc58b741a1e0662b2fa1b8890004e04ba  # Linux-Malware | R=42.1 | unbekannt | elf
+3e7a55dfc594af6b7d41d2855845d8b7288904e7e0f23d25667d8b4cd67145b8  # Linux-Malware | R=42.1 | unbekannt | elf
+81ecf0bbd62ef8602803b02d767cf2915875da82d156de57589733b58b36ad63  # Maldoc | R=38.1 | unbekannt | doc
+07f2d8f3a9c9430d91620d6a8b83c20dc9d020f00b7066b3ff9bd0fec20b7c2d  # Andere / Unbekannt | R=31.9 | unbekannt | rar
+2e559516fb2fd1edb2b3f9d32c44c6f32dbfe1aa21f6c201430b210cb123bc9c  # Andere / Unbekannt | R=31.8 | unbekannt | rar
+
+[Tags]
+A
+CVE-2025-8088
+CVE-2026-21509
+F
+MIX1.file
+PMIX1.file
+SalatStealer
+UKR
+apk
+doc
+dropped-by-GCleaner
+elf
+exe
+lnk
+rar
+signed
+
+[VT Engine Detections]
+
+## 9714272c145f2756b257...  (LNK) | Defender: ✓ Generic.LNK.SSHDropper.A.F28EC0A5
+   Erkannt: 8/76 Engines (10.5%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Generic.LNK.SSHDropper.A.F28EC0A5
+  Arcabit                        Generic.LNK.SSHDropper.A.F28EC0A5
+  BitDefender                    Generic.LNK.SSHDropper.A.F28EC0A5
+  Emsisoft                       Generic.LNK.SSHDropper.A.F28EC0A5 (B)
+  Fortinet                       LNK/SSHDropper.1639!tr
+  GData                          Generic.LNK.SSHDropper.A.F28EC0A5
+  MicroWorld-eScan               Generic.LNK.SSHDropper.A.F28EC0A5
+  VIPRE                          Generic.LNK.SSHDropper.A.F28EC0A5
+
+## 76dece1465d0598b533b...  (B!ml) | Defender: ✓ Trojan:Script/Wacatac.B!ml
+   Erkannt: 3/76 Engines (4.0%) — ⚠️ KAUM ERKANNT
+  Antiy-AVL                      Trojan/Linux.Mirai
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  SentinelOne                    Static AI - Suspicious ELF
+
+## b5edb9fc654b260661c8...  (Multiverze) | Defender: ✗ nicht erkannt
+   Erkannt: 2/76 Engines (2.6%) — ⚠️ KAUM ERKANNT
+  Antiy-AVL                      Trojan/Linux.Multiverze
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+
+## 4db115d6aec8de6663fb...  (Multiverze) | Defender: ✗ nicht erkannt
+   Erkannt: 1/76 Engines (1.3%) — ⚠️ KAUM ERKANNT
+  Antiy-AVL                      Trojan/Linux.Multiverze
+
+## 5ea579e8fa695b2312ed...  (ValleyRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan:Win32/Wacatac.B!ml
+   Erkannt: 40/76 Engines (52.6%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Giant.Midie.604
+  APEX                           Malicious
+  AhnLab-V3                      Trojan/Win.Injector.X2247
+  Alibaba                        Trojan:Win64/Aotera.3ed55e58
+  Antiy-AVL                      Trojan/Win64.Aotera
+  Arcabit                        Trojan.Giant.Midie.604
+  CAT-QuickHeal                  cld.trojan.win64
+  CTX                            exe.trojan.aotera
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win64/Aotera.DV trojan
+  Emsisoft                       Gen:Variant.Giant.Midie.604 (B)
+  Fortinet                       W64/Aotera.BF!tr
+  GData                          Gen:Variant.Giant.Midie.604
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Downloader.sa
+  Ikarus                         Win32.Outbreak
+  K7AntiVirus                    Trojan ( 006dbea21 )
+  K7GW                           Trojan ( 006dbea21 )
+  Kaspersky                      UDS:Trojan.Win64.Generic
+  Kingsoft                       Win64.Trojan.Generic.a
+  Lionic                         Trojan.Win32.Adload.tt1X
+  Malwarebytes                   Malware.AI.401317728
+  MaxSecure                      Trojan.Malware.326164669.susgen
+  McAfeeD                        ti!5EA579E8FA69
+  MicroWorld-eScan               Gen:Variant.Giant.Midie.604
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Trojan.Aotera!8.1D79F (CLOUD)
+  Sangfor                        Trojan.Win64.Aotera.Vnvx
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Win64.Trojan.Generic.Jajl
+  TrendMicro                     Backdoor.Win32.VALLEYRAT.YXGDAZ
+  TrendMicro-HouseCall           Backdoor.Win32.VALLEYRAT.YXGDAZ
+  VIPRE                          Gen:Variant.Giant.Midie.604
+  Varist                         W64/Kryptik.NZT.gen!Eldorado
+  VirIT                          Trojan.Win32.NSISGenT.AGOS
+  alibabacloud                   Trojan:Win/Aotera.DY
