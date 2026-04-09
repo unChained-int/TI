@@ -1,0 +1,135 @@
+# IOC Export  2026-04-09_17-12-UTC
+# 17 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+23f5f8fd679564492dfb32bd3b34ba78ef5934d7535d0656d36bcc485bc2ba55  # Infostealer | R=89.7 | Stealc | exe
+9e1af8b1e0eb5d851c79b903380f4df31602324da7e04ab44cb2b706fdaa81ce  # RAT | R=88.2 | NetSupport | exe
+0d1569dc05f6dfade49c252984a04fe373242badc6abce425f9feefc297f602c  # Botnet/IoT | R=87.4 | Mirai | elf
+fe265b0d23b986e39cf974a0be6f238f68d3d686c401866ba8a87e9a23cde0be  # Trojaner | R=81.7 | Artemis!Trojan | msi
+03f48ca747db8e2aa6a18cb5234bffd89014714d59483ddc8df7b3d3be08c368  # Exploit | R=77.8 | HTML | hta
+099278ac5b8a413aa0d5a870552a0626c0b875948eb5cf9bac62244b372e8569  # Loader | R=77.3 | Trojan | exe
+5ea579e8fa695b2312ed199ff228784e4be3a8f3319afa18c40955f926336057  # Trojaner | R=59.9 | ValleyRAT | exe
+5ab5ebde3668af697031030f0d762cb29c28590a0074b845b19f0df29291a1d7  # Skript/Dropper | R=39.1 | unbekannt | hta
+5aaac6ef2921e78d05429a35017b524ef65596d66c4eceb7c81e2b93e75a8e6c  # Windows-Malware | R=39.1 | unbekannt | dll
+d71f25184a0dcea8524d1bb7b8c51d76f9c18fd533a8ead2e9d40b75044b375e  # Skript/Dropper | R=39.1 | unbekannt | vbs
+9abc8e3fc8f7ae42dbea952c3cb51b74bd1980ffaddb36b590a66162305bf3aa  # Windows-Malware | R=38.7 | unbekannt | exe
+ce06a5de9e128121f263fa1f274f78f115d52540798d13a6112c2db48422c636  # Skript/Dropper | R=38.7 | unbekannt | js
+9c71b2650af49414a75c9c921303617c93e9632cdd6422631ca97b9454ca8382  # Andere / Unbekannt | R=32.7 | unbekannt | img
+10089e0d30a8b5abd4c4429e0850de6ce95db127bbe341cbeca1fb19b92e4fe7  # Andere / Unbekannt | R=32.5 | unbekannt | unknown
+856f44f0932396e06834c1fb44e5f8233da3dc53f4466561e8e1814f8a53dab2  # Andere / Unbekannt | R=32.3 | unbekannt | unknown
+4a66b4444d16130ce62438b2394c05e976b7401f2598a5a94903cb9996946b8c  # Andere / Unbekannt | R=32.3 | unbekannt | unknown
+ba4a33352936924a83855c002ef196753694a8fb5de37d108fb7ffb2911a3435  # Andere / Unbekannt | R=31.9 | unbekannt | unknown
+
+[Tags]
+Mirai
+NetSupport
+Stealc
+booking
+dll
+dropped-by-Amadey
+elf
+exe
+fbf543
+hta
+img
+js
+msi
+spam-ita
+vbs
+
+[VT Engine Detections]
+
+## 099278ac5b8a413aa0d5...  (Trojan) | Defender: ✓ Dump:Generic.Trojan.TangoStealer.Marte.A.B278C232
+   Erkannt: 14/76 Engines (18.4%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Dump:Generic.Trojan.TangoStealer.Marte.A.B278C232
+  Arcabit                        Dump:Generic.Trojan.TangoStealer.Marte.A.B278C232
+  BitDefender                    Dump:Generic.Trojan.TangoStealer.Marte.A.B278C232
+  Bkav                           W64.AIDetectMalware
+  CTX                            exe.trojan.dump
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Cylance                        Unsafe
+  ESET-NOD32                     WinGo/RemoteAdmin.Overlord.A potentially unsafe application
+  Emsisoft                       Dump:Generic.Trojan.TangoStealer.Marte.A.B278C232 (B)
+  GData                          Dump:Generic.Trojan.TangoStealer.Marte.A.B278C232
+  Kaspersky                      HEUR:Trojan.Win64.Generic
+  McAfeeD                        ti!099278AC5B8A
+  MicroWorld-eScan               Dump:Generic.Trojan.TangoStealer.Marte.A.B278C232
+  VIPRE                          Dump:Generic.Trojan.TangoStealer.Marte.A.B278C232
+
+## 0d1569dc05f6dfade49c...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 3/76 Engines (4.0%) — ⚠️ KAUM ERKANNT
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Gafgyt
+  ESET-NOD32                     Linux/Mirai_AGen.MF trojan
+  Microsoft                      Trojan:Script/Wacatac.C!ml
+
+## 03f48ca747db8e2aa6a1...  (HTML) | Defender: ✗ nicht erkannt
+   Erkannt: 9/76 Engines (11.8%) — 🟡 SCHWACH ERKANNT
+  ESET-NOD32                     JS/Agent.UIH trojan
+  Google                         Detected
+  Ikarus                         Trojan-Downloader.JS.Agent
+  Kaspersky                      HEUR:Trojan.Script.Generic
+  NANO-Antivirus                 Trojan.Script.Locky.ebclcy
+  Rising                         Downloader.Locky/JS!1.A549 (CLASSIC)
+  Skyhigh                        BehavesLike.HTML.ExploitBlacole.cr
+  Tencent                        Script.Trojan.Generic.Nzfl
+  Varist                         JS/Agent.DYO1!Eldorado
+
+## fe265b0d23b986e39cf9...  (Artemis!Trojan) | Defender: ✗ nicht erkannt
+   Erkannt: 7/76 Engines (9.2%) — ⚠️ KAUM ERKANNT
+  ESET-NOD32                     PowerShell/TrojanDownloader.Agent.PSO trojan
+  Kaspersky                      HEUR:Trojan.PowerShell.Generic
+  Rising                         Trojan.Dyloader/PS!1.13C1C (CLASSIC)
+  Skyhigh                        Artemis!Trojan
+  Tencent                        Win32.Trojan-Downloader.Downloader.Bgow
+  alibabacloud                   Trojan[downloader]:Win/Agent.PBX
+  huorong                        TrojanDownloader/Agent.bmz
+
+## 5ea579e8fa695b2312ed...  (ValleyRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Giant.Midie.604
+   Erkannt: 47/76 Engines (61.8%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Giant.Midie.604
+  APEX                           Malicious
+  AVG                            FileRepMalware [Drp]
+  AhnLab-V3                      Trojan/Win.Injector.X2247
+  Alibaba                        Trojan:Win64/Aotera.3ed55e58
+  Antiy-AVL                      Trojan/Win64.Aotera
+  Arcabit                        Trojan.Giant.Midie.604
+  Avast                          FileRepMalware [Drp]
+  BitDefender                    Gen:Variant.Giant.Midie.604
+  CAT-QuickHeal                  Trojan.IGENERIC
+  CTX                            exe.trojan.aotera
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win64/Aotera.DV trojan
+  Emsisoft                       Gen:Variant.Giant.Midie.604 (B)
+  Fortinet                       W64/Aotera.BF!tr
+  GData                          Gen:Variant.Giant.Midie.604
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Downloader.sa
+  Ikarus                         Trojan.Win64.Aotera
+  K7AntiVirus                    Trojan ( 006dbea21 )
+  K7GW                           Trojan ( 006dbea21 )
+  Kaspersky                      UDS:Trojan.Win64.Generic
+  Kingsoft                       Win64.Trojan.Generic.a
+  Lionic                         Trojan.Win32.Adload.tt1X
+  Malwarebytes                   Malware.AI.401317728
+  MaxSecure                      Trojan.Malware.646512010.susgen
+  McAfeeD                        ti!5EA579E8FA69
+  MicroWorld-eScan               Gen:Variant.Giant.Midie.604
+  Microsoft                      Trojan:Win32/Qwexlafiba!rfn
+  Paloalto                       generic.ml
+  Panda                          Trj/PhxBzA.A
+  Rising                         Trojan.Aotera!8.1D79F (CLOUD)
+  Sangfor                        Trojan.Win64.Aotera.Vw65
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Win64.Trojan.Generic.Jajl
+  TrellixENS                     Artemis!32C1EA0F9475
+  TrendMicro                     Backdoor.Win32.VALLEYRAT.YXGDAZ
+  TrendMicro-HouseCall           Backdoor.Win32.VALLEYRAT.YXGDAZ
+  VBA32                          Trojan.Win64.Aotera
+  VIPRE                          Gen:Variant.Giant.Midie.604
+  Varist                         W64/Kryptik.NZT.gen!Eldorado
+  VirIT                          Trojan.Win32.NSISGenT.AGOS
+  Xcitium                        Malware@#1r85r73d2dko3
+  alibabacloud                   Trojan:Win/Aotera.DY
