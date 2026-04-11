@@ -1,0 +1,134 @@
+# IOC Export  2026-04-11_20-39-UTC
+# 26 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+205d6f552a1abba9df080c3e62cc7e9f0e91a8dc238f250b4db080ad3917518f  # Botnet/IoT | R=88.5 | Mirai | elf
+42d28652dce45b687b7e508166414badd213191d16de11133f249c710697df86  # Botnet/IoT | R=84.4 | Mirai | elf
+66cfc5933bce9bd4b61d36f5eeca02274139a43a5b1cc2b2411fd5071c75923a  # Loader | R=78.0 | AIDetectMalware | exe
+b42a7af2bb90504067d0574abce06fc1b1becc880d17677de998f1c821fda347  # Loader | R=77.2 | VBS | vbs
+dec3579fb00b2738b4cd49436f8621555819c25b99e2e43fa662544b695c7922  # Loader | R=74.8 | unbekannt | exe
+02e14c5eb68a31ac54e766a370ec1a68dc87e346293063d3e22f8a551a3a69fc  # Loader | R=74.6 | unbekannt | exe
+48fce19c824842968f4898a4743ef630073b74fb82eb05743dece5922226adea  # Loader | R=74.0 | Socks5Systemz | exe
+1be6a8d35632d5702bde202d95a972bf7a587367a21756cfd219b7bd2d47a615  # RAT | R=61.0 | DiscordRAT | exe
+971d3d0caab68f9e419916989676fef121264cd589d254270dce59dceebb41f6  # Andere / Unbekannt | R=51.3 | unbekannt | lnk
+f36638850a211914ece953182be4335dfc21f56051dd0afa2c6c1ed35b44f113  # Skript/Dropper | R=38.9 | unbekannt | ps1
+439391f35a6cffcfa1c6cb3e5e8f25ed4055cd10664a7e9ed438dd0fdcda9965  # Skript/Dropper | R=38.9 | unbekannt | vbs
+e47b9382d9ac1ba3992308d75993b69255b1e4f4fe47c2e2b6cf6a7ec266da73  # Skript/Dropper | R=38.9 | unbekannt | ps1
+3f52c3f004bf2fb115662a651e749aac714be6b5d541b81e73ae9a935aac60a9  # Skript/Dropper | R=38.9 | unbekannt | vbs
+b7803b4cd3e87f9449bc3fa671a5831185da87fdc09a1410baf0cac1819133c6  # Skript/Dropper | R=38.9 | unbekannt | ps1
+83033f57dfcd0560977abd42726931c391e1e242b7c7462f5af1160c67b34afd  # Windows-Malware | R=38.5 | unbekannt | msi
+08f300e96c71192a8b119efbf59f8c7484ae89c2982a8b732c0a267e88872c8a  # Windows-Malware | R=37.9 | unbekannt | exe
+10a5e12422b28d885ee92fd4ec707d894c253e6cbc4e2534c57093e3a4446863  # Windows-Malware | R=37.8 | unbekannt | exe
+a4b98f96d11162d515dd7426a1a43f6ed2c67a3d4c3b6832ebc36be3826efddb  # Windows-Malware | R=37.7 | Blackmoon | exe
+010601e408a090be561e10c23ae17342d8d82ca65b2b280215bb9268bae8381a  # Andere / Unbekannt | R=32.5 | unbekannt | lnk
+bd0b75a24963f2b008a2540a095becf8d7620ca140d11b83e096f3099f022f98  # Andere / Unbekannt | R=32.5 | unbekannt | lnk
+3e5dcb70d9c9af0acd34531af0fac9edccdc2638e8425503dde7b913dc8624a8  # Andere / Unbekannt | R=32.1 | unbekannt | zip
+05bf99b8d1817cdc9450ce7128a0df9497f1475d1d0db21e7f528f83598c66de  # Andere / Unbekannt | R=32.0 | unbekannt | zip
+80a15362aa0d386255a9c5dadfdd737b639c05d2f2a5f911ff88736ceea29a79  # Andere / Unbekannt | R=32.0 | unbekannt | zip
+3cf7210b521de01b3580dce32031deec6f61a2726d9149f5f1d322379f8f8569  # Andere / Unbekannt | R=31.9 | unbekannt | sh
+b9479b7e1f6dd29a37b68249db34a696fc840860a09167b976c8d002c06d7e93  # Andere / Unbekannt | R=31.9 | unbekannt | unknown
+a5b4236c1cb73f74e699be14378ca9c623055cc7bccfe24bbcf20c5554c2435b  # Andere / Unbekannt | R=31.3 | unbekannt | zip
+
+[Tags]
+A
+Agent
+Blackmoon
+D
+F
+MIX1.file
+MIX3.file
+Mirai
+SilverFox
+Socks5Systemz
+UNIQTWO.file
+dropped-by-GCleaner
+elf
+exe
+lnk
+msi
+ps1
+refundonex-com
+sh
+signed
+upx
+upx-dec
+vbs
+zip
+
+[VT Engine Detections]
+
+## b42a7af2bb90504067d0...  (VBS) | Defender: ✗ nicht erkannt
+   Erkannt: 5/76 Engines (6.6%) — ⚠️ KAUM ERKANNT
+  Kaspersky                      HEUR:Trojan-Downloader.Script.Generic
+  Skyhigh                        BehavesLike.VBS.Dropper.xp
+  Symantec                       ISB.Dropper!gen1
+  VirIT                          Trojan.VBS.Agent.JIR
+  huorong                        TrojanDownloader/VBS.Agent.f!crit
+
+## 66cfc5933bce9bd4b61d...  (AIDetectMalware) | Defender: ✗ nicht erkannt
+   Erkannt: 11/76 Engines (14.5%) — 🟡 SCHWACH ERKANNT
+  Avira                          HEUR/AGEN.1380802
+  Bkav                           W32.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_60% (D)
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Win32/TrojanDropper.Agent.SLC trojan
+  Elastic                        malicious (high confidence)
+  F-Secure                       Heuristic.HEUR/AGEN.1380802
+  Kingsoft                       malware.kb.a.721
+  McAfeeD                        ti!66CFC5933BCE
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  huorong                        HEUR:TrojanDropper/Agent.t
+
+## 1be6a8d35632d5702bde...  (DiscordRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Application.msilheracles.1255
+   Erkannt: 51/76 Engines (67.1%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Application.msilheracles.1255
+  APEX                           Malicious
+  AVG                            Win64:MalwareX-gen [Expl]
+  AhnLab-V3                      Trojan/Win.Generic.C5217098
+  Antiy-AVL                      Trojan/Win32.Agent
+  Arcabit                        Trojan.Application.msilheracles.D4E7
+  Avast                          Win64:MalwareX-gen [Expl]
+  Avira                          HEUR/AGEN.1378898
+  BitDefender                    Gen:Variant.Application.msilheracles.1255
+  Bkav                           W64.AIDetectMalware.CS
+  CTX                            exe.unknown.msilheracles
+  ClamAV                         Win.Malware.Tedy-9965181-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  DrWeb                          BackDoor.SpyBotNET.70
+  ESET-NOD32                     MSIL/Agent.DZT trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Application.msilheracles.1255 (B)
+  F-Secure                       Heuristic.HEUR/AGEN.1378898
+  Fortinet                       MSIL/Agent.DZT!tr
+  GData                          MSIL.Backdoor.DiscordRAT.B
+  Google                         Detected
+  Ikarus                         Trojan-Downloader.MSIL.Agent
+  K7AntiVirus                    Trojan ( 005b0c8d1 )
+  K7GW                           Trojan ( 005b0c8d1 )
+  Kaspersky                      Trojan.Win32.Injuke.pflk
+  Kingsoft                       Win32.Trojan.Injuke.pflk
+  Malwarebytes                   Generic.Trojan.MSIL.DDS
+  MaxSecure                      Trojan.Malware.345125053.susgen
+  McAfeeD                        ti!1BE6A8D35632
+  MicroWorld-eScan               Gen:Variant.Application.msilheracles.1255
+  Microsoft                      Trojan:MSIL/Dcstl.psyX!MTB
+  Rising                         Backdoor.DiscordRAT!1.F9B9 (CLASSIC)
+  SUPERAntiSpyware               Trojan.Agent/Gen-Jalapeno
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        DiscordRAT!0728377FDD9B
+  Sophos                         Mal/Stealer-J
+  Tencent                        Trojan.MSIL.Agent.kp
+  TrellixENS                     DiscordRAT!0728377FDD9B
+  TrendMicro                     Backdoor.MSIL.DISCOGRAT.SMPI
+  TrendMicro-HouseCall           Backdoor.MSIL.DISCOGRAT.SMPI
+  VBA32                          Backdoor.SpyBotNET
+  VIPRE                          Gen:Variant.Application.msilheracles.1255
+  Varist                         W64/Agent.EWH.gen!Eldorado
+  VirIT                          Trojan.Win64.Agent.BBO
+  Webroot                        W32.Trojan.Gen
+  Zillya                         Trojan.Agent.Win32.2901213
+  ZoneAlarm                      Mal/Stealer-J
+  huorong                        TrojanSpy/MSIL.Stealer.add!crit
