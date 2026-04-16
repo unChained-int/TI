@@ -1,0 +1,207 @@
+# IOC Export  2026-04-16_19-22-UTC
+# 16 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+de264a441a42229fac90055b2ac7b08057a0e90adb5889938bf81e5aa1b352b1  # Loader | R=80.4 | win/malicious_confidence_70% ( | exe
+c1354ee74c3c4d5ddedec8eed5a2a1b1e2d4960a237a640a3c92a179636e0135  # Loader | R=78.7 | OffLoader | exe
+6765b5e63b1ceb95d5615077af9ddcefd87d72be6ebb0c12c7dbe7f287c1981e  # Trojaner | R=78.1 | Trojan.GenericKDZ.116929 | sh
+de45533bdf55b6f93bd38c6e09a5817e815c10839b9d05effa78ef816d7de0b8  # Loader | R=74.7 | unbekannt | exe
+07178e9c4817ca6490af7db9dd824e6e955a52fe0dccc852cdad40e0b682e6f5  # RAT | R=70.8 | NanoCore | exe
+1be6a8d35632d5702bde202d95a972bf7a587367a21756cfd219b7bd2d47a615  # RAT | R=54.2 | DiscordRAT | exe
+e85e7e0d644266f59ff3cf85e301ce6e0b4f3c2c42aa5f57df999891cd768b3e  # Andere / Unbekannt | R=32.6 | unbekannt | zip
+f660598103c47e2a4a23f817daa0dcae8ec04b958bbcb0d7163a4bcf5593afd0  # Andere / Unbekannt | R=32.2 | unbekannt | zip
+7234a179831443caac277f15068d34a73af35e45712fc546b5c68c20dd2cec95  # Andere / Unbekannt | R=32.2 | unbekannt | html
+09a93aafec5ee90dd5b6b97315caec01ddb60cb91648b0d10da91c7e2cc43afb  # Andere / Unbekannt | R=32.2 | unbekannt | unknown
+76f01bcc194a6ef9a1ce940f937c66aaf957e431c18f210fe8787a3af437a973  # Andere / Unbekannt | R=31.7 | unbekannt | rar
+305e9bafaa4b3c25b8be631e9e2e264093044741b7e8a9b46486f06f7a077178  # Andere / Unbekannt | R=31.6 | unbekannt | unknown
+b6ad9aa6d68841b07162c53630b9d974904eed4fe1d1b5a8af88fe71a6e67f9b  # Andere / Unbekannt | R=31.5 | unbekannt | unknown
+80b875df61fac83d0ff878b6dce5ce67db88c397522e6f6a7ccae5bf882eef0d  # Andere / Unbekannt | R=31.4 | unbekannt | zip
+7bf18f9efee408aad46e70ba358d582ff0d6f75926f824746679adb73a40b767  # Andere / Unbekannt | R=31.3 | unbekannt | unknown
+dc868054f22c0e271207ce45b79809ce253f841416a2e3ec0fd7b8c3dfe3f2ea  # Andere / Unbekannt | R=31.0 | unbekannt | unknown
+
+[Tags]
+A
+B
+C
+CVE-2025-8088
+ITA
+MIX11.file
+MIX3.file
+MIX6.file
+NanoCore
+OffLoader
+RAT
+RUS
+dropped-by-GCleaner
+exe
+html
+rar
+sh
+zip
+
+[VT Engine Detections]
+
+## de264a441a42229fac90...  (win/malicious_confidence_70% () | Defender: ✗ nicht erkannt
+   Erkannt: 4/76 Engines (5.3%) — ⚠️ KAUM ERKANNT
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Elastic                        malicious (moderate confidence)
+  Microsoft                      Trojan:Win32/Wacatac.C!ml
+  Trapmine                       suspicious.low.ml.score
+
+## 6765b5e63b1ceb95d561...  (Trojan.GenericKDZ.116929) | Defender: ✓ Trojan.GenericKDZ.116929
+   Erkannt: 20/76 Engines (26.3%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Trojan.GenericKDZ.116929
+  AVG                            BV:Agent-CEL [Trj]
+  Arcabit                        Trojan.Generic.D1C8C1
+  Avast                          BV:Agent-CEL [Trj]
+  BitDefender                    Trojan.GenericKDZ.116929
+  CTX                            shell.trojan.generickdz
+  ESET-NOD32                     Linux/Agent.AOF trojan
+  Emsisoft                       Trojan.GenericKDZ.116929 (B)
+  Fortinet                       BASH/Agent.AOF!tr
+  GData                          Trojan.GenericKDZ.116929
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.bc
+  MicroWorld-eScan               Trojan.GenericKDZ.116929
+  Microsoft                      TrojanDownloader:Script/Malgent.STD!MSR
+  NANO-Antivirus                 Trojan.Script.Dropper.kpvdnu
+  Rising                         Downloader.Agent/BASH!9.67899 (XSE:WFNFX0JBVDp4A8rgf9LUkbys4ZR/N1vC)
+  Tencent                        Trojan-DL.Linux.Agent.505004
+  VIPRE                          Trojan.GenericKDZ.116929
+  Varist                         Unix/Agent.VA
+  huorong                        TrojanDownloader/Linux.Agent.ew
+
+## c1354ee74c3c4d5ddede...  (OffLoader) | Defender: ✗ nicht erkannt
+   Erkannt: 6/76 Engines (7.9%) — ⚠️ KAUM ERKANNT
+  APEX                           Malicious
+  CrowdStrike                    win/grayware_confidence_60% (D)
+  Cylance                        Unsafe
+  ESET-NOD32                     Win32/TrojanDropper.Agent.TES trojan
+  Elastic                        malicious (moderate confidence)
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+
+## 07178e9c4817ca6490af...  (NanoCore) | Defender: ✓ Backdoor.MSIL.Agent.GD
+   Erkannt: 61/76 Engines (80.3%) — ✅ GUT ERKANNT
+  ALYac                          Backdoor.MSIL.Agent.GD
+  APEX                           Malicious
+  AVG                            MSIL:NanoCore-B [Trj]
+  AhnLab-V3                      Win-Trojan/Nanocore.Exp
+  Antiy-AVL                      Trojan/MSIL.NanoCore
+  Arcabit                        Backdoor.MSIL.Agent.GD
+  Avast                          MSIL:NanoCore-B [Trj]
+  Avira                          TR/Dropper.MSIL.Gen7
+  BitDefender                    Backdoor.MSIL.Agent.GD
+  Bkav                           W32.AIDetectMalware.CS
+  CAT-QuickHeal                  Trojan.Orbus.C3
+  CTX                            exe.backdoor.msil
+  ClamAV                         Win.Trojan.NanoCore-9852758-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.Nanocore.23
+  ESET-NOD32                     MSIL/NanoCore.E trojan
+  Elastic                        Windows.Trojan.Nanocore
+  Emsisoft                       Trojan.NanoCore (A)
+  F-Secure                       Trojan.TR/Dropper.MSIL.Gen7
+  Fortinet                       MSIL/NanoCore.K!tr
+  GData                          MSIL.Backdoor.Nancat.A
+  Google                         Detected
+  Gridinsoft                     Backdoor.Win32.Noancooe.cc!ni
+  Ikarus                         Backdoor.Rat.Nanocore
+  Jiangmin                       Backdoor.Generic.zwu
+  K7AntiVirus                    Trojan ( 005b2a921 )
+  K7GW                           Trojan ( 0057b88c1 )
+  Kaspersky                      Trojan.MSIL.Agent.fpar
+  Kingsoft                       MSIL.Trojan.Agent.fpar
+  Lionic                         Trojan.Win32.Generic.mhUN
+  Malwarebytes                   Backdoor.NanoCore
+  McAfeeD                        Real Protect-LS!B62DC13EF349
+  MicroWorld-eScan               Backdoor.MSIL.Agent.GD
+  Microsoft                      Backdoor:MSIL/Nanocore!atmn
+  NANO-Antivirus                 Trojan.Win32.NanoBot.hmqoyu
+  Panda                          Bck/Agent.KNM
+  Rising                         Backdoor.NanoCore!1.B6F9 (CLASSIC)
+  SUPERAntiSpyware               Backdoor.Nanocore/Variant
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        Trojan-FICC!B62DC13EF349
+  Sophos                         Troj/NanoCor-BT
+  Symantec                       Trojan.Nancrat
+  TACHYON                        Backdoor/W32.DN-Nanocore.207872
+  Tencent                        Trojan.Msil.Agent.fb
+  Trapmine                       malicious.high.ml.score
+  TrellixENS                     Trojan-FICC!B62DC13EF349
+  TrendMicro                     BKDR_NOANCOOE.SM
+  TrendMicro-HouseCall           BKDR_NOANCOOE.SM
+  VBA32                          Trojan.MSIL.NanoCore.Heur
+  VIPRE                          Backdoor.MSIL.Agent.GD
+  Varist                         W32/NanoCore.C.gen!Eldorado
+  ViRobot                        Backdoor.Win32.NanoCore.Gen.A
+  VirIT                          Trojan.Win32.DownLoader12.BSON
+  Xcitium                        Backdoor.MSIL.Noancooe.JDE@5s4u9t
+  ZoneAlarm                      Troj/NanoCor-BT
+  Zoner                          Trojan.Win32.48280
+  huorong                        Backdoor/MSIL.NanoCore.b
+  tehtris                        Generic.Malware
+
+## 1be6a8d35632d5702bde...  (DiscordRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Application.msilheracles.1255
+   Erkannt: 59/76 Engines (77.6%) — ✅ GUT ERKANNT
+  ALYac                          Gen:Variant.Application.msilheracles.1255
+  APEX                           Malicious
+  AhnLab-V3                      Trojan/Win.Generic.C5217098
+  Alibaba                        Trojan:MSIL/Injuke.987c6d48
+  Antiy-AVL                      Trojan/Win32.Agent
+  Arcabit                        Trojan.Application.msilheracles.D4E7
+  Avira                          HEUR/AGEN.1378898
+  BitDefender                    Gen:Variant.Application.msilheracles.1255
+  Bkav                           W64.AIDetectMalware.CS
+  CAT-QuickHeal                  Trojan.Ghanarava.177625435099b846
+  CTX                            exe.trojan.msil
+  ClamAV                         Win.Malware.Tedy-9965181-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  DrWeb                          BackDoor.SpyBotNET.70
+  ESET-NOD32                     MSIL/Agent.DZT trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Application.msilheracles.1255 (B)
+  F-Secure                       Heuristic.HEUR/AGEN.1378898
+  Fortinet                       MSIL/Agent.DZT!tr
+  GData                          MSIL.Backdoor.DiscordRAT.B
+  Google                         Detected
+  Gridinsoft                     Trojan.Win64.Agent.sa
+  Ikarus                         Trojan-Downloader.MSIL.Agent
+  K7AntiVirus                    Trojan ( 005b0c8d1 )
+  K7GW                           Trojan ( 005b0c8d1 )
+  Kaspersky                      Trojan.Win32.Injuke.pflk
+  Kingsoft                       Win32.Trojan.Injuke.pflk
+  Lionic                         Trojan.Win32.DiscordRAT.4!c
+  Malwarebytes                   Generic.Trojan.MSIL.DDS
+  MaxSecure                      Trojan.Malware.345125053.susgen
+  McAfeeD                        Trojan:Win/Eternity.A
+  MicroWorld-eScan               Gen:Variant.Application.msilheracles.1255
+  Microsoft                      Trojan:MSIL/Dcstl.psyX!MTB
+  Paloalto                       generic.ml
+  Panda                          Trj/CI.A
+  Rising                         Backdoor.DiscordRAT!1.F9B9 (CLASSIC)
+  SUPERAntiSpyware               Trojan.Agent/Gen-Jalapeno
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        DiscordRAT!0728377FDD9B
+  Sophos                         Mal/Stealer-J
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Trojan.MSIL.Agent.kp
+  TrellixENS                     DiscordRAT!0728377FDD9B
+  TrendMicro                     Backdoor.MSIL.DISCOGRAT.SMPI
+  TrendMicro-HouseCall           Backdoor.MSIL.DISCOGRAT.SMPI
+  VBA32                          Backdoor.SpyBotNET
+  VIPRE                          Gen:Variant.Application.msilheracles.1255
+  Varist                         W64/Agent.EWH.gen!Eldorado
+  ViRobot                        Trojan.Win.Z.Agent.80384.DQME
+  VirIT                          Trojan.Win64.Agent.BBO
+  Webroot                        W32.Trojan.Gen
+  Zillya                         Trojan.Agent.Win32.2901213
+  ZoneAlarm                      Mal/Stealer-J
+  alibabacloud                   Backdoor:MSIL/Dcstl.pvk#3DGW
+  huorong                        TrojanSpy/MSIL.Stealer.add!crit
