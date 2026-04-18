@@ -1,0 +1,107 @@
+# IOC Export  2026-04-18_14-43-UTC
+# 5 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+2762f3e0a56d62e70157c398626856befead49f0926ba921f478bb599f10e2f6  # Infostealer | R=85.3 | LummaStealer | exe
+44c171d1006bbd038774cad96aca4d537184f0b400b839ef7b099a4178c45f1d  # Loader | R=79.5 | win/malicious_confidence_70% ( | exe
+36e0a875a98679d803a3d5013f536a8de3929aaed1423b57233fffe03f500468  # Loader | R=77.8 | OffLoader | exe
+d344a9b2294db5f32e9726e4edf8d65149566832d9f5c90c6581cdb97d4e62e9  # Loader | R=77.3 | AIDetectMalware | exe
+02a928b88e98a6a54cf78cf6dbacfd8acbd4a1e4c93a986e6d21e58b273054ed  # Trojaner | R=73.9 | Trojan.GenericKD.79671332 | zip
+
+[Tags]
+C
+MIX1.file
+OffLoader
+PlugX
+dropped-by-GCleaner
+dropped-by-phorpiex
+exe
+zip
+
+[VT Engine Detections]
+
+## d344a9b2294db5f32e97...  (AIDetectMalware) | Defender: ✗ nicht erkannt
+   Erkannt: 14/76 Engines (18.4%) — 🟡 SCHWACH ERKANNT
+  Bkav                           W64.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     WinGo/Agent.AUG trojan
+  Elastic                        malicious (high confidence)
+  Kaspersky                      VHO:Trojan-PSW.Win64.Stealer.gen
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        ti!D344A9B2294D
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Stealer.Agent!8.C2 (TFE:dGZlOil9dUuDwQqPDg)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Suspicious PE
+  Symantec                       ML.Attribute.HighConfidence
+
+## 44c171d1006bbd038774...  (win/malicious_confidence_70% () | Defender: ✗ nicht erkannt
+   Erkannt: 7/76 Engines (9.2%) — ⚠️ KAUM ERKANNT
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  McAfeeD                        ti!44C171D1006B
+  Microsoft                      Trojan:Win32/Wacatac.C!ml
+  SentinelOne                    Static AI - Suspicious PE
+  Trapmine                       malicious.high.ml.score
+
+## 02a928b88e98a6a54cf7...  (Trojan.GenericKD.79671332) | Defender: ✓ Trojan.GenericKD.79671332
+   Erkannt: 31/76 Engines (40.8%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Trojan.GenericKD.79855098
+  Alibaba                        Trojan:Win32/Yephiler.9d952535
+  Arcabit                        Trojan.Generic.D4BFB024 [many]
+  BitDefender                    Trojan.GenericKD.79671332
+  CTX                            zip.trojan.korplug
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.Siggen32.28157
+  ESET-NOD32                     Win64/Korplug.K trojan
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Trojan.GenericKD.79671332 (B)
+  GData                          Trojan.GenericKD.79671332
+  Google                         Detected
+  Ikarus                         Trojan.Win64.Korplug
+  K7AntiVirus                    Trojan ( 00659a8a1 )
+  K7GW                           Trojan ( 00659a8a1 )
+  Kaspersky                      Trojan.Win32.Yephiler.hxq
+  Kingsoft                       Win64.Troj.Korplug.K
+  Lionic                         Trojan.ZIP.Korplug.4!c
+  Malwarebytes                   Malware.AI.2890150694
+  MaxSecure                      Trojan.Malware.594573144.susgen
+  MicroWorld-eScan               Trojan.GenericKD.79671332
+  Rising                         Trojan.Korplug!8.3EA (CLOUD)
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.NPE
+  Tencent                        Win32.Trojan.Yephiler.Mzfl
+  TrellixENS                     Artemis!4A2FA4649DF4
+  VIPRE                          Trojan.GenericKD.79671332
+  Varist                         W64/ABTrojan.APRC-5585
+  Zillya                         Trojan.Korplug.Win64.13
+  alibabacloud                   Trojan:Win/Korplug.K
+  huorong                        Trojan/ShellLoader.i!crit
+
+## 36e0a875a98679d803a3...  (OffLoader) | Defender: ✗ nicht erkannt
+   Erkannt: 9/76 Engines (11.8%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AVG                            FileRepMalware [Misc]
+  AhnLab-V3                      Trojan/Win.Generic.R768097
+  Avast                          FileRepMalware [Misc]
+  CrowdStrike                    win/malicious_confidence_60% (D)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win32/TrojanDropper.Agent.TES trojan
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+
+## 2762f3e0a56d62e70157...  (LummaStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan:Win32/Wacatac.B!ml
+   Erkannt: 10/76 Engines (13.2%) — 🟡 SCHWACH ERKANNT
+  Bkav                           W32.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  ESET-NOD32                     Win32/GenKryptik.HQFO trojan
+  Elastic                        malicious (high confidence)
+  Google                         Detected
+  Ikarus                         Trojan.Win32.Krypt
+  Malwarebytes                   PUP.Optional.ChinAd.DDS
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Symantec                       ML.Attribute.HighConfidence
+  VBA32                          BScope.TrojanPSW.Lumma
