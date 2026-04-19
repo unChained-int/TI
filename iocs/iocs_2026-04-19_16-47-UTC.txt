@@ -1,0 +1,184 @@
+# IOC Export  2026-04-19_16-47-UTC
+# 20 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+dce3f821a6c556734a9660b07fe4f47c7323959f0dd5c0ac2fa49ff815129ef9  # Post-Exploitation | R=94.8 | Sliver | exe
+49808e7a33aae40be712f7ba8b3667d1e54cbbe01631ece4a02addb2a6c74441  # Trojaner | R=82.8 | unbekannt | exe
+f463df074c6a4e6eab7d22d9947865b1cca294b46444253514cfc6ece5304c91  # Trojaner | R=82.2 | AIDetectMalware | exe
+464ebddcf6537f91aa32ee7521262538d94a68790f679567e1798d3e5b529866  # Infostealer | R=81.8 | UmbralStealer | exe
+815c846bb94902deb159aaac331fe0ac0cd14874520766677bb7c95300e8efc3  # Trojaner | R=80.6 | AIDetectMalware | exe
+edd7e88acbf5e866bf68fdb45d2dcb3fe19bb8c5014a4ddc65ff59703abd42da  # RAT | R=80.6 | CrystalX | exe
+e321c3e037df2eec82c36fc8e3d342dc4c9d22bc09a37c21efefc496aa5ad3d2  # Trojaner | R=80.4 | AIDetectMalware | exe
+c738c5f6aa0c66df3b114e87c18f4c0c5c507290b7bb87c4ed0d30a83e2c9b63  # RAT | R=80.1 | ValleyRAT | exe
+b13aa04de5a3127d041a1f2e44d6b0ce42d99aec2dbf6278b06aeb634051f08d  # Loader | R=74.3 | unbekannt | exe
+f0706aa4cf60a5f2056581091bee770e69b286c2a4ba003ef1ba43cc0bcde30d  # Loader | R=74.1 | unbekannt | exe
+2762f3e0a56d62e70157c398626856befead49f0926ba921f478bb599f10e2f6  # Infostealer | R=71.8 | LummaStealer | exe
+9e1d518ac66b92c84a5adf54c88b7c65a817d6a05836871eac1c87920f89d15c  # Infostealer | R=66.4 | MSIL | exe
+7982e01652d96f73c939c4f480fb0e283b0afb72bc5de17ffed3e7ad49871d45  # Windows-Malware | R=39.1 | unbekannt | exe
+c435fbae50cf874d25a1c47a6e2841f2f4f007e419f6dd1c1d619a888e1d4b49  # Windows-Malware | R=39.1 | unbekannt | exe
+01f2a993359b45c83849d866d77b525d1dea31dab8b587469ea28736e800f5c5  # Windows-Malware | R=39.1 | unbekannt | exe
+b3083eeeda8c524ee959f2284efe0fad9c0047326874a2381360e6408a98e320  # Windows-Malware | R=39.1 | unbekannt | exe
+c539257cbd8d6c2155691a1534f06cf741e4582761240e70978dee2e6bbaaf69  # Windows-Malware | R=38.7 | unbekannt | exe
+e8767d8710d75c36898f0053145ae63eccc239937b160e51131a681155ed6344  # Windows-Malware | R=37.5 | unbekannt | exe
+eaa2dba2497bc58f0c7582902b06da986091d2b042a0f3dcce998676764a8d0f  # Andere / Unbekannt | R=32.7 | unbekannt | unknown
+5c595e7a065f3c2c6461ccf2f084b81020cd3aed5e2539960d21453af7b11756  # Andere / Unbekannt | R=32.3 | unbekannt | unknown
+
+[Tags]
+AmsiETWPatch
+CrystalX
+Downloader
+HackTool
+Heuristic
+Injector
+Obfuscator
+RAT
+SilverFox
+Sliver
+Trojan_Win32_Wacatac_B
+UmbralStealer
+ValleyRAT
+Wacatac
+Zenlod
+exe
+shellcode
+
+[VT Engine Detections]
+
+## 9e1d518ac66b92c84a5a...  (MSIL) | Defender: ✓ Generic.MSIL.PasswordStealerA.8CD85DA3
+   Erkannt: 54/76 Engines (71.0%) — ✅ GUT ERKANNT
+  ALYac                          Generic.MSIL.PasswordStealerA.8CD85DA3
+  APEX                           Malicious
+  AVG                            MSIL:GenMalicious-BRD [Trj]
+  AhnLab-V3                      Trojan/Win32.Agent.R71882
+  Antiy-AVL                      Trojan/MSIL.Bladabindi
+  Arcabit                        Generic.MSIL.PasswordStealerA.8CD85DA3
+  Avast                          MSIL:GenMalicious-BRD [Trj]
+  Avira                          TR/Dropper.Gen
+  BitDefender                    Generic.MSIL.PasswordStealerA.8CD85DA3
+  Bkav                           W32.AIDetectMalware.CS
+  CAT-QuickHeal                  Trojan.YakbeexMSIL.ZZ4
+  CTX                            exe.unknown.msil
+  ClamAV                         Win.Packed.Zusy-7753321-0
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.PWS.Siggen1.1167
+  ESET-NOD32                     MSIL/Autorun.Spy.Agent.DF worm
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Generic.MSIL.PasswordStealerA.8CD85DA3 (B)
+  F-Secure                       Trojan.TR/Dropper.Gen
+  Fortinet                       MSIL/Agent.FHT!tr
+  GData                          MSIL.Trojan-Spy.Keylogger.I
+  Google                         Detected
+  Ikarus                         Trojan.MSIL.Janeleiro
+  Jiangmin                       Trojan/Generic.bjbpd
+  K7AntiVirus                    Trojan ( 700000201 )
+  K7GW                           Trojan ( 700000201 )
+  Kaspersky                      HEUR:Trojan.Win32.Generic
+  Kingsoft                       malware.kb.c.1000
+  Malwarebytes                   Spyware.Passwordstealer
+  MaxSecure                      Trojan.Malware.121218.susgen
+  McAfeeD                        ti!9E1D518AC66B
+  MicroWorld-eScan               Generic.MSIL.PasswordStealerA.8CD85DA3
+  Microsoft                      PWS:MSIL/Mintluks.A
+  NANO-Antivirus                 Trojan.Win32.TrjGen.dklyhh
+  Rising                         Backdoor.njRAT!1.C91D (CLASSIC)
+  SUPERAntiSpyware               Trojan.Agent/Generic
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        GenericRXEQ-UA!8A989AA52F6A
+  Sophos                         Mal/MsilSteal-A
+  Tencent                        Malware.Win32.Gencirc.10b12802
+  TrellixENS                     GenericRXEQ-UA!8A989AA52F6A
+  TrendMicro                     BKDR_BLBINDI.SM2
+  TrendMicro-HouseCall           BKDR_BLBINDI.SM2
+  VBA32                          Trojan.MSIL.Buts.gen
+  VIPRE                          Generic.MSIL.PasswordStealerA.8CD85DA3
+  Varist                         W32/S-8ad7a1a5!Eldorado
+  VirIT                          Trojan.Win32.ILSpy.V
+  Webroot                        W32.Meredrop.Gen
+  Yandex                         Trojan.Agent!3BiljPp1Fes
+  ZoneAlarm                      Mal/SpyGate-A
+  huorong                        Backdoor/Dalatar.a
+
+## e321c3e037df2eec82c3...  (AIDetectMalware) | Defender: ✗ nicht erkannt
+   Erkannt: 14/76 Engines (18.4%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  Bkav                           W64.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  Elastic                        malicious (high confidence)
+  Gridinsoft                     Susp.U.XOREncoded.sd!yf
+  Kaspersky                      HEUR:Trojan.Win32.Generic
+  Kingsoft                       malware.kb.a.860
+  McAfeeD                        ti!E321C3E037DF
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Suspicious PE
+  Symantec                       ML.Attribute.HighConfidence
+
+## 815c846bb94902deb159...  (AIDetectMalware) | Defender: ✗ nicht erkannt
+   Erkannt: 13/76 Engines (17.1%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  Bkav                           W32.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_60% (D)
+  Cylance                        Unsafe
+  Elastic                        malicious (high confidence)
+  Ikarus                         Win32.Outbreak
+  Kaspersky                      UDS:Trojan-Downloader.Win32.Minix
+  Kingsoft                       malware.kb.a.759
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Downloader.GuLoader/NSIS!1.13D50 (CLASSIC)
+  Symantec                       Scr.NSISHeur!gen3
+  huorong                        HEUR:Trojan/Injector.ba
+
+## f463df074c6a4e6eab7d...  (AIDetectMalware) | Defender: ✗ nicht erkannt
+   Erkannt: 7/76 Engines (9.2%) — ⚠️ KAUM ERKANNT
+  Bkav                           W64.AIDetectMalware
+  CrowdStrike                    win/grayware_confidence_70% (D)
+  ESET-NOD32                     WinGo/HackTool.Agent.HU trojan
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Hacktool.Agent!8.335 (CLOUD)
+  Tencent                        Win32.HackTool.Ktool.Mcnw
+  huorong                        HackTool/W64.Flooder.b!crit
+
+## 2762f3e0a56d62e70157...  (LummaStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Application.Generic.4937892
+   Erkannt: 36/76 Engines (47.4%) — 🟠 MÄSSIG ERKANNT
+  AVG                            FileRepMalware [Pws]
+  AhnLab-V3                      Infostealer/Win.ACRStealer.R769686
+  Antiy-AVL                      Trojan/Win32.GenKryptik
+  Arcabit                        Application.Generic.D4B58A4
+  Avast                          FileRepMalware [Pws]
+  BitDefender                    Application.Generic.4937892
+  Bkav                           W32.AIDetectMalware
+  CTX                            exe.trojan.generic
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win32/GenKryptik.HQFO trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Application.Generic.4937892 (B)
+  GData                          Win32.Trojan.Agent.215DE7
+  Google                         Detected
+  Ikarus                         Trojan.Win32.Krypt
+  K7AntiVirus                    Trojan ( 006dcf241 )
+  K7GW                           Trojan ( 006dcf241 )
+  Kaspersky                      Trojan-PSW.Win32.Lumma.acsk
+  Lionic                         Trojan.Win32.LummaStealer.4!c
+  Malwarebytes                   PUP.Optional.ChinAd.DDS
+  McAfeeD                        ti!2762F3E0A56D
+  MicroWorld-eScan               Application.Generic.4937892
+  Microsoft                      Trojan:Win32/Kepavll!rfn
+  Paloalto                       generic.ml
+  Rising                         Trojan.Kryptik!8.8 (CLOUD)
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Win32.Trojan.FalseSign.Jtgl
+  TrellixENS                     Artemis!5C132A0DBF04
+  VBA32                          BScope.TrojanPSW.Lumma
+  VIPRE                          Application.Generic.4937892
+  Varist                         W32/ABApplication.IBVU-3133
+  alibabacloud                   Trojan:Win/Wacatac.B9nj
