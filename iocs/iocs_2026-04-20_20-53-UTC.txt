@@ -1,0 +1,127 @@
+# IOC Export  2026-04-20_20-53-UTC
+# 12 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+f1fac8de90dccc715146a5021ddd814f3eec13514e1cc6a634a03448110b1c0e  # Infostealer | R=86.0 | LummaStealer | exe
+8f625fe2b6cbc675335608b181fc71284d2a9df6180a65d5fbf40828a507e04b  # Trojaner | R=83.5 | bmz | msi
+671b028033d4123f85d64c3c60ccf1f3057bf1e80b3189a355950ba6144ad256  # Infostealer | R=81.6 | unbekannt | exe
+15f0afab127b657e6c3d2390d867b7a610acee6902fd097c1f28dcf77449fad1  # Loader | R=78.8 | AIDetectMalware | exe
+cfe32a12fef7a6bfcf5c493d8001157e5ee7268d11cdf2de328868b5d7d7404f  # Loader | R=77.3 | Bitser | exe
+2762f3e0a56d62e70157c398626856befead49f0926ba921f478bb599f10e2f6  # Infostealer | R=68.9 | LummaStealer | exe
+c07f115373473db336425d9ce032a33b012fff9c652498169b1d745746fb4423  # Windows-Malware | R=39.0 | unbekannt | exe
+16d40adf1f39e3689b4ddd04fcdba1755acc2624242c9da9ed075d7373736603  # Windows-Malware | R=38.7 | unbekannt | exe
+e87c3103be2079bc1dbda71c675a717cd2da21615876d8661f0605cc5f9b8392  # Andere / Unbekannt | R=32.2 | unbekannt | zip
+a5d006dba3ec1debb2c917dc9311bb429125f2d518c117f7c1ab27ca1a16523d  # Andere / Unbekannt | R=31.6 | unbekannt | 7z
+b4efe255c4271f4d40a926cc37bf97f90d0f3eda45490648362d22073d578f91  # Andere / Unbekannt | R=31.6 | unbekannt | unknown
+dc5cf42efa0f32fd942f2d714499e5dea790d603d0e377e75c18962e399f30f1  # Andere / Unbekannt | R=31.6 | unbekannt | zip
+
+[Tags]
+7z
+B
+LummaStealer
+MIX3.file
+MIX4.file
+RapidStealer
+ZetaKiller
+dropped-by-GCleaner
+exe
+msi
+pw-dx2026
+signed
+zip
+
+[VT Engine Detections]
+
+## 8f625fe2b6cbc6753356...  (bmz) | Defender: ✗ nicht erkannt
+   Erkannt: 5/76 Engines (6.6%) — ⚠️ KAUM ERKANNT
+  ESET-NOD32                     PowerShell/TrojanDownloader.Agent.PSO trojan
+  Kaspersky                      HEUR:Trojan.PowerShell.Generic
+  Rising                         Trojan.Dyloader/PS!1.13C1C (CLASSIC)
+  Tencent                        Trojan.MsOffice.MacroS.11018301
+  huorong                        TrojanDownloader/Agent.bmz
+
+## 15f0afab127b657e6c3d...  (AIDetectMalware) | Defender: ✗ nicht erkannt
+   Erkannt: 8/76 Engines (10.5%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  Bkav                           W64.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_90% (W)
+  Cylance                        Unsafe
+  Elastic                        malicious (high confidence)
+  Kingsoft                       malware.kb.a.829
+  McAfeeD                        ti!15F0AFAB127B
+  Symantec                       ML.Attribute.HighConfidence
+
+## cfe32a12fef7a6bfcf5c...  (Bitser) | Defender: ✗ nicht erkannt
+   Erkannt: 3/76 Engines (4.0%) — ⚠️ KAUM ERKANNT
+  Gridinsoft                     Trojan.Heur!.00002431
+  Malwarebytes                   Trojan.Dropper
+  Zillya                         Downloader.Bitser.Win32.4314
+
+## f1fac8de90dccc715146...  (LummaStealer) | Defender: ✗ nicht erkannt
+   Erkannt: 19/76 Engines (25.0%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AVG                            FileRepMalware [Misc]
+  AhnLab-V3                      Dropper/Win.MalwareX-gen.C5855203
+  Avast                          FileRepMalware [Misc]
+  Bkav                           W32.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  Cylance                        Unsafe
+  ESET-NOD32                     WinGo/Kryptik.QO trojan
+  Elastic                        malicious (high confidence)
+  Google                         Detected
+  Ikarus                         Trojan.Win32.Krypt
+  Kaspersky                      VHO:Backdoor.Win32.Agima.gen
+  Malwarebytes                   MachineLearning/Anomalous.96%
+  McAfeeD                        ti!F1FAC8DE90DC
+  Panda                          Trj/Genetic.gen
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       malicious.moderate.ml.score
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04C9z
+  VBA32                          TScope.Trojan.Delf
+
+## 2762f3e0a56d62e70157...  (LummaStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Application.Generic.4937892
+   Erkannt: 44/76 Engines (57.9%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Application.Generic.4937892
+  AVG                            FileRepMalware [Pws]
+  AhnLab-V3                      Infostealer/Win.ACRStealer.R769686
+  Alibaba                        TrojanPSW:Win32/Lumma.50689b1b
+  Antiy-AVL                      Trojan/Win32.GenKryptik
+  Arcabit                        Application.Generic.D4B58A4
+  Avast                          FileRepMalware [Pws]
+  BitDefender                    Application.Generic.4937892
+  Bkav                           W32.AIDetectMalware
+  CTX                            exe.trojan.lumma
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win32/GenKryptik.HQFO trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Application.Generic.4937892 (B)
+  Fortinet                       Riskware/GenKryptik
+  GData                          Application.Generic.4937892
+  Google                         Detected
+  Ikarus                         Win32.Outbreak
+  K7AntiVirus                    Trojan ( 006dcf241 )
+  K7GW                           Trojan ( 006dcf241 )
+  Kaspersky                      Trojan-PSW.Win32.Lumma.acsk
+  Lionic                         Trojan.Win32.Lumma.1u!c
+  Malwarebytes                   PUP.Optional.ChinAd.DDS
+  MaxSecure                      Trojan.Malware.668499659.susgen
+  McAfeeD                        ti!2762F3E0A56D
+  MicroWorld-eScan               Application.Generic.4937892
+  Microsoft                      Trojan:Win32/Kepavll!rfn
+  Paloalto                       generic.ml
+  Panda                          Trj/PhxBzA.A
+  Rising                         Trojan.Kryptik!8.8 (CLOUD)
+  Sangfor                        Infostealer.Win32.Kryptik.Vjh1
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Win32.Trojan.FalseSign.Jtgl
+  TrellixENS                     Artemis!5C132A0DBF04
+  TrendMicro-HouseCall           Trojan.Win32.Gen.TL0101DJ26ZS
+  VBA32                          BScope.TrojanPSW.Lumma
+  VIPRE                          Application.Generic.4937892
+  Varist                         W32/ABApplication.IBVU-3133
+  VirIT                          Trojan.Win32.GenusT.FSRG
+  alibabacloud                   Trojan[stealer]:Win/Kepavll.Gen
