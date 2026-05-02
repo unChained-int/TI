@@ -1,0 +1,230 @@
+# IOC Export  2026-05-02_14-52-UTC
+# 17 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+0713f3f0cf5f96bf53479ba18394725aa7937540a7a3dc75b6b75a10beed860d  # RAT | R=89.5 | AsyncRAT | exe
+58371bfc36ec5f0d5b04249a66534ec2820f8708a671dfb9c4e575ca93d338f3  # RAT | R=89.5 | AsyncRAT | rar
+8ef77f5b654cd24325514fd2e71a079f8b990eed2df157b0f6eca23d10462590  # RAT | R=89.0 | AsyncRAT | exe
+6ea1d7de6c05964ca1fdc5976e50b9d728361930946a10b0c920da3c971a666f  # Infostealer | R=81.9 | XFilesStealer | msi
+cd9681de96c369cac354e7bedabf892f1b7e612aef2cc1ccaa9eecebadf1e41e  # Infostealer | R=81.3 | MalwareX-gen [Pws] | exe
+e8eb0541c9f492b2f32f80f3e244fe07ac1bd31ccde9e51e7de90568b258c66a  # RAT | R=80.3 | unbekannt | exe
+c1c177391f6f65f8089f110f90a475b1ce398ac604f29f55acc1063455e94c26  # Trojaner | R=78.7 | Fugrafa | exe
+23da60d5e7ba58c154e8cd93d282bd1ec6756e45ea91568e7ccf4ab2e671bf03  # Infostealer | R=78.5 | ACRStealer | exe
+353b74e4fca84879a4f7406e1ab7972761bfec524b15294b9feab567b8d0744b  # Infostealer | R=69.6 | AZORult | exe
+6d25076b0cf8d493bd252bcfdee87c9ec9e23ddb814cfc671e3e80d31e2bf6f8  # Trojaner | R=65.9 | VenomRAT | exe
+e9a91b0e83aa94fcd3d6d2ab58c062deda95252f4cc0d92dcab4b4b4c016679f  # Linux-Malware | R=42.2 | Prometei | elf
+ffdd5650f21f1b8df076cf52606ff5e4248758a2fd34596fb89b0c084a8743b5  # Windows-Malware | R=38.8 | unbekannt | exe
+0c62ddaf24a9867c13157a6f3570a828dcd22d6954daa9cb1e19278e78091451  # Skript/Dropper | R=38.8 | unbekannt | ps1
+a53a03026dd4efe462769a6e8d648454efcf53d40eb765bae506249baf4d74c5  # Windows-Malware | R=37.8 | Pony | exe
+e985a9c2fb6d9c5d14f1d3ba920efadd5482768810f0523b07ca5235878a6b36  # Andere / Unbekannt | R=32.4 | unbekannt | zip
+c94b89ce1fcdc527ce01e92441a47b4d682555447f96062138522e0f3be77af1  # Andere / Unbekannt | R=32.4 | unbekannt | unknown
+347e3ef094831fd280628c711804603f695b020e365606174a6ba118ebf56cff  # Andere / Unbekannt | R=32.1 | unbekannt | zip
+
+[Tags]
+ACRStealer
+AsyncRAT
+Azorult
+CrackZone
+Fareit
+KeygenGuru
+Pony
+Prometei
+RemusStealer
+SilverFox
+ValleyRAT
+XFilesStealer
+dll
+dnlg-eu-cc
+elf
+exe
+flcr-eu-cc
+js
+msi
+ps1
+rar
+signed
+solidgma-biz
+wraith
+zip
+
+[VT Engine Detections]
+
+## 23da60d5e7ba58c154e8...  (ACRStealer) | Defender: ✓ Gen:Variant.Tedy.953997
+   Erkannt: 25/74 Engines (33.8%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Tedy.953997
+  AhnLab-V3                      Trojan/Win.Generic.R770421
+  Antiy-AVL                      Trojan/Win64.Convagent
+  Arcabit                        Trojan.Tedy.DE8E8D
+  BitDefender                    Gen:Variant.Tedy.953997
+  CTX                            dll.trojan.tedy
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Gen:Variant.Tedy.953997 (B)
+  Fortinet                       W64/Kryptik.RE!tr
+  GData                          Gen:Variant.Tedy.953997
+  Kaspersky                      Trojan.Win64.Agent.smgdqs
+  Malwarebytes                   Malware.AI.1567175128
+  McAfeeD                        ti!23DA60D5E7BA
+  MicroWorld-eScan               Gen:Variant.Tedy.953997
+  Microsoft                      Trojan:Win32/Phonzy.B!ml
+  Paloalto                       generic.ml
+  Rising                         Trojan.Convagent!8.12323 (CLOUD)
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  TrellixENS                     Artemis!CD09DDD1FE1F
+  TrendMicro-HouseCall           TROJ_GEN.R002H09E226
+  VIPRE                          Gen:Variant.Tedy.953997
+  Webroot                        Win.Trojan.Gen
+
+## c1c177391f6f65f8089f...  (Fugrafa) | Defender: ✓ Gen:Variant.Fugrafa.352028
+   Erkannt: 18/75 Engines (24.0%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Fugrafa.352028
+  AVG                            MalwareX-gen [Misc]
+  Arcabit                        Trojan.Fugrafa.D55F1C
+  Avast                          MalwareX-gen [Misc]
+  BitDefender                    Gen:Variant.Fugrafa.352028
+  Bkav                           W32.AIDetectMalware
+  CTX                            exe.unknown.fugrafa
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  ESET-NOD32                     Win32/Kryptik_AGen.GME trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Fugrafa.352028 (B)
+  GData                          Gen:Variant.Fugrafa.352028
+  MicroWorld-eScan               Gen:Variant.Fugrafa.352028
+  Sangfor                        Trojan.Win32.Save.a
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       malicious.moderate.ml.score
+  VBA32                          BScope.Trojan.Wacatac
+  VIPRE                          Gen:Variant.Fugrafa.352028
+
+## cd9681de96c369cac354...  (MalwareX-gen [Pws]) | Defender: ✗ nicht erkannt
+   Erkannt: 14/74 Engines (18.9%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AVG                            MalwareX-gen [Pws]
+  Avast                          MalwareX-gen [Pws]
+  Bkav                           W64.AIDetectMalware
+  CrowdStrike                    win/malicious_confidence_60% (D)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win64/GenKryptik.HRGN trojan
+  Elastic                        malicious (high confidence)
+  McAfeeD                        ti!CD9681DE96C3
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Trojan.Kryptik!8.8 (TFE:6:nlUeWyQgXpI)
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  TrellixENS                     Artemis!FB89A70AB6E6
+
+## 353b74e4fca84879a4f7...  (AZORult) | Defender: ✓ Trojan.PWS.Delf.INS
+   Erkannt: 66/74 Engines (89.2%) — ✅ GUT ERKANNT
+  ALYac                          Trojan.PWS.Delf.INS
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Pws]
+  AhnLab-V3                      Trojan/Win32.Delf.R260844
+  Alibaba                        TrojanPSW:Win32/Coins.59939eac
+  Antiy-AVL                      Trojan[PSW]/Win32.Delf
+  Arcabit                        Trojan.PWS.Delf.INS
+  Avast                          Win32:MalwareX-gen [Pws]
+  Avira                          TR/Crypt.XPACK.Gen
+  BitDefender                    Trojan.PWS.Delf.INS
+  Bkav                           W32.AIDetectMalware
+  CAT-QuickHeal                  Trojan.GandcrabIH.S17569987
+  CTX                            exe.trojan.delf
+  ClamAV                         Win.Malware.Delf-6957976-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.PWS.Stealer.24814
+  ESET-NOD32                     Win32/PSW.Delf.OSF trojan
+  Elastic                        Windows.Trojan.Azorult
+  Emsisoft                       Trojan-PSW.Delf (A)
+  F-Secure                       Trojan.TR/Crypt.XPACK.Gen
+  Fortinet                       W32/PSW.DELF.OSF!tr
+  GData                          Win32.Trojan-Stealer.KBot.B
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Agent.vb!s1
+  Jiangmin                       Trojan.PSW.Generic.crd
+  K7AntiVirus                    Password-Stealer ( 0052f96e1 )
+  K7GW                           Password-Stealer ( 0052f96e1 )
+  Kaspersky                      Trojan-PSW.Win32.Coins.nav
+  Kingsoft                       malware.kb.a.1000
+  Lionic                         Trojan.Win32.Lmir.laiL
+  Malwarebytes                   Generic.Spyware.Stealer.DDS
+  MaxSecure                      Trojan.Malware.328990420.susgen
+  McAfeeD                        Real Protect-LS!6B12AFB775EC
+  MicroWorld-eScan               Trojan.PWS.Delf.INS
+  Microsoft                      Trojan:Win32/Stimilina
+  NANO-Antivirus                 Trojan.Win32.Stealer.fitdqk
+  Paloalto                       generic.ml
+  Panda                          Trj/CI.A
+  Rising                         Stealer.AZORult!1.B7AE (CLASSIC)
+  SUPERAntiSpyware               Trojan.Agent/Gen-Downloader
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        Trojan-FSEP!6B12AFB775EC
+  Sophos                         Troj/PWS-CJR
+  Symantec                       Infostealer.Rultazo
+  TACHYON                        Trojan-PWS/W32.Azorult.114688
+  Trapmine                       malicious.high.ml.score
+  TrellixENS                     Trojan-FSEP!6B12AFB775EC
+  TrendMicro                     TrojanSpy.Win32.COINSTEAL.SMPIS
+  TrendMicro-HouseCall           TrojanSpy.Win32.COINSTEAL.SMPIS
+  VBA32                          TrojanSpy.Stealer
+  VIPRE                          Trojan.PWS.Delf.INS
+  Varist                         W32/Injector.WKRP-0828
+  ViRobot                        Trojan.Win.Z.Delf.114688.CQ
+  VirIT                          Trojan.Win32.Stealer.BKXJ
+  Webroot                        W32.Adware.Gen
+  Yandex                         Trojan.GenAsa!zpkWsvf3gpo
+  Zillya                         Trojan.Azorult.Win32.4
+  ZoneAlarm                      Troj/PWS-CJR
+  Zoner                          Trojan.Win32.129865
+  alibabacloud                   Trojan:Win/PSW.f0e8d6ac
+  huorong                        Trojan/Agent.ar
+  tehtris                        Generic.Malware
+
+## 6d25076b0cf8d493bd25...  (VenomRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan.GenericKD.80024674
+   Erkannt: 42/74 Engines (56.8%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Trojan.GenericKD.80024674
+  APEX                           Malicious
+  AVG                            FileRepMalware [Trj]
+  Alibaba                        Trojan:Win64/KillProc.9ff14a63
+  Antiy-AVL                      Trojan/Win64.KillProc
+  Arcabit                        Trojan.Generic.D4C51462
+  Avast                          FileRepMalware [Trj]
+  BitDefender                    Trojan.GenericKD.80024674
+  Bkav                           W64.AIDetectMalware
+  CTX                            exe.trojan.killproc
+  CrowdStrike                    win/malicious_confidence_70% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          BackDoor.AsyncRATNET.1
+  ESET-NOD32                     Win64/KillProc.AK trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Trojan.GenericKD.80024674 (B)
+  GData                          Trojan.GenericKD.80024674
+  Google                         Detected
+  Ikarus                         Win32.Outbreak
+  K7AntiVirus                    Trojan ( 006ded6e1 )
+  K7GW                           Trojan ( 006ded6e1 )
+  Kaspersky                      Trojan.Win32.PostWorker.qf
+  Lionic                         Trojan.Win32.KillProc.4!c
+  Malwarebytes                   Malware.AI.3158782465
+  McAfeeD                        ti!6D25076B0CF8
+  MicroWorld-eScan               Trojan.GenericKD.80024674
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Adware.Agent!1.D879 (CLASSIC)
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        BehavesLike.Win64.Dropper.th
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       suspicious.low.ml.score
+  TrellixENS                     Artemis!198805306D17
+  TrendMicro                     Backdoor.Win64.VALLEYRAT.YXGD3Z
+  TrendMicro-HouseCall           Backdoor.Win64.VALLEYRAT.YXGD3Z
+  VIPRE                          Trojan.GenericKD.80024674
+  Varist                         W64/ABTrojan.DUGB-1512
+  alibabacloud                   Trojan:Win/KillProc.AH
