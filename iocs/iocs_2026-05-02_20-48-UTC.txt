@@ -1,0 +1,177 @@
+# IOC Export  2026-05-02_20-48-UTC
+# 21 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+3f120875c46c94e1fb4b939c631f690f2655e50a393a80803c9736b013eca23e  # Post-Exploitation | R=78.2 | ConnectWise | exe
+75fdefa16aaf580ffe53570d85000e96ec9b455a64fef2c752e1ba90300a4a19  # Trojaner | R=77.9 | ConnectWise | exe
+f41ead1b95d44e460c0d8851cef3a1f13775d42dd6c797ff73ae7428b3106695  # Trojaner | R=77.2 | ConnectWise | exe
+343a723eea59c7eecdc6b559837d703dd592fb1d42dc39651b06570fd144a81e  # Trojaner | R=75.5 | Unwanted-Program ( 005c6d501 ) | exe
+6d25076b0cf8d493bd252bcfdee87c9ec9e23ddb814cfc671e3e80d31e2bf6f8  # Trojaner | R=63.8 | VenomRAT | exe
+c96c8a5b9b1c85a113a47f161cd8d07953ab5427b1d41ace86fb22b23262e7a3  # Linux-Malware | R=42.4 | unbekannt | elf
+9a7e2a618cda6366228528b47726ab7ae78c4ebe01b8054924e2b6d656151970  # Windows-Malware | R=38.9 | ConnectWise | exe
+304b1984a41b3544738b405efa1cb88ded18dbc09933c0be6259ad4940213bf7  # Windows-Malware | R=37.9 | ConnectWise | exe
+df0a07dd29ea4f469c2a59f2b196f6e88d9ea6f591c172b271f02113c30112f1  # Windows-Malware | R=37.9 | ConnectWise | exe
+79c8fb66c7fe1f74a1c8b8f931a5b8c1fbba56ec1619c68dc7a27b8d3bff8924  # Windows-Malware | R=37.9 | ConnectWise | exe
+7b1dd14bf9189ade7bea7c9e137e50cace9a9ec698e907dea2d24bde8e07b91b  # Windows-Malware | R=37.9 | unbekannt | exe
+cda030ad2d0076fc2fc96aae278fbf21b2244b27826d3890da32adb1e953a42d  # Windows-Malware | R=37.8 | unbekannt | exe
+594660254306fdc6ad857acd43e4301a44ac4fd1d01ab9690d8087127510600f  # Windows-Malware | R=37.8 | ConnectWise | exe
+c53546838e32fd9baeba4179f491153958597a8a722ff5fc8627b0b361b4a6aa  # Windows-Malware | R=37.8 | unbekannt | exe
+c650e7f765c2b0f2f8683fedc44b137cf8799497a534a4d1a1ccf798ae7fdb4c  # Windows-Malware | R=37.7 | ConnectWise | exe
+d2a3784853fd83d9e8c2a5567cd47e89024049554ae9ecbae8351cb89fb34a42  # Windows-Malware | R=37.7 | unbekannt | exe
+66b0870ee93e93f2a3456b320e9a17b9ac18f2685f784c9d247d57870a0a334c  # Windows-Malware | R=37.7 | ConnectWise | exe
+fc818b4b9a887e394f8ec3ca4aaf508be710a5f8c1b623e4ab4ce05deb93a6eb  # Windows-Malware | R=37.7 | ConnectWise | exe
+6473c7a6a1fd540135205b152e76b128b1621f1b76282dfa783401da17383156  # Windows-Malware | R=37.7 | ConnectWise | exe
+56c9037430cd158db25e69ea4c12f5acc30fd6398bcd9f5380d3b0b8605b1716  # Windows-Malware | R=37.7 | ConnectWise | exe
+25ef44c041aa0713c742c73e5101bf9e05b010c971e3e07262ba873763501ec1  # Andere / Unbekannt | R=31.7 | unbekannt | unknown
+
+[Tags]
+ConnectWise
+elf
+signed
+wraith
+
+[VT Engine Detections]
+
+## f41ead1b95d44e460c0d...  (ConnectWise) | Defender: ✗ nicht erkannt
+   Erkannt: 20/74 Engines (27.0%) — 🟡 SCHWACH ERKANNT
+  AhnLab-V3                      Trojan/Win.Generic.R692620
+  Antiy-AVL                      RiskWare[RemoteAdmin]/Win32.ConnectWise
+  Bkav                           W32.HfakespclLM.Trojan
+  DrWeb                          Trojan.Siggen31.29530
+  Elastic                        malicious (moderate confidence)
+  Google                         Detected
+  Jiangmin                       RemoteAdmin.ConnectWise.s
+  K7AntiVirus                    RemoteTool ( 005ce31e1 )
+  K7GW                           RemoteTool ( 005ce31e1 )
+  Kaspersky                      not-a-virus:HEUR:RemoteAdmin.Win32.ConnectWise.gen
+  Kingsoft                       Win32.HACKTOOL.RemoteAdmin.v
+  MaxSecure                      Trojan.Malware.121218.susgen
+  Rising                         HackTool.ConnectWise!8.13A88 (TFE:5:1StHuvJzjCI)
+  SUPERAntiSpyware               Hack.Tool/Gen-Crack
+  Skyhigh                        BehavesLike.Win32.Downloader.fh
+  Symantec                       ML.Attribute.HighConfidence
+  VBA32                          BScope.Trojan.Wacatac
+  Varist                         W32/ConnectWise.M.gen!Eldorado
+  VirIT                          Trojan.Win32.Genus.DLA
+  Zillya                         Tool.ConnectWise.Win32.134
+
+## 343a723eea59c7eecdc6...  (Unwanted-Program ( 005c6d501 )) | Defender: ✗ nicht erkannt
+   Erkannt: 25/74 Engines (33.8%) — 🟡 SCHWACH ERKANNT
+  Bkav                           W32.AIDetectMalware
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.MulDrop31.17564
+  ESET-NOD32                     Win32/RemoteAdmin.ConnectWiseControl.E potentially unsafe application
+  Elastic                        malicious (high confidence)
+  Google                         Detected
+  Ikarus                         PUA.ConnectWise
+  Jiangmin                       Trojan.Agent.edgo
+  K7AntiVirus                    Unwanted-Program ( 005c6d501 )
+  K7GW                           Unwanted-Program ( 005c6d501 )
+  Kaspersky                      not-a-virus:RemoteAdmin.MSIL.ConnectWise.b
+  Kingsoft                       Win32.HACKTOOL.RemoteAdmin.v
+  MaxSecure                      Trojan.Malware.121218.susgen
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Hacktool.ConnectWise!8.13A88 (CLOUD)
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        BehavesLike.Win32.Trojan.tc
+  TrellixENS                     PUP-IPR
+  VBA32                          BScope.Riskware.ConnectWise
+  Varist                         W32/ConnectWise.B.gen!Eldorado
+  VirIT                          Trojan.Win32.GenusC.IHR
+  Yandex                         Riskware.RemoteAdmin!O4vT/8AeK2A
+  Zillya                         Tool.Convagent.Win32.869
+  huorong                        HackTool/ConnectWiseControl.i
+
+## 75fdefa16aaf580ffe53...  (ConnectWise) | Defender: ✗ nicht erkannt
+   Erkannt: 18/74 Engines (24.3%) — 🟡 SCHWACH ERKANNT
+  AhnLab-V3                      Trojan/Win.Generic.R692620
+  Antiy-AVL                      RiskWare[RemoteAdmin]/Win32.ConnectWise
+  Bkav                           W32.HfakespclLM.Trojan
+  DrWeb                          Trojan.Siggen31.29530
+  Elastic                        malicious (moderate confidence)
+  Google                         Detected
+  Jiangmin                       RemoteAdmin.ConnectWise.s
+  K7AntiVirus                    RemoteTool ( 005ce31e1 )
+  K7GW                           RemoteTool ( 005ce31e1 )
+  Kaspersky                      not-a-virus:HEUR:RemoteAdmin.Win32.ConnectWise.gen
+  Kingsoft                       Win32.HACKTOOL.RemoteAdmin.v
+  MaxSecure                      Trojan.Malware.121218.susgen
+  Rising                         HackTool.ConnectWise!8.13A88 (TFE:5:1StHuvJzjCI)
+  SUPERAntiSpyware               Hack.Tool/Gen-Crack
+  Symantec                       ML.Attribute.HighConfidence
+  VBA32                          BScope.Trojan.Wacatac
+  Varist                         W32/ConnectWise.M.gen!Eldorado
+  VirIT                          Trojan.Win32.Genus.DLA
+
+## 3f120875c46c94e1fb4b...  (ConnectWise) | Defender: ✗ nicht erkannt
+   Erkannt: 24/74 Engines (32.4%) — 🟡 SCHWACH ERKANNT
+  Bkav                           W32.AIDetectMalware
+  CAT-QuickHeal                  Trojan.Cobaltstrike
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.Siggen29.64120
+  ESET-NOD32                     Win32/RemoteAdmin.ConnectWiseControl.E potentially unsafe application
+  Elastic                        malicious (high confidence)
+  Google                         Detected
+  Ikarus                         PUA.ScreenConnect
+  Jiangmin                       Trojan.Agent.edgo
+  K7AntiVirus                    Unwanted-Program ( 005c6d501 )
+  K7GW                           Unwanted-Program ( 005c6d501 )
+  MaxSecure                      Trojan.Malware.300983.susgen
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Trojan.DLLhijack!8.1B50 (CLOUD)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        BehavesLike.Win32.Trojan.tc
+  TrellixENS                     ConnectWise
+  VBA32                          BScope.Riskware.ConnectWise
+  Varist                         W32/ConnectWise.B.gen!Eldorado
+  Yandex                         Riskware.RemoteAdmin!O4vT/8AeK2A
+  Zillya                         Tool.Convagent.Win32.869
+  huorong                        HackTool/ConnectWiseControl.i
+
+## 6d25076b0cf8d493bd25...  (VenomRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan.GenericKD.80024674
+   Erkannt: 42/74 Engines (56.8%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Trojan.GenericKD.80024674
+  APEX                           Malicious
+  AVG                            FileRepMalware [Trj]
+  Alibaba                        Trojan:Win64/KillProc.9ff14a63
+  Antiy-AVL                      Trojan/Win64.KillProc
+  Arcabit                        Trojan.Generic.D4C51462
+  Avast                          FileRepMalware [Trj]
+  BitDefender                    Trojan.GenericKD.80024674
+  Bkav                           W64.AIDetectMalware
+  CTX                            exe.trojan.killproc
+  CrowdStrike                    win/malicious_confidence_70% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          BackDoor.AsyncRATNET.1
+  ESET-NOD32                     Win64/KillProc.AK trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Trojan.GenericKD.80024674 (B)
+  GData                          Trojan.GenericKD.80024674
+  Google                         Detected
+  Ikarus                         Win32.Outbreak
+  K7AntiVirus                    Trojan ( 006ded6e1 )
+  K7GW                           Trojan ( 006ded6e1 )
+  Kaspersky                      Trojan.Win32.PostWorker.qf
+  Lionic                         Trojan.Win32.KillProc.4!c
+  Malwarebytes                   Malware.AI.3158782465
+  McAfeeD                        ti!6D25076B0CF8
+  MicroWorld-eScan               Trojan.GenericKD.80024674
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Adware.Agent!1.D879 (CLASSIC)
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        BehavesLike.Win64.Dropper.th
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       suspicious.low.ml.score
+  TrellixENS                     Artemis!198805306D17
+  TrendMicro                     Backdoor.Win64.VALLEYRAT.YXGD3Z
+  TrendMicro-HouseCall           Backdoor.Win64.VALLEYRAT.YXGD3Z
+  VIPRE                          Trojan.GenericKD.80024674
+  Varist                         W64/ABTrojan.DUGB-1512
+  alibabacloud                   Trojan:Win/KillProc.AH
