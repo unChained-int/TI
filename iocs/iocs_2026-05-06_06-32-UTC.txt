@@ -1,0 +1,89 @@
+# IOC Export  2026-05-06_06-32-UTC
+# 8 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+12adc1327255d53468eb8697921a3730dbfe731a0e0f12915d17d50b5a1b3df3  # Trojaner | R=84.5 | C!ml | elf
+900fde10fd6e49ce75befb962f37f741476b20ade4ff64d6605d06624b071cc5  # Trojaner | R=77.4 | Cryxos | js
+6d25076b0cf8d493bd252bcfdee87c9ec9e23ddb814cfc671e3e80d31e2bf6f8  # Trojaner | R=61.2 | VenomRAT | exe
+c869961a929906fab60f2f57bce977823ca211929a20134c478407ab216cdf92  # Skript/Dropper | R=37.5 | unbekannt | js
+b4d7ffae12059fe24b40cc4871bca4513229a2c31367b919902921e6da0f7452  # Andere / Unbekannt | R=32.6 | unbekannt | unknown
+3b79bc5113bf0408ec0e06b039b75a28e064dc533d15646b0094697da347832a  # Andere / Unbekannt | R=32.5 | unbekannt | unknown
+f2e495418f2b19eda950299ac72028a0458dea457eab26088ef01174ae5e32b3  # Andere / Unbekannt | R=32.2 | unbekannt | unknown
+83da61d7182842d67f1edd8893356058ed5fa2846f20095720ea4c29d324fd57  # Andere / Unbekannt | R=32.2 | unbekannt | unknown
+
+[Tags]
+elf
+exe-in-archive
+js
+spamtrap
+
+[VT Engine Detections]
+
+## 12adc1327255d53468eb...  (C!ml) | Defender: ✗ nicht erkannt
+   Erkannt: 1/74 Engines (1.4%) — ⚠️ KAUM ERKANNT
+  Microsoft                      Trojan:Script/Wacatac.C!ml
+
+## 900fde10fd6e49ce75be...  (Cryxos) | Defender: ✓ JS:Trojan.Cryxos.16079
+   Erkannt: 17/74 Engines (23.0%) — 🟡 SCHWACH ERKANNT
+  Arcabit                        JS:Trojan.Cryxos.D3ECF
+  BitDefender                    JS:Trojan.Cryxos.16079
+  CTX                            javascript.trojan.cryxos
+  DrWeb                          JS.DownLoader.9376
+  ESET-NOD32                     JS/TrojanDropper.Agent.QAE trojan
+  Emsisoft                       JS:Trojan.Cryxos.16079 (B)
+  Fortinet                       JS/Formbook.PS1D!tr
+  GData                          JS:Trojan.Cryxos.16079
+  Google                         Detected
+  Ikarus                         Trojan-Downloader.JS.Agent
+  Kaspersky                      HEUR:Trojan.Script.Generic
+  MicroWorld-eScan               JS:Trojan.Cryxos.16079
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  Symantec                       Trojan.Gen.NPE
+  VIPRE                          JS:Trojan.Cryxos.16079
+  alibabacloud                   Trojan[dropper]:Javascript/Wacatac.B9nj
+  huorong                        TrojanDownloader/JS.Netloader.dp
+
+## 6d25076b0cf8d493bd25...  (VenomRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan.GenericKD.80024674
+   Erkannt: 42/74 Engines (56.8%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Trojan.GenericKD.80024674
+  APEX                           Malicious
+  AVG                            FileRepMalware [Trj]
+  Alibaba                        Trojan:Win64/KillProc.9ff14a63
+  Antiy-AVL                      Trojan/Win64.KillProc
+  Arcabit                        Trojan.Generic.D4C51462
+  Avast                          FileRepMalware [Trj]
+  BitDefender                    Trojan.GenericKD.80024674
+  Bkav                           W64.AIDetectMalware
+  CTX                            exe.trojan.killproc
+  CrowdStrike                    win/malicious_confidence_70% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          BackDoor.AsyncRATNET.1
+  ESET-NOD32                     Win64/KillProc.AK trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Trojan.GenericKD.80024674 (B)
+  GData                          Trojan.GenericKD.80024674
+  Google                         Detected
+  Ikarus                         Win32.Outbreak
+  K7AntiVirus                    Trojan ( 006ded6e1 )
+  K7GW                           Trojan ( 006ded6e1 )
+  Kaspersky                      Trojan.Win32.PostWorker.qf
+  Lionic                         Trojan.Win32.KillProc.4!c
+  Malwarebytes                   Malware.AI.3158782465
+  McAfeeD                        ti!6D25076B0CF8
+  MicroWorld-eScan               Trojan.GenericKD.80024674
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Adware.Agent!1.D879 (CLASSIC)
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        BehavesLike.Win64.Dropper.th
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       suspicious.low.ml.score
+  TrellixENS                     Artemis!198805306D17
+  TrendMicro                     Backdoor.Win64.VALLEYRAT.YXGD3Z
+  TrendMicro-HouseCall           Backdoor.Win64.VALLEYRAT.YXGD3Z
+  VIPRE                          Trojan.GenericKD.80024674
+  Varist                         W64/ABTrojan.DUGB-1512
+  alibabacloud                   Trojan:Win/KillProc.AH
