@@ -1,0 +1,148 @@
+# IOC Export  2026-05-07_23-03-UTC
+# 9 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+a30d7361bd67a8fab6af1642d724305dc73d74c53d000613e0fcb3152ac9d975  # RAT | R=89.3 | RemcosRAT | exe
+86ab9febb7dbef9b1a25875d03fd1892d538bafd396fa5184919f44c8b9e4e1f  # Trojaner | R=84.4 | FakeGame | exe
+75f48cf77fe05e4e8e8b21e4ff3c3b611ddc7a8364a61e36eed428be939a97da  # Trojaner | R=79.6 | Malware | exe
+2368e264cafd9c6699c2ef958e873926b7f7575e52318c705127a166e4ab53dc  # Loader | R=79.3 | Amadey | exe
+c91b1caf17db49cefb01198ae48acf760f4b628fefe7157afe4ad36c88b50751  # Trojaner | R=77.1 | Win64:Evo-gen [Trj] | exe
+30d0057cbe8b311a1f5ece9a8865ee037ae6c49c6b8a66cae253b89b4eef61a9  # Loader | R=75.0 | unbekannt | exe
+4231e803c2e0189984d0aea505d6f82bb55cc48096b78a7755739a8f4ff14cce  # Loader | R=73.9 | unbekannt | exe
+6d25076b0cf8d493bd252bcfdee87c9ec9e23ddb814cfc671e3e80d31e2bf6f8  # Trojaner | R=61.2 | VenomRAT | exe
+715f8acee84fe273a0a450a80b5ffb18c0f4579ae0ecbbecdc31a0a207cb5b40  # Andere / Unbekannt | R=32.4 | unbekannt | unknown
+
+[Tags]
+104-245-245-50
+1TEST.file
+Amadey
+B
+CNABHunter
+F
+MIX5.file
+MIX7.file
+RemcosRAT
+dropped-by-GCleaner
+exe
+latam
+signed
+wraith
+
+[VT Engine Detections]
+
+## 75f48cf77fe05e4e8e8b...  (Malware) | Defender: ✗ nicht erkannt
+   Erkannt: 17/75 Engines (22.7%) — 🟡 SCHWACH ERKANNT
+  Antiy-AVL                      Trojan[PSW]/Win32.Agent
+  Bkav                           W32.Malware.C86BF0A6
+  CTX                            exe.trojan.generic
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W64.Evo
+  Fortinet                       Malicious_Behavior.SB
+  Lionic                         Trojan.Win32.Generic.4!c
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        ti!75F48CF77FE0
+  Paloalto                       generic.ml
+  Tencent                        Malware.Win32.Gencirc.14ad3d3c
+  Trapmine                       suspicious.low.ml.score
+  TrellixENS                     Artemis!2B19D93F39A8
+  tehtris                        Generic.Malware
+
+## 86ab9febb7dbef9b1a25...  (FakeGame) | Defender: ✗ nicht erkannt
+   Erkannt: 2/75 Engines (2.7%) — ⚠️ KAUM ERKANNT
+  Malwarebytes                   Trojan.FakeGame
+  Trapmine                       malicious.moderate.ml.score
+
+## c91b1caf17db49cefb01...  (Win64:Evo-gen [Trj]) | Defender: ✗ nicht erkannt
+   Erkannt: 20/75 Engines (26.7%) — 🟡 SCHWACH ERKANNT
+  AVG                            Win64:Evo-gen [Trj]
+  AhnLab-V3                      Trojan/Win.Evo-gen.R771208
+  Alibaba                        Backdoor:Win64/Generic.28b67ed8
+  Avast                          Win64:Evo-gen [Trj]
+  CrowdStrike                    win/malicious_confidence_90% (W)
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W64.Evo
+  Fortinet                       W64/Kryptik.PU!tr
+  Kaspersky                      UDS:Backdoor.Win64.Gsb.aqv
+  Kingsoft                       Win64.Backdoor.Gsb.gen
+  Malwarebytes                   Malware.AI.3611691804
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Sangfor                        Trojan.Win32.Agent.Vrhm
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Win32.Trojan.FalseSign.Dzlw
+  TrellixENS                     Artemis!55FD48E64BA9
+
+## 2368e264cafd9c6699c2...  (Amadey) | Defender: ✗ nicht erkannt
+   Erkannt: 21/75 Engines (28.0%) — 🟡 SCHWACH ERKANNT
+  AVG                            Win32:Evo-gen [Trj]
+  AhnLab-V3                      Infostealer/Win.Agent.R766233
+  Avast                          Win32:Evo-gen [Trj]
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Win32/GenKryptik.HQNP trojan
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W32.Evo
+  Fortinet                       W32/MALD2.3164!tr
+  K7AntiVirus                    Password-Stealer ( 006defbf1 )
+  K7GW                           Password-Stealer ( 006defbf1 )
+  Kaspersky                      VHO:Backdoor.Win32.Agima.gen
+  Kingsoft                       Win32.Hack.Agima.gen
+  Malwarebytes                   Malware.AI.2766952019
+  McAfeeD                        ti!2368E264CAFD
+  Microsoft                      Trojan:Win32/LummaStealer.GXM!MTB
+  Panda                          Trj/Genetic.gen
+  Rising                         Malware.Undefined!8.C (TFE:dGZlOii0zupBXc22UA)
+  Sophos                         Mal/Generic-S
+  VBA32                          BScope.TrojanDownloader.Deyma
+  huorong                        Trojan/ShellLoader.amk
+
+## 6d25076b0cf8d493bd25...  (VenomRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan.GenericKD.80024674
+   Erkannt: 42/74 Engines (56.8%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Trojan.GenericKD.80024674
+  APEX                           Malicious
+  AVG                            FileRepMalware [Trj]
+  Alibaba                        Trojan:Win64/KillProc.9ff14a63
+  Antiy-AVL                      Trojan/Win64.KillProc
+  Arcabit                        Trojan.Generic.D4C51462
+  Avast                          FileRepMalware [Trj]
+  BitDefender                    Trojan.GenericKD.80024674
+  Bkav                           W64.AIDetectMalware
+  CTX                            exe.trojan.killproc
+  CrowdStrike                    win/malicious_confidence_70% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          BackDoor.AsyncRATNET.1
+  ESET-NOD32                     Win64/KillProc.AK trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Trojan.GenericKD.80024674 (B)
+  GData                          Trojan.GenericKD.80024674
+  Google                         Detected
+  Ikarus                         Win32.Outbreak
+  K7AntiVirus                    Trojan ( 006ded6e1 )
+  K7GW                           Trojan ( 006ded6e1 )
+  Kaspersky                      Trojan.Win32.PostWorker.qf
+  Lionic                         Trojan.Win32.KillProc.4!c
+  Malwarebytes                   Malware.AI.3158782465
+  McAfeeD                        ti!6D25076B0CF8
+  MicroWorld-eScan               Trojan.GenericKD.80024674
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Adware.Agent!1.D879 (CLASSIC)
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        BehavesLike.Win64.Dropper.th
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       suspicious.low.ml.score
+  TrellixENS                     Artemis!198805306D17
+  TrendMicro                     Backdoor.Win64.VALLEYRAT.YXGD3Z
+  TrendMicro-HouseCall           Backdoor.Win64.VALLEYRAT.YXGD3Z
+  VIPRE                          Trojan.GenericKD.80024674
+  Varist                         W64/ABTrojan.DUGB-1512
+  alibabacloud                   Trojan:Win/KillProc.AH
