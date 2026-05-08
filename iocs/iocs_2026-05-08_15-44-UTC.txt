@@ -1,0 +1,153 @@
+# IOC Export  2026-05-08_15-44-UTC
+# 16 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+ff278f7f770c6d932bbf13bf4f022d8afbd054371dc23696735b96e7017e97a5  # RAT | R=89.6 | RemcosRAT | js
+a4fe0742166935045dce6216e82d814cee38daeaef183aae74577c381df3f91e  # RAT | R=89.6 | RemcosRAT | js
+cfeaf2f628d293e4c6440a587398a47b4f6f938e4482a874b1f60ac99b819ac4  # Trojaner | R=87.0 | unbekannt | unknown
+1e009e3c1b579103ddc8531c7cc24fff3dae304e0e82366e337ebce5fe906fb2  # RAT | R=81.2 | unbekannt | unknown
+b84e6a4c83f867fe3148ee97ee283ab346828850309d7221af5a43d9ac6dd329  # RAT | R=71.2 | NanoCore | exe
+6d25076b0cf8d493bd252bcfdee87c9ec9e23ddb814cfc671e3e80d31e2bf6f8  # Trojaner | R=61.2 | VenomRAT | exe
+47ecd46c91d74a8d6467c7e4d6a038e9d5f959007b341e089c97589f31b25970  # Skript/Dropper | R=55.9 | unbekannt | js
+60de738b66d228b20839788846733aac30899dee9fdd33f026f29450e96a13b5  # Andere / Unbekannt | R=51.0 | Joker | xapk
+d26af8ac0a12fcb61a03cee557b317eb778d239d52a74ce42f1c240823d89806  # Skript/Dropper | R=39.1 | unbekannt | vbs
+cc82aca6548859fee85e1d9135f93ecb19c8ec829f01da0694b54c078654359e  # Skript/Dropper | R=39.0 | unbekannt | js
+073eb2fb4cb1cdbc14c435028dfd04ca631dac4d713b1bfce573f84e90757d37  # Skript/Dropper | R=38.4 | unbekannt | bat
+ef6935bb97f5c0e07d636703f3d93dd3830c7248f1beb123805ab450e6b1f72a  # Andere / Unbekannt | R=32.7 | unbekannt | zip
+a218261d8a152815bf22450115f64815011b569b8ff38c15608ca11a2aff6c5b  # Andere / Unbekannt | R=32.7 | unbekannt | unknown
+f09e7fb98cdc27234d9c76e524aaa0348e86a7bc7013f1ba57e5ea068dcd9689  # Andere / Unbekannt | R=32.0 | unbekannt | rar
+e71ea17e06c5022d2073d6b2cc8a1f03b09d13694ac6680667fc1d634487551e  # Andere / Unbekannt | R=31.9 | Joker | xapk
+d3867291a296fed76bdeee21fa09c45cd4585bbf35970a16d437847f368bef98  # Andere / Unbekannt | R=31.4 | unbekannt | zip
+
+[Tags]
+AsyncRAT
+ClickFix
+CopyFail2
+Joker
+LPE
+Linux
+Malware
+NanoCore
+RAT
+RemcosRAT
+SmartApeSG
+Trojan:Win32/Vigorf.A
+Vigorf
+bat
+exe
+js
+rar
+vbs
+xapk
+zip
+
+[VT Engine Detections]
+
+## b84e6a4c83f867fe3148...  (NanoCore) | Defender: ✓ Backdoor.MSIL.Agent.GD
+   Erkannt: 61/75 Engines (81.3%) — ✅ GUT ERKANNT
+  ALYac                          Backdoor.MSIL.Agent.GD
+  APEX                           Malicious
+  AVG                            MSIL:NanoCore-B [Trj]
+  AhnLab-V3                      Win-Trojan/Nanocore.Exp
+  Antiy-AVL                      Trojan/MSIL.NanoCore
+  Arcabit                        Backdoor.MSIL.Agent.GD
+  Avast                          MSIL:NanoCore-B [Trj]
+  Avira                          TR/Dropper.MSIL.Gen7
+  BitDefender                    Backdoor.MSIL.Agent.GD
+  CAT-QuickHeal                  Trojan.Orbus.C3
+  CTX                            exe.backdoor.msil
+  ClamAV                         Win.Trojan.NanoCore-9852758-0
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.Nanocore.23
+  ESET-NOD32                     MSIL/NanoCore.E trojan
+  Elastic                        Windows.Trojan.Nanocore
+  Emsisoft                       Trojan.NanoCore (A)
+  F-Secure                       Trojan.TR/Dropper.MSIL.Gen7
+  Fortinet                       MSIL/NanoCore.K!tr
+  GData                          MSIL.Backdoor.Nancat.A
+  Google                         Detected
+  Gridinsoft                     Backdoor.Win32.Noancooe.cc!ni
+  Ikarus                         Backdoor.Rat.Nanocore
+  Jiangmin                       Trojan.MSIL.yoyi
+  K7AntiVirus                    Trojan ( 005b2a921 )
+  K7GW                           Trojan ( 0057b88c1 )
+  Kaspersky                      Trojan.MSIL.Agent.fpar
+  Kingsoft                       malware.kb.c.1000
+  Malwarebytes                   Backdoor.NanoCore
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        Real Protect-LS!DABEACE1734A
+  MicroWorld-eScan               Backdoor.MSIL.Agent.GD
+  Microsoft                      Backdoor:MSIL/Nanocore!atmn
+  NANO-Antivirus                 Trojan.Win32.NanoBot.hmqoyu
+  Panda                          Bck/Agent.KNM
+  Rising                         Backdoor.NanoCore!1.B6F9 (CLASSIC)
+  SUPERAntiSpyware               Backdoor.Nanocore/Variant
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        Trojan-FICC!DABEACE1734A
+  Sophos                         Troj/NanoCor-BT
+  Symantec                       Trojan.Nancrat
+  TACHYON                        Backdoor/W32.DN-Nanocore.207872
+  Tencent                        Trojan.Msil.Agent.fb
+  Trapmine                       malicious.high.ml.score
+  TrellixENS                     Trojan-FICC!DABEACE1734A
+  TrendMicro                     BKDR_NOANCOOE.SM
+  TrendMicro-HouseCall           BKDR_NOANCOOE.SM
+  VBA32                          Trojan.MSIL.NanoCore.Heur
+  VIPRE                          Backdoor.MSIL.Agent.GD
+  Varist                         W32/NanoCore.C.gen!Eldorado
+  ViRobot                        Backdoor.Win32.NanoCore.Gen.A
+  VirIT                          Trojan.Win32.DownLoader12.BSON
+  Webroot                        W32.Trojan.Gen
+  Xcitium                        Backdoor.MSIL.Noancooe.JDE@5s4u9t
+  ZoneAlarm                      Troj/NanoCor-BT
+  Zoner                          Trojan.Win32.48280
+  huorong                        Backdoor/MSIL.NanoCore.b
+  tehtris                        Generic.Malware
+
+## 6d25076b0cf8d493bd25...  (VenomRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan.GenericKD.80024674
+   Erkannt: 42/74 Engines (56.8%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Trojan.GenericKD.80024674
+  APEX                           Malicious
+  AVG                            FileRepMalware [Trj]
+  Alibaba                        Trojan:Win64/KillProc.9ff14a63
+  Antiy-AVL                      Trojan/Win64.KillProc
+  Arcabit                        Trojan.Generic.D4C51462
+  Avast                          FileRepMalware [Trj]
+  BitDefender                    Trojan.GenericKD.80024674
+  Bkav                           W64.AIDetectMalware
+  CTX                            exe.trojan.killproc
+  CrowdStrike                    win/malicious_confidence_70% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          BackDoor.AsyncRATNET.1
+  ESET-NOD32                     Win64/KillProc.AK trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Trojan.GenericKD.80024674 (B)
+  GData                          Trojan.GenericKD.80024674
+  Google                         Detected
+  Ikarus                         Win32.Outbreak
+  K7AntiVirus                    Trojan ( 006ded6e1 )
+  K7GW                           Trojan ( 006ded6e1 )
+  Kaspersky                      Trojan.Win32.PostWorker.qf
+  Lionic                         Trojan.Win32.KillProc.4!c
+  Malwarebytes                   Malware.AI.3158782465
+  McAfeeD                        ti!6D25076B0CF8
+  MicroWorld-eScan               Trojan.GenericKD.80024674
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Adware.Agent!1.D879 (CLASSIC)
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        BehavesLike.Win64.Dropper.th
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       suspicious.low.ml.score
+  TrellixENS                     Artemis!198805306D17
+  TrendMicro                     Backdoor.Win64.VALLEYRAT.YXGD3Z
+  TrendMicro-HouseCall           Backdoor.Win64.VALLEYRAT.YXGD3Z
+  VIPRE                          Trojan.GenericKD.80024674
+  Varist                         W64/ABTrojan.DUGB-1512
+  alibabacloud                   Trojan:Win/KillProc.AH
