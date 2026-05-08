@@ -1,0 +1,132 @@
+# IOC Export  2026-05-08_06-00-UTC
+# 14 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+9a87db9dd846b6e4a5e7538a4d9aa8a0ce5f15e543da9aa01df80cd09e705746  # Botnet/IoT | R=84.5 | Mirai | elf
+e0e6ad0b1d5f102efd598e8d994b637f65451fc47ebc9970df17bd512c709f21  # Botnet/IoT | R=84.5 | Mirai | elf
+c95a298aab7d7382955b54456e47c09b3820438292429105c7c4f68f39351141  # Trojaner | R=83.3 | Unwanted | dll
+6e2192ef701df7f25d63e3357220f1ae82b6432009ba38812b5c953866667d13  # Trojaner | R=83.0 | win/malicious_confidence_70% ( | dll
+61ffedae361262676d55fa789e65bce2abcd8490d19b4cf0669c23ad41da0017  # Botnet/IoT | R=82.0 | Mirai | elf
+d58a10b9880957e29e614f2fbfc9a0e50b9e2479820fafe2942eb1e40e9d2b1c  # RAT | R=79.9 | LimeRAT | exe
+ec89705f0220e31338604623a000aeb3e39e3f43748a37b1241ffbd099f595d2  # Loader | R=75.2 | Win64:Evo-gen [Trj] | exe
+6d25076b0cf8d493bd252bcfdee87c9ec9e23ddb814cfc671e3e80d31e2bf6f8  # Trojaner | R=61.2 | VenomRAT | exe
+9ef3b008a82d078940a2223751c1c9d8e32148711cf403e5d6efb82d7430311c  # Linux-Malware | R=43.3 | unbekannt | elf
+3c5ffe548ea93622d11b67eead48d50f9ee39b09e1e813747883d1528569ffd1  # Linux-Malware | R=43.1 | unbekannt | elf
+3b96167959ddd108b31c16133b1806c4c8815e7be647b7589d85e293b537cfe6  # Windows-Malware | R=37.0 | AgentTesla | exe
+e960bba936d8f096a653982270297953bf4048d551cb7af7b8385b5e6a72d675  # Andere / Unbekannt | R=32.5 | unbekannt | unknown
+db990cab84532eb7cda14c7e928e98b85c19af2d8f450614f8359de53ef95d91  # Andere / Unbekannt | R=32.1 | unbekannt | unknown
+6e17e152fe3c2e5c2e28e9a336ebd9514f5b4c9030531fc7ded843b5b1ae409b  # Andere / Unbekannt | R=31.4 | unbekannt | unknown
+
+[Tags]
+AgentTesla
+C
+LimeRat
+MIX1.file
+Mirai
+Rat
+dll
+dropped-by-GCleaner
+elf
+exe
+signed
+upx
+upx-dec
+wraith
+
+[VT Engine Detections]
+
+## 6e2192ef701df7f25d63...  (win/malicious_confidence_70% () | Defender: ✗ nicht erkannt
+   Erkannt: 4/75 Engines (5.3%) — ⚠️ KAUM ERKANNT
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  DrWeb                          Program.Unwanted.5384
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Downloader.Rugmi!1.136DF (CLASSIC)
+
+## c95a298aab7d7382955b...  (Unwanted) | Defender: ✗ nicht erkannt
+   Erkannt: 3/75 Engines (4.0%) — ⚠️ KAUM ERKANNT
+  AhnLab-V3                      Infostealer/Win.LummaC2.R702966
+  DrWeb                          Program.Unwanted.5384
+  Jiangmin                       Trojan.DLLhijack.tl
+
+## 61ffedae361262676d55...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 17/75 Engines (22.7%) — 🟡 SCHWACH ERKANNT
+  AVG                            ELF:Agent-DWV [Trj]
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Gafgyt
+  Avast                          ELF:Agent-DWV [Trj]
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.BackDoor.Fgt.6204
+  ESET-NOD32                     Linux/Gafgyt.BOJ trojan
+  F-Secure                       Trojan.TR/LINUX.Agent.EBT
+  Fortinet                       ELF/Gafgyt.BOJ!tr
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Gafgyt
+  Kaspersky                      HEUR:Backdoor.Linux.Gafgyt.ix
+  McAfeeD                        Trojan:Linux/GenericY.HT
+  Rising                         Malware.Undefined!8.C (TFE:14:vlzLthgIcRL)
+  Sangfor                        Suspicious.Linux.Save.a
+  Tencent                        Backdoor.Linux.Gafgyt.hg
+  Varist                         E32/Mirai.DG.gen!Eldorado
+  huorong                        Backdoor/Linux.Gafgyt.bq
+
+## ec89705f0220e3133860...  (Win64:Evo-gen [Trj]) | Defender: ✗ nicht erkannt
+   Erkannt: 15/75 Engines (20.0%) — 🟡 SCHWACH ERKANNT
+  AVG                            Win64:Evo-gen [Trj]
+  Avast                          Win64:Evo-gen [Trj]
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W64.Evo
+  Google                         Detected
+  Ikarus                         Trojan.WinGo.Crypt
+  Kaspersky                      VHO:Backdoor.Win64.AdaptixC2.gen
+  McAfeeD                        ti!EC89705F0220
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Sangfor                        Trojan.Win32.Save.a
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       suspicious.low.ml.score
+
+## 6d25076b0cf8d493bd25...  (VenomRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan.GenericKD.80024674
+   Erkannt: 42/74 Engines (56.8%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Trojan.GenericKD.80024674
+  APEX                           Malicious
+  AVG                            FileRepMalware [Trj]
+  Alibaba                        Trojan:Win64/KillProc.9ff14a63
+  Antiy-AVL                      Trojan/Win64.KillProc
+  Arcabit                        Trojan.Generic.D4C51462
+  Avast                          FileRepMalware [Trj]
+  BitDefender                    Trojan.GenericKD.80024674
+  Bkav                           W64.AIDetectMalware
+  CTX                            exe.trojan.killproc
+  CrowdStrike                    win/malicious_confidence_70% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          BackDoor.AsyncRATNET.1
+  ESET-NOD32                     Win64/KillProc.AK trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Trojan.GenericKD.80024674 (B)
+  GData                          Trojan.GenericKD.80024674
+  Google                         Detected
+  Ikarus                         Win32.Outbreak
+  K7AntiVirus                    Trojan ( 006ded6e1 )
+  K7GW                           Trojan ( 006ded6e1 )
+  Kaspersky                      Trojan.Win32.PostWorker.qf
+  Lionic                         Trojan.Win32.KillProc.4!c
+  Malwarebytes                   Malware.AI.3158782465
+  McAfeeD                        ti!6D25076B0CF8
+  MicroWorld-eScan               Trojan.GenericKD.80024674
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Adware.Agent!1.D879 (CLASSIC)
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        BehavesLike.Win64.Dropper.th
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       suspicious.low.ml.score
+  TrellixENS                     Artemis!198805306D17
+  TrendMicro                     Backdoor.Win64.VALLEYRAT.YXGD3Z
+  TrendMicro-HouseCall           Backdoor.Win64.VALLEYRAT.YXGD3Z
+  VIPRE                          Trojan.GenericKD.80024674
+  Varist                         W64/ABTrojan.DUGB-1512
+  alibabacloud                   Trojan:Win/KillProc.AH
