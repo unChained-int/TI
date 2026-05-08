@@ -1,0 +1,114 @@
+# IOC Export  2026-05-08_22-58-UTC
+# 21 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+b8de00249df3b152e5b28c21735a6acaa649b7098d0e4195b86fd29577367da5  # Backdoor | R=84.2 | unbekannt | elf
+6210caacd4c7a3219ad6327b714c53d286443104ba06e3c4270f7e9a5d25ecee  # Backdoor | R=83.9 | unbekannt | exe
+c0091ec4f891a04ed8531faa207345a6674597ee1b765ad0dadd35c37676391c  # Loader | R=82.5 | GuLoader | exe
+8001380b521739a25e079d6a1324af3d6ff22c8162f518b463abd3e772ed5487  # Loader | R=82.5 | GuLoader | 7z
+3351f5e08bbd479b919e7120ddfdd1912c1e3564a627722040ac9581c08180ef  # Loader | R=73.7 | unbekannt | exe
+7d1e6e09f321a76ed6525368f44d41836243e176db4207bec51a422e7c4f544e  # Botnet/IoT | R=73.0 | Linux | elf
+6d25076b0cf8d493bd252bcfdee87c9ec9e23ddb814cfc671e3e80d31e2bf6f8  # Trojaner | R=61.2 | VenomRAT | exe
+081ea15c1aca87e4999db87a6d157a116493ca4431a434f79ff8953e68e79c6d  # Linux-Malware | R=59.0 | unbekannt | elf
+06026b313501400b28124afa8bb0718449c630934a4e7a0d2a13a68782d1aca5  # Linux-Malware | R=59.0 | unbekannt | elf
+2de44ba31cb7107ac7ca78e056c2c3517f294215582e02febbc0c423831bf2f3  # Linux-Malware | R=43.3 | unbekannt | elf
+2cac889fe9d2acda6ae6ef8c2fc89ecd2b52ba5ea9baa59fd2fecbfd16884607  # Linux-Malware | R=43.3 | unbekannt | elf
+d389796333d8218581bf9563dd5eb8b5bd5944d190337e401dfa987e93aa381c  # Linux-Malware | R=43.3 | unbekannt | elf
+05be2999d86bc63e8baf9211be9b60ff70dce9b1b0960b61dda5b4f7fe98298e  # Linux-Malware | R=43.3 | unbekannt | elf
+fb1fc787a2ebbbce927dfe5b2d120c0f308fc34932eac4028a0bdc2bef715d53  # Linux-Malware | R=43.3 | unbekannt | elf
+0e99ee0b95150730a29ddafb365a60593550e60999c400fbd607af4bda1dd24f  # Linux-Malware | R=43.3 | unbekannt | elf
+857efb0e755a791aa28ac3f13a9bcfc9683aceb631e97fcd204fa385c74759e6  # Linux-Malware | R=43.3 | unbekannt | elf
+2a0f04ea4cae167e20e75165299173fb705e319c07ca6ffedc7383fcd2f6e0a5  # Linux-Malware | R=43.3 | unbekannt | elf
+853ff7d9ee6129a01fb4dd8eba9c72d73c1f118755e6fbcbd9a1b0ca341df660  # Linux-Malware | R=43.3 | unbekannt | elf
+f2924b8250f44180997451ef98de97a59a938578e09c699841543fea709d9534  # Andere / Unbekannt | R=32.7 | unbekannt | sh
+13cef0f106e564bf8c4d781a8a285cbb7a37f256b5b274404f13c873fc554605  # Andere / Unbekannt | R=32.0 | unbekannt | zip
+2a4124b52ac8c53e431bf25813981ba2c596833114d195e2028183d2f6903b12  # Andere / Unbekannt | R=31.7 | unbekannt | unknown
+
+[Tags]
+7z
+B
+GuLoader
+KongTuke
+PMIX0.file
+backdoor
+dropped-by-GCleaner
+elf
+exe
+latam
+mrmike
+panda
+securitysolut-com
+sh
+signed
+webhook902-securitysolut-com
+zip
+
+[VT Engine Detections]
+
+## 7d1e6e09f321a76ed652...  (Linux) | Defender: ✗ nicht erkannt
+   Erkannt: 20/75 Engines (26.7%) — 🟡 SCHWACH ERKANNT
+  AVG                            ELF:Gafgyt-KR [Trj]
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  Avast                          ELF:Gafgyt-KR [Trj]
+  Avast-Mobile                   ELF:Gafgyt-KS [Trj]
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9838
+  ESET-NOD32                     Linux/Mirai.ETS trojan
+  Elastic                        Linux.Trojan.Gafgyt
+  F-Secure                       Trojan.TR/LINUX.Gafgyt.KR
+  Google                         Detected
+  Ikarus                         Linux.AVI.Bot
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.b
+  MaxSecure                      Trojan.Malware.121218.susgen
+  McAfeeD                        Trojan:Linux/Mirai.EQD
+  Microsoft                      Backdoor:Linux/Gafgyt.W!MTB
+  Sangfor                        Suspicious.Linux.Save.a
+  Tencent                        Backdoor.Linux.Mirai.bik
+  TrendMicro                     Backdoor.Linux.BASHLITE.SMJC11
+  TrendMicro-HouseCall           Backdoor.Linux.BASHLITE.SMJC11
+  Varist                         E32/Mirai.G.gen!Camelot
+
+## 6d25076b0cf8d493bd25...  (VenomRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan.GenericKD.80024674
+   Erkannt: 42/74 Engines (56.8%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Trojan.GenericKD.80024674
+  APEX                           Malicious
+  AVG                            FileRepMalware [Trj]
+  Alibaba                        Trojan:Win64/KillProc.9ff14a63
+  Antiy-AVL                      Trojan/Win64.KillProc
+  Arcabit                        Trojan.Generic.D4C51462
+  Avast                          FileRepMalware [Trj]
+  BitDefender                    Trojan.GenericKD.80024674
+  Bkav                           W64.AIDetectMalware
+  CTX                            exe.trojan.killproc
+  CrowdStrike                    win/malicious_confidence_70% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          BackDoor.AsyncRATNET.1
+  ESET-NOD32                     Win64/KillProc.AK trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Trojan.GenericKD.80024674 (B)
+  GData                          Trojan.GenericKD.80024674
+  Google                         Detected
+  Ikarus                         Win32.Outbreak
+  K7AntiVirus                    Trojan ( 006ded6e1 )
+  K7GW                           Trojan ( 006ded6e1 )
+  Kaspersky                      Trojan.Win32.PostWorker.qf
+  Lionic                         Trojan.Win32.KillProc.4!c
+  Malwarebytes                   Malware.AI.3158782465
+  McAfeeD                        ti!6D25076B0CF8
+  MicroWorld-eScan               Trojan.GenericKD.80024674
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Adware.Agent!1.D879 (CLASSIC)
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        BehavesLike.Win64.Dropper.th
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       suspicious.low.ml.score
+  TrellixENS                     Artemis!198805306D17
+  TrendMicro                     Backdoor.Win64.VALLEYRAT.YXGD3Z
+  TrendMicro-HouseCall           Backdoor.Win64.VALLEYRAT.YXGD3Z
+  VIPRE                          Trojan.GenericKD.80024674
+  Varist                         W64/ABTrojan.DUGB-1512
+  alibabacloud                   Trojan:Win/KillProc.AH
