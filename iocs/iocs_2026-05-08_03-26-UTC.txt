@@ -1,0 +1,130 @@
+# IOC Export  2026-05-08_03-26-UTC
+# 11 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+6e1015e19248552a3c4cc200a5c3d1fb42f6d86033ac0211196917879242a0c8  # Trojaner | R=80.6 | Unsafe | exe
+dc1f4028d7cf5a6791f6d9957cd4c64791400cf3a9887302231eaa9762806dcf  # Trojaner | R=80.0 | SnappyClient | exe
+78ae8945fa4604b14ea8e78243ffcd3a58724f467e0334eee25cc45576eeead4  # Trojaner | R=79.7 | SnappyClient | exe
+02bbeb547beab534085a90b13fe2fa66ef97d3a4e04c4a74166c106015db3e93  # Trojaner | R=75.7 | Trojan.GenericKDZ.116929 | sh
+6d25076b0cf8d493bd252bcfdee87c9ec9e23ddb814cfc671e3e80d31e2bf6f8  # Trojaner | R=61.2 | VenomRAT | exe
+1ce00564d694e84faf9aa21c5116e82b83ef83a92fc1fe118d2ba90983e8295e  # Andere / Unbekannt | R=30.5 | unbekannt | unknown
+9817e51549bd9a40f6a16a1a076f62839484608a2da5e575e96ae4535b85d609  # Andere / Unbekannt | R=30.4 | unbekannt | unknown
+fc865a72ebe23d7899f68dbac22db1cf581f6a7c652ad7061a34e9407c652924  # Andere / Unbekannt | R=30.3 | unbekannt | unknown
+ea436c305e83fd5d72912d0f92de6376f208f7da582feafd6769fc5485b03d7a  # Andere / Unbekannt | R=30.2 | unbekannt | unknown
+8d336c2d712359b722fd7b78ccf58a2f151ccfd3c3c8cf8e227f2515e414899a  # Andere / Unbekannt | R=30.2 | unbekannt | unknown
+bf2d79b53471fe1b122e3f1189ec8838b97eb4ec24ad64fa163823ca535f4df1  # Andere / Unbekannt | R=30.0 | unbekannt | unknown
+
+[Tags]
+SnappyClient
+exe
+sh
+
+[VT Engine Detections]
+
+## 6e1015e19248552a3c4c...  (Unsafe) | Defender: ✗ nicht erkannt
+   Erkannt: 10/75 Engines (13.3%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win64/GenKryptik_AGen.DNR trojan
+  Elastic                        malicious (high confidence)
+  Microsoft                      Program:Win32/Wacapew.C!ml
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Suspicious PE
+  Symantec                       ML.Attribute.HighConfidence
+
+## 78ae8945fa4604b14ea8...  (SnappyClient) | Defender: ✗ nicht erkannt
+   Erkannt: 12/75 Engines (16.0%) — 🟡 SCHWACH ERKANNT
+  AVG                            FileRepMalware [Misc]
+  AhnLab-V3                      Trojan/Win.Generic.R771131
+  Avast                          FileRepMalware [Misc]
+  Elastic                        malicious (high confidence)
+  Google                         Detected
+  Ikarus                         Trojan-Spy.WinGo.Agent
+  Kaspersky                      UDS:DangerousObject.Multi.Generic
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Skyhigh                        BehavesLike.Win64.Trojan.wm
+  Sophos                         Mal/Generic-S
+  TrellixENS                     Artemis!71CA3AB436E9
+  Webroot                        Win.Trojan.Gen
+
+## 02bbeb547beab534085a...  (Trojan.GenericKDZ.116929) | Defender: ✓ Trojan.GenericKDZ.116929
+   Erkannt: 22/75 Engines (29.3%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Trojan.GenericKDZ.116929
+  AVG                            BV:Agent-CEL [Trj]
+  Arcabit                        Trojan.Generic.D1C8C1
+  Avast                          BV:Agent-CEL [Trj]
+  BitDefender                    Trojan.GenericKDZ.116929
+  CTX                            shell.trojan.generickdz
+  ESET-NOD32                     Linux/Agent.AOF trojan
+  Emsisoft                       Trojan.GenericKDZ.116929 (B)
+  Fortinet                       BASH/Agent.AOF!tr
+  GData                          Trojan.GenericKDZ.116929
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.bc
+  MicroWorld-eScan               Trojan.GenericKDZ.116929
+  Microsoft                      TrojanDownloader:Script/Malgent.STD!MSR
+  NANO-Antivirus                 Trojan.Script.Dropper.kpvdnu
+  Rising                         Backdoor.Agent/Linux!9.6BFDA (XSE:WFNFX0JBVDpYE+3gdtK0mbyt+JT/f1vi)
+  Skyhigh                        Linux/Downloader.mu
+  Tencent                        Trojan-DL.Linux.Agent.505004
+  TrellixENS                     Linux/Downloader.mu
+  VIPRE                          Trojan.GenericKDZ.116929
+  Varist                         Unix/Agent.VA
+  huorong                        Backdoor/Linux.Agent.as
+
+## dc1f4028d7cf5a6791f6...  (SnappyClient) | Defender: ✓ Trojan:Win32/Wacatac.B!ml
+   Erkannt: 7/75 Engines (9.3%) — ⚠️ KAUM ERKANNT
+  AhnLab-V3                      Trojan/Win.Generic.R770421
+  DeepInstinct                   MALICIOUS
+  Elastic                        malicious (high confidence)
+  Google                         Detected
+  Ikarus                         Trojan-Spy.WinGo.Agent
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Sophos                         Mal/Generic-S
+
+## 6d25076b0cf8d493bd25...  (VenomRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan.GenericKD.80024674
+   Erkannt: 42/74 Engines (56.8%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Trojan.GenericKD.80024674
+  APEX                           Malicious
+  AVG                            FileRepMalware [Trj]
+  Alibaba                        Trojan:Win64/KillProc.9ff14a63
+  Antiy-AVL                      Trojan/Win64.KillProc
+  Arcabit                        Trojan.Generic.D4C51462
+  Avast                          FileRepMalware [Trj]
+  BitDefender                    Trojan.GenericKD.80024674
+  Bkav                           W64.AIDetectMalware
+  CTX                            exe.trojan.killproc
+  CrowdStrike                    win/malicious_confidence_70% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          BackDoor.AsyncRATNET.1
+  ESET-NOD32                     Win64/KillProc.AK trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Trojan.GenericKD.80024674 (B)
+  GData                          Trojan.GenericKD.80024674
+  Google                         Detected
+  Ikarus                         Win32.Outbreak
+  K7AntiVirus                    Trojan ( 006ded6e1 )
+  K7GW                           Trojan ( 006ded6e1 )
+  Kaspersky                      Trojan.Win32.PostWorker.qf
+  Lionic                         Trojan.Win32.KillProc.4!c
+  Malwarebytes                   Malware.AI.3158782465
+  McAfeeD                        ti!6D25076B0CF8
+  MicroWorld-eScan               Trojan.GenericKD.80024674
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Adware.Agent!1.D879 (CLASSIC)
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        BehavesLike.Win64.Dropper.th
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       suspicious.low.ml.score
+  TrellixENS                     Artemis!198805306D17
+  TrendMicro                     Backdoor.Win64.VALLEYRAT.YXGD3Z
+  TrendMicro-HouseCall           Backdoor.Win64.VALLEYRAT.YXGD3Z
+  VIPRE                          Trojan.GenericKD.80024674
+  Varist                         W64/ABTrojan.DUGB-1512
+  alibabacloud                   Trojan:Win/KillProc.AH
