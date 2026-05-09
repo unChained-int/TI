@@ -1,0 +1,119 @@
+# IOC Export  2026-05-09_09-23-UTC
+# 4 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+3415bc316b67dce38fda922a745014268d133a47a61a2afec0e563454488cc49  # Infostealer | R=82.7 | Ser | msi
+02959a12149400b87d8c9db42a4fba5ebd8e8184dadc432fc5d565fef08f5bb5  # Loader | R=78.4 | win/malicious_confidence_100%  | exe
+2ee7ee6418d41f17dd0d3a73698e8bb8ebdf022259cc83a9f0ea0f63529c5200  # Trojaner | R=75.4 | Cryxos | unknown
+6d25076b0cf8d493bd252bcfdee87c9ec9e23ddb814cfc671e3e80d31e2bf6f8  # Trojaner | R=61.2 | VenomRAT | exe
+
+[Tags]
+F
+MIX8.file
+dropped-by-GCleaner
+exe
+golang
+msi
+stealc
+stealer
+vidar
+
+[VT Engine Detections]
+
+## 3415bc316b67dce38fda...  (Ser) | Defender: ✓ Gen:Variant.Ser.Tedy.8514
+   Erkannt: 13/75 Engines (17.3%) — 🟡 SCHWACH ERKANNT
+  BitDefender                    Gen:Variant.Ser.Tedy.8514
+  CAT-QuickHeal                  Ole.Trojan.A25274893
+  ESET-NOD32                     WinGo/Kryptik.RO trojan
+  Emsisoft                       Gen:Variant.Ser.Tedy.8514 (B)
+  F-Secure                       Trojan:W32/GenInflated.B
+  Fortinet                       W32/Kryptik.RO!tr
+  Ikarus                         Trojan.WinGo.Crypt
+  K7AntiVirus                    Trojan ( 006d95951 )
+  K7GW                           Trojan ( 006d95951 )
+  Kaspersky                      UDS:Trojan.Win64.Goshell.gen
+  MicroWorld-eScan               Gen:Variant.Ser.Tedy.8514
+  Symantec                       Trojan.Gen.MBT
+  alibabacloud                   Trojan:Win/Goshell.gen
+
+## 02959a12149400b87d8c...  (win/malicious_confidence_100% ) | Defender: ✗ nicht erkannt
+   Erkannt: 6/75 Engines (8.0%) — ⚠️ KAUM ERKANNT
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  ESET-NOD32                     Win64/Kryptik.GVQ trojan
+  Elastic                        malicious (high confidence)
+  Kaspersky                      HEUR:Trojan.Win32.Loader.gen
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+
+## 2ee7ee6418d41f17dd0d...  (Cryxos) | Defender: ✓ JS:Trojan.Cryxos.16048
+   Erkannt: 25/75 Engines (33.3%) — 🟡 SCHWACH ERKANNT
+  ALYac                          JS:Trojan.Cryxos.16048
+  AVG                            Other:Malware-gen [Trj]
+  Arcabit                        JS:Trojan.Cryxos.D3EB0
+  Avast                          Other:Malware-gen [Trj]
+  BitDefender                    JS:Trojan.Cryxos.16048
+  CTX                            javascript.trojan.cryxos
+  Cynet                          Malicious (score: 99)
+  DrWeb                          VBS.Starter.519
+  Emsisoft                       JS:Trojan.Cryxos.16048 (B)
+  F-Secure                       Trojan.TR/Malware
+  Fortinet                       JS/Rescoms.B!tr
+  GData                          JS:Trojan.Cryxos.16048
+  Google                         Detected
+  Ikarus                         Trojan.Script
+  Kaspersky                      HEUR:Trojan.Script.Generic
+  Kingsoft                       Script.Trojan.Generic.a
+  Lionic                         Trojan.Script.Cryxos.4!c
+  McAfeeD                        Trojan:Script/Remcos.NEB
+  MicroWorld-eScan               JS:Trojan.Cryxos.16048
+  Microsoft                      Trojan:Win32/Malgent
+  Symantec                       Trojan.Gen.NPE
+  Tencent                        Script.Trojan.Generic.Vwhl
+  VIPRE                          JS:Trojan.Cryxos.16048
+  Varist                         JS/Agent.DZM
+  alibabacloud                   Trojan:Multi/Cryxos.Gen
+
+## 6d25076b0cf8d493bd25...  (VenomRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan.GenericKD.80024674
+   Erkannt: 42/74 Engines (56.8%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Trojan.GenericKD.80024674
+  APEX                           Malicious
+  AVG                            FileRepMalware [Trj]
+  Alibaba                        Trojan:Win64/KillProc.9ff14a63
+  Antiy-AVL                      Trojan/Win64.KillProc
+  Arcabit                        Trojan.Generic.D4C51462
+  Avast                          FileRepMalware [Trj]
+  BitDefender                    Trojan.GenericKD.80024674
+  Bkav                           W64.AIDetectMalware
+  CTX                            exe.trojan.killproc
+  CrowdStrike                    win/malicious_confidence_70% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          BackDoor.AsyncRATNET.1
+  ESET-NOD32                     Win64/KillProc.AK trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Trojan.GenericKD.80024674 (B)
+  GData                          Trojan.GenericKD.80024674
+  Google                         Detected
+  Ikarus                         Win32.Outbreak
+  K7AntiVirus                    Trojan ( 006ded6e1 )
+  K7GW                           Trojan ( 006ded6e1 )
+  Kaspersky                      Trojan.Win32.PostWorker.qf
+  Lionic                         Trojan.Win32.KillProc.4!c
+  Malwarebytes                   Malware.AI.3158782465
+  McAfeeD                        ti!6D25076B0CF8
+  MicroWorld-eScan               Trojan.GenericKD.80024674
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Adware.Agent!1.D879 (CLASSIC)
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        BehavesLike.Win64.Dropper.th
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       suspicious.low.ml.score
+  TrellixENS                     Artemis!198805306D17
+  TrendMicro                     Backdoor.Win64.VALLEYRAT.YXGD3Z
+  TrendMicro-HouseCall           Backdoor.Win64.VALLEYRAT.YXGD3Z
+  VIPRE                          Trojan.GenericKD.80024674
+  Varist                         W64/ABTrojan.DUGB-1512
+  alibabacloud                   Trojan:Win/KillProc.AH
