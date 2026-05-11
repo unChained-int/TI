@@ -1,0 +1,99 @@
+# IOC Export  2026-05-11_21-24-UTC
+# 8 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+a4e560c61861c4c3d6d614217d93f38fadea8ee6b127ccd85618ff4312582600  # Trojaner | R=84.3 | Linux | elf
+9220a494d3d719a46de8c93994ed386e88457df3db7d87ab89644453eab0cf24  # Loader | R=81.3 | unbekannt | exe
+4873db24a25e344c421dc196112e04f1cd67044bd3e93479aa4926bdfde61de1  # Loader | R=74.9 | unbekannt | exe
+462da039980a8f166fbd27d15437fa093ab9c369ba13055d7fad90bf3b9d1627  # RAT | R=64.3 | NanoCore | exe
+7ccee0bc59cc09e48a3cd99f2cbcd0f478f6503d478042afc660902c1237020a  # Windows-Malware | R=54.6 | MALICIOUS | exe
+db7680c1636d67085bbd7ea3a15017b4f53bfdd17b0b134c4b3f43ff7f925a6c  # Windows-Malware | R=53.7 | Malware | exe
+c38c79fe170c54976c634f50e2a7ca090719366eabad58ec2011c18775c3366d  # Android-Malware | R=42.2 | unbekannt | apk
+7bebc4b248402dbf988b92eb7d9c86797bb302b983e63ce0d2dba96f0f8a345a  # Android-Malware | R=42.2 | unbekannt | apk
+
+[Tags]
+43-160-218-11
+A
+MIX6.file
+PMIX0.file
+apk
+dropped-by-GCleaner
+elf
+exe
+signed
+
+[VT Engine Detections]
+
+## db7680c1636d67085bbd...  (Malware) | Defender: ✗ nicht erkannt
+   Erkannt: 5/75 Engines (6.7%) — ⚠️ KAUM ERKANNT
+  APEX                           Malicious
+  Bkav                           W32.Malware.30809B9F
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+
+## a4e560c61861c4c3d6d6...  (Linux) | Defender: ✗ nicht erkannt
+   Erkannt: 1/75 Engines (1.3%) — ⚠️ KAUM ERKANNT
+  Kaspersky                      UDS:Trojan.Linux.Alien.gen
+
+## 7ccee0bc59cc09e48a3c...  (MALICIOUS) | Defender: ✗ nicht erkannt
+   Erkannt: 1/75 Engines (1.3%) — ⚠️ KAUM ERKANNT
+  DeepInstinct                   MALICIOUS
+
+## 462da039980a8f166fbd...  (NanoCore) ⭐ WOCHEN-SAMPLE | Defender: ✓ Backdoor.MSIL.Agent.GD
+   Erkannt: 55/75 Engines (73.3%) — ✅ GUT ERKANNT
+  ALYac                          Backdoor.MSIL.Agent.GD
+  APEX                           Malicious
+  AhnLab-V3                      Win-Trojan/Nanocore.Exp
+  Alibaba                        Trojan:Win32/NanoCore.348
+  Antiy-AVL                      Trojan/MSIL.NanoCore
+  Arcabit                        Backdoor.MSIL.Agent.GD
+  Avira                          TR/Dropper.MSIL.Gen7
+  BitDefender                    Backdoor.MSIL.Agent.GD
+  CAT-QuickHeal                  Trojan.Orbus.C3
+  CTX                            exe.trojan.nanocore
+  ClamAV                         Win.Trojan.NanoCore-9852758-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.Nanocore.23
+  ESET-NOD32                     MSIL/NanoCore.E trojan
+  Elastic                        Windows.Trojan.Nanocore
+  Emsisoft                       Trojan.NanoCore (A)
+  F-Secure                       Trojan.TR/Dropper.MSIL.Gen7
+  Fortinet                       MSIL/NanoCore.K!tr
+  GData                          MSIL.Backdoor.Nancat.A
+  Google                         Detected
+  Gridinsoft                     Backdoor.Win32.Noancooe.cc!ni
+  Ikarus                         Backdoor.Rat.Nanocore
+  Jiangmin                       Backdoor.Generic.zwu
+  K7AntiVirus                    Trojan ( 005b2a921 )
+  K7GW                           Trojan ( 005b2a921 )
+  Kaspersky                      Trojan.MSIL.Agent.fpar
+  Kingsoft                       MSIL.Trojan.Agent.fpar
+  Lionic                         Trojan.Win32.Generic.mhUN
+  Malwarebytes                   Backdoor.NanoCore
+  McAfeeD                        Real Protect-LS!DF61FFEC12EE
+  MicroWorld-eScan               Backdoor.MSIL.Agent.GD
+  Microsoft                      Backdoor:MSIL/Nanocore!atmn
+  NANO-Antivirus                 Trojan.Win32.NanoBot.hmqoyu
+  Paloalto                       generic.ml
+  Panda                          Bck/Agent.KNM
+  Rising                         Backdoor.NanoCore!1.B6F9 (CLASSIC)
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Troj/NanoCor-BT
+  Tencent                        Trojan.Msil.Agent.fb
+  Trapmine                       malicious.moderate.ml.score
+  TrellixENS                     GenericRXAA-CZ!DF61FFEC12EE
+  TrendMicro-HouseCall           BKDR_NOANCOOE.SM
+  VBA32                          Trojan.MSIL.NanoCore.Heur
+  VIPRE                          Backdoor.MSIL.Agent.GD
+  Varist                         W32/NanoCore.C.gen!Eldorado
+  ViRobot                        Backdoor.Win32.NanoCore.Gen.A
+  VirIT                          Trojan.Win32.DownLoader12.BSON
+  Xcitium                        Backdoor.MSIL.Noancooe.JDE@5s4u9t
+  ZoneAlarm                      Troj/NanoCor-BT
+  Zoner                          Trojan.Win32.48280
+  alibabacloud                   Backdoor:MSIL/Vindor.Gen
+  huorong                        Backdoor/MSIL.NanoCore.b
