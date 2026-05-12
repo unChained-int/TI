@@ -1,0 +1,155 @@
+# IOC Export  2026-05-12_03-34-UTC
+# 19 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+d5449f7a1351ffe3266524958cfdee3e9c53adbd06b05b686276dea18d4548ef  # Loader | R=79.9 | unbekannt | exe
+d03dab10036fc5967786b13a2f5ef4d71f330eda1a575e0b6f62ae38c96361b1  # Botnet/IoT | R=76.8 | Mirai | elf
+6d0d8ed7f5b697dc23734a075e1c2f0854d29cd7a634b641c88d678d15b741cd  # Loader | R=74.0 | unbekannt | exe
+9dff4c782d0dae42c5aef8a755da13a2ad9b7ac2172d0e2753d6cf145d7e3e64  # Exploit | R=70.9 | Acsogenixx | hta
+462da039980a8f166fbd27d15437fa093ab9c369ba13055d7fad90bf3b9d1627  # RAT | R=64.3 | NanoCore | exe
+8a27732f805c8cb6a4f37443ed728cd5239dffb6e3e12d02aa7e698b5fc3f23c  # Windows-Malware | R=39.1 | unbekannt | exe
+a8fb4ff30786b312e8f65066a60ecccb009981b3408d25982183b06d98fab3e8  # Windows-Malware | R=36.0 | unbekannt | exe
+e2578168f49e469b39112aca665309cac269223afdff015c8252774500d42efa  # Skript/Dropper | R=35.6 | unbekannt | js
+14d56e75db5b279ed65cdcb8cc0ff03f190eee37ac01afcdde8185add4202fc5  # Skript/Dropper | R=35.6 | unbekannt | js
+6df513fd0947891b38063d2e94a617521a3d76d36182cb8db5dc3c9d6f200123  # Andere / Unbekannt | R=30.9 | unbekannt | unknown
+9248b313a40c89e3c91c36c2a037c0ed2e24db27321c5f8cd3b0603780cf98ef  # Andere / Unbekannt | R=30.7 | unbekannt | sh
+68e47f41fe02072b220efa24088903dc687049d481bae41102858430c5dd918b  # Andere / Unbekannt | R=30.6 | unbekannt | unknown
+8fc021a28f84fc009fe1b36d54ae1a81a7850611760ad9b6799453412fd3c752  # Andere / Unbekannt | R=30.6 | unbekannt | unknown
+cf64c80a5f94c1cd9033dcb45945fa39b55d14f8aa54f5c4732a5c72533800fc  # Andere / Unbekannt | R=30.4 | unbekannt | unknown
+9e7404f75c6ceb34449191adbb4d6935ee9cb38fe42265203c8dc25317b20bd8  # Andere / Unbekannt | R=29.9 | unbekannt | unknown
+6aaafde8630892829427e66823c3a099ab370ac78752666ab0a8a1a2bd884aa7  # Andere / Unbekannt | R=29.2 | unbekannt | unknown
+7033fecbbc907aa02e4034d2d8e4fe6a0442873c05ceb61959515d11eef6f2ec  # Andere / Unbekannt | R=29.2 | unbekannt | zip
+141a3a23f43fd5d6418b840addd9360fe208bd3f487783158a9bf4e8df7be983  # Andere / Unbekannt | R=29.2 | unbekannt | zip
+2df7c9c6429d82a53590b1e882b4b2140544a755279e2f2f0b90c7aabe9be26a  # Andere / Unbekannt | R=29.2 | unbekannt | zip
+
+[Tags]
+D
+EU.file
+Mirai
+d52f85
+dropped-by-Amadey
+dropped-by-GCleaner
+elf
+exe
+hta
+js
+sh
+zip
+
+[VT Engine Detections]
+
+## 9dff4c782d0dae42c5ae...  (Acsogenixx) | Defender: ✓ GT:JS.Acsogenixx.3766.9BEA9E5A
+   Erkannt: 25/75 Engines (33.3%) — 🟡 SCHWACH ERKANNT
+  ALYac                          GT:JS.Acsogenixx.3766.9BEA9E5A
+  AVG                            JS:Agent-EQS [InfoStl]
+  Arcabit                        GT:JS.Acsogenixx.3766.9BEA9E5A
+  Avast                          JS:Agent-EQS [InfoStl]
+  Avira                          HTML/ExpKit.Gen2
+  BitDefender                    GT:JS.Acsogenixx.3766.9BEA9E5A
+  CTX                            html.unknown.acsogenixx
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     JS/Agent.UIH trojan
+  Emsisoft                       GT:JS.Acsogenixx.3766.9BEA9E5A (B)
+  F-Secure                       Malware.HTML/ExpKit.Gen2
+  Fortinet                       JS/Agent.UIH!tr
+  GData                          GT:JS.Acsogenixx.3766.9BEA9E5A
+  Google                         Detected
+  Ikarus                         Trojan-Downloader.JS.Agent
+  Kaspersky                      HEUR:Trojan.Script.Generic
+  McAfeeD                        ti!9DFF4C782D0D
+  MicroWorld-eScan               GT:JS.Acsogenixx.3766.9BEA9E5A
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  NANO-Antivirus                 Trojan.Script.Locky.ebclcy
+  Skyhigh                        BehavesLike.HTML.Exploit.cr
+  VIPRE                          GT:JS.Acsogenixx.3766.9BEA9E5A
+  Varist                         JS/Agent.SU!Eldorado
+  Yandex                         HTML.Psyme.Gen
+  huorong                        Trojan/JS.Obfuscated.et
+
+## d03dab10036fc5967786...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 27/75 Engines (36.0%) — 🟡 SCHWACH ERKANNT
+  AVG                            ELF:Mirai-AAP [Trj]
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Gafgyt
+  Avast                          ELF:Mirai-AAP [Trj]
+  Avast-Mobile                   ELF:Mirai-AT [Trj]
+  CAT-QuickHeal                  Backdoor.Linux.Mirai.A
+  ClamAV                         Unix.Dropper.Mirai-7135925-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9774
+  ESET-NOD32                     Linux/Mirai.BDY trojan
+  Elastic                        Linux.Trojan.Gafgyt
+  F-Secure                       Trojan.TR/LINUX.Mirai.AAP
+  Fortinet                       ELF/UNSTABLE.AT!tr.botnet
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Mirai
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.in
+  Kingsoft                       Linux.Backdoor.Mirai.in
+  Lionic                         Trojan.Linux.Mirai.K!c
+  McAfeeD                        Trojan:Linux/GenericY.HS
+  Microsoft                      Backdoor:Linux/Gafgyt.AZ!xp
+  Rising                         Backdoor.Mirai/Linux!8.13285 (CLOUD)
+  Sangfor                        Suspicious.Linux.Save.a
+  SentinelOne                    Static AI - Malicious ELF
+  Symantec                       Linux.Mirai
+  Tencent                        Linux.Backdoor.Mirai.Qimw
+  Varist                         E32/Mirai.DJ.gen!Eldorado
+  alibabacloud                   DDOS:Linux/Mirai
+  huorong                        Backdoor/Linux.Mirai.ht
+
+## 462da039980a8f166fbd...  (NanoCore) ⭐ WOCHEN-SAMPLE | Defender: ✓ Backdoor.MSIL.Agent.GD
+   Erkannt: 55/75 Engines (73.3%) — ✅ GUT ERKANNT
+  ALYac                          Backdoor.MSIL.Agent.GD
+  APEX                           Malicious
+  AhnLab-V3                      Win-Trojan/Nanocore.Exp
+  Alibaba                        Trojan:Win32/NanoCore.348
+  Antiy-AVL                      Trojan/MSIL.NanoCore
+  Arcabit                        Backdoor.MSIL.Agent.GD
+  Avira                          TR/Dropper.MSIL.Gen7
+  BitDefender                    Backdoor.MSIL.Agent.GD
+  CAT-QuickHeal                  Trojan.Orbus.C3
+  CTX                            exe.trojan.nanocore
+  ClamAV                         Win.Trojan.NanoCore-9852758-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.Nanocore.23
+  ESET-NOD32                     MSIL/NanoCore.E trojan
+  Elastic                        Windows.Trojan.Nanocore
+  Emsisoft                       Trojan.NanoCore (A)
+  F-Secure                       Trojan.TR/Dropper.MSIL.Gen7
+  Fortinet                       MSIL/NanoCore.K!tr
+  GData                          MSIL.Backdoor.Nancat.A
+  Google                         Detected
+  Gridinsoft                     Backdoor.Win32.Noancooe.cc!ni
+  Ikarus                         Backdoor.Rat.Nanocore
+  Jiangmin                       Backdoor.Generic.zwu
+  K7AntiVirus                    Trojan ( 005b2a921 )
+  K7GW                           Trojan ( 005b2a921 )
+  Kaspersky                      Trojan.MSIL.Agent.fpar
+  Kingsoft                       MSIL.Trojan.Agent.fpar
+  Lionic                         Trojan.Win32.Generic.mhUN
+  Malwarebytes                   Backdoor.NanoCore
+  McAfeeD                        Real Protect-LS!DF61FFEC12EE
+  MicroWorld-eScan               Backdoor.MSIL.Agent.GD
+  Microsoft                      Backdoor:MSIL/Nanocore!atmn
+  NANO-Antivirus                 Trojan.Win32.NanoBot.hmqoyu
+  Paloalto                       generic.ml
+  Panda                          Bck/Agent.KNM
+  Rising                         Backdoor.NanoCore!1.B6F9 (CLASSIC)
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Troj/NanoCor-BT
+  Tencent                        Trojan.Msil.Agent.fb
+  Trapmine                       malicious.moderate.ml.score
+  TrellixENS                     GenericRXAA-CZ!DF61FFEC12EE
+  TrendMicro-HouseCall           BKDR_NOANCOOE.SM
+  VBA32                          Trojan.MSIL.NanoCore.Heur
+  VIPRE                          Backdoor.MSIL.Agent.GD
+  Varist                         W32/NanoCore.C.gen!Eldorado
+  ViRobot                        Backdoor.Win32.NanoCore.Gen.A
+  VirIT                          Trojan.Win32.DownLoader12.BSON
+  Xcitium                        Backdoor.MSIL.Noancooe.JDE@5s4u9t
+  ZoneAlarm                      Troj/NanoCor-BT
+  Zoner                          Trojan.Win32.48280
+  alibabacloud                   Backdoor:MSIL/Vindor.Gen
+  huorong                        Backdoor/MSIL.NanoCore.b
