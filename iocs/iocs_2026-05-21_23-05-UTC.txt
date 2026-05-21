@@ -1,0 +1,132 @@
+# IOC Export  2026-05-21_23-05-UTC
+# 21 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+71b7fd817300bd1de8071bc3254c4015e00669ac69a29ba9cf6de1448eb3e948  # Trojaner | R=83.9 | B!ml | elf
+402879ff4b368a1dc489d8572137305c84b1983d9539d374f45f815bfa7c1177  # Trojaner | R=77.3 | Trojan.Generic.38945989 | bat
+41df81e8603f0c6dba43b03201a2045c9b0a9bb8311c269fc041cfb12281529f  # Loader | R=74.5 | Guloader!gen3 | vbs
+6b9364c8bc9031d537a20d1afc12173a0b4308b391abbfc35dde61c589d2b01e  # Backdoor | R=59.8 | ValleyRAT | exe
+1f6a887240b3c98fb658da553e4a404785f00f461255d972bb0c677ac28ff2b6  # Linux-Malware | R=57.9 | unbekannt | elf
+9e6563cc3e801577c11b4f076cec3dd1c268dce1e1b117ea6a8cd99be6db3ef0  # Linux-Malware | R=42.6 | unbekannt | elf
+3adcdfe92f3fa4802295808ca33bc8407365e09cd5dd7ba977978c2cff845a69  # Linux-Malware | R=42.3 | unbekannt | elf
+1e0ec7aca924733294c1ea694d745fafc4313e4e85119dccdd32dcd4f8b6960f  # Linux-Malware | R=42.3 | unbekannt | elf
+31f3d49b3aa1561facf94ccb30db3e14101e235fd8ffba391e50125c6f0c703c  # Linux-Malware | R=42.3 | unbekannt | elf
+53f78f420d4b8f7526b1008b7c7c1519fba37a485e4c8ea74df441b116be26fc  # Linux-Malware | R=42.3 | unbekannt | elf
+14e71c1d3297bfd33f6da5c91d878cc1f305628226a844232949c6fcbf94efb7  # Linux-Malware | R=42.3 | unbekannt | elf
+0a6e477cb607b95b556b0547a9f3ee373cb4cffe45925d40030a2adf880012f5  # Linux-Malware | R=42.3 | unbekannt | elf
+d44cbab7bc8d0273b8aabc4efd1a51509bf235c10d77af624514a2b39fabccb5  # Linux-Malware | R=42.3 | unbekannt | elf
+464d0fa30cf02848cd5b87c249264df532f11c116af32358c1d7fa35d0579476  # Linux-Malware | R=42.3 | unbekannt | elf
+8c54aa09789dc89bfb16a8bf4853e505db79f5be637a303b8a5e05a84f09e43a  # Linux-Malware | R=42.3 | unbekannt | elf
+773d7089e4d5ba2d3d2221f692b22f0a8d291f952b872b5ef5d73109e5cb24e9  # Linux-Malware | R=42.3 | unbekannt | elf
+d01a6f54364bccfa02402f556cc6ad027cb1b19baeadf9cc10c1d84488f2e95d  # Linux-Malware | R=42.3 | unbekannt | elf
+5ffd86adef74a4ee71a5884e74987f4ec573eb6355f794a6c2b993c09466750d  # Skript/Dropper | R=39.0 | unbekannt | vbs
+f5f96ce39a498a637e8db1c8e0ff37aab761949a7f32503ded25eeff50016f70  # Skript/Dropper | R=39.0 | unbekannt | vbs
+5b3cdd6e4c60ab8389c8166277e16a0a6189a9df0813cb25ac2248e6aa07f922  # Skript/Dropper | R=38.8 | unbekannt | vbs
+c0b1bbdd2dd4dd3430af4e06fb05a9b412de8c18b22f71a4cfe4d6822d2f4c2b  # Andere / Unbekannt | R=31.7 | unbekannt | sh
+
+[Tags]
+bat
+elf
+sh
+vbs
+wraith
+
+[VT Engine Detections]
+
+## 41df81e8603f0c6dba43...  (Guloader!gen3) | Defender: ✗ nicht erkannt
+   Erkannt: 13/75 Engines (17.3%) — 🟡 SCHWACH ERKANNT
+  Avira                          TR/SNH
+  Cynet                          Malicious (score: 99)
+  DrWeb                          VBS.DownLoader.4455
+  ESET-NOD32                     PowerShell/CloudEye.FW trojan
+  F-Secure                       Trojan.TR/SNH
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan.VBS.SAgent.gen
+  McAfeeD                        Trojan:Script/Downloader.LA
+  Microsoft                      Trojan:VBS/RemcosRAT.SPQ!MTB
+  Rising                         Dropper.Agent/VBS!9.709CE (XSE:WFNFX1ZCUzp3cqTKukuoKJ+ckLc7ZLkH)
+  Symantec                       Scr.Guloader!gen3
+  Varist                         VBS/Agent.CTN
+  huorong                        TrojanDropper/VBS.Agent.bf
+
+## 402879ff4b368a1dc489...  (Trojan.Generic.38945989) | Defender: ✓ Trojan.Generic.38945989
+   Erkannt: 23/75 Engines (30.7%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Trojan.Generic.38945989
+  Antiy-AVL                      Trojan/BAT.Obfuscated
+  Arcabit                        Trojan.Generic.D25244C5
+  BitDefender                    Trojan.Generic.38945989
+  CTX                            powershell.trojan.generic
+  ESET-NOD32                     PowerShell/CloudEye.U trojan
+  Emsisoft                       Trojan.Generic.38945989 (B)
+  Fortinet                       PowerShell/Agent.BDZ1!tr
+  GData                          Trojan.Generic.38945989
+  Google                         Detected
+  Ikarus                         Trojan-Downloader.PS.Agent
+  Kaspersky                      HEUR:Trojan.BAT.Obfuscated.gen
+  McAfeeD                        Trojan:Script/Guloader.VEE!1
+  MicroWorld-eScan               Trojan.Generic.38945989
+  Microsoft                      Trojan:PowerShell/GuLoader.PC!MTB
+  NANO-Antivirus                 Trojan.Script.Agent.ldmvup
+  Rising                         Trojan.Agent/PS!9.34A2A (XSE:WFNFX0JBVDoejGfNyWI1QkWQFWoaxKzl)
+  Symantec                       Scr.Malscript!gen30
+  TrendMicro                     Trojan.BAT.GULOADER.SME
+  TrendMicro-HouseCall           Trojan.BAT.GULOADER.SME
+  VIPRE                          Trojan.Generic.38945989
+  Varist                         BAT/Agent.BDZ!Eldorado
+  huorong                        TrojanDownloader/BAT.Netloader.dw
+
+## 71b7fd817300bd1de807...  (B!ml) | Defender: ✗ nicht erkannt
+   Erkannt: 1/75 Engines (1.3%) — ⚠️ KAUM ERKANNT
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+
+## 6b9364c8bc9031d537a2...  (ValleyRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan:Win32/Kepavll!rfn
+   Erkannt: 49/75 Engines (65.3%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Application.jaik.48443
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Misc]
+  Alibaba                        Backdoor:Win32/MalwareX.f4f743d5
+  Antiy-AVL                      Trojan/Win32.Agent
+  Arcabit                        Trojan.Application.jaik.DBD3B
+  Avast                          Win32:MalwareX-gen [Misc]
+  Avira                          TR/W32.Agent
+  Bkav                           W32.Malware.D82EB47
+  CAT-QuickHeal                  Trojan.Kepavll
+  CTX                            exe.trojan.generic
+  ClamAV                         Win.Malware.Zegost-9879161-0
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win32/Agent.BO potentially unwanted application
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Application.jaik.48443 (B)
+  F-Secure                       Trojan.TR/W32.Agent
+  Fortinet                       Riskware/Agent
+  GData                          Gen:Variant.Application.jaik.48443
+  Google                         Detected
+  Ikarus                         Backdoor.Win32.Hupigon
+  Jiangmin                       TrojanDropper.Daws.erg
+  K7AntiVirus                    Unwanted-Program ( 005ce1951 )
+  K7GW                           Unwanted-Program ( 005ce1951 )
+  Kaspersky                      HEUR:Backdoor.Win32.Xkcp.gen
+  Kingsoft                       Win32.Hack.Xkcp.gen
+  Lionic                         Trojan.Win32.Xkcp.m!c
+  Malwarebytes                   Stantinko.Miner.Downloader.DDS
+  MaxSecure                      Trojan.Malware.324995110.susgen
+  McAfeeD                        ti!6B9364C8BC90
+  MicroWorld-eScan               Gen:Variant.Application.jaik.48443
+  Microsoft                      Trojan:Win32/Kepavll!rfn
+  Paloalto                       generic.ml
+  Panda                          Trj/CI.A
+  Rising                         PUA.Agent!8.1B6B (CLOUD)
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Win32.Trojan.Generic.Ckjl
+  Trapmine                       malicious.moderate.ml.score
+  TrellixENS                     Artemis!5905B369D1A9
+  TrendMicro                     Backdoor.Win32.VALLEYRAT.YXGELZ
+  TrendMicro-HouseCall           Backdoor.Win32.VALLEYRAT.YXGELZ
+  VBA32                          BScope.Backdoor.WOC
+  VIPRE                          Gen:Variant.Application.jaik.48443
+  Varist                         W32/ABApplication.BNHC-4123
+  alibabacloud                   Trojan:Win/Wacatac.B9nj
