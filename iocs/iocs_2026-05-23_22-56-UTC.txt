@@ -1,0 +1,104 @@
+# IOC Export  2026-05-23_22-56-UTC
+# 4 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+18d2b705487de081c5ad70cde6ecdf9808854f8c991c093546b65e7433d97a81  # Botnet/IoT | R=84.5 | Mirai | elf
+fa8dee1c2209b87c7406aa4c95e7e3b62f45cf339c08c94dc6479ea6329f9546  # Loader | R=77.4 | Malware | exe
+a48c459759d2e9d401f360e23390ccaab1b83b29986fe138392fa4026a58b07f  # Loader | R=77.2 | Win32 | exe
+5e0e2876b259ae4c3dfdd53ac472e0759de1f00c590c6c02f3e1d9ff92e1d78c  # Infostealer | R=70.4 | Formbook | exe
+
+[Tags]
+A
+F
+MIX7.file
+MIX8.file
+Mirai
+dropped-by-GCleaner
+elf
+exe
+
+[VT Engine Detections]
+
+## fa8dee1c2209b87c7406...  (Malware) | Defender: ✗ nicht erkannt
+   Erkannt: 13/75 Engines (17.3%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  Bkav                           W32.Malware.E6FB8E40
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  ESET-NOD32                     WinGo/Kryptik.ST trojan
+  Elastic                        malicious (moderate confidence)
+  Malwarebytes                   Malware.Heuristic.2046
+  McAfeeD                        ti!FA8DEE1C2209
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Suspicious PE
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       malicious.moderate.ml.score
+  alibabacloud                   Trojan:Win/Goshell.gen
+
+## a48c459759d2e9d401f3...  (Win32) | Defender: ✗ nicht erkannt
+   Erkannt: 12/75 Engines (16.0%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  Avira                          TR/W64.Malware
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win64/Packed.CAB.R suspicious application
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W64.Malware
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Sangfor                        Trojan.Win32.Save.a
+  Symantec                       ML.Attribute.HighConfidence
+  Webroot                        Win.Trojan.Gen
+
+## 5e0e2876b259ae4c3dfd...  (Formbook) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Ser.Lazy.9746
+   Erkannt: 50/75 Engines (66.7%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Ser.Lazy.9746
+  APEX                           Malicious
+  AVG                            MalwareX-gen [Cryp]
+  AhnLab-V3                      Malware/Win.formbook.C5887154
+  Alibaba                        TrojanSpy:MSIL/Kryptik.29fe3a71
+  Antiy-AVL                      Trojan[Spy]/MSIL.Noon
+  Arcabit                        Trojan.Ser.Lazy.D2612
+  Avast                          MalwareX-gen [Cryp]
+  Avira                          TR/W32.MalwareX
+  BitDefender                    Gen:Variant.Ser.Lazy.9746
+  Bkav                           W32.Malware.42ABF640
+  CTX                            exe.trojan.msil
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.Inject6.55092
+  ESET-NOD32                     MSIL/Kryptik.AQGB trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Ser.Lazy.9746 (B)
+  F-Secure                       Trojan.TR/W32.MalwareX
+  Fortinet                       MSIL/Formbook.AJAP!tr
+  GData                          Gen:Variant.Ser.Lazy.9746
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Downloader.sa
+  Ikarus                         Win32.Outbreak
+  Kaspersky                      HEUR:Trojan-Spy.MSIL.Noon.gen
+  Kingsoft                       MSIL.Trojan-Spy.Noon.gen
+  Lionic                         Trojan.Win32.FormBook.l!c
+  Malwarebytes                   Trojan.MalPack.PNG.Generic
+  McAfeeD                        Trojan:Win/GenericPack.BMP
+  MicroWorld-eScan               Gen:Variant.Ser.Lazy.9746
+  Microsoft                      Trojan:MSIL/FormBook.RSF!MTB
+  Paloalto                       generic.ml
+  Panda                          Trj/CI.A
+  Rising                         Malware.Obfus/MSIL@AI.90 (RDM.MSIL2:vKZBqOS0kXVfGgVyIFruPA)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        Artemis!Trojan
+  Sophos                         Troj/Krypt-AQM
+  Symantec                       Scr.Malcode!gdn34
+  Tencent                        Msil.Trojan-Spy.Noon.Jajl
+  Trapmine                       malicious.high.ml.score
+  TrellixENS                     Artemis!7A0B7100B59A
+  TrendMicro                     Trojan.Win32.FORMBOOK.YXGEWZ
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04CA3
+  VIPRE                          Gen:Variant.Ser.Lazy.9746
+  Varist                         W32/MSIL_Agent.KCO.gen!Eldorado
+  VirIT                          Trojan.Win32.MSIL_Heur.A
+  ZoneAlarm                      Troj/Krypt-AQM
+  alibabacloud                   Trojan[spy]:MSIL/FormBook.RB!2XJC
