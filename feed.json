@@ -1,7 +1,7 @@
 {
   "meta": {
-    "generated": "2026-05-25T17:47:05.251394+00:00",
-    "generated_ts": 1779731225,
+    "generated": "2026-05-25T19:46:07.864300+00:00",
+    "generated_ts": 1779738367,
     "source": "MalwareBazaar (abuse.ch) × VirusTotal",
     "feed_url": "https://unchained-int.github.io/TI/feed.json",
     "rss_url": "https://unchained-int.github.io/TI/rss.xml",
@@ -10,74 +10,77 @@
     "note_vt_rate": "NIEDRIGE Rate = evasiv = GEFÄHRLICHER. 1/70 erkannt = rot = schlecht."
   },
   "latest": {
-    "timestamp": "2026-05-25T17:47:00+00:00",
-    "ts_display": "25.05.2026 17:47 UTC",
-    "new_samples": 15,
-    "top_score": 80.0,
+    "timestamp": "2026-05-25T19:46:00+00:00",
+    "ts_display": "25.05.2026 19:46 UTC",
+    "new_samples": 34,
+    "top_score": 92.3,
     "top_family": "?",
     "risk": {
-      "kritisch": 3,
+      "kritisch": 15,
       "hoch": 4,
-      "mittel": 4,
-      "niedrig": 5
+      "mittel": 10,
+      "niedrig": 6
     },
     "families": {
-      "unbekannt": 11,
-      "Malware": 2,
-      "Application.Generic.4495641": 1,
-      "GoStealer": 1,
+      "unbekannt": 16,
+      "Mirai": 12,
+      "Gh0stRAT": 2,
+      "Linux.Generic.Threat": 1,
+      "RemcosRAT": 1,
+      "Lazarus": 1,
+      "CoinMiner": 1,
       "Formbook": 1
     },
-    "vt_count": 5,
-    "report_url": "https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-05-25_17-47-UTC.md"
+    "vt_count": 4,
+    "report_url": "https://unchained-int.github.io/TI/reports/MalwareBazaar_24h_Report_2026-05-25_19-46-UTC.md"
   },
   "24h": {
     "window": "last_24h",
-    "total_samples": 285,
-    "unique_iocs": 101,
+    "total_samples": 221,
+    "unique_iocs": 94,
     "risk": {
-      "kritisch": 126,
-      "hoch": 49,
-      "mittel": 55,
-      "niedrig": 62
+      "kritisch": 77,
+      "hoch": 47,
+      "mittel": 50,
+      "niedrig": 54
     },
     "top_families": {
-      "unbekannt": 135,
-      "Mirai": 89,
-      "CoinMiner": 9,
+      "unbekannt": 122,
+      "Mirai": 40,
+      "CoinMiner": 10,
       "Formbook": 7,
       "AgentTesla": 4,
       "ValleyRAT": 4,
-      "ConnectWise": 4,
       "GoStealer": 3,
-      "Linux": 3,
+      "Gh0stRAT": 2,
+      "RemcosRAT": 2,
       "Malware": 2,
       "Application.Generic.4495641": 2,
       "RemusStealer": 2,
-      "Gafgyt": 2,
       "NetSupport": 2,
-      "PhantomStealer": 2
+      "PhantomStealer": 2,
+      "AsyncRAT": 2
     },
-    "critical_rate_pct": 44.2
+    "critical_rate_pct": 34.8
   },
   "7d": {
     "window": "last_7d",
-    "total_samples": 2540,
+    "total_samples": 2574,
     "risk": {
-      "kritisch": 1031,
-      "hoch": 290,
-      "mittel": 712,
-      "niedrig": 562
+      "kritisch": 1046,
+      "hoch": 294,
+      "mittel": 722,
+      "niedrig": 568
     },
     "top_families": {
-      "unbekannt": 1399,
-      "Mirai": 616,
-      "Formbook": 46,
+      "unbekannt": 1415,
+      "Mirai": 628,
+      "Formbook": 47,
       "AsyncRAT": 45,
       "ValleyRAT": 42,
+      "RemcosRAT": 38,
       "AgentTesla": 38,
-      "RemcosRAT": 37,
-      "CoinMiner": 25,
+      "CoinMiner": 26,
       "ConnectWise": 22,
       "NanoCore": 17,
       "RemusStealer": 16,
@@ -89,15 +92,6 @@
     "critical_rate_pct": 40.6
   },
   "history": [
-    {
-      "timestamp": "2026-05-24T19:21:00+00:00",
-      "ts_display": "24.05. 19:21",
-      "samples": 98,
-      "kritisch": 64,
-      "hoch": 6,
-      "mittel": 15,
-      "niedrig": 14
-    },
     {
       "timestamp": "2026-05-24T21:00:00+00:00",
       "ts_display": "24.05. 21:00",
@@ -151,6 +145,15 @@
       "hoch": 4,
       "mittel": 4,
       "niedrig": 5
+    },
+    {
+      "timestamp": "2026-05-25T19:46:00+00:00",
+      "ts_display": "25.05. 19:46",
+      "samples": 34,
+      "kritisch": 15,
+      "hoch": 4,
+      "mittel": 10,
+      "niedrig": 6
     }
   ],
   "history_7d": [
@@ -657,16 +660,59 @@
       "hoch": 4,
       "mittel": 4,
       "niedrig": 5
+    },
+    {
+      "timestamp": "2026-05-25T19:46:00+00:00",
+      "ts_display": "25.05. 19:46",
+      "samples": 34,
+      "kritisch": 15,
+      "hoch": 4,
+      "mittel": 10,
+      "niedrig": 6
     }
   ],
   "ioc_hashes": [
+    "fa9996838c5459b9124f9f06f75bec832cfc0368782b33466563fd50774b5ae2",
+    "a055948debb0fadb80965850a2e2d701ada83744c472e4df28ef7323088e5ea8",
+    "0409bda380f83c7110d4eba0f6df787d56fd99d6cf196a26e0dbf610e4b226f0",
+    "d0ee30fa8389fe31348f38d6d69acec2f35ac62e6f8f6c132bcceae494eb7c34",
+    "7f243cc41f37b3189e7474f778af3fd241f258174fe68350a9a57791bc5d8c15",
+    "c9bdef3590843ea0619b5fb14e03bb7dadfd94099d5e5e8273b4639fa6c40c68",
+    "312f3d83585828bcf530bdb7c4920e0a19d1676792b6c6cda1840a2edb81f26c",
+    "e211586b09f29d5befc4c989bf2719b6102aff054e6afd3dc9e1bad2d5cc0acb",
+    "ebbd64ec1e1359dc69622647f3c28152dd07b57bf92ba71c8c8f0ca23a0910a1",
+    "44820f6340914346d5632e17c83032160322d1101ec39102081660b8fd507eaa",
+    "a2bd3881754e79fa01badb11d78ff329d078e8a6846ca529fbc1be783be1517c",
+    "04c9ca48157bdcc23cf19ebb9bd1aaaac0a5c1132dee7e0ee9c95939149302ca",
+    "622c58eec3036a3905197d2fb39f9b23d58a775f1c3d931f155d04e3d4455493",
+    "880cca1e1ab0bca35241533bd176e98998f68dad06f03ba5b8983d96902f806f",
+    "468b44cafb21a7f9a3033160967bbc5d7886bc9e49c9cce61ea4677b6776bc2c",
+    "ca752a158c7e37696137bfead3e8427b40035f6cbfbef45cf27d9089e2408898",
+    "88f4b2193b87a76bbf56fdb7c282438f2d07a320784b2fa663ac45776ccd8bec",
+    "0a0bd696ec0d98b6dc7cb655ae58370d4d13f08b91a92eef52a0ed1efbb8577e",
+    "5e0e2876b259ae4c3dfdd53ac472e0759de1f00c590c6c02f3e1d9ff92e1d78c",
+    "56b2069d230583ed78891de2354cf27dfbabc6c962fe8bf6b63f7bf6bc119721",
+    "09501e8ffdec1bb8bab3a7bd4198452b6f183cd4e5523844bc4d1fdb83fd021f",
+    "b14212857fe74349571dc653447dd59ff5938a768a65f90a3d4d653b669f8c83",
+    "4c5d32c3982e218aacc1f142e9872c98706e152394b4156f9e848f6546817def",
+    "0492b2bc8b7abffd4c3017299bd9ff3c1d687bb558f25a1975e66f683ffbabea",
+    "79f3bf637493dd999c0add52ac4920b82a57da781355c375d807e409b4ac1dcf",
+    "3bad577daf532110598df89dd26132ede4c7d23523beb50c073c63dfffa145e5",
+    "73ec75c1da8fea99f1b872d8282f0c74acb21ecb12b054d6e88fe8edb60035f6",
+    "e5a0289fa38bbbf958ebc57cee082111b55f7b8aa20aa9f2e52a38fd66011e80",
+    "2c253d8131cf8a948115884467aeeba28f43a85a289b730b5e490fb59ad4c921",
+    "05138b9d8968f36beef125ecc747fcf9b051316c2a41007741ac7518a39b4e77",
+    "36f0474618d24a17237eb4c0a33642849052db415c5c834b1a8177b199a60432",
+    "54572e7e1803de48885c800edb3c4e4611863971f00c9cd25bfcf30e303a7564",
+    "cf9db0dd0bac8ef63602e5904a426b83bf2fcf54375b57394ef7e1e70e12862c",
+    "6869ea9e6f155370799103f0a5525bacbc7023c9a2e84f7e10006476127c0183",
+    "5ab36c116767eaae53a466fbc2dae7cfd608ed77721f65e83312037fbd57c946",
     "8e31d8ea218e372cf5c90398aa91c6d8bf77fda473a8d5d645f2812e846232b7",
     "99710995e1c8ed093fe10a381fc0740d89a6b95426020874ed829bc5a0c5042d",
     "b46d3482ff74395f09f36a0014407ff803107eb5bef70d13bfa62a86ebd7bc75",
     "8e5b53e2af883ee9bb0b9b4c133db2b7c5fad9ce63234126cbdde40ea2798e02",
     "52e75b6a2a528d075aa78de0127ab1c213f18a8a4339a1c9b207242079ae2d29",
     "f58c66cfa44c6761e477c78a83e764138200e849e43fcf0ffc443fc87161696d",
-    "5e0e2876b259ae4c3dfdd53ac472e0759de1f00c590c6c02f3e1d9ff92e1d78c",
     "aa61cd81aa7a31d87727827b667ceefc3a32a9f77c686cfe6d74098aee79a50e",
     "6816bdce3909a1a98c719e032690ce2b1756d9c6e82c15078584bc3dd3a55cdf",
     "5f20b0430c5f395f2e2b81074a144deb09ad432f37ffeddf66024e83cae31104",
@@ -727,244 +773,132 @@
     "763e2de3eccf9319859fc5405bd1cc40022316c57507f64a3d3053b66d36ee20",
     "f324a5794c121e48e39bf29c099b0e2c6e268d417e469be3e6c1732fd69398e5",
     "2713921b81bb7bcd8cbce70ddd2181a6a978e00be772d90111109e67acd2e900",
-    "ca0d51aa48d5839ae1fad76f13844b5b6a7974da929d1a0a81fa233a491f6c11",
-    "eb35e29e65134d98d2a84a140b804014fc52fe90361234e2aed8a52b593d6f7a",
-    "fd6710dfa4cfced8656950d70e3ccd1468fd43962ee6268a19b111ecc2015d34",
-    "bece18eee8eab0fc75fa5cbae71089d84bae77783934c921344f505af451a99b",
-    "efb4de6a4070c9c721a06230882a97aa364daf4206d082362ac3e5dd30744e8f",
-    "e97d440bc8a3c2fb5588520e9becaee6ba90bd55aa2c6496a15684300f0e3731",
-    "f407133c05f481c19c4715c2a8a967a7c6efa03109fe21f768338fa085f80b17",
-    "7b8787d64d8a0349bb302fca1a76267de0d2273deb069016c2c019271cb8115d",
-    "f2aba97b83192723c2ae0f691025497188e19aa6061cc0c42807fb3ad346a09a",
-    "91c51f6103b9664b70fdbfa2234017d89e088972aab0bf77fb4917f42f7383f8",
-    "bc1363062c4f4aff514d71fd85fc9a5a08ad7fc2ea9a40298bb8865d041b8a3f",
-    "62bb24f5f1c68116d03a51d10686a3e08859241b49d8283dadb44034ae0c1108",
-    "fb152cc3f7065d2bcf13045fadf442a76995d74cc334ee32fcd6937662110c5e",
-    "b23e7c88614b6db904199fdf2bb464b0f84598c69ad1917f99ff278dfaed00bc",
-    "22ade12878633414f83462f1a579225b1fd6e0afa43141758fbf23dce0aedd68",
-    "069fe3ee8f7fa8877cf01478f42b51c0ad071abb7a79e267eb332cb7f066924e",
-    "ebaf8f3cf910b2a0e32e97c13712d6dc9ba62fc57ec456a55136420585755bbf",
-    "98a4d1dd9deb8738b2638122a96dfb8da2ff65dbef16af7aaea8bfb06f890723",
-    "d4f851868288d1fb186fb9ddb911a7806ee70235296fa3d5dc99cdde0ab89e82",
-    "8672d109eea8f93d3709e72a8ee821f424bfda7f70ad82048ea2d1387b31c1b0",
-    "43383f445121fd4b314044f086f3bcb7d981c07e631bbe85ea07eb989f6d0b46",
-    "59b6fc2fc694f2f92dff04f172056eab402916a3993789b5a06e40793dbae2b5",
-    "3793418bafa71fe158bd2adf36b2a6c2709c9075196aeb39aadd0fb6abbc4064",
-    "84b423706bd14647300e5a5442f5451f91ced636a05f191b81fabdb1e0131642",
-    "825dae63e1fbe21777b22008cbe8721bcd332e264fda561f63ffb625b2109ca0",
-    "145f510530196c995cbf79bd7d778560c5e24fd2d15a73d17506e94a480b23bf",
-    "45ca1d60ff783330509b4cff521c00f47513751978fabee066c1df63ccea52dd",
-    "88f41dbd50a4612eba604019348b927d12a734a0794518b9b6a6924af578e815",
-    "110753d68aee76f03897dbf55014fe5f7af90fca0b0110ba4139ca6b4185ec2a",
-    "077cf7e960538d149805bbdd671b81ade5df12e58b66c1bcacdd4380a1711b98",
-    "fbb00701ca21983b5245d21a46f1f86b9c89659fca3629bd3514819eb92ea53c",
-    "63c656b183444fd53169f82dfd69ef54cf595f74b8268aa5dc154bd99e6fbcaa",
-    "b30d298d1ce776b7efc937fe9a0f1dfd6ff3b51c6fef623d78d913cb2637071d",
-    "b586710da7aeb32217a3d2c138fc085a0ef2cb50c7a7206f94fb9877d688b521",
-    "dfea8fc8899c6682c23c6acaae00e0981876827a3321092c243492c109539c1f",
-    "453e447b02ce8165545e12df574bd2a50ef86e9d89e4f3acb756101a80d4bb59",
-    "10fa1382874ca4d7cea9b87d2180fbe01b2d57275d230fbbd882bac04c8da3ad",
-    "f29be0a82b2e76c8ab44a9a1d3eef13e1f5340c7cda4c33e05fca6f220cc5917",
-    "17e49ea6813743faf9398fff3b3ce8f3b688aff5ab2d142d5f9125f625a54e0f",
-    "605f6b839476a03214d530e51bbe2df324f64cdacfd75869d766502cc99d8b5d",
-    "df521b22ba365e714d000127a8b4cfb20e561eb940e2d552b525f928a1f817b3",
-    "c58551396508ae678124a2d7d7ec435fcde8898cdf884fb0378f7fedf19a893e",
-    "cf4302124fc876e68b03e10e2e27ef8cf17582155ddfc15e99de47e6f18b2d64",
-    "e68b589e7ec3b3b26de15afb106eba087191b36f2974ddd5900f33aee0704301",
-    "88aad4fcfbebe6ca57f674dc8f677af489b2425b71a93ba0d847711697c30fa8",
-    "b741fd042488106796de4272fc82068b5f944e07283cbd04193b0b4c7669d6e9",
-    "c747e14f67bbfc0688d782003e99d1b11758d9fbf1bee7c83363457f22fd54ed",
-    "1b8748993a2f2eae86feb2da31aa8fb8141d4462650deeb247cc36f6bd0fc990",
-    "b8a18acfcecbccc61bd488dda39b12dc945d8abd4c2407b1f276a57ba494249d",
-    "40353b3e8c160f1afb0f6a820196eaae68fb7dac8a3b54e461380b06764efa12"
+    "ca0d51aa48d5839ae1fad76f13844b5b6a7974da929d1a0a81fa233a491f6c11"
   ],
   "ioc_hashes_24h": [
-    "ec8045e0262a1475d69b1e55820edfc8b22037bcfae6839b3833e42c3ed02951",
-    "2d795b1737ff06a1401f2fb2459299a6b46b2fbb38ebf635d85707229e034246",
-    "04d790700473ce62324514814d76c3d5c7b17e7bae70db18b295bb31001045de",
-    "04f28715ac5f9f53270d7bb815c956aa560bc3c7ba8b6ed5dc376a36ee893b82",
-    "a886a7773da4421fdb0497662a05b7fcde27298338d391f6c989c54d3ce5f7e0",
-    "fcc04ecdc68d2aeb2c7d402e33f549fbd51213caac7c6134393d0b5f21bf6312",
-    "bc1363062c4f4aff514d71fd85fc9a5a08ad7fc2ea9a40298bb8865d041b8a3f",
-    "dd5ac6f4a7b1b6ce4d10dcec2527dbaf499355e5034a0963a9a3eef59c913820",
-    "a133b933a5f6df55d0b6cc9e93f444a5db6a05de77d0845536b53659ff1dd05f",
-    "aaaffb255799bdd458452980e48acfd3622b0d700c724bbf4bcb3db8f3032c13",
-    "6a495490f470de0e26b7c86da8603175c6d15eaab8b39494beafaa893b2eaede",
-    "eb35e29e65134d98d2a84a140b804014fc52fe90361234e2aed8a52b593d6f7a",
-    "a7f6ec561aabf56b7a9ed4f7b25077e3ec13c235989945a047a947e75733d041",
-    "52e75b6a2a528d075aa78de0127ab1c213f18a8a4339a1c9b207242079ae2d29",
-    "9129b7007b345bdd2ca9a7cc745f00dea7b598645ccef273c8199ecce6bdf17d",
-    "7cc61e7938e01ffdad7328af3a313006b0395082d9d9541d3a54e32ee7377478",
-    "efb4de6a4070c9c721a06230882a97aa364daf4206d082362ac3e5dd30744e8f",
-    "f58c66cfa44c6761e477c78a83e764138200e849e43fcf0ffc443fc87161696d",
-    "f2aba97b83192723c2ae0f691025497188e19aa6061cc0c42807fb3ad346a09a",
-    "91c51f6103b9664b70fdbfa2234017d89e088972aab0bf77fb4917f42f7383f8",
-    "45ca1d60ff783330509b4cff521c00f47513751978fabee066c1df63ccea52dd",
-    "5e0e2876b259ae4c3dfdd53ac472e0759de1f00c590c6c02f3e1d9ff92e1d78c",
-    "1cb8233f4c68dd834487acf1df256b5967f89722f588d60fd90c345d91ae0a8e",
-    "b19a0618ab4dcc38d8b5d6e2a7b88130e45a83cd0e6dcd8a8c7544050d00be6b",
-    "b6a22047d0aa88bd452520ad88134459d5dc9a4eee47eb9b794008f25266b5f3",
-    "6ed703f7a788daf0c4505390879cef4c2035143e8b3cc60ab2a5339881f40426",
-    "0cdea502674e51bf705eaa215df52e6c3d36e401868a63e8f7f63de4d1e20603",
-    "da6177ddc019c9b2a0a0357e9f2876d1142443befb7f69592a6fe1d343d7ec76",
-    "9bc2e0c0cc4c5a269d60e00fd8cae9c499ecafc0455f1c7c9b9f227829e2e4af",
-    "0247e170f16fc586cbf818a7f9ef658dfc0d09279ed288de623fdea7ae06bc3d",
-    "a70a206ecebbde75262e71ada01410a622f2b27da15b26e73225cc73da7ede2a",
-    "4fa7f5b70e7667263890a7872700d4d47d5013cd66ddadea0a432513e56ea143",
-    "0d8748a987fb0daed81fab33fa2b1975ab58680b76c53710107feee63fee1379",
-    "7b72e13e504b6a8855b440ddbd9df4ac1d5d0559288b4d5bc34e78909d901633",
-    "f123da5cc688040b089e616ed2be31adfb2ad19f9770b6ec3336c641d2baadd3",
-    "ff598de8f6ea5c7b18f1f19f0a44a91a4ab38f10721cfe9bb7253cfdd88147e4",
-    "65dee36549a3f28baf0346b74d1fc94431fd0f11de2e3f4f4538f449cd359c54",
-    "a5ca3a194947129095405a7165c30f08fc7c19628ccf1dc4d7e1f71efe321d59",
-    "98a4d1dd9deb8738b2638122a96dfb8da2ff65dbef16af7aaea8bfb06f890723",
-    "3b835e610043826212a8a5d74e9caa8ceccc4592007fc8738060265c1873af08",
-    "bece18eee8eab0fc75fa5cbae71089d84bae77783934c921344f505af451a99b",
-    "ddfff81d72e630cb6d8e77e59f362c40b6032d16ed9cd004c7c2e049360b80c0",
-    "e6cd7cb5aa2e4043c71ce545ea5b3207fd9a96503ac46a69fce67487495b53d1",
-    "6f90091766814b952f389069566b6e609860805a5808548de66d3446ece90ce7",
-    "4f41aa4ab30b58dd89a2036f8e11f40859f13a937ca80468d7f646d21249025d",
     "99710995e1c8ed093fe10a381fc0740d89a6b95426020874ed829bc5a0c5042d",
-    "346ffdd37a74f5ff26a5b8ab2c3b2b497fd887cc525031b510fdc319093b67d8",
-    "731af35176fd142350938ffd15c95b6cb7cd5c6d8395004d5055ae43297a7d9e",
-    "7324287732094e0958e39ea4007be688336e72ec51eb33f5e61961c7ca8ba285",
-    "7b8787d64d8a0349bb302fca1a76267de0d2273deb069016c2c019271cb8115d",
-    "0119d464f761015f801e62ce8aed02856d39057cf65ab49f54b186c7d221096c",
-    "5f20b0430c5f395f2e2b81074a144deb09ad432f37ffeddf66024e83cae31104",
-    "7a7f5a9fe72d80ff53a1f2c6af50d022d49695e29e423b76e318d264f3b0dd14",
-    "3456030cd3dda163d464da3381fcff8ed05f16ad88840543926e8a9ff41c33d1",
-    "fd6710dfa4cfced8656950d70e3ccd1468fd43962ee6268a19b111ecc2015d34",
-    "1b47eaa564ad3accec1b164f1613b6af675eb02c1217f8652b5e7863b64cbd12",
-    "3fe3ba2fd6d5ebaee5e95c1608f9615251e3f05846ae434609349e5bb979efa8",
-    "6816bdce3909a1a98c719e032690ce2b1756d9c6e82c15078584bc3dd3a55cdf",
     "25f153e9cdd9bc8a8093c35fcf445ff5ae3228fc403f20b2f772b6d35de4e1ad",
-    "bbfc32cd958420895982c73a569f468b8917783574d4802dc0a35daaa6c739b8",
-    "d4ef24557fe9ecf81c1c8ca369ac5808b2e5a1405466ab1141ee1a38f449a229",
-    "e97d440bc8a3c2fb5588520e9becaee6ba90bd55aa2c6496a15684300f0e3731",
-    "a8b2928f22e2b9e177b465735e2d7e3bfd575b024c99707ed5fd3ca599dc9b8b",
-    "cdd120c43cc4a1cfddc49b86520076f5e94184ef92970676b33d53d3b67c7c56",
-    "ba3a206aaf4c538adb0575408f39d965c383e312f4eae8f8a2bc267ec134461c",
-    "2b15889511fe81b3f7245ecde66b88473434151399cac997545c267a0182683c",
-    "c1749695711f5d166315c313e7eb4c96b764d43fcc75f0bad1af24902f175d33",
-    "b46d3482ff74395f09f36a0014407ff803107eb5bef70d13bfa62a86ebd7bc75",
-    "bb00b166bd615e9b94ad242822696dbe6dba717af39aee9ebbd3d7734e0f0683",
-    "8672d109eea8f93d3709e72a8ee821f424bfda7f70ad82048ea2d1387b31c1b0",
-    "5116e2d21c557e57328a93430803e8bb838b62c952e247e36b36979028f45d57",
-    "8e5b53e2af883ee9bb0b9b4c133db2b7c5fad9ce63234126cbdde40ea2798e02",
-    "e3ed92247105f111f54bee18e5af8b3eac816a51106368fc687ca3295dfd88ea",
-    "e6a5a5a28414a7fe9ad970c7a510f3b66a50627068db213f60a29f5ccc011258",
-    "8e31d8ea218e372cf5c90398aa91c6d8bf77fda473a8d5d645f2812e846232b7",
-    "d1b563015def981d71d94d64afec8f1a4e598eb195c4b965e949cbcc3cdd8ed2",
-    "0508b1f63bfa16d761e45dcf8e0f25d416f71cf7bc20d580987de789fdf83397",
-    "223b65ac4158c6b75a84bdb6b91efe60770e41fc9a5db47acd0e4d0c491d6ba5",
-    "145f510530196c995cbf79bd7d778560c5e24fd2d15a73d17506e94a480b23bf",
-    "f407133c05f481c19c4715c2a8a967a7c6efa03109fe21f768338fa085f80b17",
-    "0a95c9749bc643d65035da39927e884c3d2613742bd7fd4c85d15393136eeb0c",
-    "0e55c23c783829ada63fdcbd9e8c21b2c2fe286987dcf27550ade68c2a8b4dda",
-    "e771091812f6824d29aaaa5d8a018b3d7589614eef9d55a96acc9b166b004abd",
-    "e1026b1270a86321b20a69408e0a438779b2fe8fc9a581faf710da9bebed7800",
-    "a9e6f7dd806236d976d717ee4a1aec76e99dd055ca786c98050dfc00483d7eee",
-    "3e7f7c2dcfbba67030334feefee935ac9284962d86865d8b99e2196730fa171b",
-    "135a8f34391f238a54ed99c99b236b99cfa49a7e15a015be0a4cd026f86ee4b3",
-    "2f579fdce3cc0460424f92d3a42873078cd9ea1905f2bb77870e0aaf31a329c8",
     "dfea8fc8899c6682c23c6acaae00e0981876827a3321092c243492c109539c1f",
-    "4f76999c589c0325502d979f984e120629cd1ad61b1fa91bf8b936609040f5e8",
+    "6816bdce3909a1a98c719e032690ce2b1756d9c6e82c15078584bc3dd3a55cdf",
+    "fa9996838c5459b9124f9f06f75bec832cfc0368782b33466563fd50774b5ae2",
+    "da6177ddc019c9b2a0a0357e9f2876d1142443befb7f69592a6fe1d343d7ec76",
     "d71e966c74269bde16966988fac51f5e37ca7bb9232e7d267ff8d392f76e3c83",
-    "6d2cd9b28c099ada93f3bbb235be08cc87b4eb0bd1537634094054a9911dde75",
-    "a37917329e1ab945ca8306703c03c2e472bc9ba9042c09231ac285e1a5ba4927",
-    "2855fd7afac5c9958ec6cb605984a150844bd400dcf69799012f49ad32474d2d",
-    "5f3f2cac9f0343e3b740fcbf0f46e4d77ed6fcf6b5d0bc87f54d1fa941b68059",
-    "6ff6844e43cca715e658fa5e3714dcd439a8aea1195df544f0efb7a00dda6540",
-    "b4bd137b2803689ca562d66fce0a3de68d3676ed1821d6364ed295bd96c19eb6",
-    "aa61cd81aa7a31d87727827b667ceefc3a32a9f77c686cfe6d74098aee79a50e",
-    "335dabe699c9546e422cf0b39834cf62ef3edfccf1818a8407932db61fb0c0e1",
+    "a5ca3a194947129095405a7165c30f08fc7c19628ccf1dc4d7e1f71efe321d59",
+    "91c51f6103b9664b70fdbfa2234017d89e088972aab0bf77fb4917f42f7383f8",
     "683d964814e9c4b9bc456e2873a074c676a65f83ce6d1304f037efd3e31333d8",
-    "453e447b02ce8165545e12df574bd2a50ef86e9d89e4f3acb756101a80d4bb59"
+    "2f579fdce3cc0460424f92d3a42873078cd9ea1905f2bb77870e0aaf31a329c8",
+    "ff598de8f6ea5c7b18f1f19f0a44a91a4ab38f10721cfe9bb7253cfdd88147e4",
+    "bc1363062c4f4aff514d71fd85fc9a5a08ad7fc2ea9a40298bb8865d041b8a3f",
+    "04d790700473ce62324514814d76c3d5c7b17e7bae70db18b295bb31001045de",
+    "52e75b6a2a528d075aa78de0127ab1c213f18a8a4339a1c9b207242079ae2d29",
+    "7324287732094e0958e39ea4007be688336e72ec51eb33f5e61961c7ca8ba285",
+    "a886a7773da4421fdb0497662a05b7fcde27298338d391f6c989c54d3ce5f7e0",
+    "312f3d83585828bcf530bdb7c4920e0a19d1676792b6c6cda1840a2edb81f26c",
+    "b4bd137b2803689ca562d66fce0a3de68d3676ed1821d6364ed295bd96c19eb6",
+    "3b835e610043826212a8a5d74e9caa8ceccc4592007fc8738060265c1873af08",
+    "ba3a206aaf4c538adb0575408f39d965c383e312f4eae8f8a2bc267ec134461c",
+    "a7f6ec561aabf56b7a9ed4f7b25077e3ec13c235989945a047a947e75733d041",
+    "3e7f7c2dcfbba67030334feefee935ac9284962d86865d8b99e2196730fa171b",
+    "5f3f2cac9f0343e3b740fcbf0f46e4d77ed6fcf6b5d0bc87f54d1fa941b68059",
+    "346ffdd37a74f5ff26a5b8ab2c3b2b497fd887cc525031b510fdc319093b67d8",
+    "a055948debb0fadb80965850a2e2d701ada83744c472e4df28ef7323088e5ea8",
+    "6ff6844e43cca715e658fa5e3714dcd439a8aea1195df544f0efb7a00dda6540",
+    "f58c66cfa44c6761e477c78a83e764138200e849e43fcf0ffc443fc87161696d",
+    "9bc2e0c0cc4c5a269d60e00fd8cae9c499ecafc0455f1c7c9b9f227829e2e4af",
+    "d0ee30fa8389fe31348f38d6d69acec2f35ac62e6f8f6c132bcceae494eb7c34",
+    "135a8f34391f238a54ed99c99b236b99cfa49a7e15a015be0a4cd026f86ee4b3",
+    "f2aba97b83192723c2ae0f691025497188e19aa6061cc0c42807fb3ad346a09a",
+    "453e447b02ce8165545e12df574bd2a50ef86e9d89e4f3acb756101a80d4bb59",
+    "4f41aa4ab30b58dd89a2036f8e11f40859f13a937ca80468d7f646d21249025d",
+    "ddfff81d72e630cb6d8e77e59f362c40b6032d16ed9cd004c7c2e049360b80c0",
+    "0a95c9749bc643d65035da39927e884c3d2613742bd7fd4c85d15393136eeb0c",
+    "a133b933a5f6df55d0b6cc9e93f444a5db6a05de77d0845536b53659ff1dd05f",
+    "e1026b1270a86321b20a69408e0a438779b2fe8fc9a581faf710da9bebed7800",
+    "7f243cc41f37b3189e7474f778af3fd241f258174fe68350a9a57791bc5d8c15",
+    "b6a22047d0aa88bd452520ad88134459d5dc9a4eee47eb9b794008f25266b5f3",
+    "65dee36549a3f28baf0346b74d1fc94431fd0f11de2e3f4f4538f449cd359c54",
+    "0247e170f16fc586cbf818a7f9ef658dfc0d09279ed288de623fdea7ae06bc3d",
+    "7b8787d64d8a0349bb302fca1a76267de0d2273deb069016c2c019271cb8115d",
+    "2855fd7afac5c9958ec6cb605984a150844bd400dcf69799012f49ad32474d2d",
+    "2d795b1737ff06a1401f2fb2459299a6b46b2fbb38ebf635d85707229e034246",
+    "e6a5a5a28414a7fe9ad970c7a510f3b66a50627068db213f60a29f5ccc011258",
+    "6d2cd9b28c099ada93f3bbb235be08cc87b4eb0bd1537634094054a9911dde75",
+    "4f76999c589c0325502d979f984e120629cd1ad61b1fa91bf8b936609040f5e8",
+    "aaaffb255799bdd458452980e48acfd3622b0d700c724bbf4bcb3db8f3032c13",
+    "a37917329e1ab945ca8306703c03c2e472bc9ba9042c09231ac285e1a5ba4927",
+    "7cc61e7938e01ffdad7328af3a313006b0395082d9d9541d3a54e32ee7377478",
+    "8672d109eea8f93d3709e72a8ee821f424bfda7f70ad82048ea2d1387b31c1b0",
+    "7a7f5a9fe72d80ff53a1f2c6af50d022d49695e29e423b76e318d264f3b0dd14",
+    "44820f6340914346d5632e17c83032160322d1101ec39102081660b8fd507eaa",
+    "6f90091766814b952f389069566b6e609860805a5808548de66d3446ece90ce7",
+    "145f510530196c995cbf79bd7d778560c5e24fd2d15a73d17506e94a480b23bf",
+    "ebbd64ec1e1359dc69622647f3c28152dd07b57bf92ba71c8c8f0ca23a0910a1",
+    "b19a0618ab4dcc38d8b5d6e2a7b88130e45a83cd0e6dcd8a8c7544050d00be6b",
+    "bb00b166bd615e9b94ad242822696dbe6dba717af39aee9ebbd3d7734e0f0683",
+    "04f28715ac5f9f53270d7bb815c956aa560bc3c7ba8b6ed5dc376a36ee893b82",
+    "0409bda380f83c7110d4eba0f6df787d56fd99d6cf196a26e0dbf610e4b226f0",
+    "bece18eee8eab0fc75fa5cbae71089d84bae77783934c921344f505af451a99b",
+    "e97d440bc8a3c2fb5588520e9becaee6ba90bd55aa2c6496a15684300f0e3731",
+    "7b72e13e504b6a8855b440ddbd9df4ac1d5d0559288b4d5bc34e78909d901633",
+    "a70a206ecebbde75262e71ada01410a622f2b27da15b26e73225cc73da7ede2a",
+    "eb35e29e65134d98d2a84a140b804014fc52fe90361234e2aed8a52b593d6f7a",
+    "dd5ac6f4a7b1b6ce4d10dcec2527dbaf499355e5034a0963a9a3eef59c913820",
+    "fd6710dfa4cfced8656950d70e3ccd1468fd43962ee6268a19b111ecc2015d34",
+    "1cb8233f4c68dd834487acf1df256b5967f89722f588d60fd90c345d91ae0a8e",
+    "1b47eaa564ad3accec1b164f1613b6af675eb02c1217f8652b5e7863b64cbd12",
+    "8e5b53e2af883ee9bb0b9b4c133db2b7c5fad9ce63234126cbdde40ea2798e02",
+    "efb4de6a4070c9c721a06230882a97aa364daf4206d082362ac3e5dd30744e8f",
+    "5e0e2876b259ae4c3dfdd53ac472e0759de1f00c590c6c02f3e1d9ff92e1d78c",
+    "0a0bd696ec0d98b6dc7cb655ae58370d4d13f08b91a92eef52a0ed1efbb8577e",
+    "aa61cd81aa7a31d87727827b667ceefc3a32a9f77c686cfe6d74098aee79a50e",
+    "0d8748a987fb0daed81fab33fa2b1975ab58680b76c53710107feee63fee1379",
+    "b46d3482ff74395f09f36a0014407ff803107eb5bef70d13bfa62a86ebd7bc75",
+    "e211586b09f29d5befc4c989bf2719b6102aff054e6afd3dc9e1bad2d5cc0acb",
+    "4fa7f5b70e7667263890a7872700d4d47d5013cd66ddadea0a432513e56ea143",
+    "c9bdef3590843ea0619b5fb14e03bb7dadfd94099d5e5e8273b4639fa6c40c68",
+    "fcc04ecdc68d2aeb2c7d402e33f549fbd51213caac7c6134393d0b5f21bf6312",
+    "a8b2928f22e2b9e177b465735e2d7e3bfd575b024c99707ed5fd3ca599dc9b8b",
+    "c1749695711f5d166315c313e7eb4c96b764d43fcc75f0bad1af24902f175d33",
+    "335dabe699c9546e422cf0b39834cf62ef3edfccf1818a8407932db61fb0c0e1",
+    "3fe3ba2fd6d5ebaee5e95c1608f9615251e3f05846ae434609349e5bb979efa8",
+    "f407133c05f481c19c4715c2a8a967a7c6efa03109fe21f768338fa085f80b17",
+    "8e31d8ea218e372cf5c90398aa91c6d8bf77fda473a8d5d645f2812e846232b7",
+    "45ca1d60ff783330509b4cff521c00f47513751978fabee066c1df63ccea52dd",
+    "5f20b0430c5f395f2e2b81074a144deb09ad432f37ffeddf66024e83cae31104",
+    "d1b563015def981d71d94d64afec8f1a4e598eb195c4b965e949cbcc3cdd8ed2",
+    "e6cd7cb5aa2e4043c71ce545ea5b3207fd9a96503ac46a69fce67487495b53d1",
+    "ca752a158c7e37696137bfead3e8427b40035f6cbfbef45cf27d9089e2408898",
+    "731af35176fd142350938ffd15c95b6cb7cd5c6d8395004d5055ae43297a7d9e",
+    "98a4d1dd9deb8738b2638122a96dfb8da2ff65dbef16af7aaea8bfb06f890723"
   ],
   "vt_results": [
     {
-      "sha256": "52e75b6a2a528d075aa7",
-      "sha_short": "52e75b6a2a528d075aa7…",
-      "url": "https://bazaar.abuse.ch/sample/52e75b6a2a528d075aa78de0127ab1c213f18a8a4339a1c9b207242079ae2d29/",
-      "detected": 34,
+      "sha256": "ca752a158c7e37696137",
+      "sha_short": "ca752a158c7e37696137…",
+      "url": "https://bazaar.abuse.ch/sample/ca752a158c7e37696137bfead3e8427b40035f6cbfbef45cf27d9089e2408898/",
+      "detected": 14,
       "total": 75,
-      "rate_pct": 45.3,
-      "rate": 0.45299999999999996,
-      "rate_color": "#ffcc00",
-      "quality": "🟠 MÄSSIG ERKANNT",
-      "defender": "✓ **JA** – `Application.Generic.4495641`",
+      "rate_pct": 18.7,
+      "rate": 0.187,
+      "rate_color": "#ff8800",
+      "quality": "🟡 SCHWACH ERKANNT",
+      "defender": "✗ **NEIN** – nicht erkannt",
       "engines": [
         {
-          "engine": "ALYac",
-          "result": "Application.Generic.4495641"
-        },
-        {
-          "engine": "AVG",
-          "result": "ELF:Agent-CXA [Trj]"
-        },
-        {
-          "engine": "AhnLab-V3",
-          "result": "CoinMiner/Linux.Agent.30304472"
-        },
-        {
           "engine": "Antiy-AVL",
-          "result": "Trojan/Linux.Multiverze"
-        },
-        {
-          "engine": "Arcabit",
-          "result": "Application.Generic.D449919"
-        },
-        {
-          "engine": "Avast",
-          "result": "ELF:Agent-CXA [Trj]"
-        },
-        {
-          "engine": "Avira",
-          "result": "EXP/ELF.Coinminer.A"
-        },
-        {
-          "engine": "BitDefender 🛡️",
-          "result": "Application.Generic.4495641"
-        },
-        {
-          "engine": "CTX",
-          "result": "elf.trojan.generic"
+          "result": "Trojan[Backdoor]/Linux.Mirai"
         },
         {
           "engine": "ClamAV",
-          "result": "Unix.Trojan.Miner-9993889-0"
-        },
-        {
-          "engine": "Cynet",
-          "result": "Malicious (score: 99)"
+          "result": "Unix.Trojan.Mirai-9760303-0"
         },
         {
           "engine": "DrWeb",
-          "result": "Linux.Siggen.8622"
-        },
-        {
-          "engine": "ESET-NOD32",
-          "result": "Linux/CoinMiner.ABF trojan"
+          "result": "Linux.Mirai.10456"
         },
         {
           "engine": "Elastic",
           "result": "Linux.Generic.Threat"
-        },
-        {
-          "engine": "Emsisoft",
-          "result": "Application.Generic.4495641 (B)"
-        },
-        {
-          "engine": "F-Secure",
-          "result": "Exploit.EXP/ELF.Coinminer.A"
-        },
-        {
-          "engine": "Fortinet",
-          "result": "Adware/Miner"
-        },
-        {
-          "engine": "GData",
-          "result": "Application.Generic.4495641"
         },
         {
           "engine": "Google",
@@ -972,220 +906,157 @@
         },
         {
           "engine": "Ikarus",
-          "result": "Trojan.Linux.Generic"
+          "result": "Trojan.Linux.Mirai"
         },
         {
-          "engine": "Jiangmin",
-          "result": "Trojan.Linux.dsm"
+          "engine": "Kingsoft",
+          "result": "Linux.Backdoor.Agent.n"
         },
         {
-          "engine": "Kaspersky",
-          "result": "HEUR:Trojan.Linux.Miner.gen"
-        },
-        {
-          "engine": "Lionic",
-          "result": "Trojan.Linux.Miner.4!c"
-        },
-        {
-          "engine": "MicroWorld-eScan",
-          "result": "Application.Generic.4495641"
+          "engine": "McAfeeD",
+          "result": "Trojan:Linux/Mirai.EAF"
         },
         {
           "engine": "Microsoft 🛡️",
-          "result": "Trojan:Linux/Multiverze!rfn"
+          "result": "Backdoor:Linux/Gafgyt.P!xp"
         },
         {
           "engine": "Rising",
-          "result": "HackTool.NBMiner/Linux!1.E357 (CLASSIC)"
+          "result": "Backdoor.Mirai/Linux!1.130E7 (CLASSIC)"
         },
         {
-          "engine": "SentinelOne",
-          "result": "Static AI - Suspicious ELF"
-        },
-        {
-          "engine": "Sophos",
-          "result": "Generic Reputation PUA (PUA)"
-        },
-        {
-          "engine": "Tencent",
-          "result": "Trojan.Linux.Agent.adc"
-        },
-        {
-          "engine": "VBA32",
-          "result": "Trojan.Linux.Agent"
+          "engine": "Sangfor",
+          "result": "Suspicious.Linux.Save.a"
         },
         {
           "engine": "Varist",
-          "result": "E64/ABRisk.CXQV-1"
-        },
-        {
-          "engine": "Zillya",
-          "result": "Trojan.252279.Linux.1"
+          "result": "E32/Mirai.FR.gen!Eldorado"
         },
         {
           "engine": "alibabacloud",
-          "result": "Miner:Linux/CoinMiner.JUO"
+          "result": "DDOS:Linux/Mirai"
         },
         {
           "engine": "huorong",
-          "result": "Trojan/Linux.CoinMiner.ah"
+          "result": "Trojan/Linux.Mirai.l!crit"
         }
       ],
       "is_weekly": false
     },
     {
-      "sha256": "8e31d8ea218e372cf5c9",
-      "sha_short": "8e31d8ea218e372cf5c9…",
-      "url": "https://bazaar.abuse.ch/sample/8e31d8ea218e372cf5c90398aa91c6d8bf77fda473a8d5d645f2812e846232b7/",
-      "detected": 18,
+      "sha256": "d0ee30fa8389fe31348f",
+      "sha_short": "d0ee30fa8389fe31348f…",
+      "url": "https://bazaar.abuse.ch/sample/d0ee30fa8389fe31348f38d6d69acec2f35ac62e6f8f6c132bcceae494eb7c34/",
+      "detected": 9,
       "total": 75,
-      "rate_pct": 24.0,
-      "rate": 0.24,
+      "rate_pct": 12.0,
+      "rate": 0.12,
       "rate_color": "#ff8800",
       "quality": "🟡 SCHWACH ERKANNT",
       "defender": "✗ **NEIN** – nicht erkannt",
       "engines": [
         {
           "engine": "AVG",
-          "result": "FileRepMalware [Trj]"
+          "result": "ELF:Flooder-ACG [Trj]"
         },
         {
           "engine": "Avast",
-          "result": "FileRepMalware [Trj]"
+          "result": "ELF:Flooder-ACG [Trj]"
         },
         {
-          "engine": "Avira",
-          "result": "TR/W64.Evo"
-        },
-        {
-          "engine": "Bkav",
-          "result": "W32.Malware.86C39031"
-        },
-        {
-          "engine": "CrowdStrike",
-          "result": "win/malicious_confidence_90% (W)"
-        },
-        {
-          "engine": "Cynet",
-          "result": "Malicious (score: 99)"
-        },
-        {
-          "engine": "DeepInstinct",
-          "result": "MALICIOUS"
-        },
-        {
-          "engine": "Elastic",
-          "result": "malicious (high confidence)"
-        },
-        {
-          "engine": "F-Secure",
-          "result": "Trojan.TR/W64.Evo"
-        },
-        {
-          "engine": "Google",
-          "result": "Detected"
-        },
-        {
-          "engine": "Kaspersky",
-          "result": "VHO:Backdoor.Win64.Gsb.gen"
-        },
-        {
-          "engine": "Malwarebytes",
-          "result": "Malware.AI.150126692"
-        },
-        {
-          "engine": "MaxSecure",
-          "result": "Trojan.Malware.300983.susgen"
-        },
-        {
-          "engine": "McAfeeD",
-          "result": "ti!8E31D8EA218E"
-        },
-        {
-          "engine": "Microsoft 🛡️",
-          "result": "Trojan:Win32/Wacatac.B!ml"
-        },
-        {
-          "engine": "Symantec",
-          "result": "ML.Attribute.HighConfidence"
-        },
-        {
-          "engine": "Varist",
-          "result": "W64/Agent.MDZ.gen!Eldorado"
-        },
-        {
-          "engine": "huorong",
-          "result": "Trojan/Loader.rp"
-        }
-      ],
-      "is_weekly": false
-    },
-    {
-      "sha256": "99710995e1c8ed093fe1",
-      "sha_short": "99710995e1c8ed093fe1…",
-      "url": "https://bazaar.abuse.ch/sample/99710995e1c8ed093fe10a381fc0740d89a6b95426020874ed829bc5a0c5042d/",
-      "detected": 6,
-      "total": 75,
-      "rate_pct": 8.0,
-      "rate": 0.08,
-      "rate_color": "#ff4444",
-      "quality": "⚠️ KAUM ERKANNT",
-      "defender": "✗ **NEIN** – nicht erkannt",
-      "engines": [
-        {
-          "engine": "AhnLab-V3",
-          "result": "Trojan/Win.Generic.C5884416"
-        },
-        {
-          "engine": "Bkav",
-          "result": "W32.Malware.998691AC"
+          "engine": "DrWeb",
+          "result": "Linux.DDoS.2733"
         },
         {
           "engine": "ESET-NOD32",
-          "result": "Win32/Kryptik.HZHD trojan"
+          "result": "Linux/DDoS.Agent.IS trojan"
         },
         {
-          "engine": "Elastic",
-          "result": "malicious (high confidence)"
+          "engine": "Kaspersky",
+          "result": "HEUR:Trojan.Linux.Agent.tr"
         },
         {
-          "engine": "Malwarebytes",
-          "result": "Malware.AI.4144193456"
+          "engine": "Kingsoft",
+          "result": "Linux.Trojan.Agent.tr"
         },
         {
-          "engine": "Rising",
-          "result": "Trojan.Kryptik!8.8 (TFE:2:gD1xIrvSLCL)"
+          "engine": "Microsoft 🛡️",
+          "result": "Trojan:Script/Wacatac.B!ml"
+        },
+        {
+          "engine": "Tencent",
+          "result": "Malware.Linux.Generic.1c081bbf"
+        },
+        {
+          "engine": "huorong",
+          "result": "Trojan/Linux.DDos.bt"
         }
       ],
       "is_weekly": false
     },
     {
-      "sha256": "b46d3482ff74395f09f3",
-      "sha_short": "b46d3482ff74395f09f3…",
-      "url": "https://bazaar.abuse.ch/sample/b46d3482ff74395f09f36a0014407ff803107eb5bef70d13bfa62a86ebd7bc75/",
-      "detected": 11,
+      "sha256": "0a0bd696ec0d98b6dc7c",
+      "sha_short": "0a0bd696ec0d98b6dc7c…",
+      "url": "https://bazaar.abuse.ch/sample/0a0bd696ec0d98b6dc7cb655ae58370d4d13f08b91a92eef52a0ed1efbb8577e/",
+      "detected": 56,
       "total": 75,
-      "rate_pct": 14.7,
-      "rate": 0.147,
-      "rate_color": "#ff8800",
-      "quality": "🟡 SCHWACH ERKANNT",
-      "defender": "✗ **NEIN** – nicht erkannt",
+      "rate_pct": 74.7,
+      "rate": 0.747,
+      "rate_color": "#00d26a",
+      "quality": "✅ GUT ERKANNT",
+      "defender": "✓ **JA** – `Gen:Variant.Jaik.64887`",
       "engines": [
+        {
+          "engine": "ALYac",
+          "result": "Trojan.Agent.164864"
+        },
         {
           "engine": "APEX",
           "result": "Malicious"
         },
         {
+          "engine": "AVG",
+          "result": "Win32:Trojan-gen"
+        },
+        {
           "engine": "AhnLab-V3",
-          "result": "Trojan/Win.Generic.C5887720"
+          "result": "Trojan/Win32.Navepry.R215554"
+        },
+        {
+          "engine": "Alibaba",
+          "result": "Trojan:Win32/Lazarus.e4552927"
+        },
+        {
+          "engine": "Antiy-AVL",
+          "result": "Trojan[APT]/Win32.Lazarus"
+        },
+        {
+          "engine": "Arcabit",
+          "result": "Trojan.Jaik.DFD77"
+        },
+        {
+          "engine": "Avast",
+          "result": "Win32:Trojan-gen"
+        },
+        {
+          "engine": "BitDefender 🛡️",
+          "result": "Gen:Variant.Jaik.64887"
         },
         {
           "engine": "Bkav",
-          "result": "W32.Malware.4154C18C"
+          "result": "W32.Malware.421B3F47"
+        },
+        {
+          "engine": "CAT-QuickHeal",
+          "result": "Trojan.Lazarus.S14632660"
+        },
+        {
+          "engine": "CTX",
+          "result": "dll.trojan.lazarus"
         },
         {
           "engine": "CrowdStrike",
-          "result": "win/malicious_confidence_60% (D)"
+          "result": "win/malicious_confidence_100% (W)"
         },
         {
           "engine": "Cylance",
@@ -1200,20 +1071,164 @@
           "result": "MALICIOUS"
         },
         {
+          "engine": "ESET-NOD32",
+          "result": "Win32/NukeSped.AG trojan"
+        },
+        {
           "engine": "Elastic",
-          "result": "malicious (moderate confidence)"
+          "result": "malicious (high confidence)"
+        },
+        {
+          "engine": "Emsisoft",
+          "result": "Gen:Variant.Jaik.64887 (B)"
+        },
+        {
+          "engine": "Fortinet",
+          "result": "W32/NukeSped.AG!tr"
+        },
+        {
+          "engine": "GData",
+          "result": "Gen:Variant.Jaik.64887"
+        },
+        {
+          "engine": "Google",
+          "result": "Detected"
+        },
+        {
+          "engine": "Ikarus",
+          "result": "Trojan-Downloader.Win32.Small"
+        },
+        {
+          "engine": "Jiangmin",
+          "result": "Trojan.Lazarus.l"
+        },
+        {
+          "engine": "K7AntiVirus",
+          "result": "Riskware ( 0040eff71 )"
+        },
+        {
+          "engine": "K7GW",
+          "result": "Riskware ( 0040eff71 )"
+        },
+        {
+          "engine": "Kaspersky",
+          "result": "HEUR:Trojan.Win32.Lazarus.gen"
+        },
+        {
+          "engine": "Kingsoft",
+          "result": "Win32.Trojan.Lazarus.gen"
+        },
+        {
+          "engine": "Lionic",
+          "result": "Trojan.Win32.Lazarus.4!c"
+        },
+        {
+          "engine": "Malwarebytes",
+          "result": "Malware.AI.3420490084"
+        },
+        {
+          "engine": "MaxSecure",
+          "result": "Trojan.Malware.11491671.susgen"
+        },
+        {
+          "engine": "McAfeeD",
+          "result": "ti!0A0BD696EC0D"
+        },
+        {
+          "engine": "MicroWorld-eScan",
+          "result": "Gen:Variant.Jaik.64887"
         },
         {
           "engine": "Microsoft 🛡️",
-          "result": "Trojan:Win32/Phonzy.B!ml"
+          "result": "Trojan:Win32/Autophyte.M!dha"
+        },
+        {
+          "engine": "NANO-Antivirus",
+          "result": "Trojan.Win32.Manuscrypt.euuxvo"
         },
         {
           "engine": "Paloalto",
           "result": "generic.ml"
         },
         {
+          "engine": "Panda",
+          "result": "Trj/GdSda.A"
+        },
+        {
+          "engine": "Rising",
+          "result": "Backdoor.[Lazarus]Bankshot!1.DA04 (CLASSIC)"
+        },
+        {
+          "engine": "Sangfor",
+          "result": "Trojan.Win32.Lazarus.V9hc"
+        },
+        {
+          "engine": "SentinelOne",
+          "result": "Static AI - Suspicious PE"
+        },
+        {
+          "engine": "Skyhigh",
+          "result": "HiddenCobra!AEF67F5FA937"
+        },
+        {
+          "engine": "Sophos",
+          "result": "Mal/Generic-S"
+        },
+        {
+          "engine": "Symantec",
+          "result": "ML.Attribute.HighConfidence"
+        },
+        {
+          "engine": "TACHYON",
+          "result": "Ransom/W32.Magniber.164864"
+        },
+        {
+          "engine": "Tencent",
+          "result": "Malware.Win32.Gencirc.115d41e1"
+        },
+        {
           "engine": "TrellixENS",
-          "result": "Artemis!C0625A50798A"
+          "result": "HiddenCobra!AEF67F5FA937"
+        },
+        {
+          "engine": "TrendMicro",
+          "result": "Trojan.Win32.COBRA.0NA103C219"
+        },
+        {
+          "engine": "TrendMicro-HouseCall",
+          "result": "Trojan.Win32.COBRA.0NA103C219"
+        },
+        {
+          "engine": "VBA32",
+          "result": "BScope.Trojan.Manuscrypt"
+        },
+        {
+          "engine": "VIPRE",
+          "result": "Gen:Variant.Jaik.64887"
+        },
+        {
+          "engine": "Varist",
+          "result": "W32/ABTrojan.GJNT-7000"
+        },
+        {
+          "engine": "ViRobot",
+          "result": "Trojan.Win32.S.Agent.164864.HW"
+        },
+        {
+          "engine": "Yandex",
+          "result": "Trojan.GenAsa!J3XeXVAHQ7w"
+        },
+        {
+          "engine": "Zillya",
+          "result": "Trojan.NukeSped.Win32.255"
+        },
+        {
+          "engine": "alibabacloud",
+          "result": "Trojan:Win/Manuscrypt.AZ"
+        },
+        {
+          "engine": "huorong",
+          "result": "Trojan/Manuscrypt.a"
         }
       ],
       "is_weekly": false
@@ -1455,24 +1470,24 @@
           "result": "Trojan[spy]:Win/Formbook.AM"
         },
         {
-          "engine": "17:23 | [a37917329e1a…](https://bazaar.abuse.ch/sample/a37917329e1ab945ca8306703c03c2e472bc9ba9042c09231ac285e1a5ba4927/)",
-          "result": "zip"
-        },
-        {
-          "engine": "17:17 | [6816bdce3909…](https://bazaar.abuse.ch/sample/6816bdce3909a1a98c719e032690ce2b1756d9c6e82c15078584bc3dd3a55cdf/)",
-          "result": "exe"
-        },
-        {
-          "engine": "17:14 | [52e75b6a2a52…](https://bazaar.abuse.ch/sample/52e75b6a2a528d075aa78de0127ab1c213f18a8a4339a1c9b207242079ae2d29/)",
+          "engine": "19:36 | [7f243cc41f37…](https://bazaar.abuse.ch/sample/7f243cc41f37b3189e7474f778af3fd241f258174fe68350a9a57791bc5d8c15/)",
           "result": "elf"
         },
         {
-          "engine": "17:14 | [6ff6844e43cc…](https://bazaar.abuse.ch/sample/6ff6844e43cca715e658fa5e3714dcd439a8aea1195df544f0efb7a00dda6540/)",
-          "result": "tar"
+          "engine": "19:33 | [ca752a158c7e…](https://bazaar.abuse.ch/sample/ca752a158c7e37696137bfead3e8427b40035f6cbfbef45cf27d9089e2408898/)",
+          "result": "elf"
         },
         {
-          "engine": "17:10 | [7a7f5a9fe72d…](https://bazaar.abuse.ch/sample/7a7f5a9fe72d80ff53a1f2c6af50d022d49695e29e423b76e318d264f3b0dd14/)",
-          "result": "rar"
+          "engine": "19:33 | [c9bdef359084…](https://bazaar.abuse.ch/sample/c9bdef3590843ea0619b5fb14e03bb7dadfd94099d5e5e8273b4639fa6c40c68/)",
+          "result": "elf"
+        },
+        {
+          "engine": "19:32 | [d0ee30fa8389…](https://bazaar.abuse.ch/sample/d0ee30fa8389fe31348f38d6d69acec2f35ac62e6f8f6c132bcceae494eb7c34/)",
+          "result": "elf"
+        },
+        {
+          "engine": "19:32 | [312f3d835858…](https://bazaar.abuse.ch/sample/312f3d83585828bcf530bdb7c4920e0a19d1676792b6c6cda1840a2edb81f26c/)",
+          "result": "elf"
         }
       ],
       "is_weekly": false
@@ -1491,152 +1506,152 @@
       "engine": "Microsoft",
       "score": 0.838,
       "score_pct": "83.8%",
-      "detected": 2466,
-      "seen": 2942,
+      "detected": 2470,
+      "seen": 2946,
       "is_mandatory": true
     },
     {
       "engine": "ESET-NOD32",
       "score": 0.779,
       "score_pct": "77.9%",
-      "detected": 2293,
-      "seen": 2942,
+      "detected": 2296,
+      "seen": 2946,
       "is_mandatory": false
     },
     {
       "engine": "Kaspersky",
       "score": 0.764,
       "score_pct": "76.4%",
-      "detected": 2246,
-      "seen": 2941,
+      "detected": 2249,
+      "seen": 2945,
       "is_mandatory": false
     },
     {
       "engine": "Google",
       "score": 0.738,
       "score_pct": "73.8%",
-      "detected": 2171,
-      "seen": 2942,
+      "detected": 2174,
+      "seen": 2946,
       "is_mandatory": false
     },
     {
       "engine": "Rising",
-      "score": 0.694,
-      "score_pct": "69.4%",
-      "detected": 2043,
-      "seen": 2942,
+      "score": 0.695,
+      "score_pct": "69.5%",
+      "detected": 2046,
+      "seen": 2946,
       "is_mandatory": false
     },
     {
       "engine": "Ikarus",
       "score": 0.664,
       "score_pct": "66.4%",
-      "detected": 1953,
-      "seen": 2942,
+      "detected": 1956,
+      "seen": 2946,
       "is_mandatory": false
     },
     {
       "engine": "Varist",
       "score": 0.663,
       "score_pct": "66.3%",
-      "detected": 1950,
-      "seen": 2942,
+      "detected": 1953,
+      "seen": 2946,
       "is_mandatory": false
     },
     {
       "engine": "Tencent",
       "score": 0.662,
       "score_pct": "66.2%",
-      "detected": 1820,
-      "seen": 2750,
+      "detected": 1823,
+      "seen": 2754,
       "is_mandatory": false
     },
     {
       "engine": "McAfeeD",
-      "score": 0.641,
-      "score_pct": "64.1%",
-      "detected": 1887,
-      "seen": 2942,
+      "score": 0.642,
+      "score_pct": "64.2%",
+      "detected": 1890,
+      "seen": 2946,
       "is_mandatory": false
     },
     {
       "engine": "Avast",
       "score": 0.637,
       "score_pct": "63.7%",
-      "detected": 1872,
-      "seen": 2941,
+      "detected": 1875,
+      "seen": 2945,
       "is_mandatory": false
     },
     {
       "engine": "AVG",
       "score": 0.637,
       "score_pct": "63.7%",
-      "detected": 1872,
-      "seen": 2941,
+      "detected": 1875,
+      "seen": 2945,
       "is_mandatory": false
     },
     {
       "engine": "Fortinet",
       "score": 0.608,
       "score_pct": "60.8%",
-      "detected": 1788,
-      "seen": 2941,
+      "detected": 1790,
+      "seen": 2945,
       "is_mandatory": false
     },
     {
       "engine": "GData",
       "score": 0.604,
       "score_pct": "60.4%",
-      "detected": 1776,
-      "seen": 2942,
+      "detected": 1778,
+      "seen": 2946,
       "is_mandatory": false
     },
     {
       "engine": "Antiy-AVL",
       "score": 0.6,
       "score_pct": "60.0%",
-      "detected": 1766,
-      "seen": 2942,
+      "detected": 1769,
+      "seen": 2946,
       "is_mandatory": false
     },
     {
       "engine": "Elastic",
       "score": 0.596,
       "score_pct": "59.6%",
-      "detected": 1752,
-      "seen": 2942,
+      "detected": 1755,
+      "seen": 2946,
       "is_mandatory": false
     },
     {
       "engine": "CTX",
       "score": 0.591,
       "score_pct": "59.1%",
-      "detected": 1740,
-      "seen": 2942,
+      "detected": 1742,
+      "seen": 2946,
       "is_mandatory": false
     },
     {
       "engine": "Cynet",
-      "score": 0.591,
-      "score_pct": "59.1%",
-      "detected": 1738,
-      "seen": 2942,
+      "score": 0.59,
+      "score_pct": "59.0%",
+      "detected": 1739,
+      "seen": 2946,
       "is_mandatory": false
     },
     {
       "engine": "MicroWorld-eScan",
       "score": 0.577,
       "score_pct": "57.7%",
-      "detected": 1697,
-      "seen": 2942,
+      "detected": 1699,
+      "seen": 2946,
       "is_mandatory": false
     },
     {
       "engine": "Emsisoft",
       "score": 0.574,
       "score_pct": "57.4%",
-      "detected": 1688,
-      "seen": 2942,
+      "detected": 1690,
+      "seen": 2946,
       "is_mandatory": false
     }
   ],
