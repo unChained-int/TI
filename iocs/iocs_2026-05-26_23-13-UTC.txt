@@ -1,0 +1,123 @@
+# IOC Export  2026-05-26_23-13-UTC
+# 8 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+57cb82998948b070e8deac5d5db876de316d585915565cf908a9bd08c66740ce  # Loader | R=81.3 | unbekannt | msi
+78434b53d284d4537e6d44a9373da8ef86d15c0cd36f32ce695dfd82db7eccfd  # Loader | R=78.9 | Malware.Heuristic.2123 | exe
+ca687401049c4fae9fc3d278008361f470f79dcdc20fda5e9e4c482d2a9c7df7  # Loader | R=75.1 | unbekannt | exe
+bfe6e5455ddb5481730b00fe63af98eb5a35d5d45d56be1a94aa5e5488d8445f  # Botnet/IoT | R=75.1 | Bash | sh
+258c14ec310e17504a0df203a3796611baa5b7e021de79123de4ba0ba6ed73d2  # Botnet/IoT | R=75.1 | Bash | sh
+5e0e2876b259ae4c3dfdd53ac472e0759de1f00c590c6c02f3e1d9ff92e1d78c  # Infostealer | R=64.7 | Formbook | exe
+13276d04bfb4ed0b81c38cb49e70571319fd61f593179bc3bacc6c8e29fc1bad  # Linux-Malware | R=42.8 | unbekannt | elf
+fe77313c83205a27f54daee59e41ad6dc364d6de2e93859880510047e766c41b  # Linux-Malware | R=42.7 | unbekannt | elf
+
+[Tags]
+E
+US.file
+d52f85
+dropped-by-Amadey
+dropped-by-GCleaner
+elf
+exe
+msi
+sh
+signed
+
+[VT Engine Detections]
+
+## 78434b53d284d4537e6d...  (Malware.Heuristic.2123) | Defender: ✗ nicht erkannt
+   Erkannt: 7/75 Engines (9.3%) — ⚠️ KAUM ERKANNT
+  CrowdStrike                    win/malicious_confidence_60% (D)
+  Cylance                        Unsafe
+  Elastic                        malicious (high confidence)
+  Malwarebytes                   Malware.Heuristic.2123
+  McAfeeD                        ti!78434B53D284
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Trapmine                       malicious.high.ml.score
+
+## bfe6e5455ddb5481730b...  (Bash) | Defender: ✓ Generic.Bash.MiraiB.F0AF94E8
+   Erkannt: 11/75 Engines (14.7%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Generic.Bash.MiraiB.F0AF94E8
+  Arcabit                        Generic.Bash.MiraiB.F0AF94E8
+  BitDefender                    Generic.Bash.MiraiB.F0AF94E8
+  CTX                            shell.unknown.bash
+  DrWeb                          Linux.DownLoader.2243
+  Emsisoft                       Generic.Bash.MiraiB.F0AF94E8 (B)
+  GData                          Generic.Bash.MiraiB.F0AF94E8
+  MicroWorld-eScan               Generic.Bash.MiraiB.F0AF94E8
+  Microsoft                      Trojan:SH/Geninst.JB
+  VIPRE                          Generic.Bash.MiraiB.F0AF94E8
+  huorong                        HEUR:TrojanDownloader/Linux.Agent.ba
+
+## 258c14ec310e17504a0d...  (Bash) | Defender: ✓ Generic.Bash.MiraiB.E9A9198F
+   Erkannt: 11/75 Engines (14.7%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Generic.Bash.MiraiB.E9A9198F
+  Arcabit                        Generic.Bash.MiraiB.E9A9198F
+  BitDefender                    Generic.Bash.MiraiB.E9A9198F
+  CTX                            shell.unknown.bash
+  DrWeb                          Linux.DownLoader.2243
+  Emsisoft                       Generic.Bash.MiraiB.E9A9198F (B)
+  GData                          Generic.Bash.MiraiB.E9A9198F
+  MicroWorld-eScan               Generic.Bash.MiraiB.E9A9198F
+  Microsoft                      Trojan:SH/Geninst.JB
+  VIPRE                          Generic.Bash.MiraiB.E9A9198F
+  huorong                        HEUR:TrojanDownloader/Linux.Agent.ba
+
+## 5e0e2876b259ae4c3dfd...  (Formbook) ⭐ WOCHEN-SAMPLE | Defender: ✓ IL:Trojan.MSILZilla.254961
+   Erkannt: 56/75 Engines (74.7%) — ✅ GUT ERKANNT
+  ALYac                          IL:Trojan.MSILZilla.254961
+  APEX                           Malicious
+  AVG                            MalwareX-gen [Cryp]
+  AhnLab-V3                      Malware/Win.formbook.C5887154
+  Alibaba                        TrojanSpy:MSIL/Kryptik.29fe3a71
+  Antiy-AVL                      Trojan[Spy]/MSIL.Noon
+  Arcabit                        IL:Trojan.MSILZilla.D3E3F1
+  Avast                          MalwareX-gen [Cryp]
+  Avira                          TR/W32.MalwareX
+  BitDefender                    IL:Trojan.MSILZilla.254961
+  Bkav                           W32.Malware.42ABF640
+  CAT-QuickHeal                  TrojanSpy.MSIL
+  CTX                            exe.trojan.msil
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.Inject6.55092
+  ESET-NOD32                     Win32/Formbook.AA trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       IL:Trojan.MSILZilla.254961 (B)
+  F-Secure                       Trojan.TR/W32.MalwareX
+  Fortinet                       MSIL/Formbook.AJAP!tr
+  GData                          IL:Trojan.MSILZilla.254961
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Downloader.sa
+  Ikarus                         Win32.SuspectCrc
+  K7AntiVirus                    Spyware ( 005ce51e1 )
+  K7GW                           Spyware ( 005ce51e1 )
+  Kaspersky                      HEUR:Trojan-Spy.MSIL.Noon.gen
+  Kingsoft                       MSIL.Trojan-Spy.Noon.gen
+  Lionic                         Trojan.Win32.Formbook.l!c
+  Malwarebytes                   Trojan.MalPack.PNG.Generic
+  McAfeeD                        Trojan:Win/GenericPack.BMP
+  MicroWorld-eScan               IL:Trojan.MSILZilla.254961
+  Microsoft                      Trojan:MSIL/FormBook.RSF!MTB
+  Paloalto                       generic.ml
+  Panda                          Trj/GdSda.A
+  Rising                         Malware.Obfus/MSIL@AI.90 (RDM.MSIL2:vKZBqOS0kXVfGgVyIFruPA)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        Artemis!Trojan
+  Sophos                         Troj/Krypt-AQM
+  Symantec                       Scr.Malcode!gdn34
+  Tencent                        Msil.Trojan-Spy.Noon.Jajl
+  Trapmine                       malicious.high.ml.score
+  TrellixENS                     Artemis!7A0B7100B59A
+  TrendMicro                     Trojan.Win32.FORMBOOK.YXGEWZ
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04CA3
+  VIPRE                          IL:Trojan.MSILZilla.254961
+  Varist                         W32/MSIL_Agent.KCO.gen!Eldorado
+  ViRobot                        Trojan.Win.Z.Ser.1022976
+  VirIT                          Trojan.Win32.MSIL_Heur.A
+  Webroot                        Win.Trojan.Gen
+  Yandex                         Trojan.Igent.b6Bbi7.1
+  ZoneAlarm                      Troj/Krypt-AQM
+  alibabacloud                   Trojan[spy]:Win/Formbook.AM
