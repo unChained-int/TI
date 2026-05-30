@@ -1,0 +1,136 @@
+# IOC Export  2026-05-30_15-11-UTC
+# 8 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+02b92b6a11999fc277898e46bc8f635adba0e18ce135c754e2c3423f3bf6d5ae  # Botnet/IoT | R=84.3 | Mirai | elf
+4497ed815fe305ddac3e22ce6fb54d8e7333576f221b84500ac01e2bb4cf3a68  # Botnet/IoT | R=83.6 | Mirai | elf
+fd1fefbab3a47835cf6d41e5d9371969b20dbd53802f8205d98d56ab574bfef7  # Botnet/IoT | R=83.3 | Mirai | elf
+f1e2c289c0a43650628a796154cf4a9c4f87e61209fb0e65bdc67b2679aa80de  # Infostealer | R=81.1 | RemusStealer | exe
+1b03b3c0e2929e1452b99ba923c6f4388a2d889244975b83883f7c68ec32dab2  # Trojaner | R=78.3 | Linux | elf
+1826336c3ce1ae724f30ba40835890202238032a6b82ce53d4aaddb816d344dc  # Loader | R=75.8 | FileRepMalware [Trj] | exe
+4903fbe3e8ee4bc49035c9fb6e8fd3d258f3daadf237d6b1f8dd3fe41cb4ced9  # Spyware | R=64.1 | MassLogger | msi
+21811956167f72dcde22d8c16857cb63e0026c949dd1fcbb1f42d3943f5997dd  # Linux-Malware | R=42.2 | unbekannt | elf
+
+[Tags]
+A
+Mirai
+PMIX0.file
+RemusStealer
+de-pumped
+dropped-by-GCleaner
+elf
+exe
+honeypot
+linux
+shardlure
+signed
+static
+wraith
+x86-64
+
+[VT Engine Detections]
+
+## f1e2c289c0a43650628a...  (RemusStealer) | Defender: ✗ nicht erkannt
+   Erkannt: 18/75 Engines (24.0%) — 🟡 SCHWACH ERKANNT
+  AVG                            Win64:MalwareX-gen [Drp]
+  Avast                          Win64:MalwareX-gen [Drp]
+  Avira                          DR/W64.MalwareX
+  Bkav                           W32.Malware.4AC26EF4
+  CrowdStrike                    win/malicious_confidence_70% (W)
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  Elastic                        malicious (high confidence)
+  F-Secure                       Dropper.DR/W64.MalwareX
+  Google                         Detected
+  Ikarus                         Trojan.WinGo.Crypt
+  Kaspersky                      Backdoor.Win64.Gsb.gen
+  McAfeeD                        ti!F1E2C289C0A4
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Malware.Undefined!8.C (TFE:dGZlOilcF4Cy7NMSwg)
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       malicious.moderate.ml.score
+  huorong                        Trojan/Loader.pg
+
+## 1b03b3c0e2929e1452b9...  (Linux) | Defender: ✓ Trojan.Linux.GenericKD.73462
+   Erkannt: 20/74 Engines (27.0%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Trojan.Linux.GenericKD.73462
+  Arcabit                        Trojan.Linux.Generic.D11EF6
+  BitDefender                    Trojan.Linux.GenericKD.73462
+  CTX                            elf.trojan.multiverze
+  DrWeb                          Linux.Siggen.10750
+  Emsisoft                       Trojan.Linux.GenericKD.73462 (B)
+  Fortinet                       PossibleThreat
+  GData                          Trojan.Linux.GenericKD.73462
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Multiverze
+  Lionic                         Trojan.Linux.Multiverze.4!c
+  MicroWorld-eScan               Trojan.Linux.GenericKD.73462
+  Microsoft                      Trojan:Linux/Multiverze!rfn
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.NPE
+  TrendMicro-HouseCall           TROJ_GEN.R002H09LS25
+  VBA32                          Trojan.Linux.Mirai
+  VIPRE                          Trojan.Linux.GenericKD.73462
+  Varist                         E64/ABTrojan.MGVO-
+  alibabacloud                   Trojan
+
+## 1826336c3ce1ae724f30...  (FileRepMalware [Trj]) | Defender: ✗ nicht erkannt
+   Erkannt: 16/75 Engines (21.3%) — 🟡 SCHWACH ERKANNT
+  AVG                            FileRepMalware [Trj]
+  Avast                          FileRepMalware [Trj]
+  Bkav                           W32.Malware.E4DA01ED
+  CrowdStrike                    win/malicious_confidence_90% (W)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     WinGo/Kryptik.PL trojan
+  Elastic                        malicious (high confidence)
+  Google                         Detected
+  Ikarus                         Trojan.WinGo.Crypt
+  Kaspersky                      VHO:Backdoor.Win64.GoBin.gen
+  Kingsoft                       Win64.Backdoor.Gsb.gen
+  McAfeeD                        ti!1826336C3CE1
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Symantec                       ML.Attribute.HighConfidence
+  Varist                         W64/Agent.MDZ.gen!Eldorado
+  huorong                        Trojan/Loader.pg
+
+## 4903fbe3e8ee4bc49035...  (MassLogger) ⭐ WOCHEN-SAMPLE | Defender: ✓ Generic.Dacic.11606.F9D84DFE
+   Erkannt: 39/75 Engines (52.0%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Generic.Dacic.11606.F9D84DFE
+  AVG                            MSIL:MassLogger-G [Pws]
+  Antiy-AVL                      Trojan[PSW]/MSIL.Mintluks
+  Arcabit                        Generic.Dacic.11606.F9D84DFE
+  Avast                          MSIL:MassLogger-G [Pws]
+  Avira                          TR/ATRAPS.Gen
+  BitDefender                    Generic.Dacic.11606.F9D84DFE
+  CAT-QuickHeal                  Trojan.YakbeexMSIL.ZZ4
+  CTX                            msi.trojan.msil
+  Cynet                          Malicious (score: 99)
+  DrWeb                          BackDoor.RatNET.2
+  ESET-NOD32                     MSIL/Spy.SnakeStealer.A trojan
+  Emsisoft                       Generic.Dacic.11606.F9D84DFE (B)
+  F-Secure                       Trojan.TR/ATRAPS.Gen
+  Fortinet                       MSIL/SnakeStealer.AVQ!tr.spy
+  GData                          Generic.Dacic.11606.F9D84DFE
+  Google                         Detected
+  Ikarus                         Trojan-Spy.Echelon
+  K7AntiVirus                    Spyware ( 004bf6371 )
+  K7GW                           Spyware ( 004bf6371 )
+  Kaspersky                      HEUR:Trojan.Win32.Generic
+  McAfeeD                        ti!4903FBE3E8EE
+  MicroWorld-eScan               Generic.Dacic.11606.F9D84DFE
+  NANO-Antivirus                 Trojan.Win32.Stealer.leihme
+  Rising                         Spyware.Masslogger!1.13727 (CLASSIC)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious MSI
+  Skyhigh                        Trojan-JAJM!127AA24592A4
+  Sophos                         Troj/Krypt-AOR
+  Symantec                       Trojan.Gen.2
+  Tencent                        Trojan.Msil.Agent.16002783
+  TrellixENS                     GenericRXWS-BX!127AA24592A4
+  TrendMicro                     TrojanSpy.MSIL.SNAKELOGGER.SMPIA
+  TrendMicro-HouseCall           TrojanSpy.MSIL.SNAKELOGGER.SMPIA
+  VBA32                          Malware-Cryptor.MSIL.AgentTesla.Heur
+  VIPRE                          Generic.Dacic.11606.F9D84DFE
+  Varist                         W32/Stealer.HT.gen!Eldorado
+  alibabacloud                   Backdoor:MSIL/Bladabindi.AZHZ3DGW
+  huorong                        Trojan/MSIL.Agent.sk
