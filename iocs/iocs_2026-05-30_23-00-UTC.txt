@@ -1,0 +1,71 @@
+# IOC Export  2026-05-30_23-00-UTC
+# 3 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+b1da8fd4494105946f485add66a796a7b45cfe6134edb4472c76569aad61f3bd  # Infostealer | R=83.0 | Agent | exe
+8689c84e681c812b7605ad316a54ebafb77ebffc86c4ef1223c8b4d93988ec49  # Infostealer | R=82.4 | InfoStealer | exe
+4903fbe3e8ee4bc49035c9fb6e8fd3d258f3daadf237d6b1f8dd3fe41cb4ced9  # Spyware | R=61.7 | MassLogger | msi
+
+[Tags]
+exe
+signed
+stealer
+
+[VT Engine Detections]
+
+## 8689c84e681c812b7605...  (InfoStealer) | Defender: ✗ nicht erkannt
+   Erkannt: 1/75 Engines (1.3%) — ⚠️ KAUM ERKANNT
+  Malwarebytes                   Spyware.InfoStealer
+
+## b1da8fd4494105946f48...  (Agent) | Defender: ✗ nicht erkannt
+   Erkannt: 8/75 Engines (10.7%) — 🟡 SCHWACH ERKANNT
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     WinGo/PSW.Agent.OE trojan
+  Kaspersky                      UDS:Trojan-PSW.Win64.Coins
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Stealer.Agent!8.C2 (CLOUD)
+  Sophos                         Mal/Generic-S
+  Trapmine                       suspicious.low.ml.score
+  alibabacloud                   RiskWare:Multi/Agent.OA
+
+## 4903fbe3e8ee4bc49035...  (MassLogger) ⭐ WOCHEN-SAMPLE | Defender: ✓ Generic.Dacic.11606.F9D84DFE
+   Erkannt: 39/75 Engines (52.0%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Generic.Dacic.11606.F9D84DFE
+  AVG                            MSIL:MassLogger-G [Pws]
+  Antiy-AVL                      Trojan[PSW]/MSIL.Mintluks
+  Arcabit                        Generic.Dacic.11606.F9D84DFE
+  Avast                          MSIL:MassLogger-G [Pws]
+  Avira                          TR/ATRAPS.Gen
+  BitDefender                    Generic.Dacic.11606.F9D84DFE
+  CAT-QuickHeal                  Trojan.YakbeexMSIL.ZZ4
+  CTX                            msi.trojan.msil
+  Cynet                          Malicious (score: 99)
+  DrWeb                          BackDoor.RatNET.2
+  ESET-NOD32                     MSIL/Spy.SnakeStealer.A trojan
+  Emsisoft                       Generic.Dacic.11606.F9D84DFE (B)
+  F-Secure                       Trojan.TR/ATRAPS.Gen
+  Fortinet                       MSIL/SnakeStealer.AVQ!tr.spy
+  GData                          Generic.Dacic.11606.F9D84DFE
+  Google                         Detected
+  Ikarus                         Trojan-Spy.Echelon
+  K7AntiVirus                    Spyware ( 004bf6371 )
+  K7GW                           Spyware ( 004bf6371 )
+  Kaspersky                      HEUR:Trojan.Win32.Generic
+  McAfeeD                        ti!4903FBE3E8EE
+  MicroWorld-eScan               Generic.Dacic.11606.F9D84DFE
+  NANO-Antivirus                 Trojan.Win32.Stealer.leihme
+  Rising                         Spyware.Masslogger!1.13727 (CLASSIC)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious MSI
+  Skyhigh                        Trojan-JAJM!127AA24592A4
+  Sophos                         Troj/Krypt-AOR
+  Symantec                       Trojan.Gen.2
+  Tencent                        Trojan.Msil.Agent.16002783
+  TrellixENS                     GenericRXWS-BX!127AA24592A4
+  TrendMicro                     TrojanSpy.MSIL.SNAKELOGGER.SMPIA
+  TrendMicro-HouseCall           TrojanSpy.MSIL.SNAKELOGGER.SMPIA
+  VBA32                          Malware-Cryptor.MSIL.AgentTesla.Heur
+  VIPRE                          Generic.Dacic.11606.F9D84DFE
+  Varist                         W32/Stealer.HT.gen!Eldorado
+  alibabacloud                   Backdoor:MSIL/Bladabindi.AZHZ3DGW
+  huorong                        Trojan/MSIL.Agent.sk
