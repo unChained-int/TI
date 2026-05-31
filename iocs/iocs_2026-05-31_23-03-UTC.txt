@@ -1,0 +1,118 @@
+# IOC Export  2026-05-31_23-03-UTC
+# 5 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+1b0650c39616cebd048c64891e34c9c76582fa7eb292b9ce8248ea8160896876  # Infostealer | R=86.4 | Vidar | exe
+f95d799399a156215867e534d0b600a3851b255d697c54e5ad4bcc47a41ac842  # RAT | R=83.3 | RemcosRAT | exe
+4903fbe3e8ee4bc49035c9fb6e8fd3d258f3daadf237d6b1f8dd3fe41cb4ced9  # Spyware | R=59.4 | MassLogger | msi
+edbe951f2c653cb0f9c08cb54e6958d9cc96b5744ba65c6920f9871b57aec6d3  # Windows-Malware | R=54.2 | ti!EDBE951F2C65 | exe
+2b9fc72589f9c602853c2bf0d380604fa554e00b2ec0f04b4857a7ec06e96d96  # Andere / Unbekannt | R=50.2 | unbekannt | unknown
+
+[Tags]
+RemcosRAT
+Vidar
+d52f85
+dropped-by-Amadey
+exe
+remcos
+signed
+
+[VT Engine Detections]
+
+## 1b0650c39616cebd048c...  (Vidar) | Defender: ✗ nicht erkannt
+   Erkannt: 19/75 Engines (25.3%) — 🟡 SCHWACH ERKANNT
+  AVG                            Win64:Evo-gen [Trj]
+  Avast                          Win64:Evo-gen [Trj]
+  Avira                          TR/W64.Evo
+  Bkav                           W32.Malware.5CA59461
+  CrowdStrike                    win/malicious_confidence_90% (W)
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     WinGo/Kryptik.PL trojan
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W64.Evo
+  Google                         Detected
+  Ikarus                         Trojan.WinGo.Crypt
+  Kaspersky                      Backdoor.Win64.Gsb.gen
+  Kingsoft                       Win64.Backdoor.Gsb.gen
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        ti!1B0650C39616
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Symantec                       ML.Attribute.HighConfidence
+  huorong                        Trojan/Loader.pg
+
+## f95d799399a156215867...  (RemcosRAT) | Defender: ✓ Generic.Dacic.A9349469.A.7A87E5BE
+   Erkannt: 26/75 Engines (34.7%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Generic.Dacic.A9349469.A.7A87E5BE
+  APEX                           Malicious
+  Antiy-AVL                      Trojan[Backdoor]/Win32.Remcos
+  Arcabit                        Generic.Dacic.A9349469.A.7A87E5BE
+  BitDefender                    Generic.Dacic.A9349469.A.7A87E5BE
+  Bkav                           W32.Malware.D8F20042
+  CTX                            exe.unknown.dacic
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  Elastic                        Windows.Trojan.Remcos
+  Emsisoft                       Generic.Dacic.A9349469.A.7A87E5BE (B)
+  GData                          Generic.Dacic.A9349469.A.7A87E5BE
+  Kingsoft                       malware.kb.a.997
+  Malwarebytes                   Malware.AI.4245661237
+  MaxSecure                      Trojan.Malware.121218.susgen
+  MicroWorld-eScan               Generic.Dacic.A9349469.A.7A87E5BE
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Backdoor.Remcos!1.BAC7 (CLASSIC)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Generic ML PUA (PUA)
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Trojan.Win32.Remcos.16001234
+  Trapmine                       malicious.moderate.ml.score
+  VIPRE                          Generic.Dacic.A9349469.A.7A87E5BE
+  huorong                        Backdoor/Remcos.k
+
+## edbe951f2c653cb0f9c0...  (ti!EDBE951F2C65) | Defender: ✗ nicht erkannt
+   Erkannt: 1/75 Engines (1.3%) — ⚠️ KAUM ERKANNT
+  McAfeeD                        ti!EDBE951F2C65
+
+## 4903fbe3e8ee4bc49035...  (MassLogger) ⭐ WOCHEN-SAMPLE | Defender: ✓ Generic.Dacic.11606.F9D84DFE
+   Erkannt: 40/75 Engines (53.3%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Generic.Dacic.11606.F9D84DFE
+  AVG                            MSIL:MassLogger-G [Pws]
+  Antiy-AVL                      Trojan[PSW]/MSIL.Mintluks
+  Arcabit                        Generic.Dacic.11606.F9D84DFE
+  Avast                          MSIL:MassLogger-G [Pws]
+  Avira                          TR/ATRAPS.Gen
+  BitDefender                    Generic.Dacic.11606.F9D84DFE
+  CAT-QuickHeal                  Trojan.YakbeexMSIL.ZZ4
+  CTX                            msi.trojan.msil
+  Cynet                          Malicious (score: 99)
+  DrWeb                          BackDoor.RatNET.2
+  ESET-NOD32                     MSIL/Spy.SnakeStealer.A trojan
+  Emsisoft                       Generic.Dacic.11606.F9D84DFE (B)
+  F-Secure                       Trojan.TR/ATRAPS.Gen
+  Fortinet                       MSIL/SnakeStealer.AVQ!tr.spy
+  GData                          Generic.Dacic.11606.F9D84DFE
+  Google                         Detected
+  Gridinsoft                     Spy.U.Keylogger.cl
+  Ikarus                         Trojan-Spy.Echelon
+  K7AntiVirus                    Spyware ( 004bf6371 )
+  K7GW                           Spyware ( 004bf6371 )
+  Kaspersky                      HEUR:Trojan.Win32.Generic
+  Lionic                         Trojan.UKP.MassLogger.4!c
+  McAfeeD                        ti!4903FBE3E8EE
+  NANO-Antivirus                 Trojan.Win32.Stealer.leihme
+  Rising                         Spyware.Masslogger!1.13727 (CLASSIC)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious MSI
+  Skyhigh                        Trojan-JAJM!127AA24592A4
+  Sophos                         Troj/Krypt-AOR
+  Symantec                       Trojan.Gen.2
+  Tencent                        Trojan.Msil.Agent.16002783
+  TrellixENS                     GenericRXWS-BX!127AA24592A4
+  TrendMicro                     TrojanSpy.MSIL.SNAKELOGGER.SMPIA
+  TrendMicro-HouseCall           TrojanSpy.MSIL.SNAKELOGGER.SMPIA
+  VBA32                          Malware-Cryptor.MSIL.AgentTesla.Heur
+  VIPRE                          Generic.Dacic.11606.F9D84DFE
+  Varist                         W32/Stealer.HT.gen!Eldorado
+  alibabacloud                   Backdoor:MSIL/Bladabindi.AZHZ3DGW
+  huorong                        Trojan/MSIL.Agent.sk
