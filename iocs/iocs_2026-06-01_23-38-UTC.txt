@@ -1,0 +1,99 @@
+# IOC Export  2026-06-01_23-38-UTC
+# 5 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+e19eed96a246d7a5f33796446931ae643afeb153d7a243e3b9d11fbd1e6d4a48  # Trojaner | R=80.2 | Trojan.Generic-Script.Save.ba6 | sh
+c6630dbf8cfaa844277f4d3c5dd2c0e16c4ffe11bae1e17eb2727de96c08ca6c  # Loader | R=74.7 | Trojan | exe
+4903fbe3e8ee4bc49035c9fb6e8fd3d258f3daadf237d6b1f8dd3fe41cb4ced9  # Spyware | R=59.6 | MassLogger | msi
+4a98b2b72a5f6c9fa0d01b6ccf9a8ff7ccfc3a3f7117398888b0b7de40eddcb0  # Windows-Malware | R=55.6 | unbekannt | exe
+27f8be17cdc13a16c8462a8bbef82f265c53f6fed2c2a2cecac3397f2fbe8efd  # Windows-Malware | R=55.1 | high | exe
+
+[Tags]
+54e64e
+dropped-by-Amadey
+exe
+sh
+
+[VT Engine Detections]
+
+## 27f8be17cdc13a16c846...  (high) | Defender: ✗ nicht erkannt
+   Erkannt: 1/75 Engines (1.3%) — ⚠️ KAUM ERKANNT
+  Trapmine                       malicious.high.ml.score
+
+## e19eed96a246d7a5f337...  (Trojan.Generic-Script.Save.ba6) | Defender: ✗ nicht erkannt
+   Erkannt: 12/75 Engines (16.0%) — 🟡 SCHWACH ERKANNT
+  Avira                          HTML/ExpKit.Gen2
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.DownLoader.37
+  F-Secure                       Malware.HTML/ExpKit.Gen2
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.a
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  Rising                         Downloader.Mirai/BASH!1.CECE (CLASSIC)
+  Sangfor                        Trojan.Generic-Script.Save.ba608
+  Symantec                       CL.Downloader!gen277
+  Varist                         SH/Mirai.C.gen!Camelot
+  huorong                        TrojanDownloader/Linux.Mirai.af
+
+## c6630dbf8cfaa844277f...  (Trojan) | Defender: ✓ Dump:Generic.Trojan.TangoStealer.Marte.A.1C9DCF42
+   Erkannt: 18/75 Engines (24.0%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Dump:Generic.Trojan.TangoStealer.Marte.A.1C9DCF42
+  AVG                            Win64:OverlordRAT-A [Rat]
+  Arcabit                        Dump:Generic.Trojan.TangoStealer.Marte.A.1C9DCF42
+  Avast                          Win64:OverlordRAT-A [Rat]
+  BitDefender                    Dump:Generic.Trojan.TangoStealer.Marte.A.1C9DCF42
+  CTX                            exe.trojan.dump
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  ESET-NOD32                     WinGo/RemoteAdmin.Overlord.A potentially unsafe application
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Dump:Generic.Trojan.TangoStealer.Marte.A.1C9DCF42 (B)
+  GData                          Dump:Generic.Trojan.TangoStealer.Marte.A.1C9DCF42
+  Kaspersky                      HEUR:Trojan-Spy.Win32.KeyLogger.gen
+  McAfeeD                        ti!C6630DBF8CFA
+  MicroWorld-eScan               Dump:Generic.Trojan.TangoStealer.Marte.A.1C9DCF42
+  Microsoft                      Trojan:Win32/Sabsik.FL.A!ml
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       suspicious.low.ml.score
+  VIPRE                          Dump:Generic.Trojan.TangoStealer.Marte.A.1C9DCF42
+
+## 4903fbe3e8ee4bc49035...  (MassLogger) ⭐ WOCHEN-SAMPLE | Defender: ✓ Generic.Dacic.11606.F9D84DFE
+   Erkannt: 39/75 Engines (52.0%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Generic.Dacic.11606.F9D84DFE
+  AVG                            MSIL:MassLogger-G [Pws]
+  Antiy-AVL                      Trojan[PSW]/MSIL.Mintluks
+  Arcabit                        Generic.Dacic.11606.F9D84DFE
+  Avast                          MSIL:MassLogger-G [Pws]
+  Avira                          TR/ATRAPS.Gen
+  BitDefender                    Generic.Dacic.11606.F9D84DFE
+  CAT-QuickHeal                  Trojan.YakbeexMSIL.ZZ4
+  CTX                            msi.trojan.msil
+  Cynet                          Malicious (score: 99)
+  DrWeb                          BackDoor.RatNET.2
+  ESET-NOD32                     MSIL/Spy.SnakeStealer.A trojan
+  Emsisoft                       Generic.Dacic.11606.F9D84DFE (B)
+  F-Secure                       Trojan.TR/ATRAPS.Gen
+  Fortinet                       MSIL/SnakeStealer.AVQ!tr.spy
+  GData                          Generic.Dacic.11606.F9D84DFE
+  Google                         Detected
+  Gridinsoft                     Spy.U.Keylogger.cl
+  Ikarus                         Trojan-Spy.Echelon
+  K7AntiVirus                    Spyware ( 004bf6371 )
+  K7GW                           Spyware ( 004bf6371 )
+  Kaspersky                      UDS:DangerousObject.Multi.Generic
+  Lionic                         Trojan.Win32.Dacic.4!c
+  McAfeeD                        ti!4903FBE3E8EE
+  NANO-Antivirus                 Trojan.Win32.Stealer.leihme
+  Rising                         Spyware.Masslogger!1.13727 (CLASSIC)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious MSI
+  Skyhigh                        Trojan-JAJM!127AA24592A4
+  Sophos                         Troj/Krypt-AOR
+  Tencent                        Trojan.Msil.Agent.16002783
+  TrellixENS                     GenericRXWS-BX!127AA24592A4
+  TrendMicro                     TrojanSpy.MSIL.SNAKELOGGER.SMPIA
+  TrendMicro-HouseCall           TrojanSpy.MSIL.SNAKELOGGER.SMPIA
+  VBA32                          Malware-Cryptor.MSIL.AgentTesla.Heur
+  VIPRE                          Generic.Dacic.11606.F9D84DFE
+  Varist                         W32/Stealer.HT.gen!Eldorado
+  alibabacloud                   Backdoor:MSIL/Bladabindi.AZHZ3DGW
+  huorong                        Trojan/MSIL.Agent.sk
