@@ -1,0 +1,226 @@
+# IOC Export  2026-06-05_23-13-UTC
+# 9 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+4a6fa4771380ee3e39cd0b4949e1993acee31f4b83367907b22010841e330789  # Ransomware | R=97.0 | WannaCry | exe
+8ba88a141222949ba584059305164640eb7b4858bb70088200af58251605bbbf  # Trojaner | R=82.3 | unbekannt | exe
+9c52b234c2f87beac902c2c2bec0db2f3c03a7dffab99a8251dfba40fd2ec297  # Loader | R=79.0 | Win32 | exe
+75a0c9bfe6df8f6f1830d99fdc9edb7e6d1fef39fa7264758f591c32e17a3ef5  # Loader | R=74.5 | unbekannt | exe
+7d9d6366038421ae6cabec5c4ae45aff754c5df53b0f5052e71c981a32d1719e  # Trojaner | R=72.7 | Linux | elf
+a147cf371162df3270dfb0ede11e3ea1c2fdf0cfb27eaa731c9f241ccae64efb  # Trojaner | R=72.2 | Linux | elf
+4903fbe3e8ee4bc49035c9fb6e8fd3d258f3daadf237d6b1f8dd3fe41cb4ced9  # Spyware | R=58.9 | MassLogger | msi
+248299e11acb39df716bd289b087adf9cdf400892c40d2f728e50d0c6d636478  # Windows-Malware | R=37.8 | unbekannt | msi
+34136ff6b07b30293c589e25253dce91ade3323011fc55f36349bd468729d20a  # Windows-Malware | R=36.5 | Application | exe
+
+[Tags]
+282234
+AGEN
+PolarWind
+SilverFox
+Trojan/SilverFox.bm[lddel]
+ValleyRAT
+WannaCry
+d52f85
+dionaea
+dropped-by-Amadey
+elf
+enthec
+exe
+msi
+pe
+wraith
+
+[VT Engine Detections]
+
+## 34136ff6b07b30293c58...  (Application) | Defender: ✓ Gen:Variant.Application.Jalapeno.24
+   Erkannt: 57/75 Engines (76.0%) — ✅ GUT ERKANNT
+  ALYac                          Gen:Variant.Application.Jalapeno.24
+  APEX                           Malicious
+  AVG                            Win64:MalwareX-gen [Drp]
+  Acronis                        suspicious
+  AhnLab-V3                      Dropper/Win.Generic.R625602
+  Alibaba                        Trojan:MSIL/MalwareX.1d2764d3
+  Antiy-AVL                      HackTool/MSIL.Gamehack
+  Arcabit                        Trojan.Application.Jalapeno.24
+  Avast                          Win64:MalwareX-gen [Drp]
+  Avira                          DR/W64.MalwareX
+  BitDefender                    Gen:Variant.Application.Jalapeno.24
+  Bkav                           W32.Malware.FFAB2408
+  CAT-QuickHeal                  Trojan.YakbeexMSIL.ZZ4
+  CTX                            exe.trojan.msil
+  ClamAV                         Win.Tool.Jalapeno-10059203-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.Inject6.40638
+  ESET-NOD32                     MSIL/HackTool.GameHack.BY trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Application.Jalapeno.24 (B)
+  F-Secure                       Dropper.DR/W64.MalwareX
+  Fortinet                       MSIL/GenCBL.FJV!tr
+  GData                          Gen:Variant.Application.Jalapeno.24
+  Google                         Detected
+  Gridinsoft                     Trojan.Heur!.0231B4A3
+  K7AntiVirus                    Hacktool ( 700000211 )
+  K7GW                           Hacktool ( 700000211 )
+  Kaspersky                      HEUR:Trojan.Win32.Generic
+  Lionic                         Trojan.Win32.GameHack.4!c
+  Malwarebytes                   GenCBL.Ransom.FileCryptor.DDS
+  MaxSecure                      Trojan.Malware.250285594.susgen
+  McAfeeD                        ti!34136FF6B07B
+  MicroWorld-eScan               Gen:Variant.Application.Jalapeno.24
+  Microsoft                      Trojan:Win32/Leonem!rfn
+  Paloalto                       generic.ml
+  Panda                          Trj/CI.A
+  Rising                         Downloader.Agent!8.B23 (CLOUD)
+  SUPERAntiSpyware               Ransom.Cryptor/Variant
+  Sangfor                        Virus.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        BehavesLike.Win64.Flyagent.gc
+  Sophos                         Apex Legends GameHack (PUA)
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        HackTool.Win32.Gamehack.kd
+  TrellixENS                     GenericRXWT-LJ!BE55722DF358
+  TrendMicro                     TROJ_GEN.R002C0DE226
+  TrendMicro-HouseCall           TROJ_GEN.R002C0DE226
+  VBA32                          Trojan.Formbook
+  VIPRE                          Gen:Variant.Application.Jalapeno.24
+  Varist                         W64/Agent.FPU.gen!Eldorado
+  VirIT                          Trojan.Win64.MSIL_Heur.D
+  Zillya                         Tool.GameHack.Win32.25623
+  alibabacloud                   Trojan:MSIL/Packed.VMProtect.D
+  huorong                        TrojanDownloader/MSIL.Agent.ph
+
+## a147cf371162df3270df...  (Linux) | Defender: ✓ Trojan.Linux.Generic.355701
+   Erkannt: 38/76 Engines (50.0%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Trojan.Linux.Generic.355701
+  AVG                            ELF:Agent-CXA [Trj]
+  AhnLab-V3                      CoinMiner/Linux.Agent.30304472
+  Arcabit                        Trojan.Linux.Generic.D56D75
+  Avast                          ELF:Agent-CXA [Trj]
+  Avira                          EXP/ELF.Coinminer.A
+  BitDefender                    Trojan.Linux.Generic.355701
+  CTX                            elf.trojan.generic
+  ClamAV                         Unix.Trojan.Miner-9993889-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Siggen.8622
+  ESET-NOD32                     Linux/CoinMiner.ABF
+  Elastic                        Linux.Generic.Threat
+  Emsisoft                       Trojan.Linux.Generic.355701 (B)
+  F-Secure                       Exploit.EXP/ELF.Coinminer.A
+  FireEye                        Trojan.Linux.Generic.355701
+  Fortinet                       Adware/Miner
+  GData                          Trojan.Linux.Generic.355701
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Generic
+  Jiangmin                       Trojan.Linux.dsm
+  Kaspersky                      HEUR:Trojan.Linux.Miner.gen
+  Lionic                         Trojan.Linux.Miner.4!c
+  MicroWorld-eScan               Trojan.Linux.Generic.355701
+  Microsoft                      Trojan:Linux/Multiverze
+  Rising                         HackTool.NBMiner/Linux!1.E357 (CLASSIC)
+  Sangfor                        CoinMiner.Linux.Agent.V5uz
+  SentinelOne                    Static AI - Malicious ELF
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.NPE
+  Tencent                        Risktool.Linux.Miner.ck
+  TrendMicro                     TROJ_GEN.R002C0DLJ24
+  TrendMicro-HouseCall           TROJ_GEN.R002C0DLJ24
+  VIPRE                          Trojan.Linux.Generic.355701
+  Varist                         E64/ABRisk.MZPC-6
+  Zillya                         Trojan.252279.Linux.1
+  alibabacloud                   Miner:Linux/CoinMiner.JUO
+  huorong                        Trojan/Linux.CoinMiner.ah
+
+## 9c52b234c2f87beac902...  (Win32) | Defender: ✗ nicht erkannt
+   Erkannt: 7/75 Engines (9.3%) — ⚠️ KAUM ERKANNT
+  APEX                           Malicious
+  AhnLab-V3                      Trojan/Win.Malware-gen.C5892646
+  CrowdStrike                    win/malicious_confidence_60% (D)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win32/TrojanDropper.Agent.TES trojan
+  Microsoft                      Trojan:Win32/Sabsik.EN.A!ml
+  Skyhigh                        BehavesLike.Win32.Dropper.tt
+
+## 7d9d6366038421ae6cab...  (Linux) | Defender: ✓ Trojan.Linux.Generic.413115
+   Erkannt: 35/76 Engines (46.1%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Trojan.Linux.Generic.413115
+  AVG                            ELF:Agent-CXA [Trj]
+  AhnLab-V3                      CoinMiner/Linux.Agent.30304472
+  Arcabit                        Trojan.Linux.Generic.D64DBB
+  Avast                          ELF:Agent-CXA [Trj]
+  Avira                          EXP/ELF.Coinminer.A
+  BitDefender                    Trojan.Linux.Generic.413115
+  CTX                            elf.trojan.generic
+  ClamAV                         Unix.Trojan.Miner-9993889-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Siggen.8622
+  ESET-NOD32                     Linux/CoinMiner.ABF
+  Elastic                        Linux.Generic.Threat
+  Emsisoft                       Trojan.Linux.Generic.413115 (B)
+  F-Secure                       Exploit.EXP/ELF.Coinminer.A
+  Fortinet                       Adware/Miner
+  GData                          Trojan.Linux.Generic.413115
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Generic
+  Jiangmin                       Trojan.Linux.dsm
+  Kaspersky                      HEUR:Trojan.Linux.Miner.gen
+  Lionic                         Trojan.Linux.Miner.4!c
+  MicroWorld-eScan               Trojan.Linux.Generic.413115
+  Microsoft                      Trojan:Linux/Multiverze
+  Rising                         HackTool.NBMiner/Linux!1.E357 (CLASSIC)
+  SentinelOne                    Static AI - Malicious ELF
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.NPE
+  Tencent                        Risktool.Linux.Miner.ck
+  VBA32                          Trojan.Linux.Miner
+  VIPRE                          Trojan.Linux.Generic.413115
+  Varist                         E64/ABRisk.VBBG-6
+  Zillya                         Trojan.252279.Linux.1
+  alibabacloud                   Miner:Linux/CoinMiner.JUO
+  huorong                        Trojan/Linux.Agent.ca
+
+## 4903fbe3e8ee4bc49035...  (MassLogger) ⭐ WOCHEN-SAMPLE | Defender: ✓ Generic.Dacic.11606.F9D84DFE
+   Erkannt: 41/75 Engines (54.7%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Generic.Dacic.11606.F9D84DFE
+  AVG                            MSIL:MassLogger-G [Pws]
+  AhnLab-V3                      Dropper/Win.MSIMassLogger
+  Antiy-AVL                      Trojan[PSW]/MSIL.Mintluks
+  Arcabit                        Generic.Dacic.11606.F9D84DFE
+  Avast                          MSIL:MassLogger-G [Pws]
+  Avira                          TR/ATRAPS.Gen
+  BitDefender                    Generic.Dacic.11606.F9D84DFE
+  CAT-QuickHeal                  Trojan.YakbeexMSIL.ZZ4
+  CTX                            msi.trojan.msil
+  Cynet                          Malicious (score: 99)
+  DrWeb                          BackDoor.RatNET.2
+  ESET-NOD32                     MSIL/Spy.SnakeStealer.A trojan
+  Emsisoft                       Generic.Dacic.11606.F9D84DFE (B)
+  F-Secure                       Trojan.TR/ATRAPS.Gen
+  Fortinet                       MSIL/SnakeStealer.AVQ!tr.spy
+  GData                          Generic.Dacic.11606.F9D84DFE
+  Google                         Detected
+  Gridinsoft                     Spy.U.Keylogger.cl
+  K7AntiVirus                    Spyware ( 004bf6371 )
+  K7GW                           Spyware ( 004bf6371 )
+  Kaspersky                      UDS:DangerousObject.Multi.Generic
+  Lionic                         Trojan.Win32.Dacic.4!c
+  McAfeeD                        ti!4903FBE3E8EE
+  NANO-Antivirus                 Trojan.Win32.Stealer.leihme
+  Rising                         Spyware.Masslogger!1.13727 (CLASSIC)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious MSI
+  Skyhigh                        Trojan-JAJM!127AA24592A4
+  Sophos                         Troj/Krypt-AOR
+  Tencent                        Trojan.Msil.Agent.16002783
+  TrellixENS                     GenericRXWS-BX!127AA24592A4
+  TrendMicro                     TrojanSpy.MSIL.SNAKELOGGER.SMPIA
+  TrendMicro-HouseCall           TrojanSpy.MSIL.SNAKELOGGER.SMPIA
+  VBA32                          Malware-Cryptor.MSIL.AgentTesla.Heur
+  VIPRE                          Generic.Dacic.11606.F9D84DFE
+  Varist                         W32/Stealer.HT.gen!Eldorado
+  VirIT                          Trojan.MSI.Agent.JRE
+  Xcitium                        Malware@#3l5ungh4w15xg
+  alibabacloud                   Backdoor:MSIL/Bladabindi.AZHZ3DGW
+  huorong                        Trojan/MSIL.Agent.sk
