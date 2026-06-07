@@ -1,0 +1,169 @@
+# IOC Export  2026-06-07_21-17-UTC
+# 21 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+d6ab287c3f6dfca32c759e095457164f7792e310af1e4697e137669fa3e2991e  # Botnet/IoT | R=84.1 | Mirai | elf
+4187780e7a1fd9187348e2f8ce4331a4066de75dbcea3deecded8cc2f4c678bd  # Botnet/IoT | R=84.1 | Mirai | elf
+12a2a8a090904c5c434b766b05572d95877fd297b16bf7aea2ca55d16adf96b5  # Botnet/IoT | R=84.0 | Mirai | elf
+96269288ff14c9434139ede85935306da2e20a29d2ff4f575e76f1e28617df69  # Botnet/IoT | R=84.0 | Mirai | elf
+0f217db7d1b1f1f0c389cc26eed0716d729dead863ee6494df5c4c0c5962ed9f  # Botnet/IoT | R=83.1 | Gafgyt | elf
+4164f83e2641229b0032d23b8cd8ec10b77812c7e8350f1d101813798128452d  # Botnet/IoT | R=83.1 | Gafgyt | elf
+877858e9f2c1b79cbec7bfdf7144efe9be8aa148d4b21341f8c6548b0a819484  # Botnet/IoT | R=83.1 | Gafgyt | elf
+721153ef7124ea9af5014dd64eddfd44227536ce2f2d393e07dd8dfe7e0464eb  # Botnet/IoT | R=83.1 | Gafgyt | elf
+e450e0355bedbe26aa6a14fc19f12c52a1a0ab1e7d25c07046545c8380558d25  # Botnet/IoT | R=83.1 | Gafgyt | elf
+6c4833c25ce2d479932759249b2f5ee9aa3955132c17e70b5c2ebdd1d1d20907  # Botnet/IoT | R=83.1 | Gafgyt | elf
+1e3017a3448487fc0cd13271f3fc8636795251a37d4f7198e75ffced94432e7b  # Botnet/IoT | R=83.1 | Gafgyt | elf
+7258a8eec22b21345dc754e2b90b36e6faec37978ce6a8cd327767df23a5d27f  # RAT | R=79.7 | unbekannt | msi
+7a358512e77afc93c1c76fe5d99fd112947d845ec1f60e75acabe2db7d113ec7  # Trojaner | R=78.3 | fa | sh
+9259e263c46edcadaca2671b1d049dc2039bedad9a8b791996294cc363edbe28  # Loader | R=74.4 | unbekannt | exe
+4e2cd762f49fe488cb33f4b479ff069a95e28e34c5d281f7f13c9f69ae7205ef  # Loader | R=73.9 | unbekannt | exe
+5c12d9b33c2d28dc2323bfa7db99e264fe292dca9ad1ac83f99b2e3762e67cb1  # RAT | R=70.3 | Midie | exe
+12f8eda608964b0414e980597d288aef0da21e6f6ee2080f596431924583ba9c  # Trojaner | R=57.1 | Snojan | exe
+5720f3f13ac1216533d735c2c4ce9fcfc5588dc233dbf10e31e0f68aa4ba0a15  # Linux-Malware | R=42.6 | unbekannt | elf
+915057e08248c7e92ccd2f693f10386f3b422f8e6729b63e5db987172cc42296  # Andere / Unbekannt | R=31.8 | unbekannt | sh
+6b96b764b5051e1b4c319a8584ec401af75d33c0fa8d271c54e447e0a2e75a82  # Andere / Unbekannt | R=31.7 | unbekannt | sh
+9792830899edfefaf89863b842980c1814370f4809491e69186955e9d480cc24  # Andere / Unbekannt | R=31.4 | unbekannt | sh
+
+[Tags]
+282234
+C
+Gafgyt
+MIX6.file
+Mirai
+SilverFox
+ValleyRAT
+dropped-by-Amadey
+dropped-by-GCleaner
+elf
+exe
+msi
+sh
+
+[VT Engine Detections]
+
+## 7a358512e77afc93c1c7...  (fa) | Defender: ✗ nicht erkannt
+   Erkannt: 18/75 Engines (24.0%) — 🟡 SCHWACH ERKANNT
+  AVG                            BV:Agent-CEL [Trj]
+  Avast                          BV:Agent-CEL [Trj]
+  Avira                          TR/BAT.Agent.CEL
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.BackDoor.Siggen.759
+  ESET-NOD32                     Linux/Agent.AOF trojan
+  F-Secure                       Trojan.TR/BAT.Agent.CEL
+  Fortinet                       BASH/Agent.AOF!tr
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.bc
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  NANO-Antivirus                 Trojan.Script.Dropper.kpvdnu
+  Rising                         Downloader.Agent/BASH!9.6930C (XSE:WFNFX0JBVDp4A87yd8bU27ytsJR/n1vS)
+  Skyhigh                        Linux/Agent.fa
+  Tencent                        Trojan-DL.Linux.Agent.505004
+  TrellixENS                     Linux/Agent.fa
+  Varist                         Unix/Agent.VA
+  huorong                        Backdoor/Linux.Agent.as
+
+## 5c12d9b33c2d28dc2323...  (Midie) | Defender: ✓ Gen:Variant.Midie.180055
+   Erkannt: 44/75 Engines (58.7%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Midie.180055
+  AVG                            Win64:MalwareX-gen [Bd]
+  AhnLab-V3                      Trojan/Win.Generic.C5868507
+  Alibaba                        Trojan:Win64/Valley.f439ce0c
+  Antiy-AVL                      Trojan/Win32.FakeApp
+  Arcabit                        Trojan.Midie.D2BF57
+  Avast                          Win64:MalwareX-gen [Bd]
+  Avira                          BDS/W64.MalwareX
+  BitDefender                    Gen:Variant.Midie.180055
+  CAT-QuickHeal                  Trojan.Agent
+  CTX                            exe.trojan.valley
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          PowerShell.AVKill.15
+  ESET-NOD32                     Win64/Valley.I trojan
+  Emsisoft                       Gen:Variant.Midie.180055 (B)
+  F-Secure                       Backdoor.BDS/W64.MalwareX
+  Fortinet                       W64/Valley.I!tr
+  GData                          Gen:Variant.Midie.180055
+  Google                         Detected
+  K7AntiVirus                    Backdoor ( 006de62c1 )
+  K7GW                           Backdoor ( 006de62c1 )
+  Kaspersky                      UDS:Trojan.Win32.Agent.pefng
+  Lionic                         Trojan.Win32.Valley.4!c
+  Malwarebytes                   Malware.AI.4288725997
+  MaxSecure                      Trojan.Malware.324988187.susgen
+  McAfeeD                        ti!5C12D9B33C2D
+  Microsoft                      Trojan:Win32/Vigorf.A
+  Paloalto                       generic.ml
+  Panda                          Trj/CI.A
+  Rising                         Backdoor.Agent!8.C5D (LESS:bWQ1OpH8EWJxXT2R18DbCzQVYSE)
+  Sangfor                        Trojan.Win64.Valley.Vs1q
+  Skyhigh                        Artemis
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Backdoor.Win32.Phish.16003551
+  Trapmine                       malicious.moderate.ml.score
+  TrellixENS                     Artemis!E73A06EDBA43
+  TrendMicro                     Trojan.Win32.ZYX.USBLF126
+  TrendMicro-HouseCall           Trojan.Win32.ZYX.USBLF126
+  VBA32                          Trojan.Agent
+  VIPRE                          Gen:Variant.Midie.180055
+  Varist                         W64/Agent.MCQ.gen!Eldorado
+  alibabacloud                   Trojan:Win/Valley.I
+
+## 12f8eda608964b0414e9...  (Snojan) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan.Agent.CYZT
+   Erkannt: 56/75 Engines (74.7%) — ✅ GUT ERKANNT
+  ALYac                          Trojan.Agent.CYZT
+  APEX                           Malicious
+  AVG                            Win32:dUmPeX [Susp]
+  AhnLab-V3                      Downloader/Win.Generic.R665906
+  Alibaba                        Trojan:Win32/CoreWarrior.05f7b2c8
+  Antiy-AVL                      HackTool[Flooder]/Win32.CoreWarrior
+  Arcabit                        Trojan.Agent.CYZT
+  Avast                          Win32:dUmPeX [Susp]
+  Avira                          TR/Crypt.ULPM.Gen2
+  BitDefender                    Trojan.Agent.CYZT
+  Bkav                           W32.Malware.6669EB52
+  CTX                            exe.trojan.cyzt
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Tool.Snojan.1
+  ESET-NOD32                     Win32/Agent.AAEF trojan
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Trojan.Agent.CYZT (B)
+  F-Secure                       Trojan.TR/Crypt.ULPM.Gen2
+  Fortinet                       Riskware/Snojan
+  GData                          Trojan.Agent.CYZT
+  Google                         Detected
+  Jiangmin                       Downloader.Snojan.adp
+  K7AntiVirus                    Trojan ( 004bcce41 )
+  K7GW                           Trojan ( 004bcce41 )
+  Kaspersky                      VHO:Flooder.Win32.CoreWarrior.gen
+  Kingsoft                       Win32.Flooder.CoreWarrior.a
+  Lionic                         Hacktool.Win32.Snojan.3!c
+  Malwarebytes                   Trojan.Downloader
+  MaxSecure                      Trojan.Malware.325666027.susgen
+  McAfeeD                        Trojan:Win/Snojan.EAL
+  MicroWorld-eScan               Trojan.Agent.CYZT
+  Microsoft                      Trojan:Win32/CoreWarrior.DA!MTB
+  NANO-Antivirus                 Trojan.Win32.Snojan.jqzopm
+  Paloalto                       generic.ml
+  Panda                          Trj/Genetic.gen
+  Rising                         Downloader.Snojan!8.ECDD (C64:YzY0OuPiVK+jaoMm)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Troj/Bdoor-BHD
+  Symantec                       Hacktool.Flooder
+  Tencent                        Trojan.Win32.Agent.cqe
+  Trapmine                       suspicious.low.ml.score
+  TrellixENS                     Artemis!8D12CFEAFB64
+  VBA32                          Flooder.CoreWarrior
+  VIPRE                          Trojan.Agent.CYZT
+  Varist                         W32/Agent.FBOO-5422
+  VirIT                          Win32.Sality.BK
+  Webroot                        W32.Trojan.Agent.Gen
+  Xcitium                        TrojWare.Win32.Snojan.B@7h1cjp
+  Zillya                         Trojan.Agent.Win32.4286213
+  ZoneAlarm                      Troj/Bdoor-BHD
+  alibabacloud                   DDoS:Win/Nemucod
+  huorong                        HVM:TrojanDownloader/Small.gen!A
