@@ -1,0 +1,111 @@
+# IOC Export  2026-06-13_23-09-UTC
+# 15 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+1a600353f106145d9c906429616587fefc7b1eaf716ce7d984a9015dad4eaa5c  # Botnet/IoT | R=83.4 | Mirai | elf
+c3068da9847a485086ca9a4f18c82b2ebabcc61a096bc42c7fa79c25f8d45bc4  # Botnet/IoT | R=78.9 | Mirai | elf
+d468591066e9464979f7c02328a4420f58b130e14bec530c3860e247b90ab7fe  # Trojaner | R=78.8 | fa | sh
+4080b7ee2043d2574ee516944eea5ea0630942767cd88f516b2b8a6f0e90e68a  # Trojaner | R=75.2 | ConnectWise | msi
+7c8e7619c5398d3b857e6f72cf791e2c2e27762ddd8521eb8971c893cdb8b1fc  # Loader | R=75.0 | BV:Downloader-AEH [Drp] | sh
+59d52bc0555e77b9fa897d5a4d87d61a78e03ff3dc55cb966946997782bd7fee  # Andere / Unbekannt | R=50.2 | Linux/Dldr-XB | sh
+1ad7bfa2227c602a2ed76476b7ce3a6ecadfb36f0b24ad21bb4801b9c303def3  # Andere / Unbekannt | R=32.6 | unbekannt | unknown
+338f510083211e50fd5aed32adbc704650e00427b3ad3aa54b726387659f1ed1  # Andere / Unbekannt | R=31.6 | unbekannt | sh
+a1580b8ba42ae962ec4921bfabd9a2ed1b56f142b6791c9d9d2ba00c58a90ff0  # Andere / Unbekannt | R=31.4 | unbekannt | zip
+939200e1bf5e24446c0d8a10fb3842355decf95212fed789498c97035dfee7b8  # Andere / Unbekannt | R=31.4 | unbekannt | lnk
+27cb039b6066ceeab9b0d3a0489885df7cab27c5476a302f5f70fb41f6a4e02e  # Andere / Unbekannt | R=31.4 | unbekannt | sh
+a06abb63cdb4bfdbbaf637b9e0403e950d2da10ba806d2104e3ab7ab8d5575e9  # Andere / Unbekannt | R=31.3 | unbekannt | zip
+06ca930b3531eacf14bc0bdbe2ace2c62912d1bce6e7c31ecf727e8d9f9ed063  # Andere / Unbekannt | R=31.3 | BlackSuit | zip
+4504db7100a207705efb371d51fd8f8933f73e25bd7f7f64063372ea51b302d2  # Andere / Unbekannt | R=31.3 | BlackSuit | lnk
+443ab10fb712eaef54eda4d773ac4eafa12f68aab411899075592b1e8676ded9  # Andere / Unbekannt | R=31.2 | unbekannt | zip
+
+[Tags]
+BlackSuit
+Mirai
+elf
+lnk
+sh
+zip
+
+[VT Engine Detections]
+
+## 59d52bc0555e77b9fa89...  (Linux/Dldr-XB) | Defender: ✗ nicht erkannt
+   Erkannt: 3/75 Engines (4.0%) — ⚠️ KAUM ERKANNT
+  Google                         Detected
+  Sophos                         Linux/Dldr-XB
+  ZoneAlarm                      Linux/Dldr-XB
+
+## 7c8e7619c5398d3b857e...  (BV:Downloader-AEH [Drp]) | Defender: ✗ nicht erkannt
+   Erkannt: 11/75 Engines (14.7%) — 🟡 SCHWACH ERKANNT
+  AVG                            BV:Downloader-AEH [Drp]
+  Avast                          BV:Downloader-AEH [Drp]
+  Avira                          DR/BAT.Downloader.AEH
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Linux/TrojanDownloader.SH.CZF trojan
+  F-Secure                       Dropper.DR/BAT.Downloader.AEH
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Coinminer
+  Microsoft                      TrojanDownloader:SH/SAgent.A!AMTB
+  Rising                         Downloader.Agent/BASH!9.4C9F3 (XSE:WFNFX0JBVDr+Ztq6WkJFYuuR4x6jitGJ)
+  huorong                        TrojanDownloader/Linux.Agent.dp
+
+## d468591066e9464979f7...  (fa) | Defender: ✗ nicht erkannt
+   Erkannt: 18/75 Engines (24.0%) — 🟡 SCHWACH ERKANNT
+  AVG                            BV:Agent-CEL [Trj]
+  Avast                          BV:Agent-CEL [Trj]
+  Avira                          TR/BAT.Agent.CEL
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.BackDoor.Siggen.759
+  ESET-NOD32                     Linux/Agent.AOF trojan
+  F-Secure                       Trojan.TR/BAT.Agent.CEL
+  Fortinet                       BASH/Agent.AOF!tr
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.bc
+  Microsoft                      Trojan:Script/Phonzy.A!ml
+  NANO-Antivirus                 Trojan.Script.Dropper.kpvdnu
+  Rising                         Downloader.Agent/BASH!9.67827 (XSE:WFNFX0JBVDp8A+jwf8L00byt8ZB/P1vS)
+  Skyhigh                        Linux/Agent.fa
+  Tencent                        Trojan-DL.Linux.Agent.505004
+  TrellixENS                     Linux/Agent.fa
+  Varist                         Unix/Agent.VA
+  huorong                        Backdoor/Linux.Agent.as
+
+## c3068da9847a485086ca...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 26/75 Engines (34.7%) — 🟡 SCHWACH ERKANNT
+  AVG                            ELF:Mirai-CZI [Trj]
+  AhnLab-V3                      Linux/Mirai15.Exp
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  Avast                          ELF:Mirai-CZI [Trj]
+  Avira                          EXP/ELF.Agent.J.8
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9774
+  ESET-NOD32                     Linux/Mirai.CJY trojan
+  F-Secure                       Exploit.EXP/ELF.Agent.J.8
+  Google                         Detected
+  Ikarus                         Trojan.Linux.MiraiTR
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.b
+  Kingsoft                       Linux.Backdoor.Mirai.b
+  Lionic                         Trojan.ELF.Mirai.4!c
+  McAfeeD                        ti!C3068DA9847A
+  Microsoft                      Trojan:Linux/Mirai!AMTB
+  Rising                         Backdoor.Mirai/Linux!8.13285 (CLOUD)
+  Skyhigh                        LINUX/Mirai-FQS!7CA11ABC72E5
+  Sophos                         Mal/Generic-S
+  Tencent                        Backdoor.Linux.Mirai.wap
+  TrellixENS                     LINUX/Mirai-FQS!7CA11ABC72E5
+  TrendMicro                     Possible_MIRAI.SMLBO21
+  TrendMicro-HouseCall           Possible_MIRAI.SMLBO21
+  Varist                         E32/Mirai.BW.gen!Eldorado
+  alibabacloud                   DDoS:Linux/Mirai.CGT
+  huorong                        Backdoor/Linux.Mirai.kk
+
+## 4080b7ee2043d2574ee5...  (ConnectWise) ⭐ WOCHEN-SAMPLE | Defender: ✗ nicht erkannt
+   Erkannt: 9/75 Engines (12.0%) — 🟡 SCHWACH ERKANNT
+  DrWeb                          Program.RemoteAdmin.975
+  Google                         Detected
+  Kaspersky                      not-a-virus:HEUR:RemoteAdmin.Win32.ConnectWise.gen
+  Lionic                         Trojan.UKP.ConnectWise.4!c
+  Rising                         Hacktool.ConnectWiseControl!8.17790 (CLOUD)
+  Symantec                       PUA.Gen.2
+  VBA32                          Riskware.MSIL.ScreenConnect.Heur
+  Varist                         W32/ConnectWise.O.gen!Eldorado
+  huorong                        HackTool/ConnectWiseControl.j
