@@ -1,0 +1,153 @@
+# IOC Export  2026-06-13_19-41-UTC
+# 6 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+28844652fb3520ac318ab50de154c5e75b1561036c59e5a52c30315ceae6e6a9  # RAT | R=82.8 | Agent | msi
+7747af7cc821341d62e88d21c71cf518bc2e9dd890328c89e5d16357eace1a14  # Loader | R=76.8 | FileRepMalware [Trj] | exe
+4080b7ee2043d2574ee516944eea5ea0630942767cd88f516b2b8a6f0e90e68a  # Trojaner | R=76.4 | ConnectWise | msi
+d6e6cb2c61d3f22b05b49a864283c277f5c852565ec07e70c5f408053d1200ee  # Trojaner | R=69.7 | PureHVNC | exe
+983511f8bd00898038ff56d4eb41aac90187e8802fc73bc02c16c2423302813d  # Trojaner | R=69.0 | Mardom | exe
+1d9bb14a95d46244b9bd6b9031239262169eb1e44191dc485194ef7ee69f1d7f  # Andere / Unbekannt | R=31.4 | unbekannt | unknown
+
+[Tags]
+54e64e
+PureHVNC
+SilverFox
+ValleyRAT
+dropped-by-Amadey
+exe
+msi
+signed
+wraith
+
+[VT Engine Detections]
+
+## 7747af7cc821341d62e8...  (FileRepMalware [Trj]) | Defender: ✗ nicht erkannt
+   Erkannt: 13/75 Engines (17.3%) — 🟡 SCHWACH ERKANNT
+  AVG                            FileRepMalware [Trj]
+  Avast                          FileRepMalware [Trj]
+  Bkav                           W32.Malware.8F5C26F0
+  CrowdStrike                    win/malicious_confidence_60% (W)
+  DeepInstinct                   MALICIOUS
+  Elastic                        malicious (high confidence)
+  Google                         Detected
+  Kaspersky                      UDS:Backdoor.Win64.Gsb.gen
+  Kingsoft                       Win64.Backdoor.Gsb.gen
+  MaxSecure                      Trojan.Malware.300983.susgen
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Symantec                       ML.Attribute.HighConfidence
+  huorong                        Trojan/Loader.qa
+
+## 983511f8bd00898038ff...  (Mardom) | Defender: ✓ Gen:Trojan.Mardom.MN.9
+   Erkannt: 46/75 Engines (61.3%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Trojan.Mardom.MN.9
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Cryp]
+  Alibaba                        Trojan:MSIL/Kryptik.21418fcb
+  Antiy-AVL                      Trojan[Dropper]/MSIL.Dapato
+  Arcabit                        Trojan.Mardom.MN.9
+  Avast                          Win32:MalwareX-gen [Cryp]
+  Avira                          TR/W32.MalwareX
+  BitDefender                    Gen:Trojan.Mardom.MN.9
+  Bkav                           W32.Malware.D0EA8F75
+  CTX                            exe.trojan.mardom
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     MSIL/Kryptik.APRJ trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Trojan.Mardom.MN.9 (B)
+  F-Secure                       Trojan.TR/W32.MalwareX
+  GData                          Gen:Trojan.Mardom.MN.9
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Kryptik.sa
+  Kaspersky                      HEUR:Trojan-Dropper.MSIL.Dapato.gen
+  Kingsoft                       malware.kb.c.1000
+  Malwarebytes                   Trojan.Crypt
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        Real Protect-LS!BF83BD952814
+  MicroWorld-eScan               Gen:Trojan.Mardom.MN.9
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Malware.Obfus/MSIL@AI.91 (RDM.MSIL2:1yFQHfbinBO9GwscysEvrg)
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Msil.Trojan-Dropper.Dapato.Ikjl
+  Trapmine                       malicious.moderate.ml.score
+  TrellixENS                     Artemis!BF83BD952814
+  TrendMicro                     Trojan.MSIL.MARDOM.TL0101FD26ZZ
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04CA3
+  VIPRE                          Gen:Trojan.Mardom.MN.9
+  Varist                         W32/MSIL_Kryptik.MYG.gen!Eldorado
+  ViRobot                        Trojan.Win.Z.Mardom.785408.B
+  VirIT                          Trojan.Win32.PureHVNC.DQB
+  alibabacloud                   Trojan[dropper]:MSIL/Wacatac.B9nj
+  huorong                        Trojan/MSIL.Loader.bc
+  tehtris                        Generic.Malware
+
+## 28844652fb3520ac318a...  (Agent) | Defender: ✗ nicht erkannt
+   Erkannt: 6/75 Engines (8.0%) — ⚠️ KAUM ERKANNT
+  ESET-NOD32                     Win32/ShellCode.Agent.AC trojan
+  Fortinet                       W32/Agent.AC!tr
+  Google                         Detected
+  Ikarus                         Trojan-Spy.Win64.Agent
+  Kaspersky                      Trojan.Win32.Shella.kz
+  Tencent                        Win32.Trojan.Shella.Ktgl
+
+## d6e6cb2c61d3f22b05b4...  (PureHVNC) | Defender: ✓ Trojan:Win32/Wacatac.B!ml
+   Erkannt: 41/75 Engines (54.7%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Trojan.Mardom.IN.10
+  APEX                           Malicious
+  AhnLab-V3                      Trojan/Win.Benin.C5894655
+  Alibaba                        Trojan:MSIL/Kryptik.13315cf3
+  Antiy-AVL                      Trojan[Dropper]/MSIL.Dapato
+  Arcabit                        Trojan.Mardom.IN.10
+  Avira                          TR/W32.MalwareX
+  Bkav                           W32.Malware.A91B252B
+  CTX                            exe.trojan.msil
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     MSIL/Kryptik.APRJ trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Trojan.Mardom.IN.10 (B)
+  F-Secure                       Trojan.TR/W32.MalwareX
+  GData                          Gen:Trojan.Mardom.IN.10
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Kryptik.sa
+  K7AntiVirus                    Trojan ( 005cf02a1 )
+  K7GW                           Trojan ( 005cf02a1 )
+  Kingsoft                       malware.kb.c.1000
+  Malwarebytes                   Trojan.Crypt
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        Real Protect-LS!3EB10FA565B6
+  MicroWorld-eScan               Gen:Trojan.Mardom.IN.10
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Malware.Obfus/MSIL@AI.87 (RDM.MSIL2:GzLbxBVKOZi42UGX51iijA)
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Mal/Generic-S
+  Tencent                        Msil.Trojan-Dropper.Dapato.Wimw
+  Trapmine                       malicious.moderate.ml.score
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04CA3
+  VIPRE                          Gen:Trojan.Mardom.IN.10
+  Varist                         W32/MSIL_Kryptik.MYG.gen!Eldorado
+  ViRobot                        Trojan.Win.Z.Mardom.783872.A
+  alibabacloud                   Trojan[dropper]:MSIL/Wacatac.B9nj
+  huorong                        Trojan/MSIL.Loader.bc
+  tehtris                        Generic.Malware
+
+## 4080b7ee2043d2574ee5...  (ConnectWise) ⭐ WOCHEN-SAMPLE | Defender: ✗ nicht erkannt
+   Erkannt: 9/75 Engines (12.0%) — 🟡 SCHWACH ERKANNT
+  DrWeb                          Program.RemoteAdmin.975
+  Google                         Detected
+  Kaspersky                      not-a-virus:HEUR:RemoteAdmin.Win32.ConnectWise.gen
+  Lionic                         Trojan.UKP.ConnectWise.4!c
+  Rising                         Hacktool.ConnectWiseControl!8.17790 (CLOUD)
+  Symantec                       PUA.Gen.2
+  VBA32                          Riskware.MSIL.ScreenConnect.Heur
+  Varist                         W32/ConnectWise.O.gen!Eldorado
+  huorong                        HackTool/ConnectWiseControl.j
