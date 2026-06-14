@@ -1,0 +1,113 @@
+# IOC Export  2026-06-14_17-23-UTC
+# 19 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+9eb422f5183950acabf12adf71ab75ce47fec7e385fa013f648ed154b0055e65  # Botnet/IoT | R=84.3 | Mirai | elf
+3dc1a7ac46a1616fe180f42e26d25ea9638f90c73073542b49a8575e2f110174  # Loader | R=82.4 | GhostPulse | exe
+60356c8562a91c0c563ce61003f2b28a04f9eaf2df262618e1b56d2a3bfb60bb  # Botnet/IoT | R=82.3 | Mirai | elf
+2ce68583002f99faa0f1d15ca0d4cba8d3599ced2b29deaa68a9be9ac917a731  # Botnet/IoT | R=82.2 | Mirai | elf
+be08df4a4baac1cb9dfff19f6ccb089d209e02bb82008788922b81bf6301047a  # Botnet/IoT | R=82.1 | Mirai | elf
+b48c97d1dadc4cb7e0c3303d556a1217cccdd8839fe739d71a7c5f977b4810bd  # Trojaner | R=82.0 | ValleyRAT | exe
+c58b958b7547282d68824fe3331a815497899351c50c2a6350a6ab7b888ecdc5  # Loader | R=73.4 | unbekannt | unknown
+4e56d256bcc125a7e5dc7f46c28c36347ea0d67cfefdab63b2e7dd6433ceb1ff  # Loader | R=72.9 | unbekannt | exe
+4080b7ee2043d2574ee516944eea5ea0630942767cd88f516b2b8a6f0e90e68a  # Trojaner | R=72.8 | ConnectWise | msi
+7c47fb79480c25d7108ab62ac02412b9492ea507bd4fe4dba519fd4372cde619  # Loader | R=69.5 | Riskware ( 005ce2341 ) | exe
+26af0b30bc86ab158950a7c0dd487f0fb58e03bb02a32dffab30f61b6c7edee9  # Windows-Malware | R=53.5 | unbekannt | msi
+09b44bc2a45365c0ac90481a3ab8ee1b37a74668b3364c68461cd89225d58b24  # Linux-Malware | R=43.2 | Prometei | elf
+9fc1da0e009646d40a0d9a972d05df22c6dc9ac7be37934ea06e24d79f552564  # Linux-Malware | R=43.0 | unbekannt | elf
+3c067c14bdb1f555d0d4d9dbc6f164a1d16f8fd994c6eb2c7fcf5a4880121035  # Windows-Malware | R=38.2 | unbekannt | exe
+85496daf5e3e46f05bbabf72308f70a136893976844443c67ddedef1f686ed21  # Windows-Malware | R=38.2 | unbekannt | exe
+18af770d03b741bee7d43e2630e9b90390063fece166bca61d919e96ded302ac  # Windows-Malware | R=37.4 | unbekannt | exe
+17c95c32e9cf0bd17921e90d1bb0629c7f249e00c2170daa869b00542b75debb  # Windows-Malware | R=36.9 | unbekannt | exe
+123ea06da51088cde0a40415b6eccb4b3bb7d6d3c6b791ca849940cdc70b992c  # Andere / Unbekannt | R=31.6 | unbekannt | php
+c6c3d102d1a044545753e49d95340a46d87de8399033cc5865e08499442771f8  # Andere / Unbekannt | R=30.7 | unbekannt | sh
+
+[Tags]
+282234
+9d2ca3
+D
+EU0.file
+Gafgyt
+GhostPulse
+Mirai
+Prometei
+SilverFox
+Trojan/SilverFox.sa
+ValleyRAT
+dropped-by-Amadey
+dropped-by-GCleaner
+elf
+exe
+msi
+php
+s
+sh
+signed
+soft
+wraith
+
+[VT Engine Detections]
+
+## b48c97d1dadc4cb7e0c3...  (ValleyRAT) | Defender: ✗ nicht erkannt
+   Erkannt: 15/75 Engines (20.0%) — 🟡 SCHWACH ERKANNT
+  Bkav                           W32.Malware.9AEE1532
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win64/Valley.I trojan
+  Elastic                        malicious (high confidence)
+  Kaspersky                      UDS:Backdoor.Win32.Xkcp
+  Lionic                         Trojan.Win32.ValleyRAT.4!c
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  SentinelOne                    Static AI - Suspicious PE
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Win32.Trojan.Generic.Cplw
+  Trapmine                       suspicious.low.ml.score
+  huorong                        Backdoor/Lotok.rb
+
+## 7c47fb79480c25d7108a...  (Riskware ( 005ce2341 )) | Defender: ✗ nicht erkannt
+   Erkannt: 31/75 Engines (41.3%) — 🟠 MÄSSIG ERKANNT
+  AVG                            Win32:Evo-gen [Trj]
+  AhnLab-V3                      Malware/Win.7zip.C5742914
+  Alibaba                        Trojan:Win32/GCleaner.6e9c889f
+  Avast                          Win32:Evo-gen [Trj]
+  Avira                          TR/W32.Evo
+  ClamAV                         Win.Malware.7zip-10013374-0
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win32/Packed.7Zip.AI trojan
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W32.Evo
+  Ikarus                         Trojan.Win32.7zip
+  K7AntiVirus                    Riskware ( 005ce2341 )
+  K7GW                           Riskware ( 005ce2341 )
+  Kaspersky                      UDS:Trojan.Win32.SFX
+  Kingsoft                       Win32.Troj.Packed.AI
+  Malwarebytes                   PUP.Optional.YCleanner
+  McAfeeD                        Trojan:Win/Dropper.SK
+  Microsoft                      Trojan:Win32/GCleaner.SPRE!MTB
+  NANO-Antivirus                 Trojan.Win32.SFX.ldqnfq
+  Paloalto                       generic.ml
+  Rising                         Dropper.Agent/SFX!1.F3AF (CLASSIC)
+  Sangfor                        Trojan.Win32.Evo.V4xv
+  Sophos                         Mal/Generic-S
+  Tencent                        Win32.Trojan.FalseSign.Ztjl
+  Trapmine                       malicious.moderate.ml.score
+  TrellixENS                     Artemis!F9D24800A81E
+  VirIT                          Trojan.Win32.GenusC.IEA
+  Webroot                        W32.Adware.Gen
+  Zillya                         Trojan.7Zip.Win32.188
+
+## 4080b7ee2043d2574ee5...  (ConnectWise) ⭐ WOCHEN-SAMPLE | Defender: ✗ nicht erkannt
+   Erkannt: 9/75 Engines (12.0%) — 🟡 SCHWACH ERKANNT
+  DrWeb                          Program.RemoteAdmin.975
+  Google                         Detected
+  Kaspersky                      not-a-virus:HEUR:RemoteAdmin.Win32.ConnectWise.gen
+  Lionic                         Trojan.UKP.ConnectWise.4!c
+  Rising                         Hacktool.ConnectWiseControl!8.17790 (CLOUD)
+  Symantec                       PUA.Gen.2
+  VBA32                          Riskware.MSIL.ScreenConnect.Heur
+  Varist                         W32/ConnectWise.O.gen!Eldorado
+  huorong                        HackTool/ConnectWiseControl.j
