@@ -1,0 +1,134 @@
+# IOC Export  2026-06-14_14-23-UTC
+# 19 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+1ee687dc9456dbc3f0a12cefa8bab65b086c66a717998a7deb76ba0386a5c6a8  # RAT | R=87.9 | RemcosRAT | exe
+aeca9d1d08c8e5ef313b7385cf59da74efb80a791b43e67bb8ce83ee9cb616b5  # Botnet/IoT | R=84.5 | Mirai | elf
+a013ebdacb8ec16fa1b93adebb2fdcc155aa10dc41408a87b886753e54c6311d  # RAT | R=82.6 | Win32 | exe
+ca6c95fc4f633ab46b64d86c2cd0b5decdd23f926065a952a192ca204d153801  # Infostealer | R=81.2 | unbekannt | exe
+5205c3eec591a1a025bd4d9d2d2d98c04b2723f7785a2d0e5382572ddeee6b4e  # Infostealer | R=80.8 | RemusStealer | exe
+d4b8953c0df572b97552069f96ed89e7469e5593890178bd26522d5a0e0114cf  # Infostealer | R=77.8 | Vidar | exe
+ba30209043658eba33e7665b5b0d4ffb4f51139c45350a87318fbb35484a15c6  # Loader | R=74.8 | unbekannt | exe
+4080b7ee2043d2574ee516944eea5ea0630942767cd88f516b2b8a6f0e90e68a  # Trojaner | R=73.0 | ConnectWise | msi
+24737ced97af85202c4b8b7b956553ff9b64790a98a7ed5a5b727e8f2001fc9c  # Maldoc | R=54.2 | unbekannt | doc
+90b7b2c6f3d05234dc55678243039d7e51f0d54190239e5234a0005533337dc8  # Linux-Malware | R=42.5 | unbekannt | elf
+e1ff041b04211031f2b0b16377358af50c9a8302890a6fd48c8e5c2e4cba326b  # Windows-Malware | R=39.1 | unbekannt | exe
+bd810993aff7c463859553e92d6bb7fe47cc9662e329a47717b38c490e6ddfa9  # Skript/Dropper | R=38.8 | unbekannt | js
+3bda3b60a10c9016580595c7b4226ede7788df9e6dbafee70d74e0fa73076127  # Windows-Malware | R=38.2 | unbekannt | exe
+27a7feb88976ea733690101d66cc9ded0553054313e2a0abec74175da9cc57e3  # Windows-Malware | R=37.5 | unbekannt | exe
+be4bd17e7996dc7533b6741ea83b9dc8b51d26a0434607c5edde403ecb9d2dd3  # Skript/Dropper | R=37.3 | unbekannt | ps1
+5d47873913d2eb0270ce87955e762b42fb22beec3c84cd2d49e568e58aec8515  # Windows-Malware | R=37.3 | unbekannt | exe
+cc7ed025b6f5b12238f73ecc821c20d467f801cd2da078a9f9f94c3e516e2784  # Windows-Malware | R=37.3 | unbekannt | exe
+d3ec61ac1816d37c88156710c214c95dc77897a92a7ced353c9c6fef9ac1e0ee  # Andere / Unbekannt | R=31.1 | unbekannt | unknown
+46acb5e702dee721a3df5dc011b2a5f998e8df05b1f8ecc5169aba9f6285c1be  # Andere / Unbekannt | R=30.9 | unbekannt | sh
+
+[Tags]
+C
+Electron
+MIX4.file
+Malware
+Mirai
+NovaBlight
+NovaShadow
+Potentially
+RAT
+RemcosRAT
+RemusStealer
+SilverFox
+Stealer
+ValleyRAT
+Vidar
+dat
+doc
+dropped-by-GCleaner
+elf
+exe
+js
+ps1
+sh
+
+[VT Engine Detections]
+
+## a013ebdacb8ec16fa1b9...  (Win32) | Defender: ✗ nicht erkannt
+   Erkannt: 8/75 Engines (10.7%) — 🟡 SCHWACH ERKANNT
+  GData                          Win32.Trojan-Downloader.Generic.FLLQS5
+  Kaspersky                      HEUR:Trojan.Win64.Generic
+  Kingsoft                       Win32.Troj.Unknown.a
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Trojan.Generic!8.C3 (CLOUD)
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  Tencent                        Win32.Backdoor.Shellcodeloader.Cflw
+  huorong                        Trojan/Generic!B36462C2DD83879D
+
+## 5205c3eec591a1a025bd...  (RemusStealer) | Defender: ✗ nicht erkannt
+   Erkannt: 14/75 Engines (18.7%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  CrowdStrike                    win/malicious_confidence_90% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.Inject6.61215
+  Elastic                        malicious (high confidence)
+  Kaspersky                      Trojan.Win32.Autoit.addwz
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Dropper.Agent!8.2F (CLOUD)
+  Sangfor                        Trojan.Win32.Save.a
+  Sophos                         Mal/Generic-S
+  Trapmine                       malicious.high.ml.score
+  huorong                        TrojanDropper/Agent.bh!crit
+
+## d4b8953c0df572b97552...  (Vidar) | Defender: ✓ Dump:Generic.Trojan.TangoStealer.Marte.A.8FB5CD07
+   Erkannt: 41/75 Engines (54.7%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Dump:Generic.Trojan.TangoStealer.Marte.A.8FB5CD07
+  APEX                           Malicious
+  AVG                            Win64:DmpBrowserSec-C [Hack]
+  AhnLab-V3                      Trojan/Win.Generic.C5896460
+  Alibaba                        TrojanPSW:MSIL/ClipBanker.7d244770
+  Arcabit                        Dump:Generic.Trojan.TangoStealer.Marte.A.8FB5CD07
+  Avast                          Win64:DmpBrowserSec-C [Hack]
+  Avira                          TR/W64.DmpBrowserSe.C
+  BitDefender                    Dump:Generic.Trojan.TangoStealer.Marte.A.8FB5CD07
+  Bkav                           W32.Malware.89F77E02
+  CAT-QuickHeal                  Trojan.YakbeexMSIL.ZZ4
+  CTX                            exe.trojan.dump
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.PWS.StealerNET.75
+  ESET-NOD32                     MSIL/Spy.Agent.DRY trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Dump:Generic.Trojan.TangoStealer.Marte.A.8FB5CD07 (B)
+  F-Secure                       Trojan.TR/W64.DmpBrowserSe.C
+  GData                          Dump:Generic.Trojan.TangoStealer.Marte.A.8FB5CD07
+  Google                         Detected
+  Ikarus                         Trojan-PSW.Agent
+  Kaspersky                      HEUR:Trojan-PSW.MSIL.Stealer.gen
+  Malwarebytes                   AsyncRAT.Backdoor.Rat.DDS
+  McAfeeD                        Real Protect-LS!C74B0F2ED253
+  MicroWorld-eScan               Dump:Generic.Trojan.TangoStealer.Marte.A.8FB5CD07
+  Microsoft                      Trojan:MSIL/ClipBanker.GC!MTB
+  Paloalto                       generic.ml
+  Rising                         Trojan.Midie!8.12D29 (TFE:5:rydAmJq26VD)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Troj/Steal-FIT
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Msil.Trojan.LummaStealer.Uimw
+  TrellixENS                     Artemis!C74B0F2ED253
+  VBA32                          Trojan.MSIL.InfoStealer.gen.D
+  VIPRE                          Dump:Generic.Trojan.TangoStealer.Marte.A.8FB5CD07
+  VirIT                          Trojan.Win32.MSIL_Heur.B
+  ZoneAlarm                      Troj/Steal-FIT
+  huorong                        TrojanSpy/MSIL.Agent.cb
+
+## 4080b7ee2043d2574ee5...  (ConnectWise) ⭐ WOCHEN-SAMPLE | Defender: ✗ nicht erkannt
+   Erkannt: 9/75 Engines (12.0%) — 🟡 SCHWACH ERKANNT
+  DrWeb                          Program.RemoteAdmin.975
+  Google                         Detected
+  Kaspersky                      not-a-virus:HEUR:RemoteAdmin.Win32.ConnectWise.gen
+  Lionic                         Trojan.UKP.ConnectWise.4!c
+  Rising                         Hacktool.ConnectWiseControl!8.17790 (CLOUD)
+  Symantec                       PUA.Gen.2
+  VBA32                          Riskware.MSIL.ScreenConnect.Heur
+  Varist                         W32/ConnectWise.O.gen!Eldorado
+  huorong                        HackTool/ConnectWiseControl.j
