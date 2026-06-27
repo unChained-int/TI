@@ -1,0 +1,137 @@
+# IOC Export  2026-06-27_15-18-UTC
+# 10 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+bac12c7b2bc08d4d552e4692bc1566d7d54efc67c3a1131628c491c23626d773  # Infostealer | R=88.0 | Vidar | exe
+7c099715b0954f829c2348798b38a4ac1f254d964fcabe14e844996f0fcc276d  # Backdoor | R=83.8 | unbekannt | unknown
+f215d4258c590acee350dce11b99d6eaab3f29db38902746409db62d00c95f8f  # Botnet/IoT | R=83.3 | Mirai | elf
+0eed7c83474a194e97e4ef254b96fd70b7bb2f6c6dd2594b88c7e7db9b3182ba  # Trojaner | R=78.4 | Linux | elf
+1a365ca54dd27d2d245aeee9f7d764270a8f3504e330ff95d1a1184e72abe68c  # Loader | R=76.1 | Win64:Evo-gen [Trj] | exe
+e80b2272b86a5dfcef82f5c74f69a5cb6184dc0ad48a1d7cce90acb1941d46b7  # Loader | R=75.5 | BV:Downloader-AEH [Drp] | sh
+a97e68c49ad0cc0e81e776d4a46151a3be70d390c8bf9bc95647da0daf7c2cda  # Loader | R=74.3 | unbekannt | exe
+8cd1408dbe57b890cb7aac49c60567e659156f376075ef617d5d7afb588daa09  # Windows-Malware | R=45.3 | DarkMe | exe
+8ff01c27233489580d51a4646312c2e10160a502a5075c6fa4326d8992012612  # Andere / Unbekannt | R=31.8 | unbekannt | jar
+8c8497883a9457977616a475d8d34580624ac0bfc0aceb578a9dfeab7ed936e5  # Andere / Unbekannt | R=31.7 | unbekannt | sh
+
+[Tags]
+9d2ca3
+A
+C
+DefaceKeeper
+IRAHook
+IRAPrivate
+MIX1.file
+MIX4.file
+Mirai
+Vidar
+dropped-by-Amadey
+dropped-by-GCleaner
+elf
+exe
+jar
+payload
+sh
+signed
+webshell
+wraith
+
+[VT Engine Detections]
+
+## e80b2272b86a5dfcef82...  (BV:Downloader-AEH [Drp]) | Defender: ✗ nicht erkannt
+   Erkannt: 10/75 Engines (13.3%) — 🟡 SCHWACH ERKANNT
+  AVG                            BV:Downloader-AEH [Drp]
+  Avast                          BV:Downloader-AEH [Drp]
+  Avira                          DR/BAT.Downloader.AEH
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.DownLoader.2736
+  ESET-NOD32                     Linux/TrojanDownloader.SH.FWH trojan
+  F-Secure                       Dropper.DR/BAT.Downloader.AEH
+  Google                         Detected
+  Varist                         Unix/Agent.VC
+  huorong                        Trojan/BAT.Obfuscated.aar!crit
+
+## 1a365ca54dd27d2d245a...  (Win64:Evo-gen [Trj]) | Defender: ✗ nicht erkannt
+   Erkannt: 16/75 Engines (21.3%) — 🟡 SCHWACH ERKANNT
+  AVG                            Win64:Evo-gen [Trj]
+  AhnLab-V3                      Trojan/Win.Evo-gen.R781968
+  Avast                          Win64:Evo-gen [Trj]
+  Avira                          TR/W64.Evo
+  Bkav                           W32.Malware.C04F275C
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     WinGo/Kryptik.UK trojan
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W64.Evo
+  Kingsoft                       Win64.Backdoor.Gsb.gen
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        Trojan:Win/Remus.GOAX
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Tencent                        OB:Backdoor.Win64.Gsb.16004173
+  Trapmine                       suspicious.low.ml.score
+
+## 0eed7c83474a194e97e4...  (Linux) | Defender: ✓ Trojan.Linux.Agent.ACG
+   Erkannt: 19/75 Engines (25.3%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Trojan.Linux.Agent.ACG
+  Antiy-AVL                      Trojan/Linux.Multiverze
+  Arcabit                        Trojan.Linux.Agent.ACG
+  BitDefender                    Trojan.Linux.Agent.ACG
+  CTX                            elf.trojan.generic
+  DrWeb                          Linux.Siggen.8909
+  ESET-NOD32                     Linux/Agent.AIQ trojan
+  Emsisoft                       Trojan.Linux.Agent.ACG (B)
+  Fortinet                       ELF/Agent.AIQ!tr
+  GData                          Trojan.Linux.Agent.ACG
+  Google                         Detected
+  Jiangmin                       Trojan.Linux.fbd
+  MicroWorld-eScan               Trojan.Linux.Agent.ACG
+  Rising                         Backdoor.Agent!8.C5D (C64:YzY0Ot3zue71mm5L)
+  Tencent                        Backdoor.Linux.Agent.dat
+  VBA32                          Trojan.Linux.Multiverze
+  VIPRE                          Trojan.Linux.Agent.ACG
+  Zillya                         Trojan.Generic.Linux.471
+  huorong                        Trojan/Linux.Agent.cr
+
+## bac12c7b2bc08d4d552e...  (Vidar) | Defender: ✗ nicht erkannt
+   Erkannt: 13/75 Engines (17.3%) — 🟡 SCHWACH ERKANNT
+  AVG                            Win64:Evo-gen [Trj]
+  Avast                          Win64:Evo-gen [Trj]
+  Avira                          TR/W64.Evo
+  Bkav                           W32.Malware.D6C07AEA
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Cynet                          Malicious (score: 99)
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W64.Evo
+  Kaspersky                      VHO:Backdoor.Win64.Gsb.gen
+  McAfeeD                        Trojan:Win/Remus.GOAX
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        OB:Backdoor.Win64.Gsb.16004173
+
+## 8cd1408dbe57b890cb7a...  (DarkMe) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Barys.494691
+   Erkannt: 26/75 Engines (34.7%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Barys.494691
+  APEX                           Malicious
+  AVG                            Win32:Malware-gen
+  Arcabit                        Trojan.Barys.D78C63
+  Avast                          Win32:Malware-gen
+  Avira                          TR/Dropper.Gen
+  BitDefender                    Gen:Variant.Barys.494691
+  Bkav                           W32.Malware.665DBF58
+  CTX                            exe.unknown.barys
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win32/VB.OUL trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Barys.494691 (B)
+  F-Secure                       Trojan.TR/Dropper.Gen
+  GData                          Gen:Variant.Barys.494691
+  McAfeeD                        Real Protect-LS!891776ACC33D
+  MicroWorld-eScan               Gen:Variant.Barys.494691
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  SentinelOne                    Static AI - Suspicious PE
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Win32.Trojan.Dropper.Vdkl
+  VIPRE                          Gen:Variant.Barys.494691
+  tehtris                        Generic.Malware
