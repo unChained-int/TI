@@ -1,0 +1,225 @@
+# IOC Export  2026-07-04_15-08-UTC
+# 13 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+f3bbf19f96f7ad2c8f8b36a0ba4354ea134a54392e6ebaa28b922d3f9f09d74f  # Botnet/IoT | R=83.9 | Mirai | elf
+f036b53f361ca0681e805bcf1f8e30878c716f02c7e6098890157df688992cb8  # Trojaner | R=81.8 | trojan | exe
+45dc99df6e435b5a7683d0cd3802c654ce1c79d6aed9eee33888ca2da3dba5b6  # Botnet/IoT | R=75.0 | Mirai | elf
+18580a97bb5d98f831da60b316d50f0b47eead90afb58b86494d66d28152586e  # Loader | R=74.6 | unbekannt | exe
+4890efd1c9634bee13670721adbe3ebf7fc6e64074e13d7af2ee9fb73bd33e8d  # Loader | R=74.6 | OffLoader | exe
+3862914296f01da239f669abb8f44fdad9e452cbf572256bdec60ab146a94bc7  # Loader | R=70.0 | Unwanted-Program ( 006d94b41 ) | exe
+74b6b8219ad77f406af5c58f943d3fe1ff8937d22122e5b97359a83355e5e262  # Loader | R=68.2 | Yogi | exe
+8cd1408dbe57b890cb7aac49c60567e659156f376075ef617d5d7afb588daa09  # Trojaner | R=59.5 | DarkMe | exe
+cf4652172e2bab694d5bd9e93cac3995205ea109e09c8799c25b3f7917638b5e  # Windows-Malware | R=38.7 | GCleaner | exe
+5d3013a8fd78c564c62be0b6fe2bae261866ecbfdde73c38cb5dd9dba7612c9b  # Windows-Malware | R=38.7 | unbekannt | exe
+35f8de5a33a05a155c08a28030eac45f5f177a9f9fe7cc51a52e51fffbb9cfb7  # Windows-Malware | R=38.7 | unbekannt | exe
+45042f65adfcfc889b4c609b5869a3b64c53e21f239e0a92193c9806083cdc1a  # Windows-Malware | R=38.6 | unbekannt | exe
+4466785ad7a78bc27ee6796f67f4606b3753ce28a7068aa7dc5578f98a892580  # Windows-Malware | R=38.3 | unbekannt | exe
+
+[Tags]
+Agent
+Crack
+GCleaner
+HackTool
+INNOmod
+KillAV
+Lazy
+Loader
+Mirai
+OffLoader
+Packed
+SideWinder
+Yogi
+dionaea
+downloader
+elf
+exe
+signed
+unluckytool-com
+upx
+upx-dec
+
+[VT Engine Detections]
+
+## f036b53f361ca0681e80...  (trojan) | Defender: ✗ nicht erkannt
+   Erkannt: 9/74 Engines (12.2%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Application.Lazy.6192
+  CTX                            exe.trojan.lazy
+  Cylance                        Unsafe
+  Google                         Detected
+  McAfeeD                        ti!F036B53F361C
+  Paloalto                       generic.ml
+  Sophos                         Generic ML PUA (PUA)
+  TrellixENS                     Artemis!0476409486D4
+  Varist                         W64/ABApplication.WXMK-3977
+
+## 3862914296f01da239f6...  (Unwanted-Program ( 006d94b41 )) | Defender: ✗ nicht erkannt
+   Erkannt: 34/74 Engines (46.0%) — 🟠 MÄSSIG ERKANNT
+  APEX                           Malicious
+  AhnLab-V3                      Infostealer/Win.InnoLoader.R767827
+  Alibaba                        TrojanDownloader:Win32/OffLoader.af882e7e
+  Avira                          TR/W32.Malware
+  CTX                            exe.downloader.offloader
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Win32/Packed.INNOmod.Q suspicious application
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W32.Malware
+  Fortinet                       Riskware/InnoMod
+  GData                          Win32.Trojan.Agent.8WT2LK
+  K7AntiVirus                    Unwanted-Program ( 006d94b41 )
+  K7GW                           Unwanted-Program ( 006d94b41 )
+  Kaspersky                      HEUR:Trojan-Downloader.Win32.OffLoader.gen
+  Kingsoft                       Win32.Trojan-Downloader.OffLoader.gen
+  Lionic                         Trojan.Win32.OfRat.tt66
+  Malwarebytes                   Trojan.Dropper
+  MaxSecure                      Trojan.Malware.187042453.susgen
+  McAfeeD                        ti!3862914296F0
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Downloader.Agent!8.B23 (CLOUD)
+  Sangfor                        Downloader.Win32.Offloader.Vhgw
+  SentinelOne                    Static AI - Suspicious PE
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Malware.Win32.Gencirc.14aff8bb
+  TrendMicro                     Trojan.Win32.OFFLOADER.TL0101FL26ZY
+  TrendMicro-HouseCall           Trojan.Win32.OFFLOADER.TL0101FL26ZY
+  VBA32                          TrojanDownloader.OffLoader
+  Varist                         W32/ABDownloader.SUQO-4056
+  alibabacloud                   Trojan[downloader]:Win/Wacatac.B9nj
+  huorong                        HEUR:TrojanDownloader/Agent.a!crit
+
+## 45dc99df6e435b5a7683...  (Mirai) | Defender: ✓ Trojan.Linux.Mirai.300
+   Erkannt: 39/74 Engines (52.7%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Trojan.Linux.Mirai.300
+  AVG                            ELF:Agent-AYQ [Trj]
+  AhnLab-V3                      Worm/Linux.Mirai.XE228
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  Arcabit                        Trojan.Linux.Mirai.300
+  Avast                          ELF:Agent-AYQ [Trj]
+  Avast-Mobile                   ELF:Gafgyt-KS [Trj]
+  Avira                          EXP/ELF.Mirai.Z.A
+  BitDefender                    Trojan.Linux.Mirai.300
+  CTX                            elf.trojan.mirai
+  ClamAV                         Unix.Trojan.Mirai-8041698-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9788
+  ESET-NOD32                     Linux/Mirai.CVA trojan
+  Elastic                        Linux.Trojan.Gafgyt
+  Emsisoft                       Trojan.Linux.Mirai.300 (B)
+  F-Secure                       Exploit.EXP/ELF.Mirai.Z.A
+  Fortinet                       ELF/Mirai.CVA!tr
+  GData                          Trojan.Linux.Mirai.300
+  Google                         Detected
+  Jiangmin                       Backdoor.Linux.jhtu
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.cw
+  McAfeeD                        Trojan:Linux/GenericY.BN
+  MicroWorld-eScan               Trojan.Linux.Mirai.300
+  Microsoft                      Backdoor:Linux/Mirai.E!xp
+  Rising                         Backdoor.Mirai/Linux!1.1290D (CLASSIC)
+  Sangfor                        Suspicious.Linux.Save.a
+  SentinelOne                    Static AI - Malicious ELF
+  Skyhigh                        Linux/Mirai-FROZ!0F14EC504863
+  Sophos                         Linux/DDoS-FP
+  Symantec                       Linux.Mirai
+  Tencent                        Backdoor.Linux.Mirai.wao
+  TrellixENS                     Linux/Mirai-FROZ!0F14EC504863
+  VBA32                          Trojan.Linux.Agent
+  VIPRE                          Trojan.Linux.Mirai.300
+  Varist                         E32/Mirai.DJ.gen!Camelot
+  ZoneAlarm                      Linux/DDoS-FP
+  alibabacloud                   DDOS:Linux/Mirai
+  huorong                        Trojan/Linux.Mirai.q!crit
+
+## 74b6b8219ad77f406af5...  (Yogi) | Defender: ✓ Gen:Variant.Yogi.7416
+   Erkannt: 39/74 Engines (52.7%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Yogi.7416
+  AVG                            Win64:MalwareX-gen [Misc]
+  AhnLab-V3                      Malware/Win.Generic.R780230
+  Antiy-AVL                      Trojan/Win64.MALD2
+  Arcabit                        Trojan.Yogi.D1CF8
+  Avast                          Win64:MalwareX-gen [Misc]
+  Avira                          TR/W64.Agent
+  BitDefender                    Gen:Variant.Yogi.7416
+  Bkav                           W32.Malware.D851F02B
+  CTX                            dll.trojan.generic
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Win64/Agent.JWW trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Yogi.7416 (B)
+  F-Secure                       Trojan.TR/W64.Agent
+  Fortinet                       W64/MALD2.403F!tr
+  GData                          Gen:Variant.Yogi.7416
+  Google                         Detected
+  Ikarus                         Trojan.W64.Agent
+  K7AntiVirus                    Trojan ( 006e19e51 )
+  K7GW                           Trojan ( 006e19e51 )
+  Kaspersky                      Trojan.Win64.DLLhijack.fmk
+  Lionic                         Trojan.Win32.Generic.4!c
+  Malwarebytes                   Trojan.Loader.GO
+  MaxSecure                      Trojan.Malware.689088069.susgen
+  McAfeeD                        ti!74B6B8219AD7
+  MicroWorld-eScan               Gen:Variant.Yogi.7416
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Trojan.Agent!8.B1E (CLOUD)
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  TrellixENS                     Artemis!A51D1FB6525F
+  TrendMicro                     Trojan.Win32.ZYX.USBLFG26
+  TrendMicro-HouseCall           Trojan.Win32.ZYX.USBLFG26
+  VIPRE                          Gen:Variant.Yogi.7416
+  Varist                         W64/ABTrojan.TQWZ-1362
+  ViRobot                        Trojan.Win.Z.Yogi.3926592
+  alibabacloud                   Trojan:Win/Wacatac.B9nj
+
+## 8cd1408dbe57b890cb7a...  (DarkMe) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Yogi.18070
+   Erkannt: 47/74 Engines (63.5%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Yogi.18070
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Misc]
+  Alibaba                        Trojan:Win32/Generic.f8af6b1b
+  Antiy-AVL                      Trojan/Win32.VB
+  Arcabit                        Trojan.Yogi.D4696
+  Avast                          Win32:MalwareX-gen [Misc]
+  Avira                          TR/Dropper.Gen
+  BitDefender                    Gen:Variant.Yogi.18070
+  Bkav                           W32.Malware.665DBF58
+  CAT-QuickHeal                  Trojan.Malgent
+  CTX                            exe.trojan.malgent
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Win32/VB.OUL trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Yogi.18070 (B)
+  F-Secure                       Trojan.TR/Dropper.Gen
+  Fortinet                       W32/PossibleThreat
+  GData                          Gen:Variant.Yogi.18070
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Wacatac.sa
+  K7AntiVirus                    Trojan ( 00092f551 )
+  K7GW                           Trojan ( 00092f551 )
+  Lionic                         Trojan.Win32.Malgent.4!c
+  Malwarebytes                   Malware.AI.894576618
+  MaxSecure                      Trojan.Malware.692172834.susgen
+  McAfeeD                        Real Protect-LS!891776ACC33D
+  MicroWorld-eScan               Gen:Variant.Yogi.18070
+  Microsoft                      Trojan:Win32/Malgent
+  Paloalto                       generic.ml
+  Panda                          Trj/PhxBzA.A
+  Rising                         Backdoor.Agent!8.C5D (TFE:5:hoPmwusj91B)
+  Sangfor                        Trojan.Win32.Agent.Vdpa
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        Artemis
+  Sophos                         Mal/Generic-S
+  Tencent                        Malware.Win32.Gencirc.10c48e1e
+  TrellixENS                     Artemis!891776ACC33D
+  TrendMicro                     Trojan.Win32.ZYX.USBLFR26
+  TrendMicro-HouseCall           Trojan.Win32.ZYX.USBLFR26
+  VIPRE                          Gen:Variant.Yogi.18070
+  Varist                         W32/ABmRisk.BJHI-3500
+  VirIT                          Trojan.Win32.VBGenus.JUX
+  alibabacloud                   Trojan[dropper]:Win/Malgent.Gen
+  tehtris                        Generic.Malware
