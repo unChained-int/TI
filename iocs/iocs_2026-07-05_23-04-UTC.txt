@@ -1,0 +1,137 @@
+# IOC Export  2026-07-05_23-04-UTC
+# 6 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+9141fe9327ca1caa1bf70adb61b07caa3dd5f7b5720b617e78a14dd1ca151fb9  # RAT | R=80.4 | Tedy | msi
+80917e22a9d17c7d856eafc01c1a52b661dddd3820490afb3982aa9fafb20677  # Loader | R=78.9 | FileRepMalware [Misc] | exe
+3b4345d443ac5791092635b18a847d1db3aee953428d9ad04dc01f82478ee2a9  # Trojaner | R=76.8 | Prometei | elf
+53de9fbfc8ec10fe8b317143126afd2b91b9cff9ca46426581d2d7653a12438f  # RAT | R=76.6 | Yogi | exe
+1a4b2bb9352969a3913db57f776dbaa48b03dfb96ce3addfa346e92687b8cf20  # Backdoor | R=75.9 | Gh0stRAT | exe
+6af11b40d0a09644d689ea72f10a181cb4936fe8dbe3ab936cde60aa27129842  # Windows-Malware | R=38.0 | unbekannt | exe
+
+[Tags]
+C
+ClickFix
+Efimer
+MIX4.file
+Prometei
+SilverFox
+ValleyRAT
+dropped-by-GCleaner
+elf
+exe
+msi
+wraith
+
+[VT Engine Detections]
+
+## 9141fe9327ca1caa1bf7...  (Tedy) | Defender: ✓ Gen:Variant.Tedy.984388
+   Erkannt: 18/74 Engines (24.3%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Tedy.984388
+  AVG                            Win64:MalwareX-gen [Bank]
+  AhnLab-V3                      Ransomware/Win.Magniber.XG90
+  Arcabit                        Trojan.Tedy.DF0544
+  Avast                          Win64:MalwareX-gen [Bank]
+  Avira                          TR/W64.MalwareX
+  BitDefender                    Gen:Variant.Tedy.984388
+  CTX                            msi.unknown.tedy
+  Cynet                          Malicious (score: 99)
+  Emsisoft                       Gen:Variant.Tedy.984388 (B)
+  F-Secure                       Trojan.TR/W64.MalwareX
+  GData                          Gen:Variant.Tedy.984388
+  Kaspersky                      UDS:Trojan-Banker.Win32.Emotet
+  MicroWorld-eScan               Gen:Variant.Tedy.984388
+  SentinelOne                    Static AI - Malicious MSI
+  Sophos                         Generic ML PUA (PUA)
+  VIPRE                          Gen:Variant.Tedy.984388
+  VirIT                          Trojan.MSI.Agent.JUM
+
+## 53de9fbfc8ec10fe8b31...  (Yogi) | Defender: ✓ Gen:Variant.Yogi.14068
+   Erkannt: 20/74 Engines (27.0%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Yogi.14068
+  APEX                           Malicious
+  Arcabit                        Trojan.Yogi.D36F4
+  BitDefender                    Gen:Variant.Yogi.14068
+  Bkav                           W32.Malware.F451ECD2
+  CTX                            exe.unknown.yogi
+  CrowdStrike                    win/malicious_confidence_90% (W)
+  Cylance                        Unsafe
+  ESET-NOD32                     Python/TrojanDropper.Agent.NH trojan
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Gen:Variant.Yogi.14068 (B)
+  GData                          Gen:Variant.Yogi.14068
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan.Python.Agent.gen
+  Malwarebytes                   Trojan.Dropper
+  MicroWorld-eScan               Gen:Variant.Yogi.14068
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  SentinelOne                    Static AI - Suspicious PE
+  VIPRE                          Gen:Variant.Yogi.14068
+  Varist                         W64/Agent.MPL.gen!Eldorado
+
+## 3b4345d443ac57910926...  (Prometei) | Defender: ✓ Trojan.Linux.Prometei.5
+   Erkannt: 24/74 Engines (32.4%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Trojan.Linux.Prometei.5
+  AVG                            ELF:Prometei-E [Trj]
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Prometei
+  Arcabit                        Trojan.Linux.Prometei.5
+  Avast                          ELF:Prometei-E [Trj]
+  Avira                          TR/LINUX.Prometei.E
+  BitDefender                    Trojan.Linux.Prometei.5
+  CTX                            elf.trojan.prometei
+  ClamAV                         Unix.Trojan.Prometei-10045451-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.BackDoor.Prometei.12
+  ESET-NOD32                     Linux/Prometei.B trojan
+  Emsisoft                       Trojan.Linux.Prometei.5 (B)
+  F-Secure                       Trojan.TR/LINUX.Prometei.E
+  GData                          Trojan.Linux.Prometei.5
+  Kaspersky                      HEUR:Backdoor.Linux.Prometei.a
+  McAfeeD                        Trojan:Script/Prometei.EAB
+  MicroWorld-eScan               Trojan.Linux.Prometei.5
+  Microsoft                      Trojan:Linux/Coinminer.B
+  Rising                         Backdoor.Prometei/Linux!1.DBE7 (CLASSIC)
+  SentinelOne                    Static AI - Suspicious ELF
+  Tencent                        Backdoor.Linux.Prometei.c
+  VIPRE                          Trojan.Linux.Prometei.5
+  huorong                        Trojan/Prometei.c
+
+## 80917e22a9d17c7d856e...  (FileRepMalware [Misc]) | Defender: ✗ nicht erkannt
+   Erkannt: 6/74 Engines (8.1%) — ⚠️ KAUM ERKANNT
+  AVG                            FileRepMalware [Misc]
+  Avast                          FileRepMalware [Misc]
+  CrowdStrike                    win/malicious_confidence_60% (D)
+  Elastic                        malicious (high confidence)
+  Kaspersky                      HEUR:Trojan.Win32.Agent.gen
+  Kingsoft                       Win32.Trojan.Agent.gen
+
+## 1a4b2bb9352969a3913d...  (Gh0stRAT) ⭐ WOCHEN-SAMPLE | Defender: ✗ nicht erkannt
+   Erkannt: 28/74 Engines (37.8%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AVG                            Win32:Malware-gen
+  Avast                          Win32:Malware-gen
+  CTX                            exe.trojan.convagent
+  CrowdStrike                    win/malicious_confidence_60% (W)
+  ESET-NOD32                     Generik.BCQQIOW trojan
+  Elastic                        malicious (high confidence)
+  Fortinet                       W32/PossibleThreat
+  GData                          Win32.Trojan.Agent.48BNTR
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Agent.oa!s1
+  Kaspersky                      UDS:Trojan.Win32.Convagent.gen
+  Kingsoft                       Win32.Trojan.Convagent.gen
+  Lionic                         Trojan.Win32.Generic.4!c
+  Malwarebytes                   Malware.AI.3929881295
+  McAfeeD                        ti!1A4B2BB93529
+  Microsoft                      Trojan:Win32/Malgent!MSR
+  Rising                         Trojan.Convagent!8.12323 (CLOUD)
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Malware.Win32.Gencirc.11e5c823
+  TrellixENS                     Artemis!6BFCD5AE2D0C
+  Varist                         W32/ABmTrojan.JYXQ-7852
+  Webroot                        Win.Trojan.Gen
+  Zillya                         Trojan.Agent.Win32.4464457
+  alibabacloud                   Trojan:Win/Malgent.Gen
+  huorong                        Trojan/Generic!4881FE22A0A70161
