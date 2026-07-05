@@ -1,0 +1,161 @@
+# IOC Export  2026-07-05_07-30-UTC
+# 19 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+551aa018350fcf2b435b4d361dd4f117349a5136851f84ac10c02da1526e4e67  # RAT | R=87.0 | NanoCore | exe
+f2a5a9ab670552598f032f8c0e22d6ff67bd5061eb33b9efe3251082c044c71c  # Trojaner | R=84.6 | Netloader | ps1
+674edb7d15668710c3120750f47f88545d1444d22d059d22f8c9dd46ba2400c6  # Botnet/IoT | R=84.0 | Mirai | elf
+4d74a2df37d961af81255fc64ef1e49a5805bb1eec98513fbb93295fb8c482f2  # Infostealer | R=81.2 | unbekannt | exe
+1a4b2bb9352969a3913db57f776dbaa48b03dfb96ce3addfa346e92687b8cf20  # Backdoor | R=80.8 | Gh0stRAT | exe
+0c45413122e68f4397fba9539fb74a67343a6496672c1a55862f95e2bcb105c3  # Trojaner | R=78.6 | MalwareX-gen [Misc] | exe
+f65a25e37c7abc88d641e13004c4e5523502b4568cfcf6713f4f50e34f23e770  # Trojaner | R=67.5 | Redosdru | exe
+5e04e37bf2cdb841ab52f797a6e92ece2b9c298815341e7b57a8698c2e08309a  # Windows-Malware | R=49.5 | Tedy | exe
+6a107300a753a010e466b20ab33177b46224e59164ff8e2c14ae5d3e04f712fd  # Linux-Malware | R=42.1 | Prometei | elf
+0e84369ffb478e4bb385070c2e62d692619885bb42008fbcff7e2f6a16e86f6c  # Linux-Malware | R=41.2 | unbekannt | elf
+c7ec30029a10580a0b33b71b75d34efe053cc34d908bf75998f457a0c1f074f6  # Windows-Malware | R=38.9 | unbekannt | exe
+9df5a7b74fadadc12c289fff3f5c7f58e3893e5a36df8a287b1f69e588a7e818  # Windows-Malware | R=38.8 | unbekannt | exe
+0c422e9fc527cc1d97a81606a42a6bea2c83295552ec3ebd49adcb41e50650c8  # Windows-Malware | R=38.5 | unbekannt | exe
+43cdf113f48a9a3f12c54b31e484e6ecd67c4c65382bd753d5f08cceadc1b3d7  # Windows-Malware | R=37.4 | unbekannt | exe
+d9f15a43821328bf482e2945ff9da40fa05f382777819d8e9fa3aaae8704862d  # Windows-Malware | R=36.2 | unbekannt | exe
+a2abc9d8dc1bfba97a86ba091dd32222c0864accf3e8bd7d16da2d092a518a44  # Andere / Unbekannt | R=32.4 | unbekannt | zip
+40f52445a7b6481d9627a4f907422d9566357a3fd2f7d3e817c41fb606e87a2f  # Andere / Unbekannt | R=32.1 | unbekannt | sh
+be84871cb5b90a6a1b81ab50b8d557c7971fdfa4a1d4d94925c2ba740b30a6b3  # Andere / Unbekannt | R=32.1 | unbekannt | unknown
+031ab13addb02aeb8ff051c6410c68eee333ee9ae17557a4dac753ac400b7054  # Andere / Unbekannt | R=32.0 | unbekannt | sh
+
+[Tags]
+ClickFix
+Efimer
+Mirai
+NanoCore
+Prometei
+RAT
+Redosdru
+agent
+booking
+elf
+exe
+kenwillzltd-com
+ps1
+psw
+sh
+spam-ita
+stealer
+v0hkpadr04mbz5lkearqa-com
+wasp stealer
+wraith
+zip
+
+[VT Engine Detections]
+
+## 0c45413122e68f4397fb...  (MalwareX-gen [Misc]) | Defender: ✓ Trojan.GenericKD.80702307
+   Erkannt: 19/74 Engines (25.7%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AVG                            MalwareX-gen [Misc]
+  Avast                          MalwareX-gen [Misc]
+  BitDefender                    Trojan.GenericKD.80702307
+  CTX                            sys.trojan.generic
+  ESET-NOD32                     Win64/Agent.ITG trojan
+  Emsisoft                       Trojan.GenericKD.80702307 (B)
+  Fortinet                       W64/Agent.ITG!tr
+  Google                         Detected
+  Kaspersky                      UDS:Trojan.Win64.Agent.a
+  McAfeeD                        ti!0C45413122E6
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Trojan.Agent!8.B1E (TFE:4:dGUNoxHDnOF)
+  Sangfor                        Trojan.Win64.Agent.Vkbb
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Win64.Trojan.Agent.Bdhl
+  TrellixENS                     Artemis!0F0649B820F6
+  Varist                         W64/ABTrojan.YPBT-5427
+
+## f2a5a9ab670552598f03...  (Netloader) | Defender: ✗ nicht erkannt
+   Erkannt: 1/74 Engines (1.4%) — ⚠️ KAUM ERKANNT
+  huorong                        TrojanDownloader/PS.Netloader.nh
+
+## f65a25e37c7abc88d641...  (Redosdru) | Defender: ✓ Trojan.Cud.Gen.1
+   Erkannt: 48/74 Engines (64.9%) — 🟠 MÄSSIG ERKANNT
+  APEX                           Malicious
+  AVG                            Win32:Malware-gen
+  AhnLab-V3                      Trojan/Win32.Macri.C1778622
+  Antiy-AVL                      Trojan[Backdoor]/Win32.Farfli
+  Arcabit                        Trojan.Cud.Gen.1
+  Avast                          Win32:Malware-gen
+  BitDefender                    Trojan.Cud.Gen.1
+  Bkav                           W32.Malware.6E1BA7C
+  CAT-QuickHeal                  Trojan.MauvaiseRI.S5252516
+  CTX                            exe.trojan.generic
+  ClamAV                         Win.Downloader.Zegost-6484584-1
+  CrowdStrike                    win/malicious_confidence_70% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DrWeb                          Trojan.DownLoader22.5614
+  ESET-NOD32                     Win32/TrojanDownloader.Agent.CMN trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Trojan.Cud.Gen.1 (B)
+  Fortinet                       W32/Agent.CGT!tr
+  GData                          Trojan.Cud.Gen.1
+  Google                         Detected
+  Jiangmin                       TrojanDDoS.Macri.jz
+  K7AntiVirus                    Trojan-Downloader ( 005f91a41 )
+  K7GW                           Trojan-Downloader ( 005f91a41 )
+  Kaspersky                      Backdoor.Win32.Farfli.ateg
+  Kingsoft                       Win32.Hack.Farfli.ateg
+  Malwarebytes                   Malware.AI.4072722092
+  MaxSecure                      Trojan.Malware.2272.susgen
+  McAfeeD                        ti!F65A25E37C7A
+  MicroWorld-eScan               Trojan.Cud.Gen.1
+  Microsoft                      TrojanDownloader:Win32/Farfli.F!bit
+  NANO-Antivirus                 Trojan.Win32.Macri.elpbom
+  Paloalto                       generic.ml
+  Rising                         Backdoor.Farfli!8.B4 (TFE:5:ZAKUhBBg7jO)
+  Sangfor                        Trojan.Win32.Save.a
+  Skyhigh                        Trojan-FJYJ!B2F641209EFA
+  Sophos                         Mal/Generic-S
+  Tencent                        Malware.Win32.Gencirc.10b0fc43
+  Trapmine                       suspicious.low.ml.score
+  TrellixENS                     Trojan-FJYJ!B2F641209EFA
+  TrendMicro                     BKDR_ZEGOST.SM22
+  TrendMicro-HouseCall           BKDR_ZEGOST.SM22
+  VBA32                          Backdoor.Farfli
+  VIPRE                          Trojan.Cud.Gen.1
+  Xcitium                        TrojWare.Win32.Fusing.CF@5afr59
+  Yandex                         Trojan.GenAsa!HYAQljNIR58
+  alibabacloud                   Trojan:Win/Cud.24bbe1b4
+  huorong                        Backdoor/Farfli.by
+
+## 5e04e37bf2cdb841ab52...  (Tedy) | Defender: ✓ Gen:Variant.Tedy.401575
+   Erkannt: 13/74 Engines (17.6%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  Arcabit                        Trojan.Tedy.D620A7
+  BitDefender                    Gen:Variant.Tedy.401575
+  Bkav                           W32.Malware.D8304235
+  CTX                            exe.unknown.tedy
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Emsisoft                       Gen:Variant.Tedy.401575 (B)
+  GData                          Gen:Variant.Tedy.401575
+  MicroWorld-eScan               Gen:Variant.Tedy.401575
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  VIPRE                          Gen:Variant.Tedy.401575
+
+## 1a4b2bb9352969a3913d...  (Gh0stRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan:Win32/Malgent!MSR
+   Erkannt: 17/74 Engines (23.0%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  CrowdStrike                    win/malicious_confidence_60% (W)
+  Elastic                        malicious (high confidence)
+  Fortinet                       W32/PossibleThreat
+  GData                          Win32.Trojan.Agent.48BNTR
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Agent.oa!s1
+  Kingsoft                       Win32.Trojan.Convagent.gen
+  Malwarebytes                   Malware.AI.3929881295
+  Microsoft                      Trojan:Win32/Malgent!MSR
+  Rising                         Trojan.Convagent!8.12323 (CLOUD)
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  Sophos                         Mal/Generic-S
+  Tencent                        Malware.Win32.Gencirc.11e5c823
+  Varist                         W32/ABmTrojan.JYXQ-7852
+  Webroot                        Win.Trojan.Gen
+  Zillya                         Trojan.Agent.Win32.4464457
