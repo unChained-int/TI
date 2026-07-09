@@ -1,0 +1,120 @@
+# IOC Export  2026-07-09_23-14-UTC
+# 6 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+92bab327f0800fe67fdd049fc76f9acfcbd5c5b79794187192f48c6cae0e0724  # Trojaner | R=81.6 | Cryxos | js
+2186a1d4bafc51969dc84c97aafea7231cbbbb55566fca72a5df983060099f5a  # Loader | R=80.3 | Win64:Evo-gen [Trj] | zip
+aeed7c42c5a0de1913b826911ce5926f1b05807170d7ac34f2e511b9458593a8  # Trojaner | R=78.2 | Yogi | exe
+1a4b2bb9352969a3913db57f776dbaa48b03dfb96ce3addfa346e92687b8cf20  # Backdoor | R=76.7 | Gh0stRAT | exe
+8602b5a93f61ef26519762e545df3a252ac765cd2e8062837722d049bf1ab34d  # Trojaner | R=76.0 | Yogi | exe
+29f1016661c51389d799e1c6e5afa5e9c2fc142c7f5382f60f3f08ed223adfbb  # Loader | R=75.0 | unbekannt | exe
+
+[Tags]
+9d2ca3
+ClickFix
+Efimer
+KongTuke
+Kongtuke
+Mintsloader
+dropped-by-Amadey
+exe
+js
+zip
+
+[VT Engine Detections]
+
+## aeed7c42c5a0de1913b8...  (Yogi) | Defender: ✓ Gen:Variant.Yogi.14068
+   Erkannt: 20/74 Engines (27.0%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Yogi.14068
+  APEX                           Malicious
+  Arcabit                        Trojan.Yogi.D36F4
+  BitDefender                    Gen:Variant.Yogi.14068
+  Bkav                           W32.Malware.85C41C79
+  CTX                            exe.unknown.yogi
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  Cylance                        Unsafe
+  ESET-NOD32                     Python/TrojanDropper.Agent.NH trojan
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Gen:Variant.Yogi.14068 (B)
+  GData                          Gen:Variant.Yogi.14068
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan.Python.Agent.gen
+  Malwarebytes                   Trojan.Dropper
+  MicroWorld-eScan               Gen:Variant.Yogi.14068
+  SentinelOne                    Static AI - Suspicious PE
+  VIPRE                          Gen:Variant.Yogi.14068
+  Varist                         W64/Agent.MPL.gen!Eldorado
+  Webroot                        Win.Trojan.Gen
+
+## 92bab327f0800fe67fdd...  (Cryxos) | Defender: ✓ JS:Trojan.Cryxos.16387
+   Erkannt: 9/74 Engines (12.2%) — 🟡 SCHWACH ERKANNT
+  ALYac                          JS:Trojan.Cryxos.16387
+  Arcabit                        JS:Trojan.Cryxos.D4003
+  BitDefender                    JS:Trojan.Cryxos.16387
+  CTX                            javascript.trojan.cryxos
+  Emsisoft                       JS:Trojan.Cryxos.16387 (B)
+  Fortinet                       JS/Agent.USR!tr
+  GData                          JS:Trojan.Cryxos.16387
+  MicroWorld-eScan               JS:Trojan.Cryxos.16387
+  VIPRE                          JS:Trojan.Cryxos.16387
+
+## 2186a1d4bafc51969dc8...  (Win64:Evo-gen [Trj]) | Defender: ✗ nicht erkannt
+   Erkannt: 3/74 Engines (4.0%) — ⚠️ KAUM ERKANNT
+  AVG                            Win64:Evo-gen [Trj]
+  Avast                          Win64:Evo-gen [Trj]
+  Elastic                        malicious (moderate confidence)
+
+## 8602b5a93f61ef265197...  (Yogi) | Defender: ✓ Gen:Variant.Yogi.14068
+   Erkannt: 24/74 Engines (32.4%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Yogi.14068
+  APEX                           Malicious
+  AVG                            FileRepMalware [Misc]
+  Arcabit                        Trojan.Yogi.D36F4
+  Avast                          FileRepMalware [Misc]
+  BitDefender                    Gen:Variant.Yogi.14068
+  Bkav                           W32.Malware.BA53CCE6
+  CTX                            exe.unknown.yogi
+  CrowdStrike                    win/malicious_confidence_90% (W)
+  Cylance                        Unsafe
+  ESET-NOD32                     Python/TrojanDropper.Agent.NH trojan
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Gen:Variant.Yogi.14068 (B)
+  GData                          Gen:Variant.Yogi.14068
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan.Python.Agent.gen
+  Kingsoft                       Win32.Troj.Unknown.a
+  Malwarebytes                   Trojan.Dropper
+  MicroWorld-eScan               Gen:Variant.Yogi.14068
+  Microsoft                      Trojan:Win32/Wacatac.C!ml
+  SentinelOne                    Static AI - Suspicious PE
+  Tencent                        Win32.Trojan.Agent.Kajl
+  VIPRE                          Gen:Variant.Yogi.14068
+  Varist                         W64/Agent.MPL.gen!Eldorado
+
+## 1a4b2bb9352969a3913d...  (Gh0stRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan:Win32/Malgent!MSR
+   Erkannt: 25/74 Engines (33.8%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AhnLab-V3                      Trojan/Win.Generic.C5906946
+  CTX                            exe.trojan.convagent
+  CrowdStrike                    win/malicious_confidence_60% (W)
+  ESET-NOD32                     Generik.BCQQIOW trojan
+  Elastic                        malicious (high confidence)
+  Fortinet                       W32/PossibleThreat
+  GData                          Win32.Trojan.Agent.48BNTR
+  Gridinsoft                     Trojan.Win32.Agent.oa!s1
+  Kingsoft                       Win32.Trojan.Convagent.gen
+  Lionic                         Trojan.Win32.Convagent.4!c
+  Malwarebytes                   Malware.AI.3929881295
+  McAfeeD                        ti!1A4B2BB93529
+  Microsoft                      Trojan:Win32/Malgent!MSR
+  Paloalto                       generic.ml
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Malware.Win32.Gencirc.11e5c823
+  TrendMicro                     Trojan.Win32.ZYX.USBLG526
+  TrendMicro-HouseCall           Trojan.Win32.ZYX.USBLG526
+  Varist                         W32/ABmTrojan.JYXQ-7852
+  Webroot                        Win.Trojan.Gen
+  alibabacloud                   Trojan:Win/Malgent.Gen
+  huorong                        Trojan/Generic!4881FE22A0A70161
