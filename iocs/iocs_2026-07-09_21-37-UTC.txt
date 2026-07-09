@@ -1,0 +1,117 @@
+# IOC Export  2026-07-09_21-37-UTC
+# 18 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+41a35436cb79c95001b2fdb7076e26c996bc9a913d64c7f54db9507882773120  # Ransomware | R=97.5 | WannaCry | exe
+5caf5e70726c56bc484171aa8a2f7f322d1629135574500c33eb74d3860c9bce  # Botnet/IoT | R=83.5 | Mirai | elf
+aa77c3256a16b91d2621d797cb8cf16f0254bd587a511d4e75f54de51c304c0f  # Botnet/IoT | R=83.3 | Mirai | elf
+7ff7ad40017d89d4e399c70bb79f1db6bdb57aea05939748cdfe3b9f1527c21f  # Botnet/IoT | R=83.3 | Mirai | elf
+3ba2080a5a4791a7a8c5ea42ac40826bfca758f3abea4da90d3f22fbc50c2d60  # RAT | R=80.2 | unbekannt | exe
+72b2bb12dedd3cc8b5d9a977adb6f8b68b3ce3a26bc20c277fa49f1b59048f9a  # RAT | R=79.9 | AveMariaRAT | exe
+725c24ec04fba51daa1f30f2b463759c9443ddc284261a58d96979e9a97eb436  # Loader | R=77.9 | DownLoader | sh
+8451b01ca5c1059121cc0ea724c2e2d98bc761a3aa00618f514babfff74d337a  # Trojaner | R=76.8 | Yogi | exe
+1a4b2bb9352969a3913db57f776dbaa48b03dfb96ce3addfa346e92687b8cf20  # Backdoor | R=76.7 | Gh0stRAT | exe
+3066874504f49274ec261de95cf94797158d0a169a61d9e546eb2df731b1b74b  # Loader | R=74.3 | unbekannt | exe
+d07766429ea14ac3c403bde5a9498a9fe161a059eea212b3baf3f520b078f709  # Linux-Malware | R=42.4 | unbekannt | elf
+b689762ccfcd2350f30e36203e89847fe1a3e8e60b74e91b082ae4e4a5d5353d  # Linux-Malware | R=42.3 | unbekannt | elf
+3b6fa85634e3aa554424e53bd0a9b7317aeca0f25a5d6903b83dc9f42e71ad4b  # Linux-Malware | R=42.1 | unbekannt | elf
+2f0ba36eb00eedff7a6c8eabbd2436998dc5756dc57219476553fca52b203a5e  # Linux-Malware | R=42.0 | unbekannt | elf
+3a9d703ba7f7564399365db7ab8b04238806ef7a53df0b6822f32b80bf0f5a80  # Andere / Unbekannt | R=32.5 | unbekannt | unknown
+e81c8b5bc8b6be982906ef0b4932074225f5b46757d898dedf480c0cf8011861  # Andere / Unbekannt | R=32.2 | unbekannt | sh
+92d93285e39e37750ba59f7127807f3c9d4de18fb8efe386042587e204604108  # Andere / Unbekannt | R=31.7 | unbekannt | sh
+a98d50beff9c89aa88280e3f6112c2cfaa150385b40656440c2a023b03e5662b  # Andere / Unbekannt | R=31.6 | unbekannt | sh
+
+[Tags]
+A
+AsyncRAT
+AveMariaRAT
+Backdoor
+ClickFix
+Efimer
+MIX8.file
+Mirai
+SilverFox
+ValleyRAT
+WannaCry
+XRed
+dionaea
+dropped-by-GCleaner
+elf
+exe
+sh
+wraith
+
+[VT Engine Detections]
+
+## 725c24ec04fba51daa1f...  (DownLoader) | Defender: ✗ nicht erkannt
+   Erkannt: 2/74 Engines (2.7%) — ⚠️ KAUM ERKANNT
+  DrWeb                          Linux.DownLoader.2650
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+
+## 8451b01ca5c1059121cc...  (Yogi) | Defender: ✓ Gen:Variant.Yogi.14068
+   Erkannt: 23/74 Engines (31.1%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Yogi.14068
+  APEX                           Malicious
+  AVG                            MalwareX-gen [Drp]
+  Arcabit                        Trojan.Yogi.D36F4
+  Avast                          MalwareX-gen [Drp]
+  BitDefender                    Gen:Variant.Yogi.14068
+  Bkav                           W32.Malware.433BBC51
+  CTX                            exe.unknown.yogi
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  ESET-NOD32                     Python/TrojanDropper.Agent.NH trojan
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Gen:Variant.Yogi.14068 (B)
+  GData                          Gen:Variant.Yogi.14068
+  Google                         Detected
+  Kaspersky                      UDS:Trojan-PSW.Multi.Stealer
+  Kingsoft                       Win32.Troj.Unknown.a
+  Malwarebytes                   Trojan.Dropper
+  MicroWorld-eScan               Gen:Variant.Yogi.14068
+  SentinelOne                    Static AI - Suspicious PE
+  Tencent                        Win32.Trojan.Agent.Iajl
+  VIPRE                          Gen:Variant.Yogi.14068
+  Varist                         W64/Agent.MPL.gen!Eldorado
+
+## 5caf5e70726c56bc4841...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 11/74 Engines (14.9%) — 🟡 SCHWACH ERKANNT
+  AVG                            ELF:Mirai-GH [Trj]
+  Antiy-AVL                      Trojan/Linux.Mirai.b
+  Avast                          ELF:Mirai-GH [Trj]
+  Avast-Mobile                   ELF:Mirai-GH [Trj]
+  Avira                          TR/LINUX.Mirai.GH
+  Cynet                          Malicious (score: 99)
+  F-Secure                       Trojan.TR/LINUX.Mirai.GH
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Mirai
+  Microsoft                      PUA:Win32/Puwaders.C!ml
+  Tencent                        Backdoor.Linux.Mirai.ck
+
+## 1a4b2bb9352969a3913d...  (Gh0stRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan:Win32/Malgent!MSR
+   Erkannt: 25/74 Engines (33.8%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AhnLab-V3                      Trojan/Win.Generic.C5906946
+  CTX                            exe.trojan.convagent
+  CrowdStrike                    win/malicious_confidence_60% (W)
+  ESET-NOD32                     Generik.BCQQIOW trojan
+  Elastic                        malicious (high confidence)
+  Fortinet                       W32/PossibleThreat
+  GData                          Win32.Trojan.Agent.48BNTR
+  Gridinsoft                     Trojan.Win32.Agent.oa!s1
+  Kingsoft                       Win32.Trojan.Convagent.gen
+  Lionic                         Trojan.Win32.Convagent.4!c
+  Malwarebytes                   Malware.AI.3929881295
+  McAfeeD                        ti!1A4B2BB93529
+  Microsoft                      Trojan:Win32/Malgent!MSR
+  Paloalto                       generic.ml
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Malware.Win32.Gencirc.11e5c823
+  TrendMicro                     Trojan.Win32.ZYX.USBLG526
+  TrendMicro-HouseCall           Trojan.Win32.ZYX.USBLG526
+  Varist                         W32/ABmTrojan.JYXQ-7852
+  Webroot                        Win.Trojan.Gen
+  alibabacloud                   Trojan:Win/Malgent.Gen
+  huorong                        Trojan/Generic!4881FE22A0A70161
