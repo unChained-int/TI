@@ -1,0 +1,139 @@
+# IOC Export  2026-07-10_23-01-UTC
+# 8 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+6144677a8ff6d6cb5b04403c9f07ea326419600f9b469a95502fa022613c56bd  # RAT | R=89.2 | RemcosRAT | exe
+bfcab5e114b87543cb400b328ba6555da34ddc0bcd05e0313baa3236e6cd671c  # RAT | R=89.0 | RemcosRAT | exe
+29c252a26f6b8c08a89e1b83255bee5637819c50f72b1b974af217540df8fff7  # Backdoor | R=87.3 | Win64:Malware-gen | exe
+a2f29f078ddd41e2544e3750feba5e60c6f70a8a185e1ec960fcf3cadd663d28  # Loader | R=78.8 | Win32 | exe
+a62121caf724e944291bd1733fd65da8af3d205d27be8f40af9d02cb647189a7  # Trojaner | R=78.4 | Yogi | exe
+1a4b2bb9352969a3913db57f776dbaa48b03dfb96ce3addfa346e92687b8cf20  # Backdoor | R=76.7 | Gh0stRAT | exe
+350db1326d8bdf921d5dfcea54a713d19c8d4b6dddc265b14c55ae0646eecb7e  # Trojaner | R=70.8 | RemoteManipulator | exe
+fd6de1ced67109859d1bf654a54819598cbbd7eca0bd380168e1360da13abec6  # Windows-Malware | R=38.1 | unbekannt | exe
+
+[Tags]
+Androm
+Backdoor
+ClickFix
+Efimer
+RAT
+RemcosRAT
+RemoteManipulator
+Zbot
+dropped-by-OffLoader
+exe
+
+[VT Engine Detections]
+
+## a2f29f078ddd41e2544e...  (Win32) | Defender: ✗ nicht erkannt
+   Erkannt: 9/74 Engines (12.2%) — 🟡 SCHWACH ERKANNT
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  ESET-NOD32                     Win64/Packed.CAB.BP trojan
+  Elastic                        malicious (high confidence)
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Sangfor                        Trojan.Win32.Save.a
+  Sophos                         Generic ML PUA (PUA)
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       malicious.high.ml.score
+  Webroot                        Win.Trojan.Gen
+
+## a62121caf724e944291b...  (Yogi) | Defender: ✓ Gen:Variant.Yogi.14068
+   Erkannt: 20/74 Engines (27.0%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Yogi.14068
+  APEX                           Malicious
+  Arcabit                        Trojan.Yogi.D36F4
+  BitDefender                    Gen:Variant.Yogi.14068
+  Bkav                           W32.Malware.CB84BB5D
+  CTX                            exe.unknown.yogi
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  Cylance                        Unsafe
+  ESET-NOD32                     Python/TrojanDropper.Agent.NH trojan
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Gen:Variant.Yogi.14068 (B)
+  GData                          Gen:Variant.Yogi.14068
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan.Python.Agent.gen
+  Malwarebytes                   Trojan.Dropper
+  MicroWorld-eScan               Gen:Variant.Yogi.14068
+  Microsoft                      PUA:Win32/Puwaders.C!ml
+  SentinelOne                    Static AI - Suspicious PE
+  VIPRE                          Gen:Variant.Yogi.14068
+  Varist                         W64/Agent.MPL.gen!Eldorado
+
+## 350db1326d8bdf921d5d...  (RemoteManipulator) | Defender: ✓ Application.Agent.MFK
+   Erkannt: 41/74 Engines (55.4%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Application.Agent.MFK
+  AVG                            Win32:MalwareX-gen [Misc]
+  Alibaba                        Trojan:Win32/based.59d5cb4e
+  Antiy-AVL                      Trojan/Win32.Etset
+  Arcabit                        Application.Agent.MFK
+  Avast                          Win32:MalwareX-gen [Misc]
+  Avira                          TR/W32.Agent
+  BitDefender                    Application.Agent.MFK
+  Bkav                           W32.Malware.DFEBAF08
+  CTX                            exe.trojan.generic
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Cylance                        Unsafe
+  DrWeb                          Program.RemoteAdmin.973
+  ESET-NOD32                     Win32/RA-based.NMV trojan
+  Emsisoft                       Application.Agent.MFK (B)
+  F-Secure                       Trojan.TR/W32.Agent
+  Fortinet                       Riskware/RA_based
+  GData                          Application.Agent.MFK
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Agent.sa
+  Kaspersky                      Trojan.Win32.RMS.o
+  Kingsoft                       Win32.Trojan.RMS.o
+  Lionic                         Trojan.Win32.RMS.4!c
+  MaxSecure                      Trojan.Malware.325675668.susgen
+  McAfeeD                        ti!350DB1326D8B
+  Microsoft                      PUA:Win32/Puwaders.C!ml
+  NANO-Antivirus                 Riskware.Win32.RemoteAdmin.lheweg
+  Paloalto                       generic.ml
+  Rising                         Trojan.RA-based!8.80 (TFE:4:stzwV3bUtOG)
+  Sangfor                        Trojan.Win32.Agent.Vm0u
+  Skyhigh                        PUP-IRG
+  Sophos                         Troj/Remut-A
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Win32.Trojan.Rms.Ddhl
+  Trapmine                       malicious.moderate.ml.score
+  TrellixENS                     PUP-IQM
+  VIPRE                          Application.Agent.MFK
+  Varist                         W32/ABApplication.FIIT-3567
+  Yandex                         Riskware.RemoteAdmin.DJ
+  ZoneAlarm                      Troj/Remut-A
+  alibabacloud                   Trojan:Win/RA-based.NZN
+
+## 29c252a26f6b8c08a89e...  (Win64:Malware-gen) | Defender: ✗ nicht erkannt
+   Erkannt: 3/74 Engines (4.0%) — ⚠️ KAUM ERKANNT
+  AVG                            Win64:Malware-gen
+  Avast                          Win64:Malware-gen
+  Kaspersky                      UDS:Backdoor.Win32.Androm.wdwl
+
+## 1a4b2bb9352969a3913d...  (Gh0stRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan:Win32/Malgent!MSR
+   Erkannt: 25/74 Engines (33.8%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AhnLab-V3                      Trojan/Win.Generic.C5906946
+  CTX                            exe.trojan.convagent
+  CrowdStrike                    win/malicious_confidence_60% (W)
+  ESET-NOD32                     Generik.BCQQIOW trojan
+  Elastic                        malicious (high confidence)
+  Fortinet                       W32/PossibleThreat
+  GData                          Win32.Trojan.Agent.48BNTR
+  Gridinsoft                     Trojan.Win32.Agent.oa!s1
+  Kingsoft                       Win32.Trojan.Convagent.gen
+  Lionic                         Trojan.Win32.Convagent.4!c
+  Malwarebytes                   Malware.AI.3929881295
+  McAfeeD                        ti!1A4B2BB93529
+  Microsoft                      Trojan:Win32/Malgent!MSR
+  Paloalto                       generic.ml
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Malware.Win32.Gencirc.11e5c823
+  TrendMicro                     Trojan.Win32.ZYX.USBLG526
+  TrendMicro-HouseCall           Trojan.Win32.ZYX.USBLG526
+  Varist                         W32/ABmTrojan.JYXQ-7852
+  Webroot                        Win.Trojan.Gen
+  alibabacloud                   Trojan:Win/Malgent.Gen
+  huorong                        Trojan/Generic!4881FE22A0A70161
