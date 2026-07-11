@@ -1,0 +1,192 @@
+# IOC Export  2026-07-11_02-51-UTC
+# 10 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+ed1565803c87371b03b576b6fcfb47ba3aeebdcfa07010f1c27ed9c91a70b074  # RAT | R=87.5 | QuasarRAT | exe
+c97f1f67e5730c1cb688c7759f5189917c70566480eefa69e873c24cdaa65219  # RAT | R=87.3 | QuasarRAT | exe
+1a4b2bb9352969a3913db57f776dbaa48b03dfb96ce3addfa346e92687b8cf20  # Backdoor | R=76.7 | Gh0stRAT | exe
+b36b132b5d8a5f3a3239302f8ca730c4a76f8abf4783cd670a5f4fd7a35a32c9  # Loader | R=76.4 | Malware | exe
+2db0b1f45b14652b69ec0a626e0d21f33218dd5ef99017f80e010c7744a44b41  # Trojaner | R=76.3 | Yogi | exe
+bdbacc0365e49c8df5d9f604db4bed0a67c161e82c4d6a06cca9bba101db7d30  # Trojaner | R=74.2 | Yogi | exe
+cc4b2f37dfdd748e224622cf88dde7d0bfc016cb81f5b67fc9573b1431b866e8  # Loader | R=72.3 | unbekannt | msi
+60314e99e9c7cf30f9b51fb1956852dafc4d87d996cb56cd05040640cdad99a8  # RAT | R=70.4 | RemcosRAT | exe
+718efee62a3e13cfe598008f7df9cbab9c738dafb2457f93e1ed00bd1a407c97  # Andere / Unbekannt | R=32.2 | unbekannt | xapk
+40ec19f9ca8dd33ca1d90a447ea3b9d2b9dd8691eea1dd5195f4868197c035a2  # Andere / Unbekannt | R=32.2 | unbekannt | xapk
+
+[Tags]
+54e64e
+ClickFix
+Efimer
+Joker
+Malware
+QuasarRAT
+RAT
+RemcosRAT
+dropped-by-Amadey
+exe
+msi
+signed
+xapk
+
+[VT Engine Detections]
+
+## b36b132b5d8a5f3a3239...  (Malware) | Defender: ✗ nicht erkannt
+   Erkannt: 14/74 Engines (18.9%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  Bkav                           W32.Malware.19EC2333
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cynet                          Malicious (score: 100)
+  ESET-NOD32                     Win64/Spy.Agent.AST trojan
+  Elastic                        malicious (high confidence)
+  Kaspersky                      HEUR:Trojan.Win32.Agentb.gen
+  Kingsoft                       Win32.Trojan.Agentb.gen
+  Malwarebytes                   Spyware.Passwordstealer.Generic
+  Microsoft                      PWS:MSIL/Polazert.GA!MTB
+  SentinelOne                    Static AI - Malicious PE
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       malicious.high.ml.score
+  huorong                        TrojanSpy/Stealer.gg
+
+## 2db0b1f45b14652b69ec...  (Yogi) | Defender: ✓ Gen:Variant.Yogi.14068
+   Erkannt: 24/74 Engines (32.4%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Yogi.14068
+  APEX                           Malicious
+  AVG                            FileRepMalware [Misc]
+  Arcabit                        Trojan.Yogi.D36F4
+  Avast                          FileRepMalware [Misc]
+  BitDefender                    Gen:Variant.Yogi.14068
+  CTX                            exe.unknown.yogi
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  ESET-NOD32                     Python/TrojanDropper.Agent.NH trojan
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Gen:Variant.Yogi.14068 (B)
+  GData                          Gen:Variant.Yogi.14068
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan.Python.Agent.gen
+  Kingsoft                       Win32.Troj.Unknown.a
+  Malwarebytes                   Trojan.Dropper
+  MicroWorld-eScan               Gen:Variant.Yogi.14068
+  Microsoft                      Trojan:Win32/Wacatac.C!ml
+  SentinelOne                    Static AI - Suspicious PE
+  Tencent                        Win32.Trojan.Agent.Uwhl
+  TrellixENS                     Artemis!F4C787BB3A1F
+  VIPRE                          Gen:Variant.Yogi.14068
+  Varist                         W64/Agent.MPL.gen!Eldorado
+
+## bdbacc0365e49c8df5d9...  (Yogi) | Defender: ✓ Gen:Variant.Yogi.14068
+   Erkannt: 25/73 Engines (34.2%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Yogi.14068
+  APEX                           Malicious
+  AVG                            FileRepMalware [Misc]
+  Arcabit                        Trojan.Yogi.D36F4
+  Avast                          FileRepMalware [Misc]
+  BitDefender                    Gen:Variant.Yogi.14068
+  Bkav                           W32.Malware.15615620
+  CTX                            exe.unknown.yogi
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  ESET-NOD32                     Python/TrojanDropper.Agent.NH trojan
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Gen:Variant.Yogi.14068 (B)
+  GData                          Gen:Variant.Yogi.14068
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan.Python.Agent.gen
+  Malwarebytes                   Trojan.Dropper
+  MicroWorld-eScan               Gen:Variant.Yogi.14068
+  Microsoft                      Trojan:Win32/Wacatac.C!ml
+  SentinelOne                    Static AI - Suspicious PE
+  Tencent                        Win32.Trojan.Agent.Qsmw
+  TrellixENS                     Artemis!E29DBE534AEF
+  VIPRE                          Gen:Variant.Yogi.14068
+  Varist                         W64/Agent.MPL.gen!Eldorado
+  Webroot                        Win.Trojan.Gen
+
+## 60314e99e9c7cf30f9b5...  (RemcosRAT) | Defender: ✓ Gen:Variant.Rescoms.2
+   Erkannt: 58/74 Engines (78.4%) — ✅ GUT ERKANNT
+  ALYac                          Gen:Variant.Rescoms.2
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Rat]
+  AhnLab-V3                      Backdoor/Win.Remcos.R773589
+  Alibaba                        Backdoor:Win32/Remcos.c21dae4f
+  Antiy-AVL                      Trojan[Backdoor]/Win32.Remcos
+  Arcabit                        Trojan.Rescoms.2
+  Avast                          Win32:MalwareX-gen [Rat]
+  Avira                          BDS/Backdoor.Gen
+  BitDefender                    Gen:Variant.Rescoms.2
+  Bkav                           W32.Malware.E5143C17
+  CTX                            exe.trojan.remcos
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DrWeb                          Trojan.Remcos.1074
+  ESET-NOD32                     Win32/Rescoms.N trojan
+  Elastic                        Windows.Trojan.Remcos
+  Emsisoft                       Gen:Variant.Rescoms.2 (B)
+  F-Secure                       Backdoor.BDS/Backdoor.Gen
+  Fortinet                       W32/Rescomms.B!tr
+  GData                          Gen:Variant.Rescoms.2
+  Google                         Detected
+  Gridinsoft                     Backdoor.Win32.Remcos.sa
+  Ikarus                         Backdoor.Remcos
+  K7AntiVirus                    Backdoor ( 005ce3801 )
+  K7GW                           Backdoor ( 005ce3801 )
+  Kaspersky                      HEUR:Backdoor.Win32.Remcos.gen
+  Kingsoft                       malware.kb.a.1000
+  Lionic                         Trojan.Win32.Remcos.m!c
+  Malwarebytes                   Backdoor.Remcos
+  MaxSecure                      Trojan.Malware.121218.susgen
+  McAfeeD                        Real Protect-LS!7A4E20449744
+  MicroWorld-eScan               Gen:Variant.Rescoms.2
+  Microsoft                      Backdoor:Win32/Remcos.GA!MTB
+  Paloalto                       generic.ml
+  Panda                          Trj/GdSda.A
+  Rising                         Backdoor.Remcos!1.BAC7 (CLASSIC)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        BehavesLike.Win32.Dropper.hh
+  Sophos                         Troj/Remcos-APM
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Trojan.Win32.Remcos.16001234
+  Trapmine                       suspicious.low.ml.score
+  TrellixENS                     RAT/Remcos!7A4E20449744
+  TrendMicro                     Backdoor.Win32.REMCOS.YXGGJZ
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04CA5
+  VBA32                          Backdoor.Remcos
+  VIPRE                          Gen:Variant.Rescoms.2
+  Varist                         W32/Agent.MEX.gen!Eldorado
+  ViRobot                        Trojan.Win.Z.Remcos.525312.J
+  VirIT                          Trojan.Win32.GenusT.FVRY
+  Webroot                        Win.Backdoor.Remcos
+  Zillya                         Trojan.Rescoms.Win32.3324
+  ZoneAlarm                      Troj/Remcos-APM
+  alibabacloud                   Backdoor:Win/Remcos.D
+  huorong                        Backdoor/Remcos.k
+
+## 1a4b2bb9352969a3913d...  (Gh0stRAT) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan:Win32/Malgent!MSR
+   Erkannt: 25/74 Engines (33.8%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AhnLab-V3                      Trojan/Win.Generic.C5906946
+  CTX                            exe.trojan.convagent
+  CrowdStrike                    win/malicious_confidence_60% (W)
+  ESET-NOD32                     Generik.BCQQIOW trojan
+  Elastic                        malicious (high confidence)
+  Fortinet                       W32/PossibleThreat
+  GData                          Win32.Trojan.Agent.48BNTR
+  Gridinsoft                     Trojan.Win32.Agent.oa!s1
+  Kingsoft                       Win32.Trojan.Convagent.gen
+  Lionic                         Trojan.Win32.Convagent.4!c
+  Malwarebytes                   Malware.AI.3929881295
+  McAfeeD                        ti!1A4B2BB93529
+  Microsoft                      Trojan:Win32/Malgent!MSR
+  Paloalto                       generic.ml
+  Sangfor                        Trojan.Win32.Silverfox.Cont
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Malware.Win32.Gencirc.11e5c823
+  TrendMicro                     Trojan.Win32.ZYX.USBLG526
+  TrendMicro-HouseCall           Trojan.Win32.ZYX.USBLG526
+  Varist                         W32/ABmTrojan.JYXQ-7852
+  Webroot                        Win.Trojan.Gen
+  alibabacloud                   Trojan:Win/Malgent.Gen
+  huorong                        Trojan/Generic!4881FE22A0A70161
