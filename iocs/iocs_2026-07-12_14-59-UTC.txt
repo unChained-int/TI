@@ -1,0 +1,123 @@
+# IOC Export  2026-07-12_14-59-UTC
+# 4 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+37f17d0c6adf3a64e516d2a5bdd7114ca7d475b09172f28878ae7d663cb40714  # Loader | R=77.4 | FileRepMalware [Pws] | exe
+4e768cccbab68a463ce0cda76dae71a2a1be0ebadf93f7f7d2ae950d4f944b08  # Trojaner | R=76.2 | Yogi | exe
+368f45e2a86c0e2f36da68db00e55a1ccd1c4277fa41829500f27bee13a10be8  # Ransomware | R=69.5 | WannaCry | exe
+e99541c2d33cbe83ed4d3e4802a3091e02c7050f6ceafed21f26e7d22a1d89b6  # Windows-Malware | R=39.0 | unbekannt | exe
+
+[Tags]
+ClickFix
+D
+EU0.file
+Efimer
+dropped-by-GCleaner
+exe
+signed
+
+[VT Engine Detections]
+
+## 37f17d0c6adf3a64e516...  (FileRepMalware [Pws]) | Defender: ✗ nicht erkannt
+   Erkannt: 12/74 Engines (16.2%) — 🟡 SCHWACH ERKANNT
+  AVG                            FileRepMalware [Pws]
+  Avast                          FileRepMalware [Pws]
+  Bkav                           W32.Malware.ED98009B
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  ESET-NOD32                     WinGo/Kryptik.UP trojan
+  Elastic                        malicious (high confidence)
+  Fortinet                       W64/Kryptik.UF!tr
+  Ikarus                         Trojan.WinGo.Crypt
+  Kaspersky                      VHO:Trojan-PSW.Win32.Lumma.gen
+  McAfeeD                        ti!37F17D0C6ADF
+  Microsoft                      PUA:Win32/Puwaders.C!ml
+  Symantec                       ML.Attribute.HighConfidence
+
+## 4e768cccbab68a463ce0...  (Yogi) | Defender: ✓ Gen:Variant.Yogi.14068
+   Erkannt: 24/74 Engines (32.4%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Yogi.14068
+  APEX                           Malicious
+  AVG                            FileRepMalware [Misc]
+  Arcabit                        Trojan.Yogi.D36F4
+  Avast                          FileRepMalware [Misc]
+  BitDefender                    Gen:Variant.Yogi.14068
+  Bkav                           W32.Malware.C7BC7D4B
+  CTX                            exe.unknown.yogi
+  CrowdStrike                    win/malicious_confidence_90% (W)
+  Cylance                        Unsafe
+  ESET-NOD32                     Python/TrojanDropper.Agent.NH trojan
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Gen:Variant.Yogi.14068 (B)
+  GData                          Gen:Variant.Yogi.14068
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan.Python.Agent.gen
+  Malwarebytes                   Trojan.Dropper
+  MicroWorld-eScan               Gen:Variant.Yogi.14068
+  Microsoft                      Trojan:Win32/Wacatac.C!ml
+  SentinelOne                    Static AI - Suspicious PE
+  Tencent                        Win32.Trojan.Agent.Nqil
+  TrellixENS                     Artemis!2D871EAFA34E
+  VIPRE                          Gen:Variant.Yogi.14068
+  Varist                         W64/Agent.MPL.gen!Eldorado
+
+## 368f45e2a86c0e2f36da...  (WannaCry) ⭐ WOCHEN-SAMPLE | Defender: ✓ Exploit.CVE-2017-0147
+   Erkannt: 59/74 Engines (79.7%) — ✅ GUT ERKANNT
+  ALYac                          Exploit.CVE-2017-0147
+  APEX                           Malicious
+  AVG                            Sf:WNCryLdr-A [Trj]
+  AhnLab-V3                      Trojan/Win32.WannaCryptor.R200894
+  Alibaba                        Ransom:Win32/WannaCrypt.50a
+  Antiy-AVL                      Trojan[Exploit]/Win64.CVE-2017-0147
+  Arcabit                        Exploit.CVE-2017-0147
+  Avast                          Sf:WNCryLdr-A [Trj]
+  Avira                          EXP/W32.CVE-2017-01.B
+  BitDefender                    Exploit.CVE-2017-0147
+  Bkav                           W32.Malware.D2BA0CD1
+  CAT-QuickHeal                  Ransom.WcryG.S28363974
+  CTX                            dll.trojan.wanna
+  ClamAV                         Win.Ransomware.Wanna-9769986-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DrWeb                          Trojan.Encoder.11432
+  ESET-NOD32                     Win64/Exploit.CVE-2017-0147.A trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Exploit.CVE-2017-0147 (B)
+  F-Secure                       Exploit.EXP/W32.CVE-2017-01.B
+  Fortinet                       W64/Wanna.AK!tr
+  GData                          Exploit.CVE-2017-0147
+  Gridinsoft                     Trojan.Win64.Downloader.oa!s1
+  Jiangmin                       Trojan.Wanna.e
+  K7AntiVirus                    Trojan ( 0058feba1 )
+  K7GW                           Trojan ( 0058feba1 )
+  Kaspersky                      Trojan.Win32.Eb.s
+  Kingsoft                       Win32.Exploit.MS17-010.cb
+  Lionic                         Trojan.Win32.Wanna.ts4v
+  Malwarebytes                   CVE20170147.Trojan.Exploit.DDS
+  MaxSecure                      Trojan.Malware.121218.susgen
+  McAfeeD                        Trojan:Win/WannaCry.AA
+  MicroWorld-eScan               Exploit.CVE-2017-0147
+  Microsoft                      Ransom:Win32/WannaCrypt!pz
+  NANO-Antivirus                 Trojan.Win32.Wanna.eovgam
+  Paloalto                       generic.ml
+  Panda                          Trj/GdSda.A
+  Rising                         Exploit.EternalBlue!1.AAED (CLASSIC)
+  Sangfor                        Ransom.Win32.Save.WannaCry
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        Ransom-WannaCry!3C298DB49E26
+  Sophos                         Mal/Wanna-A
+  Symantec                       Ransom.Wannacry
+  TACHYON                        Ransom/W32.WannaCry.5298176
+  Tencent                        Trojan.Win64.Wanna.a
+  TrellixENS                     Ransom-WannaCry!3C298DB49E26
+  TrendMicro                     Trojan.Win32.ZYX.USBLGB26
+  TrendMicro-HouseCall           Trojan.Win32.ZYX.USBLGB26
+  VBA32                          TrojanRansom.Win64.Wanna
+  VIPRE                          Exploit.CVE-2017-0147
+  Varist                         W64/S-e4f863f0!Eldorado
+  Webroot                        W32.Trojan.Gen
+  Yandex                         Trojan.GenAsa!DtE/ovQwFGg
+  Zillya                         Trojan.Wanna.Win32.27
+  ZoneAlarm                      Mal/Wanna-A
+  alibabacloud                   RansomWare:Win/Wannacryptor.6d8dbf74
+  huorong                        Exploit/EquationDrug.a
