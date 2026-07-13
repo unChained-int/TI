@@ -1,0 +1,117 @@
+# IOC Export  2026-07-13_20-59-UTC
+# 6 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+d9824b3a6894de0606a03a23417f1c7e780ee0b5655f724dbfa455601e13eb8e  # Infostealer | R=82.5 | Win32 | exe
+de561c4a3b59f0351d866721a5a204bb9c1396f5a2b4d9140f7385b0c2ea102d  # Loader | R=77.7 | FileRepMalware [Drp] | exe
+368f45e2a86c0e2f36da68db00e55a1ccd1c4277fa41829500f27bee13a10be8  # Ransomware | R=68.7 | WannaCry | exe
+627a15798107d91a19c04b691c85f8aa09f131d155e98c1a681edd21e9bea0f8  # Windows-Malware | R=38.1 | unbekannt | exe
+2c6011645daa6ea192a6a23ef564753e20b4f65e7b90b7e202ff84a835fcdc27  # Skript/Dropper | R=38.0 | AgentTesla | js
+81c589fae253795f2a6625709d192409df2349b929b3ea692b8ea3af08767ffd  # Windows-Malware | R=38.0 | AgentTesla | exe
+
+[Tags]
+AgentTesla
+AsgardProtector
+C
+ClickFix
+Efimer
+MIX5.file
+RemusStealer
+dropped-by-GCleaner
+dropped-by-OffLoader
+exe
+js
+signed
+
+[VT Engine Detections]
+
+## de561c4a3b59f0351d86...  (FileRepMalware [Drp]) | Defender: ✗ nicht erkannt
+   Erkannt: 12/74 Engines (16.2%) — 🟡 SCHWACH ERKANNT
+  AVG                            FileRepMalware [Drp]
+  Avast                          FileRepMalware [Drp]
+  Bkav                           W32.Malware.89F35A6F
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  ESET-NOD32                     Win32/GenKryptik.HRYH trojan
+  Elastic                        malicious (high confidence)
+  McAfeeD                        ti!DE561C4A3B59
+  NANO-Antivirus                 Trojan.Win32.Lumma.lieejt
+  Panda                          Trj/Genetic.gen
+  Sangfor                        Trojan.Win32.Save.a
+  Symantec                       ML.Attribute.HighConfidence
+  Webroot                        Win.Trojan.Gen
+
+## d9824b3a6894de0606a0...  (Win32) | Defender: ✗ nicht erkannt
+   Erkannt: 11/74 Engines (14.9%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  Cylance                        Unsafe
+  Elastic                        malicious (high confidence)
+  Gridinsoft                     Spy.Win32.Redline.lu!heur
+  Kaspersky                      UDS:Backdoor.Win32.Agent
+  Malwarebytes                   RiskWare.Script.Generic
+  McAfeeD                        ti!D9824B3A6894
+  Sangfor                        Trojan.Win32.Save.a
+  Skyhigh                        BehavesLike.Win32.Dropper.tc
+  Trapmine                       malicious.high.ml.score
+
+## 368f45e2a86c0e2f36da...  (WannaCry) ⭐ WOCHEN-SAMPLE | Defender: ✓ Exploit.CVE-2017-0147
+   Erkannt: 59/74 Engines (79.7%) — ✅ GUT ERKANNT
+  ALYac                          Exploit.CVE-2017-0147
+  APEX                           Malicious
+  AVG                            Sf:WNCryLdr-A [Trj]
+  AhnLab-V3                      Trojan/Win32.WannaCryptor.R200894
+  Alibaba                        Ransom:Win32/WannaCrypt.50a
+  Antiy-AVL                      Trojan[Exploit]/Win64.CVE-2017-0147
+  Arcabit                        Exploit.CVE-2017-0147
+  Avast                          Sf:WNCryLdr-A [Trj]
+  Avira                          EXP/W32.CVE-2017-01.B
+  BitDefender                    Exploit.CVE-2017-0147
+  Bkav                           W32.Malware.D2BA0CD1
+  CAT-QuickHeal                  Ransom.WcryG.S28363974
+  CTX                            dll.trojan.wanna
+  ClamAV                         Win.Ransomware.Wanna-9769986-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DrWeb                          Trojan.Encoder.11432
+  ESET-NOD32                     Win64/Exploit.CVE-2017-0147.A trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Exploit.CVE-2017-0147 (B)
+  F-Secure                       Exploit.EXP/W32.CVE-2017-01.B
+  Fortinet                       W64/Wanna.AK!tr
+  GData                          Exploit.CVE-2017-0147
+  Gridinsoft                     Trojan.Win64.Downloader.oa!s1
+  Jiangmin                       Trojan.Wanna.e
+  K7AntiVirus                    Trojan ( 0058feba1 )
+  K7GW                           Trojan ( 0058feba1 )
+  Kaspersky                      Trojan.Win32.Eb.s
+  Kingsoft                       Win32.Exploit.MS17-010.cb
+  Lionic                         Trojan.Win32.Wanna.ts4v
+  Malwarebytes                   CVE20170147.Trojan.Exploit.DDS
+  MaxSecure                      Trojan.Malware.121218.susgen
+  McAfeeD                        Trojan:Win/WannaCry.AA
+  MicroWorld-eScan               Exploit.CVE-2017-0147
+  Microsoft                      Ransom:Win32/WannaCrypt!pz
+  NANO-Antivirus                 Trojan.Win32.Wanna.eovgam
+  Paloalto                       generic.ml
+  Panda                          Trj/GdSda.A
+  Rising                         Exploit.EternalBlue!1.AAED (CLASSIC)
+  Sangfor                        Ransom.Win32.Save.WannaCry
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        Ransom-WannaCry!3C298DB49E26
+  Sophos                         Mal/Wanna-A
+  Symantec                       Ransom.Wannacry
+  TACHYON                        Ransom/W32.WannaCry.5298176
+  Tencent                        Trojan.Win64.Wanna.a
+  TrellixENS                     Ransom-WannaCry!3C298DB49E26
+  TrendMicro                     Trojan.Win32.ZYX.USBLGB26
+  TrendMicro-HouseCall           Trojan.Win32.ZYX.USBLGB26
+  VBA32                          TrojanRansom.Win64.Wanna
+  VIPRE                          Exploit.CVE-2017-0147
+  Varist                         W64/S-e4f863f0!Eldorado
+  Webroot                        W32.Trojan.Gen
+  Yandex                         Trojan.GenAsa!DtE/ovQwFGg
+  Zillya                         Trojan.Wanna.Win32.27
+  ZoneAlarm                      Mal/Wanna-A
+  alibabacloud                   RansomWare:Win/Wannacryptor.6d8dbf74
+  huorong                        Exploit/EquationDrug.a
