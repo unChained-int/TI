@@ -1,0 +1,119 @@
+# IOC Export  2026-07-17_17-16-UTC
+# 9 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+7ef71165b0dd233fd0f5642d2a4e1e36fddc5656a209236d80460d50417fae76  # Infostealer | R=88.5 | Stealc | exe
+a5481e564046c6e27c76121ac90b7e3acaf63958bbd22a01bcb7398ba24ea863  # Infostealer | R=82.0 | SalatStealer | exe
+1ff74838c6c09b784495f192c25ac00ea8d1537764822bf82a4b1a6d55217dca  # Botnet/IoT | R=77.7 | FDG trojan | elf
+fb952ba3d10a44d3c552d180fab769b0e622cc043a5956a4b59e700a18a104fe  # Loader | R=74.6 | unbekannt | js
+368f45e2a86c0e2f36da68db00e55a1ccd1c4277fa41829500f27bee13a10be8  # Ransomware | R=68.3 | WannaCry | exe
+ef8bb83a9be7d70ff03d653e5b8769bcb99c529b33a15874efd2d3439c63acf1  # Windows-Malware | R=54.4 | unbekannt | msi
+259bf007e7d2e4ff4c35e611aa94978051d0b36de44a3e04fa453d453d15cb97  # Windows-Malware | R=38.8 | unbekannt | exe
+9174fe7f2addfc20d8409a83eb3f5958a9c7b0ac86405929771a16a6ccabc921  # Skript/Dropper | R=38.0 | MassLogger | js
+085671dd2b9f5f4041dbf6a8d7e888f2209f691ac155b929d226305113b39f0f  # Windows-Malware | R=37.9 | unbekannt | exe
+
+[Tags]
+54e64e
+ClickFix
+Efimer
+JavaScript
+MassLogger
+Stealc
+Ukraine
+dropped-by-Amadey
+elf
+exe
+infostealer
+js
+loader
+malspam
+msi
+payload
+salat
+salatstealer
+signed
+upx
+
+[VT Engine Detections]
+
+## 7ef71165b0dd233fd0f5...  (Stealc) | Defender: ✗ nicht erkannt
+   Erkannt: 11/74 Engines (14.9%) — 🟡 SCHWACH ERKANNT
+  AhnLab-V3                      Trojan/Win.Generic.C5906729
+  Bkav                           W32.Malware.497D6621
+  ESET-NOD32                     WinGo/TrojanDropper.Agent.ND trojan
+  Elastic                        malicious (high confidence)
+  Google                         Detected
+  Ikarus                         Trojan.WinGo.Crypt
+  Kaspersky                      HEUR:Trojan.Script.Generic
+  Malwarebytes                   Spyware.Stealer.GO
+  Rising                         Malware.Undefined!8.C (TFE:dGZlOikd5GPRt4g0Lw)
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       malicious.moderate.ml.score
+
+## 1ff74838c6c09b784495...  (FDG trojan) | Defender: ✗ nicht erkannt
+   Erkannt: 2/74 Engines (2.7%) — ⚠️ KAUM ERKANNT
+  ESET-NOD32                     Linux/Mirai.FDG trojan
+  Kaspersky                      HEUR:Trojan.Linux.Agent.vn
+
+## 368f45e2a86c0e2f36da...  (WannaCry) ⭐ WOCHEN-SAMPLE | Defender: ✓ Exploit.CVE-2017-0147
+   Erkannt: 60/74 Engines (81.1%) — ✅ GUT ERKANNT
+  ALYac                          Exploit.CVE-2017-0147
+  APEX                           Malicious
+  AVG                            Sf:WNCryLdr-A [Trj]
+  AhnLab-V3                      Trojan/Win32.WannaCryptor.R200894
+  Alibaba                        Ransom:Win32/WannaCrypt.50a
+  Antiy-AVL                      Trojan[Exploit]/Win64.CVE-2017-0147
+  Arcabit                        Exploit.CVE-2017-0147
+  Avast                          Sf:WNCryLdr-A [Trj]
+  Avira                          EXP/W32.CVE-2017-01.B
+  BitDefender                    Exploit.CVE-2017-0147
+  Bkav                           W32.Malware.D2BA0CD1
+  CAT-QuickHeal                  Ransom.WcryG.S28363974
+  CTX                            dll.trojan.wanna
+  ClamAV                         Win.Ransomware.Wanna-9769986-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DrWeb                          Trojan.Encoder.11432
+  ESET-NOD32                     Win64/Exploit.CVE-2017-0147.A trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Exploit.CVE-2017-0147 (B)
+  F-Secure                       Exploit.EXP/W32.CVE-2017-01.B
+  Fortinet                       W64/Wanna.AK!tr
+  GData                          Exploit.CVE-2017-0147
+  Gridinsoft                     Trojan.Win64.Downloader.oa!s1
+  Jiangmin                       Trojan.Wanna.e
+  K7AntiVirus                    Trojan ( 0058feba1 )
+  K7GW                           Trojan ( 0058feba1 )
+  Kaspersky                      Trojan.Win32.Eb.s
+  Kingsoft                       Win32.Exploit.MS17-010.cb
+  Lionic                         Trojan.Win32.Wanna.ts4v
+  Malwarebytes                   CVE20170147.Trojan.Exploit.DDS
+  MaxSecure                      Trojan.Malware.121218.susgen
+  McAfeeD                        Trojan:Win/WannaCry.AA
+  MicroWorld-eScan               Exploit.CVE-2017-0147
+  Microsoft                      Ransom:Win32/WannaCrypt!pz
+  NANO-Antivirus                 Trojan.Win32.Wanna.eovgam
+  Paloalto                       generic.ml
+  Panda                          Trj/GdSda.A
+  Rising                         Exploit.EternalBlue!1.AAED (CLASSIC)
+  Sangfor                        Ransom.Win32.Save.WannaCry
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        Ransom-WannaCry!3C298DB49E26
+  Sophos                         Mal/Wanna-A
+  Symantec                       Ransom.Wannacry
+  TACHYON                        Ransom/W32.WannaCry.5298176
+  Tencent                        Trojan.Win64.Wanna.a
+  TrellixENS                     Ransom-WannaCry!3C298DB49E26
+  TrendMicro                     Trojan.Win32.ZYX.USBLGB26
+  TrendMicro-HouseCall           Trojan.Win32.ZYX.USBLGB26
+  VBA32                          TrojanRansom.Win64.Wanna
+  VIPRE                          Exploit.CVE-2017-0147
+  Varist                         W64/S-e4f863f0!Eldorado
+  ViRobot                        Trojan.Win.Z.Cve_2017_0147.5298176.W
+  Webroot                        W32.Trojan.Gen
+  Yandex                         Trojan.GenAsa!DtE/ovQwFGg
+  Zillya                         Trojan.Wanna.Win32.27
+  ZoneAlarm                      Mal/Wanna-A
+  alibabacloud                   RansomWare:Win/Wannacryptor
+  huorong                        Exploit/EquationDrug.a
