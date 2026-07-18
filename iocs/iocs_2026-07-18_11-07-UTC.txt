@@ -1,0 +1,141 @@
+# IOC Export  2026-07-18_11-07-UTC
+# 13 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+a92b69a3b80cb026568a05ce6fd025a06c02d791044c427b847c75cc6bbac2a5  # RAT | R=89.2 | njrat | js
+840626f21fed3a7ef96f53a7ee2ebc04599ab21d937edba74b9988cd8358f26d  # Botnet/IoT | R=84.0 | Mirai | elf
+56ab05c3daa0d6b7b07aecd6070c9124be15827a59d7a92a0d9b0531ec238882  # Infostealer | R=82.2 | unbekannt | exe
+4064751d6ed35f47bb7ec33fe06c6403627a42d1dfd357677272aff4ee068617  # RAT | R=80.7 | unbekannt | exe
+6c9020a812a13890e4f7f7b16f7ec4512385e3c9ad86bc62ac7ba5a6bd6673b4  # Trojaner | R=72.3 | SilentNet | exe
+368f45e2a86c0e2f36da68db00e55a1ccd1c4277fa41829500f27bee13a10be8  # Ransomware | R=68.3 | WannaCry | exe
+87e7393996e5c578b05e9a2b6e128bc3c71a98c8b615eb48a2b87d5f47fcea1b  # Linux-Malware | R=42.1 | Prometei | elf
+ebe4b50a4ea0130f7fb9277eb113d6fb2668b6983c2be4477b163aa812b2b8a4  # Windows-Malware | R=38.9 | unbekannt | exe
+5bc683643d4dc2728495166a47414cd9e1e2f17585cb9594b365d79d339d9a0b  # Windows-Malware | R=38.0 | unbekannt | exe
+dc1c11362eda132de770952fdef0e8336f3ed20af3e3653d23146f0a8d150ba2  # Andere / Unbekannt | R=32.6 | unbekannt | jar
+c4c54cb866c200c96e4271627195ad6cb15fdb7397596a2a5db87683b5cb3f96  # Andere / Unbekannt | R=32.6 | unbekannt | jar
+a01054dc791313db934c5f1db7272d22823ce8f39b0dec5704fa35c09e6f1e70  # Andere / Unbekannt | R=31.9 | unbekannt | unknown
+9dedcdae01e9c26a0fb7fac6ddfb945f5e5cde6530030a1df0c3f1b2f94f9999  # Andere / Unbekannt | R=31.9 | unbekannt | sh
+
+[Tags]
+ClickFix
+Efimer
+Mirai
+Prometei
+Rat
+SilentNet
+SilverFox
+ValleyRAT
+elf
+exe
+jar
+js
+njrat
+sh
+stealer
+wraith
+
+[VT Engine Detections]
+
+## 6c9020a812a13890e4f7...  (SilentNet) | Defender: ✓ Generic.Dacic.11262.192A74B1
+   Erkannt: 38/74 Engines (51.3%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Generic.Dacic.11262.192A74B1
+  APEX                           Malicious
+  AVG                            Win64:MalwareX-gen [Misc]
+  AhnLab-V3                      Malware/Win.Dacic.R769932
+  Antiy-AVL                      Trojan/Win64.Convagent
+  Arcabit                        Generic.Dacic.11262.192A74B1
+  Avast                          Win64:MalwareX-gen [Misc]
+  Avira                          TR/W64.Agent
+  BitDefender                    Generic.Dacic.11262.192A74B1
+  Bkav                           W32.Malware.AD3CD21
+  CTX                            exe.unknown.dacic
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Win64/Agent_AGen.MCC trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Generic.Dacic.11262.192A74B1 (B)
+  F-Secure                       Trojan.TR/W64.Agent
+  Fortinet                       W64/Agent.MCC!tr
+  GData                          Generic.Dacic.11262.192A74B1
+  Google                         Detected
+  Gridinsoft                     Trojan.Win64.Agent.oa!s1
+  K7AntiVirus                    Trojan ( 006dd7ed1 )
+  K7GW                           Trojan ( 006dd7ed1 )
+  Kaspersky                      HEUR:Trojan.Win64.Convagent.gen
+  MaxSecure                      Trojan.Malware.121218.susgen
+  McAfeeD                        ti!6C9020A812A1
+  MicroWorld-eScan               Generic.Dacic.11262.192A74B1
+  Microsoft                      Trojan:Win64/Convagent.RVA!MTB
+  Paloalto                       generic.ml
+  Panda                          Trj/GdSda.A
+  Rising                         Trojan.Agent/x64!1.13F42 (CLASSIC)
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Malware.Win32.Gencirc.10c4701c
+  VIPRE                          Generic.Dacic.11262.192A74B1
+  Varist                         W64/Convagent.FI.gen!Eldorado
+  Webroot                        Win.Trojan.Gen
+  huorong                        Backdoor/Agent.rv
+
+## 368f45e2a86c0e2f36da...  (WannaCry) ⭐ WOCHEN-SAMPLE | Defender: ✓ Exploit.CVE-2017-0147
+   Erkannt: 60/74 Engines (81.1%) — ✅ GUT ERKANNT
+  ALYac                          Exploit.CVE-2017-0147
+  APEX                           Malicious
+  AVG                            Sf:WNCryLdr-A [Trj]
+  AhnLab-V3                      Trojan/Win32.WannaCryptor.R200894
+  Alibaba                        Ransom:Win32/WannaCrypt.50a
+  Antiy-AVL                      Trojan[Exploit]/Win64.CVE-2017-0147
+  Arcabit                        Exploit.CVE-2017-0147
+  Avast                          Sf:WNCryLdr-A [Trj]
+  Avira                          EXP/W32.CVE-2017-01.B
+  BitDefender                    Exploit.CVE-2017-0147
+  Bkav                           W32.Malware.D2BA0CD1
+  CAT-QuickHeal                  Ransom.WcryG.S28363974
+  CTX                            dll.trojan.wanna
+  ClamAV                         Win.Ransomware.Wanna-9769986-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DrWeb                          Trojan.Encoder.11432
+  ESET-NOD32                     Win64/Exploit.CVE-2017-0147.A trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Exploit.CVE-2017-0147 (B)
+  F-Secure                       Exploit.EXP/W32.CVE-2017-01.B
+  Fortinet                       W64/Wanna.AK!tr
+  GData                          Exploit.CVE-2017-0147
+  Gridinsoft                     Trojan.Win64.Downloader.oa!s1
+  Jiangmin                       Trojan.Wanna.e
+  K7AntiVirus                    Trojan ( 0058feba1 )
+  K7GW                           Trojan ( 0058feba1 )
+  Kaspersky                      Trojan.Win32.Eb.s
+  Kingsoft                       Win32.Exploit.MS17-010.cb
+  Lionic                         Trojan.Win32.Wanna.ts4v
+  Malwarebytes                   CVE20170147.Trojan.Exploit.DDS
+  MaxSecure                      Trojan.Malware.121218.susgen
+  McAfeeD                        Trojan:Win/WannaCry.AA
+  MicroWorld-eScan               Exploit.CVE-2017-0147
+  Microsoft                      Ransom:Win32/WannaCrypt!pz
+  NANO-Antivirus                 Trojan.Win32.Wanna.eovgam
+  Paloalto                       generic.ml
+  Panda                          Trj/GdSda.A
+  Rising                         Exploit.EternalBlue!1.AAED (CLASSIC)
+  Sangfor                        Ransom.Win32.Save.WannaCry
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        Ransom-WannaCry!3C298DB49E26
+  Sophos                         Mal/Wanna-A
+  Symantec                       Ransom.Wannacry
+  TACHYON                        Ransom/W32.WannaCry.5298176
+  Tencent                        Trojan.Win64.Wanna.a
+  TrellixENS                     Ransom-WannaCry!3C298DB49E26
+  TrendMicro                     Trojan.Win32.ZYX.USBLGB26
+  TrendMicro-HouseCall           Trojan.Win32.ZYX.USBLGB26
+  VBA32                          TrojanRansom.Win64.Wanna
+  VIPRE                          Exploit.CVE-2017-0147
+  Varist                         W64/S-e4f863f0!Eldorado
+  ViRobot                        Trojan.Win.Z.Cve_2017_0147.5298176.W
+  Webroot                        W32.Trojan.Gen
+  Yandex                         Trojan.GenAsa!DtE/ovQwFGg
+  Zillya                         Trojan.Wanna.Win32.27
+  ZoneAlarm                      Mal/Wanna-A
+  alibabacloud                   RansomWare:Win/Wannacryptor
+  huorong                        Exploit/EquationDrug.a
