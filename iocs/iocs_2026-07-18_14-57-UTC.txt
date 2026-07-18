@@ -1,0 +1,150 @@
+# IOC Export  2026-07-18_14-57-UTC
+# 15 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+126eb47aa5e13a13a28ff46132ff4f5de29a402cef42a1477986d4d83defdb79  # Botnet/IoT | R=83.8 | Mirai | elf
+9004c2c67764bfbe7db1b7750d18522aaaa005030698bc4302cfa188ff3f5465  # Botnet/IoT | R=83.7 | Mirai | elf
+ccc3cd3605d7c033a1c17030e047bcafd0f33cac1cc9276740c46dc4228f2070  # Botnet/IoT | R=83.2 | Mirai | elf
+6e8fcfe6f1b703988e5f1180d3cd7f6fe9ba30417c431ae1112f08a0e8dcac75  # Loader | R=79.9 | Malware | exe
+8a3ef0ee8c3fc64a05925bb43b9d3b476e1ce598df7722ff14eae8114e7e9ff0  # Loader | R=79.0 | Malware | exe
+35866c8dd804e5c6cdadceef84051cd22dae0156a5719877d5447cf08bda137e  # Botnet/IoT | R=77.4 | Mirai | elf
+368f45e2a86c0e2f36da68db00e55a1ccd1c4277fa41829500f27bee13a10be8  # Ransomware | R=68.3 | WannaCry | exe
+fee3b9009f003b9900de233902b0ea940737c2247bea5f02b6736f2dd45e2b1f  # Linux-Malware | R=42.6 | unbekannt | elf
+9c24cd15ff8659a2cbc52676a8ce04a576b8f64e3c763925b9bfcac29af7a39b  # Linux-Malware | R=42.0 | unbekannt | elf
+b63daf45041eba44ab693bee7ed73bf7443ef85a847d85000bbc0230073971bf  # Linux-Malware | R=42.0 | unbekannt | elf
+70a09164266c41c646cce03cabacbed9af127717bd4cd3d38966dc76293ce650  # Windows-Malware | R=39.1 | unbekannt | exe
+778fe34bf8104d8c3247d12d01bea8faf81d55caf99451f526e70e0053c1868c  # Windows-Malware | R=38.1 | unbekannt | exe
+3726a868f25fdd0f52e611b526bd09d7de06922c655cd35b20224f7ac3b5abbf  # Andere / Unbekannt | R=32.5 | unbekannt | unknown
+56c03f8a68edf006d1e5e15ff15d64fa89b00ae4c8f006de581dca0eb2fec6e4  # Andere / Unbekannt | R=31.6 | unbekannt | sh
+1f266ba51ee26b0b2004f51e9034a59ac8aa6f2c3d51859cfd1a5d0111f1b44a  # Andere / Unbekannt | R=31.4 | unbekannt | sh
+
+[Tags]
+54e64e
+9d2ca3
+ClickFix
+Efimer
+Mirai
+dropped-by-Amadey
+elf
+exe
+sh
+signed
+upx
+upx-dec
+wraith
+
+[VT Engine Detections]
+
+## 6e8fcfe6f1b703988e5f...  (Malware) | Defender: ✗ nicht erkannt
+   Erkannt: 5/74 Engines (6.8%) — ⚠️ KAUM ERKANNT
+  APEX                           Malicious
+  Bkav                           W32.Malware.45A06C5A
+  ESET-NOD32                     WinGo/Kryptik_AGen.BR trojan
+  Elastic                        malicious (high confidence)
+  huorong                        Trojan/W64.Agent.bc!crit
+
+## 35866c8dd804e5c6cdad...  (Mirai) | Defender: ✓ Gen:Variant.Linux.DDoS.2
+   Erkannt: 31/74 Engines (41.9%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Linux.DDoS.2
+  AVG                            ELF:Mirai-CBI [Cryp]
+  AhnLab-V3                      Linux/Mirai.Gen15
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  Arcabit                        Trojan.Linux.DDoS.2
+  Avast                          ELF:Mirai-CBI [Cryp]
+  Avira                          TR/LINUX.Mirai.CBI
+  BitDefender                    Gen:Variant.Linux.DDoS.2
+  CTX                            elf.ddos.generic
+  ClamAV                         Unix.Dropper.Mirai-7135858-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9816
+  ESET-NOD32                     Linux/Mirai.PU trojan
+  Emsisoft                       Gen:Variant.Linux.DDoS.2 (B)
+  F-Secure                       Trojan.TR/LINUX.Mirai.CBI
+  Fortinet                       ELF/Mirai.A!tr
+  GData                          Gen:Variant.Linux.DDoS.2
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Gafgyt
+  Jiangmin                       Backdoor.Linux.bner
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.r
+  MicroWorld-eScan               Gen:Variant.Linux.DDoS.2
+  Microsoft                      Backdoor:Linux/Mirai.BJ!MTB
+  Rising                         Backdoor.Mirai/Linux!1.1343B (CLASSIC)
+  SentinelOne                    Static AI - Malicious ELF
+  Symantec                       Linux.Mirai
+  Tencent                        Backdoor.Linux.Mirai.wcg
+  VIPRE                          Gen:Variant.Linux.DDoS.2
+  Varist                         E32/Mirai.HS.gen!Eldorado
+  alibabacloud                   DDOS:Linux/Mirai
+  huorong                        Backdoor/Linux.Mirai.dh
+
+## 8a3ef0ee8c3fc64a0592...  (Malware) | Defender: ✗ nicht erkannt
+   Erkannt: 6/74 Engines (8.1%) — ⚠️ KAUM ERKANNT
+  APEX                           Malicious
+  Bkav                           W32.Malware.78CA8765
+  ESET-NOD32                     WinGo/Kryptik_AGen.BR trojan
+  Elastic                        malicious (high confidence)
+  Symantec                       ML.Attribute.HighConfidence
+  huorong                        Trojan/W64.Agent.bc!crit
+
+## 368f45e2a86c0e2f36da...  (WannaCry) ⭐ WOCHEN-SAMPLE | Defender: ✓ Exploit.CVE-2017-0147
+   Erkannt: 60/74 Engines (81.1%) — ✅ GUT ERKANNT
+  ALYac                          Exploit.CVE-2017-0147
+  APEX                           Malicious
+  AVG                            Sf:WNCryLdr-A [Trj]
+  AhnLab-V3                      Trojan/Win32.WannaCryptor.R200894
+  Alibaba                        Ransom:Win32/WannaCrypt.50a
+  Antiy-AVL                      Trojan[Exploit]/Win64.CVE-2017-0147
+  Arcabit                        Exploit.CVE-2017-0147
+  Avast                          Sf:WNCryLdr-A [Trj]
+  Avira                          EXP/W32.CVE-2017-01.B
+  BitDefender                    Exploit.CVE-2017-0147
+  Bkav                           W32.Malware.D2BA0CD1
+  CAT-QuickHeal                  Ransom.WcryG.S28363974
+  CTX                            dll.trojan.wanna
+  ClamAV                         Win.Ransomware.Wanna-9769986-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DrWeb                          Trojan.Encoder.11432
+  ESET-NOD32                     Win64/Exploit.CVE-2017-0147.A trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Exploit.CVE-2017-0147 (B)
+  F-Secure                       Exploit.EXP/W32.CVE-2017-01.B
+  Fortinet                       W64/Wanna.AK!tr
+  GData                          Exploit.CVE-2017-0147
+  Gridinsoft                     Trojan.Win64.Downloader.oa!s1
+  Jiangmin                       Trojan.Wanna.e
+  K7AntiVirus                    Trojan ( 0058feba1 )
+  K7GW                           Trojan ( 0058feba1 )
+  Kaspersky                      Trojan.Win32.Eb.s
+  Kingsoft                       Win32.Exploit.MS17-010.cb
+  Lionic                         Trojan.Win32.Wanna.ts4v
+  Malwarebytes                   CVE20170147.Trojan.Exploit.DDS
+  MaxSecure                      Trojan.Malware.121218.susgen
+  McAfeeD                        Trojan:Win/WannaCry.AA
+  MicroWorld-eScan               Exploit.CVE-2017-0147
+  Microsoft                      Ransom:Win32/WannaCrypt!pz
+  NANO-Antivirus                 Trojan.Win32.Wanna.eovgam
+  Paloalto                       generic.ml
+  Panda                          Trj/GdSda.A
+  Rising                         Exploit.EternalBlue!1.AAED (CLASSIC)
+  Sangfor                        Ransom.Win32.Save.WannaCry
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        Ransom-WannaCry!3C298DB49E26
+  Sophos                         Mal/Wanna-A
+  Symantec                       Ransom.Wannacry
+  TACHYON                        Ransom/W32.WannaCry.5298176
+  Tencent                        Trojan.Win64.Wanna.a
+  TrellixENS                     Ransom-WannaCry!3C298DB49E26
+  TrendMicro                     Trojan.Win32.ZYX.USBLGB26
+  TrendMicro-HouseCall           Trojan.Win32.ZYX.USBLGB26
+  VBA32                          TrojanRansom.Win64.Wanna
+  VIPRE                          Exploit.CVE-2017-0147
+  Varist                         W64/S-e4f863f0!Eldorado
+  ViRobot                        Trojan.Win.Z.Cve_2017_0147.5298176.W
+  Webroot                        W32.Trojan.Gen
+  Yandex                         Trojan.GenAsa!DtE/ovQwFGg
+  Zillya                         Trojan.Wanna.Win32.27
+  ZoneAlarm                      Mal/Wanna-A
+  alibabacloud                   RansomWare:Win/Wannacryptor
+  huorong                        Exploit/EquationDrug.a
