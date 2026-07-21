@@ -1,0 +1,110 @@
+# IOC Export  2026-07-21_21-13-UTC
+# 26 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+764432a2592954ad4cf70f8c62b46ee81e55457b66b972e77de3e51017c02b10  # Infostealer | R=89.2 | Formbook | exe
+4977440daf9c3c16cd86e641233a44c581c020ef538e7212e7b68eb4910ca7cd  # Botnet/IoT | R=84.2 | Mirai | elf
+522f6221c4e04ddffafba732722abba1b5000736d380bd779c67e6fe69f743e1  # Botnet/IoT | R=84.2 | Mirai | elf
+34dcd1d45a2d5021378d51deb542b6220cb203dd6711b369eeb4035c50f57016  # Botnet/IoT | R=84.0 | Mirai | elf
+70e4229a67b7459a9e361ac0e855130902239517766b2d0001277eb8d62d5a85  # Botnet/IoT | R=84.0 | Mirai | elf
+d71578b74b7d7d6513292e2d4cae8e8518f49e321fbed3d2812a6712da7dc241  # Botnet/IoT | R=83.7 | Mirai | elf
+692757b81ed8e5c17634d5c95e91d6201a9329e232281e8eda98d502ea821837  # Botnet/IoT | R=83.7 | Mirai | elf
+721d764d2d1985eefb42fee9e1e2f05d4f4f35bbec216b952cdad74b0ac90cd1  # Botnet/IoT | R=83.5 | Mirai | elf
+d09734cfd61eacf4678a92e6b5a5f4360cf0f4405107af08a2c33040ee8e2758  # Botnet/IoT | R=83.1 | Mirai | sh
+65600a05592216cdef98173f4202b141dec19b2955e59dc518b2efc46f5969fc  # Botnet/IoT | R=76.0 | unbekannt | elf
+9539c6ce1df04714b2d3d44813611a6b7c39afa2be5a592ab9a16361d0a3445a  # Botnet/IoT | R=75.8 | Linux.Generic.Threat | elf
+8c1654ad1df9e9bf1c450657b12eb269d999934b83bbfdd59cbb886c6550f283  # Loader | R=74.5 | unbekannt | exe
+a42d6c45a80c597e1ced0c59b76761d95ada94c7510176f32186eab043d85e25  # Loader | R=73.9 | unbekannt | exe
+963bc9177e8197dc8ef79a8553408eff26ca9c4bb297fca8ded0ee15a759fabb  # Spyware | R=56.4 | MaskGramStealer | exe
+5606abbe1c7877225704f709f95854ded5d384cbc06dc1a55230f31c26e485bd  # Linux-Malware | R=43.2 | unbekannt | elf
+86a058d461cdc5486430c2f6b1800235a8fbfdbe7d1af4af5d2d2d2f003c7634  # Linux-Malware | R=43.2 | unbekannt | elf
+773fc40e2f9d7576f597d501744e4397da0da71d4cbf1c05aeccf0b0e7048492  # Linux-Malware | R=43.0 | unbekannt | elf
+6e94135ab277c29528467561e79cbacf505d6fe36808757b88a6449950614e64  # Linux-Malware | R=42.5 | unbekannt | elf
+08916c59ba59c089e9d1140b6efa03611785e5c40d907cbb797e0f958be2dc29  # Windows-Malware | R=38.8 | unbekannt | exe
+ee727d639eaa4ee2e0d7cafbe496e14aaac8df0955d9fb599f2c11dfa1d0f8f2  # Windows-Malware | R=38.3 | unbekannt | msi
+46b426b6e25231d731d7cb2822f1435f65778f168c9d838568e9012d3507abda  # Windows-Malware | R=38.3 | unbekannt | exe
+90c46ec7e2400e4999afe7ad56f205afecb41041493ae2884c76666a77c82f8b  # Windows-Malware | R=37.9 | unbekannt | exe
+d475c3caf477bd0e4aebbce33f062d4d42a3533e28b76d2ad23c709d013e7926  # Andere / Unbekannt | R=31.6 | unbekannt | sh
+3e23264ad27f2fc6efae4b9469b4b39b63abbad259232c4e2a9c88f675f321d1  # Andere / Unbekannt | R=31.4 | unbekannt | sh
+6dba2863b6bed92250804e7e550cd2c99ead12a76ce7757faf4d7a9587652ecb  # Andere / Unbekannt | R=31.3 | unbekannt | sh
+6ebfabcd22e55264ba426eb848e2b6e9f3def9df184ffc2724c5d585c54269cc  # Andere / Unbekannt | R=31.2 | unbekannt | sh
+
+[Tags]
+54e64e
+ClickFix
+Efimer
+Formbook
+Mirai
+dropped-by-Amadey
+dropped-by-OffLoader
+elf
+exe
+msi
+sh
+signed
+
+[VT Engine Detections]
+
+## 9539c6ce1df04714b2d3...  (Linux.Generic.Threat) | Defender: ✗ nicht erkannt
+   Erkannt: 10/74 Engines (13.5%) — 🟡 SCHWACH ERKANNT
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  ESET-NOD32                     Linux/Mirai.FDS trojan
+  Elastic                        Linux.Generic.Threat
+  Google                         Detected
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.b
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  SentinelOne                    Static AI - Malicious ELF
+  Tencent                        Linux.Backdoor.Mirai.Fkjl
+  Varist                         E32/Mirai.BS.gen!Eldorado
+  huorong                        Trojan/Linux.Mirai.it
+
+## 963bc9177e8197dc8ef7...  (MaskGramStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Lazy.729125
+   Erkannt: 48/74 Engines (64.9%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Lazy.729125
+  APEX                           Malicious
+  AVG                            Win64:Evo-gen [Trj]
+  AhnLab-V3                      Trojan/Win.Generic.R782599
+  Alibaba                        TrojanSpy:Win64/MaskgramStealer.79b004f6
+  Antiy-AVL                      Trojan/Win32.Agentb
+  Arcabit                        Trojan.Lazy.DB2025
+  Avast                          Win64:Evo-gen [Trj]
+  Avira                          TR/W64.Evo
+  BitDefender                    Gen:Variant.Lazy.729125
+  CTX                            exe.trojan.maskgramstealer
+  CrowdStrike                    win/malicious_confidence_70% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Win64/Spy.MaskGramStealer.I trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Lazy.729125 (B)
+  F-Secure                       Trojan.TR/W64.Evo
+  Fortinet                       W64/MaskGramStealer.I!tr.spy
+  GData                          Gen:Variant.Lazy.729125
+  Google                         Detected
+  Gridinsoft                     Trojan.Win64.Downloader.sa
+  K7AntiVirus                    Spyware ( 006e23a81 )
+  K7GW                           Spyware ( 006e23a81 )
+  Kaspersky                      Trojan.Win32.Agentb.ttrf
+  Lionic                         Trojan.Win32.MaskGramStealer.4!c
+  Malwarebytes                   Spyware.Stealer
+  McAfeeD                        Trojan:Win/Maskgramstealer.EAB
+  MicroWorld-eScan               Gen:Variant.Lazy.729125
+  Microsoft                      Trojan:Win64/MaskgramStealer.SUA!MTB
+  Paloalto                       generic.ml
+  Panda                          Trj/PhxBzA.A
+  Rising                         Spyware.MaskGramStealer!8.1D941 (TFE:1:ZmJ1vZ1n5OO)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        BehavesLike.Win64.Injector.ch
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Win32.Trojan.Agentb.Gkjl
+  TrellixENS                     Artemis!23416BFF2592
+  TrendMicro                     Trojan.Win32.ZYX.USBLGI26
+  TrendMicro-HouseCall           Trojan.Win32.ZYX.USBLGI26
+  VIPRE                          Gen:Variant.Lazy.729125
+  Varist                         W64/Agent.MPT.gen!Eldorado
+  ViRobot                        Trojan.Win.Z.Lazy.189952.O
+  Webroot                        Win.Trojan.Maskgramstealer
+  alibabacloud                   Trojan[spy]:Win/MaskGramStealer.I
+  huorong                        Trojan/Injector.cos
