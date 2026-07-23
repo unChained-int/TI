@@ -1,0 +1,179 @@
+# IOC Export  2026-07-23_22-59-UTC
+# 17 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+a172b48466dd433ca36585641f5df51d69a426e2451411966b7d2268ede3703f  # Ransomware | R=97.2 | WannaCry | exe
+9767724a6dd381d9401bcd0ea8c082d3b009c59ab949d6e25970f1de848354af  # Ransomware | R=96.3 | WannaCry | exe
+f1299aac53a762281c12f1ffef0fef6e74cbc913fb851d7cc97c7f2a88b9d91a  # Infostealer | R=85.6 | LummaStealer | exe
+6a0dbbafcc53b79c1deadba56dc0f6f653c1e54975b1aa1e7ed48f88d3f2ac05  # Infostealer | R=81.6 | Malware | exe
+c0582c6cd2a17fe2b02548249bc6929d1201ad08bac0d1bbcbe6e91215145241  # Botnet/IoT | R=80.8 | Mirai | sh
+f31d77a3954013a6d02743d3bccab31cce7a44764b797d8cef7eae5bb3f586d2  # Infostealer | R=80.8 | unbekannt | exe
+f85de96394b9d070487ad7a1a3be9eef62f166273b28d85a0a7ac5b0e382dd73  # Infostealer | R=80.6 | RemusStealer | exe
+3846db9620475d5f24b73bff02babc2ea275e718116805203ca258dee7d35621  # Infostealer | R=80.6 | RemusStealer | exe
+4b33ef08b2517ca180b3ecb2917c5196965cbcde84e3bb8a83b156ee55c4a622  # Loader | R=73.9 | unbekannt | exe
+467f21fcf89465270557faeaa93c95fdea23d50fd89f5f1f8d55ad0899270044  # Loader | R=73.8 | unbekannt | exe
+ae0b4d8fe724c2dde60289f1a3fdec7d2db6aefce7d65e0ed1ebcde54d3ba735  # Loader | R=73.8 | unbekannt | exe
+029a364b81370e6f680886c2e1a0751cc45d1539db9ef0b9b55265def3422259  # Loader | R=72.6 | CoinMiner | exe
+963bc9177e8197dc8ef79a8553408eff26ca9c4bb297fca8ded0ee15a759fabb  # Spyware | R=56.4 | MaskGramStealer | exe
+63c0d317645dc7169da2a6413cf1fcc8e300dd95af8c54ea06a4a3dc45a28275  # Windows-Malware | R=39.0 | unbekannt | exe
+7c1f748cb0bbf61e14a4b8170004ff8ece96a9a7838a4972c7b0ca92af35c53f  # Windows-Malware | R=38.1 | unbekannt | exe
+fe2e5dc794bf4bebe2092e45422fe5f9c5e8083e7ef32b5f9c17018941e19fa1  # Andere / Unbekannt | R=32.3 | unbekannt | sh
+83ee5526840106e0df497edc91a1ae5e11405fe8da9a67038dddcd46df3dc681  # Andere / Unbekannt | R=31.1 | unbekannt | sh
+
+[Tags]
+ACRStealer
+ClickFix
+CoinMiner
+Efimer
+Mirai
+RemusStealer
+WannaCry
+dionaea
+dropped-by-remus
+exe
+f9d3d96cfe614ce8cced68416cbd16ba
+hypercorevector9-lol
+id-exhumepacifier-cc
+not-LummaStealer
+sh
+signed
+stealer
+wraith
+
+[VT Engine Detections]
+
+## 029a364b81370e6f6808...  (CoinMiner) | Defender: ✗ nicht erkannt
+   Erkannt: 24/74 Engines (32.4%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AVG                            Win64:Evo-gen [Trj]
+  AhnLab-V3                      Trojan/Win.Evo-gen.R783296
+  Avast                          Win64:Evo-gen [Trj]
+  Avira                          TR/W64.Evo
+  Bkav                           W32.Malware.567E7D98
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Win64/Packed.VMProtect.AM suspicious application
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W64.Evo
+  Kaspersky                      UDS:Backdoor.Win32.PMax
+  Malwarebytes                   Malware.AI.1172236166
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        ti!029A364B8137
+  Microsoft                      Trojan:Win32/Sabsik.FL.A!ml
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Generic ML PUA (PUA)
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       suspicious.low.ml.score
+  Zoner                          Probably Heur.ExeHeaderL
+  huorong                        Trojan/W64.HiJack.ak!crit
+
+## c0582c6cd2a17fe2b025...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 19/74 Engines (25.7%) — 🟡 SCHWACH ERKANNT
+  AVG                            BV:Downloader-BUF [Drp]
+  Avast                          BV:Downloader-BUF [Drp]
+  Avira                          HTML/ExpKit.Gen2
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.DownLoader.37
+  ESET-NOD32                     Linux/TrojanDownloader.SH.FFM trojan
+  F-Secure                       Malware.HTML/ExpKit.Gen2
+  Fortinet                       PowerShell/Dloader.AEH!tr
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.a
+  Microsoft                      Trojan:Linux/SAgent.KK!MTB
+  Rising                         Downloader.Mirai/BASH!1.CECE (CLASSIC)
+  Skyhigh                        Linux/Downloader.nd
+  Symantec                       CL.Downloader!gen277
+  TrellixENS                     Linux/Downloader.nd
+  TrendMicro                     Possible_BASHDLOD.SMLBAT3
+  TrendMicro-HouseCall           Possible_BASHDLOD.SMLBAT3
+  Varist                         SH/Mirai.C.gen!Camelot
+  huorong                        TrojanDownloader/Linux.Agent.aj
+
+## f1299aac53a762281c12...  (LummaStealer) | Defender: ✗ nicht erkannt
+   Erkannt: 18/74 Engines (24.3%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AVG                            Win32:Evo-gen [Trj]
+  Avast                          Win32:Evo-gen [Trj]
+  Avira                          TR/W32.Evo
+  Bkav                           W32.Malware.453A33B1
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     WinGo/Kryptik.VN trojan
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W32.Evo
+  Kaspersky                      Backdoor.Win32.Gsb.gen
+  Malwarebytes                   MachineLearning/Anomalous.95%
+  MaxSecure                      Trojan.Malware.300983.susgen
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Sangfor                        Suspicious.Win32.Save.a
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       malicious.moderate.ml.score
+
+## 6a0dbbafcc53b79c1dea...  (Malware) | Defender: ✗ nicht erkannt
+   Erkannt: 12/74 Engines (16.2%) — 🟡 SCHWACH ERKANNT
+  Avira                          TR/W64.Evo
+  Bkav                           W32.Malware.C0252494
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  ESET-NOD32                     WinGo/Kryptik.VN trojan
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W64.Evo
+  MaxSecure                      Trojan.Malware.300983.susgen
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Sangfor                        Trojan.Win32.Save.a
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       suspicious.low.ml.score
+  huorong                        Trojan/Loader.vx
+
+## 963bc9177e8197dc8ef7...  (MaskGramStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Lazy.729125
+   Erkannt: 48/74 Engines (64.9%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Lazy.729125
+  APEX                           Malicious
+  AVG                            Win64:Evo-gen [Trj]
+  AhnLab-V3                      Trojan/Win.Generic.R782599
+  Alibaba                        TrojanSpy:Win64/MaskgramStealer.79b004f6
+  Antiy-AVL                      Trojan/Win32.Agentb
+  Arcabit                        Trojan.Lazy.DB2025
+  Avast                          Win64:Evo-gen [Trj]
+  Avira                          TR/W64.Evo
+  BitDefender                    Gen:Variant.Lazy.729125
+  CTX                            exe.trojan.maskgramstealer
+  CrowdStrike                    win/malicious_confidence_70% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Win64/Spy.MaskGramStealer.I trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Lazy.729125 (B)
+  F-Secure                       Trojan.TR/W64.Evo
+  Fortinet                       W64/MaskGramStealer.I!tr.spy
+  GData                          Gen:Variant.Lazy.729125
+  Google                         Detected
+  Gridinsoft                     Trojan.Win64.Downloader.sa
+  K7AntiVirus                    Spyware ( 006e23a81 )
+  K7GW                           Spyware ( 006e23a81 )
+  Kaspersky                      Trojan.Win32.Agentb.ttrf
+  Lionic                         Trojan.Win32.MaskGramStealer.4!c
+  Malwarebytes                   Spyware.Stealer
+  McAfeeD                        Trojan:Win/Maskgramstealer.EAB
+  MicroWorld-eScan               Gen:Variant.Lazy.729125
+  Microsoft                      Trojan:Win64/MaskgramStealer.SUA!MTB
+  Paloalto                       generic.ml
+  Panda                          Trj/PhxBzA.A
+  Rising                         Spyware.MaskGramStealer!8.1D941 (TFE:1:ZmJ1vZ1n5OO)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        BehavesLike.Win64.Injector.ch
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Win32.Trojan.Agentb.Gkjl
+  TrellixENS                     Artemis!23416BFF2592
+  TrendMicro                     Trojan.Win32.ZYX.USBLGI26
+  TrendMicro-HouseCall           Trojan.Win32.ZYX.USBLGI26
+  VIPRE                          Gen:Variant.Lazy.729125
+  Varist                         W64/Agent.MPT.gen!Eldorado
+  ViRobot                        Trojan.Win.Z.Lazy.189952.O
+  Webroot                        Win.Trojan.Maskgramstealer
+  alibabacloud                   Trojan[spy]:Win/MaskGramStealer.I
+  huorong                        Trojan/Injector.cos
