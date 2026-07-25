@@ -1,0 +1,197 @@
+# IOC Export  2026-07-25_20-56-UTC
+# 15 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+6ca95860452483923f168b85287051f7914f8d30c608147542237262a603ffb6  # RAT | R=81.2 | ValleyRAT | exe
+efa742f512968d4e7c320f426551b3f4aa21e80ce8b40ebfdfe228e1f1980d4c  # Trojaner | R=75.6 | Trojan.GenericKDZ.118886 | sh
+ca7fa72c6642d5cb83ea60ce873964eff752e6ad66aac959da25d722ce19256e  # Trojaner | R=74.9 | Yogi | exe
+fb2aca6aa66d3f3ac1f3df3f3d95a8bde050698e576404d5d5d9ec218407f86d  # Loader | R=73.7 | unbekannt | exe
+bcee095afc805eb5f164059598f97b5b01d1015afb496b19c640a4d01766765c  # Trojaner | R=73.5 | Fugrafa | msi
+57de376767a78229701434a2efe5d6410132b208417e8d9fc0891405dfc7be09  # Cryptominer | R=70.3 | BitCoinMiner/Linux!8 | elf
+364d3883e81da01bb449083552e5f1526ec734bdf40b27e71a4670fc3df12e76  # Loader | R=57.5 | XoriumStealer | exe
+3100f5931301a7968b274bc718c8363fe8b73cab7b997cf4ae161e39d06197ef  # Linux-Malware | R=42.3 | unbekannt | elf
+be24e3ff143568fc82e42ed4aeee92e3f6f58c5fe3c5bb442cf4b998c90463d2  # Linux-Malware | R=42.3 | unbekannt | elf
+fb4c3e7dc26b98030ee6f118356105780a293aff695652df6edd3f1058cc5d85  # Linux-Malware | R=42.0 | unbekannt | elf
+1eecf2377d20768c28d741e21affaa53cf26db0d083efdbf43a92fa938b7e4be  # Linux-Malware | R=42.0 | unbekannt | elf
+6cd950c1729a136be666fe0f23a9de400124c0e301a03b7f0095f8b41576bb11  # Windows-Malware | R=39.1 | unbekannt | exe
+afc5fa1343a544b6a918ed331efc7ba9ee88c045bc6fd8fb9ac662107c552295  # Andere / Unbekannt | R=31.9 | unbekannt | 7z
+0aa8796ec42231ee70586d3d48c7271bad38377c208fbbbfad578f6eef04313d  # Andere / Unbekannt | R=31.7 | unbekannt | 7z
+2f92eccabc10aa2ddd4ec44fe4ab67deb30535ff885acb8b1aee4686be47523d  # Andere / Unbekannt | R=31.5 | unbekannt | sh
+
+[Tags]
+7z
+ClickFix
+Efimer
+RAT
+ValleyRAT
+aethernetworking-cc
+cehamilton-com
+dropped-by-phorpiex
+elf
+exe
+microlsireqjn-com
+msi
+pop-aethernetworking-cc
+sh
+upx
+upx-dec
+
+[VT Engine Detections]
+
+## ca7fa72c6642d5cb83ea...  (Yogi) | Defender: ✓ Gen:Variant.Yogi.14068
+   Erkannt: 28/74 Engines (37.8%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Yogi.14068
+  APEX                           Malicious
+  AVG                            Win64:MalwareX-gen [Drp]
+  Arcabit                        Trojan.Yogi.D36F4
+  Avast                          Win64:MalwareX-gen [Drp]
+  Avira                          DR/W64.MalwareX
+  BitDefender                    Gen:Variant.Yogi.14068
+  Bkav                           W32.Malware.B376AF2D
+  CTX                            exe.unknown.yogi
+  CrowdStrike                    win/malicious_confidence_90% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Python/TrojanDropper.Agent.NH trojan
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Gen:Variant.Yogi.14068 (B)
+  F-Secure                       Dropper.DR/W64.MalwareX
+  GData                          Gen:Variant.Yogi.14068
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan.Python.Agent.gen
+  Malwarebytes                   Trojan.Dropper
+  MicroWorld-eScan               Gen:Variant.Yogi.14068
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  SentinelOne                    Static AI - Suspicious PE
+  Sophos                         Mal/Generic-S
+  Tencent                        Win32.Trojan.Agent.Jcnw
+  VIPRE                          Gen:Variant.Yogi.14068
+  Varist                         W64/Agent.MPL.gen!Eldorado
+  Webroot                        Win.Trojan.Gen
+
+## bcee095afc805eb5f164...  (Fugrafa) | Defender: ✓ Gen:Variant.Fugrafa.361356
+   Erkannt: 32/74 Engines (43.2%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Fugrafa.361356
+  AVG                            Win32:MalwareX-gen [Misc]
+  AhnLab-V3                      Trojan/Win.Wacatac.C5909135
+  Antiy-AVL                      Trojan/Win32.GenKryptik
+  Arcabit                        Trojan.Fugrafa.D5838C
+  Avast                          Win32:MalwareX-gen [Misc]
+  Avira                          TR/W32.Agent
+  BitDefender                    Gen:Variant.Fugrafa.361356
+  CAT-QuickHeal                  Trojan.Multi
+  CTX                            msi.trojan.fugrafa
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Win32/GenKryptik.HSIQ trojan
+  Emsisoft                       Gen:Variant.Fugrafa.361356 (B)
+  F-Secure                       Trojan.TR/W32.Agent
+  Fortinet                       W32/GenKryptik.HSIQ!tr
+  GData                          Gen:Variant.Fugrafa.361356
+  Google                         Detected
+  Gridinsoft                     Trojan.U.Kryptik.cl
+  Kaspersky                      UDS:DangerousObject.Multi.Generic
+  Lionic                         Trojan.Win32.Generic.4!c
+  McAfeeD                        ti!BCEE095AFC80
+  Microsoft                      Trojan:Win32/Suschil!rfn
+  Rising                         Trojan.Kryptik!8.8 (CLOUD)
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Win32.Trojan.Genkryptik.Psmw
+  TrellixENS                     Artemis!2C66CF69BC75
+  TrendMicro                     TrojanSpy.Win32.ACRSTEALER.YXGGIZ
+  TrendMicro-HouseCall           TROJ_GEN.R002H09G926
+  VIPRE                          Gen:Variant.Fugrafa.361356
+  Varist                         ABTrojan.EAKS-
+  alibabacloud                   Software:Win/Fugrafa.Gen
+
+## 57de376767a782297014...  (BitCoinMiner/Linux!8) | Defender: ✗ nicht erkannt
+   Erkannt: 7/74 Engines (9.5%) — ⚠️ KAUM ERKANNT
+  AhnLab-V3                      Linux/CoinMiner.Gen3
+  Antiy-AVL                      RiskWare/Linux.Agent
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  Rising                         Hacktool.BitCoinMiner/Linux!8.1358A (CLOUD)
+  Tencent                        Risktool.Linux.Miner.nf
+  alibabacloud                   Miner:Multi/XmrigGo.SY
+  huorong                        HackTool/Linux.BitCoinMiner.a
+
+## efa742f512968d4e7c32...  (Trojan.GenericKDZ.118886) | Defender: ✓ Trojan.GenericKDZ.118886
+   Erkannt: 25/74 Engines (33.8%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Trojan.GenericKDZ.118886
+  AVG                            BV:Agent-BNQ [Trj]
+  Arcabit                        Trojan.Generic.D1D066
+  Avast                          BV:Agent-BNQ [Trj]
+  Avira                          TR/BAT.Agent.BNQ
+  BitDefender                    Trojan.GenericKDZ.118886
+  CTX                            shell.trojan.generickdz
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Linux/TrojanDownloader.SH.GER trojan
+  Emsisoft                       Trojan.GenericKDZ.118886 (B)
+  F-Secure                       Trojan.TR/BAT.Agent.BNQ
+  Fortinet                       BASH/Agent.GER!tr
+  GData                          Trojan.GenericKDZ.118886
+  Google                         Detected
+  Kaspersky                      HEUR:Backdoor.PHP.WebShell.gen
+  MicroWorld-eScan               Trojan.GenericKDZ.118886
+  Microsoft                      Trojan:Linux/WebShell!AMTB
+  NANO-Antivirus                 Trojan.Script.Dropper.kpvdnu
+  Rising                         Trojan.Agent/BASH!1.13EDF (CLASSIC)
+  Skyhigh                        Linux/Agent.ff
+  Tencent                        Script.Backdoor.Agent.Gwnw
+  TrellixENS                     Linux/Agent.ff
+  VIPRE                          Trojan.GenericKDZ.118886
+  Varist                         Agent.XG
+  huorong                        TrojanDownloader/Linux.Shell.ct
+
+## 364d3883e81da01bb449...  (XoriumStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Dropper.355
+   Erkannt: 51/74 Engines (68.9%) — 🟠 MÄSSIG ERKANNT
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Cryp]
+  AhnLab-V3                      Trojan/Win.Generic.C5052738
+  Alibaba                        Trojan:MSIL/XWormRAT.e3639f99
+  Antiy-AVL                      Trojan/MSIL.Exnet
+  Arcabit                        Trojan.Dropper.355
+  Avast                          Win32:MalwareX-gen [Cryp]
+  Avira                          TR/Dropper.Gen
+  BitDefender                    Gen:Variant.Dropper.355
+  Bkav                           W32.Malware.FF66E59A
+  CTX                            exe.trojan.msil
+  ClamAV                         Win.Packed.Packy-10036375-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DrWeb                          Trojan.MulDropNET.65
+  ESET-NOD32                     MSIL/TrojanDropper.Agent.FOV trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Dropper.355 (B)
+  F-Secure                       Trojan.TR/Dropper.Gen
+  Fortinet                       MSIL/Agent.FOV!tr
+  GData                          Gen:Variant.Dropper.355
+  Google                         Detected
+  K7AntiVirus                    Trojan ( 0059942e1 )
+  K7GW                           Trojan ( 0059942e1 )
+  Kaspersky                      UDS:DangerousObject.Multi.Generic
+  Kingsoft                       malware.kb.c.1000
+  Lionic                         Trojan.Win32.Generic.4!c
+  Malwarebytes                   Backdoor.XWorm.Generic
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        Real Protect-LS!65C3AA0A4802
+  MicroWorld-eScan               Gen:Variant.Dropper.355
+  Microsoft                      Trojan:MSIL/XWormRAT!atmn
+  NANO-Antivirus                 Trojan.Win32.Dropper.lejrxi
+  Paloalto                       generic.ml
+  Panda                          Trj/CI.A
+  Rising                         Malware.Obfus/MSIL@AI.98 (RDM.MSIL2:3z8a7lE8fv2Nt4GiWX13jQ)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        Trojan-JARL!65C3AA0A4802
+  Sophos                         Troj/Mdrop-JVT
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Worm.Msil.Xworm.16001276
+  Trapmine                       malicious.moderate.ml.score
+  TrellixENS                     Artemis!65C3AA0A4802
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04CA5
+  VBA32                          Trojan.MSIL.Dinberx.gen
+  VIPRE                          Gen:Variant.Dropper.355
+  Varist                         W32/MSIL_Agent.BUD.gen!Eldorado
+  ZoneAlarm                      Troj/Mdrop-JVT
+  alibabacloud                   Trojan[dropper]:MSIL/XWormRAT.A9OKG
+  huorong                        TrojanDropper/MSIL.Agent.gx
