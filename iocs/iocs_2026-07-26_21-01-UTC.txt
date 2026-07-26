@@ -1,0 +1,132 @@
+# IOC Export  2026-07-26_21-01-UTC
+# 16 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+90233ccbb540fad9ec81ca3ae88266ed2df968f559a64bcc133ea5875ac7e2c0  # Botnet/IoT | R=83.4 | Mirai | elf
+a1603956bbcef1b38c55082a22754f04203fae16b24b7ad868413184ba68a08b  # Botnet/IoT | R=83.2 | Mirai | elf
+9346840245721ecabe3bbf50b9c55882b7bb99e978d30329c1f9be9a19f6e61f  # Botnet/IoT | R=83.2 | Mirai | elf
+ee1e2234a51bbba1bfdf4726fc06c351b2dbc3a952215e608e9e4a5874e380f2  # Botnet/IoT | R=83.1 | Mirai | elf
+54117f39ec10e191bd8d2513998c926cbd70e65f1aea9063f54801db1f046e11  # Infostealer | R=81.7 | unbekannt | zip
+279d04c0cfd700c8bcb9acbed528131d3ffef8e25d12713e8649772739aecb92  # Infostealer | R=81.6 | unbekannt | zip
+83554baeeb700815f9b6492584a1b1a40c64f752d1ff1a67cde079ad524b008f  # Infostealer | R=80.7 | RemusStealer | exe
+6e795be8d4f34f798012d46530c62843dbb74c7cc64fd3a2db37ff68c85f52b8  # RAT | R=80.2 | ValleyRAT | exe
+732b8cf362f486b7569eaa85d9e39f71fe1438ba68214300a9b33c204c447264  # Trojaner | R=75.1 | Yogi | exe
+364d3883e81da01bb449083552e5f1526ec734bdf40b27e71a4670fc3df12e76  # Loader | R=52.0 | XoriumStealer | exe
+5a6f57b0f7404d70c29e5c39b3bdd95064df4c4885f0fbbdcee41e438ff8444c  # Windows-Malware | R=39.0 | unbekannt | exe
+64c25e91637c23fa8d29fcbe425b9649e8a2a917316892b855fdd279df82c081  # Windows-Malware | R=38.2 | unbekannt | exe
+41986e5a10e7d708d74a8758a0dfc543fcaae48fe238a4b82194da0292338c14  # Andere / Unbekannt | R=31.7 | unbekannt | rar
+158089dcc6e71e5f6dd212dfdb7657414f3eb540aefed1d82c6b9b56195956f4  # Andere / Unbekannt | R=31.5 | unbekannt | sh
+79c7de724b8d91a50fd7cf1d4bb572fedba37d33f9e705ce37957af43c0e8b9c  # Andere / Unbekannt | R=31.3 | unbekannt | sh
+b29b34738355449cfc0609602966074d6dbeac2c6335a3c16f31124b72c34eb1  # Andere / Unbekannt | R=31.3 | unbekannt | sh
+
+[Tags]
+45-140-14-113
+46-225-113-75
+Arechclient2
+CVE-2025-8088
+ClickFix
+Efimer
+Gafgyt
+Mirai
+RAT
+RemusStealer
+SectopRAT
+UKR
+ValleyRAT
+XAgent
+ZigClipper
+dropped-by-ACRStealer
+elf
+exe
+lb-propertyfind-cc
+rar
+sh
+signed
+zip
+
+[VT Engine Detections]
+
+## 732b8cf362f486b7569e...  (Yogi) | Defender: ✓ Gen:Variant.Yogi.14068
+   Erkannt: 27/74 Engines (36.5%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Yogi.14068
+  APEX                           Malicious
+  AVG                            FileRepMalware [Misc]
+  Arcabit                        Trojan.Yogi.D36F4
+  Avast                          FileRepMalware [Misc]
+  BitDefender                    Gen:Variant.Yogi.14068
+  Bkav                           W32.Malware.C3F5F573
+  CTX                            exe.unknown.yogi
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  ESET-NOD32                     Python/TrojanDropper.Agent.NH trojan
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Gen:Variant.Yogi.14068 (B)
+  GData                          Gen:Variant.Yogi.14068
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan.Python.Agent.gen
+  Kingsoft                       Win32.Troj.Unknown.a
+  Lionic                         Trojan.Win32.Agent.Y!c
+  Malwarebytes                   Trojan.Dropper
+  MicroWorld-eScan               Gen:Variant.Yogi.14068
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  SentinelOne                    Static AI - Suspicious PE
+  Tencent                        Win32.Trojan.Agent.Lqil
+  TrellixENS                     Artemis!9CCA1ED778B5
+  VIPRE                          Gen:Variant.Yogi.14068
+  Varist                         W64/Agent.MPL.gen!Eldorado
+  alibabacloud                   Trojan[dropper]:Python/Wacatac.B9nj
+
+## 364d3883e81da01bb449...  (XoriumStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Dropper.355
+   Erkannt: 52/74 Engines (70.3%) — ✅ GUT ERKANNT
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Cryp]
+  AhnLab-V3                      Trojan/Win.Generic.C5052738
+  Alibaba                        Trojan:MSIL/XWormRAT.e3639f99
+  Antiy-AVL                      Trojan/MSIL.Exnet
+  Arcabit                        Trojan.Dropper.355
+  Avast                          Win32:MalwareX-gen [Cryp]
+  Avira                          TR/Dropper.Gen
+  BitDefender                    Gen:Variant.Dropper.355
+  Bkav                           W32.Malware.FF66E59A
+  CTX                            exe.trojan.msil
+  ClamAV                         Win.Packed.Packy-10036375-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DrWeb                          Trojan.MulDropNET.65
+  ESET-NOD32                     MSIL/TrojanDropper.Agent.FOV trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Dropper.355 (B)
+  F-Secure                       Trojan.TR/Dropper.Gen
+  Fortinet                       MSIL/Agent.FOV!tr
+  GData                          Gen:Variant.Dropper.355
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Agent.sa
+  K7AntiVirus                    Trojan ( 0059942e1 )
+  K7GW                           Trojan ( 0059942e1 )
+  Kaspersky                      UDS:DangerousObject.Multi.Generic
+  Kingsoft                       Win64.Rootkit.Agent.gen
+  Lionic                         Trojan.Win32.XWormRAT.4!c
+  Malwarebytes                   Backdoor.XWorm.Generic
+  McAfeeD                        Real Protect-LS!65C3AA0A4802
+  MicroWorld-eScan               Gen:Variant.Dropper.355
+  Microsoft                      Trojan:MSIL/XWormRAT!atmn
+  NANO-Antivirus                 Trojan.Win32.Dropper.lejrxi
+  Paloalto                       generic.ml
+  Panda                          Trj/CI.A
+  Rising                         Malware.Obfus/MSIL@AI.98 (RDM.MSIL2:3z8a7lE8fv2Nt4GiWX13jQ)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        Trojan-JARL!65C3AA0A4802
+  Sophos                         Troj/Mdrop-JVT
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Worm.Msil.Xworm.16001276
+  Trapmine                       malicious.moderate.ml.score
+  TrellixENS                     Artemis!65C3AA0A4802
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04CA5
+  VBA32                          Trojan.MSIL.Dinberx.gen
+  VIPRE                          Gen:Variant.Dropper.355
+  Varist                         W32/MSIL_Agent.BUD.gen!Eldorado
+  ViRobot                        Trojan.Win.Z.Dropper.1081344
+  ZoneAlarm                      Troj/Mdrop-JVT
+  alibabacloud                   Trojan[dropper]:MSIL/XWormRAT.A9OKG
+  huorong                        TrojanDropper/MSIL.Agent.gx
