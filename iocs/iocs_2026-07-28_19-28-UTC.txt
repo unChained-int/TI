@@ -1,0 +1,122 @@
+# IOC Export  2026-07-28_19-28-UTC
+# 24 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+376968a612e976c22025dc552cf79c6eda5af8a82136fe2dbff48fd72afaacaa  # Ransomware | R=96.8 | WannaCry | exe
+ed714a097ff6169e1a9935c9b8b7e09afffc45aab659cac9c3bed8a146f83851  # Botnet/IoT | R=84.5 | Mirai | elf
+d81fc15c5209b18130b08a9d7182a78aa3f6184ffb79cabd7dce4cf5a3d3cab4  # Botnet/IoT | R=84.3 | Mirai | elf
+aa64bf1471d43b21cc0b6f761473ed2903439364e5495656b67fb9e747910bb9  # Botnet/IoT | R=84.2 | Mirai | elf
+f80e14057062c1b9b24819c8aa524c6fa7991a720bfd15e784d0d21f7a78c2b1  # Botnet/IoT | R=83.9 | Mirai | elf
+fba2efd8f909afa2e76f9cbaf6dfd19487682458ee90126b06e4889feeb44592  # Botnet/IoT | R=83.8 | Mirai | elf
+c21959d86c4bc6dbb47a02fb397f1180b5cfc1ca40519d708f1cbef5561faa3e  # Botnet/IoT | R=83.8 | Mirai | elf
+59d7d3a604e5c3a999f01a662faab73a65f036c2e36f7e10c58c8ccd76967861  # Botnet/IoT | R=83.6 | Mirai | elf
+885e45a141aaba366ed919fae0aef40f465a1703fe8d657b12d3b3acd70bb62a  # RAT | R=80.4 | unbekannt | zip
+82fb67cb2438bd0265f4e06f974456a8b212b70d45f8f3fc18e04155fa45791a  # Loader | R=74.6 | unbekannt | exe
+c7b5d9d4b4084a9f7895620d1e5cde847d97c307208656624eda728d4191cccc  # Loader | R=73.5 | unbekannt | sh
+edd07c3b2b5af3f6f759496223b6b119330d582c4242c5c7fa69d620cc70d1ef  # Cryptominer | R=66.5 | unbekannt | sh
+6289f36d2b3589b2db489a9213ec465a55c77bc469ecee9217ba45e0c47de03b  # Skript/Dropper | R=54.7 | unbekannt | hta
+364d3883e81da01bb449083552e5f1526ec734bdf40b27e71a4670fc3df12e76  # Loader | R=50.5 | XoriumStealer | exe
+7f758dd54c10e678c40fc022fa61f8ea4dd9780070c3b1f30b8dc5163cfbc7a2  # Linux-Malware | R=42.8 | unbekannt | elf
+47f9779b48eeda53a846a2460456c738ad752ad0e02483231d927930f3f37dce  # Windows-Malware | R=38.9 | unbekannt | exe
+5f1225fee9a3329606862f1f8b2e4100f06e9b3c874cd319f763dcdd030a650c  # Windows-Malware | R=38.7 | unbekannt | exe
+0bdbb0f2361160d4c5e71ed923fde9e0133ee6927c8a02a3f491cee1b83a1982  # Windows-Malware | R=38.6 | unbekannt | exe
+facb03a4bb57c0935aa23e44d0400648abb3299d8799421d3f6ea90d8be07e14  # Skript/Dropper | R=38.2 | unbekannt | hta
+f88d9094a90f7000a3fb2cd7c981e03357ce2b39df9de5ee1d0742e619e3860f  # Skript/Dropper | R=38.0 | unbekannt | vbs
+8df36a81c2a9ad02bd7fa3fdc2b9b619cbde32b9b98fadf1595d82b478eaa62a  # Windows-Malware | R=37.7 | unbekannt | exe
+e2285fd2c1e26a1d394c23a73756f71540e2b9d78486c9f4f67d1fe3a370500e  # Windows-Malware | R=37.7 | unbekannt | exe
+7f4947195d352f01a517e5f472d3ae734d22b1d8a6fc5a69b42e6db42f9a11ef  # Andere / Unbekannt | R=32.2 | unbekannt | sh
+839562002478702c3792ab598e9a85cf400efd128ecc496e3ab540743eabaa8b  # Andere / Unbekannt | R=32.1 | unbekannt | unknown
+
+[Tags]
+ClickFix
+Efimer
+Mirai
+TonRAT
+WannaCry
+babar
+bash
+cowrie
+cryptojacking
+d52f85
+dionaea
+dns
+downloader
+dropped-by-Amadey
+dropper
+elf
+exe
+fileless
+honeypot
+hta
+kill-rivals
+miner
+persistence
+postgresql
+rediserver
+sh
+shell
+signed
+vbs
+watchdog
+xmrig
+zip
+
+[VT Engine Detections]
+
+## 364d3883e81da01bb449...  (XoriumStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Dropper.355
+   Erkannt: 55/74 Engines (74.3%) — ✅ GUT ERKANNT
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Cryp]
+  AhnLab-V3                      Trojan/Win.Generic.C5052738
+  Alibaba                        Trojan:MSIL/XWormRAT.e3639f99
+  Antiy-AVL                      Trojan/MSIL.Exnet
+  Arcabit                        Trojan.Dropper.355
+  Avast                          Win32:MalwareX-gen [Cryp]
+  Avira                          TR/Dropper.Gen
+  BitDefender                    Gen:Variant.Dropper.355
+  Bkav                           W32.Malware.FF66E59A
+  CAT-QuickHeal                  Trojan.Multi
+  CTX                            exe.dropper.generic
+  ClamAV                         Win.Packed.Packy-10036375-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DrWeb                          Trojan.MulDropNET.65
+  ESET-NOD32                     MSIL/TrojanDropper.Agent.FOV trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Dropper.355 (B)
+  F-Secure                       Trojan.TR/Dropper.Gen
+  Fortinet                       MSIL/Agent.FOV!tr
+  GData                          Gen:Variant.Dropper.355
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Agent.sa
+  K7AntiVirus                    Trojan ( 0059942e1 )
+  K7GW                           Trojan ( 0059942e1 )
+  Kaspersky                      UDS:DangerousObject.Multi.Generic
+  Kingsoft                       Win64.Rootkit.Agent.gen
+  Lionic                         Trojan.Win32.XWormRAT.4!c
+  Malwarebytes                   Backdoor.XWorm.Generic
+  McAfeeD                        Real Protect-LS!65C3AA0A4802
+  MicroWorld-eScan               Gen:Variant.Dropper.355
+  Microsoft                      Trojan:MSIL/XWormRAT!atmn
+  NANO-Antivirus                 Trojan.Win32.Dropper.lejrxi
+  Paloalto                       generic.ml
+  Panda                          Trj/CI.A
+  Rising                         Malware.Obfus/MSIL@AI.88 (RDM.MSIL2:3z8a7lE8fv2Nt4GiWX13jQ)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        Trojan-JARL!65C3AA0A4802
+  Sophos                         Troj/Mdrop-JVT
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Worm.Msil.Xworm.16001276
+  Trapmine                       malicious.moderate.ml.score
+  TrellixENS                     Artemis!65C3AA0A4802
+  TrendMicro                     Trojan.MSIL.XWORMRAT.TL0101GQ26ZZ
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04CA5
+  VBA32                          Trojan.MSIL.Dinberx.gen
+  VIPRE                          Gen:Variant.Dropper.355
+  Varist                         W32/MSIL_Agent.BUD.gen!Eldorado
+  ViRobot                        Trojan.Win.Z.Dropper.1081344
+  VirIT                          Trojan.Win32.MSIL.JYR
+  ZoneAlarm                      Troj/Mdrop-JVT
+  alibabacloud                   Trojan[dropper]:MSIL/XWormRAT.A9OKG
+  huorong                        TrojanDropper/MSIL.Agent.gx
