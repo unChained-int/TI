@@ -1,0 +1,178 @@
+# IOC Export  2026-07-30_23-11-UTC
+# 17 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+79cab94e4ca816acbb4068254adaac761f16f8a6e4796408c77840235e5890ee  # Ransomware | R=97.0 | WannaCry | exe
+58b16700b8a3b8f0db2fb2e14b8c3e835270111518e67239b373a81ffd265b9a  # RAT | R=80.1 | ValleyRAT | exe
+ca116b3d7caea85d448cc674087381d06902d80f2d2842e8dc22cd4b266379b5  # Loader | R=74.5 | CoinMiner | exe
+d70f917e35813a7ae323e6b2b539d6dbbfc3a3a6599f1fed93430b14ca08b141  # Cryptominer | R=69.8 | CP potentially unwanted applic | elf
+a0f85de525c9f1126dd701b4b9a50237ef6dd1605836da64e983e49a2c50d268  # Cryptominer | R=66.1 | Linux | elf
+e98f72882d520f1a1d17036847154b84db0b44a463f75d2d12af1bb9c48fff95  # Cryptominer | R=63.8 | Application | elf
+364d3883e81da01bb449083552e5f1526ec734bdf40b27e71a4670fc3df12e76  # Loader | R=50.5 | XoriumStealer | exe
+b9679a478bea2fb3eb238e75139e20fff5652b1b2495e6cc66e9f7110e3f4339  # Linux-Malware | R=41.7 | unbekannt | elf
+431f2f7b389128c829dcd139f4f1c3bf95411ea14b87e271c0b04ad6469ba896  # Linux-Malware | R=41.7 | unbekannt | elf
+f0aa83bbbd2c75e2f71ec16029ee5fcfad59f3a8efa30a500b815f0f6c18d987  # Linux-Malware | R=41.7 | unbekannt | elf
+3f3bf218089d1488617d37f8a5116bb2791eb39ce06a1b5bc9a4cdfe5e94dd39  # Linux-Malware | R=41.7 | unbekannt | elf
+8e1a67a5c03b3cd818f046c7a1605afccc0ee5ce437a0d099881f1872b54bc70  # Linux-Malware | R=41.7 | unbekannt | elf
+d1cac82f44b54b0fd244a9e4122811e9ae108a197c7a65a20fd2e7552683e68e  # Linux-Malware | R=41.7 | unbekannt | elf
+c2ae41bff71b9d5dd6d5845f1cda894729f406db9501c3afca402420b91515c0  # Windows-Malware | R=38.8 | unbekannt | exe
+2aab00defb69f62ea24fcf2d2afc85750e1e24bc67a6e2fed6166438dfc1172d  # Windows-Malware | R=37.9 | unbekannt | exe
+0262c43ca22a7fb751f38117641a206220b0ab116cd79864c7336207dffa7358  # Skript/Dropper | R=37.6 | unbekannt | js
+9117cbbaf4a200b534763f9c129d0f1a7bfca9d73d9a1fbfe97564790405e902  # Andere / Unbekannt | R=32.3 | unbekannt | sh
+
+[Tags]
+ClickFix
+CoinMiner
+Efimer
+RAT
+ValleyRAT
+WannaCry
+dionaea
+dropped-by-phorpiex
+elf
+exe
+js
+sh
+upx
+upx-dec
+wraith
+
+[VT Engine Detections]
+
+## 58b16700b8a3b8f0db2f...  (ValleyRAT) | Defender: ✗ nicht erkannt
+   Erkannt: 18/74 Engines (24.3%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AVG                            Win32:Malware-gen
+  Avast                          Win32:Malware-gen
+  Avira                          TR/W32.Malware
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Generik.LQBTUTI trojan
+  F-Secure                       Trojan.TR/W32.Malware
+  GData                          Win32.Malware.KillAV.37SA0U@gen
+  Kaspersky                      UDS:Backdoor.Win32.Agent.myxhwv
+  Malwarebytes                   Malware.AI.605926106
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Sangfor                        Trojan.Win32.Agent.V204
+  Skyhigh                        BehavesLike.Win32.ObfuscatedPoly.rc
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Win32.Trojan.Valleyrat.Ywhl
+  TrellixENS                     Artemis!8F93AA8AA04C
+
+## a0f85de525c9f1126dd7...  (Linux) | Defender: ✗ nicht erkannt
+   Erkannt: 18/75 Engines (24.0%) — 🟡 SCHWACH ERKANNT
+  AVG                            ELF:Agent-CZB [PUP]
+  AhnLab-V3                      Linux/CoinMiner.Gen3
+  Antiy-AVL                      Trojan[Miner]/Linux.BitCoinMiner
+  Avast                          ELF:Agent-CZB [PUP]
+  Avast-Mobile                   ELF:Miner-LO [PUP]
+  Avira                          PUA/LINUX.Agent.CZB
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Linux/CoinMiner.AV potentially unwanted application
+  Elastic                        Linux.Trojan.Pornoasset
+  F-Secure                       PotentialRisk.PUA/LINUX.Agent.CZB
+  GData                          Linux.Application.CoinMiner.AH
+  Google                         Detected
+  SentinelOne                    Static AI - Suspicious ELF
+  TrendMicro                     Coinminer.Linux.MALXMR.SMDSL64
+  TrendMicro-HouseCall           Coinminer.Linux.MALXMR.SMDSL64
+  Varist                         E64/CoinMiner.B.gen!Camelot
+  alibabacloud                   Miner:Multi/XmrigGo.SY
+  huorong                        HackTool/Linux.BitCoinMiner.a
+
+## e98f72882d520f1a1d17...  (Application) | Defender: ✓ Gen:Variant.Application.Linux.Miner.3
+   Erkannt: 25/75 Engines (33.3%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Application.Linux.Miner.3
+  AhnLab-V3                      Linux/CoinMiner.Gen3
+  Antiy-AVL                      Trojan[Miner]/Linux.BitCoinMiner
+  Arcabit                        Trojan.Application.Linux.Miner.3
+  Avast-Mobile                   ELF:Miner-LO [PUP]
+  Avira                          APPL/AgentLINUX.Bi.CE
+  BitDefender                    Gen:Variant.Application.Linux.Miner.3
+  CTX                            elf.miner.generic
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Linux/CoinMiner.CP potentially unwanted application
+  Elastic                        Linux.Cryptominer.Camelot
+  Emsisoft                       Gen:Variant.Application.Linux.Miner.3 (B)
+  F-Secure                       Program.APPL/AgentLINUX.Bi.CE
+  Fortinet                       ELF/BitCoinMiner.HF!tr
+  GData                          Linux.Application.CoinMiner.AH
+  Google                         Detected
+  Kaspersky                      not-a-virus:HEUR:RiskTool.Linux.BitCoinMiner.n
+  MicroWorld-eScan               Gen:Variant.Application.Linux.Miner.3
+  Sangfor                        Suspicious.Linux.Save.a
+  TrendMicro                     Coinminer.Linux.MALXMR.SMDSL32
+  TrendMicro-HouseCall           Coinminer.Linux.MALXMR.SMDSL32
+  VIPRE                          Gen:Variant.Application.Linux.Miner.3
+  Varist                         E32/CoinMiner.B.gen!Camelot
+  alibabacloud                   Miner:Multi/XmrigGo.SY
+  huorong                        HackTool/Linux.BitCoinMiner.a
+
+## d70f917e35813a7ae323...  (CP potentially unwanted applic) | Defender: ✗ nicht erkannt
+   Erkannt: 7/75 Engines (9.3%) — ⚠️ KAUM ERKANNT
+  AhnLab-V3                      Linux/CoinMiner.Gen3
+  ESET-NOD32                     Linux/CoinMiner.CP potentially unwanted application
+  Kaspersky                      not-a-virus:HEUR:RiskTool.Linux.BitCoinMiner.n
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  Tencent                        Risktool.Linux.Miner.nf
+  alibabacloud                   Miner:Multi/XmrigGo.SY
+  huorong                        HackTool/Linux.BitCoinMiner.a
+
+## 364d3883e81da01bb449...  (XoriumStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Dropper.355
+   Erkannt: 55/74 Engines (74.3%) — ✅ GUT ERKANNT
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Cryp]
+  AhnLab-V3                      Trojan/Win.Generic.C5052738
+  Alibaba                        Trojan:MSIL/XWormRAT.e3639f99
+  Antiy-AVL                      Trojan/MSIL.Exnet
+  Arcabit                        Trojan.Dropper.355
+  Avast                          Win32:MalwareX-gen [Cryp]
+  Avira                          TR/Dropper.Gen
+  BitDefender                    Gen:Variant.Dropper.355
+  Bkav                           W32.Malware.FF66E59A
+  CAT-QuickHeal                  Trojan.Multi
+  CTX                            exe.dropper.generic
+  ClamAV                         Win.Packed.Packy-10036375-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DrWeb                          Trojan.MulDropNET.65
+  ESET-NOD32                     MSIL/TrojanDropper.Agent.FOV trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Dropper.355 (B)
+  F-Secure                       Trojan.TR/Dropper.Gen
+  Fortinet                       MSIL/Agent.FOV!tr
+  GData                          Gen:Variant.Dropper.355
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Agent.sa
+  K7AntiVirus                    Trojan ( 0059942e1 )
+  K7GW                           Trojan ( 0059942e1 )
+  Kaspersky                      UDS:DangerousObject.Multi.Generic
+  Kingsoft                       Win64.Rootkit.Agent.gen
+  Lionic                         Trojan.Win32.XWormRAT.4!c
+  Malwarebytes                   Backdoor.XWorm.Generic
+  McAfeeD                        Real Protect-LS!65C3AA0A4802
+  MicroWorld-eScan               Gen:Variant.Dropper.355
+  Microsoft                      Trojan:MSIL/XWormRAT!atmn
+  NANO-Antivirus                 Trojan.Win32.Dropper.lejrxi
+  Paloalto                       generic.ml
+  Panda                          Trj/CI.A
+  Rising                         Malware.Obfus/MSIL@AI.88 (RDM.MSIL2:3z8a7lE8fv2Nt4GiWX13jQ)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        Trojan-JARL!65C3AA0A4802
+  Sophos                         Troj/Mdrop-JVT
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Worm.Msil.Xworm.16001276
+  Trapmine                       malicious.moderate.ml.score
+  TrellixENS                     Artemis!65C3AA0A4802
+  TrendMicro                     Trojan.MSIL.XWORMRAT.TL0101GQ26ZZ
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04CA5
+  VBA32                          Trojan.MSIL.Dinberx.gen
+  VIPRE                          Gen:Variant.Dropper.355
+  Varist                         W32/MSIL_Agent.BUD.gen!Eldorado
+  ViRobot                        Trojan.Win.Z.Dropper.1081344
+  VirIT                          Trojan.Win32.MSIL.JYR
+  ZoneAlarm                      Troj/Mdrop-JVT
+  alibabacloud                   Trojan[dropper]:MSIL/XWormRAT.A9OKG
+  huorong                        TrojanDropper/MSIL.Agent.gx
