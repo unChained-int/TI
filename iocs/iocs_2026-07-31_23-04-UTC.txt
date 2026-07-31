@@ -1,0 +1,202 @@
+# IOC Export  2026-07-31_23-04-UTC
+# 9 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+6c22bcd5d4db88c58e67abeae0d8d91681949e03187c36c290a334c0c3f06b68  # Botnet/IoT | R=83.0 | Mirai | elf
+e8c96feda6791f0acdee4c084e0d438f7792a1d33aa31de036fdb6408ca7db97  # Infostealer | R=80.1 | RustyStealer | exe
+e00b46b3c716a4132f806f8c8c40bed2da93cea0e03e3d5901a1ba4f26c03f2a  # Botnet/IoT | R=77.6 | Mirai | elf
+7a2e6eb5538ae9371581d9b575345d480483b7c3b7d4fac34fa4a010ecf51414  # Botnet/IoT | R=75.3 | Mirai | elf
+1ccfd6555390617b416bed0bd48ef3edba47bf042e102f504a2113bc356eeb0f  # Loader | R=74.5 | unbekannt | exe
+4e247c3ac69c652cba2a80e221d0eb18200da8464f90eed71f949db0d3b20b65  # Botnet/IoT | R=72.3 | ELF:Agent-AIN [PUP] | elf
+364d3883e81da01bb449083552e5f1526ec734bdf40b27e71a4670fc3df12e76  # Loader | R=50.5 | XoriumStealer | exe
+f07605b995cf701ea40c0d4a535c5c8cc256b004d67d80ee2876ebf0dc0eb680  # Windows-Malware | R=38.9 | unbekannt | exe
+126d2fea7b1ea126a7dfa9d41a532a71ba1d41bb3473f5ba81694b2412059edc  # Windows-Malware | R=38.0 | unbekannt | exe
+
+[Tags]
+ClickFix
+Efimer
+Mirai
+RustyStealer
+dropped-by-phorpiex
+elf
+exe
+upx
+upx-dec
+
+[VT Engine Detections]
+
+## e8c96feda6791f0acdee...  (RustyStealer) | Defender: ✗ nicht erkannt
+   Erkannt: 21/75 Engines (28.0%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AVG                            Win64:MalwareX-gen [Spy]
+  AhnLab-V3                      Spyware/Win.Agent.C5873765
+  Avast                          Win64:MalwareX-gen [Spy]
+  Avira                          TR/W64.MalwareX
+  Bkav                           W32.Malware.4627CD69
+  CrowdStrike                    win/malicious_confidence_70% (D)
+  ESET-NOD32                     Win64/Spy.Agent.AJF trojan
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W64.MalwareX
+  K7AntiVirus                    Spyware ( 006deb081 )
+  K7GW                           Spyware ( 006deb081 )
+  Kaspersky                      VHO:Trojan.Win32.Sdum.gen
+  Malwarebytes                   Spyware.NeedleStealer
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Spyware.Agent!8.C6 (CLOUD)
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Malware.Win32.Gencirc.10c4734c
+  VirIT                          Trojan.Win64.GenPsw.JND
+  Webroot                        Win.Trojan.Gen
+  Zillya                         Trojan.Agent.Win64.186710
+
+## 4e247c3ac69c652cba2a...  (ELF:Agent-AIN [PUP]) | Defender: ✗ nicht erkannt
+   Erkannt: 20/75 Engines (26.7%) — 🟡 SCHWACH ERKANNT
+  AVG                            ELF:Agent-AIN [PUP]
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  Avast                          ELF:Agent-AIN [PUP]
+  Avira                          PUA/LINUX.Agent.AIN
+  ClamAV                         Unix.Dropper.Mirai-7540662-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Rootkit.420
+  ESET-NOD32                     Linux/Mirai.EIZ trojan
+  Elastic                        Linux.Trojan.Gafgyt
+  F-Secure                       PotentialRisk.PUA/LINUX.Agent.AIN
+  Fortinet                       ELF64/Mirai.TSU!tr.botnet
+  Google                         Detected
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.jl
+  McAfeeD                        Trojan:Linux/GenericY.HS
+  Microsoft                      Trojan:Script/Wacatac.C!ml
+  Rising                         Backdoor.Mirai/Linux!1.14286 (CLASSIC)
+  Sangfor                        Suspicious.Linux.Save.a
+  SentinelOne                    Static AI - Malicious ELF
+  Varist                         E64/Agent.AW.gen!Eldorado
+  huorong                        Backdoor/Linux.Mirai.m
+
+## 7a2e6eb5538ae9371581...  (Mirai) | Defender: ✓ Trojan.Linux.Mirai.1
+   Erkannt: 36/75 Engines (48.0%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Trojan.Linux.Mirai.1
+  AVG                            ELF:Mirai-AJO [Trj]
+  AhnLab-V3                      Linux/Mirai.Gen15
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  Arcabit                        Trojan.Linux.Mirai.1
+  Avast                          ELF:Mirai-AJO [Trj]
+  Avast-Mobile                   ELF:Mirai-FY [Trj]
+  Avira                          EXP/ELF.Mirai.Z.A
+  BitDefender                    Trojan.Linux.Mirai.1
+  CTX                            elf.trojan.mirai
+  ClamAV                         Unix.Dropper.Mirai-7135897-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9816
+  ESET-NOD32                     Linux/Mirai.TN trojan
+  Elastic                        Linux.Generic.Threat
+  Emsisoft                       Trojan.Linux.Mirai.1 (B)
+  F-Secure                       Exploit.EXP/ELF.Mirai.Z.A
+  Fortinet                       Linux/Mirai.BWR!tr
+  GData                          Trojan.Linux.Mirai.1
+  Google                         Detected
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.cw
+  MaxSecure                      Trojan.Malware.121218.susgen
+  McAfeeD                        Trojan:Linux/GenericY.BN
+  MicroWorld-eScan               Trojan.Linux.Mirai.1
+  Microsoft                      Backdoor:Linux/Mirai.AM!xp
+  Rising                         Backdoor.Mirai/Linux!1.128BE (CLASSIC)
+  Sangfor                        Suspicious.Linux.Save.a
+  SentinelOne                    Static AI - Malicious ELF
+  Symantec                       Linux.Mirai
+  Tencent                        Backdoor.Linux.Mirai.wam
+  TrendMicro                     Backdoor.Linux.MIRAI.SMLBO20
+  TrendMicro-HouseCall           Backdoor.Linux.MIRAI.SMLBO20
+  VIPRE                          Trojan.Linux.Mirai.1
+  Varist                         E32/Mirai.EH.gen!Camelot
+  alibabacloud                   DDOS:Linux/Mirai
+  huorong                        Backdoor/Linux.Mirai.ji
+
+## e00b46b3c716a4132f80...  (Mirai) | Defender: ✓ Trojan.Linux.Mirai.1
+   Erkannt: 29/75 Engines (38.7%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Trojan.Linux.Mirai.1
+  AVG                            ELF:Mirai-GH [Trj]
+  AhnLab-V3                      Linux/Mirai.Gen15
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  Arcabit                        Trojan.Linux.Mirai.1
+  Avast                          ELF:Mirai-GH [Trj]
+  Avast-Mobile                   ELF:Mirai-GH [Trj]
+  Avira                          TR/LINUX.Mirai.GH
+  BitDefender                    Trojan.Linux.Mirai.1
+  CTX                            elf.trojan.mirai
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9816
+  ESET-NOD32                     Linux/Mirai.TN trojan
+  Emsisoft                       Trojan.Linux.Mirai.1 (B)
+  F-Secure                       Trojan.TR/LINUX.Mirai.GH
+  Fortinet                       Linux/Mirai.BWR!tr
+  GData                          Trojan.Linux.Mirai.1
+  Google                         Detected
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.h
+  MicroWorld-eScan               Trojan.Linux.Mirai.1
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  Rising                         Backdoor.Mirai/Linux!1.128BE (CLASSIC)
+  SentinelOne                    Static AI - Malicious ELF
+  Symantec                       Linux.Mirai
+  Tencent                        Backdoor.Linux.Mirai.wam
+  VIPRE                          Trojan.Linux.Mirai.1
+  Varist                         E32/Mirai.BMN
+  alibabacloud                   DDOS:Linux/Mirai
+  huorong                        Backdoor/Linux.Mirai.ji
+
+## 364d3883e81da01bb449...  (XoriumStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Dropper.355
+   Erkannt: 55/74 Engines (74.3%) — ✅ GUT ERKANNT
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Cryp]
+  AhnLab-V3                      Trojan/Win.Generic.C5052738
+  Alibaba                        Trojan:MSIL/XWormRAT.e3639f99
+  Antiy-AVL                      Trojan/MSIL.Exnet
+  Arcabit                        Trojan.Dropper.355
+  Avast                          Win32:MalwareX-gen [Cryp]
+  Avira                          TR/Dropper.Gen
+  BitDefender                    Gen:Variant.Dropper.355
+  Bkav                           W32.Malware.FF66E59A
+  CAT-QuickHeal                  Trojan.Multi
+  CTX                            exe.dropper.generic
+  ClamAV                         Win.Packed.Packy-10036375-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DrWeb                          Trojan.MulDropNET.65
+  ESET-NOD32                     MSIL/TrojanDropper.Agent.FOV trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Dropper.355 (B)
+  F-Secure                       Trojan.TR/Dropper.Gen
+  Fortinet                       MSIL/Agent.FOV!tr
+  GData                          Gen:Variant.Dropper.355
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Agent.sa
+  K7AntiVirus                    Trojan ( 0059942e1 )
+  K7GW                           Trojan ( 0059942e1 )
+  Kaspersky                      UDS:DangerousObject.Multi.Generic
+  Kingsoft                       Win64.Rootkit.Agent.gen
+  Lionic                         Trojan.Win32.XWormRAT.4!c
+  Malwarebytes                   Backdoor.XWorm.Generic
+  McAfeeD                        Real Protect-LS!65C3AA0A4802
+  MicroWorld-eScan               Gen:Variant.Dropper.355
+  Microsoft                      Trojan:MSIL/XWormRAT!atmn
+  NANO-Antivirus                 Trojan.Win32.Dropper.lejrxi
+  Paloalto                       generic.ml
+  Panda                          Trj/CI.A
+  Rising                         Malware.Obfus/MSIL@AI.88 (RDM.MSIL2:3z8a7lE8fv2Nt4GiWX13jQ)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        Trojan-JARL!65C3AA0A4802
+  Sophos                         Troj/Mdrop-JVT
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Worm.Msil.Xworm.16001276
+  Trapmine                       malicious.moderate.ml.score
+  TrellixENS                     Artemis!65C3AA0A4802
+  TrendMicro                     Trojan.MSIL.XWORMRAT.TL0101GQ26ZZ
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04CA5
+  VBA32                          Trojan.MSIL.Dinberx.gen
+  VIPRE                          Gen:Variant.Dropper.355
+  Varist                         W32/MSIL_Agent.BUD.gen!Eldorado
+  ViRobot                        Trojan.Win.Z.Dropper.1081344
+  VirIT                          Trojan.Win32.MSIL.JYR
+  ZoneAlarm                      Troj/Mdrop-JVT
+  alibabacloud                   Trojan[dropper]:MSIL/XWormRAT.A9OKG
+  huorong                        TrojanDropper/MSIL.Agent.gx
