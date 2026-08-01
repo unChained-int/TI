@@ -1,0 +1,147 @@
+# IOC Export  2026-08-01_19-12-UTC
+# 12 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+bd216916031c63a5f3174bc27d64babf31294363f1b8274e4ab7d8802c46d91c  # Botnet/IoT | R=84.4 | Mirai | elf
+6b659aa475b4a9e6b12cca0a09ba66b207226ab904754c4f3080a91eda00f48f  # Botnet/IoT | R=84.3 | Mirai | elf
+36b289daf23e2fc9055c9ee724e672b700618f08ab408453ebe201480bdd5a34  # Botnet/IoT | R=82.9 | Mirai | elf
+405ab54e2f2b5f8e2b865ec75e0547ee4aea3a6521402958c18a40b7e8ade432  # Botnet/IoT | R=82.7 | Mirai | elf
+bc9eb5dab0d00a0de7c8df3b1d342b5ff435bc8a8cb40a04aaadb869755fe081  # Infostealer | R=80.9 | RustyStealer | exe
+61b3c3492c341bd8a613e01bd9dad388ea8ad691567ff5754528f8d52340b538  # Botnet/IoT | R=79.7 | Mirai | elf
+b76abc2c6b2463edf3353d5e9f86fbb57b6633374a0bec0140bcb979a46690ea  # Trojaner | R=78.8 | fa | sh
+01067bc1b1b5c8477002e1c04ce55fa4bf4c6ad2aa2049a53dd895c756413830  # Trojaner | R=74.8 | Trojan.GenericKDZ.118886 | sh
+266ee21a6c9f3408e472b4f146db4d1c6e5b0775bd04bae92862023d6c1e95f8  # Trojaner | R=66.4 | Efimer | exe
+86de77a8053d472cb0062e4b1e224119fa3e3d1495d3d0acef4f502d77284ada  # Linux-Malware | R=43.4 | unbekannt | elf
+9349f4127c21baf73979c2a7d4a47d10065b2c3c32474314ade38c058d51ca23  # Andere / Unbekannt | R=32.7 | unbekannt | sh
+70d43fac540653171e4820534be5e15cbd07d160cbeb564c0856d41f3207f7a0  # Andere / Unbekannt | R=32.6 | unbekannt | sh
+
+[Tags]
+54e64e
+Gafgyt
+Mirai
+RustyStealer
+dropped-by-Amadey
+elf
+exe
+sh
+wraith
+
+[VT Engine Detections]
+
+## b76abc2c6b2463edf335...  (fa) | Defender: ✗ nicht erkannt
+   Erkannt: 18/75 Engines (24.0%) — 🟡 SCHWACH ERKANNT
+  AVG                            BV:Agent-CEL [Trj]
+  Avast                          BV:Agent-CEL [Trj]
+  Avira                          TR/BAT.Agent.CEL
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.BackDoor.Siggen.759
+  ESET-NOD32                     Linux/Agent.AOF trojan
+  F-Secure                       Trojan.TR/BAT.Agent.CEL
+  Fortinet                       BASH/Agent.AOF!tr
+  Google                         Detected
+  Kaspersky                      Trojan.Shell.Agent.ig
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  NANO-Antivirus                 Trojan.Script.Dropper.kpvdnu
+  Rising                         Trojan.Agent/BASH!1.13EDF (CLASSIC)
+  Skyhigh                        Linux/Agent.fa
+  Tencent                        Trojan-DL.Linux.Agent.505004
+  TrellixENS                     Linux/Agent.fa
+  Varist                         Unix/Agent.VA
+  huorong                        Backdoor/Linux.Agent.as
+
+## 61b3c3492c341bd8a613...  (Mirai) | Defender: ✓ Gen:Variant.Linux.DDoS.2
+   Erkannt: 25/75 Engines (33.3%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Linux.DDoS.2
+  AVG                            ELF:Gafgyt-KR [Trj]
+  Arcabit                        Trojan.Linux.DDoS.2
+  Avast                          ELF:Gafgyt-KR [Trj]
+  Avast-Mobile                   ELF:Gafgyt-KS [Trj]
+  Avira                          TR/LINUX.Gafgyt.KR
+  BitDefender                    Gen:Variant.Linux.DDoS.2
+  CTX                            elf.ddos.generic
+  ClamAV                         Unix.Trojan.Mirai-10060414-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9838
+  ESET-NOD32                     Linux/Mirai.EIY trojan
+  Elastic                        Linux.Generic.Threat
+  Emsisoft                       Gen:Variant.Linux.DDoS.2 (B)
+  F-Secure                       Trojan.TR/LINUX.Gafgyt.KR
+  GData                          Gen:Variant.Linux.DDoS.2
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.ln
+  MaxSecure                      Trojan.Malware.121218.susgen
+  McAfeeD                        ti!61B3C3492C34
+  MicroWorld-eScan               Gen:Variant.Linux.DDoS.2
+  Microsoft                      Trojan:Script/Wacatac.C!ml
+  Rising                         Backdoor.Mirai/Linux!1.14387 (CLASSIC)
+  SentinelOne                    Static AI - Malicious ELF
+  VIPRE                          Gen:Variant.Linux.DDoS.2
+  huorong                        Trojan/Linux.Mirai.e!crit
+
+## 01067bc1b1b5c8477002...  (Trojan.GenericKDZ.118886) | Defender: ✓ Trojan.GenericKDZ.118886
+   Erkannt: 27/75 Engines (36.0%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Trojan.GenericKDZ.118886
+  AVG                            BV:Agent-BNQ [Trj]
+  Arcabit                        Trojan.Generic.D1D066
+  Avast                          BV:Agent-BNQ [Trj]
+  Avira                          TR/BAT.Agent.BNQ
+  BitDefender                    Trojan.GenericKDZ.118886
+  CTX                            shell.trojan.generickdz
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.DownLoader.2862
+  ESET-NOD32                     Linux/TrojanDownloader.SH.GER trojan
+  Emsisoft                       Trojan.GenericKDZ.118886 (B)
+  F-Secure                       Trojan.TR/BAT.Agent.BNQ
+  Fortinet                       BASH/Agent.GER!tr
+  GData                          Trojan.GenericKDZ.118886
+  Google                         Detected
+  Kaspersky                      HEUR:Backdoor.PHP.WebShell.gen
+  MicroWorld-eScan               Trojan.GenericKDZ.118886
+  Microsoft                      Trojan:Linux/WebShell!AMTB
+  NANO-Antivirus                 Trojan.Script.Dropper.kpvdnu
+  Rising                         Trojan.Agent/BASH!9.77F02 (XSE:WFNFX0JBVDqps2n0GQL8caxf6cW/9kWW)
+  Skyhigh                        Linux/Agent.ff
+  Sophos                         Troj/WebShel-RZ
+  TrellixENS                     Linux/Agent.ff
+  VIPRE                          Trojan.GenericKDZ.118886
+  Varist                         Agent.XG
+  ZoneAlarm                      Troj/WebShel-RZ
+  huorong                        TrojanDownloader/Linux.Shell.ct
+
+## 266ee21a6c9f3408e472...  (Efimer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Yogi.14068
+   Erkannt: 36/75 Engines (48.0%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Yogi.14068
+  APEX                           Malicious
+  AVG                            FileRepMalware [Misc]
+  Alibaba                        TrojanDropper:Application/Generic.a9a11e9a
+  Arcabit                        Trojan.Yogi.D36F4
+  Avast                          FileRepMalware [Misc]
+  BitDefender                    Gen:Variant.Yogi.14068
+  Bkav                           W32.Malware.7E38CB70
+  CTX                            exe.trojan.python
+  CrowdStrike                    win/malicious_confidence_90% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Python/TrojanDropper.Agent.NH trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Yogi.14068 (B)
+  GData                          Gen:Variant.Yogi.14068
+  Google                         Detected
+  Gridinsoft                     Trojan.Win64.Agent.sa
+  Kaspersky                      HEUR:Trojan.Python.Agent.gen
+  Kingsoft                       Win32.Troj.Unknown.a
+  Lionic                         Trojan.Win32.Agent.Y!c
+  Malwarebytes                   Trojan.Dropper
+  MicroWorld-eScan               Gen:Variant.Yogi.14068
+  Microsoft                      Trojan:Win32/Egairtigado!rfn
+  Paloalto                       generic.ml
+  Rising                         Dropper.Agent!8.2F (CLOUD)
+  SentinelOne                    Static AI - Suspicious PE
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Win32.Trojan.Agent.Itgl
+  TrellixENS                     Artemis!14B1EB938F22
+  TrendMicro-HouseCall           TROJ_GEN.R002H09H126
+  VIPRE                          Gen:Variant.Yogi.14068
+  Varist                         W64/Agent.MPL.gen!Eldorado
+  Webroot                        Win.Trojan.Gen
+  alibabacloud                   Trojan[dropper]:Python/Wacatac.B9nj
