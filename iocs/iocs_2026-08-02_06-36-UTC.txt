@@ -1,0 +1,141 @@
+# IOC Export  2026-08-02_06-36-UTC
+# 20 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+c89341ffa77579edea71e6902494c09a569cc4f6356d616933f273e8ea38bf89  # Botnet/IoT | R=84.5 | Mirai | elf
+05acc2835d011a176fd39f26a59accf2d73ef0365a26c61510d08336f2b8953a  # Botnet/IoT | R=84.5 | Mirai | elf
+b9a96066856f30c4d0e54547d8420957d79e493e32ea5792504dc065da8801d3  # Botnet/IoT | R=84.4 | Mirai | elf
+0ffec6082c9540ac473d603f278168458f574ac9018ba5ed9b7b1e7ec1539133  # Trojaner | R=82.3 | unbekannt | exe
+5c36d884cc8bb55a906013fadf14f21bf4a10fc57861633bd44d90f800c090d8  # Trojaner | R=82.2 | unbekannt | exe
+fa762f03d64d6d568b3155c923d4c94a82652a804bed6a52a8fbb153c88bfcb7  # Trojaner | R=82.1 | unbekannt | exe
+fdf0a3a084b3ee58a9bafb561a9ef3ee33e343e47f15d00c76bd0834c951ec68  # Botnet/IoT | R=81.7 | Mirai | elf
+9ec139883216be1269eefe88c2abd5cd2320b6d20bc3353094bce34a1eda4a32  # Trojaner | R=81.7 | unbekannt | exe
+86da9c301a25d0d818aa7a862a9329dbacb398cc16e285a9b8e4a1044a889a67  # Trojaner | R=81.6 | unbekannt | exe
+16e153644094fbba7ec924680c2f8cb203604bee06f3a77cbddb803c147af121  # Infostealer | R=81.0 | unbekannt | jar
+ebe31ad40a9ce206268d9f355e42ca4979847bfd861b3d157c06ed1bd842219c  # RAT | R=80.6 | ValleyRAT | exe
+aef01ab9e284b663cdd5caf288eff4120406ae452f5fb73e4b135c542aa59919  # Loader | R=73.6 | CoinMiner | exe
+f1dd856f66a38cae3488a9f077c4cc8c27445162e512cbb73770cac27436d869  # Loader | R=73.5 | unbekannt | exe
+25848334ac892d73fed07a04fca9b5ed55cc590fcf4a59c34b023fa35b1dfd00  # Loader | R=73.5 | unbekannt | exe
+350e3bddcd39098123be338cfcd12ef78a0d6cfabc48a17c6dacf31397880b3c  # Loader | R=73.3 | unbekannt | exe
+7d90b60e49f1589f7b076a6be149399d2d342dbf96fd30168e817ad9351498f8  # Loader | R=73.1 | Win64:Evo-gen [Trj] | exe
+266ee21a6c9f3408e472b4f146db4d1c6e5b0775bd04bae92862023d6c1e95f8  # Trojaner | R=64.3 | Efimer | exe
+1fda8f1674b9689dcbd949babb7d767d13a636e639cd4bea17aeb0efecd1882d  # Windows-Malware | R=37.0 | unbekannt | exe
+dc87cc13bad5c4cc715ace4737ac6f303994a68ec8a772067da9765d642e1b28  # Windows-Malware | R=36.4 | unbekannt | exe
+ff5ebcbb76cd264685df27c9aa3b78f825a2cf139aa52c58b880ba5fbd9b4f85  # Andere / Unbekannt | R=32.6 | unbekannt | sh
+
+[Tags]
+197b1ec4b9644da7b43669fd4f0ed73f
+1ca1b16e1515116e2993ab2e8acb2ae1
+CoinMiner
+DLLhijack
+Mirai
+Sabsik
+Silentnet
+SilverFox
+VMProtect
+ValleyRat
+backdoor
+dll
+donutloader
+dropped-by-remus
+elf
+exe
+inject
+injector
+jar
+rootkit
+sh
+signed
+stealer
+trojan
+upx
+upx-dec
+
+[VT Engine Detections]
+
+## fdf0a3a084b3ee58a9ba...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 20/75 Engines (26.7%) — 🟡 SCHWACH ERKANNT
+  AhnLab-V3                      Linux/MiraiDown.Exp
+  Antiy-AVL                      Trojan[Downloader]/Linux.Mirai
+  Avast-Mobile                   ELF:MiraiDownloader-PE [Drp]
+  Avira                          DR/LINUX.MiraiDown.PE
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.DownLoader.507
+  ESET-NOD32                     Linux/TrojanDownloader.Mirai.DH trojan
+  Elastic                        Linux.Generic.Threat
+  F-Secure                       Dropper.DR/LINUX.MiraiDown.PE
+  Fortinet                       ELF/Mirai.D!tr
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Linux.Mirai.d
+  McAfeeD                        ti!FDF0A3A084B3
+  Microsoft                      Backdoor:Linux/Mirai.HE!MTB
+  Rising                         Backdoor.Mirai/Linux!8.13285 (TFE:14:T2ccKh11pmR)
+  Sangfor                        Suspicious.Linux.Save.a
+  TrendMicro                     Possible_MIRAIDLOD.SMLBR4
+  TrendMicro-HouseCall           Possible_MIRAIDLOD.SMLBR4
+  Varist                         E32/Mirai.IB.gen!Eldorado
+  huorong                        TrojanDownloader/Linux.Shell.dd
+
+## 7d90b60e49f1589f7b07...  (Win64:Evo-gen [Trj]) | Defender: ✗ nicht erkannt
+   Erkannt: 22/75 Engines (29.3%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AVG                            Win64:Evo-gen [Trj]
+  Avast                          Win64:Evo-gen [Trj]
+  Avira                          TR/W64.Evo
+  Bkav                           W32.Malware.F862A547
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win64/Packed.VMProtect.AM suspicious application
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W64.Evo
+  Malwarebytes                   Malware.AI.4122270629
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        ti!7D90B60E49F1
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  SentinelOne                    Static AI - Malicious PE
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       malicious.high.ml.score
+  VirIT                          Win32.Cheburgen.A
+  Zoner                          Probably Heur.ExeHeaderL
+  huorong                        Trojan/W64.HiJack.ai!crit
+
+## 266ee21a6c9f3408e472...  (Efimer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Yogi.14068
+   Erkannt: 36/75 Engines (48.0%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Yogi.14068
+  APEX                           Malicious
+  AVG                            FileRepMalware [Misc]
+  Alibaba                        TrojanDropper:Application/Generic.a9a11e9a
+  Arcabit                        Trojan.Yogi.D36F4
+  Avast                          FileRepMalware [Misc]
+  BitDefender                    Gen:Variant.Yogi.14068
+  Bkav                           W32.Malware.7E38CB70
+  CTX                            exe.trojan.python
+  CrowdStrike                    win/malicious_confidence_90% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Python/TrojanDropper.Agent.NH trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Yogi.14068 (B)
+  GData                          Gen:Variant.Yogi.14068
+  Google                         Detected
+  Gridinsoft                     Trojan.Win64.Agent.sa
+  Kaspersky                      HEUR:Trojan.Python.Agent.gen
+  Kingsoft                       Win32.Troj.Unknown.a
+  Lionic                         Trojan.Win32.Agent.Y!c
+  Malwarebytes                   Trojan.Dropper
+  MicroWorld-eScan               Gen:Variant.Yogi.14068
+  Microsoft                      Trojan:Win32/Egairtigado!rfn
+  Paloalto                       generic.ml
+  Rising                         Dropper.Agent!8.2F (CLOUD)
+  SentinelOne                    Static AI - Suspicious PE
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Win32.Trojan.Agent.Itgl
+  TrellixENS                     Artemis!14B1EB938F22
+  TrendMicro-HouseCall           TROJ_GEN.R002H09H126
+  VIPRE                          Gen:Variant.Yogi.14068
+  Varist                         W64/Agent.MPL.gen!Eldorado
+  Webroot                        Win.Trojan.Gen
+  alibabacloud                   Trojan[dropper]:Python/Wacatac.B9nj
