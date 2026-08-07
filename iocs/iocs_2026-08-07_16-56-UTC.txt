@@ -1,0 +1,171 @@
+# IOC Export  2026-08-07_16-56-UTC
+# 22 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+2b45aeb88bf38dd8dfbb13390c5b0f5efd6a298a6f967ac773cf47b2489ee5ab  # RAT | R=89.0 | AsyncRAT | exe
+14cfc813ef030e8b3f0e85fe8c140e1b746b52c76fff8352d0d92eb46f725470  # RAT | R=83.6 | ValleyRAT | exe
+4115dfac942c3e99fa356fcd89cb30ecbeb8156da57b1fb0d8c8270699b6417b  # Infostealer | R=83.5 | RemusStealer | exe
+a42df8053e42a3f98ce47aa8a0d130c0aa939d3dd9a8585011ddd665a8463fe0  # Trojaner | R=82.7 | unbekannt | exe
+a7e8bb5263b34be020d8b5c938b4c4187f390b9240f9ce757cae953da9988227  # Infostealer | R=81.4 | unbekannt | exe
+5fa116e699f23e230c6c17a47d499feae725069ec5186196df24a7346e0f77f5  # Infostealer | R=81.4 | unbekannt | dll
+ca31be1448cc15dfb3359f1ab1ba32cf6124fde5216457ca9fd03918892ec43b  # Infostealer | R=81.4 | unbekannt | unknown
+f31df9170d3d70c2e3a84e56f1dabe093f19c79013a4d741cda3697ab2a93eed  # Infostealer | R=81.4 | unbekannt | unknown
+36664f0225595e160bc93b3e3891cb84bcaa21fe1653e6485dea0a0bc3bed97e  # Infostealer | R=81.4 | unbekannt | cmd
+b0209a56237964228cbd95cfe7ee4c639e20da8bfb01bc19e84e43cb3d832c01  # Infostealer | R=81.4 | unbekannt | unknown
+c4a461b72c5bfa08d4bffa4d10d265d3777efeb4066566442b11220cd48b88c6  # Infostealer | R=81.4 | unbekannt | unknown
+690b3aacb438e50788ca6018d18caa7bd1d18121e71649e7d2e36067919ca0d6  # RAT | R=81.0 | Win64:MalwareX-gen [Bd] | exe
+d82fd1f36b81436d7fd9096cec50e2d08dbe148680ff1281e59b10d0fe806448  # RAT | R=80.4 | PureRAT | exe
+4050513fd2c0e7872d037adc911283a8362a5173ff1910ff5eb8890b980e7994  # Loader | R=74.5 | CoinMiner | exe
+8d9a8edde0f4615113949a0b6b7535d5a12b87bdd8124c9412cb61ca8f8f687c  # Loader | R=73.9 | unbekannt | exe
+266ee21a6c9f3408e472b4f146db4d1c6e5b0775bd04bae92862023d6c1e95f8  # Trojaner | R=61.1 | Efimer | exe
+38dd590230477de92aec21c75432a4df5df521c6975be04cfa66ffd1853f87a0  # Linux-Malware | R=42.1 | unbekannt | elf
+4c0cc7a436d76943027df0515a69c3281fb981ace332a3b8897ae2faf154558b  # Windows-Malware | R=38.9 | unbekannt | exe
+45673a6be8ea49ec58d1c264087744f5ee5b43ed13e59545d3eff27544bd9e6a  # Andere / Unbekannt | R=31.7 | unbekannt | sh
+5b94367e705b0f56543a37959cf1014d517d6ab34aac1ae82566d557e9439e63  # Andere / Unbekannt | R=31.7 | unbekannt | unknown
+55555e947e261ba604d11975dced1e7db63adf6e1f36b65aec5bb0de45cc7ed7  # Andere / Unbekannt | R=31.7 | unbekannt | sh
+c8756ea3af938d0c6d6940850b12d23963e1e417aae0aa15c2fcb13390974995  # Andere / Unbekannt | R=31.6 | unbekannt | zip
+
+[Tags]
+92-205-105-93
+93-105-205-92-host-secureserver-net
+A
+Amatera
+AmateraStealer
+Async
+AsyncRAT
+B
+BB4.file
+CoinMiner
+EtherHiding
+MIX1.file
+MSBuild
+PureRAT
+RAT
+RemusStealer
+RenPyLoader
+SilverFox
+Trojan/SilverFox.sj[pd]
+ValleyRAT
+adws-avcstentrega-com
+bat
+cmd
+container
+csproj
+d52f85
+dll
+dotnet
+downloader
+dropped-by-Amadey
+dropped-by-GCleaner
+elf
+encrypted
+enthec
+exe
+loader
+lolbin
+memory-only
+packer
+renpy
+rpa
+sh
+signed
+targets
+zip
+
+[VT Engine Detections]
+
+## 4115dfac942c3e99fa35...  (RemusStealer) | Defender: ✓ Trojan:Win32/Wacatac.B!ml
+   Erkannt: 10/75 Engines (13.3%) — 🟡 SCHWACH ERKANNT
+  CrowdStrike                    win/malicious_confidence_60% (D)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     WinGo/Kryptik.WR trojan
+  Elastic                        malicious (high confidence)
+  Google                         Detected
+  Kaspersky                      VHO:Trojan.Win64.Convagent.gen
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Symantec                       ML.Attribute.HighConfidence
+  Varist                         W64/Agent.MVW.gen!Eldorado
+  huorong                        Trojan/Loader.vx
+
+## 2b45aeb88bf38dd8dfbb...  (AsyncRAT) | Defender: ✗ nicht erkannt
+   Erkannt: 8/75 Engines (10.7%) — 🟡 SCHWACH ERKANNT
+  AVG                            FileRepMalware [Misc]
+  AhnLab-V3                      Trojan/Win.MalwareX-gen.R787785
+  Alibaba                        Exploit:Win32/BypassUAC.c66247ab
+  Avast                          FileRepMalware [Misc]
+  ESET-NOD32                     Win64/Agent.KAM trojan
+  Kaspersky                      HEUR:Exploit.Win32.BypassUAC.b
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Trojan.MalCert@XH.2EAF (CERT:3v3i7b5gL7G/wIr14BxZIg)
+
+## 690b3aacb438e50788ca...  (Win64:MalwareX-gen [Bd]) | Defender: ✗ nicht erkannt
+   Erkannt: 14/75 Engines (18.7%) — 🟡 SCHWACH ERKANNT
+  AVG                            Win64:MalwareX-gen [Bd]
+  Antiy-AVL                      Trojan/Win64.Valley
+  Avast                          Win64:MalwareX-gen [Bd]
+  Bkav                           W32.Malware.1EAFEDC1
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win64/Valley.G trojan
+  Elastic                        malicious (high confidence)
+  Ikarus                         Trojan.Win64.Valley
+  Kaspersky                      UDS:Backdoor.Win32.Xkcp
+  Malwarebytes                   Malware.AI.3784004451
+  McAfeeD                        ti!690B3AACB438
+  Microsoft                      Trojan:Win32/Sabsik.EN.A!ml
+  Rising                         Backdoor.Xkcp!8.18DDE (TFE:5:9i9emkGKIIP)
+  Symantec                       ML.Attribute.HighConfidence
+
+## 14cfc813ef030e8b3f0e...  (ValleyRAT) | Defender: ✗ nicht erkannt
+   Erkannt: 6/75 Engines (8.0%) — ⚠️ KAUM ERKANNT
+  APEX                           Malicious
+  AVG                            Other:Malware-gen [Trj]
+  Avast                          Other:Malware-gen [Trj]
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  Gridinsoft                     Trojan.Win64.Gen.oa!s1
+  Zillya                         Trojan.Shellcode.Win32.3637
+
+## 266ee21a6c9f3408e472...  (Efimer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Yogi.14068
+   Erkannt: 43/75 Engines (57.3%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Yogi.14068
+  APEX                           Malicious
+  AVG                            FileRepMalware [Misc]
+  Alibaba                        TrojanDropper:Application/Generic.a9a11e9a
+  Arcabit                        Trojan.Yogi.D36F4
+  Avast                          FileRepMalware [Misc]
+  BitDefender                    Gen:Variant.Yogi.14068
+  Bkav                           W32.Malware.7E38CB70
+  CTX                            exe.trojan.python
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Python/TrojanDropper.Agent.NH trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Yogi.14068 (B)
+  Fortinet                       W32/Agent.NH!tr
+  GData                          Gen:Variant.Yogi.14068
+  Google                         Detected
+  Gridinsoft                     Trojan.Win64.Agent.sa
+  Ikarus                         Trojan-Dropper.Python.Agent
+  K7AntiVirus                    Trojan ( 005d2a881 )
+  K7GW                           Trojan ( 005d2a881 )
+  Kaspersky                      HEUR:Trojan.Python.Agent.gen
+  Kingsoft                       Win32.Troj.Unknown.a
+  Lionic                         Trojan.Win32.Python.4!c
+  Malwarebytes                   Trojan.Dropper
+  McAfeeD                        ti!266EE21A6C9F
+  MicroWorld-eScan               Gen:Variant.Yogi.14068
+  Microsoft                      Trojan:Win32/Egairtigado!rfn
+  Paloalto                       generic.ml
+  Rising                         Dropper.Agent!8.2F (CLOUD)
+  SentinelOne                    Static AI - Suspicious PE
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Win32.Trojan.Agent.Itgl
+  TrellixENS                     Artemis!14B1EB938F22
+  TrendMicro                     Trojan.Win32.EGAIRTIGADO.USBLH126
+  TrendMicro-HouseCall           Trojan.Win32.EGAIRTIGADO.USBLH126
+  VIPRE                          Gen:Variant.Yogi.14068
+  Varist                         W64/Agent.MPL.gen!Eldorado
+  Webroot                        Win.Trojan.Gen
+  Zillya                         Backdoor.XWorm.Win32.3294
+  alibabacloud                   Trojan[dropper]:Python/Wacatac.B9nj
