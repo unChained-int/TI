@@ -1,0 +1,132 @@
+# IOC Export  2026-08-08_06-58-UTC
+# 18 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+7b1a2f6b022063f43c9aadb9334041074426d13992086bcd991404faf5748233  # Trojaner | R=83.4 | Malicious (score: 99) | elf
+1079cfc48fc839376c86836abef8f8d2756f79abc690025ad303e04ed68b37b5  # Trojaner | R=83.2 | Troj/Dloadr-EJE | sh
+98cc6051913038a7e7cb1d3619a584792aab4f40f3337530f73b87e724e7534f  # Trojaner | R=82.8 | ELF:Agent-EPS [Trj] | elf
+bde027623ac81616afb0be9a3ff9f7ec718278f89bf684feded59738175cc114  # Trojaner | R=78.0 | Efimer | exe
+266ee21a6c9f3408e472b4f146db4d1c6e5b0775bd04bae92862023d6c1e95f8  # Trojaner | R=61.1 | Efimer | exe
+839351cde72ac36b141031444b7e68bed741378c39c5134e8e27e9609823bd98  # Linux-Malware | R=43.2 | unbekannt | elf
+0573a64cc6d5d78c9f89509900dc3cb963c05de96f8156961cb4fa74af8f0ed5  # Linux-Malware | R=43.2 | unbekannt | elf
+95f5507f39fc2985c9e5eee77865c755fe3de293d64a94de35069c5234b6aa73  # Linux-Malware | R=43.2 | unbekannt | elf
+754c1dc24e758cab3f430507e1fd4e48d65ae6fa806896305d0c4443d3142369  # Linux-Malware | R=43.2 | unbekannt | elf
+3bdc92ee577917117b39231b78173197b9722479844633ca6fe1abbb5ea40fe2  # Linux-Malware | R=43.2 | unbekannt | elf
+b80e14e8d7a27fe2ac3959a8da0e75fa85fa10a54c79c3ee3879d4f581809370  # Linux-Malware | R=43.2 | unbekannt | elf
+d04fa62702cf6f9f9b73c669758c91585b35ea18f2e6ca5bbadf1afaa63db74f  # Linux-Malware | R=43.2 | unbekannt | elf
+5cda20b9c5d242d96e39e8f3ed30e60256fc8ea3789ec8e37bd79af77e602346  # Linux-Malware | R=43.2 | unbekannt | elf
+75a1f2cd577dbc5d8a400ab0fc49f1ea9516c1734e3b078225fbdbd4ccbbe455  # Linux-Malware | R=43.2 | unbekannt | elf
+1087a2bfc5bf9c48fc894e8ed5d2eeb728e7afc9f79aec6737ee4b4714d9565c  # Linux-Malware | R=43.2 | unbekannt | elf
+b5e8b4ae37f13f2f0d5395712afb4c8f8b71034915d2a76ef2bbc0297b555aa0  # Android-Malware | R=41.7 | unbekannt | apk
+e615cc96f7eec986fe4c10b109739dfb9a4ceaa8d0df87ef03474cf46b71b19a  # Windows-Malware | R=39.0 | unbekannt | exe
+6e679d77e2ca2f8cfbbe65306d0dea83fc3363ab2254a2afe33ac82f821fdd87  # Skript/Dropper | R=38.6 | unbekannt | vbs
+
+[Tags]
+ClickFix
+Efimer
+MEX
+SHAPARAK
+apk
+elf
+exe
+geo
+sh
+signed
+vbs
+
+[VT Engine Detections]
+
+## 1079cfc48fc839376c86...  (Troj/Dloadr-EJE) | Defender: ✗ nicht erkannt
+   Erkannt: 6/75 Engines (8.0%) — ⚠️ KAUM ERKANNT
+  ESET-NOD32                     Linux/DeceptiveDevelopment.D trojan
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.dy
+  Microsoft                      Trojan:Script/Wacatac.C!ml
+  Sophos                         Troj/Dloadr-EJE
+  ZoneAlarm                      Troj/Dloadr-EJE
+
+## 7b1a2f6b022063f43c9a...  (Malicious (score: 99)) | Defender: ✓ Trojan:Script/Wacatac.B!ml
+   Erkannt: 5/75 Engines (6.7%) — ⚠️ KAUM ERKANNT
+  Avast-Mobile                   ELF:Agent-EPS [Trj]
+  Avira                          TR/LINUX.DDOSAgent.DF
+  Cynet                          Malicious (score: 99)
+  F-Secure                       Trojan.TR/LINUX.DDOSAgent.DF
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+
+## 98cc6051913038a7e7cb...  (ELF:Agent-EPS [Trj]) | Defender: ✗ nicht erkannt
+   Erkannt: 7/75 Engines (9.3%) — ⚠️ KAUM ERKANNT
+  AVG                            ELF:Agent-EPS [Trj]
+  Avast                          ELF:Agent-EPS [Trj]
+  Avast-Mobile                   ELF:Agent-EPS [Trj]
+  Avira                          TR/LINUX.Agent.EPS
+  Cynet                          Malicious (score: 99)
+  F-Secure                       Trojan.TR/LINUX.Agent.EPS
+  Google                         Detected
+
+## bde027623ac81616afb0...  (Efimer) | Defender: ✓ Gen:Variant.Yogi.41790
+   Erkannt: 19/75 Engines (25.3%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Gen:Variant.Yogi.41790
+  APEX                           Malicious
+  Arcabit                        Trojan.Yogi.DA33E
+  BitDefender                    Gen:Variant.Yogi.41790
+  Bkav                           W32.Malware.14EE7C74
+  CTX                            exe.unknown.yogi
+  CrowdStrike                    win/malicious_confidence_90% (W)
+  Cylance                        Unsafe
+  ESET-NOD32                     Python/TrojanDropper.Agent.NH trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Yogi.41790 (B)
+  GData                          Gen:Variant.Yogi.41790
+  Kaspersky                      HEUR:Trojan.Python.Agent.gen
+  Malwarebytes                   Trojan.Dropper
+  MicroWorld-eScan               Gen:Variant.Yogi.41790
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  SentinelOne                    Static AI - Suspicious PE
+  Tencent                        Win32.Trojan.Agent.Qsmw
+  VIPRE                          Gen:Variant.Yogi.41790
+
+## 266ee21a6c9f3408e472...  (Efimer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Yogi.14068
+   Erkannt: 43/75 Engines (57.3%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Yogi.14068
+  APEX                           Malicious
+  AVG                            FileRepMalware [Misc]
+  Alibaba                        TrojanDropper:Application/Generic.a9a11e9a
+  Arcabit                        Trojan.Yogi.D36F4
+  Avast                          FileRepMalware [Misc]
+  BitDefender                    Gen:Variant.Yogi.14068
+  Bkav                           W32.Malware.7E38CB70
+  CTX                            exe.trojan.python
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Python/TrojanDropper.Agent.NH trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Yogi.14068 (B)
+  Fortinet                       W32/Agent.NH!tr
+  GData                          Gen:Variant.Yogi.14068
+  Google                         Detected
+  Gridinsoft                     Trojan.Win64.Agent.sa
+  Ikarus                         Trojan-Dropper.Python.Agent
+  K7AntiVirus                    Trojan ( 005d2a881 )
+  K7GW                           Trojan ( 005d2a881 )
+  Kaspersky                      HEUR:Trojan.Python.Agent.gen
+  Kingsoft                       Win32.Troj.Unknown.a
+  Lionic                         Trojan.Win32.Python.4!c
+  Malwarebytes                   Trojan.Dropper
+  McAfeeD                        ti!266EE21A6C9F
+  MicroWorld-eScan               Gen:Variant.Yogi.14068
+  Microsoft                      Trojan:Win32/Egairtigado!rfn
+  Paloalto                       generic.ml
+  Rising                         Dropper.Agent!8.2F (CLOUD)
+  SentinelOne                    Static AI - Suspicious PE
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Win32.Trojan.Agent.Itgl
+  TrellixENS                     Artemis!14B1EB938F22
+  TrendMicro                     Trojan.Win32.EGAIRTIGADO.USBLH126
+  TrendMicro-HouseCall           Trojan.Win32.EGAIRTIGADO.USBLH126
+  VIPRE                          Gen:Variant.Yogi.14068
+  Varist                         W64/Agent.MPL.gen!Eldorado
+  Webroot                        Win.Trojan.Gen
+  Zillya                         Backdoor.XWorm.Win32.3294
+  alibabacloud                   Trojan[dropper]:Python/Wacatac.B9nj
