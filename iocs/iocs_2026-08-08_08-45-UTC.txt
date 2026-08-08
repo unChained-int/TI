@@ -1,0 +1,126 @@
+# IOC Export  2026-08-08_08-45-UTC
+# 14 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+239ef2d2bf331088146b00d3ae136d0291587f6b36fcc5e316bc1f0bb0aa5b3d  # Trojaner | R=83.8 | win/malicious_confidence_60% ( | exe
+5c047137f0216fadb95aaf302809eb0ac2f3db0c36729152c1351fb821d94fca  # Infostealer | R=81.4 | ZigClipper | exe
+b3d0ee25f77aaa1d74f6325ada58ba6beda3d0c760a2290451dedd36790942d2  # Loader | R=76.8 | Linux | sh
+1f50528655f27c8fba2babb6ab839dfb7e5fd0f8dd391e16850ddd291662851e  # Loader | R=74.8 | unbekannt | exe
+fd2a8216e43edad7fa7e2ac6e7c1d2a52dd288f3ac242e525d74333c8c9c7c28  # Loader | R=73.2 | SMLBAT3 | sh
+266ee21a6c9f3408e472b4f146db4d1c6e5b0775bd04bae92862023d6c1e95f8  # Trojaner | R=61.1 | Efimer | exe
+412f114b112d11f10f069bc4b941dca52667cc2b6ffeb41ef9fbfe2709d2f11e  # Linux-Malware | R=42.7 | unbekannt | elf
+c43acf99103c323dec615c0f2b7f6af9c77c89c4988c51f2bfb2b1f5523b4127  # Windows-Malware | R=38.3 | unbekannt | exe
+b98f565f960397b76fc2a93f82f8479dc24991cd24c5b7d41b74ec6c81f11caf  # Andere / Unbekannt | R=32.6 | unbekannt | sh
+0c98addfd450bd3eeb0f3fddc94bd43250a41a136e3d65f32ec91fb23f00f87b  # Andere / Unbekannt | R=32.5 | unbekannt | sh
+476b69cb44591479d67a0bc8621b049fcad833f65ed28c6803f864a5ecf7438a  # Andere / Unbekannt | R=32.3 | unbekannt | sh
+07bc0e03a2e94c4ff9efd9700d543c3bc04141a6696f31c683ff54b65544e81b  # Andere / Unbekannt | R=32.3 | unbekannt | sh
+8d7dba5602a85fa82544675f6699082f0ea36c04ca837b2b7addc9a6b2b81249  # Andere / Unbekannt | R=32.2 | unbekannt | sh
+585ded09f8064d9be8ccf9d509a4c298ee1ddd61ff098067c3c157e8d66af80d  # Andere / Unbekannt | R=32.0 | unbekannt | sh
+
+[Tags]
+ClickFix
+Efimer
+F
+MIX2.file
+ZigClipper
+dropped-by-GCleaner
+elf
+enthec
+exe
+sh
+signed
+whack.sh
+
+[VT Engine Detections]
+
+## fd2a8216e43edad7fa7e...  (SMLBAT3) | Defender: ✗ nicht erkannt
+   Erkannt: 15/75 Engines (20.0%) — 🟡 SCHWACH ERKANNT
+  Avira                          HTML/ExpKit.Gen2
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.DownLoader.37
+  ESET-NOD32                     Linux/TrojanDownloader.SH.FFM trojan
+  F-Secure                       Malware.HTML/ExpKit.Gen2
+  Fortinet                       PowerShell/Dloader.AEH!tr
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.a
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  Rising                         Downloader.Mirai/BASH!1.CECE (CLASSIC)
+  Symantec                       CL.Downloader!gen277
+  TrendMicro                     Possible_BASHDLOD.SMLBAT3
+  TrendMicro-HouseCall           Possible_BASHDLOD.SMLBAT3
+  Varist                         SH/Mirai.C.gen!Camelot
+  huorong                        TrojanDownloader/Linux.Agent.aj
+
+## 5c047137f0216fadb95a...  (ZigClipper) | Defender: ✗ nicht erkannt
+   Erkannt: 15/75 Engines (20.0%) — 🟡 SCHWACH ERKANNT
+  AVG                            Win64:Evo-gen [Trj]
+  Avast                          Win64:Evo-gen [Trj]
+  Avira                          TR/W64.Evo
+  Bkav                           W32.Malware.4A5ADCCC
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     WinGo/Kryptik.WR trojan
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W64.Evo
+  Kaspersky                      Trojan.Win64.Agent.smgyiw
+  McAfeeD                        ti!5C047137F021
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Symantec                       ML.Attribute.HighConfidence
+  huorong                        Trojan/Loader.vm
+
+## 239ef2d2bf331088146b...  (win/malicious_confidence_60% () | Defender: ✗ nicht erkannt
+   Erkannt: 2/75 Engines (2.7%) — ⚠️ KAUM ERKANNT
+  CrowdStrike                    win/malicious_confidence_60% (W)
+  MaxSecure                      Trojan.Malware.300983.susgen
+
+## b3d0ee25f77aaa1d74f6...  (Linux) | Defender: ✗ nicht erkannt
+   Erkannt: 2/75 Engines (2.7%) — ⚠️ KAUM ERKANNT
+  DrWeb                          Linux.DownLoader.2650
+  Kaspersky                      not-a-virus:UDS:Downloader.Linux.Agent
+
+## 266ee21a6c9f3408e472...  (Efimer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Yogi.14068
+   Erkannt: 43/75 Engines (57.3%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Yogi.14068
+  APEX                           Malicious
+  AVG                            FileRepMalware [Misc]
+  Alibaba                        TrojanDropper:Application/Generic.a9a11e9a
+  Arcabit                        Trojan.Yogi.D36F4
+  Avast                          FileRepMalware [Misc]
+  BitDefender                    Gen:Variant.Yogi.14068
+  Bkav                           W32.Malware.7E38CB70
+  CTX                            exe.trojan.python
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Python/TrojanDropper.Agent.NH trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Yogi.14068 (B)
+  Fortinet                       W32/Agent.NH!tr
+  GData                          Gen:Variant.Yogi.14068
+  Google                         Detected
+  Gridinsoft                     Trojan.Win64.Agent.sa
+  Ikarus                         Trojan-Dropper.Python.Agent
+  K7AntiVirus                    Trojan ( 005d2a881 )
+  K7GW                           Trojan ( 005d2a881 )
+  Kaspersky                      HEUR:Trojan.Python.Agent.gen
+  Kingsoft                       Win32.Troj.Unknown.a
+  Lionic                         Trojan.Win32.Python.4!c
+  Malwarebytes                   Trojan.Dropper
+  McAfeeD                        ti!266EE21A6C9F
+  MicroWorld-eScan               Gen:Variant.Yogi.14068
+  Microsoft                      Trojan:Win32/Egairtigado!rfn
+  Paloalto                       generic.ml
+  Rising                         Dropper.Agent!8.2F (CLOUD)
+  SentinelOne                    Static AI - Suspicious PE
+  Sophos                         Mal/Generic-S
+  Symantec                       Trojan.Gen.MBT
+  Tencent                        Win32.Trojan.Agent.Itgl
+  TrellixENS                     Artemis!14B1EB938F22
+  TrendMicro                     Trojan.Win32.EGAIRTIGADO.USBLH126
+  TrendMicro-HouseCall           Trojan.Win32.EGAIRTIGADO.USBLH126
+  VIPRE                          Gen:Variant.Yogi.14068
+  Varist                         W64/Agent.MPL.gen!Eldorado
+  Webroot                        Win.Trojan.Gen
+  Zillya                         Backdoor.XWorm.Win32.3294
+  alibabacloud                   Trojan[dropper]:Python/Wacatac.B9nj
