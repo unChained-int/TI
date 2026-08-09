@@ -1,0 +1,154 @@
+# IOC Export  2026-08-09_07-00-UTC
+# 12 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+bab6ccd1bd6cd243c42f0f03c959184117d03a73ca01476bdd6055f15458f2d4  # Botnet/IoT | R=83.5 | Mirai | sh
+d98b123c1250a2a1c6bf75fb3ed8aaaa187c56446bf0d1eaa88369158cd3ebee  # Loader | R=76.6 | Win64:Evo-gen [Trj] | exe
+ff6fbc8214ffde938f84f69b78c355ad153596d385fdb15692d6da5795a440f8  # Loader | R=73.7 | unbekannt | exe
+d1aec788c7751a1314dd471cf96bbbc05ca939d44b33ec149080afaacd369c02  # Trojaner | R=72.4 | Tsunami | elf
+0c8531102efedf9944961949712c56316ccc79c39e1ee4aef15fc46809f707ff  # Trojaner | R=66.4 | RemusStealer | exe
+6d29b886511af8be0d0a7bbf2383ecdd86959e26445bccc4841ac9ea3c1bf1f7  # Linux-Malware | R=43.0 | unbekannt | elf
+fdbee28882e9c13941fc4fc4575935af1ab37ca84114ec4bc039b50f770ce218  # Android-Malware | R=42.7 | unbekannt | apk
+c7b2edcd0f5c24dd5e571a1983c5c514e7d2e6ef2e0268a3f43d50d79076e69e  # Skript/Dropper | R=39.0 | unbekannt | vbs
+63fc70073f5a9189ffa267a3b3b23d1825657a4f5c616f4ef435d07a38881305  # Windows-Malware | R=39.0 | Efimer | exe
+52dd8b2f9145907477a6ebc4ad406c1e4b221ea967f1c2ce8bc23faa83b663d8  # Windows-Malware | R=38.9 | unbekannt | msi
+da876a7f7b1f9db8081060b350a2aa2b3e6c6c09efaab7d0e9c3b12556a312e0  # Andere / Unbekannt | R=32.7 | unbekannt | sh
+9ad3e5e06e7127a6fd0d42d515179a12f407066001169fbb3034d9c27c4357af  # Andere / Unbekannt | R=31.5 | unbekannt | sh
+
+[Tags]
+BB4.file
+ClickFix
+Efimer
+F
+MEX
+Mirai
+OffLoader
+SHAPARAK
+Tsunami
+apk
+backdoor
+downloader
+dropped-by-GCleaner
+elf
+exe
+geo
+loader
+msi
+sh
+signed
+vbs
+wraith
+
+[VT Engine Detections]
+
+## bab6ccd1bd6cd243c42f...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 15/75 Engines (20.0%) — 🟡 SCHWACH ERKANNT
+  Avira                          HTML/ExpKit.Gen2
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.DownLoader.37
+  ESET-NOD32                     Linux/TrojanDownloader.SH.FFM trojan
+  F-Secure                       Malware.HTML/ExpKit.Gen2
+  Fortinet                       PowerShell/Dloader.AEH!tr
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Shell.Agent.a
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  Rising                         Downloader.Mirai/BASH!1.CECE (CLASSIC)
+  Symantec                       CL.Downloader!gen277
+  TrendMicro                     Possible_BASHDLOD.SMLBAT3
+  TrendMicro-HouseCall           Possible_BASHDLOD.SMLBAT3
+  Varist                         SH/Mirai.C.gen!Camelot
+  huorong                        TrojanDownloader/Linux.Agent.aj
+
+## d98b123c1250a2a1c6bf...  (Win64:Evo-gen [Trj]) | Defender: ✗ nicht erkannt
+   Erkannt: 14/75 Engines (18.7%) — 🟡 SCHWACH ERKANNT
+  AVG                            Win64:Evo-gen [Trj]
+  Avast                          Win64:Evo-gen [Trj]
+  Avira                          TR/W64.Evo
+  Bkav                           W32.Malware.BEE4CD0A
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  DeepInstinct                   MALICIOUS
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W64.Evo
+  Fortinet                       W64/Kryptik.WF!tr
+  McAfeeD                        Trojan:Win/Remus.GOAX
+  Microsoft                      Trojan:Win32/Wacatac.C!ml
+  Sangfor                        Trojan.Win32.Save.a
+  Symantec                       ML.Attribute.HighConfidence
+  huorong                        Trojan/Loader.ww
+
+## d1aec788c7751a1314dd...  (Tsunami) | Defender: ✓ Gen:Variant.Linux.Tsunami.2
+   Erkannt: 36/75 Engines (48.0%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Linux.Tsunami.2
+  AVG                            ELF:Aidra-AC [Trj]
+  AhnLab-V3                      Linux/Tsunami.Gen2
+  Arcabit                        Trojan.Linux.Tsunami.2
+  Avast                          ELF:Aidra-AC [Trj]
+  Avast-Mobile                   ELF:Aidra-AC [Trj]
+  Avira                          TR/LINUX.Aidra.AC
+  BitDefender                    Gen:Variant.Linux.Tsunami.2
+  CAT-QuickHeal                  Backdoor.Linux.Tsunami.A
+  CTX                            elf.unknown.tsunami
+  ClamAV                         Unix.Trojan.Tsunami-7644568-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.BackDoor.Tsunami.1558
+  ESET-NOD32                     Linux/Tsunami.NDJ trojan
+  Emsisoft                       Gen:Variant.Linux.Tsunami.2 (B)
+  F-Secure                       Trojan.TR/LINUX.Aidra.AC
+  Fortinet                       ELF/Tsunami.NDJ!tr
+  GData                          Gen:Variant.Linux.Tsunami.2
+  Google                         Detected
+  Ikarus                         Linux.Bot
+  Kaspersky                      Backdoor.Linux.Tsunami.gen
+  Kingsoft                       Linux.Backdoor.Tsunami.gen
+  Lionic                         Trojan.ELF.Tsunami.4!c
+  McAfeeD                        Trojan:Linux/Mirai.EQQ
+  MicroWorld-eScan               Gen:Variant.Linux.Tsunami.2
+  Microsoft                      Backdoor:Linux/Mirai.DA!MTB
+  Rising                         Backdoor.Tsunami/Linux!1.A1B2 (CLASSIC)
+  Sangfor                        Suspicious.Linux.Save.a
+  Sophos                         Linux/Tsunami-A
+  Tencent                        Backdoor.Linux.IRCShell.ba
+  TrendMicro                     ELF_KAITEN.SMK
+  TrendMicro-HouseCall           ELF_KAITEN.SMK
+  VIPRE                          Gen:Variant.Linux.Tsunami.2
+  Varist                         E32/Mirai.AO.gen!Eldorado
+  ZoneAlarm                      Linux/Tsunami-A
+  huorong                        Trojan/Linux.Agent.ac
+
+## 0c8531102efedf994496...  (RemusStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan.GenericKD.81059032
+   Erkannt: 35/75 Engines (46.7%) — 🟠 MÄSSIG ERKANNT
+  AVG                            Win64:Evo-gen [Trj]
+  Arcabit                        Trojan.Generic.D4D4DCD8
+  Avast                          Win64:Evo-gen [Trj]
+  Avira                          TR/W64.Evo
+  BitDefender                    Trojan.GenericKD.81059032
+  Bkav                           W32.Malware.D4B74434
+  CTX                            exe.trojan.kryptik
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     WinGo/Kryptik.WR trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Trojan.GenericKD.81059032 (B)
+  F-Secure                       Trojan.TR/W64.Evo
+  Fortinet                       W64/Kryptik.WF!tr
+  GData                          Win64.Trojan.Agent.MRY061
+  Google                         Detected
+  Kaspersky                      Trojan.Win64.Agent.smgygk
+  Lionic                         Trojan.Win32.RemusStealer.4!c
+  Malwarebytes                   Malware.AI.3588224985
+  McAfeeD                        ti!0C8531102EFE
+  MicroWorld-eScan               Trojan.GenericKD.81059032
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Trojan.Kryptik!8.8 (CLOUD)
+  Sangfor                        Trojan.Win64.Kryptik.Vw8j
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Win32.Trojan.FalseSign.Bdhl
+  Trapmine                       suspicious.low.ml.score
+  TrellixENS                     Artemis!578ABF40737E
+  VIPRE                          Trojan.GenericKD.81059032
+  Varist                         W64/ABRisk.FDBB-0037
+  huorong                        Trojan/Loader.vx
