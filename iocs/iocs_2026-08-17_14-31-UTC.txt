@@ -1,0 +1,216 @@
+# IOC Export  2026-08-17_14-31-UTC
+# 18 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+d5ad75b4ceef2e57ac49703651a22059a60babd885620f609d80d34039a6d888  # Botnet/IoT | R=83.1 | Mirai | elf
+f78b677683e0c567846a5a642c0a9ba960fbf6464ee6fc9c2cd8280ecffcddca  # Infostealer | R=81.3 | unbekannt | zip
+a7e2092ea6d8891ad0621f091089910aa1acea040ba7960472e1cbb04e57f6fe  # Botnet/IoT | R=80.2 | Mirai | elf
+1be5f69f087a2fdf7dc4748394ff5868edbf8f933348946303071a3cc40a2b3b  # Loader | R=74.5 | unbekannt | exe
+9d08b2f19f1f239652d9fc41500348262101a1fb88b2f9dc1dfe93d54b73d88d  # Loader | R=74.1 | unbekannt | exe
+f06bf8bc2ff7ce8dc16a0ca3767cfe38a0e7f44a1f52b3a7b9967cd5790dc8ee  # Loader | R=69.5 | Dacic | exe
+4910d0d39e327056a255537dc1bb26093ba431b62ab89160808f3ba5b6837ff0  # Loader | R=65.1 | Application | exe
+94620f612e74609ad155ac854ca42b615e97361f0c6552e20ba902b690514a30  # Worm | R=52.6 | CoinMiner | exe
+3fab1d077c4ceca66946ad83f386bce9884afe602aba7736eba8de88fbcc2947  # Linux-Malware | R=42.9 | unbekannt | elf
+47b63f2e99323a4494c3a4ebd8bba9f8a0466356d10ed4df477e046101a21c2b  # Windows-Malware | R=38.5 | unbekannt | exe
+525f80eb0f76072ea7249be97195ce21982c8aa3297b2fcdc0b74e7380b6f400  # Skript/Dropper | R=37.9 | unbekannt | js
+0718893786a4aca8c52ba58299afd0bb0ab830229f786a342ea67fb653945149  # Skript/Dropper | R=37.9 | unbekannt | js
+716bc96035d520f189290e79f458a9114b1cfc534ad39ae9a64bf83707b5e4b8  # Maldoc | R=37.8 | unbekannt | xls
+4aabd41b7058e0a48c0204f10a04ea2929cec609ea3528ad3aadf4a446b2f60b  # Andere / Unbekannt | R=32.6 | unbekannt | sh
+f0cc2f4f5fc888962a19f4ee32d31404969749a35d8ec963b5a68db99993a4d0  # Andere / Unbekannt | R=32.4 | unbekannt | sh
+12c4015bf8f6ccac550a9fad2dba998771ea8019a622f1d013d545313726972f  # Andere / Unbekannt | R=32.4 | unbekannt | sh
+3cebcfa14bd8097539c75fd390d8ad67b792155e4ede474b3aef33988c2cb8c8  # Andere / Unbekannt | R=32.3 | unbekannt | jar
+00107c841b5ca986c6d612ddec0e9e497782c446741958985a74c7fa1f757b9e  # Andere / Unbekannt | R=31.2 | unbekannt | unknown
+
+[Tags]
+9d2ca3
+B
+BB2.file
+CVE-2017-0199
+ClickFix
+Efimer
+IRAHook
+Mirai
+dropped-by-Amadey
+dropped-by-GCleaner
+dropped-by-phorpiex
+elf
+exe
+jar
+js
+sh
+stealer
+whack.sh
+wraith
+xls
+zip
+
+[VT Engine Detections]
+
+## f06bf8bc2ff7ce8dc16a...  (Dacic) | Defender: ✓ Generic.Dacic.18358.8C3D73E6
+   Erkannt: 34/75 Engines (45.3%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Generic.Dacic.18358.8C3D73E6
+  APEX                           Malicious
+  AVG                            Win64:MalwareX-gen [Hack]
+  AhnLab-V3                      Malware/Win.VMProtect.C5822259
+  Antiy-AVL                      Trojan[Packed]/Win32.VMProtect
+  Arcabit                        Generic.Dacic.18358.8C3D73E6
+  Avast                          Win64:MalwareX-gen [Hack]
+  Avira                          TR/W64.MalwareX
+  BitDefender                    Generic.Dacic.18358.8C3D73E6
+  Bkav                           W32.Malware.EFCCD57A
+  CTX                            exe.unknown.dacic
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win32/Packed.VMProtect.ACI trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Generic.Dacic.18358.8C3D73E6 (B)
+  F-Secure                       Trojan.TR/W64.MalwareX
+  Fortinet                       W64/MALD2.D4E0!tr
+  GData                          Generic.Dacic.18358.8C3D73E6
+  Lionic                         Trojan.Win32.Dacic.4!c
+  Malwarebytes                   Trojan.Evader
+  McAfeeD                        ti!F06BF8BC2FF7
+  MicroWorld-eScan               Generic.Dacic.18358.8C3D73E6
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Paloalto                       generic.ml
+  Rising                         Malware.Undefined!8.C (TFE:5:sVBe9WbcziR)
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  TrellixENS                     Artemis!63091BC61A86
+  VIPRE                          Generic.Dacic.18358.8C3D73E6
+
+## 4910d0d39e327056a255...  (Application) | Defender: ✓ Gen:Variant.Application.GenericFCA.192
+   Erkannt: 47/75 Engines (62.7%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Application.GenericFCA.192
+  APEX                           Malicious
+  AVG                            Win64:Evo-gen [Trj]
+  AhnLab-V3                      Dropper/Win.DropperX-gen.R622355
+  Alibaba                        Trojan:Win64/Coinminer.f82398bd
+  Antiy-AVL                      Trojan/Win64.Kryptik
+  Arcabit                        Trojan.Application.GenericFCA.192
+  Avast                          Win64:Evo-gen [Trj]
+  Avira                          TR/W64.Evo
+  BitDefender                    Gen:Variant.Application.GenericFCA.192
+  Bkav                           W32.Malware.6419DFB1
+  CTX                            exe.unknown.genericfca
+  ClamAV                         Win.Trojan.Genkryptik-10016533-0
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  ESET-NOD32                     Win64/Kryptik.EDF trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Application.GenericFCA.192 (B)
+  F-Secure                       Trojan.TR/W64.Evo
+  Fortinet                       W64/GenKryptik.GQCB!tr
+  GData                          Gen:Variant.Application.GenericFCA.192
+  Google                         Detected
+  Ikarus                         Trojan-Spy.Win64.Agent
+  Jiangmin                       Trojan.Miner.tim
+  K7AntiVirus                    Trojan ( 005af85d1 )
+  K7GW                           Trojan ( 005af85d1 )
+  Kaspersky                      HEUR:Trojan.Win32.Miner.pef
+  Kingsoft                       Win32.Trojan.Miner.pef
+  MaxSecure                      Trojan.Malware.121218.susgen
+  McAfeeD                        ti!4910D0D39E32
+  MicroWorld-eScan               Gen:Variant.Application.GenericFCA.192
+  Microsoft                      Trojan:Win64/Coinminer.NCA!MTB
+  Paloalto                       generic.ml
+  Rising                         Trojan.Kryptik/x64!1.1378B (CLASSIC)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        Kryptik-FVKL!F58AF9FB7D0E
+  Sophos                         Troj/Krypt-ADL
+  Symantec                       Trojan.Coinminer!g3
+  Tencent                        Trojan.Win64.Kryptik.16001249
+  TrellixENS                     Kryptik-FVKL!F58AF9FB7D0E
+  VBA32                          OScope.Trojan.Win64.Miner
+  VIPRE                          Gen:Variant.Application.GenericFCA.192
+  Varist                         W64/Kryptik.LEG.gen!Eldorado
+  ZoneAlarm                      Troj/Krypt-ADL
+  huorong                        Trojan/W64.CoinMiner.cf
+
+## a7e2092ea6d8891ad062...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 21/75 Engines (28.0%) — 🟡 SCHWACH ERKANNT
+  AhnLab-V3                      Linux/Mirai.Gen21
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  Avast-Mobile                   ELF:Mirai-BDU [Trj]
+  Avira                          EXP/LINUX.CVE-2021-.A
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9816
+  ESET-NOD32                     Linux/Mirai.AR trojan
+  Elastic                        Linux.Rootkit.Generic
+  F-Secure                       Exploit.EXP/LINUX.CVE-2021-.A
+  Fortinet                       ELF/Gafgyt.AEA!tr
+  Google                         Detected
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.cw
+  McAfeeD                        Trojan:Linux/GenericY.BN
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  Rising                         Backdoor.Mirai/Linux!1.E816 (CLASSIC)
+  Sangfor                        Suspicious.Linux.Save.a
+  SentinelOne                    Static AI - Malicious ELF
+  Tencent                        Trojan.Linux.Mirai.cbf
+  Varist                         E32/Mirai.EH.gen!Camelot
+  alibabacloud                   DDOS:Linux/Mirai
+  huorong                        Backdoor/Linux.Mirai.ji
+
+## 94620f612e74609ad155...  (CoinMiner) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Worm.Phorpiex.153
+   Erkannt: 55/75 Engines (73.3%) — ✅ GUT ERKANNT
+  ALYac                          Gen:Variant.Worm.Phorpiex.153
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Misc]
+  AhnLab-V3                      Trojan/Win.Phorpiex.R693380
+  Alibaba                        Worm:Win32/Phorpiex.bd0d5d21
+  Antiy-AVL                      Trojan/Win32.Phorpiex
+  Arcabit                        Trojan.Worm.Phorpiex.153
+  Avast                          Win32:MalwareX-gen [Misc]
+  Avira                          TR/W32.Agent
+  BitDefender                    Gen:Variant.Worm.Phorpiex.153
+  Bkav                           W32.Malware.E385E994
+  CTX                            exe.trojan.phorpiex
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.Siggen33.36152
+  ESET-NOD32                     Win32/Phorpiex_AGen.BG worm
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Worm.Phorpiex.153 (B)
+  F-Secure                       Trojan.TR/W32.Agent
+  Fortinet                       W32/Phorpiex.BG!worm
+  GData                          Gen:Variant.Worm.Phorpiex.153
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Downloader.sa
+  K7AntiVirus                    EmailWorm ( 006e132d1 )
+  K7GW                           EmailWorm ( 006e132d1 )
+  Kaspersky                      HEUR:Trojan-Downloader.Win32.Agent.gen
+  Kingsoft                       Win32.Trojan-Downloader.Agent.gen
+  Lionic                         Trojan.Win32.Agent.Y!c
+  Malwarebytes                   Trojan.Phorpiex
+  McAfeeD                        ti!94620F612E74
+  MicroWorld-eScan               Gen:Variant.Worm.Phorpiex.153
+  Microsoft                      Trojan:Win32/Phorpiex.APX!MTB
+  NANO-Antivirus                 Trojan.Win32.Downloader.liyjmg
+  Paloalto                       generic.ml
+  Panda                          Trj/Genetic.gen
+  Rising                         Worm.Phorpiex!1.DF9C (CLASSIC)
+  SUPERAntiSpyware               Trojan.Agent/Gen-Downloader
+  Sangfor                        Worm.Win32.Phorpiex.Vnst
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        Trojan-IEO!7FA093D68FDB
+  Sophos                         W32/Phorpiex-AS
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Trojan.Win32.Phorpiex-agen.16003595
+  TrellixENS                     Trojan-IEO!7FA093D68FDB
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04CA5
+  VBA32                          BScope.TrojanDownloader.Agent
+  VIPRE                          Gen:Variant.Worm.Phorpiex.153
+  Varist                         W32/Mint.B.gen!Eldorado
+  ViRobot                        Trojan.Win.Z.Phorpiex.10752.AI
+  VirIT                          Trojan.Win32.GenusC.JYD
+  ZoneAlarm                      W32/Phorpiex-AS
+  alibabacloud                   Trojan[downloader]:Win/Phorpiex.AXF2XJC
+  huorong                        TrojanDownloader/Agent.bms
