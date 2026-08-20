@@ -1,0 +1,182 @@
+# IOC Export  2026-08-20_12-54-UTC
+# 18 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+756e86098fce299eb7c117b5175523e36fb1966ef9347e1c8bfc017c378bd883  # Infostealer | R=88.9 | Formbook | js
+dcf42e88c3688f575a490e5b51a7ecce9a930630e230523679736dd6b8ae4ce3  # RAT | R=85.0 | AsyncRAT | exe
+da13c70e505da61a12d5dd4fa2ee0d4a92be16e24b91d09b1ee2e507e10ae521  # Trojaner | R=84.1 | C!ml | elf
+4af7427afecf542144af1e7bb8b61107d968e1745a9075a94052cb426dd744c3  # Trojaner | R=83.7 | unbekannt | exe
+583d435398c3e67eda7ccfa6ce6e492b0b40686058f9ec929ee2eb80ff182ce3  # Trojaner | R=83.6 | unbekannt | exe
+c2950027214694211b93f45aff96f7eeb0b46c5ce15235a9775b50597c565416  # Infostealer | R=83.3 | Formbook | exe
+bb6a23abcab6891ef3bda926ff3491e9938376387532bcad2b72fa22ce852ac3  # RAT | R=81.1 | STRRAT | jar
+22552867f3ad3e274b8fc255c23fefa5afc317c4bf7ef947bb0a23b1dbb6951b  # Trojaner | R=76.2 | Win64:Evo-gen [Trj] | exe
+94620f612e74609ad155ac854ca42b615e97361f0c6552e20ba902b690514a30  # Worm | R=52.5 | CoinMiner | exe
+e10ea4528e79ac803578f25192b47654c6f211fa1aa2d6bfb681421c1e4a5404  # Linux-Malware | R=42.5 | unbekannt | elf
+f0be387ee760575fe2ae8389d7d77dd25f3986124854746a0d1dce15115d69ab  # Skript/Dropper | R=38.9 | unbekannt | js
+95475e9c6ee155ac15f772179880ff247fa76255d70a164dc97d69d712ed5901  # Windows-Malware | R=38.7 | unbekannt | exe
+0b7cfa65175ad00505483214dc06f8629e795a6823646e7e9024921b731b7767  # Windows-Malware | R=38.7 | AgentTesla | exe
+0794022a72a69256b2c93df157c77f0daff33bba46adf3e7b2c7d2e14ee4ef49  # Windows-Malware | R=38.7 | unbekannt | exe
+25d07038c6cd7c5e6f43547f6078f70797aed03f572d39dc9395163b2913a62c  # Skript/Dropper | R=38.6 | unbekannt | js
+b1de4588777902ac32ed8c81ce2ff58a9291438e6fb5fbd9a078a1e1ff0d56da  # Skript/Dropper | R=38.0 | unbekannt | js
+13d7237d7289e67c2d806a65d52580b453ce4987acbe2c4c4d04833f55ebccfa  # Windows-Malware | R=37.6 | unbekannt | exe
+dfb6c3ecc3ca4f3c81a7bfaf851dac794887e6d237a4ae2fe89a53c130f2761e  # Windows-Malware | R=37.1 | unbekannt | exe
+
+[Tags]
+AgentTesla
+AsyncRAT
+Formbook
+STRRAT
+SilverFox
+Trojan/SilverFox.bg[qtsc]
+ValleyRAT
+Vidar
+elf
+exe
+jar
+js
+whack.sh
+
+[VT Engine Detections]
+
+## dcf42e88c3688f575a49...  (AsyncRAT) | Defender: ✗ nicht erkannt
+   Erkannt: 22/75 Engines (29.3%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  Bkav                           W32.Malware.8F2B75F9
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  Elastic                        malicious (high confidence)
+  Fortinet                       MSIL/Formbook.D5D0!tr.spy
+  Google                         Detected
+  Kaspersky                      VHO:Trojan-Spy.MSIL.Noon.gen
+  Malwarebytes                   MachineLearning/Anomalous.94%
+  McAfeeD                        Real Protect-LS!466AD2E4E263
+  Paloalto                       generic.ml
+  Rising                         Malware.Obfus/MSIL@AI.96 (RDM.MSIL2:t5iR2twHbNbVN5eTBLRSfA)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Troj/Krypt-AQM
+  Symantec                       Scr.Malcode!gdn34
+  Trapmine                       suspicious.low.ml.score
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04CA5
+  Varist                         W32/MSIL_Kryptik.MUC.gen!Eldorado
+  VirIT                          Trojan.Win32.MSIL_Heur.A
+  ZoneAlarm                      Troj/Krypt-AQM
+
+## da13c70e505da61a12d5...  (C!ml) | Defender: ✗ nicht erkannt
+   Erkannt: 1/75 Engines (1.3%) — ⚠️ KAUM ERKANNT
+  Microsoft                      Trojan:Script/Wacatac.C!ml
+
+## c2950027214694211b93...  (Formbook) | Defender: ✗ nicht erkannt
+   Erkannt: 27/75 Engines (36.0%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AVG                            MalwareX-gen [Drp]
+  Avast                          MalwareX-gen [Drp]
+  Bkav                           W32.Malware.5133802F
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     MSIL/Kryptik.AQVG trojan
+  Elastic                        malicious (high confidence)
+  Fortinet                       MSIL/Formbook.D5D0!tr.spy
+  Google                         Detected
+  Kaspersky                      UDS:Trojan-Spy.MSIL.Noon.gen
+  Malwarebytes                   Trojan.MalPack.PNG.Generic
+  McAfeeD                        Real Protect-LS!FF8C5A50694D
+  Microsoft                      Trojan:Win32/Sonbokli.A!cl
+  Paloalto                       generic.ml
+  Rising                         Malware.Obfus/MSIL@AI.96 (RDM.MSIL2:8Skke8Z3kds7b8ORuk5zsg)
+  Sangfor                        Trojan.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Sophos                         Troj/Krypt-AQM
+  Symantec                       Scr.Malcode!gdn34
+  Trapmine                       malicious.high.ml.score
+  TrellixENS                     Artemis!FF8C5A50694D
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04CA5
+  Varist                         W32/MSIL_Kryptik.MUC.gen!Eldorado
+  VirIT                          Trojan.Win32.MSIL_Heur.A
+  ZoneAlarm                      Troj/Krypt-AQM
+
+## 22552867f3ad3e274b8f...  (Win64:Evo-gen [Trj]) | Defender: ✗ nicht erkannt
+   Erkannt: 23/75 Engines (30.7%) — 🟡 SCHWACH ERKANNT
+  APEX                           Malicious
+  AVG                            Win64:Evo-gen [Trj]
+  AhnLab-V3                      Malware/Win.VMProtect.R790081
+  Avast                          Win64:Evo-gen [Trj]
+  Avira                          TR/W64.Evo
+  Bkav                           W32.Malware.BCD80158
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win64/Packed.VMProtect.AC suspicious application
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W64.Evo
+  Malwarebytes                   Trojan.Packed.VMP
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        ti!22552867F3AD
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       malicious.moderate.ml.score
+  Zoner                          Probably Heur.ExeHeaderL
+  huorong                        Trojan/W64.HiJack.aj!crit
+
+## 94620f612e74609ad155...  (CoinMiner) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Worm.Phorpiex.153
+   Erkannt: 55/75 Engines (73.3%) — ✅ GUT ERKANNT
+  ALYac                          Gen:Variant.Worm.Phorpiex.153
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Misc]
+  AhnLab-V3                      Trojan/Win.Phorpiex.R693380
+  Alibaba                        Worm:Win32/Phorpiex.bd0d5d21
+  Antiy-AVL                      Trojan/Win32.Phorpiex
+  Arcabit                        Trojan.Worm.Phorpiex.153
+  Avast                          Win32:MalwareX-gen [Misc]
+  Avira                          TR/W32.Agent
+  BitDefender                    Gen:Variant.Worm.Phorpiex.153
+  Bkav                           W32.Malware.E385E994
+  CTX                            exe.trojan.phorpiex
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.Siggen33.36152
+  ESET-NOD32                     Win32/Phorpiex_AGen.BG worm
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Worm.Phorpiex.153 (B)
+  F-Secure                       Trojan.TR/W32.Agent
+  Fortinet                       W32/Phorpiex.BG!worm
+  GData                          Gen:Variant.Worm.Phorpiex.153
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Downloader.sa
+  K7AntiVirus                    EmailWorm ( 006e132d1 )
+  K7GW                           EmailWorm ( 006e132d1 )
+  Kaspersky                      HEUR:Trojan-Downloader.Win32.Agent.gen
+  Kingsoft                       Win32.Trojan-Downloader.Agent.gen
+  Lionic                         Trojan.Win32.Agent.Y!c
+  Malwarebytes                   Trojan.Phorpiex
+  McAfeeD                        ti!94620F612E74
+  MicroWorld-eScan               Gen:Variant.Worm.Phorpiex.153
+  Microsoft                      Trojan:Win32/Phorpiex.APX!MTB
+  NANO-Antivirus                 Trojan.Win32.Downloader.liyjmg
+  Paloalto                       generic.ml
+  Panda                          Trj/Genetic.gen
+  Rising                         Worm.Phorpiex!1.DF9C (CLASSIC)
+  SUPERAntiSpyware               Trojan.Agent/Gen-Downloader
+  Sangfor                        Worm.Win32.Phorpiex.Vnst
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        Trojan-IEO!7FA093D68FDB
+  Sophos                         W32/Phorpiex-AS
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Trojan.Win32.Phorpiex-agen.16003595
+  TrellixENS                     Trojan-IEO!7FA093D68FDB
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04CA5
+  VBA32                          BScope.TrojanDownloader.Agent
+  VIPRE                          Gen:Variant.Worm.Phorpiex.153
+  Varist                         W32/Mint.B.gen!Eldorado
+  ViRobot                        Trojan.Win.Z.Phorpiex.10752.AI
+  VirIT                          Trojan.Win32.GenusC.JYD
+  ZoneAlarm                      W32/Phorpiex-AS
+  alibabacloud                   Trojan[downloader]:Win/Phorpiex.AXF2XJC
+  huorong                        TrojanDownloader/Agent.bms
