@@ -1,0 +1,147 @@
+# IOC Export  2026-08-21_04-41-UTC
+# 14 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+77ff705df15e7912ca392c953a4286ac294b75f4a67d67f35c1f5a0526ce423b  # RAT | R=89.3 | AsyncRAT | exe
+b4f33b8d09302a019f8dc1609ac22ccced6f27f74c7506247915341ac5a5199b  # Botnet/IoT | R=84.9 | Mirai | elf
+694e00a716423ac95478a859330fb571df26b2f29c82d4591d85b1ebc4f45b61  # Botnet/IoT | R=83.6 | Mirai | elf
+85ed2a23d0064207abd86f72c4f1ed13cd69657fc6f00f6f136f3988d3e39f47  # Botnet/IoT | R=83.3 | Mirai | elf
+19ed228031154c38b3e9fc06976fc098a78aaa23698316d22f901b6048771718  # Botnet/IoT | R=81.3 | Mirai | elf
+f223cb463b117e7b182f2c339c84123f3b5913545ab90669a356accdf771352d  # RAT | R=81.1 | ValleyRAT | dll
+044685cec0e984f25a603d17870ee1c297842146bca86c2827fea078a3730fbc  # RAT | R=80.8 | ValleyRAT | dll
+1bd95bfb94c081d0864196c17c60b536f4d7599690b34b9772afc9746fc59eff  # RAT | R=80.4 | ValleyRAT | dll
+61afba94a1147c13ec34b9e0b0589fc7edc926f48de46dd417438ded2c5c33ba  # Loader | R=74.0 | unbekannt | exe
+94620f612e74609ad155ac854ca42b615e97361f0c6552e20ba902b690514a30  # Worm | R=52.5 | CoinMiner | exe
+65e42b97f9753f62ab1d09a010d5dd208928a16cd47dd6915b98618919eb19fd  # Linux-Malware | R=42.1 | unbekannt | elf
+44f49cc1548d49c608995cd8f4a9a6c41800bd55839a979e827958c51f2169af  # Andere / Unbekannt | R=32.0 | unbekannt | unknown
+74d3447e7cf99c99ea01a16332ec27432dfb0f491e10e67cd118065a60483306  # Andere / Unbekannt | R=31.8 | unbekannt | macho
+402e02014bd2a46913349b5485db8cc1e8a1dc8bb944d9a28e5aa5761a50b265  # Andere / Unbekannt | R=31.5 | unbekannt | sh
+
+[Tags]
+AsyncRAT
+BotKing
+ClickFix
+Efimer
+G
+Mirai
+RAT
+SupplyChain
+US0.file
+ValleyRAT
+arrayref
+dll
+dropped-by-GCleaner
+elf
+exe
+macho
+rust
+sh
+upx
+upx-dec
+
+[VT Engine Detections]
+
+## 85ed2a23d0064207abd8...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 13/75 Engines (17.3%) — 🟡 SCHWACH ERKANNT
+  AhnLab-V3                      Linux/Mirai.Gen15
+  DrWeb                          Linux.Siggen.14697
+  ESET-NOD32                     Linux/Mirai.A trojan
+  Fortinet                       ELF/Condi.CDB!tr.botnet
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Tsunami
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.me
+  Kingsoft                       Linux.Backdoor.Mirai.me
+  Lionic                         Trojan.ELF.Mirai.4!c
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  SentinelOne                    Static AI - Suspicious ELF
+  Tencent                        Backdoor.Linux.Mirai.wz
+  huorong                        Trojan/Linux.Mirai.m
+
+## 19ed228031154c38b3e9...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 18/75 Engines (24.0%) — 🟡 SCHWACH ERKANNT
+  AVG                            ELF:Mirai-AHC [Trj]
+  AhnLab-V3                      Linux/Mirai.Gen15
+  Avast                          ELF:Mirai-AHC [Trj]
+  Avast-Mobile                   ELF:Mirai-FY [Trj]
+  Avira                          TR/LINUX.Mirai.AHC
+  ClamAV                         Unix.Dropper.Mirai-7135897-0
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     Linux/Mirai.A trojan
+  F-Secure                       Trojan.TR/LINUX.Mirai.AHC
+  Fortinet                       ELF/Condi.CDB!tr.botnet
+  Google                         Detected
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.me
+  Lionic                         Trojan.ELF.Mirai.4!c
+  Microsoft                      Trojan:Script/Wacatac.C!ml
+  Rising                         Backdoor.Mirai/Linux!1.141B3 (CLASSIC)
+  Sangfor                        Suspicious.Linux.Save.a
+  Tencent                        Backdoor.Linux.Mirai.wz
+  huorong                        Trojan/Linux.Mirai.m
+
+## b4f33b8d09302a019f8d...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 7/75 Engines (9.3%) — ⚠️ KAUM ERKANNT
+  Antiy-AVL                      Trojan/Linux.Agent
+  ESET-NOD32                     Linux/Mirai.A trojan
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.me
+  Microsoft                      Trojan:Script/Wacatac.C!ml
+  Rising                         Backdoor.Mirai/Linux!1.141B3 (CLASSIC)
+  Tencent                        Backdoor.Linux.Mirai.wz
+  huorong                        Trojan/Linux.Mirai.m
+
+## 94620f612e74609ad155...  (CoinMiner) ⭐ WOCHEN-SAMPLE | Defender: ✓ Gen:Variant.Worm.Phorpiex.153
+   Erkannt: 55/75 Engines (73.3%) — ✅ GUT ERKANNT
+  ALYac                          Gen:Variant.Worm.Phorpiex.153
+  APEX                           Malicious
+  AVG                            Win32:MalwareX-gen [Misc]
+  AhnLab-V3                      Trojan/Win.Phorpiex.R693380
+  Alibaba                        Worm:Win32/Phorpiex.bd0d5d21
+  Antiy-AVL                      Trojan/Win32.Phorpiex
+  Arcabit                        Trojan.Worm.Phorpiex.153
+  Avast                          Win32:MalwareX-gen [Misc]
+  Avira                          TR/W32.Agent
+  BitDefender                    Gen:Variant.Worm.Phorpiex.153
+  Bkav                           W32.Malware.E385E994
+  CTX                            exe.trojan.phorpiex
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 100)
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.Siggen33.36152
+  ESET-NOD32                     Win32/Phorpiex_AGen.BG worm
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Gen:Variant.Worm.Phorpiex.153 (B)
+  F-Secure                       Trojan.TR/W32.Agent
+  Fortinet                       W32/Phorpiex.BG!worm
+  GData                          Gen:Variant.Worm.Phorpiex.153
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Downloader.sa
+  K7AntiVirus                    EmailWorm ( 006e132d1 )
+  K7GW                           EmailWorm ( 006e132d1 )
+  Kaspersky                      HEUR:Trojan-Downloader.Win32.Agent.gen
+  Kingsoft                       Win32.Trojan-Downloader.Agent.gen
+  Lionic                         Trojan.Win32.Agent.Y!c
+  Malwarebytes                   Trojan.Phorpiex
+  McAfeeD                        ti!94620F612E74
+  MicroWorld-eScan               Gen:Variant.Worm.Phorpiex.153
+  Microsoft                      Trojan:Win32/Phorpiex.APX!MTB
+  NANO-Antivirus                 Trojan.Win32.Downloader.liyjmg
+  Paloalto                       generic.ml
+  Panda                          Trj/Genetic.gen
+  Rising                         Worm.Phorpiex!1.DF9C (CLASSIC)
+  SUPERAntiSpyware               Trojan.Agent/Gen-Downloader
+  Sangfor                        Worm.Win32.Phorpiex.Vnst
+  SentinelOne                    Static AI - Suspicious PE
+  Skyhigh                        Trojan-IEO!7FA093D68FDB
+  Sophos                         W32/Phorpiex-AS
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Trojan.Win32.Phorpiex-agen.16003595
+  TrellixENS                     Trojan-IEO!7FA093D68FDB
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04CA5
+  VBA32                          BScope.TrojanDownloader.Agent
+  VIPRE                          Gen:Variant.Worm.Phorpiex.153
+  Varist                         W32/Mint.B.gen!Eldorado
+  ViRobot                        Trojan.Win.Z.Phorpiex.10752.AI
+  VirIT                          Trojan.Win32.GenusC.JYD
+  ZoneAlarm                      W32/Phorpiex-AS
+  alibabacloud                   Trojan[downloader]:Win/Phorpiex.AXF2XJC
+  huorong                        TrojanDownloader/Agent.bms
