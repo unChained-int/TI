@@ -1,0 +1,122 @@
+# IOC Export  2026-08-23_10-27-UTC
+# 7 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+2b7ff4180a95491e6ae330dd6b45b5c52ff5a7dc97c3358673d2b97a56807b73  # Botnet/IoT | R=83.5 | Mirai | elf
+aac5e4d4d88982cef13f9c2f05243bc579409268538bb008200aca0daf4062bd  # Botnet/IoT | R=83.5 | Mirai | sh
+6861d8608da245fc33c4bbadf5b56a5666e9282a0323598f6a79f5105c2fb44e  # Trojaner | R=79.3 | fa | sh
+bc3ff77c7c5355a13c3971b49849fe2c3c2d62f4cafb16cfd9f335d35f14dcd6  # Backdoor | R=79.1 | Backdoor | unknown
+db576e0cfabd6fadfff0534e764a29d73e288939baad993cc07cc7a9cc67a633  # Infostealer | R=74.7 | Vidar | exe
+8b56341696ec3fb5c7f6b4376e93de280e496a4f479024ce88ba779cf6a3c81b  # Adware | R=54.4 | JS | unknown
+4087611fa576cfc9c7a57db435793cd6821b7e79dd315e1734085dd1db155073  # Andere / Unbekannt | R=31.3 | unbekannt | unknown
+
+[Tags]
+ClickFix
+Efimer
+Mirai
+elf
+sh
+
+[VT Engine Detections]
+
+## 8b56341696ec3fb5c7f6...  (JS) | Defender: ✓ Adware.JS.Redirector.1
+   Erkannt: 25/75 Engines (33.3%) — 🟡 SCHWACH ERKANNT
+  AVG                            Script:SNH-gen [Trj]
+  Arcabit                        Adware.JS.Redirector.1 [many]
+  Avast                          Script:SNH-gen [Trj]
+  Avira                          TR/SNH
+  BitDefender                    Adware.JS.Redirector.1
+  CTX                            javascript.adware.redirector
+  Cynet                          Malicious (score: 99)
+  DrWeb                          JS.Redirector.514
+  ESET-NOD32                     JS/Redirector.SWD trojan
+  Emsisoft                       Adware.JS.Redirector.1 (B)
+  F-Secure                       Trojan.TR/SNH
+  Fortinet                       JS/Redirector.SWD!tr
+  GData                          Script.Trojan.Redirector.CM
+  Google                         Detected
+  MaxSecure                      Trojan.W32.Script.Redirector
+  MicroWorld-eScan               Adware.JS.Redirector.1
+  Microsoft                      Trojan:HTML/Redirector.E!AMTB
+  NANO-Antivirus                 Trojan.Script.Redirector.linlll
+  Skyhigh                        HTML/Phishing.ahm
+  Tencent                        Trojan.Script.Phishing_l.506148
+  TrellixENS                     HTML/Phishing.ahm
+  VIPRE                          Adware.JS.Redirector.1
+  Varist                         JS/Redir.ARC1
+  Zillya                         Trojan.Redirector.JS.187
+  huorong                        Trojan/HTML.Redirector.bz
+
+## bc3ff77c7c5355a13c39...  (Backdoor) | Defender: ✓ GT:JS.Backdoor.5.7D333826
+   Erkannt: 19/75 Engines (25.3%) — 🟡 SCHWACH ERKANNT
+  ALYac                          GT:JS.Backdoor.5.7D333826
+  AVG                            JS:Downloader-EZS [Trj]
+  Arcabit                        GT:JS.Backdoor.5.7D333826
+  Avast                          JS:Downloader-EZS [Trj]
+  Avira                          TR/JS.Downloader.EZS
+  BitDefender                    GT:JS.Backdoor.5.7D333826
+  CTX                            javascript.backdoor.generic
+  Cynet                          Malicious (score: 99)
+  ESET-NOD32                     JS/Obfuscated.CL trojan
+  Emsisoft                       GT:JS.Backdoor.5.7D333826 (B)
+  F-Secure                       Trojan.TR/JS.Downloader.EZS
+  GData                          GT:JS.Backdoor.5.7D333826
+  Google                         Detected
+  Kaspersky                      HEUR:Trojan-Downloader.Script.Generic
+  MicroWorld-eScan               GT:JS.Backdoor.5.7D333826
+  Microsoft                      Trojan:Script/Wacatac.B!ml
+  Tencent                        Js.Trojan.Js.Psmw
+  VIPRE                          GT:JS.Backdoor.5.7D333826
+  Varist                         JS/Agent.EXA!Eldorado
+
+## 6861d8608da245fc33c4...  (fa) | Defender: ✗ nicht erkannt
+   Erkannt: 15/75 Engines (20.0%) — 🟡 SCHWACH ERKANNT
+  Avira                          TR/BAT.Agent.CEL
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.BackDoor.Siggen.759
+  ESET-NOD32                     Linux/Agent.AOF trojan
+  F-Secure                       Trojan.TR/BAT.Agent.CEL
+  Fortinet                       BASH/JOMANGY.A!tr
+  Google                         Detected
+  Kaspersky                      Trojan.Shell.Agent.ig
+  Microsoft                      Trojan:Script/Wacatac.C!ml
+  NANO-Antivirus                 Trojan.Script.Dropper.kpvdnu
+  Rising                         Trojan.Agent/BASH!9.77D29 (XSE:WFNFX0JBVDpxE8rgb4bUkfys0JR/X1vS)
+  Skyhigh                        Linux/Agent.fa
+  Tencent                        Trojan-DL.Linux.Agent.505004
+  Varist                         Unix/Agent.VA
+  huorong                        Backdoor/Linux.Agent.as
+
+## db576e0cfabd6fadfff0...  (Vidar) ⭐ WOCHEN-SAMPLE | Defender: ✓ QD:Trojan.GenericKDQ.2E4B6AD2EF
+   Erkannt: 31/75 Engines (41.3%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          QD:Trojan.GenericKDQ.2E4B6AD2EF
+  AVG                            Win32:Malware-gen
+  Alibaba                        Trojan:JS/Injector.96180f5f
+  Arcabit                        QD:Trojan.GenericQ.2E4B6AD2EF
+  Avast                          Win32:Malware-gen
+  Avira                          TR/W32.Malware
+  BitDefender                    QD:Trojan.GenericKDQ.2E4B6AD2EF
+  CTX                            exe.trojan.generickdq
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     JS/Agent.VAQ trojan
+  Emsisoft                       QD:Trojan.GenericKDQ.2E4B6AD2EF (B)
+  F-Secure                       Trojan.TR/W32.Malware
+  Fortinet                       JS/Agent.VAQ!tr
+  GData                          QD:Trojan.GenericKDQ.2E4B6AD2EF
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Agent.sa
+  Kaspersky                      UDS:Trojan-PSW.Win32.Stealerc
+  Lionic                         Trojan.Win32.GenericKDQ.i!c
+  Malwarebytes                   Spyware.Stealer.NSIS
+  McAfeeD                        ti!DB576E0CFABD
+  MicroWorld-eScan               QD:Trojan.GenericKDQ.2E4B6AD2EF
+  Paloalto                       generic.ml
+  Rising                         Dropper.Agent/JS!1.143D5 (CLOUD)
+  Sangfor                        Trojan.JS.Agent.Vel3
+  Sophos                         Mal/Generic-S
+  Symantec                       JS.Redirector
+  Tencent                        Js.Trojan.Dropper.Gmnw
+  VIPRE                          QD:Trojan.GenericKDQ.2E4B6AD2EF
+  Varist                         W32/ABTrojan.TGXC-4197
+  alibabacloud                   Trojan[dropper]:Javascript/Generic.Gen
