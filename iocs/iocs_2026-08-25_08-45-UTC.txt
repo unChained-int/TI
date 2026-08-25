@@ -1,0 +1,151 @@
+# IOC Export  2026-08-25_08-45-UTC
+# 15 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+66a1dfb08cb48494a16f60ecc6a827acb02388ddd364baafad3cc9774fcaae2d  # RAT | R=89.6 | AsyncRAT | exe
+279c4c973059bbc86c06a1c076f53912a6eb4159e08e0f91ffed56c77777778f  # RAT | R=85.8 | Agent | exe
+30fc0956603edd1949fc222b3278fbd5bc9de3cd799cba9379605537e8e4788c  # RAT | R=81.1 | unbekannt | zip
+adbc3683b11bd3a4fd6d99f7144f3904e0fe55839a91db66fd6a83c06a058f5c  # Trojaner | R=78.9 | Trojan ( 006e41451 ) | exe
+055b7dbd085d0ff1f93665f7b51569a3818f68dd0a8c9fd6c91d3e4602d43da7  # Infostealer | R=76.5 | Dacic | exe
+5ca41439221f61f2eac0b230e806b47ed10f26a05e42685c15740e571d8ce974  # Loader | R=75.1 | unbekannt | exe
+db576e0cfabd6fadfff0534e764a29d73e288939baad993cc07cc7a9cc67a633  # Infostealer | R=72.3 | Vidar | exe
+1d82f29d11054d22474ab4aa99b722458e9b63dad059c64b34868c31cf1be213  # Andere / Unbekannt | R=51.1 | unbekannt | sh
+2a342a58850c0093a668521123be38a9526063dbd2413010d6c17bb8bb1de0f6  # Windows-Malware | R=37.9 | unbekannt | msi
+78bd7e65abe7b8bf9ee310bab394971cd18f0c4a452b652c5b80ebdb5268fe4c  # Andere / Unbekannt | R=32.3 | unbekannt | unknown
+f321146ce5c90b3f7189f1829805b7c29efdd615b18ea2b236ad77e516788f19  # Andere / Unbekannt | R=32.3 | unbekannt | unknown
+c8ae8d6d048de8ec039fae5d639c6f2c1912bf5971c1528ea9fdf07e4029093d  # Andere / Unbekannt | R=32.3 | unbekannt | sh
+246a3b0361548be5808c553b84ce412f4c326d38b6b5ea7124ef5c943998da29  # Andere / Unbekannt | R=31.9 | unbekannt | unknown
+3dafebce7434991783231e900ba15d6e07dcc289b5cdcd1591917e1b1f5c7271  # Andere / Unbekannt | R=31.2 | unbekannt | sh
+2fd1af52e95887b21a8f062d2632301aeeccfa2a0aadc16bef492ec180c103ec  # Andere / Unbekannt | R=31.1 | unbekannt | unknown
+
+[Tags]
+A
+AES-CBC
+AppBoundEncryption
+AsyncRAT
+ClickFix
+Efimer
+MIX6.file
+Qt
+RAT
+TeamSpeak
+Valorant
+Vidar
+anti-vm
+archive
+decrypted
+dll-sideloading
+dotnet
+dropped-by-GCleaner
+dropper
+enthec
+exe
+fake-cheat
+geofenced
+loader
+lure
+mediafire
+msi
+reflective-loader
+sh
+stage2
+stealer
+zip
+
+[VT Engine Detections]
+
+## adbc3683b11bd3a4fd6d...  (Trojan ( 006e41451 )) | Defender: ✗ nicht erkannt
+   Erkannt: 19/75 Engines (25.3%) — 🟡 SCHWACH ERKANNT
+  AhnLab-V3                      Trojan/Win.Kryptik.R789149
+  Antiy-AVL                      GrayWare/Win32.Wacapew
+  Bkav                           W32.Malware.2AA80723
+  CrowdStrike                    win/malicious_confidence_90% (D)
+  DrWeb                          Trojan.PWS.Vidar.527
+  ESET-NOD32                     WinGo/Kryptik.WL trojan
+  Fortinet                       W64/Kryptik.WF!tr
+  Gridinsoft                     Trojan.Win64.Kryptik.oa!s1
+  K7AntiVirus                    Trojan ( 006e41451 )
+  K7GW                           Trojan ( 006e41451 )
+  Malwarebytes                   Malware.AI.4111755468
+  MaxSecure                      Trojan.Malware.121218.susgen
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  Rising                         Backdoor.Gsb!8.1DB49 (TFE:dGZlOinIjuMvQ8WGvQ)
+  Sangfor                        Trojan.Win32.Save.a
+  Tencent                        Malware.Win32.Gencirc.10c4a960
+  VirIT                          Trojan.Win64.Genus.KDO
+  Zillya                         Trojan.Kryptik.Win32.6206934
+  huorong                        Trojan/Loader.xw
+
+## 055b7dbd085d0ff1f936...  (Dacic) | Defender: ✓ Generic.Dacic.18355.5E43474D
+   Erkannt: 31/75 Engines (41.3%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Generic.Dacic.18355.5E43474D
+  APEX                           Malicious
+  AVG                            Win64:MalwareX-gen [Misc]
+  AhnLab-V3                      Trojan/Win.MalwareX-gen.R787390
+  Antiy-AVL                      Trojan/Win32.GenericML
+  Arcabit                        Generic.Dacic.18355.5E43474D
+  Avast                          Win64:MalwareX-gen [Misc]
+  Avira                          TR/W64.Agent
+  BitDefender                    Generic.Dacic.18355.5E43474D
+  Bkav                           W32.Malware.C92618F8
+  CTX                            exe.unknown.dacic
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     MSIL/Agent_AGen.EQR trojan
+  Elastic                        malicious (high confidence)
+  Emsisoft                       Generic.Dacic.18355.5E43474D (B)
+  F-Secure                       Trojan.TR/W64.Agent
+  GData                          Generic.Dacic.18355.5E43474D
+  K7AntiVirus                    Trojan ( 700000211 )
+  K7GW                           Trojan ( 700000211 )
+  Kaspersky                      VHO:Trojan-PSW.Win32.Convagent.gen
+  Malwarebytes                   Malware.AI.1712681270
+  McAfeeD                        ti!055B7DBD085D
+  MicroWorld-eScan               Generic.Dacic.18355.5E43474D
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Symantec                       ML.Attribute.HighConfidence
+  VIPRE                          Generic.Dacic.18355.5E43474D
+  huorong                        Trojan/Injector.cpq
+
+## 279c4c973059bbc86c06...  (Agent) | Defender: ✗ nicht erkannt
+   Erkannt: 1/75 Engines (1.3%) — ⚠️ KAUM ERKANNT
+  Zillya                         Trojan.Agent.Win64.193856
+
+## db576e0cfabd6fadfff0...  (Vidar) ⭐ WOCHEN-SAMPLE | Defender: ✓ QD:Trojan.GenericKDQ.2E4B6AD2EF
+   Erkannt: 33/75 Engines (44.0%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          QD:Trojan.GenericKDQ.2E4B6AD2EF
+  AVG                            Win32:Malware-gen
+  Alibaba                        Trojan:JS/Injector.96180f5f
+  Arcabit                        QD:Trojan.GenericQ.2E4B6AD2EF
+  Avast                          Win32:Malware-gen
+  Avira                          TR/W32.Malware
+  BitDefender                    QD:Trojan.GenericKDQ.2E4B6AD2EF
+  CTX                            exe.trojan.generickdq
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     JS/Agent.VAQ trojan
+  Emsisoft                       QD:Trojan.GenericKDQ.2E4B6AD2EF (B)
+  F-Secure                       Trojan.TR/W32.Malware
+  Fortinet                       JS/Agent.VAQ!tr
+  GData                          QD:Trojan.GenericKDQ.2E4B6AD2EF
+  Google                         Detected
+  Gridinsoft                     Trojan.Win32.Agent.sa
+  K7AntiVirus                    Trojan ( 0001adfe1 )
+  K7GW                           Trojan ( 0001adfe1 )
+  Kaspersky                      UDS:Trojan-PSW.Win32.Stealerc
+  Lionic                         Trojan.Win32.GenericKDQ.i!c
+  Malwarebytes                   Spyware.Stealer.NSIS
+  McAfeeD                        ti!DB576E0CFABD
+  MicroWorld-eScan               QD:Trojan.GenericKDQ.2E4B6AD2EF
+  Paloalto                       generic.ml
+  Rising                         Dropper.Agent/JS!1.143D5 (CLOUD)
+  Sangfor                        Trojan.JS.Agent.Vel3
+  Sophos                         Mal/Generic-S
+  Symantec                       JS.Redirector
+  Tencent                        Js.Trojan.Dropper.Gmnw
+  VIPRE                          QD:Trojan.GenericKDQ.2E4B6AD2EF
+  Varist                         W32/ABTrojan.TGXC-4197
+  alibabacloud                   Trojan[dropper]:Multi/Generic.Gen
