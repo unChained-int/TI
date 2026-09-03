@@ -13,6 +13,41 @@ WEB_DIR.mkdir(exist_ok=True)
 BASE_URL = "https://unchained-int.github.io/TI"
 
 
+def parse_run_ts(ts_str: str, entry: dict | None = None) -> datetime:
+    """
+    Parst History-Keys wie '2026-09-03_08-42-UTC' UND ISO-Strings.
+    fromisoformat() allein scheitert an diesem Format → Trend-Charts waren tot.
+    """
+    if entry:
+        iso = (entry.get("ts_iso") or "") if isinstance(entry, dict) else ""
+        if iso:
+            try:
+                dt = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+                return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+            except ValueError:
+                pass
+
+    raw = (ts_str or "").strip()
+    for fmt in ("%Y-%m-%d_%H-%M-UTC", "%Y-%m-%d_%H-%M-%S-UTC"):
+        try:
+            return datetime.strptime(raw, fmt).replace(tzinfo=timezone.utc)
+        except ValueError:
+            pass
+
+    if len(raw) >= 16 and raw[4] == "-" and raw[10] == "_":
+        try:
+            return datetime(
+                int(raw[0:4]), int(raw[5:7]), int(raw[8:10]),
+                int(raw[11:13]), int(raw[14:16]),
+                tzinfo=timezone.utc,
+            )
+        except ValueError:
+            pass
+
+    dt = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+    return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
+
+
 # ─── Parser ───────────────────────────────────────────────────────────────────
 
 def parse_report(md: str) -> dict:
@@ -24,20 +59,24 @@ def parse_report(md: str) -> dict:
     d["new_samples"] = int(m.group(1)) if m else 0
 
     def ov(label):
-        m = re.search(rf"\|\s*{re.escape(label)}\s*\|\s*\*?\*?([^|\n*]+?)\*?\*?\s*\|", md)
-        return m.group(1).strip() if m else "?"
+        # volle Tabellenzelle; Label darf Extra-Text haben ("Kritisch (≥75)")
+        m = re.search(
+            rf"\|\s*{re.escape(label)}[^|\n]*\|\s*([^|\n]+)\|",
+            md,
+        )
+        return m.group(1).replace("**", "").strip() if m else "?"
 
-    d["total"]        = ov("Neue Samples").replace("**","")
-    d["kritisch"]     = ov("Kritisch").replace("**","")
-    d["top_score"]    = ov("Höchster Score").split("–")[0].replace("**","").strip()
+    d["total"]        = ov("Neue Samples")
+    d["kritisch"]     = ov("Kritisch")
+    d["top_score"]    = ov("Höchster Score").split("–")[0].split(" - ")[0].strip()
     d["top_sha"]      = re.search(r"Höchster Score.*?([0-9a-f]{16})", md)
     d["top_sha"]      = d["top_sha"].group(1) if d["top_sha"] else ""
-    d["top_family"]   = ov("Häufigste Familie").replace("**","").split("(")[0].strip()
-    d["top_type"]     = ov("Häufigster Typ").replace("**","").split("(")[0].strip()
-    d["main_plat"]    = ov("Hauptplattform").replace("**","")
-    d["vt_enriched"]  = ov("VT-angereichert").replace("**","")
-    d["mitre_mapped"] = ov("MITRE gemappt").replace("**","")
-    d["avg_size"]     = ov("Ø Dateigröße").replace("**","")
+    d["top_family"]   = ov("Häufigste Familie").split("(")[0].strip()
+    d["top_type"]     = ov("Häufigster Typ").split("(")[0].strip()
+    d["main_plat"]    = ov("Hauptplattform")
+    d["vt_enriched"]  = ov("VT-angereichert")
+    d["mitre_mapped"] = ov("MITRE gemappt")
+    d["avg_size"]     = ov("Ø Dateigröße")
 
     for lvl, key in [("🔴 KRITISCH","r_krit"),("🟠 HOCH","r_hoch"),
                      ("🟡 MITTEL","r_mittel"),("🟢 NIEDRIG","r_niedrig")]:
@@ -163,12 +202,23 @@ def parse_report(md: str) -> dict:
     d["tags"] = re.findall(r"- \*\*(.+?)\*\* \((\d+)×\)", md)
 
     # Delta 24h + 7d
-    d["delta_24h"] = re.findall(r"^- ((?:neu:|↑|↓|weg:).+)$",
-                                 md[md.find("## Änderungen – 24h"):md.find("## Änderungen – 7d")],
-                                 re.MULTILINE)
-    d["delta_7d"] = re.findall(r"^- ((?:neu:|↑|↓|weg:).+)$",
-                                md[md.find("## Änderungen – 7d"):],
-                                re.MULTILINE)
+    def _delta_block(start_h: str, end_h: str | None = None) -> list:
+        i = md.find(start_h)
+        if i < 0:
+            i = md.find(start_h.replace("–", "-"))
+        if i < 0:
+            return []
+        if end_h:
+            j = md.find(end_h, i + 1)
+            if j < 0:
+                j = md.find(end_h.replace("–", "-"), i + 1)
+            chunk = md[i:j] if j > i else md[i:]
+        else:
+            chunk = md[i:]
+        return re.findall(r"^- (.+)$", chunk, re.MULTILINE)
+
+    d["delta_24h"] = _delta_block("## Änderungen – 24h", "## Änderungen – 7d")
+    d["delta_7d"]  = _delta_block("## Änderungen – 7d",  "## Statistik")
 
     # Herkunftsländer
     d["origin_countries"] = []
@@ -225,32 +275,42 @@ def parse_report(md: str) -> dict:
 
 def load_history_charts() -> tuple[dict, dict]:
     """Gibt Chart-Daten für 24h- und 7d-Trend zurück."""
+    empty = {"labels": [], "datasets": []}
     if not HISTORY_FILE.exists():
-        empty = {"labels": [], "datasets": []}
         return empty, empty
 
     try:
         hist = json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
     except Exception:
-        empty = {"labels": [], "datasets": []}
         return empty, empty
 
-    now       = datetime.now(timezone.utc)
+    now        = datetime.now(timezone.utc)
     cutoff_24h = now - timedelta(hours=24)
     cutoff_7d  = now - timedelta(days=7)
 
-    runs_all = sorted(hist.items())
+    parsed: list[tuple[datetime, str, dict]] = []
+    for ts_str, data in hist.items():
+        if not isinstance(data, dict):
+            continue
+        try:
+            ts = parse_run_ts(ts_str, data)
+        except Exception:
+            continue
+        parsed.append((ts, ts_str, data))
+    parsed.sort(key=lambda x: x[0])
 
-    def build_chart(runs, title_suffix=""):
+    def build_chart(runs: list[tuple[datetime, str, dict]]) -> dict:
+        if len(runs) < 2:
+            return empty
         all_fams = Counter()
-        for _, data in runs:
+        for _, _, data in runs:
             all_fams.update(data.get("families", {}))
-        top5     = [f for f, _ in all_fams.most_common(5)]
-        labels   = [ts[:10] + " " + ts[11:16] for ts, _ in runs]
-        palette  = ["#ff4444","#ff8800","#ffcc00","#44ff88","#44aaff"]
+        top5    = [f for f, _ in all_fams.most_common(5)]
+        labels  = [ts.strftime("%d.%m. %H:%M") for ts, _, _ in runs]
+        palette = ["#ff4444", "#ff8800", "#ffcc00", "#44ff88", "#44aaff"]
         datasets = []
         for i, fam in enumerate(top5):
-            vals = [data.get("families",{}).get(fam, 0) for _, data in runs]
+            vals = [data.get("families", {}).get(fam, 0) for _, _, data in runs]
             datasets.append({
                 "label": fam[:25],
                 "data": vals,
@@ -260,40 +320,13 @@ def load_history_charts() -> tuple[dict, dict]:
             })
         return {"labels": labels, "datasets": datasets}
 
-    # 24h: nur Runs der letzten 24h
-    runs_24h = []
-    for ts_str, data in runs_all:
-        try:
-            ts = datetime.fromisoformat(ts_str)
-            if not ts.tzinfo:
-                ts = ts.replace(tzinfo=timezone.utc)
-            if ts >= cutoff_24h:
-                runs_24h.append((ts_str, data))
-        except Exception:
-            pass
-
-    # 7d: letzte 7 Tage (max 14 Datenpunkte für Übersichtlichkeit)
-    runs_7d = []
-    for ts_str, data in runs_all:
-        try:
-            ts = datetime.fromisoformat(ts_str)
-            if not ts.tzinfo:
-                ts = ts.replace(tzinfo=timezone.utc)
-            if ts >= cutoff_7d:
-                runs_7d.append((ts_str, data))
-        except Exception:
-            pass
-    # 7d auf max 14 Punkte reduzieren (gleichmäßig sampeln)
+    runs_24h = [(ts, k, d) for ts, k, d in parsed if ts >= cutoff_24h]
+    runs_7d  = [(ts, k, d) for ts, k, d in parsed if ts >= cutoff_7d]
     if len(runs_7d) > 14:
-        step = len(runs_7d) // 14
-        runs_7d_sampled = runs_7d[::step][:14]
-    else:
-        runs_7d_sampled = runs_7d
+        step = max(1, len(runs_7d) // 14)
+        runs_7d = runs_7d[::step][:14]
 
-    chart_24h = build_chart(runs_24h) if runs_24h else {"labels": [], "datasets": []}
-    chart_7d  = build_chart(runs_7d_sampled) if runs_7d_sampled else {"labels": [], "datasets": []}
-
-    return chart_24h, chart_7d
+    return build_chart(runs_24h), build_chart(runs_7d)
 
 
 def load_feed_24h_7d() -> dict:
