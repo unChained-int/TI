@@ -1,0 +1,176 @@
+# IOC Export  2026-09-03_19-11-UTC
+# 6 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+117e2c3d3b40a2b2cbb2001fa0c1109e51cdec777672d5b325e7edecac442fdd  # Infostealer | R=86.2 | Vidar | exe
+07936bd8a05d6db787bfa5f8b10c1335ef708f660dcd2b1eee715c9b66283e80  # Loader | R=75.1 | unbekannt | exe
+d43ee01d07e64fd87dc611ea826f31109971e6a2d52acc47fbb08d2dcf5567de  # Loader | R=75.1 | unbekannt | exe
+06d242a6f28c23fd708289cd8d40ec6d1fec310559d9f4c13b4ad4703cd99c31  # Trojaner | R=71.3 | Riskware ( 00584baa1 ) | exe
+ffb3eacf4164d66a8d5e591c043f3f86d599e8d39384417d6fdf78796ae18a84  # Loader | R=70.5 | Yogi | exe
+1c250ac3db43c8379591c0a1e8e428b972c1adda38eec2fb46376fb905e0a5e1  # RAT | R=66.3 | NanoCore | exe
+
+[Tags]
+54e64e
+A
+B
+MIX2.file
+MIX5.file
+Vidar
+dropped-by-Amadey
+dropped-by-GCleaner
+exe
+signed
+whack.sh
+
+[VT Engine Detections]
+
+## ffb3eacf4164d66a8d5e...  (Yogi) | Defender: ✓ Gen:Variant.Mikey.193729
+   Erkannt: 33/75 Engines (44.0%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Gen:Variant.Yogi.57249
+  APEX                           Malicious
+  AVG                            Win64:MalwareX-gen [Trj]
+  AhnLab-V3                      Trojan/Win.Generic.C5932908
+  Antiy-AVL                      Trojan/Multi.Agent
+  Arcabit                        Trojan.Yogi.DDFA1
+  Avast                          Win64:MalwareX-gen [Trj]
+  Avira                          TR/W64.MalwareX
+  BitDefender                    Gen:Variant.Mikey.193729
+  CTX                            exe.unknown.mikey
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Trojan.Siggen33.55191
+  ESET-NOD32                     Win64/Agent_AGen.QJI trojan
+  Elastic                        malicious (moderate confidence)
+  Emsisoft                       Gen:Variant.Yogi.57249 (B)
+  F-Secure                       Trojan.TR/W64.MalwareX
+  Fortinet                       W64/Agent.QJI!tr
+  GData                          Gen:Variant.Yogi.57249
+  K7AntiVirus                    Trojan ( 006e5a0d1 )
+  K7GW                           Trojan ( 006e5a0d1 )
+  Kaspersky                      VHO:Trojan.Win32.Scar.gen
+  Malwarebytes                   Malware.AI.1677586387
+  McAfeeD                        ti!FFB3EACF4164
+  MicroWorld-eScan               Gen:Variant.Yogi.57249
+  Rising                         Trojan.Agent!8.B1E (TFE:5:roASEaSY6pL)
+  SentinelOne                    Static AI - Suspicious PE
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Malware.Win32.Gencirc.10c4b140
+  Trapmine                       suspicious.low.ml.score
+  VIPRE                          Gen:Variant.Yogi.57249
+  VirIT                          Trojan.Win64.Agent.KCN
+  Webroot                        Win.Trojan.Gen
+  huorong                        Trojan/FakeApp.amr
+
+## 117e2c3d3b40a2b2cbb2...  (Vidar) | Defender: ✗ nicht erkannt
+   Erkannt: 19/75 Engines (25.3%) — 🟡 SCHWACH ERKANNT
+  AVG                            Win64:Evo-gen [Trj]
+  AhnLab-V3                      Malware/Win.Generic.C5937578
+  Avast                          Win64:Evo-gen [Trj]
+  Avira                          TR/W64.Evo
+  Bkav                           W32.Malware.7F7A0935
+  CrowdStrike                    win/malicious_confidence_90% (W)
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     WinGo/Kryptik.ZM trojan
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W64.Evo
+  Fortinet                       W64/Kryptik.XF!tr
+  Kaspersky                      UDS:Trojan-PSW.Win32.Stealerc.vqx
+  Malwarebytes                   Spyware.Vidar
+  McAfeeD                        ti!117E2C3D3B40
+  Microsoft                      Trojan:Win32/Wacatac.B!ml
+  TrellixENS                     Artemis!FE21F0D15AB0
+  Varist                         W64/WinGo.I.gen!Eldorado
+  huorong                        Trojan/Loader.xo
+
+## 06d242a6f28c23fd7082...  (Riskware ( 00584baa1 )) | Defender: ✗ nicht erkannt
+   Erkannt: 38/75 Engines (50.7%) — 🟠 MÄSSIG ERKANNT
+  APEX                           Malicious
+  AVG                            Win64:Evo-gen [Trj]
+  AhnLab-V3                      Trojan/Win.Evo-gen.R791220
+  Alibaba                        Trojan:Win64/VMProtect.202491fa
+  Avast                          Win64:Evo-gen [Trj]
+  Avira                          TR/W64.Evo
+  Bkav                           W32.Malware.3584FE43
+  CTX                            exe.trojan.generic
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  ESET-NOD32                     Win64/Packed.VMProtect.AC suspicious application
+  Elastic                        malicious (high confidence)
+  F-Secure                       Trojan.TR/W64.Evo
+  GData                          Win64.Trojan.Agent.QS5VPC
+  Google                         Detected
+  K7AntiVirus                    Riskware ( 00584baa1 )
+  K7GW                           Riskware ( 00584baa1 )
+  Kaspersky                      UDS:Trojan-PSW.Win64.Coins
+  Lionic                         Trojan.Win32.Generic.4!c
+  Malwarebytes                   Trojan.CoinStealer
+  MaxSecure                      Trojan.Malware.300983.susgen
+  McAfeeD                        ti!06D242A6F28C
+  Microsoft                      Trojan:Win64/Tedy.UN!MTB
+  Paloalto                       generic.ml
+  Rising                         Trojan.Tedy!8.16570 (CLOUD)
+  Sangfor                        Suspicious.Win32.Save.a
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        BehavesLike.Win64.Trojan.vc
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       malicious.high.ml.score
+  TrellixENS                     Artemis!B58062491BFB
+  TrendMicro                     Trojan.Win64.TEDY.USBLI326
+  Varist                         W64/VMProtect.HH.gen!Eldorado
+  Zoner                          Probably Heur.ExeHeaderL
+  huorong                        Trojan/W64.HiJack.aj!crit
+
+## 1c250ac3db43c8379591...  (NanoCore) ⭐ WOCHEN-SAMPLE | Defender: ✓ Backdoor:MSIL/Nanocore!atmn
+   Erkannt: 49/75 Engines (65.3%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Trojan.NanoCore.5
+  APEX                           Malicious
+  AhnLab-V3                      Win-Trojan/Nanocore.Exp
+  Alibaba                        Trojan:Win32/NanoCore.348
+  Antiy-AVL                      Trojan/MSIL.NanoCore
+  Arcabit                        Trojan.NanoCore.5
+  Avira                          TR/Dropper.MSIL.Gen7
+  CTX                            exe.trojan.nanocore
+  ClamAV                         Win.Trojan.NanoCore-9852758-0
+  CrowdStrike                    win/malicious_confidence_100% (W)
+  Cylance                        Unsafe
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.Nanocore.23
+  Elastic                        Windows.Trojan.Nanocore
+  Emsisoft                       Trojan.NanoCore (A)
+  F-Secure                       Trojan.TR/Dropper.MSIL.Gen7
+  GData                          MSIL.Backdoor.Nancat.A
+  Gridinsoft                     Backdoor.Win32.Noancooe.cc!ni
+  Jiangmin                       Backdoor.Generic.zwu
+  K7AntiVirus                    Trojan ( 005b2a921 )
+  K7GW                           Trojan ( 0057b88c1 )
+  Kingsoft                       MSIL.Trojan.Agent.fpar
+  Lionic                         Trojan.Win32.Generic.mhUN
+  Malwarebytes                   Backdoor.NanoCore
+  McAfeeD                        Real Protect-LS!DF436F62AF38
+  MicroWorld-eScan               Trojan.NanoCore.5
+  Microsoft                      Backdoor:MSIL/Nanocore!atmn
+  NANO-Antivirus                 Trojan.Win32.NanoBot.hmqoyu
+  Paloalto                       generic.ml
+  Rising                         Backdoor.NanoCore!1.B6F9 (CLASSIC)
+  SUPERAntiSpyware               Backdoor.Nanocore/Variant
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        Trojan-FICC!DF436F62AF38
+  Sophos                         Troj/NanoCor-BT
+  Symantec                       Trojan.Nancrat
+  TACHYON                        Backdoor/W32.DN-Nanocore.207872
+  Tencent                        Trojan.Msil.Agent.fb
+  Trapmine                       malicious.high.ml.score
+  VIPRE                          Trojan.NanoCore.5
+  Varist                         W32/NanoCore.C.gen!Eldorado
+  ViRobot                        Backdoor.Win32.NanoCore.Gen.A
+  VirIT                          Trojan.Win32.DownLoader12.BSON
+  Webroot                        W32.Trojan.Gen
+  Xcitium                        Backdoor.MSIL.Noancooe.JDE@5s4u9t
+  ZoneAlarm                      Troj/NanoCor-BT
+  Zoner                          Trojan.Win32.48280
+  alibabacloud                   Backdoor:MSIL/Vindor.Gen
+  huorong                        Backdoor/MSIL.NanoCore.b
+  tehtris                        Generic.Malware
