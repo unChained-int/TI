@@ -1,6 +1,6 @@
-# MalwareBazaar – 24.10.2026 17:16 UTC
+# MalwareBazaar – 24.10.2026 20:26 UTC
 
-Dieser Run hat **25 neue Samples** gefunden (von 100 geprüft).
+Dieser Run hat **34 neue Samples** gefunden (von 100 geprüft).
 
 > ⭐ **Wochen-Sample aktiv:** `4124a486bff5d1fa6058…` wird diese Woche dauerhaft getrackt.
 
@@ -10,37 +10,37 @@ Dieser Run hat **25 neue Samples** gefunden (von 100 geprüft).
 
 | | |
 |---|---|
-| Neue Samples | **26** |
-| Kritisch (≥75) | **18** |
-| Höchster Score | **88.6/100** – fe9c5fe06b7ec8e8… |
-| Häufigste Familie | **Mirai** (11x) |
-| Häufigster Typ | **elf** (12x) |
+| Neue Samples | **35** |
+| Kritisch (≥75) | **26** |
+| Höchster Score | **96.8/100** – fe5ab151cc1bc84e… |
+| Häufigste Familie | **Mirai** (20x) |
+| Häufigster Typ | **elf** (20x) |
 | Hauptplattform | **Linux** |
 | VT-angereichert | 4 Samples |
-| MITRE gemappt | 14 Samples |
-| Ø Dateigröße | 3.78 MB (σ=5.07) |
+| MITRE gemappt | 21 Samples |
+| Ø Dateigröße | 2.14 MB (σ=5.18) |
 
 ## Dateitypen
 
 | Typ | Anzahl | Anteil |
 |-----|--------|--------|
-| `elf` | 12 | 46.2%  █████████ |
-| `exe` | 10 | 38.5%  ███████ |
-| `jar` | 2 | 7.7%  █ |
-| `ps1` | 1 | 3.8%   |
-| `sh` | 1 | 3.8%   |
+| `elf` | 20 | 57.1%  ███████████ |
+| `exe` | 8 | 22.9%  ████ |
+| `macho` | 4 | 11.4%  ██ |
+| `zip` | 1 | 2.9%   |
+| `ps1` | 1 | 2.9%   |
+| `msi` | 1 | 2.9%   |
 
 ## Familien / Signaturen
 
 | # | Familie | Anzahl | Anteil |
 |---|---------|--------|--------|
-| 1 | Mirai | 11 | 42.3% |
-| 2 | unbekannt | 10 | 38.5% |
-| 3 | Win64:Evo-gen [Trj] | 1 | 3.8% |
-| 4 | Stealc | 1 | 3.8% |
-| 5 | AsyncRAT | 1 | 3.8% |
-| 6 | SalatStealer | 1 | 3.8% |
-| 7 | PythonStealer | 1 | 3.8% |
+| 1 | Mirai | 20 | 57.1% |
+| 2 | unbekannt | 11 | 31.4% |
+| 3 | WannaCry | 1 | 2.9% |
+| 4 | Amadey | 1 | 2.9% |
+| 5 | Malware | 1 | 2.9% |
+| 6 | PythonStealer | 1 | 2.9% |
 
 ## Klassifikation
 
@@ -48,14 +48,14 @@ Dieser Run hat **25 neue Samples** gefunden (von 100 geprüft).
 
 | Kategorie | Anzahl | Anteil | Konfidenz |
 |-----------|--------|--------|-----------|
-| Botnet/IoT | 11 | 42.3% | 95% |
-| Infostealer | 5 | 19.2% | 79% |
-| Windows-Malware | 3 | 11.5% | 35% |
-| Trojaner | 2 | 7.7% | 65% |
-| Cryptominer | 2 | 7.7% | 75% |
-| Skript/Dropper | 1 | 3.8% | 35% |
-| RAT | 1 | 3.8% | 95% |
-| Andere / Unbekannt | 1 | 3.8% | 20% |
+| Botnet/IoT | 20 | 57.1% | 95% |
+| Andere / Unbekannt | 5 | 14.3% | 20% |
+| Infostealer | 4 | 11.4% | 75% |
+| Windows-Malware | 2 | 5.7% | 35% |
+| Ransomware | 1 | 2.9% | 95% |
+| Loader | 1 | 2.9% | 95% |
+| Skript/Dropper | 1 | 2.9% | 35% |
+| Trojaner | 1 | 2.9% | 65% |
 
 ## Risiko-Score
 
@@ -65,25 +65,25 @@ Dieser Run hat **25 neue Samples** gefunden (von 100 geprüft).
 
 | Level | Samples | Anteil |
 |-------|---------|--------|
-| 🔴 KRITISCH | 18 | 69.2% |
-| 🟠 HOCH | 3 | 11.5% |
-| 🟡 MITTEL | 4 | 15.4% |
-| 🟢 NIEDRIG | 1 | 3.8% |
+| 🔴 KRITISCH | 26 | 74.3% |
+| 🟠 HOCH | 1 | 2.9% |
+| 🟡 MITTEL | 3 | 8.6% |
+| 🟢 NIEDRIG | 5 | 14.3% |
 
 **Top 10 nach Score:**
 
 | SHA256 | Familie | Kat. | Score | Level | VT-Rate | Erkennungsqualität | Defender |
 |--------|---------|------|-------|-------|---------|-------------------|----------|
-| [fe9c5fe06b7ec8…](https://bazaar.abuse.ch/sample/fe9c5fe06b7ec8e829adc6624f9e5bc1472e4e002bccb00dd0f0172e1526e5d5/) | AsyncRAT | RAT | **88.6** | 🔴 KRITISCH | – | – | ? |
-| [c1512ef000b9ea…](https://bazaar.abuse.ch/sample/c1512ef000b9eae519fb8e7faac4e941ef07327c927b42aaa6556020b1ff940d/) | Mirai | Botnet/IoT | **84.4** | 🔴 KRITISCH | – | – | ? |
-| [3bc8f5abac7902…](https://bazaar.abuse.ch/sample/3bc8f5abac7902afc33890e63375ab4b0e964bbb34c5d90f62f4684c267a9a81/) | Mirai | Botnet/IoT | **84.2** | 🔴 KRITISCH | – | – | ? |
-| [74fec4a8c642ea…](https://bazaar.abuse.ch/sample/74fec4a8c642eaa88b425fd531660e8522a5b789c26a2bf3fc75fef1031d63d9/) | Mirai | Botnet/IoT | **84.1** | 🔴 KRITISCH | – | – | ? |
-| [5f7153d8aed32a…](https://bazaar.abuse.ch/sample/5f7153d8aed32a5f40279a229a189cd44a8a9dbb900c0dd850ceb5066ee640b4/) | Mirai | Botnet/IoT | **83.4** | 🔴 KRITISCH | – | – | ? |
-| [691700cf605aab…](https://bazaar.abuse.ch/sample/691700cf605aab9ea038f916297067d921ef9a4d9ee7e78fc15c1d31cb1a026f/) | Mirai | Botnet/IoT | **82.4** | 🔴 KRITISCH | – | – | ? |
-| [35dcbbd2c5315d…](https://bazaar.abuse.ch/sample/35dcbbd2c5315df0e276733792bf49c0aa44ba1a4f38e12db96662ae86c9af68/) | Mirai | Botnet/IoT | **82.4** | 🔴 KRITISCH | – | – | ? |
-| [e9dab84cf82a21…](https://bazaar.abuse.ch/sample/e9dab84cf82a215f7e236c924f270e175bf32d0ce025eed1a7207fc07d4c3245/) | Mirai | Botnet/IoT | **82.4** | 🔴 KRITISCH | – | – | ? |
-| [e27e963b2b49cc…](https://bazaar.abuse.ch/sample/e27e963b2b49cc758ddd65456d335d0183ca9ddc54349494d6a9f49d7c0603f4/) | Mirai | Botnet/IoT | **82.3** | 🔴 KRITISCH | – | – | ? |
-| [5108df9e7c1bd7…](https://bazaar.abuse.ch/sample/5108df9e7c1bd7e2e252c1ea7b11d6e1e2159f70a0d8d56b0cbc1cad5a351151/) | Mirai | Botnet/IoT | **82.3** | 🔴 KRITISCH | – | – | ? |
+| [fe5ab151cc1bc8…](https://bazaar.abuse.ch/sample/fe5ab151cc1bc84e985263a4af1bde172c17ea6c3733e48d8da6631ca5ff82f3/) | WannaCry | Ransomware | **96.8** | 🔴 KRITISCH | – | – | ? |
+| [62e1c8b2f42729…](https://bazaar.abuse.ch/sample/62e1c8b2f427296a64de68031105058afa1dfa0ada054cd98026746e51ba87c1/) | Mirai | Botnet/IoT | **84.0** | 🔴 KRITISCH | – | – | ? |
+| [95d3b53b17d267…](https://bazaar.abuse.ch/sample/95d3b53b17d267bdb6b547a0c5f167d4807ce31349eb06fa698a6b0c111f2af2/) | Mirai | Botnet/IoT | **84.0** | 🔴 KRITISCH | – | – | ? |
+| [9d12a0b1dac546…](https://bazaar.abuse.ch/sample/9d12a0b1dac5467771edfeccb3c599b73412c0754051f5b0aabc8013e9346d50/) | Mirai | Botnet/IoT | **84.0** | 🔴 KRITISCH | – | – | ? |
+| [20740f7da1421e…](https://bazaar.abuse.ch/sample/20740f7da1421e9fea1199c7a44689b53317da9f6c63fd6c96f0cf1c13567f78/) | Mirai | Botnet/IoT | **84.0** | 🔴 KRITISCH | – | – | ? |
+| [2dc2cda5399b4d…](https://bazaar.abuse.ch/sample/2dc2cda5399b4d50d123592f8d4c890f84ce94b15b7f68d9084a362dbb9ede46/) | Mirai | Botnet/IoT | **84.0** | 🔴 KRITISCH | – | – | ? |
+| [b99da9425f9a73…](https://bazaar.abuse.ch/sample/b99da9425f9a73c0c887485fb5692987ec123a239ae0f6ceb7d4b788b059f330/) | Mirai | Botnet/IoT | **84.0** | 🔴 KRITISCH | – | – | ? |
+| [66d809ab377510…](https://bazaar.abuse.ch/sample/66d809ab37751057afa220c80f31325357c8078780d6e35580e2b6f3a7b59a94/) | Mirai | Botnet/IoT | **84.0** | 🔴 KRITISCH | – | – | ? |
+| [a51f6d785ad9d1…](https://bazaar.abuse.ch/sample/a51f6d785ad9d1952603177b431918fab29e969e4946b8baf9d9cffb1f8c92d9/) | Mirai | Botnet/IoT | **84.0** | 🔴 KRITISCH | – | – | ? |
+| [29d9f9085b69b3…](https://bazaar.abuse.ch/sample/29d9f9085b69b3d26f92fb76e1bb037a195250400ba0d38df2179185760ee783/) | Mirai | Botnet/IoT | **83.8** | 🔴 KRITISCH | – | – | ? |
 
 ### VT-Erkennung: Was bedeutet die Rate?
 
@@ -101,73 +101,67 @@ Dieser Run hat **25 neue Samples** gefunden (von 100 geprüft).
 > Basiert auf allen bisher gesehenen VT-Ergebnissen.
 > **Microsoft Defender** ist Pflicht-Check — wird immer explizit ausgewiesen.
 
-**Microsoft Defender (Pflicht-Check):** 81.0% Erkennungsrate (6160/7606 Samples erkannt)
+**Microsoft Defender (Pflicht-Check):** 81.0% Erkennungsrate (6164/7610 Samples erkannt)
 
 | # | Engine | Erkennungsrate | Erkannt / Gesehen |
 |---|--------|----------------|-------------------|
 | 1 | FireEye | 91.3% | 21/23 |
-| 2 | Microsoft 🛡️ | 81.0% | 6160/7606 |
-| 3 | ESET-NOD32 | 77.2% | 5870/7606 |
-| 4 | Kaspersky | 75.9% | 5772/7605 |
+| 2 | Microsoft 🛡️ | 81.0% | 6164/7610 |
+| 3 | ESET-NOD32 | 77.2% | 5872/7610 |
+| 4 | Kaspersky | 75.9% | 5774/7609 |
 | 5 | McAfee-GW-Edition | 75.0% | 3/4 |
 | 6 | MAX | 75.0% | 6/8 |
-| 7 | Google | 71.1% | 5407/7603 |
-| 8 | Rising | 68.3% | 5196/7606 |
+| 7 | Google | 71.1% | 5408/7607 |
+| 8 | Rising | 68.3% | 5198/7610 |
 | 9 | Ad-Aware | 66.7% | 2/3 |
-| 10 | Varist | 66.2% | 5033/7602 |
-| 11 | Avast | 65.1% | 4947/7602 |
-| 12 | AVG | 65.1% | 4947/7601 |
-| 13 | Tencent | 64.9% | 4786/7380 |
+| 10 | Varist | 66.2% | 5035/7606 |
+| 11 | Avast | 65.1% | 4949/7606 |
+| 12 | AVG | 65.1% | 4949/7605 |
+| 13 | Tencent | 64.8% | 4788/7384 |
 | 14 | BitDefenderTheta 🛡️ | 62.5% | 5/8 |
-| 15 | McAfeeD | 61.2% | 4654/7599 |
+| 15 | McAfeeD | 61.2% | 4655/7603 |
 
 ## Betroffene Plattformen
 
 | Plattform | Samples | Anteil |
 |-----------|---------|--------|
-| 🐧 Linux | 13 | 50.0% |
-| 🪟 Windows | 11 | 42.3% |
-| ❓ Unbekannt | 2 | 7.7% |
+| 🐧 Linux | 21 | 60.0% |
+| 🪟 Windows | 10 | 28.6% |
+| 🍎 macOS | 4 | 11.4% |
 
 ## Infektionsvektoren
 
 | Vektor | Samples | Anteil |
 |--------|---------|--------|
-| Unbekannt / nicht bestimmbar | 26 | 100.0% |
+| Unbekannt / nicht bestimmbar | 32 | 91.4% |
+| Exploit / N-Day | 1 | 2.9% |
+| MaaS-Loader | 1 | 2.9% |
+| Trojanisierte Software | 1 | 2.9% |
 
 ## Herkunftsländer
 
 | # | Land | Samples | Anteil |
 |---|------|---------|--------|
-| 1 | 🇩🇪 DE | 11 | 42.3% |
-| 2 | 🇺🇸 US | 10 | 38.5% |
-| 3 | 🇳🇱 NL | 3 | 11.5% |
-| 4 | 🇵🇱 PL | 1 | 3.8% |
-| 5 | 🌐 Unbekannt | 1 | 3.8% |
+| 1 | 🇩🇪 DE | 12 | 34.3% |
+| 2 | 🇺🇸 US | 11 | 31.4% |
+| 3 | 🇪🇸 ES | 8 | 22.9% |
+| 4 | 🇬🇧 GB | 1 | 2.9% |
+| 5 | 🇳🇱 NL | 1 | 2.9% |
+| 6 | 🇭🇺 HU | 1 | 2.9% |
+| 7 | 🌐 Unbekannt | 1 | 2.9% |
 
 ## MITRE ATT&CK
 
-> 14 von 26 Samples konnten auf MITRE-Techniken gemappt werden.
+> 21 von 35 Samples konnten auf MITRE-Techniken gemappt werden.
 
 | Taktik | Betroffene Samples |
 |--------|-------------------|
-| Initial Access | 11 |
-| Lateral Movement | 11 |
-| Credential Access | 1 |
-| Collection | 1 |
-| Command and Control | 1 |
+| Initial Access | 20 |
+| Lateral Movement | 20 |
 | Execution | 1 |
-| Impact | 1 |
+| Persistence | 1 |
 
-<details><summary>fe9c5fe06b7ec8e829ad… – AsyncRAT | 🔴 KRITISCH 88.6/100</summary>
-
-| Taktik | Technik | Name |
-|--------|---------|------|
-| Command and Control | [T1095](https://attack.mitre.org/techniques/T1095/) | Non-Application Layer Protocol |
-| Execution | [T1059](https://attack.mitre.org/techniques/T1059/) | Command and Scripting Interpreter |
-
-</details>
-<details><summary>c1512ef000b9eae519fb… – Mirai | 🔴 KRITISCH 84.4/100</summary>
+<details><summary>62e1c8b2f427296a64de… – Mirai | 🔴 KRITISCH 84.0/100</summary>
 
 | Taktik | Technik | Name |
 |--------|---------|------|
@@ -175,7 +169,7 @@ Dieser Run hat **25 neue Samples** gefunden (von 100 geprüft).
 | Lateral Movement | [T1210](https://attack.mitre.org/techniques/T1210/) | Exploitation of Remote Services |
 
 </details>
-<details><summary>3bc8f5abac7902afc338… – Mirai | 🔴 KRITISCH 84.2/100</summary>
+<details><summary>95d3b53b17d267bdb6b5… – Mirai | 🔴 KRITISCH 84.0/100</summary>
 
 | Taktik | Technik | Name |
 |--------|---------|------|
@@ -183,7 +177,7 @@ Dieser Run hat **25 neue Samples** gefunden (von 100 geprüft).
 | Lateral Movement | [T1210](https://attack.mitre.org/techniques/T1210/) | Exploitation of Remote Services |
 
 </details>
-<details><summary>74fec4a8c642eaa88b42… – Mirai | 🔴 KRITISCH 84.1/100</summary>
+<details><summary>9d12a0b1dac5467771ed… – Mirai | 🔴 KRITISCH 84.0/100</summary>
 
 | Taktik | Technik | Name |
 |--------|---------|------|
@@ -191,7 +185,7 @@ Dieser Run hat **25 neue Samples** gefunden (von 100 geprüft).
 | Lateral Movement | [T1210](https://attack.mitre.org/techniques/T1210/) | Exploitation of Remote Services |
 
 </details>
-<details><summary>5f7153d8aed32a5f4027… – Mirai | 🔴 KRITISCH 83.4/100</summary>
+<details><summary>20740f7da1421e9fea11… – Mirai | 🔴 KRITISCH 84.0/100</summary>
 
 | Taktik | Technik | Name |
 |--------|---------|------|
@@ -205,132 +199,103 @@ Dieser Run hat **25 neue Samples** gefunden (von 100 geprüft).
 > **Farblogik:** 🔴 ROT = kaum erkannt (evasiv/gefährlich), 🟢 GRÜN = breit erkannt
 > **VT-Fokus:** Windows Office (doc/docx/xls/xlsx), ELF (Linux), Windows-PE (exe/dll)
 
-### [2f8d04858dcd75554f00…](https://bazaar.abuse.ch/sample/2f8d04858dcd75554f00bb5fd9011126665f90b91428222c29897275662f6619/)
+### [9bd91039bad7799c22da…](https://bazaar.abuse.ch/sample/9bd91039bad7799c22da48a6ddfd7e83510c0c4adddbb8c4151f3eb9b2d52d23/)
 
-- **Familie:** Win64:Evo-gen [Trj]
-- **Erkannt von:** 15 von 75 Engines (20.0%)
+- **Familie:** Mirai
+- **Erkannt von:** 27 von 75 Engines (36.0%)
 - **Erkennungsqualität:** 🟡 SCHWACH ERKANNT
-- **Häufigster Name:** Win64:Evo-gen [Trj]
+- **Häufigster Name:** Gen:Variant.Linux.Cling.1
+- **VT-Reputation:** -11
+- **Microsoft Defender:** ✓ **JA** – `Gen:Variant.Linux.Cling.1`
+
+**Erkennende Engines (27/75):**
+
+| Engine | Erkannter Name |
+|--------|----------------|
+| ALYac | `Gen:Variant.Linux.Cling.1` |
+| AVG | `ELF:Mirai-BYP [Trj]` |
+| AhnLab-V3 | `Trojan/Linux.Mirai.SE302` |
+| Arcabit | `Trojan.Linux.Cling.1` |
+| Avast | `ELF:Mirai-BYP [Trj]` |
+| Avast-Mobile | `ELF:Mirai-AQY [Trj]` |
+| Avira | `EXP/ELF.Mirai.D` |
+| BitDefender 🛡️ | `Gen:Variant.Linux.Cling.1` |
+| CTX | `elf.unknown.cling` |
+| ClamAV | `Unix.Trojan.Gafgyt-6981160-0` |
+| Cynet | `Malicious (score: 99)` |
+| DrWeb | `Linux.Mirai.9821` |
+| Emsisoft | `Gen:Variant.Linux.Cling.1 (B)` |
+| F-Secure | `Exploit.EXP/ELF.Mirai.D` |
+| Fortinet | `ELF/Fodcha.080F!tr` |
+| GData | `Gen:Variant.Linux.Cling.1` |
+| Kaspersky | `HEUR:Backdoor.Linux.Mirai.gen` |
+| Kingsoft | `Linux.Backdoor.elf.2023761` |
+| Lionic | `Trojan.Linux.Mirai.K!c` |
+| MicroWorld-eScan | `Gen:Variant.Linux.Cling.1` |
+| Microsoft 🛡️ | `Backdoor:Linux/Gafgyt.BA!xp` |
+| Rising | `Backdoor.Gafgyt/Linux!1.DE80 (CLASSIC)` |
+| Sangfor | `Backdoor.Linux.Mirai.V60k` |
+| Tencent | `Backdoor.Linux.Zhtrap.dhyra` |
+| VIPRE | `Gen:Variant.Linux.Cling.1` |
+| alibabacloud | `Backdoor:Linux/Mirai.ASJ` |
+| huorong | `Trojan/Linux.Mirai.f` |
+
+### [52196a9dcc2f5aa5578b…](https://bazaar.abuse.ch/sample/52196a9dcc2f5aa5578bebbbbf9acb8bea4bc35244fcba589ccc16f5db7332af/)
+
+- **Familie:** Mirai
+- **Erkannt von:** 12 von 75 Engines (16.0%)
+- **Erkennungsqualität:** 🟡 SCHWACH ERKANNT
+- **Häufigster Name:** ELF:Agent-ESV [Trj]
+- **VT-Reputation:** -11
+- **Microsoft Defender:** ✗ **NEIN** – nicht erkannt
+
+**Erkennende Engines (12/75):**
+
+| Engine | Erkannter Name |
+|--------|----------------|
+| AVG | `ELF:Agent-ESV [Trj]` |
+| Avast | `ELF:Agent-ESV [Trj]` |
+| ESET-NOD32 | `Linux/Flooder.Agent.OL trojan` |
+| Kaspersky | `HEUR:Trojan.Linux.Agent.xu` |
+| Kingsoft | `Linux.Trojan.Agent.xu` |
+| Lionic | `Trojan.ELF.Mirai.4!c` |
+| Microsoft 🛡️ | `Trojan:Script/Wacatac.B!ml` |
+| Sophos | `Mal/Generic-S` |
+| Symantec | `Trojan.Gen.NPE` |
+| Tencent | `Linux.Trojan.Agent.Swhl` |
+| alibabacloud | `Trojan:Linux/Flooder.Akgpp` |
+| huorong | `Trojan/Linux.Flooder.ac` |
+
+### [1d68dac879f13efe3661…](https://bazaar.abuse.ch/sample/1d68dac879f13efe3661f4ec3afcd561962c6388f3bcd595a4579390eb3741d7/)
+
+- **Familie:** Malware
+- **Erkannt von:** 17 von 75 Engines (22.7%)
+- **Erkennungsqualität:** 🟡 SCHWACH ERKANNT
+- **Häufigster Name:** W32.Malware.432BF704
 - **VT-Reputation:** 0
 - **Microsoft Defender:** ✗ **NEIN** – nicht erkannt
 
-**Erkennende Engines (15/75):**
+**Erkennende Engines (17/75):**
 
 | Engine | Erkannter Name |
 |--------|----------------|
-| AVG | `Win64:Evo-gen [Trj]` |
-| Avast | `Win64:Evo-gen [Trj]` |
-| Avira | `TR/W64.Evo` |
-| Bkav | `W32.Malware.8561C1E7` |
-| DeepInstinct | `MALICIOUS` |
-| ESET-NOD32 | `WinGo/Kryptik.AEJ trojan` |
-| Elastic | `malicious (high confidence)` |
-| F-Secure | `Trojan.TR/W64.Evo` |
-| Fortinet | `W64/Vidar.YI!tr` |
-| Google | `Detected` |
-| Kaspersky | `UDS:Trojan.Win32.Agent` |
-| McAfeeD | `ti!2F8D04858DCD` |
-| Microsoft 🛡️ | `Trojan:Win32/Wacatac.B!ml` |
-| Symantec | `ML.Attribute.HighConfidence` |
-| Varist | `W64/WinGo.J.gen!Eldorado` |
-
-### [63ba3a7317f12efb1090…](https://bazaar.abuse.ch/sample/63ba3a7317f12efb1090152c900234cbe86477b81ceefac2987055d289d8fe1d/)
-
-- **Familie:** Stealc
-- **Erkannt von:** 40 von 75 Engines (53.3%)
-- **Erkennungsqualität:** 🟠 MÄSSIG ERKANNT
-- **Häufigster Name:** Gen:Variant.Stealer.1032
-- **VT-Reputation:** -11
-- **Microsoft Defender:** ✓ **JA** – `Gen:Variant.Stealer.1032`
-
-**Erkennende Engines (40/75):**
-
-| Engine | Erkannter Name |
-|--------|----------------|
-| ALYac | `Gen:Variant.Stealer.1032` |
 | APEX | `Malicious` |
-| AVG | `Win32:MalwareX-gen [Misc]` |
-| AhnLab-V3 | `Trojan/Win.Kryptik.C5959798` |
-| Antiy-AVL | `Trojan/Win32.GenKryptik` |
-| Arcabit | `Trojan.Stealer.D408` |
-| Avast | `Win32:MalwareX-gen [Misc]` |
-| Avira | `TR/W32.Agent` |
-| BitDefender 🛡️ | `Gen:Variant.Stealer.1032` |
-| Bkav | `W32.Malware.B1A67C2F` |
-| CTX | `exe.unknown.stealer` |
-| CrowdStrike | `win/malicious_confidence_100% (D)` |
+| AhnLab-V3 | `Infostealer/Win.Lzveil.R801029` |
+| Bkav | `W32.Malware.432BF704` |
+| CrowdStrike | `win/malicious_confidence_70% (W)` |
 | Cylance | `Unsafe` |
-| Cynet | `Malicious (score: 100)` |
-| DrWeb | `Trojan.Siggen36.25818` |
-| ESET-NOD32 | `Win32/GenKryptik.HSDL trojan` |
+| ESET-NOD32 | `Win64/Kryptik.HTB trojan` |
 | Elastic | `malicious (high confidence)` |
-| Emsisoft | `Gen:Variant.Stealer.1032 (B)` |
-| F-Secure | `Trojan.TR/W32.Agent` |
-| Fortinet | `W32/Injector.ETZT!tr` |
-| GData | `Gen:Variant.Stealer.1032` |
 | Google | `Detected` |
-| Ikarus | `Backdoor.Win32.Yobdam` |
-| K7AntiVirus | `Trojan ( 005690671 )` |
-| K7GW | `Trojan ( 005690671 )` |
-| Kaspersky | `Trojan.Win32.Evilch.ap` |
-| Kingsoft | `malware.kb.a.710` |
-| Malwarebytes | `Malware.AI.3067252631` |
-| McAfeeD | `ti!63BA3A7317F1` |
-| MicroWorld-eScan | `Gen:Variant.Stealer.1032` |
-| Microsoft 🛡️ | `Trojan:Win32/GCleaner.PG!MTB` |
-| Rising | `Trojan.Kryptik@AI.97 (RDML:ajAlToGpyIZOi2+3qqC8ZA)` |
-| SentinelOne | `Static AI - Malicious PE` |
+| Ikarus | `Trojan.Win32.Wacatac` |
+| Malwarebytes | `Trojan.Injector` |
+| Microsoft 🛡️ | `Trojan:Win32/Wacatac.B!ml` |
+| Rising | `Trojan.Kryptik@AI.87 (RDML:9TUifLtdiV1WXnrKeTkKjg)` |
 | Symantec | `ML.Attribute.HighConfidence` |
-| Tencent | `Malware.Win32.Gencirc.10c4d285` |
-| TrendMicro-HouseCall | `Trojan.Win32.VSX.PE04CAN` |
-| VBA32 | `TScope.Trojan.Delf` |
-| VIPRE | `Gen:Variant.Stealer.1032` |
-| Varist | `W32/Agent.MND.gen!Eldorado` |
-| VirIT | `Trojan.Win32.DelphGen.IXK` |
-
-### [4d4b4e09d271be91c568…](https://bazaar.abuse.ch/sample/4d4b4e09d271be91c5682672f9b3a1133aa8500e838d5746e87ea67e67b6132b/)
-
-- **Familie:** Mirai
-- **Erkannt von:** 30 von 75 Engines (40.0%)
-- **Erkennungsqualität:** 🟠 MÄSSIG ERKANNT
-- **Häufigster Name:** Backdoor.Linux.GAFGYT.SMMR1
-- **VT-Reputation:** -11
-- **Microsoft Defender:** ✗ **NEIN** – nicht erkannt
-
-**Erkennende Engines (30/75):**
-
-| Engine | Erkannter Name |
-|--------|----------------|
-| AVG | `ELF:Agent-AYQ [Trj]` |
-| AhnLab-V3 | `Linux/Mirai07.Exp` |
-| Antiy-AVL | `Trojan/Linux.Ngioweb` |
-| Avast | `ELF:Agent-AYQ [Trj]` |
-| Avast-Mobile | `ELF:Gafgyt-KS [Trj]` |
-| Avira | `EXP/ELF.Mirai.Z.A` |
-| ClamAV | `Unix.Dropper.Mirai-7540662-0` |
-| Cynet | `Malicious (score: 99)` |
-| DrWeb | `Linux.Mirai.10808` |
-| ESET-NOD32 | `Linux/Mirai.CXJ trojan` |
-| Elastic | `Linux.Trojan.Gafgyt` |
-| F-Secure | `Exploit.EXP/ELF.Mirai.Z.A` |
-| Fortinet | `ELF64/Mirai.TSU!tr.botnet` |
-| Google | `Detected` |
-| Ikarus | `Trojan.Linux.Multiverze` |
-| Kaspersky | `HEUR:Backdoor.Linux.Mirai.cw` |
-| MaxSecure | `Trojan.Malware.121218.susgen` |
-| McAfeeD | `Trojan:Linux/GenericY.BN` |
-| Microsoft 🛡️ | `Backdoor:Linux/Mirai.E!xp` |
-| Rising | `Backdoor.Mirai/Linux!1.E816 (CLASSIC)` |
-| Sangfor | `Suspicious.Linux.Save.a` |
-| SentinelOne | `Static AI - Malicious ELF` |
-| Skyhigh | `LINUX/Mirai-ICV!93AB0DC17B79` |
-| Symantec | `Linux.Mirai` |
-| Tencent | `Backdoor.Linux.Mirai.le` |
-| TrendMicro | `Backdoor.Linux.GAFGYT.SMMR1` |
-| TrendMicro-HouseCall | `Backdoor.Linux.GAFGYT.SMMR1` |
-| Varist | `E64/Agent.S.gen!Eldorado` |
-| alibabacloud | `DDOS:Linux/Mirai` |
-| huorong | `Trojan/Linux.Mirai.q!crit` |
+| TrellixENS | `Artemis!87B096A39343` |
+| Varist | `W64/Agent.NJT.gen!Eldorado` |
+| Webroot | `Win.Trojan.Gen` |
+| huorong | `Trojan/Injector.aj!crit` |
 
 ### [4124a486bff5d1fa6058…](https://bazaar.abuse.ch/sample/4124a486bff5d1fa60585d36982618c97956b0f9483ddd5b8e7d7d8a18dc359b/) ⭐ **WOCHEN-SAMPLE**
 
@@ -373,63 +338,62 @@ Dieser Run hat **25 neue Samples** gefunden (von 100 geprüft).
 
 ## Top Tags
 
-- **elf** (12×)
-- **Mirai** (11×)
-- **exe** (9×)
-- **stealer** (3×)
-- **signed** (2×)
-- **jar** (2×)
-- **CoinMiner** (2×)
-- **honeypot** (2×)
-- **DvnX** (1×)
-- **Warden** (1×)
-- **WARDENStealer** (1×)
-- **Yap** (1×)
-- **YapStealer** (1×)
-- **Stealc** (1×)
-- **ps1** (1×)
+- **elf** (20×)
+- **Mirai** (12×)
+- **adb** (8×)
+- **aisuru** (8×)
+- **ddos** (8×)
+- **mirai** (8×)
+- **exe** (7×)
+- **AMOS** (4×)
+- **ClickFix** (4×)
+- **Foxveil** (4×)
+- **Mach-O** (4×)
+- **macho** (4×)
+- **macOS** (4×)
+- **DvnX** (4×)
+- **stealer** (4×)
 
 ## Änderungen – 24h-Vergleich
 
-- ↓ **Mirai** -7 (18→11)
-- ↓ **unbekannt** -15 (25→10)
-- neu: **Win64:Evo-gen [Trj]** (1)
-- neu: **Stealc** (1)
-- neu: **AsyncRAT** (1)
-- ↓ **SalatStealer** -3 (4→1)
+- ↑ **Mirai** +2 (18→20)
+- ↓ **unbekannt** -8 (19→11)
+- neu: **WannaCry** (1)
+- neu: **Amadey** (1)
+- neu: **Malware** (1)
+- weg: **SalatStealer** (war 3)
 
 ## Änderungen – 7d-Vergleich
 
-- ↓ **Mirai** -9 (20→11)
-- ↓ **unbekannt** -29 (39→10)
-- neu: **Win64:Evo-gen [Trj]** (1)
-- neu: **Stealc** (1)
-- neu: **AsyncRAT** (1)
+- ↓ **unbekannt** -27 (38→11)
+- neu: **WannaCry** (1)
+- neu: **Amadey** (1)
+- neu: **Malware** (1)
 - weg: **CoinMiner** (war 3)
 
 ## Statistik
 
 | Kennzahl | Wert |
 |----------|------|
-| Ø Dateigröße | 3.782 MB |
-| σ Dateigröße | 5.072 MB |
-| Ø Risiko-Score | 71.4/100 |
+| Ø Dateigröße | 2.143 MB |
+| σ Dateigröße | 5.175 MB |
+| Ø Risiko-Score | 71.3/100 |
 | Ø Klassifikations-Konfidenz | 76.0% |
-| Samples mit VT | 4/26 |
-| Samples mit MITRE | 14/26 |
-| Eindeutige Familien | 7 |
-| Eindeutige Tags | 33 |
-| Unbekannte Familien | 1 (3.8%) |
+| Samples mit VT | 4/35 |
+| Samples mit MITRE | 21/35 |
+| Eindeutige Familien | 6 |
+| Eindeutige Tags | 35 |
+| Unbekannte Familien | 5 (14.3%) |
 
 ## Neueste Samples
 
 | Zeit (UTC) | SHA256 | Typ | Familie | Score | VT-Rate | Erkennungsqualität | Land |
 |-----------|--------|-----|---------|-------|---------|-------------------|------|
-| 17:02 | [c1512ef000b9…](https://bazaar.abuse.ch/sample/c1512ef000b9eae519fb8e7faac4e941ef07327c927b42aaa6556020b1ff940d/) | `elf` | Mirai | 84.4 | – | – | 🇩🇪DE |
-| 16:54 | [3bc8f5abac79…](https://bazaar.abuse.ch/sample/3bc8f5abac7902afc33890e63375ab4b0e964bbb34c5d90f62f4684c267a9a81/) | `elf` | Mirai | 84.2 | – | – | 🇩🇪DE |
-| 16:42 | [74fec4a8c642…](https://bazaar.abuse.ch/sample/74fec4a8c642eaa88b425fd531660e8522a5b789c26a2bf3fc75fef1031d63d9/) | `elf` | Mirai | 84.1 | – | – | 🇩🇪DE |
-| 16:35 | [f1f746717376…](https://bazaar.abuse.ch/sample/f1f746717376e41575fec18ad5b87b2afce1b685372b2c467880c74f324b8665/) | `exe` | unbekannt | 38.5 | – | – | 🇺🇸US |
-| 16:34 | [2f8d04858dcd…](https://bazaar.abuse.ch/sample/2f8d04858dcd75554f00bb5fd9011126665f90b91428222c29897275662f6619/) | `exe` | Win64:Evo-gen [Trj] | 79.6 | 20.0% | 🟡 SCHWACH ERKANNT | 🇺🇸US |
+| 20:22 | [eaddd0e6bf1c…](https://bazaar.abuse.ch/sample/eaddd0e6bf1c396859cee853792e6878977c8951829e1c43a66b204cc11a6a47/) | `macho` | unbekannt | 32.7 | – | – | 🇺🇸US |
+| 19:49 | [62e1c8b2f427…](https://bazaar.abuse.ch/sample/62e1c8b2f427296a64de68031105058afa1dfa0ada054cd98026746e51ba87c1/) | `elf` | Mirai | 84.0 | – | – | 🌐ES |
+| 19:49 | [95d3b53b17d2…](https://bazaar.abuse.ch/sample/95d3b53b17d267bdb6b547a0c5f167d4807ce31349eb06fa698a6b0c111f2af2/) | `elf` | Mirai | 84.0 | – | – | 🌐ES |
+| 19:49 | [9d12a0b1dac5…](https://bazaar.abuse.ch/sample/9d12a0b1dac5467771edfeccb3c599b73412c0754051f5b0aabc8013e9346d50/) | `elf` | Mirai | 84.0 | – | – | 🌐ES |
+| 19:49 | [9bd91039bad7…](https://bazaar.abuse.ch/sample/9bd91039bad7799c22da48a6ddfd7e83510c0c4adddbb8c4151f3eb9b2d52d23/) | `elf` | Mirai | 79.1 | 36.0% | 🟡 SCHWACH ERKANNT | 🌐ES |
 
 ---
-*Daten: [MalwareBazaar](https://bazaar.abuse.ch) × [VirusTotal](https://virustotal.com) — 24.10.2026 17:16 UTC*
+*Daten: [MalwareBazaar](https://bazaar.abuse.ch) × [VirusTotal](https://virustotal.com) — 24.10.2026 20:26 UTC*
