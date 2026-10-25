@@ -1,0 +1,137 @@
+# IOC Export  2026-10-25_00-05-UTC
+# 17 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+3cad72ca97f4394491d63bbcb0c33f79c3871e4b58f2913a7270520a2b6da162  # Ransomware | R=95.5 | WannaCry | exe
+31b246282c688ab94e88110ae7b7078d515a6721c14e411b82b8b83eda91f293  # Botnet/IoT | R=86.6 | Mirai | elf
+6fe3779ca5f37dde4f680dbb7fe5ae87af32a6b463d059ba89fa8426963772e1  # Botnet/IoT | R=86.3 | Mirai | elf
+5b6458c024a0333edf779148aa23e3072fb1508103001f4dd6477f5805e262f5  # Botnet/IoT | R=84.7 | Mirai | elf
+c41923f219244fb0b28882e01c540c35706f19966b5fc070adf8be235b8be008  # Botnet/IoT | R=84.4 | Mirai | elf
+f791769f0d47f571f10468938866750301b228422b623307d623f06af81fca5f  # Botnet/IoT | R=83.2 | Mirai | elf
+6e136391f87beac4ae152e4f3f24ad61fb7b06df0fdb39d0005660ea1c5ea55e  # Botnet/IoT | R=82.2 | Mirai | apk
+04ef642ea5f51c774c5f879827f989c5070efd2767c4d7d4022b1111ac6f7a94  # Loader | R=82.1 | Amadey | exe
+d42fede1058f62ba45ce9eff1923d644fd2cc1ab6ac1994abc58bd1fd6c666e6  # Botnet/IoT | R=76.7 | Mirai | elf
+7fdb4ed5896bbfd34f05a2aa00aa05b480df97673304f2b2f84122e65e387cbc  # Loader | R=74.6 | unbekannt | zsh
+4124a486bff5d1fa60585d36982618c97956b0f9483ddd5b8e7d7d8a18dc359b  # Trojaner | R=67.4 | PythonStealer | exe
+aa2dac35eec9f05c91eac1a3f9abf8f3d3f42023a91b2487ee03fb18d40aca7e  # Windows-Malware | R=37.8 | unbekannt | exe
+e59471dbb08a04c5ec6df736f149919cc5333ef19da2b2de298d4f429d0c3612  # Andere / Unbekannt | R=32.1 | unbekannt | macho
+a9c7b69cece1e5999a2302d4152bc038ffe8305e84e3d974ace49132241c3206  # Andere / Unbekannt | R=32.1 | unbekannt | macho
+7505f68c6428914e3d2fc83a22440694370d3b55013485595f9863950256f7c4  # Andere / Unbekannt | R=29.9 | unbekannt | iso
+8b88b5ce9263f49cbc0a2f05d754a75a860e970ceb9eb416cb767595a1d2451b  # Andere / Unbekannt | R=29.9 | unbekannt | iso
+c189d6a23a412aeabdb65e6ce77cee8632323bbc70c44435c2940d8725c69a01  # Andere / Unbekannt | R=29.9 | unbekannt | iso
+
+[Tags]
+AMOS
+Amadey
+ClickFix
+Foxveil
+Mach-O
+Mirai
+Prometei
+WannaCry
+adb
+aisuru
+apk
+cyuop-com
+dionaea
+dropper
+elf
+exe
+honeypot
+iso
+loader
+macOS
+macho
+mirai
+persistence
+signed
+trojan.flooder
+zsh
+
+[VT Engine Detections]
+
+## 6fe3779ca5f37dde4f68...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 7/75 Engines (9.3%) — ⚠️ KAUM ERKANNT
+  AVG                            ELF:Agent-ESV [Trj]
+  Avast                          ELF:Agent-ESV [Trj]
+  ESET-NOD32                     Linux/Flooder.Agent.OL trojan
+  Ikarus                         PUA.Linux.Obfuscated
+  Kaspersky                      HEUR:Trojan.Linux.Agent.xu
+  Microsoft                      Trojan:Script/Wacatac.C!ml
+  huorong                        Trojan/Linux.Flooder.ac
+
+## 31b246282c688ab94e88...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 6/75 Engines (8.0%) — ⚠️ KAUM ERKANNT
+  AVG                            ELF:Agent-ESV [Trj]
+  Avast                          ELF:Agent-ESV [Trj]
+  ESET-NOD32                     Linux/Flooder.Agent.OL trojan
+  Ikarus                         PUA.Linux.Obfuscated
+  Kaspersky                      HEUR:Trojan.Linux.Agent.xu
+  huorong                        Trojan/Linux.Flooder.ac
+
+## 5b6458c024a0333edf77...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 6/75 Engines (8.0%) — ⚠️ KAUM ERKANNT
+  AVG                            ELF:Agent-ESV [Trj]
+  Avast                          ELF:Agent-ESV [Trj]
+  DrWeb                          Linux.Siggen.15842
+  ESET-NOD32                     Linux/Flooder.Agent.OL trojan
+  Kaspersky                      HEUR:Trojan.Linux.Agent.xu
+  huorong                        Trojan/Linux.Flooder.ac
+
+## d42fede1058f62ba45ce...  (Mirai) | Defender: ✓ Application.Generic.37111556
+   Erkannt: 28/75 Engines (37.3%) — 🟡 SCHWACH ERKANNT
+  AVG                            ELF:Prometei-D [Trj]
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Prometei
+  Arcabit                        Application.Generic.D2364704
+  Avast                          ELF:Prometei-D [Trj]
+  Avast-Mobile                   ELF:Prometei-B [Trj]
+  Avira                          TR/LINUX.Prometei.D
+  BitDefender                    Application.Generic.37111556
+  CTX                            elf.unknown.generic
+  ClamAV                         Unix.Trojan.Prometei-10045459-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.BackDoor.Prometei.12
+  ESET-NOD32                     Linux/Prometei.B trojan
+  Elastic                        Linux.Hacktool.Flooder
+  Emsisoft                       Application.Generic.37111556 (B)
+  F-Secure                       Trojan.TR/LINUX.Prometei.D
+  Fortinet                       Linux/Prometei.B!tr
+  GData                          Application.Generic.37111556
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Prometei
+  Kaspersky                      HEUR:Backdoor.Linux.Prometei.a
+  McAfeeD                        Trojan:Win/Prometei.P
+  MicroWorld-eScan               Application.Generic.37111556
+  Microsoft                      Trojan:Linux/Coinminer.B
+  Rising                         Backdoor.Prometei/Linux!1.DBE7 (CLASSIC)
+  SentinelOne                    Static AI - Malicious ELF
+  Tencent                        Backdoor.Linux.Prometei.c
+  VIPRE                          Application.Generic.37111315
+  huorong                        Trojan/Prometei.c
+
+## 4124a486bff5d1fa6058...  (PythonStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan:Win32/Qwexlafiba!rfn
+   Erkannt: 24/75 Engines (32.0%) — 🟡 SCHWACH ERKANNT
+  AhnLab-V3                      Trojan/Win.Generic.C5961086
+  Antiy-AVL                      Trojan/Win32.Agent
+  Bkav                           W32.Malware.7053573B
+  CTX                            exe.trojan.qwexlafiba
+  CrowdStrike                    win/malicious_confidence_60% (W)
+  Ikarus                         Trojan.Win32.BadJoke
+  K7GW                           Hacktool ( a007e0071 )
+  Kingsoft                       Win32.Troj.qwexlafiba.v
+  Malwarebytes                   Trojan.Injector
+  MaxSecure                      Trojan.Malware.727547498.susgen
+  McAfeeD                        ti!4124A486BFF5
+  Microsoft                      Trojan:Win32/Qwexlafiba!rfn
+  Paloalto                       generic.ml
+  Panda                          Trj/PhxBzA.A
+  SentinelOne                    Static AI - Suspicious PE
+  Sophos                         Mal/Generic-S
+  Symantec                       ML.Attribute.HighConfidence
+  Trapmine                       malicious.moderate.ml.score
+  TrendMicro                     Trojan.Win32.QWEXLAFIBA.USBLJJ26
+  TrendMicro-HouseCall           Trojan.Win32.QWEXLAFIBA.USBLJJ26
+  VBA32                          TrojanPSW.FBStealer
+  Varist                         W64/ABTrojan.ANKV-0822
+  VirIT                          Trojan.Win64.Agent.IXM
+  alibabacloud                   Trojan:Win/Qwexlafiba.Gen
