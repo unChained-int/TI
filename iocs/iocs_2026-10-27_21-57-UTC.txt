@@ -1,0 +1,188 @@
+# IOC Export  2026-10-27_21-57-UTC
+# 27 Samples  |  Format: sha256  # kategorie | score | familie | typ
+#
+[SHA256]
+72769e3630c5defaffa878c5e178ba2722ca2ca0aa181bd088c185b6534b9943  # Trojaner | R=83.9 | AVR trojan | elf
+8fdf86dc457c554f6637b51e51700eb39d5533c72390ce6e12b513105cd8b3ff  # Botnet/IoT | R=82.8 | Mirai | elf
+fb4d0f15ce071bcb263655c859d1e93ef3ff038292bd20c46165768de59623d4  # Botnet/IoT | R=82.3 | Mirai | elf
+c8cbeb5b2d878b7ef58147a77db1a982841f0d54946a93cc5ed9251fabd37ef1  # Botnet/IoT | R=82.0 | Mirai | elf
+a6593d5bf995f411994c152e376104af31f92d59b6280af0e2cf405f0d442633  # Botnet/IoT | R=82.0 | Mirai | elf
+f96b58c803989f17d951864737a491c19737312fc1d013d677771e1e33c7db44  # Botnet/IoT | R=81.3 | Mirai | elf
+6f50a26febc9f01a4d6301596b73faa9f8ba17f248a18a9791ecc9145373c3b4  # Botnet/IoT | R=80.4 | Mirai | elf
+f7161024d74ed8d6dd568b8d76d662a49d698e95c9c684046ad21ac0d09110a2  # Infostealer | R=80.3 | RustyStealer | exe
+bc51f4479eed583c1af96a82048128c53e421f1684e984cdc1315fce71a2d04a  # Botnet/IoT | R=79.7 | Mirai | elf
+742c930108de8954897c7f0e7b8d0b70464cd290a944a8257f4b8e78e368cdd3  # Infostealer | R=79.4 | SalatStealer | exe
+bd572f8c4bac4ebd92ddb6462d2749c51b54ad3cb903d6f72a79ee1ced3d1704  # Infostealer | R=79.4 | SalatStealer | exe
+c93413e125169c7f767e92e2ef3004125375d828b702f6f0011b488f3ee4f482  # RAT | R=78.6 | unbekannt | msi
+4545b3c3309358a657d4f48a441728bd2cddd2df22d05a21df973311fb91b00c  # RAT | R=78.6 | unbekannt | exe
+71131cc161bf19febc61f1174208529e9fc9de2a6fd2b60bcc78638657bd5692  # RAT | R=78.6 | unbekannt | ps1
+058df4e80179bd59af41fff29844382c27b826e2b991dea9af3e075e74e89e86  # Trojaner | R=76.1 | Prometei | elf
+22a356b2ce7084ef9dc737fa60459ddcc5e3bc74e1400d7ac1bcbfdab6a05894  # Loader | R=73.1 | unbekannt | zsh
+e3fcfcf7146caed0b23e2a2e2ecaa4d0b4ed898c74bc8ac6d5bf95bd28c65589  # Cryptominer | R=65.6 | unbekannt | elf
+7e4c129f5bd09beffae196c2ea7d6528efc9a72142e2b4da665389544e4e7d31  # Infostealer | R=59.7 | SalatStealer | exe
+3d04c183d179b06f0a0e7b20fbefeef0406db487bb28f947a9cb865b8217d7af  # Linux-Malware | R=43.0 | unbekannt | elf
+e84d9461947ee432901dbaf5e1cf2fb61c84cd53ef62a11e30a9c56ea9b50228  # Windows-Malware | R=37.5 | unbekannt | exe
+54250bef9cd2097b202f2dc26900a40ed1fcdfc2cdfd870c09bb2d7b46e06b90  # Windows-Malware | R=37.3 | unbekannt | exe
+ee822705488c0fba8e15d378aab6fa719693b86724f08be9e8539603c2f9fac5  # Skript/Dropper | R=36.9 | unbekannt | vbs
+35b63d41888e44520c4c3078261e1946f6b4811ad640cec6bbdd74620afb0ddd  # Andere / Unbekannt | R=32.4 | unbekannt | zip
+7d969f25af3d016f00dd2858f28c5f2ff166f13b85072eaa8d736885ee956068  # Andere / Unbekannt | R=31.4 | unbekannt | macho
+f4ed301e2c1eeddedd613903051c93c486aebd19140635c32b1a5b7404c51de2  # Andere / Unbekannt | R=30.5 | unbekannt | zip
+7c705366972bc9af7975647d17e85bd0260def700b00f4b40eeff3af847a2c1f  # Andere / Unbekannt | R=30.3 | unbekannt | dmg
+177c91e9bb65953c3e45efc08550bd3e2c739b4d793d26914b833ac88ae03268  # Andere / Unbekannt | R=30.0 | unbekannt | sh
+
+[Tags]
+AMOS
+ClickFix
+Foxveil
+Mach-O
+Mirai
+Prometei
+RustyStealer
+SalatStealer
+dmg
+dropper
+elf
+enthec
+exe
+honeypot
+macOS
+macho
+miner.mnrra
+msi
+ps1
+rat
+salat
+salatstealer
+sh
+upx
+upx-dec
+vbs
+wraith
+zip
+zsh
+
+[VT Engine Detections]
+
+## 72769e3630c5defaffa8...  (AVR trojan) | Defender: ✗ nicht erkannt
+   Erkannt: 3/75 Engines (4.0%) — ⚠️ KAUM ERKANNT
+  ESET-NOD32                     Linux/CoinMiner.AVR trojan
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Mirai
+
+## 6f50a26febc9f01a4d63...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 20/75 Engines (26.7%) — 🟡 SCHWACH ERKANNT
+  AVG                            ELF:CVE-2026-43284-A [Expl]
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  Avast                          ELF:CVE-2026-43284-A [Expl]
+  Avast-Mobile                   ELF:Mirai-BOH [Trj]
+  Avira                          EXP/LINUX.CVE-2026-.A
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9871
+  ESET-NOD32                     Linux/Exploit.CVE-2026-43284.B trojan
+  F-Secure                       Exploit.EXP/LINUX.CVE-2026-.A
+  Google                         Detected
+  Ikarus                         Backdoor.Linux.Mirai
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.mu
+  McAfeeD                        Trojan:Script/Dirtyfrag.EAD
+  Microsoft                      Exploit:Linux/DirtyFrag.B
+  Rising                         Backdoor.Mirai/Linux!1.DAAB (CLASSIC)
+  Sangfor                        Suspicious.Linux.Save.a
+  SentinelOne                    Static AI - Malicious ELF
+  Sophos                         Mal/Generic-S
+  Tencent                        Backdoor.Linux.Mirai.wz
+  huorong                        Exploit/Linux.CVE-2026-46300.a
+
+## bc51f4479eed583c1af9...  (Mirai) | Defender: ✗ nicht erkannt
+   Erkannt: 22/75 Engines (29.3%) — 🟡 SCHWACH ERKANNT
+  AVG                            ELF:CVE-2026-43284-A [Expl]
+  Antiy-AVL                      Trojan[Backdoor]/Linux.Mirai
+  Avast                          ELF:CVE-2026-43284-A [Expl]
+  Avast-Mobile                   ELF:Mirai-BOH [Trj]
+  Avira                          EXP/LINUX.CVE-2026-.A
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.Mirai.9871
+  ESET-NOD32                     Linux/Exploit.CVE-2026-43284.B trojan
+  F-Secure                       Exploit.EXP/LINUX.CVE-2026-.A
+  Google                         Detected
+  Ikarus                         Trojan.Linux.Mirai
+  Kaspersky                      HEUR:Backdoor.Linux.Mirai.mu
+  Kingsoft                       Linux.Backdoor.Mirai.mu
+  Lionic                         Trojan.ELF.Mirai.4!c
+  McAfeeD                        Trojan:Script/Dirtyfrag.EAD
+  Microsoft                      Exploit:Linux/DirtyFrag.B
+  Rising                         Backdoor.Mirai/Linux!1.DAAB (CLASSIC)
+  Sangfor                        Suspicious.Linux.Save.a
+  SentinelOne                    Static AI - Malicious ELF
+  Sophos                         Mal/Generic-S
+  Tencent                        Backdoor.Linux.Mirai.wz
+  huorong                        Exploit/Linux.CVE-2026-46300.a
+
+## 058df4e80179bd59af41...  (Prometei) | Defender: ✓ Application.Generic.37110862
+   Erkannt: 20/75 Engines (26.7%) — 🟡 SCHWACH ERKANNT
+  ALYac                          Application.Generic.37110862
+  Arcabit                        Application.Generic.D236444E
+  Avira                          EXP/ELF.Agent.L.22
+  BitDefender                    Application.Generic.37110862
+  CTX                            elf.unknown.generic
+  ClamAV                         Unix.Trojan.Prometei-10045451-0
+  Cynet                          Malicious (score: 99)
+  DrWeb                          Linux.BackDoor.Prometei.12
+  ESET-NOD32                     Linux/Prometei.B trojan
+  Emsisoft                       Application.Generic.37110862 (B)
+  F-Secure                       Exploit.EXP/ELF.Agent.L.22
+  GData                          Application.Generic.37110862
+  Kaspersky                      HEUR:Backdoor.Linux.Prometei.a
+  MicroWorld-eScan               Application.Generic.37110862
+  Microsoft                      Trojan:Linux/Coinminer.B
+  Rising                         Backdoor.Prometei/Linux!1.DBE7 (CLASSIC)
+  SentinelOne                    Static AI - Suspicious ELF
+  Tencent                        Backdoor.Linux.Prometei.c
+  VIPRE                          Application.Generic.37110862
+  huorong                        Trojan/Prometei.c
+
+## 7e4c129f5bd09beffae1...  (SalatStealer) ⭐ WOCHEN-SAMPLE | Defender: ✓ Trojan.LummaStealer.103
+   Erkannt: 44/75 Engines (58.7%) — 🟠 MÄSSIG ERKANNT
+  ALYac                          Trojan.LummaStealer.103
+  AVG                            Win32:SalatStealer-A [Pws]
+  AhnLab-V3                      Trojan/Win.Generic.R727379
+  Antiy-AVL                      Trojan/Win32.SalatStealer
+  Arcabit                        Trojan.LummaStealer.103
+  Avast                          Win32:SalatStealer-A [Pws]
+  Avira                          TR/W32.Evo
+  BitDefender                    Trojan.LummaStealer.103
+  Bkav                           W32.Malware.62046A21
+  ClamAV                         Win.Malware.Salat-10058846-0
+  CrowdStrike                    win/malicious_confidence_100% (D)
+  Cylance                        Unsafe
+  Cynet                          Malicious (score: 99)
+  DeepInstinct                   MALICIOUS
+  DrWeb                          Trojan.PWS.Salat.389
+  ESET-NOD32                     WinGo/Agent.VO trojan
+  Elastic                        Multi.Generic.Threat
+  Emsisoft                       Trojan.LummaStealer.103 (B)
+  F-Secure                       Trojan.TR/W32.Evo
+  Fortinet                       W32/Agent.VO!tr
+  GData                          Trojan.LummaStealer.103
+  Google                         Detected
+  Ikarus                         Trojan.Win32.SalatStealer
+  K7AntiVirus                    Spyware ( 006d58511 )
+  K7GW                           Spyware ( 006d58511 )
+  Malwarebytes                   Spyware.SalatStealer
+  McAfeeD                        Real Protect-LS!9E7BE912AC3C
+  MicroWorld-eScan               Trojan.LummaStealer.103
+  Microsoft                      Trojan:Win32/SalatStealer!pz
+  NANO-Antivirus                 Trojan.Win32.Salat.lhyjkz
+  Rising                         Stealer.Salat!1.13A22 (CLASSIC)
+  SentinelOne                    Static AI - Malicious PE
+  Skyhigh                        SalatStealer!9E7BE912AC3C
+  Sophos                         Troj/Salat-A
+  Symantec                       ML.Attribute.HighConfidence
+  Tencent                        Trojan.Win32.Stealer.16001830
+  TrellixENS                     SalatStealer!9E7BE912AC3C
+  TrendMicro-HouseCall           Trojan.Win32.VSX.PE04CAN
+  VBA32                          TrojanPSW.Win32.GenericStealer
+  VIPRE                          Trojan.LummaStealer.103
+  Varist                         W32/Salat.A.gen!Eldorado
+  VirIT                          Trojan.Win32.SalatStlr.IXO
+  ZoneAlarm                      Troj/Salat-A
+  huorong                        Trojan/Agent.e!crit
